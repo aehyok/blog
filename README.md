@@ -45,7 +45,6 @@
     - https://www.cnblogs.com/jixiaohua/tag/WebAssembly/
 
     IMWeb团队擅长的音视频领域，我们通过将ffmpeg编译为wasm版本且在浏 览器中运行，将过去处于黑盒中，只有浏览器底层才能使用的音视频编解码能力彻底解放。目前我们可以在前端页面中对音视频流直接进行处理，在完全不依赖后台的情况下，便捷、高效的实现了视频播放帧预览与视频帧截图等功能。目前团队正在进一步探索wasm在音视频以及其他过去前端无法触及的领域的可行性实践。
-
 - 4  React可视化框架，目前3047个star
     - https://github.com/brick-design/react-visual-editor
 
@@ -64,7 +63,7 @@
     - https://www.cnblogs.com/ningskyer/articles/6292891.html
     - https://www.cnblogs.com/wjaaron/p/7800490.html
 - 9 vscode中保存自动格式化代码的插件 Prettier - Code formatter
-
+---
 ### 1月5日
 - 10 vue keepalive发现一旦设置某个路由为true,后续通过动态设置就是无效的后来发现github官网也有很多人遇到这个问题
     - https://github.com/vuejs/vue-router/issues/811 <br>
@@ -113,7 +112,28 @@
         },
       },
 ```
-此为一个子组件，data会传入值类型要与this.getList中设置的label值要保持一致(计算属性value会去绑定radio的 v-model)。
+
+  此为一个子组件，data会传入值类型要与this.getList中设置的label值要保持一致(计算属性value会去绑定radio的 v-model)。
+
 - 13 基于 Vue2.x 封装的 Echarts 图表组件
     - https://echarts.apache.org/zh/index.html
     - https://github.com/ElemeFE/v-charts
+
+- 14 markdown中引入图片的方法：先将图片上传到github库，然后找到对应库，图片所在的地方，github上可预览图片的，此时便可右键查看图片地址[https://raw.githubusercontent.com/aehyok/2021/main/image/test.png],图片地址类似是这样的，或者点击download可以查看到地址的。
+  下面代码可以进行设置位置和宽高
+  ```javascript
+  <div align=center>
+    <img src="https://raw.githubusercontent.com/aehyok/2021/main/image/test.png" width="300" height="450" align="middle" />
+  </div>
+  ```
+  效果如下
+<div align=center>
+  <img src="https://raw.githubusercontent.com/aehyok/2021/main/image/test.png" width="300" height="450" align="middle" />
+</div>
+另外一种设置图片的显示方式，不过暂时没找到如何设置宽高和位置，应该可以考虑通过url后面进行参数设置（通过特定的转换）
+
+```javascript
+![avatar](https://raw.githubusercontent.com/aehyok/2021/main/image/test.png)
+```
+
+![avatar](https://raw.githubusercontent.com/aehyok/2021/main/image/test.png)
