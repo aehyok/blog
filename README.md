@@ -69,7 +69,7 @@
     - https://github.com/vuejs/vue-router/issues/811 <br>
   目前通过变通的方式进行解决此问题，凡是要进行缓存的组件页面，开始都将keepalive设置为true，后续通过钩子函数去触发数据列表更新。
 - 11 vue router 官网有时候可以看一下api，感觉有很多自己是没有用到过的
-    -https://router.vuejs.org/zh/installation.html
+    - https://router.vuejs.org/zh/installation.html
 
 - 12 vue elementui radio在封装为表单控件，且可设置为必填项目，其label设置与外部赋值要保持一致的数据类型，而且required传入值如果为undefined要经过判断，代码如下(截取部分)
 ```javascript
@@ -137,3 +137,17 @@
 ```
 
 ![avatar](https://raw.githubusercontent.com/aehyok/2021/main/image/test.png)
+- 15 css颜色大全表
+    - https://www.cnblogs.com/chenxiaomeng/p/6572319.html
+    - https://blog.csdn.net/qq_42152029/article/details/81984596
+
+- 16 html不同显示色差问题处理
+    - https://www.zhihu.com/question/30113871
+
+- 17 css 三角箭头
+    - http://ourjs.com/detail/532bc9f36922aa7e1d000001
+
+- 18 SSH 阮一峰学习笔记
+    - https://github.com/wangdoc/ssh-tutorial
+- 19 vconsole，引入项目
+    - https://blog.csdn.net/weixin_43232488/article/details/83014086
