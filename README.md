@@ -113,5 +113,7 @@
         },
       },
 ```
-此为一个子组件，data会传入值类型要与this.getList中设置的label值要保持一致。
--
+此为一个子组件，data会传入值类型要与this.getList中设置的label值要保持一致(计算属性value会去绑定radio的 v-model)。
+- 13 基于 Vue2.x 封装的 Echarts 图表组件
+    - https://echarts.apache.org/zh/index.html
+    - https://github.com/ElemeFE/v-charts
