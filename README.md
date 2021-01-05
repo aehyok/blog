@@ -1,16 +1,14 @@
 # 2021
 本年度重点计划：通用页面配置化搭建、可视化页面研究、后台配置页面数据（Vue和React）
 
+-  创建自己的Vue 通用组件代码库 https://github.com/aehyok/vuecomponent
 -  React 可视化框架  https://github.com/brick-design/react-visual-editor
-
 -  Vue 表单生成器 https://github.com/xaboy/form-create
-
 -  Vue 通用Table和Form表单 https://github.com/nmxiaowei/avue
 
 ## 一月份
 
 ### 1月4日
-
 - 1 vue中将v-for循环组件（通过v-if进行展示），方案修改为component组件，简化代码
 ```javascript
       <div v-for="(item, index) in columnList" :key="index">
@@ -41,15 +39,79 @@
             */
 ```
 
-- 2 IMWeb 团队总结  https://mp.weixin.qq.com/s/muljS3iA0c2j1tIICLOhFQ
+- 2 IMWeb 前端团队总结  https://mp.weixin.qq.com/s/muljS3iA0c2j1tIICLOhFQ
 
-- 3  WebAssembly(WASM)学习了解 https://www.cnblogs.com/jixiaohua/tag/WebAssembly/
+- 3  WebAssembly(WASM)学习了解
+    - https://www.cnblogs.com/jixiaohua/tag/WebAssembly/
 
+    IMWeb团队擅长的音视频领域，我们通过将ffmpeg编译为wasm版本且在浏 览器中运行，将过去处于黑盒中，只有浏览器底层才能使用的音视频编解码能力彻底解放。目前我们可以在前端页面中对音视频流直接进行处理，在完全不依赖后台的情况下，便捷、高效的实现了视频播放帧预览与视频帧截图等功能。目前团队正在进一步探索wasm在音视频以及其他过去前端无法触及的领域的可行性实践。
 
-  引用
-  IMWeb团队擅长的音视频领域，我们通过将ffmpeg编译为wasm版本且在浏览器中运行，将过去处于黑盒中，只有浏览器底层才能使用的音视频编解码能力彻底解放。目前我们可以在前端页面中对音视频流直接进行处理，在完全不依赖后台的情况下，便捷、高效的实现了视频播放帧预览与视频帧截图等功能。目前团队正在进一步探索wasm在音视频以及其他过去前端无法触及的领域的可行性实践。
+- 4  React可视化框架，目前3047个star
+    - https://github.com/brick-design/react-visual-editor
 
+- 5 psd.js 将pds设计稿转换为json数据格式
+    - https://github.com/meltingice/psd.js
 
+- 6 npm 设置源仓库
+    - https://www.cnblogs.com/wenjunwei/p/10078460.html
+    - https://www.cnblogs.com/steven-yang/p/12317646.html
 
+- 7 webpack vuecli 创建项目
+    - https://www.cnblogs.com/CL-King/p/14017238.html
+    - https://www.cnblogs.com/gujun1998/p/13659430.html
 
-- 4  React可视化框架  https://github.com/brick-design/react-visual-editor  目前3047个star
+- 8 mongodb 命令行启动数据库，可改为window服务，还未尝试
+    - https://www.cnblogs.com/ningskyer/articles/6292891.html
+    - https://www.cnblogs.com/wjaaron/p/7800490.html
+- 9 vscode中保存自动格式化代码的插件 Prettier - Code formatter
+
+### 1月5日
+- 10 vue keepalive发现一旦设置某个路由为true,后续通过动态设置就是无效的后来发现github官网也有很多人遇到这个问题
+    - https://github.com/vuejs/vue-router/issues/811 <br>
+  目前通过变通的方式进行解决此问题，凡是要进行缓存的组件页面，开始都将keepalive设置为true，后续通过钩子函数去触发数据列表更新。
+- 11 vue router 官网有时候可以看一下api，感觉有很多自己是没有用到过的
+    -https://router.vuejs.org/zh/installation.html
+
+- 12 vue elementui radio在封装为表单控件，且可设置为必填项目，其label设置与外部赋值要保持一致的数据类型，而且required传入值如果为undefined要经过判断，代码如下(截取部分)
+```javascript
+    export default {
+      props: {
+        column: {
+          type: [Object],
+          default: () => {},
+        },
+        data: {
+          type: Number,
+          default: undefined,
+        },
+      },
+      data() {
+        return {
+          rules: [
+            {
+              // 加上双？？，防止出现选中后提示请选择"this.column.title"
+              required: this.column.required ?? false,
+              message: '请选择' + this.column.title,
+              trigger: 'change',
+            },
+          ],
+          list: [],
+        }
+      },
+      created() {
+        this.getList()
+      },
+      computed: {
+        value: {
+          get: function() {
+            return this.data
+          },
+          set: function(val) {
+            console.log(val, typeof val, 'this.radioView.val')
+            this.$emit('update:data', val)
+          },
+        },
+      },
+```
+此为一个子组件，data会传入值类型要与this.getList中设置的label值要保持一致。
+-
