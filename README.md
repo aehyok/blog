@@ -151,3 +151,6 @@
     - https://github.com/wangdoc/ssh-tutorial
 - 19 vconsole，引入项目
     - https://blog.csdn.net/weixin_43232488/article/details/83014086
+<div align=center>
+  <img src="https://raw.githubusercontent.com/aehyok/2021/main/image/1/001.png" width="560" height="600" align="middle" />
+</div>
