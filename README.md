@@ -154,3 +154,52 @@
 <div align=center>
   <img src="https://raw.githubusercontent.com/aehyok/2021/main/image/1/001.png" width="560" height="600" align="middle" />
 </div>
+
+- 20 Less 中& 符号的妙用
+    - https://blog.csdn.net/weixin_45959525/article/details/108396944
+### 1月6日
+- 21 浏览器视频转码
+    - https://github.com/bgrins/videoconverter.js
+    - https://github.com/FFmpeg/FFmpeg
+
+- 22 2020年大前端技术趋势解读
+    - https://mp.weixin.qq.com/s/aAmFyYF7Y6F2-9-LrZ-fsg
+
+- 23 css1、css2、css3 以及Sass、Scss
+    - https://www.cnblogs.com/xj-excellent/p/12422126.html
+    - http://www.mb5u.com/tool/css2/ css2手册
+
+- 24 typescript 前端项目中引入mockjs（暂时没有使用接口形式）
+    - https://blog.csdn.net/weixin_42512937/article/details/102971496
+        ```javascript
+          //1、----- 添加一个.ts文件，在顶部进行引入
+          import Mock from 'mockjs';
+
+          let pageModelList = Mock.mock({
+            code:0,
+            message:'请求成功',
+            data:{
+              docs:{
+                //......
+              }
+            }
+          })
+
+          export default pageModelList;
+
+          //2、------ 再在使用的地方进行导入
+          import pageModelList from '@/mock/pageList';
+          // 接下来便可以使用了
+          console.log(pageModelList, 'this.pageModelList');
+        ```
+- 25 vue 项目中 main.js Vue全局 附加给window.vm，示例代码截图如下
+<div align=center>
+  <img src="https://raw.githubusercontent.com/aehyok/2021/main/image/1/002.png" width="560" height="600" align="middle" />
+</div>
+
+- 26 keepalive和document.documentElement.scrollTop测试中还是发现列表到详情再返回，有时候返回后位置还是异常的，或者图片预览弹窗后关闭时。
+
+- 27 EPG 机顶盒样式显示问题
+    -  html中每个页面元素会有focus(影响机顶盒样式的显示):表示元素被赋予焦点 和blur() ：表示元素失去焦点
+    -  首页加载白屏(暂时感觉是代码执行问题)
+    -  图片加载不完全（有时候只显示三分之一、四分之一），机顶盒问题
