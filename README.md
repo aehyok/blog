@@ -9,6 +9,9 @@
 ## 一月份
 
 ### 1月4日
+
+
+
 - 1 vue中将v-for循环组件（通过v-if进行展示），方案修改为component组件，简化代码
 ```javascript
       <div v-for="(item, index) in columnList" :key="index">
@@ -46,10 +49,12 @@
 
     IMWeb团队擅长的音视频领域，我们通过将ffmpeg编译为wasm版本且在浏 览器中运行，将过去处于黑盒中，只有浏览器底层才能使用的音视频编解码能力彻底解放。目前我们可以在前端页面中对音视频流直接进行处理，在完全不依赖后台的情况下，便捷、高效的实现了视频播放帧预览与视频帧截图等功能。目前团队正在进一步探索wasm在音视频以及其他过去前端无法触及的领域的可行性实践。
 - 4  React可视化框架，目前3047个star
-    - https://github.com/brick-design/react-visual-editor
+
+- https://github.com/brick-design/react-visual-editor
 
 - 5 psd.js 将pds设计稿转换为json数据格式
-    - https://github.com/meltingice/psd.js
+
+- https://github.com/meltingice/psd.js
 
 - 6 npm 设置源仓库
     - https://www.cnblogs.com/wenjunwei/p/10078460.html
@@ -65,6 +70,9 @@
 - 9 vscode中保存自动格式化代码的插件 Prettier - Code formatter
 ---
 ### 1月5日
+
+
+
 - 10 vue keepalive发现一旦设置某个路由为true,后续通过动态设置就是无效的后来发现github官网也有很多人遇到这个问题
     - https://github.com/vuejs/vue-router/issues/811 <br>
   目前通过变通的方式进行解决此问题，凡是要进行缓存的组件页面，开始都将keepalive设置为true，后续通过钩子函数去触发数据列表更新。
@@ -120,6 +128,7 @@
     - https://github.com/ElemeFE/v-charts
 
 - 14 markdown中引入图片的方法：先将图片上传到github库，然后找到对应库，图片所在的地方，github上可预览图片的，此时便可右键查看图片地址[https://raw.githubusercontent.com/aehyok/2021/main/image/test.png],图片地址类似是这样的，或者点击download可以查看到地址的。
+  <br/><br/>
   下面代码可以进行设置位置和宽高
   ```javascript
   <div align=center>
@@ -130,13 +139,17 @@
 <div align=center>
   <img src="https://raw.githubusercontent.com/aehyok/2021/main/image/test.png" width="300" height="450" align="middle" />
 </div>
+  <br/>
+
 另外一种设置图片的显示方式，不过暂时没找到如何设置宽高和位置，应该可以考虑通过url后面进行参数设置（通过特定的转换）
 
 ```javascript
 ![avatar](https://raw.githubusercontent.com/aehyok/2021/main/image/test.png)
 ```
+  <br/>
 
-![avatar](https://raw.githubusercontent.com/aehyok/2021/main/image/test.png)
+  ![avatar](https://raw.githubusercontent.com/aehyok/2021/main/image/test.png)
+
 - 15 css颜色大全表
     - https://www.cnblogs.com/chenxiaomeng/p/6572319.html
     - https://blog.csdn.net/qq_42152029/article/details/81984596
@@ -158,12 +171,15 @@
 - 20 Less 中& 符号的妙用
     - https://blog.csdn.net/weixin_45959525/article/details/108396944
 ### 1月6日
+
 - 21 浏览器视频转码
+
     - https://github.com/bgrins/videoconverter.js
-    - https://github.com/FFmpeg/FFmpeg
+- https://github.com/FFmpeg/FFmpeg
 
 - 22 2020年大前端技术趋势解读
-    - https://mp.weixin.qq.com/s/aAmFyYF7Y6F2-9-LrZ-fsg
+
+- https://mp.weixin.qq.com/s/aAmFyYF7Y6F2-9-LrZ-fsg
 
 - 23 css1、css2、css3 以及Sass、Scss
     - https://www.cnblogs.com/xj-excellent/p/12422126.html
@@ -192,10 +208,12 @@
           // 接下来便可以使用了
           console.log(pageModelList, 'this.pageModelList');
         ```
+
 - 25 vue 项目中 main.js Vue全局 附加给window.vm，示例代码截图如下
-<div align=center>
-  <img src="https://raw.githubusercontent.com/aehyok/2021/main/image/1/002.png" width="560" height="600" align="middle" />
-</div>
+
+    <br/><br/>
+
+    ![avatar](https://raw.githubusercontent.com/aehyok/2021/main/image/1/002.png)
 
 - 26 keepalive和document.documentElement.scrollTop测试中还是发现列表到详情再返回，有时候返回后位置还是异常的，或者图片预览弹窗后关闭时。
 
@@ -203,3 +221,20 @@
     -  html中每个页面元素会有focus(影响机顶盒样式的显示):表示元素被赋予焦点 和blur() ：表示元素失去焦点
     -  首页加载白屏(暂时感觉是代码执行问题)
     -  图片加载不完全（有时候只显示三分之一、四分之一），机顶盒问题
+
+- 28 今日通用表单没有进行，参考一篇文章
+
+    - http://www.form-create.com/v2/guide/control.html
+
+- 29 markdown 规范参考
+
+    - https://xianbai.me/learn-md/article/syntax/paragraphs-and-line-breaks.html
+### 1月7日
+- 30 通过adb.exe连接机顶盒来查看应用的日志记录
+    - adb version 查看adb版本
+    - adb connect 172.18.0.80 通过IP地址连接机顶盒
+    - adb shell pm list package  查看应用apk列表
+- 31 版本号如何设置的问题
+      <br/><br/>
+
+    ![avatar](https://raw.githubusercontent.com/aehyok/2021/main/image/1/003.png)
