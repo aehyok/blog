@@ -211,9 +211,21 @@
 
 - 25 vue 项目中 main.js Vue全局 附加给window.vm，示例代码截图如下
 
-    <br/><br/>
+    ```javascript
+      // 在main.js中的设置
+      window.vm = new Vue({
+        router,
+        store,
+        render: h => h(App),
+      }).$mount('#app')
+      export default window.vm
+    ```
+    <br/>
 
-    ![avatar](https://raw.githubusercontent.com/aehyok/2021/main/image/1/002.png)
+    ```javascript
+      // 在使用的地方可以直接调用
+      window.vm.$router.push("/")
+    ```
 
 - 26 keepalive和document.documentElement.scrollTop测试中还是发现列表到详情再返回，有时候返回后位置还是异常的，或者图片预览弹窗后关闭时。
 
@@ -223,7 +235,6 @@
     -  图片加载不完全（有时候只显示三分之一、四分之一），机顶盒问题
 
 - 28 今日通用表单没有进行，参考一篇文章
-
     - http://www.form-create.com/v2/guide/control.html
 
 - 29 markdown 规范参考
@@ -232,9 +243,115 @@
 ### 1月7日
 - 30 通过adb.exe连接机顶盒来查看应用的日志记录
     - adb version 查看adb版本
-    - adb connect 172.18.0.80 通过IP地址连接机顶盒
+    - adb connect 172.18.0.80:5555  通过IP地址连接机顶盒
     - adb shell pm list package  查看应用apk列表
+    - adb devices 查看连接设备
+    - adb kill-server
+    - netstat -ano |findstr 5037
+    - adb disconnect
+    - adb connect 172.18.0.239
+    - google 浏览器中 chrome://inspect/#devices
 - 31 版本号如何设置的问题
       <br/><br/>
 
     ![avatar](https://raw.githubusercontent.com/aehyok/2021/main/image/1/003.png)
+- 32 常用开发代码函数查询 mac下dash，window下devDocs
+- 33 elementui table中的那些基本操作
+
+    - https://www.jianshu.com/p/2251cda42425
+- 34 mapBox 地图指引
+    - https://account.mapbox.com/  官网地址，设置accessTokens
+    - http://www.mapbox.cn/mapbox-gl-js/api/#map 中文文档
+    - https://github.com/mapbox/mapbox-gl-draw/  绘制
+    - https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-draw/  绘制模板
+- 35 mapBox 空间分析库truf.js
+
+    - https://www.cnblogs.com/zhurong/p/12209209.html
+- 36 ts后缀视频播放可通过mux.js
+    - https://www.cnblogs.com/ypppt/p/13683685.html
+    - https://docs.videojs.com/tutorial-vue.html
+- 37 控制台console打印日志的开启和关闭
+  ```javascript
+      // 判断配置文件是否开启日志调试 是否输出日志 True 输出 False 不输出
+      const logDebug = process.env.NODE_ENV !== 'production'
+      console.log = (function(oriLogFunc) {
+        return function() {
+          if (logDebug) {
+            oriLogFunc.apply(this, arguments)
+          }
+        }
+      })(console.log)
+  ```
+- 38高德地图3D demo
+- https://developer.amap.com/api/javascript-api/reference/maps-3d
+
+- 39 vue前端项目webpack打包设置路径的问题，主要是publicPath
+    - 官网配置地址 https://cli.vuejs.org/zh/config/#publicpath
+   ```javascript
+        // vue.config.js中路径设置
+        module.exports = {
+          lintOnSave: "error",
+          publicPath: "./",    // 相对路径，这样可以随意部署任何路径
+          outputDir: "../release/ui/",  // 配置打包输出路径
+          assetsDir: "static",       // 配置css、js、img等路径
+          productionSourceMap: false,
+          css: {
+            loaderOptions: {
+              // global scss variables 传递配置选项到 sass-loader
+              scss: {
+                prependData: `@import "~@/styles/_variable.scss";`,
+              },
+            },
+          },
+  ```
+- 40 Python命令行神器Click （pip install -U click），pip在python中
+
+    - https://www.cnblogs.com/nima/p/11751459.html
+- 41 git 针对tag标签设置，tag是针对所有分支的
+    - 所有项目，发布版本到SIT，都需要打标签，以便追溯版本所对应的代码。如果后面需要改版本拉分支修改，也非常方便；
+  ```javascript
+  // 添加一个tag
+  git tag -a 3.11.3.001 -m "release 3.11.3.001"
+  git push origin 3.11.3.001
+
+  //删除一个tag
+  git tag -d 3.11.3.001
+  git push origin :refs/tags/3.11.3.001
+
+  // 查看分支
+  git tag
+
+  // 在某个commit 上打tag  git tag
+  git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233　　　　
+  git push origin test_tag　　　　//!!!本地tag推送到线上
+
+  // 根据tag创建分支
+  https://www.cnblogs.com/senlinyang/p/9455426.html
+  git branch newbranch 3.11.3.001
+
+  // 然后可以切换到分支
+  git checkout newbranch
+
+  // 再通过命令将本地仓库推送到远程仓库
+  git push origin newbranch
+
+  // 创建新的分支
+  git branch branchname
+
+  // 是将远程主机的最新内容拉到本地 ,用户在检查了以后决定是否合并到工作本机分支中。
+  git fetch
+  //更多基本操作
+  //https://www.cnblogs.com/runnerjack/p/9342362.html
+  ```
+- 42 查看markdown.md文件可以使用Typora
+    - 下载地址 https://www.typora.io/
+- 43 web计时机制 performance对象
+    - https://www.cnblogs.com/xiaohuochai/archive/2017/03/09/6523397.html
+- 44 window performance 监测时间
+    - http://www.cocoachina.com/articles/19882
+    - https://www.cnblogs.com/web-easy/p/5287136.html
+- 45 react color 采集控件
+    - https://casesandberg.github.io/react-color/#usage-include
+    - https://casesandberg.github.io/react-color/
+    - https://www.ctolib.com/article/compares/16070
+- 46
