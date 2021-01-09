@@ -242,15 +242,21 @@
     - https://xianbai.me/learn-md/article/syntax/paragraphs-and-line-breaks.html
 ### 1月7日
 - 30 通过adb.exe连接机顶盒来查看应用的日志记录
-    - adb version 查看adb版本
-    - adb connect 172.18.0.80:5555  通过IP地址连接机顶盒
-    - adb shell pm list package  查看应用apk列表
+    - 查看adb版本 adb version
+    - 通过IP地址连接机顶盒 adb connect 172.18.0.80:5555
+    - 查看应用apk列表 adb shell pm list package
     - adb devices 查看连接设备
     - adb kill-server
     - netstat -ano |findstr 5037
     - adb disconnect
-    - adb connect 172.18.0.239
-    - google 浏览器中 chrome://inspect/#devices
+    - 链接机顶盒 ----adb connect 172.18.0.239
+    - google 浏览器中链接  chrome://inspect/#devices----------edge://inspect/#devices
+    - 进入命令 ----adb shell
+    - 查看包名列表----- pm -l |grep have
+    - 卸载package ---- pm uninstall cn.haveplus.hoteltv
+    - 退出shell ---- exit
+    - 安装apk ----adb install C:\Users\chill\Desktop\havetv-release.apk
+    - 开启start ----- adb shell am start cn.haveplus.hoteltv
 - 31 版本号如何设置的问题
       <br/><br/>
 
@@ -354,4 +360,43 @@
     - https://casesandberg.github.io/react-color/#usage-include
     - https://casesandberg.github.io/react-color/
     - https://www.ctolib.com/article/compares/16070
-- 46
+### 1月8日
+- 46 window.requestAnimationFrame 告诉浏览器要执行动画
+    - https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame
+    - 页面最小化了，或者被Tab切换关灯了，页面绘制全部停止，资源高效利用；
+    - window.cancelAnimationFrame 取消回调函数
+- 47 window.setInterval 以指定的周期执行某个函数运行，window.clearInterval取消由setInterval()方法设置的定时器。
+    ```javascript
+      private executeAnimation() {
+        let self = this;
+        window.setInterval(function () {
+          self.startAnimation('right');
+        }, 3000);
+      }
+    ```
+- 48 webpack 配置官方文档
+    - v5版本  https://webpack.docschina.org/
+    - v4版本  https://v4.webpack.docschina.org/
+    - 插件地址配置  https://v4.webpack.docschina.org/concepts/#%E6%8F%92%E4%BB%B6-plugin-
+    - CopyWebpackPlugin https://www.webpackjs.com/plugins/copy-webpack-plugin/
+    ```javascript
+        new CopyWebpackPlugin({
+          patterns: [
+            {
+              from: __dirname+'/src/static',
+              to: 'static',
+            },
+          ],
+          // copyUnmodified: true,
+        }),
+    ```
+### 1月9日
+ - 49 linux命令删除文件
+    - https://blog.csdn.net/weixin_43627766/article/details/89469016
+ - 50 linux几个命令
+    - 返回上一级目录 cd ..
+    - 返回根目录 cd ~
+    - 直接到某个目录  cd  /usr/local/......
+    - ls命令可以查看目录下的文件
+    - 上传文件  rz -bye命令，弹出文件夹选项进行选择即可
+    - 重启网站 nginx  -s reload
