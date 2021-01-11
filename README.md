@@ -1,4 +1,5 @@
 # 2021
+
 本年度重点计划：通用页面配置化搭建、可视化页面研究、后台配置页面数据（Vue和React）
 
 -  创建自己的Vue 通用组件代码库 https://github.com/aehyok/vuecomponent
@@ -391,12 +392,43 @@
         }),
     ```
 ### 1月9日
- - 49 linux命令删除文件
+- 49 linux命令删除文件
     - https://blog.csdn.net/weixin_43627766/article/details/89469016
- - 50 linux几个命令
+- 50 linux几个命令
+    - 删除当前目录下的文件 rm -f *
+    - 删除当前目录下的指定文件 rm -f xxxx.js
     - 返回上一级目录 cd ..
     - 返回根目录 cd ~
     - 直接到某个目录  cd  /usr/local/......
     - ls命令可以查看目录下的文件
+    - ls -l 查看文件列表详情 https://blog.csdn.net/kexiaoling/article/details/51096164
     - 上传文件  rz -bye命令，弹出文件夹选项进行选择即可
     - 重启网站 nginx  -s reload
+- 51 markdown语法学习
+    - https://mp.weixin.qq.com/s/bZufZd8oynVOUgDYWOH9tg
+- 52 gitbook 编写文档
+    - https://www.cnblogs.com/weswes/p/9874325.html
+    - https://www.gitbook.com/  455043818@qq.com
+- 53 vue中nextTick 妙用
+    - 在 created 和 mounted 阶段，如果需要操作渲染后的试图，也要使用 nextTick 方法。
+    - 注意 mounted 不会承诺所有的子组件也都一起被挂载。如果你希望等到整个视图都渲染完毕，可以用 vm.$nextTick 替换掉 mounted
+  ```javascript
+        this.$nextTick(()=>{
+          document.documentElement.scrollTop = sessionStorage.getItem('scrollH') || 0
+          console.log(document.documentElement.scrollTop, 'document.documentElement.scrollTop')
+        })
+  ```
+- 53 epg渲染段存在问题
+    - 1、视频无法播放
+    - 2、轮播无法自动播放
+    - 3、横版栏目和竖版栏目左右状态还需继续调整
+    - 4、首页加载时间过慢
+    - 5、css样式调整(大部分CSS3应该都用不了)
+    - 6、获取焦点样式调整
+    - 7、失去焦点样式调整
+    - 8、状态栏展示还需要调整
+    - 9、....
+- 54 epg可视化配置器
+  - 1、页面设置配置保存
+  - 2、.....
+  - 3、.....
