@@ -239,7 +239,6 @@
     - http://www.form-create.com/v2/guide/control.html
 
 - 29 markdown 规范参考
-
     - https://xianbai.me/learn-md/article/syntax/paragraphs-and-line-breaks.html
 ### 1月7日
 - 30 通过adb.exe连接机顶盒来查看应用的日志记录
@@ -357,7 +356,7 @@
 - 44 window performance 监测时间
     - http://www.cocoachina.com/articles/19882
     - https://www.cnblogs.com/web-easy/p/5287136.html
-- 45 react color 采集控件
+- 45 react color 颜色采集控件
     - https://casesandberg.github.io/react-color/#usage-include
     - https://casesandberg.github.io/react-color/
     - https://www.ctolib.com/article/compares/16070
@@ -380,12 +379,13 @@
     - v4版本  https://v4.webpack.docschina.org/
     - 插件地址配置  https://v4.webpack.docschina.org/concepts/#%E6%8F%92%E4%BB%B6-plugin-
     - CopyWebpackPlugin https://www.webpackjs.com/plugins/copy-webpack-plugin/
+    - 配置简易解释 https://www.cnblogs.com/yincece0316/p/10736715.html
     ```javascript
         new CopyWebpackPlugin({
           patterns: [
             {
               from: __dirname+'/src/static',
-              to: 'static',
+              to: 'static', // 不设置则回到默认根路径下面
             },
           ],
           // copyUnmodified: true,
@@ -394,6 +394,7 @@
 ### 1月9日
 - 49 linux命令删除文件
     - https://blog.csdn.net/weixin_43627766/article/details/89469016
+    - https://www.cnblogs.com/qq350760546/p/7890680.html xshell命令行总结
 - 50 linux几个命令
     - 删除当前目录下的文件 rm -f *
     - 删除当前目录下的指定文件 rm -f xxxx.js
@@ -406,9 +407,13 @@
     - 重启网站 nginx  -s reload
 - 51 markdown语法学习
     - https://mp.weixin.qq.com/s/bZufZd8oynVOUgDYWOH9tg
+    - https://www.yuque.com/yuque/help/dive-into-yuque-editor
+    - https://mp.weixin.qq.com/s/bZufZd8oynVOUgDYWOH9tg
 - 52 gitbook 编写文档
     - https://www.cnblogs.com/weswes/p/9874325.html
     - https://www.gitbook.com/  455043818@qq.com
+    - https://www.kancloud.cn/ 看云平台
+    - https://www.yuque.com/ 语雀
 - 53 vue中nextTick 妙用
     - 在 created 和 mounted 阶段，如果需要操作渲染后的试图，也要使用 nextTick 方法。
     - 注意 mounted 不会承诺所有的子组件也都一起被挂载。如果你希望等到整个视图都渲染完毕，可以用 vm.$nextTick 替换掉 mounted
@@ -418,6 +423,90 @@
           console.log(document.documentElement.scrollTop, 'document.documentElement.scrollTop')
         })
   ```
+
+###  1月11日
+- 54 无代码no-code(NCDP)和低代码的解释
+    - https://mp.weixin.qq.com/s/Zhmh6mzCyxJlOvmuDMBSfw
+    - no-code 解释https://www.makerpad.co/blog/what-is-no-code
+- 55 无代码相关的社区
+    - https://www.makerpad.co/
+    - https://www.nocode.tech/
+    - https://www.nucode.co
+- 56 form-create中是如何通过control控制其他组件的
+    - http://www.form-create.com/v2/guide/control.html
+- 57 nginx 使用
+    - https://www.cnblogs.com/taiyonghai/p/9402734.html  安装到初步尝试
+    - https://www.yuque.com/jarvis-zzzhw/frontend/oew2z5 配置详解
+- 58 vconsole 公众号调试,直接在微信聊天中点击下面连接，点击即可
+    - debugmm.qq.com/?forcex5=true
+  59 nginx 安装到使用详解
+    - https://juejin.cn/post/6914160814152744973
+- 60 杀进程的小工具fkill
+    - https://github.com/sindresorhus/fkill-cli
+- 61  document.documentElement.scrollTop微信公众号有时候获取值为0，暂时可考虑使用document.body.scrollTop进行设置
+- 62 vue 可视化拖拽组件
+    - https://juejin.cn/post/6908502083075325959#heading-16
+    - 吸附标线 https://github.com/woai3c/visual-drag-demo/blob/main/src/components/Editor/MarkLine.vue
+- 63 前端节流和防抖介绍
+    - https://juejin.cn/post/6901493600098779150
+- 64 vue组件嵌套会提示'make sure to provid the "name" option'
+    - https://blog.csdn.net/Nalaluky/article/details/83007101
+  ```javascript
+      // 组件嵌套如何引用的问题
+      components: {
+        FormView: () => import('@/components/input/formView'),
+      },
+  ```
+- 65 如果目前定义的组件中，没有满足要求的，可以进行自行定义组件，然后插入到自定义组件中
+- 66 dev-server 通过express生成一个接口，来加载一个json本地文件
+    - https://www.cnblogs.com/lurenjia1994/p/10038725.html
+    - https://www.cnblogs.com/yy136/p/9977864.html
+    - http://www.imooc.com/article/details/id/291839
+  ```javascript
+      // 此种方式打包好以后其实已经加载到项目中了
+      let json = require('../static/pageList.json');
+      let pageModelList: any = JSON.parse(JSON.stringify(json));
+      console.log(pageModelList, 'this.pageModelList');
+  ```
+- 67 webpack 拷贝json文件后部署后虚拟路径读取的问题
+  ```javascript
+    let pageModelList: any;
+    console.log(window.location, 'window.location');
+    let href = window.location.href.split('?');
+    requestJson.get(href[0] + '/static/pageList.json').then((res) => {
+      console.log(res);
+      pageModelList = res;
+      //成功获取到json数据
+    });
+  ```
+- 68 模块热替换api
+    - http://www.myjscode.com/page/article109.html
+
+- 69 webpack 配置设置
+    - https://www.cnblogs.com/hezihao/p/8072750.html
+- 70 cesium 地图
+    - https://zhuanlan.zhihu.com/p/34217817
+    - https://www.thingjs.com/guide/speedcityshow
+- 71 百度echarts
+    - https://github.com/ecomfe/vue-echarts
+    - https://echarts.apache.org/examples/zh/editor.html?c=bar-background
+    - https://echarts.apache.org/examples/zh/index.html 百度echarts地图样例
+    - https://echarts.apache.org/zh/option.html#series-bar 配置项目设置
+    - 柱状图颜色随机设置
+```javascript
+      //柱状图颜色随机设置
+      itemStyle: {
+          normal: {
+　　　　　　　　//这里是重点
+              color: function(params) {
+                //注意，如果颜色太少的话，后面颜色不会自动循环，最好多定义几个颜色
+                  var colorList = ['#c23531','#2f4554', '#61a0a8', '#d48265', '#91c7ae','#749f83', '#ca8622'];
+                  return colorList[params.dataIndex]
+              }
+          }
+      }
+```
+    -
 - 53 epg渲染段存在问题
     - 1、视频无法播放
     - 2、轮播无法自动播放
@@ -430,5 +519,5 @@
     - 9、....
 - 54 epg可视化配置器
   - 1、页面设置配置保存
-  - 2、.....
-  - 3、.....
+  - 2、素材库
+  - 3、文本库
