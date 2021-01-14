@@ -479,6 +479,7 @@
       //成功获取到json数据
     });
   ```
+### 1月12日
 - 68 模块热替换api
     - http://www.myjscode.com/page/article109.html
 
@@ -495,6 +496,7 @@
     - 柱状图颜色随机设置
 ```javascript
       //柱状图颜色随机设置
+      //https://www.cnblogs.com/kang543418095/p/5964397.html?utm_source=itdadao&utm_medium=referral
       itemStyle: {
           normal: {
 　　　　　　　　//这里是重点
@@ -506,7 +508,22 @@
           }
       }
 ```
-    -
+### 1月13日
+- 72 animate.css动画库
+    - https://github.com/animate-css/animate.css
+- 73 饼状图 legend圆点设置
+    - https://www.jianshu.com/p/f4338c76b169
+- 74 border-radius 50%和100%
+    - https://blog.csdn.net/csm0912/article/details/85050562
+- 75 axios针对请求进行缓存
+    - https://www.wodecun.com/blog/7931.html
+    - https://github.com/ZhengXiaowei/axios-request-cache/
+    - https://github.com/kuitos/axios-extensions
+### 1月14日
+- 76 数字之间的间隔
+    - letter-spacing:2px;
+- 77 css小箭头
+    - http://blog.sina.com.cn/s/blog_68128cfd0101nv28.html
 - 53 epg渲染段存在问题
     - 1、视频无法播放
     - 2、轮播无法自动播放
