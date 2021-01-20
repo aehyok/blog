@@ -540,8 +540,16 @@
     - https://www.cnblogs.com/yanggeng/p/11275771.html   rotate
 
 ### 1月18日
-- 81
--
+- 81 echarts地图
+    - 设置echarts div的宽度和高度
+    - 边距可以设置gird属性中的{top,left:right,bottom}
+    - x轴和y轴，均可设置多个，匹配数据的时候要进行设置yIndex
+    - 柱状图的柱状 可设置颜色
+    - 顶部选项 可设置 图标icon，以及字体颜色等
+    - 配置渐变颜色 https://blog.csdn.net/weixin_44897255/article/details/96877562
+### 1月19日
+- 82 fq今日更新
+- 83 webassembly视频进行转码  https://mp.weixin.qq.com/s/5k5f3UDNhFyc9DU-cws3og
 - 53 epg渲染段存在问题
     - 1、视频无法播放
     - 2、轮播无法自动播放
