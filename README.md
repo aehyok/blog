@@ -521,7 +521,7 @@
     - https://github.com/kuitos/axios-extensions
 ### 1月14日
 - 76 数字之间的间隔
-    - letter-spacing:2px;
+      - letter-spacing:2px;
 - 77 css小箭头
     - http://blog.sina.com.cn/s/blog_68128cfd0101nv28.html
 - 78 css display:flex 一行两列一行三列
@@ -550,6 +550,30 @@
 ### 1月19日
 - 82 fq今日更新
 - 83 webassembly视频进行转码  https://mp.weixin.qq.com/s/5k5f3UDNhFyc9DU-cws3og
+### 1月20日
+- 84 vue-class-component和vue-property-decorator vue类组件
+    - https://www.cnblogs.com/qq3279338858/p/12631728.html
+- 85 css transform scale 放大和缩小
+    - https://www.cnblogs.com/yanggeng/p/11277199.html
+- 86 history.pushState()  可以控制浏览器自带的返回按钮
+    - https://www.cnblogs.com/lguow/p/9222272.html
+- 87 export 和export default
+    - https://www.cnblogs.com/fanyanzhao/p/10298543.html
+- 88 vue3项目创建
+    - 创建项目 https://www.cnblogs.com/carlJian/p/13932400.html
+    - 引入elementui https://element-plus.gitee.io/#/zh-CN/component/quickstart
+    - vue-cli-service serve命令
+     https://cli.vuejs.org/zh/guide/cli-service.html#vue-cli-service-serve
+- 89 prettier 格式化代码的配置
+    - https://www.cnblogs.com/guwufeiyang/p/12886333.html
+    ```javascript
+        // 局部安装prettier
+        npm install --save -dev  --save-exact prettier
+        // 全局安装
+        npm install --global prettier
+    ```
+### 1月21日
+- 90
 - 53 epg渲染段存在问题
     - 1、视频无法播放
     - 2、轮播无法自动播放
