@@ -395,6 +395,7 @@
 - 49 linux命令删除文件
     - https://blog.csdn.net/weixin_43627766/article/details/89469016
     - https://www.cnblogs.com/qq350760546/p/7890680.html xshell命令行总结
+    - https://www.yuque.com/jiushiyaoxuehaolinux/linux_ops/welcome
 - 50 linux几个命令
     - 删除当前目录下的文件 rm -f *
     - 删除当前目录下的指定文件 rm -f xxxx.js
@@ -562,10 +563,14 @@
 - 88 vue3项目创建
     - 创建项目 https://www.cnblogs.com/carlJian/p/13932400.html
     - 引入elementui https://element-plus.gitee.io/#/zh-CN/component/quickstart
+    ```javascript
+      npm install element-plus --save
+    ```
     - vue-cli-service serve命令
      https://cli.vuejs.org/zh/guide/cli-service.html#vue-cli-service-serve
 - 89 prettier 格式化代码的配置
     - https://www.cnblogs.com/guwufeiyang/p/12886333.html
+    - https://www.cnblogs.com/oneweek/p/11236515.html
     ```javascript
         // 局部安装prettier
         npm install --save -dev  --save-exact prettier
@@ -573,7 +578,22 @@
         npm install --global prettier
     ```
 ### 1月21日
-- 90
+- 90 对比一下vue2和vue3中分别使用typeScript的方式
+    - https://jishuin.proginn.com/p/763bfbd2e891
+    - https://www.cnblogs.com/qq3279338858/p/12631728.html
+    -
+- 91 vue中 lint检查的配置
+    - https://www.cnblogs.com/fengyingYZ/p/10369703.html
+- 92 vue create 项目时，手动选择  通过空格键进行选中或者反选，然后进行配置
+- 93 dart-sass和node-sass区别
+    - https://blog.csdn.net/qianxing111/article/details/107617538
+- 94 前端多媒体知识
+    - https://mp.weixin.qq.com/s/yuIkTwHk5dx20r8Z0cpSDA
+- 95 vue3官网ts支持
+    - https://v3.cn.vuejs.org/guide/typescript-support.html
+- 96 google技术栏目
+    - https://www.infoq.cn/zones/google/cloud/list?id=2
+    -
 - 53 epg渲染段存在问题
     - 1、视频无法播放
     - 2、轮播无法自动播放
