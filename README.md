@@ -593,7 +593,18 @@
     - https://v3.cn.vuejs.org/guide/typescript-support.html
 - 96 google技术栏目
     - https://www.infoq.cn/zones/google/cloud/list?id=2
-    -
+### 1月22日
+- 97 vue3中的setup  Composition API
+    - https://segmentfault.com/a/1190000023911894
+- 98 vue elementui table表格的封装
+    - https://segmentfault.com/a/1190000023382224
+- 99 vite 工具官网
+    - https://vitejs.dev/
+    - npm install -g create-vite-app 全局安装
+    - create-vite-app projectName
+    - https://www.cnblogs.com/qlb-7/p/13790610.html
+    - https://segmentfault.com/a/1190000023737670  vite 创建项目并添加typescript
+    - https://github.com/Mstian/Vue-Onepiece-Admin.git 参考一个vue3的项目
 - 53 epg渲染段存在问题
     - 1、视频无法播放
     - 2、轮播无法自动播放
