@@ -605,6 +605,46 @@
     - https://www.cnblogs.com/qlb-7/p/13790610.html
     - https://segmentfault.com/a/1190000023737670  vite 创建项目并添加typescript
     - https://github.com/Mstian/Vue-Onepiece-Admin.git 参考一个vue3的项目
+### 1月25日
+- 100 1月23日参加公司年终总结和计划会以及部门会议
+- 101 查看vue3 github项目 https://zhuanlan.zhihu.com/p/254219538
+- 102 css !important 该条样式属性声明具有最高优先级
+    - https://www.cnblogs.com/meiwenzx/p/6673302.html
+- 103 linux 创建文件夹 删除文件夹
+    - https://www.cnblogs.com/zf2011/archive/2011/05/17/2049155.html
+- 104 elementui eltree 展开指定层级的节点
+    - https://github.com/HenryTSZ/zeit/blob/master/source/_posts/based-on-element-ui-encapsulation-tree.md
+    ```javascript
+        expandToLevel(level) {
+          this.$nextTick(() => {
+            const elTreeStore = this.$refs.tree.store
+            const allNodes = elTreeStore._getAllNodes().sort((a, b) => b.level - a.level)
+            console.log('TCL: expandToLevel -> allNodes', allNodes)
+            if (level === 0) {
+              // 展开全部
+              allNodes.forEach(node => {
+                node.expanded = true
+              })
+            } else {
+              allNodes.forEach(node => {
+                if (node.level >= level) {
+                  node.expanded = false
+                } else {
+                  node.expanded = true
+                }
+              })
+            }
+          })
+        },
+    ```
+- 105 发现一个不错的git文档库 准备get一下
+    - https://github.com/HenryTSZ/zeit/tree/master/source/_posts
+- 106 npm使用详解
+    - https://javascript.ruanyifeng.com/nodejs/npm.html
+- 107 阮一峰 git仓库
+    - https://github.com/ruanyf/jstutorial
+### 1月26日
+
 - 53 epg渲染段存在问题
     - 1、视频无法播放
     - 2、轮播无法自动播放
