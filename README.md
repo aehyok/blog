@@ -11,8 +11,6 @@
 
 ### 1月4日
 
-
-
 - 1 vue中将v-for循环组件（通过v-if进行展示），方案修改为component组件，简化代码
 ```javascript
       <div v-for="(item, index) in columnList" :key="index">
@@ -71,8 +69,6 @@
 - 9 vscode中保存自动格式化代码的插件 Prettier - Code formatter
 ---
 ### 1月5日
-
-
 
 - 10 vue keepalive发现一旦设置某个路由为true,后续通过动态设置就是无效的后来发现github官网也有很多人遇到这个问题
     - https://github.com/vuejs/vue-router/issues/811 <br>
@@ -643,8 +639,42 @@
     - https://javascript.ruanyifeng.com/nodejs/npm.html
 - 107 阮一峰 git仓库
     - https://github.com/ruanyf/jstutorial
+    - http://www.ruanyifeng.com/home.html
 ### 1月26日
-
+- 108 一个非常棒的开源项目 H5-Dooring 目前star 3.1k
+    -  开源地址 https://github.com/MrXujiang/h5-Dooring
+    -  基本介绍 http://h5.dooring.cn/doc/zh/guide/
+- 109 npm 发包
+    - https://mp.weixin.qq.com/s/2EL-wzXKwTIhGisUgkr4-g  最重要的一篇
+    - https://my.oschina.net/u/4461771/blog/3188900
+    - https://www.cnblogs.com/zlp-blog/p/10718383.html
+    - https://mp.weixin.qq.com/s/4eE5kHicRK2mVcqEQSM4lg
+- 110 npm publish 发包时异常
+    - 403 Forbidden - PUT https://registry.npmjs.org/aehyok-hello - Forbidden
+      ```javascript
+      npm修改邮箱，要登录邮箱进行验证
+      查看npm 仓库源，确保是npmjs.org
+      ```
+### 1月27日
+- 111 动态import 的用法，动态路由
+    - https://blog.csdn.net/javao_0/article/details/85162458
+    - https://github.com/HenryTSZ/zeit/blob/master/source/_posts/vue-dynamic-router.md
+    - https://router.vuejs.org/zh/guide/essentials/dynamic-matching.html#%E5%93%8D%E5%BA%94%E8%B7%AF%E7%94%B1%E5%8F%82%E6%95%B0%E7%9A%84%E5%8F%98%E5%8C%96
+- 112 document.activeElement.dataset和e.target.dataset问题
+    - https://www.cnblogs.com/xiaoli52qd/p/7857468.html
+### 1月28日
+- 113 mockjs想要在typeScript中使用，安装mockjs之后，需要安装npm install --save @types/mockjs
+    - https://developer.aliyun.com/mirror/npm/package/@types/mockjs
+- 114 vue3.0 .sync 修饰符的替换
+    - https://dev.to/chenxeed/awesome-breaking-changes-in-vue-3-if-you-migrate-from-vue-2-3b98
+- 115 ffmpeg.wasm
+    - https://ffmpegwasm.github.io/
+    - npm install @ffmpeg/ffmpeg
+- 116 css ::v-deep
+    - https://stackoverflow.com/questions/63986278/vue-3-v-deep-usage-as-a-combinator-has-been-deprecated-use-v-deepinner-se/63986379
+    - https://github.com/vuejs/rfcs/blob/master/active-rfcs/0023-scoped-styles-changes.md
+    - vue react npm git webpack typescript nodejs nginx linux
+    - mongodb mysql redis
 - 53 epg渲染段存在问题
     - 1、视频无法播放
     - 2、轮播无法自动播放
