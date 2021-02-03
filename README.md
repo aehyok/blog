@@ -6,8 +6,39 @@
 -  React 可视化框架  https://github.com/brick-design/react-visual-editor
 -  Vue 表单生成器 https://github.com/xaboy/form-create
 -  Vue 通用Table和Form表单 https://github.com/nmxiaowei/avue
+-  Vue React 等 https://mp.weixin.qq.com/s/U3gxd-y5hsLHtaa0MmHlvA
+-  vue Form Generator https://mrhj.gitee.io/form-generator/#/
 
 ## 二月份
+### 2月3日
+- 130 form-create自定义组件如何注册到form-create中使用
+    - http://www.form-create.com/v2/guide/custom-form-component.html#%E7%A4%BA%E4%BE%8B
+### 2月2日
+- 129 Vue.extend动态注册子组件
+    - https://www.cnblogs.com/tnnyang/p/10945399.html
+- 128 go语言学习网站
+    - http://c.biancheng.net/golang/intro/
+- 127 vscode搭建go开发环境
+    - https://juejin.cn/post/6844904122450182151
+    ```javascript
+      //1、go安装包下载
+      https://studygolang.com/dl
+      //2、安装成功cmd命令查看版本号
+      go version
+      //3、设置七牛云代理
+      go env -w GO111MODULE=on
+      go env -w GOPROXY=https://goproxy.cn,direct
+      //4、vscode中下载go扩展插件
+      //5、创建hello.go文件
+      //6、写入代码后编译运行
+      go run helloworld.go
+      //7、将go文件打包成wasm
+      GOOS=js GOARCH=wasm go build -o test.wasm hello.go
+      //8、go打包编译
+      go build -o hello.exe hello.go
+      //9、vscode中Ctrl+Shift+P 安装go插件 全选进行安装
+      https://zhuanlan.zhihu.com/p/320343679
+    ```
 ### 2月1日
 - 126 vue3.0 demo学习 https://github.com/newbee-ltd/vue3-examples
 - 125 npx命令使用详解
@@ -21,6 +52,7 @@
 - 121 vue3源码解读
     - https://github.com/cuixiaorui/mini-vue
 - 120 表单工具可视化拖拽程序
+    - 各种前端轮子  https://mp.weixin.qq.com/s/U3gxd-y5hsLHtaa0MmHlvA
     - https://gitee.com/MTrun/big-screen-vue-datav
 ## 一月份
 ### 1月30日
