@@ -8,9 +8,17 @@
 -  Vue 通用Table和Form表单 https://github.com/nmxiaowei/avue
 -  Vue React 等 https://mp.weixin.qq.com/s/U3gxd-y5hsLHtaa0MmHlvA
 -  vue Form Generator https://mrhj.gitee.io/form-generator/#/
+-  页面可视化搭建的前世今生 https://zhuanlan.zhihu.com/p/37171897
 
 ## 二月份
 ### 2月3日
+- 132 jsonEditor编辑
+    - https://github.com/josdejong/jsoneditor
+    - 暂时使用这个比较方便 https://github.com/yansenlei/VJsoneditor
+    - https://github.com/yansenlei/VJsoneditor/blob/master/src/VueJsoneditor.vue
+    - https://ace.c9.io/
+- 131 全局注册组件
+    - https://segmentfault.com/a/1190000019903495
 - 130 form-create自定义组件如何注册到form-create中使用
     - http://www.form-create.com/v2/guide/custom-form-component.html#%E7%A4%BA%E4%BE%8B
 ### 2月2日
