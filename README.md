@@ -11,6 +11,11 @@
 -  页面可视化搭建的前世今生 https://zhuanlan.zhihu.com/p/37171897
 
 ## 二月份
+### 2月6日
+- 135  Failed to mount component: template or render function not defined
+- https://stackoverflow.com/questions/41983767/vue-template-or-render-function-not-defined-yet-i-am-using-neither
+- https://vuejs.org/v2/guide/installation.html#Runtime-Compiler-vs-Runtime-only
+- https://github.com/JeffreyWay/laravel-mix/issues/198
 ### 2月5日
 - 134 husky使用和介绍
     - http://www.mamicode.com/info-detail-2916910.html
