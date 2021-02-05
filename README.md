@@ -11,6 +11,13 @@
 -  页面可视化搭建的前世今生 https://zhuanlan.zhihu.com/p/37171897
 
 ## 二月份
+### 2月5日
+- 134 husky使用和介绍
+    - http://www.mamicode.com/info-detail-2916910.html
+### 2月4日
+- 133 前端本地存储 GoDb.js
+    - https://juejin.cn/post/6925311938419408904
+    - https://godb-js.github.io/gbah32.html
 ### 2月3日
 - 132 jsonEditor编辑
     - https://github.com/josdejong/jsoneditor
