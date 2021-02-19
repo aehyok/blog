@@ -11,9 +11,14 @@
 -  页面可视化搭建的前世今生 https://zhuanlan.zhihu.com/p/37171897
 
 ## 二月份
+<<<<<<< Updated upstream
 ### 2月11日
 - 136 mac 下npm install 安装失败
     - sudo 加上权限，主要是没有权限访问
+=======
+### 2月18日
+- 136 新年开工第一天，立下一个flag，自律、自律、自律
+>>>>>>> Stashed changes
 ### 2月6日
 - 135  Failed to mount component: template or render function not defined
 - https://stackoverflow.com/questions/41983767/vue-template-or-render-function-not-defined-yet-i-am-using-neither
