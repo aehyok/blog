@@ -11,14 +11,17 @@
 -  页面可视化搭建的前世今生 https://zhuanlan.zhihu.com/p/37171897
 
 ## 二月份
-<<<<<<< Updated upstream
+### 2月20日
+- 139 jquery find返回多个后代元素
+    - https://www.runoob.com/jquery/traversing-find.html
+### 2月19日
+- 138  创建自己的library类库包并使用webpack4.x打包发布到npm
+    - https://www.cnblogs.com/weiqinl/p/9786966.html
+### 2月18日
+- 137 新年开工第一天，立下一个flag，自律、自律、自律
 ### 2月11日
 - 136 mac 下npm install 安装失败
     - sudo 加上权限，主要是没有权限访问
-=======
-### 2月18日
-- 136 新年开工第一天，立下一个flag，自律、自律、自律
->>>>>>> Stashed changes
 ### 2月6日
 - 135  Failed to mount component: template or render function not defined
 - https://stackoverflow.com/questions/41983767/vue-template-or-render-function-not-defined-yet-i-am-using-neither
@@ -31,6 +34,7 @@
 - 133 前端本地存储 GoDb.js
     - https://juejin.cn/post/6925311938419408904
     - https://godb-js.github.io/gbah32.html
+    - https://juejin.cn/post/6918705632757415950
 ### 2月3日
 - 132 jsonEditor编辑
     - https://github.com/josdejong/jsoneditor
