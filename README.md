@@ -9,8 +9,24 @@
 -  Vue React 等 https://mp.weixin.qq.com/s/U3gxd-y5hsLHtaa0MmHlvA
 -  vue Form Generator https://mrhj.gitee.io/form-generator/#/
 -  页面可视化搭建的前世今生 https://zhuanlan.zhihu.com/p/37171897
+-  imgcook  https://github.com/imgcook/imgcook/blob/master/README.zh-CN.md
+-  https://www.imgcook.com/docs?slug=simple-example
 
 ## 二月份
+
+### 2月21日
+
+- 144Element-Pro-Crud
+    -  https://crud.boboooooo.top/
+- 143 vue element npm 发布组件
+    - https://github.com/hwq888/hwq-custom-ui-package
+- 142 imgcook学习
+    -  imgcook  https://github.com/imgcook/imgcook/blob/master/README.zh-CN.md
+    -  https://www.imgcook.com/docs?slug=simple-example
+- 141 廖雪峰的个人博客
+    - https://www.liaoxuefeng.com/wiki/1016959663602400
+- 140 统计vscode使用时长 waketime
+    - https://wakatime.com/vs-code
 ### 2月20日
 - 139 jquery find返回多个后代元素
     - https://www.runoob.com/jquery/traversing-find.html
