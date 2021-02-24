@@ -10,11 +10,17 @@
 -  vue Form Generator https://mrhj.gitee.io/form-generator/#/
 -  页面可视化搭建的前世今生 https://zhuanlan.zhihu.com/p/37171897
 -  imgcook  https://github.com/imgcook/imgcook/blob/master/README.zh-CN.md
--  https://www.imgcook.com/docs?slug=simple-example
 -  https://wakatime.com/dashboard 查看vscode统计时长
 
+- 大数据图标可视化
+    - https://juejin.cn/post/6931708519976534029
+- Form表单生成器
+    - https://github.com/dream2023/f-render
+-
 ## 二月份
 
+### 2月23日
+-- 145 动态form表单 https://juejin.cn/post/6844904173691994119
 ### 2月21日
 
 - 144Element-Pro-Crud
