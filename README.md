@@ -18,9 +18,16 @@
     - https://github.com/dream2023/f-render
 -
 ## 二月份
-
+- 147 babel入门
+    - http://www.ruanyifeng.com/blog/2016/01/babel.html?bsh_bid=1656398345
+- 146 webpack配置详解
+    - 基础篇 https://juejin.cn/post/6844904079219490830
+    - 进阶篇 https://juejin.cn/post/6844904084927938567
+    - 优化篇 https://juejin.cn/post/6844904093463347208
+    - 从入门到真实项目 https://juejin.cn/post/6844903495959576583
+    - 掘金小册子 https://juejin.cn/book/6844733709808041992
 ### 2月23日
--- 145 动态form表单 https://juejin.cn/post/6844904173691994119
+- 145 动态form表单 https://juejin.cn/post/6844904173691994119
 ### 2月21日
 
 - 144Element-Pro-Crud
