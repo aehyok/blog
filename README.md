@@ -18,6 +18,9 @@
     - https://github.com/dream2023/f-render
 
 ## 三月份
+### 3月4日
+- 152 前端qrcode
+    - https://www.runoob.com/w3cnote/javascript-qrcodejs-library.html
 ### 3月1日
 - 151 vue2-leaflet
     - https://vue2-leaflet.netlify.app/quickstart/
