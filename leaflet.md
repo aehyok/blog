@@ -19,3 +19,9 @@
 - http://0x0803.top/2018/05/27/gis-leaflet-tutorials-map-layer/
 
 - https://github.com/8600/leaflet-map
+
+
+
+
+- 1、leaflet pm create和edit
+-  https://stackoverflow.com/questions/53133543/leaflet-pm-edit-mode-get-new-coordinates-within-shape
