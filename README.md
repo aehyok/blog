@@ -18,6 +18,15 @@
     - https://github.com/dream2023/f-render
 
 ## 三月份
+### 3月10日
+- 163 vue2和vue3
+    - 关注实时动态的
+    - vue2很熟悉、
+- 162 有些包package如果npm i 安装失败，那么可以使用yarn再试一下
+- 161 全局css变量设置
+    - https://www.cnblogs.com/happymental/p/12358167.html
+- 160 qiankun微前端 框架
+    - 乾坤官网教程 https://qiankun.umijs.org/zh/cookbook
 ### 3月8日
 - 159 前端拆分
     - https://blog.csdn.net/weixin_39685459/article/details/111724613
@@ -53,6 +62,7 @@
 - 149 微信公众号是否关注
     - https://www.cnblogs.com/Yang777/p/10113077.html
     - https://blog.csdn.net/xialong_927/article/details/90297259
+    - h5跳转公众号 https://blog.csdn.net/qq_35713752/article/details/104362096
 ### 2月27日
 - 148 vue env全局变量
     -  https://www.cnblogs.com/xixiaoxi/p/12593749.html
