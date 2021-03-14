@@ -18,6 +18,16 @@
     - https://github.com/dream2023/f-render
 
 ## 三月份
+
+### 3月12日
+- 166 几种通用的表单验证字段
+    - https://www.cnblogs.com/luoxuemei/p/9295506.html
+- 165 vue $attrs、$listeners 传值
+    - https://www.cnblogs.com/vickylinj/p/13376391.html
+
+### 3月11日
+- 164 vue watch 深度监听
+    - https://www.cnblogs.com/lanleiming/p/13256099.html
 ### 3月10日
 - 163 vue2和vue3
     - 关注实时动态的
@@ -508,7 +518,7 @@
     - google 浏览器中链接  chrome://inspect/#devices----------edge://inspect/#devices
     - 进入命令 ----adb shell
     - 查看包名列表----- pm -l |grep have
-    - 卸载package ---- pm uninstall cn.haveplus.hoteltv
+    - 卸载package ---- pm uninstall cn.haveplus.hoteltv（海屋apk可通过遥控卸载）
     - 退出shell ---- exit
     - 安装apk ----adb install C:\Users\chill\Desktop\havetv-release.apk
     - 开启start ----- adb shell am start cn.haveplus.hoteltv
