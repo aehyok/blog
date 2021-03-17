@@ -18,6 +18,10 @@
     - https://github.com/dream2023/f-render
 
 ## 三月份
+### 3月16日
+- 168 vue 下载文件，通过添加token的方式
+    - https://juejin.cn/post/6844904069958467592
+    - https://www.cnblogs.com/chenjun1/p/11668535.html
 ### 3月15日
 - 167 vue videojs播放视频
     - https://www.cnblogs.com/qdwds/p/11516241.html
