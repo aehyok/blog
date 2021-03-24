@@ -18,10 +18,12 @@
     - https://github.com/dream2023/f-render
 
 
-
 ## 三月份
 ### 3月23日
+- 174 VUE CLI 模式和环境变量
+    - https://cli.vuejs.org/zh/guide/mode-and-env.html#%E6%A8%A1%E5%BC%8F
 - 173 构建简易全景图
+    - 构建过程 https://juejin.cn/post/6927193628724953096
     - https://github.com/loveskyhx/vuePanorama
     - 已fork到 https://github.com/aehyok/vuePanorama
 ### 3月19日
