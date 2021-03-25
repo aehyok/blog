@@ -31,4 +31,9 @@
   git fetch
   //更多基本操作
   //https://www.cnblogs.com/runnerjack/p/9342362.html
+
+  // 10、将某个提交，任何其他分支的commit 合并到当前分支
+  git cherry-pick  commitid  (正常情况直接合并成功，可能存在重复图需要手动解决)
+  git push 正常情况直接push即可，手动解决冲突需要commit 再进行push
+
   ```
