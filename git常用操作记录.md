@@ -36,4 +36,9 @@
   git cherry-pick  commitid  (正常情况直接合并成功，可能存在重复图需要手动解决)
   git push 正常情况直接push即可，手动解决冲突需要commit 再进行push
 
+  // 11、当前分支dev的代码提交push成功，此时想合并到main分支上
+  git checkout main
+  git merge dev
+  git push -u origin main
+
   ```
