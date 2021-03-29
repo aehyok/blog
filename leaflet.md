@@ -24,4 +24,6 @@
 
 
 - 1、leaflet pm create和edit
--  https://stackoverflow.com/questions/53133543/leaflet-pm-edit-mode-get-new-coordinates-within-shape
+- https://stackoverflow.com/questions/53133543/leaflet-pm-edit-mode-get-new-coordinates-within-shape
+- https://vue2-leaflet.netlify.app/components/LWMSTileLayer.html#demo
+- https://leafletjs.com/reference-1.7.1.html#tilelayer-option
