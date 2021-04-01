@@ -17,8 +17,84 @@
 - Form表单生成器
     - https://github.com/dream2023/f-render
 
-## 三月份
+## 四月份
+### 4月1日
+- 188 Easy Sass和Beautify 安装vscode插件，则修改scss样式保存时会将样式自动同步css中
+- 187 centos nginx
+    - https://juejin.cn/post/6844904144235413512
+- 186 密码加密
+    - MD5加密 js-md5
+        ```javascript
+            import md5 from 'js-md5';
+            md5('username'+'userpassword')  // 加密 加盐
+        ```
+    - 前端字符串转码解码
+        ```javascript
+            npm install --save js-base64
+            import { encode, decode } from 'js-base64'
 
+            encode('aehyok')  // 转码
+            decode('ADkjdifewoewe')  //解码
+        ```
+## 三月份
+### 3月31日
+- 185 富文本框wangeditor
+    - https://www.wangeditor.com/
+- 184 全局监测录入框事件
+    ```
+        // 全局使用
+        import '@/utils/init'
+        // xss防御攻击输入框失去焦点
+        document.addEventListener('blur', function(e) {
+        if(['input', 'textarea'].includes(e.target.tagName.toLowerCase())) {
+            console.log(e, e.target.value, 'e.target.value')
+            e.target.value =replaceStr(e.target.value)
+            e.focus()
+        }
+        }, true)
+        function replaceStr(a) {
+        a = a.replace(/(<br[^>]*>| |\s*)/g, '')
+            .replace(/&/g,"")
+            .replace(/"/g,"")
+            .replace(/'/g,"")
+            .replace(/</g,"")
+            .replace(/>/g,"");
+        return a
+        }
+    ```
+
+    // 可以统一处理传递的data参数，加密或者请求头
+
+    ```javascript
+    instance.interceptors.request.use(
+    request => {
+        const userInfo = localStorage.loginInfo
+        ? JSON.parse(localStorage.loginInfo)
+        : {}
+        request.headers = {
+        Authorization: userInfo.token,
+        'Content-Type': 'application/json',
+        }
+
+        if(request.data) {
+        request.data =replaceStr(request.data)
+        }
+        console.log(request, 's---------request')
+        return request
+    },
+    error => Promise.reject(error),
+    )
+    ```
+### 3月30日
+- 183 nuxt.js服务端渲染
+    - https://www.nuxtjs.cn/guide
+- 182 vue xss攻击
+    - https://blog.csdn.net/weixin_36908494/article/details/101268583
+    - https://blog.csdn.net/u011140116/article/details/107994191
+    - https://juejin.cn/post/6844904102137167880#heading-19
+### 3月28日
+- 181 搭建nuxt.js 服务端渲染
+    - https://www.nuxtjs.cn/guide
 ### 3月27日
 - 180 搭建地图加载底图服务
     - https://zhuanlan.zhihu.com/p/72154608
