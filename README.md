@@ -18,7 +18,37 @@
     - https://github.com/dream2023/f-render
 
 ## 四月份
+
+### 4月2日
+- 193 nodejs安装
+    - https://blog.csdn.net/weixin_42940467/article/details/113866473
+      ```javascript
+      // 1、可从官网下载nodejs安装包
+      // 2、然后通过xftp上传到服务器
+      // 3、解压文件
+      tar -xvf node-v12.14.1-linux-x64.tar.xz
+      // 4、复制文件夹到指定位置
+      sudo mv ./node-v12.14.1-linux-x64 /usr/local/node
+      // 5、为node和npm创建快捷方式
+      sudo ln -s /usr/local/node/bin/node /usr/bin/node
+      sudo ln -s /usr/local/node/bin/npm /usr/bin/npm
+      // 6、查看版本确认安装是否成功
+      node -v   npm -v
+      ```
+- 192 linux常用命令使用
+    - https://juejin.cn/post/6938385978004340744
+- 191 xftp 设置，然后xshell就可以访问
+    - https://juejin.cn/post/6844903940262199309
+    - https://www.jb51.net/article/127411.htm
+    - https://blog.csdn.net/lwg_1540652358/article/details/84679659
+- 190 nginx
+    - https://juejin.cn/post/6844903701459501070
+    - https://juejin.cn/post/6844904144235413512
 ### 4月1日
+- 189 keepalive
+  - https://www.dazhuanlan.com/2019/11/19/5dd2ee2bda35a/
+  - https://juejin.cn/post/6844903846901186574
+  - https://juejin.cn/post/6844903649517240328
 - 188 Easy Sass和Beautify 安装vscode插件，则修改scss样式保存时会将样式自动同步css中
 - 187 centos nginx
     - https://juejin.cn/post/6844904144235413512
