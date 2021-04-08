@@ -19,6 +19,52 @@
 
 ## 四月份
 
+### 4月7日
+- 197 flex简单布局
+    - https://marlous.github.io/2019/05/06/%E5%89%8D%E7%AB%AF-flex-%E5%B8%83%E5%B1%80%E6%96%B9%E6%B3%95%E5%B0%8F%E7%BB%93/
+- 196 微信小程序跳转到小程序
+    - https://www.cnblogs.com/strong514/p/12470365.html
+- 195 vue- vnode
+    ```javascript
+    Vue.mixin({
+        beforeRouteLeave:function(to, from, next){
+            console.log(this.$vnode, window)
+            if (from && from.meta.rank && to.meta.rank && from.meta.rank>to.meta.rank){
+                console.log(this.$vnode,window, '-----------全局beforeRouteLeave')
+                if (this.$vnode && this.$vnode.data.keepAlive)
+                {
+                if (this.$vnode.parent && this.$vnode.parent.componentInstance && this.$vnode.parent.componentInstance.cache)
+                {
+                    if (this.$vnode.componentOptions)
+                    {
+                        var key = this.$vnode.key == null
+                                    ? this.$vnode.componentOptions.Ctor.cid + (this.$vnode.componentOptions.tag ? `::${this.$vnode.componentOptions.tag}` : '')
+                                    : this.$vnode.key;
+                        var cache = this.$vnode.parent.componentInstance.cache;
+                        var keys  = this.$vnode.parent.componentInstance.keys;
+                        console.log(cache, 'cache-keys')
+                        if (cache[key])
+                        {
+                            if (keys.length) {
+                                var index = keys.indexOf(key);
+                                if (index > -1) {
+                                    keys.splice(index, 1);
+                                }
+                            }
+                            delete cache[key];
+                        }
+                    }
+                }
+                }
+                this.$destroy();
+            }
+            next();
+        },
+    });
+    ```
+- 194 nginx vue 404 not found
+    - https://blog.csdn.net/onlysunnyboy/article/details/75270533
+
 ### 4月2日
 - 193 nodejs安装
     - https://blog.csdn.net/weixin_42940467/article/details/113866473
