@@ -41,4 +41,17 @@
   git merge dev
   git push -u origin main
 
+  // 12、修改文件名会忽略大小写
+  git config core.ignorecase（查看是否忽略大小写） true则设置了忽略
+  git config core.ignorecase false  后面加上false则直接可设置不忽略
+
+  // 13、修改文件夹名字大小写的问题
+  git rm Test (修改前先将Test文件夹备份并修改为TestTemp<一个临时文件夹名字而已>,
+  // 然后执行命令，再将备份文件夹名字修改为需要的文件夹即可
+
+
+  // 14、查看分支
+  git branch    查看本地分支
+  git branch -a 查看远程分支
+
   ```

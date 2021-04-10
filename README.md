@@ -18,10 +18,57 @@
     - https://github.com/dream2023/f-render
 
 ## 四月份
+### 4月10日
+- 205 vue style绑定样式
+    ```javascript
+        :style="{backgroundImage: 'url(' + item.url + ')'}"
+    ```
+- 204 vue cli public
+    - 文件夹下面可以放置静态的图片资源和json文件
+    - 注意在调用的时候不要在路径前面添加"/"
+    ```javascript
+        // 1、axios调用json数据
+         this.$axios.get('data/001/family.json').then(res=>{
+           console.log('this.$axios.get', res)
+         })
+        // 2、image路径 前面不要加斜杠了
+        bannerData:[
+            {imageUrl: 'images/banner/2.jpg'},
+            {imageUrl: 'images/banner/1.png'},
+            {imageUrl: 'images/banner/3.jpg'}
+        ],
 
-### 4月7日
+    ```
+### 4月9日
+- 203 vue cli public文件夹
+    - https://cli.vuejs.org/zh/guide/html-and-static-assets.html#public-%E6%96%87%E4%BB%B6%E5%A4%B9
+    - https://www.cnblogs.com/makalochen/p/13984699.html
+- 202 window.location详解
+    - https://www.cnblogs.com/gopark/p/10191577.html
+- 201 打包后public下的静态文件目录找不到
+    - https://www.cnblogs.com/wzcsqaws/p/11283228.html
+- 200 图片区域area
+  - https://www.w3school.com.cn/tags/tag_area.asp
+  - https://www.w3school.com.cn/tiy/t.asp?f=eg_html_areamap
+- 199 路由返回
+    ```javascript
+        //this.$route是当前页面的路由，而this.$router是当前路由器，包含所有路由的信息
+        1、vue路由中的返回
+        this.$router.go(-1)
+        2、其中this.$router也包含 history中的路由信息
+    ```
+- 198 vscode设置中文 https://blog.csdn.net/qq_30068487/article/details/82589347
+    ```javascript
+        1、vscode中 Ctrl+Shift+p
+        2、搜索框中输入 configure display language
+        3、选择zh-cn中文语言包
+        4、如果还是中文，在Ctrl+Shift+x
+        5、输入chinese中文语言包安装重启
+    ```
+### 4月8日
 - 197 flex简单布局
     - https://marlous.github.io/2019/05/06/%E5%89%8D%E7%AB%AF-flex-%E5%B8%83%E5%B1%80%E6%96%B9%E6%B3%95%E5%B0%8F%E7%BB%93/
+### 4月7日
 - 196 微信小程序跳转到小程序
     - https://www.cnblogs.com/strong514/p/12470365.html
 - 195 vue- vnode
