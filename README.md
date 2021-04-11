@@ -187,8 +187,10 @@
     - https://www.wangeditor.com/
 - 184 全局监测录入框事件
     ```
-        // 全局使用
+        // 全局使用 引入init
         import '@/utils/init'
+        
+        //init.js文件内容
         // xss防御攻击输入框失去焦点
         document.addEventListener('blur', function(e) {
         if(['input', 'textarea'].includes(e.target.tagName.toLowerCase())) {
