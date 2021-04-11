@@ -18,6 +18,28 @@
     - https://github.com/dream2023/f-render
 
 ## 四月份
+### 4月11日
+- 206 即偶数元素css给最后的元素添加样式
+    ```javascript
+        // 第二个元素，里面换成n就是第n个元素
+        div:nth-child(2)
+        {
+        background:#ff0000;
+        }
+        // 选中最后一个奇数
+        div:nth-child(odd):last-child {
+            margin-bottom: 0;
+        }
+        // 选中最后一个偶数
+        div:nth-child(even):last-child {
+            margin-bottom: 0;
+        }
+        // 3的倍数元素的样式，后面的0可以换成m,就是3倍再加m
+        p:nth-child(3n+0)
+        {
+        background:#ff0000;
+        }
+    ```
 ### 4月10日
 - 205 vue style绑定样式
     ```javascript
