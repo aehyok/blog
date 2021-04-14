@@ -18,6 +18,11 @@
     - https://github.com/dream2023/f-render
 
 ## 四月份
+### 4月14日
+- 208 this.$set
+    - https://juejin.cn/post/6844903901175496711
+- 207 vue首页加载慢，路由懒加载、组件懒加载
+    - https://blog.csdn.net/mataodehtml/article/details/108867545
 ### 4月11日
 - 206 即偶数元素css给最后的元素添加样式
     ```javascript
@@ -189,7 +194,7 @@
     ```
         // 全局使用 引入init
         import '@/utils/init'
-        
+
         //init.js文件内容
         // xss防御攻击输入框失去焦点
         document.addEventListener('blur', function(e) {
@@ -321,7 +326,6 @@
     - https://github.com/modood/Administrative-divisions-of-China
 - 156 vue-drag-resize
     - https://github.com/kirillmurashov/vue-drag-resize
--
 - 155 map-demo
     - https://malagis.com/map-demo/leaflet/note-5.html
 ### 3月5日
