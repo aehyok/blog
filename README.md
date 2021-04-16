@@ -18,6 +18,22 @@
     - https://github.com/dream2023/f-render
 
 ## 四月份
+### 4月16日
+- 212 vue vite public下图片路径的问题
+    ```javascript
+        public 下面的文件路径前要加斜杠 '/'
+        参考 -204下webpack打包public路径设置
+    ```
+### 4月15日
+- 211 微信小程序开发
+    - https://uniapp.dcloud.io/
+    - https://vant-contrib.gitee.io/vant-weapp/#/home
+    - https://blog.csdn.net/YNEWA/article/details/106056610
+    - https://liubing.me/uniapp-use-vant-weapp.html
+- 210 vue jsonp插件跨域请求数据使用
+    - https://www.npmjs.com/package/vue-jsonp
+- 209 webpack plugin 各种插件
+    - https://webpack.html.cn/plugins/
 ### 4月14日
 - 208 this.$set
     - https://juejin.cn/post/6844903901175496711
