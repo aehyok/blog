@@ -54,4 +54,8 @@
   git branch    查看本地分支
   git branch -a 查看远程分支
 
+  //15、add commit push 提交文件
+  git add .
+  git commit -m '提交相关信息'
+  git push origin develop   或者  git push origin develop:develop
   ```
