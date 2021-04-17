@@ -18,6 +18,27 @@
     - https://github.com/dream2023/f-render
 
 ## 四月份
+### 4月16日
+- 212 vue vite public下图片路径的问题
+    ```javascript
+        public 下面的文件路径前要加斜杠 '/'
+        参考 -204下webpack打包public路径设置
+    ```
+### 4月15日
+- 211 微信小程序开发
+    - https://uniapp.dcloud.io/
+    - https://vant-contrib.gitee.io/vant-weapp/#/home
+    - https://blog.csdn.net/YNEWA/article/details/106056610
+    - https://liubing.me/uniapp-use-vant-weapp.html
+- 210 vue jsonp插件跨域请求数据使用
+    - https://www.npmjs.com/package/vue-jsonp
+- 209 webpack plugin 各种插件
+    - https://webpack.html.cn/plugins/
+### 4月14日
+- 208 this.$set
+    - https://juejin.cn/post/6844903901175496711
+- 207 vue首页加载慢，路由懒加载、组件懒加载
+    - https://blog.csdn.net/mataodehtml/article/details/108867545
 ### 4月11日
 - 206 即偶数元素css给最后的元素添加样式
     ```javascript
@@ -189,7 +210,7 @@
     ```
         // 全局使用 引入init
         import '@/utils/init'
-        
+
         //init.js文件内容
         // xss防御攻击输入框失去焦点
         document.addEventListener('blur', function(e) {
@@ -321,7 +342,6 @@
     - https://github.com/modood/Administrative-divisions-of-China
 - 156 vue-drag-resize
     - https://github.com/kirillmurashov/vue-drag-resize
--
 - 155 map-demo
     - https://malagis.com/map-demo/leaflet/note-5.html
 ### 3月5日

@@ -49,13 +49,17 @@
   git rm Test (修改前先将Test文件夹备份并修改为TestTemp<一个临时文件夹名字而已>,
   // 然后执行命令，再将备份文件夹名字修改为需要的文件夹即可
 
-
   // 14、查看分支
   git branch    查看本地分支
-  git branch -a 查看远程分支
+  git branch -a 查看本地分支和远程分支，如果不存在需要git fetch一下
+  git branch -r 查看远程分支
 
   //15、add commit push 提交文件
   git add .
   git commit -m '提交相关信息'
   git push origin develop   或者  git push origin develop:develop
+  // 15、 git config 配置提交用户名和用户邮箱
+  git config --global user.name "aehyok"
+  git config --global user.email "aehyok@163.com"
+  git config -l 配置好后可通过这个来查看
   ```
