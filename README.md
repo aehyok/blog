@@ -21,6 +21,12 @@
     - https://segmentfault.com/a/1190000039185220
     - https://qiankun.umijs.org/zh/api
 ## 四月份
+### 4月20日
+- vite mock
+    - https://github.com/anncwb/vite-plugin-mock/blob/HEAD/README.zh_CN.md
+- eslint 规范
+    - https://github.com/lin-123/javascript
+    - https://github.com/airbnb/javascript#translation
 ### 4月19日
 - mitt 事件总线 https://blog.csdn.net/fuweipeng2012/article/details/113812794
 - vue3 替代vue2中.sync 的v-model
