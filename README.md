@@ -17,10 +17,31 @@
 - Form表单生成器
     - https://github.com/dream2023/f-render
 
+- 微前端
+    - https://segmentfault.com/a/1190000039185220
+    - https://qiankun.umijs.org/zh/api
 ## 四月份
+### 4月19日
+- mitt 事件总线 https://blog.csdn.net/fuweipeng2012/article/details/113812794
+- vue3 替代vue2中.sync 的v-model
+    - https://segmentfault.com/a/1190000023911894
+    - https://blog.csdn.net/wk843620202/article/details/108613493
+- vue3 provide和inject 传值
+    - https://blog.csdn.net/xuhua32100/article/details/113518217
+- vue3 useRoute和useStore的使用
+    - http://lanwuyaojiu.cn/blogm/blogart-110.html
 ### 4月18日
 - 222 css module
     - https://github.com/FrankKai/FrankKai.github.io/issues/45
+### 4月17日
+- 214 随机数字生成
+    ```javascript
+    Math.floor(Math.random() * 10);		// 返回 0 至 9 之间的数
+    Math.floor(Math.random() * 11);
+    ```
+- 213 适配大屏幕解决方案
+    - lib-flexible库
+    - https://www.cnblogs.com/lyzg/p/5058356.html
 ### 4月16日
 - 212 vue vite public下图片路径的问题
     ```javascript

@@ -62,4 +62,8 @@
   git config --global user.name "aehyok"
   git config --global user.email "aehyok@163.com"
   git config -l 配置好后可通过这个来查看
+
+  // 16、修改分支名称
+  git branch -m develop-lqm   // 修改本地分支当前分支的名称
+  git branch -m develop-lam develop-lqm   // 原分支名称  新分支名称
   ```
