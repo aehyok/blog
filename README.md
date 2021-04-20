@@ -22,10 +22,13 @@
 
 
 ## 四月份
+###
+- typescript tsconfig.json
+    - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ### 4月18日
 - 225 vue3 vite2模版项目配置
     - https://juejin.cn/post/6951649464637636622#heading-14
-    
+
 - 224 EditorConfig for VS Code  插件
     - JetBrains 系列（WebStorm、IntelliJ IDEA 等）则不用额外安装插件，可直接使用 EditorConfig 配置。
 - 223 vite 中文网 https://www.pipipi.net/vite/
