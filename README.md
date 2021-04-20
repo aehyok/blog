@@ -16,11 +16,22 @@
     - https://juejin.cn/post/6931708519976534029
 - Form表单生成器
     - https://github.com/dream2023/f-render
+- qiankun 乾坤微前端
+    - https://blog.csdn.net/Ag_wenbi/article/details/114250475
+    - https://qiankun.umijs.org/zh
+
 
 ## 四月份
 ### 4月18日
+- 225 vue3 vite2模版项目配置
+    - https://juejin.cn/post/6951649464637636622#heading-14
+    
+- 224 EditorConfig for VS Code  插件
+    - JetBrains 系列（WebStorm、IntelliJ IDEA 等）则不用额外安装插件，可直接使用 EditorConfig 配置。
+- 223 vite 中文网 https://www.pipipi.net/vite/
 - 222 css module
     - https://github.com/FrankKai/FrankKai.github.io/issues/45
+    - https://vue-loader.vuejs.org/zh/guide/css-modules.html#%E7%94%A8%E6%B3%95
 ### 4月16日
 - 212 vue vite public下图片路径的问题
     ```javascript
