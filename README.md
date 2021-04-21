@@ -26,31 +26,31 @@
     - https://qiankun.umijs.org/zh/api
 ## 四月份
 ### 4月20日
-- vite mock
+- 225 vite mock
     - https://github.com/anncwb/vite-plugin-mock/blob/HEAD/README.zh_CN.md
-- eslint 规范
+- 224 eslint 规范
     - https://github.com/lin-123/javascript
     - https://github.com/airbnb/javascript#translation
 ### 4月19日
-- mitt 事件总线 https://blog.csdn.net/fuweipeng2012/article/details/113812794
-- vue3 替代vue2中.sync 的v-model
+- 223 mitt 事件总线 https://blog.csdn.net/fuweipeng2012/article/details/113812794
+- 222 vue3 替代vue2中.sync 的v-model
     - https://segmentfault.com/a/1190000023911894
     - https://blog.csdn.net/wk843620202/article/details/108613493
-- vue3 provide和inject 传值
+- 221 vue3 provide和inject 传值
     - https://blog.csdn.net/xuhua32100/article/details/113518217
-- vue3 useRoute和useStore的使用
+- 220 vue3 useRoute和useStore的使用
     - http://lanwuyaojiu.cn/blogm/blogart-110.html
 ###
-- typescript tsconfig.json
+- 219 typescript tsconfig.json
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ### 4月18日
-- 225 vue3 vite2模版项目配置
+- 218 vue3 vite2模版项目配置
     - https://juejin.cn/post/6951649464637636622#heading-14
 
-- 224 EditorConfig for VS Code  插件
+- 217 EditorConfig for VS Code  插件
     - JetBrains 系列（WebStorm、IntelliJ IDEA 等）则不用额外安装插件，可直接使用 EditorConfig 配置。
-- 223 vite 中文网 https://www.pipipi.net/vite/
-- 222 css module
+- 216 vite 中文网 https://www.pipipi.net/vite/
+- 215 css module
     - https://github.com/FrankKai/FrankKai.github.io/issues/45
 ### 4月17日
 - 214 随机数字生成
