@@ -24,7 +24,16 @@
 - 微前端
     - https://segmentfault.com/a/1190000039185220
     - https://qiankun.umijs.org/zh/api
+    - https://juejin.cn/post/6844904158085021704
+    - Prettier配置相关
+        -
+    - TypeScript 相关配置
+        - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 四月份
+### 4月21日
+- 226 Husky 提升代码质量
+    - https://www.cnblogs.com/xhyccc/p/13941335.html
+    -
 ### 4月20日
 - 225 vite mock
     - https://github.com/anncwb/vite-plugin-mock/blob/HEAD/README.zh_CN.md
