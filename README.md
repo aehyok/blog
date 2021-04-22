@@ -27,6 +27,7 @@
     - 乾坤官网介绍   https://qiankun.umijs.org/zh/api
     - 搭建框架vue3   https://juejin.cn/post/6951649464637636622
     - 乾坤全局函数   https://www.freesion.com/article/1714630234/
+    - 路由设置      https://blog.csdn.net/qq_33396780/article/details/110694871
     - https://segmentfault.com/a/1190000039185220
     - https://juejin.cn/post/6844904158085021704
     - Prettier配置相关
