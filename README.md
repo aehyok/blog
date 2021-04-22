@@ -19,21 +19,37 @@
 - qiankun 乾坤微前端
     - https://blog.csdn.net/Ag_wenbi/article/details/114250475
     - https://qiankun.umijs.org/zh
-
-
+    - https://www.freesion.com/article/1714630234/
 - 微前端
+    - 打包npm工具包  https://github.com/aehyok/outils
+    - 打包npm组件包  https://mp.weixin.qq.com/s/2EL-wzXKwTIhGisUgkr4-g
+    - 通用配置数据   http://rap2.taobao.org/ (图片路径需要自己上传)
+    - 乾坤官网介绍   https://qiankun.umijs.org/zh/api
+    - 搭建框架vue3   https://juejin.cn/post/6951649464637636622
+    - 乾坤全局函数   https://www.freesion.com/article/1714630234/
     - https://segmentfault.com/a/1190000039185220
-    - https://qiankun.umijs.org/zh/api
     - https://juejin.cn/post/6844904158085021704
     - Prettier配置相关
         -
     - TypeScript 相关配置
         - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 四月份
+### 4月22日
+- 228 docker中mysql的控制
+    - https://www.cnblogs.com/jiefu/p/12204555.html
+- 227 docker安装
+    - https://juejin.cn/post/6950558227490668557
+    - docker安装和docker compose安装
+        - https://get.daocloud.io/
+    - rap2安装
+        - https://github.com/thx/rap2-delos
+    - docker-compose 安装和卸载
+        - https://www.cnblogs.com/zhihuifan10/articles/11121110.html
+    - docker 安装和卸载
+        - https://www.cnblogs.com/qinxu/p/10032176.html
 ### 4月21日
 - 226 Husky 提升代码质量
     - https://www.cnblogs.com/xhyccc/p/13941335.html
-    -
 ### 4月20日
 - 225 vite mock
     - https://github.com/anncwb/vite-plugin-mock/blob/HEAD/README.zh_CN.md
