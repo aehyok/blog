@@ -27,8 +27,14 @@
     - 乾坤官网介绍   https://qiankun.umijs.org/zh/api
     - 搭建框架vue3   https://juejin.cn/post/6951649464637636622
     - 乾坤全局函数   https://www.freesion.com/article/1714630234/
+    - 乾坤路由跳转   https://www.codenong.com/cs109313017/
     - https://segmentfault.com/a/1190000039185220
     - https://juejin.cn/post/6844904158085021704
+    - SSO cookie共享 https://www.cnblogs.com/sw008/p/11054301.html
+    - SSO三种方式  https://www.cnblogs.com/yonghengzh/p/13712729.html
+
+- xShell常用指令
+    - https://www.cnblogs.com/qq350760546/p/7890680.html
     - Prettier配置相关
         -
     - TypeScript 相关配置
