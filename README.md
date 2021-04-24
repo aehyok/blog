@@ -40,6 +40,13 @@
     - TypeScript 相关配置
         - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 四月份
+### 4月24日
+- 231 uni-app pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+- 230 微信公众号H5页面调用微信登录全过程
+    - 详见  ---微信公众号H5调用微信登录全过程
+    - https://www.cnblogs.com/0201zcr/p/5131602.html
+- 229 微信扫描二维码
+    - https://mp.weixin.qq.com/s/1A30nQNg4j4GwLG1n91DCw
 ### 4月22日
 - 228 docker中mysql的控制
     - https://www.cnblogs.com/jiefu/p/12204555.html
