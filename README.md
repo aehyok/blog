@@ -40,6 +40,9 @@
     - TypeScript 相关配置
         - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 四月份
+### 4月29日
+- 234 wpf 嵌入chrome浏览器
+    - https://github.com/cefsharp/CefSharp/tree/master/CefSharp.Wpf.Example
 ### 4月25日
 - 233 HBuilderX引入vant
     - https://www.freesion.com/article/3159591401/
