@@ -41,6 +41,8 @@
         - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 四月份
 ### 4月25日
+- 234 vue3 学习笔记
+    - https://www.cnblogs.com/sjie/p/14075641.html#%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-computed
 - 233 HBuilderX引入vant
     - https://www.freesion.com/article/3159591401/
 ### 4月24日
