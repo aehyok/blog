@@ -44,6 +44,8 @@
 - 234 wpf 嵌入chrome浏览器
     - https://github.com/cefsharp/CefSharp/tree/master/CefSharp.Wpf.Example
 ### 4月25日
+- 234 vue3 学习笔记
+    - https://www.cnblogs.com/sjie/p/14075641.html#%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-computed
 - 233 HBuilderX引入vant
     - https://www.freesion.com/article/3159591401/
 ### 4月24日
