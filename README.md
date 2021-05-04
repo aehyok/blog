@@ -16,6 +16,9 @@
     - https://juejin.cn/post/6931708519976534029
 - Form表单生成器
     - https://github.com/dream2023/f-render
+- Table配置器
+    - https://xuliangzhan_admin.gitee.io/vxe-table/#/table/base/basic
+    -     
 - qiankun 乾坤微前端
     - https://blog.csdn.net/Ag_wenbi/article/details/114250475
     - https://qiankun.umijs.org/zh
@@ -39,9 +42,30 @@
     - Prettier配置相关
     - TypeScript 相关配置
         - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
+## 五月份
+### 5月5日
+- 242 i18n 多语言翻译
+    - https://www.cnblogs.com/xintao/p/11593395.html
+    - https://kazupon.github.io/vue-i18n/
+- 241 vueuse.org 
+    - https://vueuse.org/guide.html#usage-example
+- 240 esbuild编译和commonjs
+    -  esbuild https://www.leiue.com/what-is-es-modules
+    - esbuild和commonjs 比较 https://zhuanlan.zhihu.com/p/161015809
+
+- 239 vite 开启https
+    - vite.config.js中 https: true 属性开启
+- 238 webpack devServer配置开启https
+    - https://blog.csdn.net/dclnet/article/details/96316401
+- 237 json美化工具
+    - https://github.com/leezng/vue-json-pretty
+### 5月1日
+- 236 axios请求缓存的处理
+    - https://www.wodecun.com/blog/7931.html
+    - 缓存库 https://github.com/RasCarlito/axios-cache-adapter
 ## 四月份
 ### 4月29日
-- 234 wpf 嵌入chrome浏览器
+- 235 wpf 嵌入chrome浏览器
     - https://github.com/cefsharp/CefSharp/tree/master/CefSharp.Wpf.Example
 ### 4月25日
 - 234 vue3 学习笔记

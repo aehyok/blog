@@ -99,3 +99,20 @@
    ```javascript
     git checkout main  // 切换到基础分支
     git checkout -b dev //根据 main分支，创建dev分支并切换到dev分支
+    ```
+   - 1.20、 创建项目后如何提交到仓库
+   ```javascript
+    git init  // 初始化一个项目
+    // 创建项目文件后
+    git add . // 将添加或修改的文件提交到暂存区
+    git add -u  // 将监控已经被add进暂存区的文件，会将被修改的文件再次提交到暂存区
+    git add -A // 则是git add .和 git add -u 两个命令的集合
+    git commit -m ' feat: 初始化项目'   // 提交到本地仓库
+    git remote add github.origin https://github.com/aehyok/demo.git   // 当然也可以使用ssh 链接 
+    git push --set-upstream origin main  // 设置本地分支追踪远程分支、、、之后就可以直接git push
+   ``` 
+   - 1.21、同样一个本地仓库可以设置多个远程仓库，然后通过不同的git push github.origin
+   ```javascript
+    git push github.origin   // 推送到github
+    git push gitee.origin    //  推送到gitee
+   ```
