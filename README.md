@@ -43,6 +43,9 @@
     - TypeScript 相关配置
         - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 五月份
+### 5月6日
+- 243 vue template 多个根元素波浪线提示
+    - https://blog.csdn.net/weixin_43245095/article/details/112514687
 ### 5月5日
 - 242 i18n 多语言翻译
     - https://www.cnblogs.com/xintao/p/11593395.html
