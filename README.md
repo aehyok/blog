@@ -43,6 +43,51 @@
     - TypeScript 相关配置
         - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 五月份
+### 5月9日
+- 247 css样式
+    ```javascript
+        // 鼠标悬浮于a标签选择器上的样式变化
+        a:hover
+        { 
+        background-color:yellow;
+        }
+
+        // 选择器为活动的链接设置的样式
+        a:active
+        {
+        background-color:yellow;
+        }
+    ```
+### 5月8日
+- 246 promise 防抖和节流
+    - https://coding.imooc.com/learn/questiondetail/194653.html
+    - 见63
+- 245 xgplayer 西瓜视频播放器
+    - https://v2.h5player.bytedance.com/
+    - https://github.com/bytedance/xgplayer
+- 244 灰色模式和色弱模式
+    ```javascript
+        // 灰色模式
+        .html-grey {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: url("data:image/svg+xml;utf8,#grayscale");
+        filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+        -webkit-filter: grayscale(1);
+        }
+
+        // 色弱模式
+        .html-weakness {
+        filter: invert(80%);
+        -webkit-filter: invert(80%);
+        -moz-filter: invert(80%);
+        -ms-filter: invert(80%);
+        -o-filter: invert(80%);
+        }
+    ```
 ### 5月6日
 - 243 vue template 多个根元素波浪线提示
     - https://blog.csdn.net/weixin_43245095/article/details/112514687
