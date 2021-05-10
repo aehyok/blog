@@ -18,7 +18,7 @@
     - https://github.com/dream2023/f-render
 - Table配置器
     - https://xuliangzhan_admin.gitee.io/vxe-table/#/table/base/basic
-    -     
+    -
 - qiankun 乾坤微前端
     - https://blog.csdn.net/Ag_wenbi/article/details/114250475
     - https://qiankun.umijs.org/zh
@@ -43,12 +43,15 @@
     - TypeScript 相关配置
         - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 五月份
+### 5月10日
+ -248 window 生成和查看ssh
+
 ### 5月9日
 - 247 css样式
     ```javascript
         // 鼠标悬浮于a标签选择器上的样式变化
         a:hover
-        { 
+        {
         background-color:yellow;
         }
 
@@ -95,7 +98,7 @@
 - 242 i18n 多语言翻译
     - https://www.cnblogs.com/xintao/p/11593395.html
     - https://kazupon.github.io/vue-i18n/
-- 241 vueuse.org 
+- 241 vueuse.org
     - https://vueuse.org/guide.html#usage-example
 - 240 esbuild编译和commonjs
     -  esbuild https://www.leiue.com/what-is-es-modules
