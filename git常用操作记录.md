@@ -55,6 +55,9 @@
     ```javascript
     // 当然也可以使用ssh 链接
     git remote add github.origin https://github.com/aehyok/demo.git
+
+    // 移除远程仓库，默认名称为origin
+     git remote rm origin
     ```
 - 1.7、 推送到远程服务器（注意一点，首次推送要设置追踪）
     ```javascript
