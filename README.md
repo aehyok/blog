@@ -20,8 +20,9 @@
   - https://xuliangzhan_admin.gitee.io/vxe-table/#/table/base/basic
 - qiankun 乾坤微前端
   - https://blog.csdn.net/Ag_wenbi/article/details/114250475
-  - https://qiankun.umijs.org/zh
-  - https://www.freesion.com/article/1714630234/
+  - 官网 https://qiankun.umijs.org/zh
+  - 部署配置 https://qiankun.umijs.org/zh/cookbook#%E5%A6%82%E4%BD%95%E9%83%A8%E7%BD%B2
+  - 父子应用通信，子子应用通信 https://www.freesion.com/article/1714630234/
 - 微前端
 
   - 打包 npm 工具包 https://github.com/aehyok/outils
@@ -32,7 +33,7 @@
   - 乾坤全局函数 https://www.freesion.com/article/1714630234/
   - 乾坤路由跳转 https://www.codenong.com/cs109313017/
   - 路由设置 https://blog.csdn.net/qq_33396780/article/details/110694871
-  - https://segmentfault.com/a/1190000039185220
+  - 乾坤综合性文章 https://segmentfault.com/a/1190000039185220
   - https://juejin.cn/post/6844904158085021704
   - SSO cookie 共享 https://www.cnblogs.com/sw008/p/11054301.html
   - SSO 三种方式 https://www.cnblogs.com/yonghengzh/p/13712729.html
@@ -44,6 +45,22 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 五月份
+
+### 5 月 12 日
+
+- webpack 通过 less-loader 设置 css 前缀
+
+```javascript
+  {
+    loader: 'less-loader',
+    options: {
+      modifyVars: {
+        '@ant-prefix': 'yourPrefix',
+      },
+      javascriptEnabled: true,
+    },
+  }
+```
 
 ### 5 月 11 日
 
