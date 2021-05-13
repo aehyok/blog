@@ -28,6 +28,7 @@
   - 打包 npm 工具包 https://github.com/aehyok/outils
   - 打包 npm 组件包 https://mp.weixin.qq.com/s/2EL-wzXKwTIhGisUgkr4-g
   - 通用配置数据 http://rap2.taobao.org/ (图片路径需要自己上传)
+  - 接口文档配置 https://hellosean1025.github.io/yapi/index.html
   - 乾坤官网介绍 https://qiankun.umijs.org/zh/api
   - 搭建框架 vue3 https://juejin.cn/post/6951649464637636622
   - 乾坤全局函数 https://www.freesion.com/article/1714630234/
@@ -46,21 +47,44 @@
 
 ## 五月份
 
+### 5 月 13 日
+
+- 253 eslintrc.js 详解
+  - https://www.cnblogs.com/ye-hcj/p/7069505.html
+- 252 vue.config.js 先取消 eslint
+
+  ```javascript
+  // 是否开启eslint保存检测 ,它的有效值为 true || false || 'error'
+  module.exports = {
+    lintOnSave: true,
+  };
+  ```
+
+- 251 es6 module 和 commonjs
+  - export 和 import https://blog.csdn.net/dt1991524/article/details/86497449
+  - 深入 CommonJs 与 ES6 Module https://mp.weixin.qq.com/s/U2_hnwLTkCe-pm6f5z4nMg
+  -
+- 250 eslint 初始化
+  ```javascript
+    npm install eslint --save-dev
+    ./node_modules/.bin/eslint --init
+  ```
+
 ### 5 月 12 日
 
-- webpack 通过 less-loader 设置 css 前缀
+- 249 webpack 通过 less-loader 设置 css 前缀
 
-```javascript
-  {
-    loader: 'less-loader',
-    options: {
-      modifyVars: {
-        '@ant-prefix': 'yourPrefix',
+  ```javascript
+    {
+      loader: 'less-loader',
+      options: {
+        modifyVars: {
+          '@ant-prefix': 'yourPrefix',
+        },
+        javascriptEnabled: true,
       },
-      javascriptEnabled: true,
-    },
-  }
-```
+    }
+  ```
 
 ### 5 月 11 日
 
