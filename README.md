@@ -47,6 +47,17 @@
 
 ## 五月份
 
+### 5 月 14 日
+
+- 254 安装 sass 和 sass-loader 时报错 this.getOptions is not a function
+
+  - sass-loader 版本过高导致，我当时安装的版本为 11.1.1 卸载后改为 11.0.1 运行 ok
+
+    ```javascript
+      npm uninstall sass-loader
+
+    ```
+
 ### 5 月 13 日
 
 - 253 eslintrc.js 详解
