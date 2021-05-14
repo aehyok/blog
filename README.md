@@ -49,13 +49,29 @@
 
 ### 5 月 14 日
 
+- 257 vue3 全局函数注册及调用
+  - https://blog.csdn.net/MZS_ym/article/details/108866013
+- 256 vue.config.js 设置 css 是否单独生成到 css 文件
+
+  ```javascript
+      /*
+        默认为true,会将项目中的css文件抽离到单独的css文件中,使用时需要单独import使用
+        设置为false,则会直接一起打包了
+      */
+      css: {
+        extract: false
+      },
+  ```
+
+- 255 javascript 基础知识
+  - https://github.com/vincentzyc/notes/blob/master/JavaScript%20%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93.md
 - 254 安装 sass 和 sass-loader 时报错 this.getOptions is not a function
 
-  - sass-loader 版本过高导致，我当时安装的版本为 11.1.1 卸载后改为 11.0.1 运行 ok
+  - sass-loader 版本过高导致，我当时安装的版本为 11.1.1 卸载后改为 10.0.1 运行 ok
 
     ```javascript
-      npm uninstall sass-loader
-
+       npm uninstall sass-loader
+       npm install sass-loader@10.0.1
     ```
 
 ### 5 月 13 日
