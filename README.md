@@ -49,6 +49,8 @@
 
 ### 5 月 15 日
 
+- 259 vite 编译时可清空编译目录
+  - vite build --emptyOutDir
 - 258 前端规范整理
   - 2、https://juejin.cn/post/6844903779117056008
   - 3、http://alloyteam.github.io/CodeGuide/#js-indentation
