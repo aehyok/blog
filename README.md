@@ -47,6 +47,17 @@
 
 ## 五月份
 
+### 5 月 15 日
+
+- 258 前端规范整理
+  - 2、https://juejin.cn/post/6844903779117056008
+  - 3、http://alloyteam.github.io/CodeGuide/#js-indentation
+  - 4、https://juejin.cn/post/6844903892220641293#heading-2
+  - 5、https://juejin.cn/post/6844903593896574990 vue 规范
+  - 6、https://juejin.cn/post/6844903951486156813
+  - 7、https://juejin.cn/post/6844903696040476686 vscode 使用
+  - 8、https://juejin.cn/post/6844903671457677325
+
 ### 5 月 14 日
 
 - 257 vue3 全局函数注册及调用
