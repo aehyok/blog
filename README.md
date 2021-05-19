@@ -47,6 +47,11 @@
 
 ## 五月份
 
+### 5 月 19 日
+
+- 262 vue 动态路由，通过 api 接口获取配置路由
+  - https://blog.csdn.net/qq_42460461/article/details/114585903
+
 ### 5 月 18 日
 
 - 261 javascript 拷贝内容
