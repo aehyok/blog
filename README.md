@@ -46,6 +46,26 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 五月份
+### 5月22日
+-  yarn build 打包时，会有一系列的警告
+  ```javascript
+
+    // 警告信息如下
+    chunk chunk-8bbe4a0e [mini-css-extract-plugin]
+    Conflicting order. Following module has been added:
+    * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/imgPreview.vue?vue&type=style&index=0&id=41ed99a7&lang=scss&scoped=true&
+    despite it was not able to fulfill desired ordering with these modules:
+    * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/videoPreview.vue?vue&type=style&index=0&id=6fbe4342&lang=scss&scoped=true&
+      - couldn't fulfill desired order of chunk group(s)
+      - while fulfilling desired order of chunk group(s) , , , ,
+  ```  
+  // 目前可以在vue.config.js中设置去除警告信息
+  ```javascript
+      // 设置忽略警告【mini-css-extract-plugin】 order 
+        extract: process.env.NODE_ENV === 'production' ? {
+          ignoreOrder: true,
+        } : false,
+  ```
 
 ### 5 月 20 日
 
