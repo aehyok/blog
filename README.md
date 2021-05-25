@@ -46,8 +46,17 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 五月份
+### 5月25日
+- 267 vue3 PC端项目模板
+    - https://github.com/PanJiaChen/vue-element-admin 
+    - https://github.com/lin-xin/vue-manage-system
+- 266 vuex持久化
+    - https://www.jianshu.com/p/04c288731819?utm_campaign=haruki
+### 5月24日
+- 265 EFCore 标准代码仓库
+   - https://github.com/dotnetcore/osharp
 ### 5月22日
--  yarn build 打包时，会有一系列的警告
+-  264 yarn build 打包时，会有一系列的警告
   ```javascript
 
     // 警告信息如下
@@ -69,7 +78,7 @@
 
 ### 5 月 20 日
 
-- 微服务 API 网关
+- 263 微服务 API 网关
   - http://www.360doc.com/content/18/0826/14/99071_781332992.shtml
   - https://zhuanlan.zhihu.com/p/96801978
   - https://blog.csdn.net/wnvalentin/article/details/100083874
