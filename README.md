@@ -46,6 +46,10 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 五月份
+
+### 5月26日
+- 268 File differs from already included file only in casing: correct casing but relative path
+    - https://github.com/Microsoft/TypeScript/issues/25460
 ### 5月25日
 - 267 vue3 PC端项目模板
     - https://github.com/PanJiaChen/vue-element-admin 
