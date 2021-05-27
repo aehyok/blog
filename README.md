@@ -48,6 +48,10 @@
 ## 五月份
 
 ### 5月26日
+- 270 redis 库
+    - https://github.com/2881099/csredis
+- 269 vscode 设置默认的终端 
+    - setting.json文件中设置 "terminal.integrated.shell.windows": "E:/Program Files/Git/bin/bash.exe",
 - 268 File differs from already included file only in casing: correct casing but relative path
     - https://github.com/Microsoft/TypeScript/issues/25460
 ### 5月25日
