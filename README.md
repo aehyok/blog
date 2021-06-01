@@ -45,8 +45,18 @@
   - TypeScript 相关配置
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
+## 六月份
+### 6月1日
+- vite2和vue3升级体验
+  -  https://www.mmxiaowu.com/article/606c782c54e901622416aaca
+-  vite2配置axios请求代理
+  - https://www.cnblogs.com/hy999/p/vue-vite-proxy.html
+
 ## 五月份
 ### 5月31日 
+- 轮播动态
+   - Dynamic slides https://swiperjs.com/demos#pagination
+   - https://codesandbox.io/s/0871t?file=/src/App.vue:13-383
 - 轮播页面插件
   - https://github.surmon.me/vue-awesome-swiper/
 ### 5月28日
