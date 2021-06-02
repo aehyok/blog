@@ -49,6 +49,7 @@
 ### 5月30日
 - vue插件 类似跑马灯
     - https://blog.csdn.net/qq_43156398/article/details/108758020
+    - https://github.com/ustbhuangyi/better-scroll
 ### 5月28日
 - vuex 持久化插件
     - https://github.com/robinvdvleuten/vuex-persistedstate
