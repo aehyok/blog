@@ -46,6 +46,24 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 六月份
+### 6月2日
+- vite2 配置接口代理
+    ```javascript
+     // 本地运行配置，及反向代理配置
+    server: {
+      port: 9900,
+      cors: true, // 默认启用并允许任何源
+      open: true, // 在服务器启动时自动在浏览器中打开应用程序
+      //反向代理配置，注意rewrite写法，开始没看文档在这里踩了坑
+      proxy: {
+        '/infra': {
+          target: 'http://139.9.184.171:10088',   //代理接口
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/infra/, '')
+        }
+      }
+    }
+    ```
 ### 6月1日
 - vite2和vue3升级体验
   -  https://www.mmxiaowu.com/article/606c782c54e901622416aaca
