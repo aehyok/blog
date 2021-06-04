@@ -46,13 +46,16 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 六月份
+### 6月4日
+- 278 qiankun乾坤子应用打包后，主应用访问 图片和 字体等打包后无法访问
+  - https://qiankun.umijs.org/zh/faq#%E5%BE%AE%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85%E4%B9%8B%E5%90%8E-css-%E4%B8%AD%E7%9A%84%E5%AD%97%E4%BD%93%E6%96%87%E4%BB%B6%E5%92%8C%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD-404
 ### 6月3日
-- cookie 操作
+- 277 cookie 操作
   - https://juejin.cn/post/6889231003697709070
   - https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie
   - https://github.com/js-cookie/js-cookie
 ### 6月2日
-- vite2 配置接口代理
+- 276 vite2 配置接口代理
     ```javascript
      // 本地运行配置，及反向代理配置
     server: {
@@ -70,20 +73,21 @@
     }
     ```
 ### 6月1日
-- vite2和vue3升级体验
+- 275 vite2和vue3升级体验
   -  https://www.mmxiaowu.com/article/606c782c54e901622416aaca
--  vite2配置axios请求代理
+-  274 vite2配置axios请求代理
   - https://www.cnblogs.com/hy999/p/vue-vite-proxy.html
 
 ## 五月份
 ### 5月31日 
-- 轮播动态
+- 273 轮播动态
    - Dynamic slides https://swiperjs.com/demos#pagination
    - https://codesandbox.io/s/0871t?file=/src/App.vue:13-383
-- 轮播页面插件
+   - https://github.surmon.me/vue-awesome-swiper/
+- 272 轮播页面插件
   - https://github.surmon.me/vue-awesome-swiper/
 ### 5月28日
-- vuex 持久化插件
+- 271 vuex 持久化插件
     - https://github.com/robinvdvleuten/vuex-persistedstate
 ### 5月26日
 - 270 redis 库
