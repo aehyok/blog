@@ -46,6 +46,10 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 六月份
+### 6月10日
+- 280 git提交的shell脚本
+  - https://www.cnblogs.com/gyjx2016/p/10058209.html
+
 - 279 qiankun 主应用跳转到子应用后退页面无法刷新的问题
   - https://github.com/umijs/qiankun/issues/1155
 ### 6月4日

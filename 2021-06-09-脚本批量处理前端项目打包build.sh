@@ -1,5 +1,6 @@
 ## 当前脚本文件所在路径
 current_path=$(cd $(dirname $0); pwd)
+version='2.0.0.005'
 
 ## 打印当前目录
 echo $current_path
@@ -87,6 +88,15 @@ done
 
 # cp  -R  /f/work/git/dvs-2.x/release/cms/  /f/work/git/dvs-2.x/dvs-release-dev/cms/
 
+
+######5、拷贝完之后进行git 的提交
+cd /f/work/git/dvs-2.x/dvs-release-dev/
+git add .
+git status
+sleep 1s
+message="chore：前端app、qrocde、wechat、console(child)commit-version:${version}"
+git commit -m $message .
+git push origin
 
 echo "5秒后将自动退出本脚本："
 for i in $(seq 5 -1 1)
