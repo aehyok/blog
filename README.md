@@ -47,7 +47,9 @@
 
 ## 六月份
 ### 6月11日
--  El-select 下拉点击后不出来
+- 282 git bash中的中文乱码问题处理
+  - https://www.jianshu.com/p/b80a1948c42f
+-  281 El-select 下拉点击后不出来
   - https://github.com/element-plus/element-plus/issues/2180
   - https://github.com/element-plus/element-plus/issues/2198
 ### 6月10日

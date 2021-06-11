@@ -11,10 +11,10 @@ echo $current_path
 ###############1、需要拉取的项目路径##############
 
 gitpull_pathArr=(
-  "/f/work/git/dvs-2.x/dvs-app-h5-develop"
-  "/f/work/git/dvs-2.x/dvs-offiaccount-dev"
-  "/f/work/git/dvs-2.x/qrcode-demo-dev"
-  "/f/work/git/dvs-2.x/dvs-server-ui-dev"
+  "/e/work/git/dvs-2.x/dvs-app-h5-develop"
+  "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
+  "/e/work/git/dvs-2.x/qrcode-demo-dev"
+  "/e/work/git/dvs-2.x/dvs-server-ui-dev"
 )
 
 ## 开始pull拉取项目
@@ -30,14 +30,14 @@ done
 
 #############2、需要编译的项目路径
 npmbuild_pathArr=(
-  "/f/work/git/dvs-2.x/dvs-app-h5-develop"
-  "/f/work/git/dvs-2.x/dvs-offiaccount-dev"
-  "/f/work/git/dvs-2.x/qrcode-demo-dev"
-  "/f/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main"
-  "/f/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic"
-  "/f/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons"
-  "/f/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village"
-  "/f/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital"
+  "/e/work/git/dvs-2.x/dvs-app-h5-develop"
+  "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
+  "/e/work/git/dvs-2.x/qrcode-demo-dev"
+  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main"
+  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic"
+  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons"
+  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village"
+  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital"
 )
 ## 开始 build 项目
 for ((i=0;i<${#npmbuild_pathArr[*]};i++))
@@ -51,10 +51,10 @@ done
 
 ############3、删除之前打包的文件
 rm_pathArr=(
-  "/f/work/git/dvs-2.x/dvs-release-dev/cms/app/"
-  "/f/work/git/dvs-2.x/dvs-release-dev/cms/qrcode/"
-  "/f/work/git/dvs-2.x/dvs-release-dev/cms/wechat/"
-  "/f/work/git/dvs-2.x/dvs-release-dev/cms/console/"
+  "/e/work/git/dvs-2.x/dvs-release-dev/cms/app/"
+  "/e/work/git/dvs-2.x/dvs-release-dev/cms/qrcode/"
+  "/e/work/git/dvs-2.x/dvs-release-dev/cms/wechat/"
+  "/e/work/git/dvs-2.x/dvs-release-dev/cms/console/"
 )
 
 for ((i=0;i<${#rm_pathArr[*]};i++))
@@ -71,10 +71,10 @@ done
 # cp build.sh image/
 
 copy_pathArr=(
-  "/f/work/git/dvs-2.x/release/cms/app/"
-  "/f/work/git/dvs-2.x/release/cms/qrcode/"
-  "/f/work/git/dvs-2.x/release/cms/wechat/"
-  "/f/work/git/dvs-2.x/release/cms/console/"
+  "/e/work/git/dvs-2.x/release/cms/app/"
+  "/e/work/git/dvs-2.x/release/cms/qrcode/"
+  "/e/work/git/dvs-2.x/release/cms/wechat/"
+  "/e/work/git/dvs-2.x/release/cms/console/"
 )
 
 ## 开始 copy拷贝目录
