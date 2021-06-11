@@ -1,6 +1,6 @@
 ## 当前脚本文件所在路径
 current_path=$(cd $(dirname $0); pwd)
-version='2.0.0.005'
+version='2.0.0.006'
 
 ## 打印当前目录
 echo $current_path
