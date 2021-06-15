@@ -46,6 +46,35 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 六月份
+### 6月15日
+- 184 获取随机数字并且不等于上一次的数值
+    ```javascript
+      // 获取随机数
+      // Math.random 生成0-1之间的随机数字
+      const getRndInteger = (max) => {
+          const tempNum = Math.floor(Math.random() * max);
+          console.log(`当前值：${tempNum},历史值：${window.randomNum}`);
+          if (window.randomNum === tempNum) {
+              console.log("再调用一次方法");
+              getRndInteger(max);
+          } else {
+              window.randomNum = tempNum;
+              // console.log('返回当前值',tempNum)
+              // return tempNum;
+          }
+      };
+    ``` 
+- 183 数组随机排序 
+  https://www.cnblogs.com/7qin/p/9710034.html
+    ```javascript
+      function shuffle(arr) { 
+        let i = arr.length; 
+        while (i) { 
+        let j = Math.floor(Math.random() * i--);  //5555
+            [arr[j], arr[i]] = [arr[i], arr[j]]; 
+        } 
+      } 
+    ```
 ### 6月11日
 - 282 git bash中的中文乱码问题处理
   - https://www.jianshu.com/p/b80a1948c42f
