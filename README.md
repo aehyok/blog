@@ -47,6 +47,7 @@
 
 ## 六月份
 ### 6月21日
+- 190 public下的js文件通过import 导入后一样会将文件打包进去，不能通过配置文件读取
 - 189 cesium 中文网
    - http://cesium.xin/wordpress/
 ### 6月20日
