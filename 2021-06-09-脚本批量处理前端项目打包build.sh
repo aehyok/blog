@@ -11,9 +11,9 @@ echo $current_path
 ###############1、需要拉取的项目路径##############
 
 gitpull_pathArr=(
-  "/e/work/git/dvs-2.x/dvs-app-h5-develop"
-  "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
-  "/e/work/git/dvs-2.x/qrcode-demo-dev"
+  # "/e/work/git/dvs-2.x/dvs-app-h5-develop"
+  # "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
+  # "/e/work/git/dvs-2.x/qrcode-demo-dev"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev"
 )
 
@@ -30,9 +30,9 @@ done
 
 #############2、需要编译的项目路径
 npmbuild_pathArr=(
-  "/e/work/git/dvs-2.x/dvs-app-h5-develop"
-  "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
-  "/e/work/git/dvs-2.x/qrcode-demo-dev"
+  # "/e/work/git/dvs-2.x/dvs-app-h5-develop"
+  # "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
+  # "/e/work/git/dvs-2.x/qrcode-demo-dev"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons"
@@ -51,9 +51,9 @@ done
 
 ############3、删除之前打包的文件
 rm_pathArr=(
-  "/e/work/git/dvs-2.x/dvs-release-dev/cms/app/"
-  "/e/work/git/dvs-2.x/dvs-release-dev/cms/qrcode/"
-  "/e/work/git/dvs-2.x/dvs-release-dev/cms/wechat/"
+  # "/e/work/git/dvs-2.x/dvs-release-dev/cms/app/"
+  # "/e/work/git/dvs-2.x/dvs-release-dev/cms/qrcode/"
+  # "/e/work/git/dvs-2.x/dvs-release-dev/cms/wechat/"
   "/e/work/git/dvs-2.x/dvs-release-dev/cms/console/"
 )
 
@@ -70,10 +70,10 @@ done
 ##复制某个文件到某个目录下面
 # cp build.sh image/
 
-copy_pathArr=(
-  "/e/work/git/dvs-2.x/release/cms/app/"
-  "/e/work/git/dvs-2.x/release/cms/qrcode/"
-  "/e/work/git/dvs-2.x/release/cms/wechat/"
+# copy_pathArr=(
+#   "/e/work/git/dvs-2.x/release/cms/app/"
+#   "/e/work/git/dvs-2.x/release/cms/qrcode/"
+#   "/e/work/git/dvs-2.x/release/cms/wechat/"
   "/e/work/git/dvs-2.x/release/cms/console/"
 )
 
