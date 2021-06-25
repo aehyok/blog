@@ -34,10 +34,11 @@ npmbuild_pathArr=(
   # "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
   # "/e/work/git/dvs-2.x/qrcode-demo-dev"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main"
-  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic"
-  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons"
-  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village"
-  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital"
+  # "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic"
+  # "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons"
+  # "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village"
+  # "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital"
+    # "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park"
 )
 ## 开始 build 项目
 for ((i=0;i<${#npmbuild_pathArr[*]};i++))
@@ -70,7 +71,7 @@ done
 ##复制某个文件到某个目录下面
 # cp build.sh image/
 
-# copy_pathArr=(
+copy_pathArr=(
 #   "/e/work/git/dvs-2.x/release/cms/app/"
 #   "/e/work/git/dvs-2.x/release/cms/qrcode/"
 #   "/e/work/git/dvs-2.x/release/cms/wechat/"
@@ -90,7 +91,7 @@ done
 # scp -r /e/work/git/dvs-2.x/release/cms/ root@139.186.205.7:/usr/local/qiankun/main/child 
 
 # dvs2.0
-scp -r /e/work/git/dvs-2.x/release/cms/ root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
+# scp -r /e/work/git/dvs-2.x/release/cms/ root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
 # cp  -R  /f/work/git/dvs-2.x/release/cms/  /f/work/git/dvs-2.x/dvs-release-dev/cms/
 
 

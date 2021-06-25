@@ -46,6 +46,13 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 六月份
+### 6月25日
+- 194 百度地图自动获取当前定位和当前经纬度
+  - https://lockdatav.blog.csdn.net/article/details/106057269
+- 193 前端压缩上传图片
+  - https://juejin.cn/post/6940430496128040967
+  - https://github.com/legend-li/img_compress_rotate_preview_upload
+  - https://juejin.cn/post/6844903568726556686#heading-4
 ### 6月23日
 - 192 git-cz 等同于git commit命令
   - https://www.npmjs.com/package/git-cz
