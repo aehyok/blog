@@ -46,6 +46,15 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 六月份
+# 6月28日
+### 微信公众号调用wx.config进行设置
+  - https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#36  调用微信本地的wx.openLocation
+  - https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#62 通过接口获取wx.config的参数值
+### 196 android app开启辅助H5 定位功能
+  - https://lbsyun.baidu.com/index.php?title=android-locsdk/guide/addition-func/assistant-h5
+### 6月26日
+- 195 微信公众号JSSDK分享页面
+  - https://blog.csdn.net/qq_29180565/article/details/89487307
 ### 6月25日
 - 194 百度地图自动获取当前定位和当前经纬度
   - https://lockdatav.blog.csdn.net/article/details/106057269
