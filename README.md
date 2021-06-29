@@ -46,6 +46,10 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 六月份
+### 6月29日
+  - vue组件中的key 可以刷新数据
+  - <populationProfile :num="echartsNum" :data1="chartsData1" :data2="chartsData2" :key="new Date().getTime()" class="mt-10"/>
+  - 也可以通过子组件中的watch 监听num变化进行处理数据
 # 6月28日
 ### 微信公众号调用wx.config进行设置
   - https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#36  调用微信本地的wx.openLocation
