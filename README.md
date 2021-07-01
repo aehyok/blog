@@ -24,7 +24,6 @@
   - 部署配置 https://qiankun.umijs.org/zh/cookbook#%E5%A6%82%E4%BD%95%E9%83%A8%E7%BD%B2
   - 父子应用通信，子子应用通信 https://www.freesion.com/article/1714630234/
 - 微前端
-
   - 打包 npm 工具包 https://github.com/aehyok/outils
   - 打包 npm 组件包 https://mp.weixin.qq.com/s/2EL-wzXKwTIhGisUgkr4-g
   - 通用配置数据 http://rap2.taobao.org/ (图片路径需要自己上传)
@@ -44,17 +43,55 @@
   - Prettier 配置相关
   - TypeScript 相关配置
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
-
+### 七月份
+- 201 地图底图服务
+  - https://blog.csdn.net/zouxin_88/article/details/107425436
+  - https://wiki.openstreetmap.org/wiki/Tile_servers
+  - https://blog.csdn.net/acmdream/article/details/78788889
+  - GeoServer发布osm数据地图服务 https://blog.csdn.net/jiang_wang01/article/details/117789270
+  - rest api 底图服务搭建 https://www.cnblogs.com/think8848/p/6241836.html
 ## 六月份
+### 6月30日
+- 200 vue cesium 
+  - vite 版本 https://segmentfault.com/a/1190000039344137
+- 199 PC 端自适应设置屏幕样式
+  ```javascript
+        @media (min-width: 1024px){
+        body{font-size: 18px}
+        } /*>=1024的设备*/
+
+        @media (min-width: 1100px) {
+        body{font-size: 20px}
+        } /*>=1100的设备*/
+        @media (min-width: 1280px) {
+        body{font-size: 22px;}
+        } /*>=1280的设备*/
+
+        @media (min-width: 1366px) {
+
+        body{font-size: 24px;}
+        }  
+
+        @media (min-width: 1440px) {
+        body{font-size: 25px !important;}
+        } 
+
+        @media (min-width: 1680px) {
+        body{font-size: 28px;}
+        } 
+        @media (min-width: 1920px) {
+        body{font-size: 33px;}
+        } 
+  ```
 ### 6月29日
-  - vue组件中的key 可以刷新数据
+  - 198 vue组件中的key 可以刷新数据
   - <populationProfile :num="echartsNum" :data1="chartsData1" :data2="chartsData2" :key="new Date().getTime()" class="mt-10"/>
   - 也可以通过子组件中的watch 监听num变化进行处理数据
-# 6月28日
-### 微信公众号调用wx.config进行设置
+### 6月28日
+- 197 微信公众号调用wx.config进行设置
   - https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#36  调用微信本地的wx.openLocation
   - https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#62 通过接口获取wx.config的参数值
-### 196 android app开启辅助H5 定位功能
+- 196 android app开启辅助H5 定位功能
   - https://lbsyun.baidu.com/index.php?title=android-locsdk/guide/addition-func/assistant-h5
 ### 6月26日
 - 195 微信公众号JSSDK分享页面
