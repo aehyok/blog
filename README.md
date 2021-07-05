@@ -43,7 +43,11 @@
   - Prettier 配置相关
   - TypeScript 相关配置
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
-### 七月份
+## 七月份
+### 7月2日
+- 202 prettier 设置格式化文件代码
+  - https://blog.csdn.net/qq_37815596/article/details/109225879
+### 7月1日
 - 201 地图底图服务
   - https://blog.csdn.net/zouxin_88/article/details/107425436
   - https://wiki.openstreetmap.org/wiki/Tile_servers
