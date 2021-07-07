@@ -44,6 +44,14 @@
   - TypeScript 相关配置
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 七月份
+### 7月7日
+- 205 webpack 打包文件名 hash、 chunkhash、contenthash意义
+  - https://www.cnblogs.com/giggle/p/9583940.html
+### 7月6日
+- 204 vue hls 使用 播放m3u8视频
+  - https://www.cnblogs.com/jin-zhe/p/11975515.html
+  - https://hls-js.netlify.app/demo/
+  - https://github.com/video-dev/hls.js
 ### 7月3日
 - 203 wx.config url设置 
   - https://www.cnblogs.com/wukongz/p/13371820.html
