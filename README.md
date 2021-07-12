@@ -45,6 +45,11 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 七月份
 ### 7月7日
+- 209 axios typescript 封装
+  - https://github.com/buqiyuan/vue3-antd-admin/tree/main/src/utils/http/axios
+  - https://github.com/anncwb/vue-vben-admin/tree/main/src/utils/http/axios
+- 208 vue 动态路由的加载
+  - https://github.com/buqiyuan/vue3-antd-admin/tree/main/src
 - 207 vue tree blocks
   - https://github.com/megafetis/vue3-blocks-tree
 - 206 vue tree-select
