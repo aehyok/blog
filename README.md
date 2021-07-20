@@ -44,7 +44,10 @@
   - TypeScript 相关配置
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 七月份
-
+### 7月20日
+- 215 bigemap 获取kml文件
+  - http://www.bigemap.com/reader/
+  - http://www.bigemap.com/introduce.html
 ### 7月19日
 - 214 删除文件和文件夹
   - rm -rf *
