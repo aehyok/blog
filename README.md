@@ -44,6 +44,26 @@
   - TypeScript 相关配置
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 七月份
+### 7月22日
+- 223 postman汉化版本
+  - https://github.com/hlmd/Postman-cn
+- 222 微信公众号调用wx.config 验证
+  - 校验wx.config 参数合规性 http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=jsapisign
+  - 微信官方文档 https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#62
+  - 
+### 7月21日
+- 221 行政区边界拾取
+  - https://lbs.amap.com/demo/javascript-api/example/district-search/draw-district-boundaries
+- 220 map 桌面地图
+  - https://zhuanlan.zhihu.com/p/142531621
+- 219 vue 动态table 
+  - https://github.com/TheoXiong/vue-table-dynamic
+- 218 动态菜单 菜单权限 等
+  - https://github.com/GeekQiaQia/vue3.0-template-admin
+- 217 useValidate 验证封装参考
+  - https://github.com/ly1994lyy/Vue3.0_Element_ShopManage/blob/master/src/utils/userValidate.ts
+- 216 utils 封装参考
+  - https://github.com/xiaoxian521/vue-pure-admin/tree/main/src/utils
 ### 7月20日
 - 215 bigemap 获取kml文件
   - http://www.bigemap.com/reader/
