@@ -44,6 +44,12 @@
   - TypeScript 相关配置
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 ## 七月份
+### 7月23日
+- 225、centos 下安装mysql
+  - https://cloud.tencent.com/developer/article/1393323
+  - https://www.cnblogs.com/yuanchao-blog/p/10679156.html
+- 224、腾讯云安装centos mysql
+  - https://cloud.tencent.com/developer/article/1145484?from=14588
 ### 7月22日
 - 223 postman汉化版本
   - https://github.com/hlmd/Postman-cn
