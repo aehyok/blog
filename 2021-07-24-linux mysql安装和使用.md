@@ -8,4 +8,7 @@
     - 30天后评估   https://www.exception.site/essay/idea-reset-eval
     - java demo项目  https://www.exception.site/article/28
     - 配置java环境变量 https://www.cnblogs.com/nojacky/p/9497724.html
-###     
+###    maven 包管理器 
+    - 下载地址 http://maven.apache.org/download.cgi
+    - https://www.runoob.com/maven/maven-setup.html 安装配置
+    
