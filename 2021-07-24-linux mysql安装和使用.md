@@ -15,4 +15,12 @@
 ### nginx 部署springboot java项目
     - 部署 https://blog.csdn.net/weixin_31992389/article/details/114082476    
     - linux下下载java和配置环境变量 https://blog.csdn.net/sizaif/article/details/106106955
+    - 开启 nohup java -jar demo-0.0.1.jar > log.log 2>&1 &
+    - chmod +x /usr/share/nginx/html/java/startup.sh
+    - chmod +x /usr/local/project/startup.sh
+    - su - root -c '/usr/share/nginx/html/java/java.sh'
+    - 设置 java开启运行启动命令 https://www.jianshu.com/p/3f62252c9042
+    - https://www.cnblogs.com/miles322/p/13755212.html
+
+    - nohup 可执行程序的配置使用 https://blog.csdn.net/qq_40241957/article/details/98584207
     

@@ -45,6 +45,9 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
     
 ## 七月份
+### 7月30日
+- 227 nginx location 规则判断处理
+  - https://www.cnblogs.com/jpfss/p/10418150.html
 ### 7月28日
 - 226 console.log的延迟问题
   - https://www.jianshu.com/p/16dae5406c19
@@ -60,7 +63,6 @@
 - 222 微信公众号调用wx.config 验证
   - 校验wx.config 参数合规性 http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=jsapisign
   - 微信官方文档 https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#62
-  - 
 ### 7月21日
 - 221 行政区边界拾取
   - https://lbs.amap.com/demo/javascript-api/example/district-search/draw-district-boundaries
