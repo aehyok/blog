@@ -1,19 +1,20 @@
 ## 当前脚本文件所在路径
 current_path=$(cd $(dirname $0); pwd)
-version='2.2.0.001'
+version='2.2.0.014test'
 
 ## 打印当前目录
 echo $current_path
 
 # 打印当前目录文件列表
-# echo $a* 
+echo $a* 
 
-###############1、需要拉取的项目路径##############
+##############1、需要拉取的项目路径##############
 
 gitpull_pathArr=(
-  # "/e/work/git/dvs-2.x/dvs-app-h5-develop"
-  # "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
-  # "/e/work/git/dvs-2.x/qrcode-demo-dev"
+  "/e/work/git/dvs-2.x/dvs-app-h5-develop"
+  "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
+  "/e/work/git/dvs-2.x/qrcode-demo-dev"
+  "/e/work/git/dvs-2.x/dvs-park-h5-app"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev"
 )
 
@@ -23,16 +24,16 @@ do
   # project_path=${current_path}/${project_pathArr[i]}
   project_path=${gitpull_pathArr[i]}
   cd $project_path
-  # echo  -e "开始拉取"+$project_path
   git pull
   echo -e "\033[32m拉取项目：${gitpull_pathArr[i]} 成功\033[0m";
 done
 
 #############2、需要编译的项目路径
 npmbuild_pathArr=(
-  # "/e/work/git/dvs-2.x/dvs-app-h5-develop"
-  # "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
-  # "/e/work/git/dvs-2.x/qrcode-demo-dev"
+  "/e/work/git/dvs-2.x/dvs-app-h5-develop"
+  "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
+  "/e/work/git/dvs-2.x/qrcode-demo-dev"
+  "/e/work/git/dvs-2.x/dvs-park-h5-app"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons"
@@ -52,10 +53,13 @@ done
 
 
 ############3、删除之前打包的文件
+cd /e/work/git/dvs-2.x/dvs-release-dev
+git pull
 rm_pathArr=(
-  # "/e/work/git/dvs-2.x/dvs-release-dev/cms/app/"
-  # "/e/work/git/dvs-2.x/dvs-release-dev/cms/qrcode/"
-  # "/e/work/git/dvs-2.x/dvs-release-dev/cms/wechat/"
+  "/e/work/git/dvs-2.x/dvs-release-dev/cms/app/" 
+  "/e/work/git/dvs-2.x/dvs-release-dev/cms/qrcode/"
+  "/e/work/git/dvs-2.x/dvs-release-dev/cms/wechat/"
+  "/e/work/git/dvs-2.x/dvs-release-dev/cms/park/"
   "/e/work/git/dvs-2.x/dvs-release-dev/cms/console/"
 )
 
@@ -73,9 +77,10 @@ done
 # cp build.sh image/
 
 copy_pathArr=(
-#   "/e/work/git/dvs-2.x/release/cms/app/"
-#   "/e/work/git/dvs-2.x/release/cms/qrcode/"
-#   "/e/work/git/dvs-2.x/release/cms/wechat/"
+  "/e/work/git/dvs-2.x/release/cms/app/"
+  "/e/work/git/dvs-2.x/release/cms/qrcode/"
+  "/e/work/git/dvs-2.x/release/cms/wechat/"
+  "/e/work/git/dvs-2.x/release/cms/park/"
   "/e/work/git/dvs-2.x/release/cms/console/"
 )
 
@@ -84,22 +89,18 @@ for ((i=0;i<${#copy_pathArr[*]};i++))
 do
   project_path=${copy_pathArr[i]}
   cd $project_path
-  cp  -R  $project_path  /e/work/git/dvs-2.x/dvs-release-dev/cms/
+  cp  -R  $project_path  /e/work/git/dvs-2.x/dvs-release-dev/cms
   echo -e "\033[32mcp拷贝项目：${copy_pathArr[i]} 成功\033[0m";
 done
 
-# dvs2.0 
-scp -r /e/work/git/dvs-2.x/release/cms/console root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
+# 5、dvs2.0 将本地打包文件上传至服务器
+# scp -r /e/work/git/dvs-2.x/release/cms/ root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
 
-# cp  -R  /f/work/git/dvs-2.x/release/cms/  /f/work/git/dvs-2.x/dvs-release-dev/cms/
-
-
-######5、拷贝完之后进行git 的提交
-# cd /f/work/git/dvs-2.x/dvs-release-dev/
+###### 6、拷贝完之后进行git 的提交
+# cd /e/work/git/dvs-2.x/dvs-release-dev
 # git add .
-# git status
 # sleep 1s
-# message="chore：前端app、qrocde、wechat、console(child)commit-version:${version}"
+# message="chore：前端app、qrocde、wechat、park、console(child)commit-version:${version}"
 # git commit -m $message .
 # git push origin
 
