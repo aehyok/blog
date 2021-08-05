@@ -23,4 +23,4 @@
     - https://www.cnblogs.com/miles322/p/13755212.html
 
     - nohup 可执行程序的配置使用 https://blog.csdn.net/qq_40241957/article/details/98584207
-    
+    - log4j记录日志使用 https://blog.csdn.net/weixin_35696071/article/details/114343607
