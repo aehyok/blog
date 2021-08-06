@@ -72,4 +72,4 @@ do
 done
 exit
 
-## 执行脚本  sh 2021-08-06build-dvs数字乡村.sh |tee log.txt ##
+## 执行脚本  sh 2021-08-06-dvs-build数字乡村.sh |tee build-log.txt ##
