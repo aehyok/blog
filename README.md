@@ -45,6 +45,18 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ## 八月份
+### 8月6日
+- 229 前端项目编译的时候发生，warning [mini-css-extract-plugin] warning Conflicting order
+  - https://github.com/vuejs/vue-cli/issues/3771
+  - vue.config.js 中设置css 
+    ```javascript
+      // vue.config.js
+      module.exports = {
+          css: {
+              extract: { ignoreOrder: true },
+          },
+      }
+    ```
 ### 8月5日
 - 228 vue.config.js extenals 设置
   - https://blog.csdn.net/weixin_38107457/article/details/106490372    

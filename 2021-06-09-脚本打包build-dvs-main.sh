@@ -1,4 +1,4 @@
-## 当前脚本文件所在路径
+# ## 当前脚本文件所在路径
 current_path=$(cd $(dirname $0); pwd)
 version='2.2.0.004'
 
@@ -104,8 +104,8 @@ done
 
 scp -r -p /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
 
-# ##### 6、拷贝完之后进行git 的提交
-cd /e/work/git/dvs-2.x/dvs-release-dev
+##### 6、拷贝完之后进行git 的提交
+cd /e/work/git/dvs-2.x/release
 git add .
 sleep 1s
 message="chore：前端app、qrocde、wechat、park、console(child)commit-version:${version}"
@@ -119,4 +119,4 @@ do
 done
 exit
 
-## 执行脚本  sh 2021-06-09-脚本打包build-dvs-main.sh
+## 执行脚本  sh 2021-06-09-脚本打包build-dvs-main.sh ##
