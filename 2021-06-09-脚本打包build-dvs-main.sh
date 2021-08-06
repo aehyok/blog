@@ -1,6 +1,6 @@
 ## 当前脚本文件所在路径
 current_path=$(cd $(dirname $0); pwd)
-version='2.2.0.014'
+version='2.2.0.004'
 
 # ## 打印当前目录
 echo $current_path
@@ -8,7 +8,7 @@ echo $current_path
 # # 打印当前目录文件列表
 echo $a*
 
-##############1、需要拉取的项目路径##############
+##############  1、需要拉取的项目路径##############
 
 gitpull_pathArr=(
   "/e/work/git/dvs-2.x/dvs-app-h5-develop"
@@ -52,7 +52,7 @@ do
 done
 
 
-############3、删除之前打包的文件
+############3、删除之前打包的文件############
 cd /e/work/git/dvs-2.x/dvs-release-dev
 git pull
 rm_pathArr=(
@@ -72,9 +72,9 @@ do
 done
 
 
-##########4、复制某个文件夹到某个文件夹下（目标文件夹好像要存在）
-#复制某个文件到某个目录下面
-# cp build.sh image/
+# ##########4、复制某个文件夹到某个文件夹下（目标文件夹好像要存在）############
+# #复制某个文件到某个目录下面
+# # cp build.sh image/
 
 copy_pathArr=(
   "/e/work/git/dvs-2.x/release/cms/app/"
@@ -84,19 +84,27 @@ copy_pathArr=(
   "/e/work/git/dvs-2.x/release/cms/console/"
 )
 
-## 开始 copy拷贝目录
+## 开始 copy拷贝目录############
 for ((i=0;i<${#copy_pathArr[*]};i++))
 do
   project_path=${copy_pathArr[i]}
   cd $project_path
-  cp  -R  $project_path  /e/work/git/dvs-2.x/dvs-release-dev/cms
+  cp  -r  $project_path  /e/work/git/dvs-2.x/dvs-release-dev/cms
   echo -e "\033[32mcp拷贝项目：${copy_pathArr[i]} 成功\033[0m";
 done
 
-5、dvs2.0 将本地打包文件上传至服务器
-scp -r /e/work/git/dvs-2.x/release/cms/ root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
+#### 5、dvs2.0 将本地打包文件上传至服务器
+# 开始 copy拷贝目录############
+# for ((i=0;i<${#copy_pathArr[*]};i++))
+# do
+#   project_path=${copy_pathArr[i]}
+#   scp -r -p $project_path  root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
+#   echo -e "\033[32mcp拷贝项目：${copy_pathArr[i]} 到dev环境成功\033[0m";
+# done
 
-##### 6、拷贝完之后进行git 的提交
+scp -r -p /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
+
+# ##### 6、拷贝完之后进行git 的提交
 cd /e/work/git/dvs-2.x/dvs-release-dev
 git add .
 sleep 1s
@@ -111,4 +119,4 @@ do
 done
 exit
 
-## 执行脚本  sh 2021-06-09-build.sh
+## 执行脚本  sh 2021-06-09-脚本打包build-dvs-main.sh

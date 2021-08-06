@@ -1,6 +1,6 @@
 ## 当前脚本文件所在路径
 current_path=$(cd $(dirname $0); pwd)
-version='2.2.0.014'
+version='2.2.1.004'
 
 # ## 打印当前目录
 echo $current_path
@@ -8,7 +8,7 @@ echo $current_path
 # # 打印当前目录文件列表
 echo $a*
 
-##############1、需要拉取的项目路径##############
+##############  1、需要拉取的项目路径 ##############
 
 gitpull_pathArr=(
   "/e/work/git/dvs-2.x/dvs-app-h5-develop"
@@ -52,7 +52,7 @@ do
 done
 
 
-############3、删除之前打包的文件
+############3、删除之前打包的文件############
 cd /e/work/git/dvs-2.x/dvs-release-dev
 git pull
 rm_pathArr=(
@@ -72,7 +72,7 @@ do
 done
 
 
-##########4、复制某个文件夹到某个文件夹下（目标文件夹好像要存在）
+##########4、复制某个文件夹到某个文件夹下（目标文件夹好像要存在）############
 #复制某个文件到某个目录下面
 # cp build.sh image/
 
@@ -84,7 +84,7 @@ copy_pathArr=(
   "/e/work/git/dvs-2.x/release/cms/console/"
 )
 
-## 开始 copy拷贝目录
+## 开始 copy拷贝目录############
 for ((i=0;i<${#copy_pathArr[*]};i++))
 do
   project_path=${copy_pathArr[i]}
