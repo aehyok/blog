@@ -2,7 +2,7 @@
 current_path=$(cd $(dirname $0); pwd)
 version='2.2.0.004-2'
 
-# ## 打印当前目录
+## 打印当前目录
 echo $current_path
 
 # # 打印当前目录文件列表
@@ -43,7 +43,7 @@ npmbuild_pathArr=(
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-geography"
 )
-############   3、 开始 build 项目  ###############
+###########   3、 开始 build 项目  ###############
 
 for ((i=0;i<${#npmbuild_pathArr[*]};i++))
 do
@@ -53,11 +53,27 @@ do
   echo -e "编译项目：${npmbuild_pathArr[i]} 成功";
 done
 
-############ 4、dvs2.0将本地打包文件上传至服务器 ############
 
-scp -r -p /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
+##########4、编译完成后，删除app、qrcode、wechat 中的配置文件
+deleteBuildConfig_pathArr=(
+  "/e/work/git/dvs-2.x/release/cms/app"
+  "/e/work/git/dvs-2.x/release/cms/wechat"
+  "/e/work/git/dvs-2.x/release/cms/qrcode"
+)
+for ((i=0;i<${#deleteBuildConfig_pathArr[*]};i++))
+do
+  project_path=${deleteBuildConfig_pathArr[i]}
+  cd $project_path
+  rm config.js
+  echo -e "删除项目：${deleteBuildConfig_pathArr[i]} 中的配置文件成功";
+done
 
-############ 5、拷贝完之后进行git 的提交  ##############
+
+########### 4、dvs2.0将本地打包文件上传至服务器 ############
+
+scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
+
+########### 5、拷贝完之后进行git 的提交  ##############
 cd /e/work/git/dvs-2.x/release
 git add .
 sleep 2s
@@ -71,5 +87,4 @@ do
   echo -e $i;sleep 1
 done
 exit
-
 ## 执行脚本  sh 2021-08-06-dvs-build数字乡村.sh |tee build-log.txt ##

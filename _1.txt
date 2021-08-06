@@ -1,0 +1,1 @@
+2021-08-06-dvs-build.sh: line 96: dialog: command not found
