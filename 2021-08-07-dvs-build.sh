@@ -3,25 +3,42 @@ source ./versions # 版本文件历史记录
 source ./2021-08-09-dvs-build-pc.sh
 current_path=$(cd $(dirname $0); pwd)
 
-################1、 通过命令行执行传入的参数值
+################1、 通过命令行执行传入的参数值   ##############
 # a(app) 、w(wechat)、 p(park)、q(qrcode)、c(pc)
-while getopts v:p: opt
+tag=''  # 默认为空的时候要打tag,不为空的时候不进行tag管理
+while getopts v:p:t: opt
 do
     case "$opt" in
+        t) tag="tag";;
         p) project="$OPTARG";; # awpqc  # a(app) 、w(wechat)、 p(park)、q(qrcode)、c(pc)
         v) version="$OPTARG";; # 2.0.0.001
+
         *) warn "Unknown option: $OPTARG";;
     esac
 done
 
-echo -e " 命令行中包含的项目列表----${project}"
-echo -e " 命令行中包含的版本号 ${version}"
-echo "version=\"$version\"  # $(date)" >> ./versions
+echo -e "tag ${tag}"
+################2、验证对应的项目  ##############
+declare -A projectList
+projectList["a"]="村委app"
+projectList["w"]="微信公众号"
+projectList["p"]="园区app"
+projectList["q"]="一户一码"
+projectList["c"]="pc后台管理"
 
-## 打印当前目录
-echo $current_path
+for key in ${!projectList[@]}
+do
+  if [[ $project == *$key* ]]
+  then
+    echo -e "包含${key}------${projectList[${key}]}"
+  fi
+done
 
-##############  1、需要拉取的项目路径  ##############
+################3、版本号  ##############
+echo -e " 命令行中包含的版本号: ${version}"
+
+echo '-------------------------------------------------'
+##############  4、需要拉取的项目路径  ##############
 declare -A gitpull_pathArray
 gitpull_pathArray["a"]="/e/work/git/dvs-2.x/dvs-app-h5-develop"
 gitpull_pathArray["w"]="/e/work/git/dvs-2.x/dvs-offiaccount-dev"
@@ -29,67 +46,68 @@ gitpull_pathArray["p"]="/e/work/git/dvs-2.x/dvs-park-h5-app"
 gitpull_pathArray["q"]="/e/work/git/dvs-2.x/qrcode-demo-dev"
 gitpull_pathArray["c"]="/e/work/git/dvs-2.x/dvs-server-ui-dev"
 
-# ##############  2、git拉取项目 ##############
+# ############## 5、git拉取项目、编译项目 ##############
 for key in ${!gitpull_pathArray[@]}
 do
-  echo -e "${key}  ----${project}"
+  # echo -e "${key}  ----${project}"
   if [[ $project == *$key* ]]
   then
-    echo -e "包含${key}------${gitpull_pathArray[${key}]}"
-    cd ${gitpull_pathArray[${key}]}
-    git pull
-    echo -e "拉取项目<<$key>>：-------路径为{${gitpull_pathArray[${key}]}} 成功";
-  else
-    echo "不包含"
-  fi
-    
-done
-
-#############   3、需要编译的项目路径 ################
-for key in ${!gitpull_pathArray[@]}
-do
-    if test $key = "c"; then
+     if test $key = "c"; then
+      echo -e "开始拉取项目:<<${projectName}>>";
+      git pull
+      echo -e "拉取项目<<${projectName}>>成功";
       build_pc_Function
       echo -e "准备开始编译PC";
     else
       cd ${gitpull_pathArray[${key}]}
-      echo -e "开始编译项目<<$key>>：-------路径为{${gitpull_pathArray[${key}]}} 成功";
-      # yarn build
-      echo -e "编译项目<<$key>>：-------路径为{${gitpull_pathArray[${key}]}} 成功";
+      projectName=${projectList[$key]}
+      echo -e "开始拉取项目:<<${projectName}>>";
+      git pull
+      echo -e "拉取项目<<${projectName}>>成功";
+      echo '-------------------------------------------------'
+      echo -e "开始编译项目:<<${projectName}>>";
+      yarn build
+      echo -e "编译项目<<${projectName}>>成功";
+      echo '-------------------------------------------------'
+      echo -e "开始打tag项目:<<${projectName}>>";
+      if test $version = $tagVersion ; then
+        echo 'tag已经存在要先进行删除'
+        git tag -d $version
+        git push origin :refs/tags/$version
+
+        echo 'tag已删除要进行git tag'
+        git tag -a $version -m "${version}"
+        git push origin $version
+        echo -e "打tag项目:<<${projectName}>>成功";
+        cd $current_path
+        echo "tagVersion=\"$version\"  # $(date)" >> ./versions
+      else  
+        echo 'tag不存在 要进行git tag'
+        git tag -a $version -m "${version}"
+        git push origin $version
+        echo -e "打tag项目:<<${projectName}>>成功";
+        cd $current_path
+        echo "tagVersion=\"$version\"  # $(date)" >> ./versions
+      fi  
     fi
+  fi
 done
 
-# npmbuild_pathArr=(
-#   "/e/work/git/dvs-2.x/dvs-app-h5-develop"
-#   "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
-#   "/e/work/git/dvs-2.x/qrcode-demo-dev"
-#   "/e/work/git/dvs-2.x/dvs-park-h5-app"
-# )
-# ###########   3、 开始 build 项目  ###############
-
-# for ((i=0;i<${#npmbuild_pathArr[*]};i++))
-# do
-#   project_path=${npmbuild_pathArr[i]}
-#   cd $project_path
-#   yarn build
-#   echo -e "编译项目：${npmbuild_pathArr[i]} 成功";
-# done
-
-
-# ##########4、编译完成后，删除app、qrcode、wechat 中的配置文件
-# deleteBuildConfig_pathArr=(
-#   "/e/work/git/dvs-2.x/release/cms/app"
-#   "/e/work/git/dvs-2.x/release/cms/wechat"
-#   "/e/work/git/dvs-2.x/release/cms/qrcode"
-# )
-# for ((i=0;i<${#deleteBuildConfig_pathArr[*]};i++))
-# do
-#   project_path=${deleteBuildConfig_pathArr[i]}
-#   cd $project_path
-#   rm config.js
-#   echo -e "删除项目：${deleteBuildConfig_pathArr[i]} 中的配置文件成功";
-# done
-
+########## 6、编译完成后，删除app、qrcode、wechat 中的配置文件
+declare -A deleteBuildConfig_pathArr
+deleteBuildConfig_pathArr["a"]="/e/work/git/dvs-2.x/release/cms/app"
+deleteBuildConfig_pathArr["w"]="/e/work/git/dvs-2.x/release/cms/wechat"
+deleteBuildConfig_pathArr["q"]="/e/work/git/dvs-2.x/release/cms/qrcode"
+for key in ${!deleteBuildConfig_pathArr[@]}
+do
+  if [[ $project == *$key* ]]
+  then
+    project_path=${deleteBuildConfig_pathArr[${key}]}
+    cd $project_path
+    # rm config.js
+    echo -e "删除项目：${deleteBuildConfig_pathArr[i]} 中的配置文件成功";
+  fi
+done
 
 # ########### 4、dvs2.0将本地打包文件上传至服务器 ############
 
@@ -109,4 +127,4 @@ do
   echo -e $i;sleep 1
 done
 exit
-## 执行脚本  sh 2021-08-06-dvs-build数字乡村.sh |tee build-log.txt ##
+## 执行脚本  sh 2021-08-06-dvs-build数字乡村.sh |tee build-log.txt

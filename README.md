@@ -44,7 +44,12 @@
   - TypeScript 相关配置
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
+
 ## 八月份
+### 8月9日
+- 233 vue3 vite2 打包资源文件配置
+   - https://blog.csdn.net/weixin_47021806/article/details/118697540
+   
 ### 8月8日
 - 232 bash source命令行的使用
   - https://www.cnblogs.com/shuiche/p/9436126.html

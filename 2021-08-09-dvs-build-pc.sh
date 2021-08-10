@@ -28,9 +28,7 @@ function build_pc_Function {
     project_path=${build_pathArray[i]}
     echo -e "开始编译项目：${build_pathArray[i]} ";
     cd $project_path
-    # yarn build
+    yarn build
     echo -e "编译PC 项目路径为{${build_pathArray[i]}} 成功";
   done
 }
-
-build_pc_Function

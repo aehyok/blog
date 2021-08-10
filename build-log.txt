@@ -1,7 +1,4 @@
-包含
-2.2.3.001
-chore：前端app、qrocde、wechat、park、console(child)commit-version:2.2.3.001
-/e/work/aehyok/github/2021
+tag 
 5秒后将自动退出本脚本：
 5
 4
