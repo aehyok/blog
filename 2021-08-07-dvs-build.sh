@@ -1,55 +1,60 @@
 # ## 当前脚本文件所在路径
+source ./versions # 版本文件历史记录
+source ./2021-08-09-dvs-build-pc.sh
 current_path=$(cd $(dirname $0); pwd)
-version='2.2.0.004-2'
+
+################1、 通过命令行执行传入的参数值
+# a(app) 、w(wechat)、 p(park)、q(qrcode)、c(pc)
+while getopts v:p: opt
+do
+    case "$opt" in
+        p) project="$OPTARG";; # awpqc  # a(app) 、w(wechat)、 p(park)、q(qrcode)、c(pc)
+        v) version="$OPTARG";; # 2.0.0.001
+        *) warn "Unknown option: $OPTARG";;
+    esac
+done
+
+echo -e " 命令行中包含的项目列表----${project}"
+echo -e " 命令行中包含的版本号 ${version}"
+echo "version=\"$version\"  # $(date)" >> ./versions
 
 ## 打印当前目录
 echo $current_path
 
 ##############  1、需要拉取的项目路径  ##############
 declare -A gitpull_pathArray
-gitpull_pathArray["app"]="/e/work/git/dvs-2.x/dvs-app-h5-develop"
-gitpull_pathArray["wechat"]="/e/work/git/dvs-2.x/dvs-offiaccount-dev"
-gitpull_pathArray["park"]="/e/work/git/dvs-2.x/dvs-park-h5-app"
-gitpull_pathArray["qrcode"]="/e/work/git/dvs-2.x/qrcode-demo-dev"
-gitpull_pathArray["pc"]="/e/work/git/dvs-2.x/dvs-server-ui-dev"
+gitpull_pathArray["a"]="/e/work/git/dvs-2.x/dvs-app-h5-develop"
+gitpull_pathArray["w"]="/e/work/git/dvs-2.x/dvs-offiaccount-dev"
+gitpull_pathArray["p"]="/e/work/git/dvs-2.x/dvs-park-h5-app"
+gitpull_pathArray["q"]="/e/work/git/dvs-2.x/qrcode-demo-dev"
+gitpull_pathArray["c"]="/e/work/git/dvs-2.x/dvs-server-ui-dev"
 
-declare -A build_pathArray
-build_pathArray['dvs-main']="/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main"
-build_pathArray['dvs-basic']="/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic"
-build_pathArray['dvs-cons']="/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons"
-build_pathArray['dvs-village']="/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village"
-build_pathArray['dvs-digital']="/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital"
-build_pathArray['dvs-park']="/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park"
-build_pathArray['dvs-geography']="/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-geography"
-
-function build_pc_Function {
-  for key in ${!build_pathArray[@]}
-  do
-    cd ${build_pathArray[${key}]}
-    echo -e "开始编译项目<<$key>>：-------路径为{${build_pathArray[${key}]}} 成功";
-    yarn build
-    echo -e "编译项目<<$key>>：-------路径为{${build_pathArray[${key}]}} 成功";
-  done
-}
-
-##############  2、git拉取项目 ##############
+# ##############  2、git拉取项目 ##############
 for key in ${!gitpull_pathArray[@]}
 do
+  echo -e "${key}  ----${project}"
+  if [[ $project == *$key* ]]
+  then
+    echo -e "包含${key}------${gitpull_pathArray[${key}]}"
     cd ${gitpull_pathArray[${key}]}
     git pull
     echo -e "拉取项目<<$key>>：-------路径为{${gitpull_pathArray[${key}]}} 成功";
+  else
+    echo "不包含"
+  fi
+    
 done
 
-# #############   3、需要编译的项目路径 ################
+#############   3、需要编译的项目路径 ################
 for key in ${!gitpull_pathArray[@]}
 do
-    if test $key = "pc"; then
+    if test $key = "c"; then
       build_pc_Function
       echo -e "准备开始编译PC";
     else
       cd ${gitpull_pathArray[${key}]}
       echo -e "开始编译项目<<$key>>：-------路径为{${gitpull_pathArray[${key}]}} 成功";
-      yarn build
+      # yarn build
       echo -e "编译项目<<$key>>：-------路径为{${gitpull_pathArray[${key}]}} 成功";
     fi
 done
@@ -59,7 +64,6 @@ done
 #   "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
 #   "/e/work/git/dvs-2.x/qrcode-demo-dev"
 #   "/e/work/git/dvs-2.x/dvs-park-h5-app"
-
 # )
 # ###########   3、 开始 build 项目  ###############
 
