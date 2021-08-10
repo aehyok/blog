@@ -5,14 +5,13 @@ current_path=$(cd $(dirname $0); pwd)
 
 ################1、 通过命令行执行传入的参数值   ##############
 # a(app) 、w(wechat)、 p(park)、q(qrcode)、c(pc)
-tag=''  # 默认为空的时候要打tag,不为空的时候不进行tag管理
-while getopts v:p:t: opt
+tag=""  # 默认为空的时候要打tag,不为空的时候不进行tag管理
+while getopts tv:p: opt
 do
     case "$opt" in
         t) tag="tag";;
         p) project="$OPTARG";; # awpqc  # a(app) 、w(wechat)、 p(park)、q(qrcode)、c(pc)
         v) version="$OPTARG";; # 2.0.0.001
-
         *) warn "Unknown option: $OPTARG";;
     esac
 done
@@ -70,25 +69,31 @@ do
       echo -e "编译项目<<${projectName}>>成功";
       echo '-------------------------------------------------'
       echo -e "开始打tag项目:<<${projectName}>>";
-      if test $version = $tagVersion ; then
-        echo 'tag已经存在要先进行删除'
-        git tag -d $version
-        git push origin :refs/tags/$version
+      
+      if [[ "$tag" == "" ]] 
+      then
+        if test $version = $tagVersion ; then
+          echo 'tag 已经存在要先进行删除'
+          git tag -d $version
+          git push origin :refs/tags/$version
 
-        echo 'tag已删除要进行git tag'
-        git tag -a $version -m "${version}"
-        git push origin $version
-        echo -e "打tag项目:<<${projectName}>>成功";
-        cd $current_path
-        echo "tagVersion=\"$version\"  # $(date)" >> ./versions
-      else  
-        echo 'tag不存在 要进行git tag'
-        git tag -a $version -m "${version}"
-        git push origin $version
-        echo -e "打tag项目:<<${projectName}>>成功";
-        cd $current_path
-        echo "tagVersion=\"$version\"  # $(date)" >> ./versions
-      fi  
+          echo 'tag已删除要进行git tag'
+          git tag -a $version -m "${version}"
+          git push origin $version
+          echo -e "打tag项目:<<${projectName}>>成功";
+          cd $current_path
+          echo "tagVersion=\"$version\"  # $(date)" >> ./versions
+        else  
+          echo 'tag不存在 要进行git tag'
+          git tag -a $version -m "${version}"
+          git push origin $version
+          echo -e "打tag项目:<<${projectName}>>成功";
+          cd $current_path
+          echo "tagVersion=\"$version\"  # $(date)" >> ./versions
+        fi
+      else
+        echo  -e "不需要进行打tag"
+      fi
     fi
   fi
 done

@@ -1,4 +1,89 @@
 tag 
+包含a------村委app
+ 命令行中包含的版本号: 2.3.0.002x
+-------------------------------------------------
+开始拉取项目:<<村委app>>
+Already up to date.
+拉取项目<<村委app>>成功
+-------------------------------------------------
+开始编译项目:<<村委app>>
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings下午2:26:40
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  img/appbanner.ce354529.png (303 KiB)
+  js/chunk-e8723052.5a2a2966.js (269 KiB)
+  js/chunk-vendors.df5e2e44.js (2.31 MiB)
+  configImage/greenhouse(door).png (393 KiB)
+  configImage/greenhouse(center).png (438 KiB)
+  configImage/secondhouse(northwest).png (460 KiB)
+  scan/u1039.png (306 KiB)
+  scan/u1036.png (446 KiB)
+  scan/u1040.png (297 KiB)
+  scan/u1041.png (447 KiB)
+  scan/u1042.png (278 KiB)
+  scan/u1044.png (312 KiB)
+  scan/u825.jpg (254 KiB)
+  scan/u1043.png (335 KiB)
+  scan/u826.png (256 KiB)
+  scan/u829.png (250 KiB)
+  scan/u87.png (262 KiB)
+  configImage/villageDoor.png (610 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (2.55 MiB)
+      css/chunk-vendors.33dcd3d3.css
+      js/chunk-vendors.df5e2e44.js
+      css/app.6629ab80.css
+      js/app.e03350d0.js
+
+
+  File                                      Size             Gzipped
+
+  ..\release\cms\app\js\chunk-vendors.df    2366.47 KiB      741.92 KiB
+  5e2e44.js
+  ..\release\cms\app\js\chunk-e8723052.5    269.33 KiB       111.56 KiB
+  a2a2966.js
+  ..\release\cms\app\js\app.e03350d0.js     20.37 KiB        6.89 KiB
+  ..\release\cms\app\js\chunk-e5659b18.a    12.91 KiB        6.45 KiB
+  6d346fe.js
+  ..\release\cms\app\js\chunk-698e50f7.b    5.41 KiB         2.29 KiB
+  0383bdc.js
+  ..\release\cms\app\config.js              1.25 KiB         0.45 KiB
+  ..\release\cms\app\css\chunk-vendors.3    217.65 KiB       61.78 KiB
+  3dcd3d3.css
+  ..\release\cms\app\css\chunk-e8723052.    91.99 KiB        11.71 KiB
+  1e26a34f.css
+  ..\release\cms\app\css\chunk-e5659b18.    3.84 KiB         1.17 KiB
+  d42808b0.css
+  ..\release\cms\app\css\chunk-698e50f7.    3.60 KiB         1.08 KiB
+  06742b62.css
+  ..\release\cms\app\css\app.6629ab80.cs    2.35 KiB         0.89 KiB
+  s
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\release\cms\app directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 10.34s.
+编译项目<<村委app>>成功
+-------------------------------------------------
+开始打tag项目:<<村委app>>
+tag 已经存在要先进行删除
+Deleted tag '2.3.0.002x' (was 90db0b1)
+tag已删除要进行git tag
+打tag项目:<<村委app>>成功
+删除项目： 中的配置文件成功
 5秒后将自动退出本脚本：
 5
 4
