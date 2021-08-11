@@ -47,9 +47,11 @@
 
 ## 八月份
 ### 8月9日
+- 234 vue3 3.2.1 版本 defineEmits 定义事件问题
+   - https://zhuanlan.zhihu.com/p/386919557
 - 233 vue3 vite2 打包资源文件配置
    - https://blog.csdn.net/weixin_47021806/article/details/118697540
-   
+
 ### 8月8日
 - 232 bash source命令行的使用
   - https://www.cnblogs.com/shuiche/p/9436126.html
