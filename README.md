@@ -46,6 +46,11 @@
 
 
 ## 八月份
+### 8月14日
+- 236 vue3 vue-dragger
+  - https://github.com/SortableJS/vue.draggable.next
+- 235 vue3 vue-drag-resize 
+  - https://github.com/kirillmurashov/vue-drag-resize/tree/vue3
 ### 8月9日
 - 234 vue3 3.2.1 版本 defineEmits 定义事件问题
    - https://zhuanlan.zhihu.com/p/386919557
