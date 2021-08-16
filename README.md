@@ -47,6 +47,12 @@
 
 ## 八月份
 ### 8月14日
+- 238 生成shortid 短id
+  - https://github.com/dylang/shortid
+- 237 滴滴团队PC和H5 可配置化前端组件库
+  - https://github.com/epage-team/epage-vant
+  - https://github.com/epage-team/epage-iview
+  - https://github.com/didi/epage
 - 236 vue3 vue-dragger
   - https://github.com/SortableJS/vue.draggable.next
 - 235 vue3 vue-drag-resize 
