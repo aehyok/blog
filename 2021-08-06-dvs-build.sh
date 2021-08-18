@@ -41,7 +41,7 @@ npmbuild_pathArr=(
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park"
-  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-geography"
+  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis"
 )
 ###########   3、 开始 build 项目  ###############
 

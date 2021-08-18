@@ -1,6 +1,6 @@
 # ## 当前脚本文件所在路径
 current_path=$(cd $(dirname $0); pwd)
-version='2.2.1.005'
+version='2.2.1.x'
 
 # ## 打印当前目录
 echo $current_path
@@ -18,8 +18,9 @@ for ((i=0;i<${#gitpull_pathArr[*]};i++))
 do
   project_path=${gitpull_pathArr[i]}
   cd $project_path
-    git tag -a $version -m "${version}"
-    git push origin $version
+    git branch 2.2.1.x  2.2.1.005
+    git checkout 2.2.1.x
+    git push --set-upstream origin 2.2.1.x
   echo -e "拉取项目：${gitpull_pathArr[i]} 成功";
 done
 
