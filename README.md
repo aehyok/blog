@@ -46,6 +46,9 @@
 
 
 ## 八月份
+### 8月18日
+- 239 typescript actionMap[value] 报错的检查
+  - https://blog.csdn.net/beLaity/article/details/108527556
 ### 8月14日
 - 238 生成shortid 短id
   - https://github.com/dylang/shortid

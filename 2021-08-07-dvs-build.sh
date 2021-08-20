@@ -33,98 +33,98 @@ do
   fi
 done
 
-################3、版本号  ##############
-echo -e " 命令行中包含的版本号: ${version}"
+# ################3、版本号  ##############
+# echo -e " 命令行中包含的版本号: ${version}"
 
-echo '-------------------------------------------------'
+# echo '-------------------------------------------------'
 ##############  4、需要拉取的项目路径  ##############
-declare -A gitpull_pathArray
-gitpull_pathArray["a"]="/e/work/git/dvs-2.x/dvs-app-h5-develop"
-gitpull_pathArray["w"]="/e/work/git/dvs-2.x/dvs-offiaccount-dev"
-gitpull_pathArray["p"]="/e/work/git/dvs-2.x/dvs-park-h5-app"
-gitpull_pathArray["q"]="/e/work/git/dvs-2.x/qrcode-demo-dev"
-gitpull_pathArray["c"]="/e/work/git/dvs-2.x/dvs-server-ui-dev"
+# declare -A gitpull_pathArray
+# gitpull_pathArray["a"]="/e/work/git/dvs-2.x/dvs-app-h5-develop"
+# gitpull_pathArray["w"]="/e/work/git/dvs-2.x/dvs-offiaccount-dev"
+# gitpull_pathArray["p"]="/e/work/git/dvs-2.x/dvs-park-h5-app"
+# gitpull_pathArray["q"]="/e/work/git/dvs-2.x/qrcode-demo-dev"
+# gitpull_pathArray["c"]="/e/work/git/dvs-2.x/dvs-server-ui-dev"
 
-# ############## 5、git拉取项目、编译项目 ##############
-for key in ${!gitpull_pathArray[@]}
-do
-  # echo -e "${key}  ----${project}"
-  if [[ $project == *$key* ]]
-  then
-     if test $key = "c"; then
-      echo -e "开始拉取项目:<<${projectName}>>";
-      git pull
-      echo -e "拉取项目<<${projectName}>>成功";
-      build_pc_Function
-      echo -e "准备开始编译PC";
-    else
-      cd ${gitpull_pathArray[${key}]}
-      projectName=${projectList[$key]}
-      echo -e "开始拉取项目:<<${projectName}>>";
-      git pull
-      echo -e "拉取项目<<${projectName}>>成功";
-      echo '-------------------------------------------------'
-      echo -e "开始编译项目:<<${projectName}>>";
-      yarn build
-      echo -e "编译项目<<${projectName}>>成功";
-      echo '-------------------------------------------------'
-      echo -e "开始打tag项目:<<${projectName}>>";
+# # ############## 5、git拉取项目、编译项目 ##############
+# for key in ${!gitpull_pathArray[@]}
+# do
+#   # echo -e "${key}  ----${project}"
+#   if [[ $project == *$key* ]]
+#   then
+#      if test $key = "c"; then
+#       echo -e "开始拉取项目:<<${projectName}>>";
+#       git pull
+#       echo -e "拉取项目<<${projectName}>>成功";
+#       build_pc_Function
+#       echo -e "准备开始编译PC";
+#     else
+#       cd ${gitpull_pathArray[${key}]}
+#       projectName=${projectList[$key]}
+#       echo -e "开始拉取项目:<<${projectName}>>";
+#       git pull
+#       echo -e "拉取项目<<${projectName}>>成功";
+#       echo '-------------------------------------------------'
+#       echo -e "开始编译项目:<<${projectName}>>";
+#       yarn build
+#       echo -e "编译项目<<${projectName}>>成功";
+#       echo '-------------------------------------------------'
+#       echo -e "开始打tag项目:<<${projectName}>>";
       
-      if [[ "$tag" == "" ]] 
-      then
-        if test $version = $tagVersion ; then
-          echo 'tag 已经存在要先进行删除'
-          git tag -d $version
-          git push origin :refs/tags/$version
+#       if [[ "$tag" == "" ]] 
+#       then
+#         if test $version = $tagVersion ; then
+#           echo 'tag 已经存在要先进行删除'
+#           git tag -d $version
+#           git push origin :refs/tags/$version
 
-          echo 'tag已删除要进行git tag'
-          git tag -a $version -m "${version}"
-          git push origin $version
-          echo -e "打tag项目:<<${projectName}>>成功";
-          cd $current_path
-          echo "tagVersion=\"$version\"  # $(date)" >> ./versions
-        else  
-          echo 'tag不存在 要进行git tag'
-          git tag -a $version -m "${version}"
-          git push origin $version
-          echo -e "打tag项目:<<${projectName}>>成功";
-          cd $current_path
-          echo "tagVersion=\"$version\"  # $(date)" >> ./versions
-        fi
-      else
-        echo  -e "不需要进行打tag"
-      fi
-    fi
-  fi
-done
+#           echo 'tag已删除要进行git tag'
+#           git tag -a $version -m "${version}"
+#           git push origin $version
+#           echo -e "打tag项目:<<${projectName}>>成功";
+#           cd $current_path
+#           echo "tagVersion=\"$version\"  # $(date)" >> ./versions
+#         else  
+#           echo 'tag不存在 要进行git tag'
+#           git tag -a $version -m "${version}"
+#           git push origin $version
+#           echo -e "打tag项目:<<${projectName}>>成功";
+#           cd $current_path
+#           echo "tagVersion=\"$version\"  # $(date)" >> ./versions
+#         fi
+#       else
+#         echo  -e "不需要进行打tag"
+#       fi
+#     fi
+#   fi
+# done
 
-########## 6、编译完成后，删除app、qrcode、wechat 中的配置文件
-declare -A deleteBuildConfig_pathArr
-deleteBuildConfig_pathArr["a"]="/e/work/git/dvs-2.x/release/cms/app"
-deleteBuildConfig_pathArr["w"]="/e/work/git/dvs-2.x/release/cms/wechat"
-deleteBuildConfig_pathArr["q"]="/e/work/git/dvs-2.x/release/cms/qrcode"
-for key in ${!deleteBuildConfig_pathArr[@]}
-do
-  if [[ $project == *$key* ]]
-  then
-    project_path=${deleteBuildConfig_pathArr[${key}]}
-    cd $project_path
-    # rm config.js
-    echo -e "删除项目：${deleteBuildConfig_pathArr[i]} 中的配置文件成功";
-  fi
-done
+# ########## 6、编译完成后，删除app、qrcode、wechat 中的配置文件
+# declare -A deleteBuildConfig_pathArr
+# deleteBuildConfig_pathArr["a"]="/e/work/git/dvs-2.x/release/cms/app"
+# deleteBuildConfig_pathArr["w"]="/e/work/git/dvs-2.x/release/cms/wechat"
+# deleteBuildConfig_pathArr["q"]="/e/work/git/dvs-2.x/release/cms/qrcode"
+# for key in ${!deleteBuildConfig_pathArr[@]}
+# do
+#   if [[ $project == *$key* ]]
+#   then
+#     project_path=${deleteBuildConfig_pathArr[${key}]}
+#     cd $project_path
+#     # rm config.js
+#     echo -e "删除项目：${deleteBuildConfig_pathArr[i]} 中的配置文件成功";
+#   fi
+# done
 
 # ########### 4、dvs2.0将本地打包文件上传至服务器 ############
 
-# scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
+scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
 
 # ########### 5、拷贝完之后进行git 的提交  ##############
-# cd /e/work/git/dvs-2.x/release
-# git add .
-# sleep 2s
-# message="chore：前端app、qrocde、wechat、park、console(child)commit-version:${version}"
-# git commit -m $message .
-# git push origin
+cd /e/work/git/dvs-2.x/release
+git add .
+sleep 2s
+message="chore：前端app、qrocde、wechat、park、console(child)commit-version:${version}"
+git commit -m $message .
+git push origin
 
 echo "5秒后将自动退出本脚本："
 for i in $(seq 5 -1 1)
