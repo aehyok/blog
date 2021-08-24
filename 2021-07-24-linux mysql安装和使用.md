@@ -24,3 +24,8 @@
 
     - nohup 可执行程序的配置使用 https://blog.csdn.net/qq_40241957/article/details/98584207
     - log4j记录日志使用 https://blog.csdn.net/weixin_35696071/article/details/114343607
+
+ ### mysql 常用基本操作
+    - mysql中 information_schema数据库的作用  https://blog.csdn.net/xianjie0318/article/details/80857568
+    - TABLES 关于数据库中表的信息 select * from `TABLES` where TABLE_SCHEMA='aehyok'
+    - COLUMNS 关于数据库中的表的字段信息   select * from `COLUMNS` where TABLE_NAME='user'
