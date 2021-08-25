@@ -16,6 +16,8 @@
   - https://juejin.cn/post/6931708519976534029
 - Form 表单生成器
   - https://github.com/dream2023/f-render
+  - 滴滴form表单 https://juejin.cn/post/6969404225713340423#heading-9
+  - 滴滴github https://github.com/didi/epage
 - Table 配置器
   - https://xuliangzhan_admin.gitee.io/vxe-table/#/table/base/basic
 - qiankun 乾坤微前端
