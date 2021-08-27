@@ -50,6 +50,7 @@
 ## 八月份
 ### 8月26日
 - 240 vue element ui table 多个字段一起排序
+  - https://segmentfault.com/a/1190000022538605
   - https://blog.csdn.net/weixin_36894745/article/details/109443811
 ### 8月18日
 - 239 typescript actionMap[value] 报错的检查
