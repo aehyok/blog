@@ -48,6 +48,9 @@
 
 
 ## 八月份
+### 8月28日
+- 241 延迟加载组件
+  - https://blog.csdn.net/duninet/article/details/119701225
 ### 8月26日
 - 240 vue element ui table 多个字段一起排序
   - https://segmentfault.com/a/1190000022538605
