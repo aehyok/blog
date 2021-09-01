@@ -16,8 +16,8 @@
   - https://juejin.cn/post/6931708519976534029
 - Form 表单生成器
   - https://github.com/dream2023/f-render
-  - 滴滴form表单 https://juejin.cn/post/6969404225713340423#heading-9
-  - 滴滴github https://github.com/didi/epage
+  - 滴滴 form 表单 https://juejin.cn/post/6969404225713340423#heading-9
+  - 滴滴 github https://github.com/didi/epage
 - Table 配置器
   - https://xuliangzhan_admin.gitee.io/vxe-table/#/table/base/basic
 - qiankun 乾坤微前端
@@ -26,6 +26,7 @@
   - 部署配置 https://qiankun.umijs.org/zh/cookbook#%E5%A6%82%E4%BD%95%E9%83%A8%E7%BD%B2
   - 父子应用通信，子子应用通信 https://www.freesion.com/article/1714630234/
 - 微前端
+
   - 打包 npm 工具包 https://github.com/aehyok/outils
   - 打包 npm 组件包 https://mp.weixin.qq.com/s/2EL-wzXKwTIhGisUgkr4-g
   - 通用配置数据 http://rap2.taobao.org/ (图片路径需要自己上传)
@@ -46,83 +47,117 @@
   - TypeScript 相关配置
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
+## 九月份
+
+## 9 月 1 日
+
+- 242 video.js 指定视频某个播放时间进行播放
+  - https://www.cnblogs.com/zhuwenjun/p/4925372.html
 
 ## 八月份
-### 8月28日
+
+### 8 月 28 日
+
 - 241 延迟加载组件
   - https://blog.csdn.net/duninet/article/details/119701225
-### 8月26日
+
+### 8 月 26 日
+
 - 240 vue element ui table 多个字段一起排序
   - https://segmentfault.com/a/1190000022538605
   - https://blog.csdn.net/weixin_36894745/article/details/109443811
-### 8月18日
+
+### 8 月 18 日
+
 - 239 typescript actionMap[value] 报错的检查
   - https://blog.csdn.net/beLaity/article/details/108527556
-### 8月14日
-- 238 生成shortid 短id
+
+### 8 月 14 日
+
+- 238 生成 shortid 短 id
   - https://github.com/dylang/shortid
-- 237 滴滴团队PC和H5 可配置化前端组件库
+- 237 滴滴团队 PC 和 H5 可配置化前端组件库
   - https://github.com/epage-team/epage-vant
   - https://github.com/epage-team/epage-iview
   - https://github.com/didi/epage
 - 236 vue3 vue-dragger
   - https://github.com/SortableJS/vue.draggable.next
-- 235 vue3 vue-drag-resize 
+- 235 vue3 vue-drag-resize
   - https://github.com/kirillmurashov/vue-drag-resize/tree/vue3
-### 8月9日
-- 234 vue3 3.2.1 版本 defineEmits 定义事件问题
-   - https://zhuanlan.zhihu.com/p/386919557
-- 233 vue3 vite2 打包资源文件配置
-   - https://blog.csdn.net/weixin_47021806/article/details/118697540
 
-### 8月8日
-- 232 bash source命令行的使用
+### 8 月 9 日
+
+- 234 vue3 3.2.1 版本 defineEmits 定义事件问题
+  - https://zhuanlan.zhihu.com/p/386919557
+- 233 vue3 vite2 打包资源文件配置
+  - https://blog.csdn.net/weixin_47021806/article/details/118697540
+
+### 8 月 8 日
+
+- 232 bash source 命令行的使用
   - https://www.cnblogs.com/shuiche/p/9436126.html
-### 8月7日
-- 231 bash数组循环便利 （关联数组，可以通过key访问）
+
+### 8 月 7 日
+
+- 231 bash 数组循环便利 （关联数组，可以通过 key 访问）
   - https://blog.csdn.net/weixin_39883129/article/details/113317457
   - https://github.com/wangdoc/bash-tutorial/blob/master/docs/array.md
-### 8月6日
-- 230 shell脚本 while
+
+### 8 月 6 日
+
+- 230 shell 脚本 while
 - 229 前端项目编译的时候发生，warning [mini-css-extract-plugin] warning Conflicting order
   - https://github.com/vuejs/vue-cli/issues/3771
-  - vue.config.js 中设置css 
+  - vue.config.js 中设置 css
     ```javascript
-      // vue.config.js
-      module.exports = {
-          css: {
-              extract: { ignoreOrder: true },
-          },
-      }
+    // vue.config.js
+    module.exports = {
+      css: {
+        extract: { ignoreOrder: true },
+      },
+    };
     ```
-### 8月5日
+
+### 8 月 5 日
+
 - 228 vue.config.js extenals 设置
-  - https://blog.csdn.net/weixin_38107457/article/details/106490372    
+  - https://blog.csdn.net/weixin_38107457/article/details/106490372
+
 ## 七月份
-### 7月30日
+
+### 7 月 30 日
+
 - 227 nginx location 规则判断处理
   - https://www.cnblogs.com/jpfss/p/10418150.html
-### 7月28日
-- 226 console.log的延迟问题
+
+### 7 月 28 日
+
+- 226 console.log 的延迟问题
   - https://www.jianshu.com/p/16dae5406c19
-### 7月23日
-- 225、centos 下安装mysql
+
+### 7 月 23 日
+
+- 225、centos 下安装 mysql
   - https://cloud.tencent.com/developer/article/1393323
   - https://www.cnblogs.com/yuanchao-blog/p/10679156.html
-- 224、腾讯云安装centos mysql
+- 224、腾讯云安装 centos mysql
   - https://cloud.tencent.com/developer/article/1145484?from=14588
-### 7月22日
-- 223 postman汉化版本
+
+### 7 月 22 日
+
+- 223 postman 汉化版本
   - https://github.com/hlmd/Postman-cn
-- 222 微信公众号调用wx.config 验证
-  - 校验wx.config 参数合规性 http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=jsapisign
+- 222 微信公众号调用 wx.config 验证
+  - 校验 wx.config 参数合规性 http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=jsapisign
   - 微信官方文档 https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#62
-### 7月21日
+
+### 7 月 21 日
+
 - 221 行政区边界拾取
   - https://lbs.amap.com/demo/javascript-api/example/district-search/draw-district-boundaries
 - 220 map 桌面地图
   - https://zhuanlan.zhihu.com/p/142531621
-- 219 vue 动态table 
+- 219 vue 动态 table
   - https://github.com/TheoXiong/vue-table-dynamic
 - 218 动态菜单 菜单权限 等
   - https://github.com/GeekQiaQia/vue3.0-template-admin
@@ -130,25 +165,37 @@
   - https://github.com/ly1994lyy/Vue3.0_Element_ShopManage/blob/master/src/utils/userValidate.ts
 - 216 utils 封装参考
   - https://github.com/xiaoxian521/vue-pure-admin/tree/main/src/utils
-### 7月20日
-- 215 bigemap 获取kml文件
+
+### 7 月 20 日
+
+- 215 bigemap 获取 kml 文件
   - http://www.bigemap.com/reader/
   - http://www.bigemap.com/introduce.html
-### 7月19日
+
+### 7 月 19 日
+
 - 214 删除文件和文件夹
-  - rm -rf *
+  - rm -rf \*
 - 213 linux 删除目录下的文件指令
   - https://www.cnblogs.com/a-du/p/9987012.html
-### 7月18日
+
+### 7 月 18 日
+
 - 212 组件共享 webpack5 Module Federation
   - https://zhuanlan.zhihu.com/p/144267429
-### 7月17日
-- 211 html网页 转换为md 文档工具
+
+### 7 月 17 日
+
+- 211 html 网页 转换为 md 文档工具
   - https://github.com/helloworld-Co/html2md
-### 7月14日 
-- 210 github pages如何部署网站
+
+### 7 月 14 日
+
+- 210 github pages 如何部署网站
   - https://zhuanlan.zhihu.com/p/28321740
-### 7月7日
+
+### 7 月 7 日
+
 - 209 axios typescript 封装
   - https://github.com/buqiyuan/vue3-antd-admin/tree/main/src/utils/http/axios
   - https://github.com/anncwb/vue-vben-admin/tree/main/src/utils/http/axios
@@ -160,31 +207,43 @@
   - https://github.com/riophae/vue-treeselect
   - https://github.com/megafetis/vue3-treeselect
   - https://www.cnblogs.com/yuwenjing0727/p/10214490.html
-- 205 webpack 打包文件名 hash、 chunkhash、contenthash意义
+- 205 webpack 打包文件名 hash、 chunkhash、contenthash 意义
   - https://www.cnblogs.com/giggle/p/9583940.html
-### 7月6日
-- 204 vue hls 使用 播放m3u8视频
+
+### 7 月 6 日
+
+- 204 vue hls 使用 播放 m3u8 视频
   - https://www.cnblogs.com/jin-zhe/p/11975515.html
   - https://hls-js.netlify.app/demo/
   - https://github.com/video-dev/hls.js
-### 7月3日
-- 203 wx.config url设置 
+
+### 7 月 3 日
+
+- 203 wx.config url 设置
   - https://www.cnblogs.com/wukongz/p/13371820.html
-### 7月2日
+
+### 7 月 2 日
+
 - 202 prettier 设置格式化文件代码
   - https://blog.csdn.net/qq_37815596/article/details/109225879
-### 7月1日
+
+### 7 月 1 日
+
 - 201 地图底图服务
   - https://blog.csdn.net/zouxin_88/article/details/107425436
   - https://wiki.openstreetmap.org/wiki/Tile_servers
   - https://blog.csdn.net/acmdream/article/details/78788889
-  - GeoServer发布osm数据地图服务 https://blog.csdn.net/jiang_wang01/article/details/117789270
+  - GeoServer 发布 osm 数据地图服务 https://blog.csdn.net/jiang_wang01/article/details/117789270
   - rest api 底图服务搭建 https://www.cnblogs.com/think8848/p/6241836.html
+
 ## 六月份
-### 6月30日
-- 200 vue cesium 
+
+### 6 月 30 日
+
+- 200 vue cesium
   - vite 版本 https://segmentfault.com/a/1190000039344137
 - 199 PC 端自适应设置屏幕样式
+
   ```javascript
         @media (min-width: 1024px){
         body{font-size: 18px}
@@ -200,182 +259,230 @@
         @media (min-width: 1366px) {
 
         body{font-size: 24px;}
-        }  
+        }
 
         @media (min-width: 1440px) {
         body{font-size: 25px !important;}
-        } 
+        }
 
         @media (min-width: 1680px) {
         body{font-size: 28px;}
-        } 
+        }
         @media (min-width: 1920px) {
         body{font-size: 33px;}
-        } 
+        }
   ```
-### 6月29日
-  - 198 vue组件中的key 可以刷新数据
-  - <populationProfile :num="echartsNum" :data1="chartsData1" :data2="chartsData2" :key="new Date().getTime()" class="mt-10"/>
-  - 也可以通过子组件中的watch 监听num变化进行处理数据
-### 6月28日
-- 197 微信公众号调用wx.config进行设置
-  - https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#36  调用微信本地的wx.openLocation
-  - https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#62 通过接口获取wx.config的参数值
-- 196 android app开启辅助H5 定位功能
+
+### 6 月 29 日
+
+- 198 vue 组件中的 key 可以刷新数据
+- <populationProfile :num="echartsNum" :data1="chartsData1" :data2="chartsData2" :key="new Date().getTime()" class="mt-10"/>
+- 也可以通过子组件中的 watch 监听 num 变化进行处理数据
+
+### 6 月 28 日
+
+- 197 微信公众号调用 wx.config 进行设置
+  - https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#36 调用微信本地的 wx.openLocation
+  - https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#62 通过接口获取 wx.config 的参数值
+- 196 android app 开启辅助 H5 定位功能
   - https://lbsyun.baidu.com/index.php?title=android-locsdk/guide/addition-func/assistant-h5
-### 6月26日
-- 195 微信公众号JSSDK分享页面
+
+### 6 月 26 日
+
+- 195 微信公众号 JSSDK 分享页面
   - https://blog.csdn.net/qq_29180565/article/details/89487307
-### 6月25日
+
+### 6 月 25 日
+
 - 194 百度地图自动获取当前定位和当前经纬度
   - https://lockdatav.blog.csdn.net/article/details/106057269
 - 193 前端压缩上传图片
   - https://juejin.cn/post/6940430496128040967
   - https://github.com/legend-li/img_compress_rotate_preview_upload
   - https://juejin.cn/post/6844903568726556686#heading-4
-### 6月23日
-- 192 git-cz 等同于git commit命令
+
+### 6 月 23 日
+
+- 192 git-cz 等同于 git commit 命令
   - https://www.npmjs.com/package/git-cz
-### 6月22日
-- 191 百度地图map Marker添加点击事件
-  - https://www.cnblogs.com/forever-star/articles/4717483.html 
-### 6月21日
-- 190 public下的js文件通过import 导入后一样会将文件打包进去，不能通过配置文件读取
+
+### 6 月 22 日
+
+- 191 百度地图 map Marker 添加点击事件
+  - https://www.cnblogs.com/forever-star/articles/4717483.html
+
+### 6 月 21 日
+
+- 190 public 下的 js 文件通过 import 导入后一样会将文件打包进去，不能通过配置文件读取
 - 189 cesium 中文网
-   - http://cesium.xin/wordpress/
-### 6月20日
-- 188 map相关
+  - http://cesium.xin/wordpress/
+
+### 6 月 20 日
+
+- 188 map 相关
   - openlayers https://github.com/openlayers/openlayers
   - d3 https://www.zhihu.com/question/53469317/answer/1466894972
   - cesium https://zhuanlan.zhihu.com/p/34217817
-### 6月19日
+
+### 6 月 19 日
+
 - 187 微信公众号页面中
-  - 两个alert() 会存在覆盖的情况，后者会覆盖前者
-  - 如果alert() 后面存在重定向的话，alert（）可能来不及执行
+  - 两个 alert() 会存在覆盖的情况，后者会覆盖前者
+  - 如果 alert() 后面存在重定向的话，alert（）可能来不及执行
 - 186 van-picker 三级联动
   - https://codesandbox.io/s/k22r4yryo3?file=/src/components/HelloWorld.vue
-### 6月15日
+
+### 6 月 15 日
+
 - 185 vite2 vue3 作为乾坤的子应用
   - https://github.com/umijs/qiankun/issues/1268
 - 184 获取随机数字并且不等于上一次的数值
-    ```javascript
-      // 获取随机数
-      // Math.random 生成0-1之间的随机数字
-      const getRndInteger = (max) => {
-          const tempNum = Math.floor(Math.random() * max);
-          console.log(`当前值：${tempNum},历史值：${window.randomNum}`);
-          if (window.randomNum === tempNum) {
-              console.log("再调用一次方法");
-              getRndInteger(max);
-          } else {
-              window.randomNum = tempNum;
-              // console.log('返回当前值',tempNum)
-              // return tempNum;
-          }
-      };
-    ``` 
-- 183 数组随机排序 
+  ```javascript
+  // 获取随机数
+  // Math.random 生成0-1之间的随机数字
+  const getRndInteger = (max) => {
+    const tempNum = Math.floor(Math.random() * max);
+    console.log(`当前值：${tempNum},历史值：${window.randomNum}`);
+    if (window.randomNum === tempNum) {
+      console.log("再调用一次方法");
+      getRndInteger(max);
+    } else {
+      window.randomNum = tempNum;
+      // console.log('返回当前值',tempNum)
+      // return tempNum;
+    }
+  };
+  ```
+- 183 数组随机排序
   https://www.cnblogs.com/7qin/p/9710034.html
-    ```javascript
-      function shuffle(arr) { 
-        let i = arr.length; 
-        while (i) { 
-        let j = Math.floor(Math.random() * i--);  //5555
-            [arr[j], arr[i]] = [arr[i], arr[j]]; 
-        } 
-      } 
-    ```
-### 6月11日
-- 282 git bash中的中文乱码问题处理
+  ```javascript
+  function shuffle(arr) {
+    let i = arr.length;
+    while (i) {
+      let j = Math.floor(Math.random() * i--); //5555
+      [arr[j], arr[i]] = [arr[i], arr[j]];
+    }
+  }
+  ```
+
+### 6 月 11 日
+
+- 282 git bash 中的中文乱码问题处理
   - https://www.jianshu.com/p/b80a1948c42f
--  281 El-select 下拉点击后不出来
-  - https://github.com/element-plus/element-plus/issues/2180
-  - https://github.com/element-plus/element-plus/issues/2198
-### 6月10日
-- 280 git提交的shell脚本
+- 281 El-select 下拉点击后不出来
+- https://github.com/element-plus/element-plus/issues/2180
+- https://github.com/element-plus/element-plus/issues/2198
+
+### 6 月 10 日
+
+- 280 git 提交的 shell 脚本
+
   - https://www.cnblogs.com/gyjx2016/p/10058209.html
 
 - 279 qiankun 主应用跳转到子应用后退页面无法刷新的问题
   - https://github.com/umijs/qiankun/issues/1155
-### 6月4日
-- 278 qiankun乾坤子应用打包后，主应用访问 图片和 字体等打包后无法访问
+
+### 6 月 4 日
+
+- 278 qiankun 乾坤子应用打包后，主应用访问 图片和 字体等打包后无法访问
   - https://qiankun.umijs.org/zh/faq#%E5%BE%AE%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85%E4%B9%8B%E5%90%8E-css-%E4%B8%AD%E7%9A%84%E5%AD%97%E4%BD%93%E6%96%87%E4%BB%B6%E5%92%8C%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD-404
-### 6月3日
+
+### 6 月 3 日
+
 - 277 cookie 操作
   - https://juejin.cn/post/6889231003697709070
   - https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie
   - https://github.com/js-cookie/js-cookie
-### 6月2日
+
+### 6 月 2 日
+
 - 276 vite2 配置接口代理
-    ```javascript
-     // 本地运行配置，及反向代理配置
-    server: {
-      port: 9900,
-      cors: true, // 默认启用并允许任何源
-      open: true, // 在服务器启动时自动在浏览器中打开应用程序
-      //反向代理配置，注意rewrite写法，开始没看文档在这里踩了坑
-      proxy: {
-        '/infra': {
-          target: 'http://139.9.184.171:10088',   //代理接口
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/infra/, '')
-        }
+  ```javascript
+   // 本地运行配置，及反向代理配置
+  server: {
+    port: 9900,
+    cors: true, // 默认启用并允许任何源
+    open: true, // 在服务器启动时自动在浏览器中打开应用程序
+    //反向代理配置，注意rewrite写法，开始没看文档在这里踩了坑
+    proxy: {
+      '/infra': {
+        target: 'http://139.9.184.171:10088',   //代理接口
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/infra/, '')
       }
     }
-    ```
-### 6月1日
-- 275 vite2和vue3升级体验
-  -  https://www.mmxiaowu.com/article/606c782c54e901622416aaca
--  274 vite2配置axios请求代理
-  - https://www.cnblogs.com/hy999/p/vue-vite-proxy.html
+  }
+  ```
+
+### 6 月 1 日
+
+- 275 vite2 和 vue3 升级体验
+  - https://www.mmxiaowu.com/article/606c782c54e901622416aaca
+- 274 vite2 配置 axios 请求代理
+- https://www.cnblogs.com/hy999/p/vue-vite-proxy.html
 
 ## 五月份
-### 5月31日 
+
+### 5 月 31 日
+
 - 273 轮播动态
-   - Dynamic slides https://swiperjs.com/demos#pagination
-   - https://codesandbox.io/s/0871t?file=/src/App.vue:13-383
-   - https://github.surmon.me/vue-awesome-swiper/
+  - Dynamic slides https://swiperjs.com/demos#pagination
+  - https://codesandbox.io/s/0871t?file=/src/App.vue:13-383
+  - https://github.surmon.me/vue-awesome-swiper/
 - 272 轮播页面插件
   - https://github.surmon.me/vue-awesome-swiper/
-### 5月28日
-- 271 vuex 持久化插件
-    - https://github.com/robinvdvleuten/vuex-persistedstate
-### 5月26日
-- 270 redis 库
-    - https://github.com/2881099/csredis
-- 269 vscode 设置默认的终端 
-    - setting.json文件中设置 "terminal.integrated.shell.windows": "E:/Program Files/Git/bin/bash.exe",
-- 268 File differs from already included file only in casing: correct casing but relative path
-    - https://github.com/Microsoft/TypeScript/issues/25460
-### 5月25日
-- 267 vue3 PC端项目模板
-    - https://github.com/PanJiaChen/vue-element-admin 
-    - https://github.com/lin-xin/vue-manage-system
-- 266 vuex持久化
-    - https://www.jianshu.com/p/04c288731819?utm_campaign=haruki
-### 5月24日
-- 265 EFCore 标准代码仓库
-   - https://github.com/dotnetcore/osharp
-### 5月22日
--  264 yarn build 打包时，会有一系列的警告
-  ```javascript
 
-    // 警告信息如下
-    chunk chunk-8bbe4a0e [mini-css-extract-plugin]
-    Conflicting order. Following module has been added:
-    * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/imgPreview.vue?vue&type=style&index=0&id=41ed99a7&lang=scss&scoped=true&
-    despite it was not able to fulfill desired ordering with these modules:
-    * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/videoPreview.vue?vue&type=style&index=0&id=6fbe4342&lang=scss&scoped=true&
-      - couldn't fulfill desired order of chunk group(s)
-      - while fulfilling desired order of chunk group(s) , , , ,
-  ```  
-  // 目前可以在vue.config.js中设置去除警告信息
-  ```javascript
-      // 设置忽略警告【mini-css-extract-plugin】 order 
-        extract: process.env.NODE_ENV === 'production' ? {
-          ignoreOrder: true,
-        } : false,
-  ```
+### 5 月 28 日
+
+- 271 vuex 持久化插件
+  - https://github.com/robinvdvleuten/vuex-persistedstate
+
+### 5 月 26 日
+
+- 270 redis 库
+  - https://github.com/2881099/csredis
+- 269 vscode 设置默认的终端
+  - setting.json 文件中设置 "terminal.integrated.shell.windows": "E:/Program Files/Git/bin/bash.exe",
+- 268 File differs from already included file only in casing: correct casing but relative path
+  - https://github.com/Microsoft/TypeScript/issues/25460
+
+### 5 月 25 日
+
+- 267 vue3 PC 端项目模板
+  - https://github.com/PanJiaChen/vue-element-admin
+  - https://github.com/lin-xin/vue-manage-system
+- 266 vuex 持久化
+  - https://www.jianshu.com/p/04c288731819?utm_campaign=haruki
+
+### 5 月 24 日
+
+- 265 EFCore 标准代码仓库
+  - https://github.com/dotnetcore/osharp
+
+### 5 月 22 日
+
+- 264 yarn build 打包时，会有一系列的警告
+
+```javascript
+
+  // 警告信息如下
+  chunk chunk-8bbe4a0e [mini-css-extract-plugin]
+  Conflicting order. Following module has been added:
+  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/imgPreview.vue?vue&type=style&index=0&id=41ed99a7&lang=scss&scoped=true&
+  despite it was not able to fulfill desired ordering with these modules:
+  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/videoPreview.vue?vue&type=style&index=0&id=6fbe4342&lang=scss&scoped=true&
+    - couldn't fulfill desired order of chunk group(s)
+    - while fulfilling desired order of chunk group(s) , , , ,
+```
+
+// 目前可以在 vue.config.js 中设置去除警告信息
+
+```javascript
+    // 设置忽略警告【mini-css-extract-plugin】 order
+      extract: process.env.NODE_ENV === 'production' ? {
+        ignoreOrder: true,
+      } : false,
+```
 
 ### 5 月 20 日
 
