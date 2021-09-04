@@ -49,6 +49,18 @@
 
 ## 九月份
 
+## 9 月 4 日
+
+- 244 数据大屏可视化配置
+  - https://github.com/dongsuo/vue-data-board
+  - https://v11nlab.com/
+
+## 9 月 3 日
+
+- 243 video 标签监听事件
+  - https://www.cnblogs.com/yuanmo/p/12795104.html
+  - 监测视频播放了多久，方便记录下次进来继续播放 https://www.jc2182.com/html/html-audio-video-dom-timeupdate-event.html
+
 ## 9 月 1 日
 
 - 242 video.js 指定视频某个播放时间进行播放
