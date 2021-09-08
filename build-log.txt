@@ -1,31 +1,119 @@
 tag tag
+包含a------村委app
 包含c------pc后台管理
- 命令行中包含的版本号: 2.3.0.0002
+包含p------园区app
+包含q------一户一码
+包含w------微信公众号
+ 命令行中包含的版本号: 2.3.0.003
 -------------------------------------------------
-开始拉取项目:<<>>
-拉取项目<<>>成功
-开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main 
-yarn run v1.22.10
-$ vite build --emptyOutDir
-vite v2.3.4 building for production...
-transforming...
-✓ 885 modules transformed.
-info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main} 成功
-开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic 
+开始拉取项目:<<村委app>>
+Updating 78fa60c..be423aa
+Fast-forward
+ src/services/apis.js                                 |  2 +-
+ src/views/download/download.vue                      |  4 ++--
+ .../villagersCertificationDetails.vue                | 20 ++++++++++++--------
+ 3 files changed, 15 insertions(+), 11 deletions(-)
+拉取项目<<村委app>>成功
+-------------------------------------------------
+开始编译项目:<<村委app>>
 yarn run v1.22.10
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午4:08:23
+ WARNING  Compiled with 2 warnings上午10:57:46
 
  warning  
 
 asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 This can impact web performance.
 Assets: 
-  css/app.77ca2c83.css (328 KiB)
+  img/appbanner.ce354529.png (303 KiB)
+  js/chunk-46a08ae8.56c248ee.js (273 KiB)
+  js/chunk-vendors.2f1d39ca.js (2.34 MiB)
+  configImage/greenhouse(center).png (438 KiB)
+  configImage/greenhouse(door).png (393 KiB)
+  configImage/secondhouse(northwest).png (460 KiB)
+  scan/u1036.png (446 KiB)
+  scan/u1040.png (297 KiB)
+  scan/u1039.png (306 KiB)
+  scan/u1041.png (447 KiB)
+  scan/u1042.png (278 KiB)
+  scan/u1044.png (312 KiB)
+  scan/u1043.png (335 KiB)
+  scan/u826.png (256 KiB)
+  scan/u87.png (262 KiB)
+  scan/u825.jpg (254 KiB)
+  scan/u829.png (250 KiB)
+  configImage/villageDoor.png (610 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (2.57 MiB)
+      css/chunk-vendors.6b8282f5.css
+      js/chunk-vendors.2f1d39ca.js
+      css/app.6629ab80.css
+      js/app.8a14f8ff.js
+
+
+  File                                      Size             Gzipped
+
+  ..\release\cms\app\js\chunk-vendors.2f    2392.36 KiB      748.19 KiB
+  1d39ca.js
+  ..\release\cms\app\js\chunk-46a08ae8.5    272.81 KiB       112.54 KiB
+  6c248ee.js
+  ..\release\cms\app\js\app.8a14f8ff.js     20.51 KiB        6.90 KiB
+  ..\release\cms\app\js\chunk-28f8c687.2    12.92 KiB        6.46 KiB
+  ac877bc.js
+  ..\release\cms\app\js\chunk-698e50f7.f    5.41 KiB         2.29 KiB
+  0aaa956.js
+  ..\release\cms\app\config.js              1.41 KiB         0.48 KiB
+  ..\release\cms\app\css\chunk-vendors.6    217.72 KiB       61.78 KiB
+  b8282f5.css
+  ..\release\cms\app\css\chunk-46a08ae8.    95.62 KiB        12.06 KiB
+  b47e03b1.css
+  ..\release\cms\app\css\chunk-28f8c687.    3.84 KiB         1.17 KiB
+  7caf2da0.css
+  ..\release\cms\app\css\chunk-698e50f7.    3.60 KiB         1.08 KiB
+  06742b62.css
+  ..\release\cms\app\css\app.6629ab80.cs    2.35 KiB         0.89 KiB
+  s
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\release\cms\app directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 54.00s.
+编译项目<<村委app>>成功
+-------------------------------------------------
+开始打tag项目:<<村委app>>
+不需要进行打tag
+开始拉取项目:<<村委app>>
+Already up to date.
+拉取项目<<村委app>>成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main 
+yarn run v1.22.10
+$ vite build --emptyOutDir
+vite v2.3.4 building for production...
+transforming...
+✓ 847 modules transformed.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main} 成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic 
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings上午10:58:47
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  css/app.58e32a31.css (328 KiB)
   js/chunk-13a12806.ec3d059f.js (279 KiB)
-  css/chunk-77438be4.e9fdd021.css (1.45 MiB)
+  css/chunk-77438be4.b6b8bcc0.css (1.45 MiB)
   js/chunk-vendors.d6285aa1.js (858 KiB)
 
  warning  
@@ -34,8 +122,8 @@ entrypoint size limit: The following entrypoint(s) combined asset size exceeds t
 Entrypoints:
   app (1.29 MiB)
       js/chunk-vendors.d6285aa1.js
-      css/app.77ca2c83.css
-      js/app.0522b198.js
+      css/app.58e32a31.css
+      js/app.4f78c238.js
 
 
   File                                      Size             Gzipped
@@ -44,32 +132,32 @@ Entrypoints:
   sic\js\chunk-vendors.d6285aa1.js
   ..\..\release\cms\console\child\dvs-ba    279.31 KiB       76.75 KiB
   sic\js\chunk-13a12806.ec3d059f.js
-  ..\..\release\cms\console\child\dvs-ba    129.78 KiB       54.49 KiB
-  sic\js\app.0522b198.js
-  ..\..\release\cms\console\child\dvs-ba    100.66 KiB       22.38 KiB
-  sic\js\chunk-de36a660.d7d5aaee.js
-  ..\..\release\cms\console\child\dvs-ba    23.94 KiB        6.53 KiB
-  sic\js\chunk-33093baf.b9eaf02f.js
-  ..\..\release\cms\console\child\dvs-ba    20.56 KiB        6.37 KiB
-  sic\js\chunk-7dbd11ab.9847b689.js
-  ..\..\release\cms\console\child\dvs-ba    18.82 KiB        6.65 KiB
-  sic\js\chunk-77438be4.e4b007a0.js
-  ..\..\release\cms\console\child\dvs-ba    18.06 KiB        4.74 KiB
-  sic\js\chunk-5a4374c0.52dff0c7.js
-  ..\..\release\cms\console\child\dvs-ba    17.88 KiB        5.02 KiB
-  sic\js\chunk-00ef4310.5c91a85f.js
+  ..\..\release\cms\console\child\dvs-ba    129.81 KiB       54.50 KiB
+  sic\js\app.4f78c238.js
+  ..\..\release\cms\console\child\dvs-ba    101.24 KiB       22.58 KiB
+  sic\js\chunk-de36a660.4876ba7e.js
+  ..\..\release\cms\console\child\dvs-ba    24.49 KiB        6.64 KiB
+  sic\js\chunk-33093baf.720e7113.js
+  ..\..\release\cms\console\child\dvs-ba    20.47 KiB        6.32 KiB
+  sic\js\chunk-6adc217b.7a4bd5cd.js
+  ..\..\release\cms\console\child\dvs-ba    18.85 KiB        6.66 KiB
+  sic\js\chunk-77438be4.bec839d2.js
+  ..\..\release\cms\console\child\dvs-ba    18.09 KiB        4.75 KiB
+  sic\js\chunk-5a4374c0.3f4bbd14.js
+  ..\..\release\cms\console\child\dvs-ba    17.92 KiB        5.04 KiB
+  sic\js\chunk-00ef4310.5f9a6c4b.js
   ..\..\release\cms\console\child\dvs-ba    17.58 KiB        5.03 KiB
-  sic\js\chunk-089eaaf1.96e86459.js
-  ..\..\release\cms\console\child\dvs-ba    11.90 KiB        4.17 KiB
-  sic\js\chunk-35101580.b3dbf8a2.js
-  ..\..\release\cms\console\child\dvs-ba    10.18 KiB        3.60 KiB
-  sic\js\chunk-6dcd85e2.4927b419.js
-  ..\..\release\cms\console\child\dvs-ba    9.63 KiB         3.45 KiB
-  sic\js\chunk-6c8cff20.4fad87ba.js
+  sic\js\chunk-089eaaf1.7f30bece.js
+  ..\..\release\cms\console\child\dvs-ba    13.32 KiB        4.77 KiB
+  sic\js\chunk-3dcdf4cf.11f37f8c.js
+  ..\..\release\cms\console\child\dvs-ba    10.22 KiB        3.61 KiB
+  sic\js\chunk-6dcd85e2.30330b65.js
+  ..\..\release\cms\console\child\dvs-ba    9.67 KiB         3.46 KiB
+  sic\js\chunk-6c8cff20.fb7e98e8.js
   ..\..\release\cms\console\child\dvs-ba    8.46 KiB         2.72 KiB
   sic\js\chunk-feff6786.0cc592f7.js
   ..\..\release\cms\console\child\dvs-ba    7.22 KiB         2.35 KiB
-  sic\js\chunk-482849fd.b097c7ce.js
+  sic\js\chunk-164d4132.0a59ad60.js
   ..\..\release\cms\console\child\dvs-ba    5.36 KiB         1.89 KiB
   sic\js\chunk-29fd18c4.de6d4e33.js
   ..\..\release\cms\console\child\dvs-ba    5.10 KiB         1.93 KiB
@@ -112,67 +200,67 @@ Entrypoints:
   sic\js\chunk-2d0dae79.473a0a2b.js
   ..\..\release\cms\console\child\dvs-ba    0.30 KiB         0.22 KiB
   sic\js\chunk-2d0ac950.821dcd29.js
-  ..\..\release\cms\console\child\dvs-ba    1483.71 KiB      1120.44 KiB
-  sic\css\chunk-77438be4.e9fdd021.css
-  ..\..\release\cms\console\child\dvs-ba    328.26 KiB       93.93 KiB
-  sic\css\app.77ca2c83.css
-  ..\..\release\cms\console\child\dvs-ba    8.91 KiB         1.30 KiB
-  sic\css\chunk-482849fd.a2caa526.css
-  ..\..\release\cms\console\child\dvs-ba    8.65 KiB         2.87 KiB
-  sic\css\chunk-6c8cff20.57d4f781.css
-  ..\..\release\cms\console\child\dvs-ba    8.65 KiB         2.87 KiB
-  sic\css\chunk-6dcd85e2.57d4f781.css
-  ..\..\release\cms\console\child\dvs-ba    6.97 KiB         1.50 KiB
-  sic\css\chunk-5a4374c0.37ae8341.css
-  ..\..\release\cms\console\child\dvs-ba    6.09 KiB         1.11 KiB
-  sic\css\chunk-5a95d287.1015f965.css
-  ..\..\release\cms\console\child\dvs-ba    6.05 KiB         1.11 KiB
-  sic\css\chunk-1993e5fc.23b86a98.css
-  ..\..\release\cms\console\child\dvs-ba    5.77 KiB         1.02 KiB
-  sic\css\chunk-f39752d6.17269161.css
-  ..\..\release\cms\console\child\dvs-ba    5.77 KiB         1.03 KiB
-  sic\css\chunk-296a09d2.6d7fd2f1.css
-  ..\..\release\cms\console\child\dvs-ba    5.77 KiB         1.03 KiB
-  sic\css\chunk-2a7e7664.863a92ee.css
-  ..\..\release\cms\console\child\dvs-ba    5.77 KiB         1.03 KiB
-  sic\css\chunk-44969a1c.ef0e3a98.css
-  ..\..\release\cms\console\child\dvs-ba    5.77 KiB         1.03 KiB
-  sic\css\chunk-70aaa392.d67e5ebd.css
-  ..\..\release\cms\console\child\dvs-ba    3.50 KiB         0.96 KiB
-  sic\css\chunk-00ef4310.0a84134c.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-140990ae.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-29fd18c4.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-35101580.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-58a7455b.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-651daff0.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-b6a5af2c.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-c2502c5c.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-feff6786.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.87 KiB         0.81 KiB
-  sic\css\chunk-7dbd11ab.4833661e.css
-  ..\..\release\cms\console\child\dvs-ba    2.87 KiB         0.81 KiB
-  sic\css\chunk-de36a660.4833661e.css
+  ..\..\release\cms\console\child\dvs-ba    1483.80 KiB      1120.46 KiB
+  sic\css\chunk-77438be4.b6b8bcc0.css
+  ..\..\release\cms\console\child\dvs-ba    328.41 KiB       93.96 KiB
+  sic\css\app.58e32a31.css
+  ..\..\release\cms\console\child\dvs-ba    9.13 KiB         1.33 KiB
+  sic\css\chunk-164d4132.691f5091.css
+  ..\..\release\cms\console\child\dvs-ba    8.82 KiB         2.90 KiB
+  sic\css\chunk-6c8cff20.c93ebb79.css
+  ..\..\release\cms\console\child\dvs-ba    8.82 KiB         2.90 KiB
+  sic\css\chunk-6dcd85e2.c93ebb79.css
+  ..\..\release\cms\console\child\dvs-ba    7.14 KiB         1.53 KiB
+  sic\css\chunk-5a4374c0.39f5755e.css
+  ..\..\release\cms\console\child\dvs-ba    6.24 KiB         1.13 KiB
+  sic\css\chunk-5a95d287.fdc396d5.css
+  ..\..\release\cms\console\child\dvs-ba    6.20 KiB         1.13 KiB
+  sic\css\chunk-1993e5fc.7a5a724b.css
+  ..\..\release\cms\console\child\dvs-ba    5.92 KiB         1.04 KiB
+  sic\css\chunk-f39752d6.c231a9fa.css
+  ..\..\release\cms\console\child\dvs-ba    5.92 KiB         1.04 KiB
+  sic\css\chunk-296a09d2.ad129a5b.css
+  ..\..\release\cms\console\child\dvs-ba    5.92 KiB         1.04 KiB
+  sic\css\chunk-2a7e7664.d82aa177.css
+  ..\..\release\cms\console\child\dvs-ba    5.92 KiB         1.04 KiB
+  sic\css\chunk-44969a1c.97eba12e.css
+  ..\..\release\cms\console\child\dvs-ba    5.92 KiB         1.04 KiB
+  sic\css\chunk-70aaa392.f4673acc.css
+  ..\..\release\cms\console\child\dvs-ba    3.60 KiB         0.98 KiB
+  sic\css\chunk-00ef4310.c69e7eac.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-140990ae.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-29fd18c4.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-3dcdf4cf.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-58a7455b.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-651daff0.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-b6a5af2c.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-c2502c5c.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-feff6786.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    2.95 KiB         0.82 KiB
+  sic\css\chunk-6adc217b.747283cc.css
+  ..\..\release\cms\console\child\dvs-ba    2.95 KiB         0.82 KiB
+  sic\css\chunk-de36a660.747283cc.css
 
   Images and other types of assets omitted.
 
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-basic directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 32.14s.
+Done in 35.17s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons 
 yarn run v1.22.10
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午4:08:58
+ WARNING  Compiled with 2 warnings上午10:59:38
 
  warning  
 
@@ -180,7 +268,7 @@ asset size limit: The following asset(s) exceed the recommended size limit (244 
 This can impact web performance.
 Assets: 
   css/chunk-vendors.1ab89bae.css (413 KiB)
-  js/chunk-vendors.f193f47e.js (1.09 MiB)
+  js/chunk-vendors.a7626316.js (1.09 MiB)
 
  warning  
 
@@ -188,19 +276,19 @@ entrypoint size limit: The following entrypoint(s) combined asset size exceeds t
 Entrypoints:
   app (1.61 MiB)
       css/chunk-vendors.1ab89bae.css
-      js/chunk-vendors.f193f47e.js
-      css/app.0ad1d4e2.css
-      js/app.457fd892.js
+      js/chunk-vendors.a7626316.js
+      css/app.151c14b8.css
+      js/app.f076add9.js
 
 
   File                                      Size             Gzipped
 
   ..\..\release\cms\console\child\dvs-co    1116.55 KiB      322.83 KiB
-  ns\js\chunk-vendors.f193f47e.js
+  ns\js\chunk-vendors.a7626316.js
   ..\..\release\cms\console\child\dvs-co    133.65 KiB       39.41 KiB
   ns\js\chunk-bbcc5f26.4b6a846e.js
-  ..\..\release\cms\console\child\dvs-co    116.60 KiB       41.28 KiB
-  ns\js\app.457fd892.js
+  ..\..\release\cms\console\child\dvs-co    114.29 KiB       40.85 KiB
+  ns\js\app.f076add9.js
   ..\..\release\cms\console\child\dvs-co    13.31 KiB        7.40 KiB
   ns\js\chunk-a2ebb3b8.0009c79a.js
   ..\..\release\cms\console\child\dvs-co    5.46 KiB         1.99 KiB
@@ -214,16 +302,711 @@ Entrypoints:
   ..\..\release\cms\console\child\dvs-co    3.29 KiB         1.79 KiB
   ns\css\chunk-b02b6938.b57055ff.css
   ..\..\release\cms\console\child\dvs-co    1.44 KiB         0.57 KiB
-  ns\css\app.0ad1d4e2.css
+  ns\css\app.151c14b8.css
 
   Images and other types of assets omitted.
 
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-cons directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 34.28s.
+Done in 50.31s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village 
 yarn run v1.22.10
 $ vue-cli-service build
 
+ WARNING  Compiled with 5 warnings上午11:00:15
+
+ warning  
+
+chunk chunk-cb887d28 [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/page-setting.vue?vue&type=style&index=0&id=f2bd6aec&lang=scss&scoped=true
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/search/index.vue?vue&type=style&index=0&id=4dc960fe&scoped=true&lang=css
+   - couldn't fulfill desired order of chunk group(s) , 
+   - while fulfilling desired order of chunk group(s) , 
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/views/pestilence/returnees-popu.vue?vue&type=style&index=0&id=7ee585d0&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) 
+
+ warning  
+
+chunk chunk-cb887d28 [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/views/pestilence/returnees-popu.vue?vue&type=style&index=0&id=7ee585d0&lang=scss&scoped=true
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/index.vue?vue&type=style&index=0&id=417cf49a&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) 
+
+ warning  
+
+chunk chunk-cb887d28 [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/search/index.vue?vue&type=style&index=0&id=4dc960fe&scoped=true&lang=css
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/index.vue?vue&type=style&index=0&id=417cf49a&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) , 
+   - while fulfilling desired order of chunk group(s) , 
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  css/chunk-cb887d28.3a5b62ea.css (2.7 MiB)
+  js/chunk-cb887d28.152d9ddc.js (287 KiB)
+  css/chunk-vendors.7b8a3df6.css (374 KiB)
+  js/chunk-vendors.0398c2bb.js (1.12 MiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.63 MiB)
+      css/chunk-vendors.7b8a3df6.css
+      js/chunk-vendors.0398c2bb.js
+      css/app.8d3b7f91.css
+      js/app.728918b2.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\console\child\dvs-vi    1149.80 KiB      333.88 KiB
+  llage\js\chunk-vendors.0398c2bb.js
+  ..\..\release\cms\console\child\dvs-vi    287.39 KiB       64.46 KiB
+  llage\js\chunk-cb887d28.152d9ddc.js
+  ..\..\release\cms\console\child\dvs-vi    138.88 KiB       51.90 KiB
+  llage\js\app.728918b2.js
+  ..\..\release\cms\console\child\dvs-vi    79.65 KiB        30.37 KiB
+  llage\js\chunk-2d2107eb.2f581fb8.js
+  ..\..\release\cms\console\child\dvs-vi    36.40 KiB        9.53 KiB
+  llage\js\chunk-ff2d1c82.d3c08e15.js
+  ..\..\release\cms\console\child\dvs-vi    2768.48 KiB      2081.05 KiB
+  llage\css\chunk-cb887d28.3a5b62ea.css
+  ..\..\release\cms\console\child\dvs-vi    373.93 KiB       97.59 KiB
+  llage\css\chunk-vendors.7b8a3df6.css
+  ..\..\release\cms\console\child\dvs-vi    2.97 KiB         0.97 KiB
+  llage\css\app.8d3b7f91.css
+  ..\..\release\cms\console\child\dvs-vi    1.60 KiB         0.40 KiB
+  llage\css\chunk-ff2d1c82.23204e84.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\console\child\dvs-village directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 36.23s.
+编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village} 成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital 
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings上午11:03:05
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  css/chunk-vendors.7b8a3df6.css (374 KiB)
+  js/chunk-vendors.619a15c3.js (1.1 MiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.6 MiB)
+      css/chunk-vendors.7b8a3df6.css
+      js/chunk-vendors.619a15c3.js
+      css/app.71c5967f.css
+      js/app.fb84080f.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\console\child\dvs-di    1130.25 KiB      327.18 KiB
+  gital\js\chunk-vendors.619a15c3.js
+  ..\..\release\cms\console\child\dvs-di    134.77 KiB       51.39 KiB
+  gital\js\app.fb84080f.js
+  ..\..\release\cms\console\child\dvs-di    125.09 KiB       27.64 KiB
+  gital\js\chunk-f04b2994.547fae53.js
+  ..\..\release\cms\console\child\dvs-di    22.94 KiB        8.58 KiB
+  gital\js\chunk-4c553128.2da2abbd.js
+  ..\..\release\cms\console\child\dvs-di    14.14 KiB        3.79 KiB
+  gital\js\chunk-89b4a8ba.5992fd87.js
+  ..\..\release\cms\console\child\dvs-di    373.93 KiB       97.59 KiB
+  gital\css\chunk-vendors.7b8a3df6.css
+  ..\..\release\cms\console\child\dvs-di    132.95 KiB       98.11 KiB
+  gital\css\chunk-f04b2994.31cf9ece.css
+  ..\..\release\cms\console\child\dvs-di    2.59 KiB         0.86 KiB
+  gital\css\app.71c5967f.css
+  ..\..\release\cms\console\child\dvs-di    1.62 KiB         0.48 KiB
+  gital\css\chunk-4c553128.58400e40.css
+  ..\..\release\cms\console\child\dvs-di    0.99 KiB         0.27 KiB
+  gital\css\chunk-89b4a8ba.b9fc3e91.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\console\child\dvs-digital directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 169.72s.
+编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital} 成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park 
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings上午11:03:21
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  css/chunk-e679a02c.7f23749d.css (11.7 MiB)
+  css/chunk-f4537106.b769772d.css (2.51 MiB)
+  css/chunk-vendors.7b8a3df6.css (374 KiB)
+  js/chunk-vendors.1296e6c5.js (830 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.21 MiB)
+      css/chunk-vendors.7b8a3df6.css
+      js/chunk-vendors.1296e6c5.js
+      css/app.14bd5bf1.css
+      js/app.2b7bae55.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\console\child\dvs-pa    830.31 KiB       242.09 KiB
+  rk\js\chunk-vendors.1296e6c5.js
+  ..\..\release\cms\console\child\dvs-pa    38.83 KiB        24.30 KiB
+  rk\js\chunk-e679a02c.5182211b.js
+  ..\..\release\cms\console\child\dvs-pa    25.72 KiB        9.03 KiB
+  rk\js\chunk-2e538a24.e4422c09.js
+  ..\..\release\cms\console\child\dvs-pa    23.97 KiB        12.17 KiB
+  rk\js\app.2b7bae55.js
+  ..\..\release\cms\console\child\dvs-pa    8.90 KiB         6.45 KiB
+  rk\js\chunk-f4537106.f37e5b1a.js
+  ..\..\release\cms\console\child\dvs-pa    12005.96 KiB     9083.95 KiB
+  rk\css\chunk-e679a02c.7f23749d.css
+  ..\..\release\cms\console\child\dvs-pa    2570.35 KiB      1941.38 KiB
+  rk\css\chunk-f4537106.b769772d.css
+  ..\..\release\cms\console\child\dvs-pa    373.93 KiB       97.59 KiB
+  rk\css\chunk-vendors.7b8a3df6.css
+  ..\..\release\cms\console\child\dvs-pa    8.39 KiB         3.54 KiB
+  rk\css\app.14bd5bf1.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\console\child\dvs-park directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 15.51s.
+编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park} 成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis 
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 3 warnings上午11:03:53
+
+ warning  in ./src/views/map-icon-manage/icon-add.vue?vue&type=script&lang=js
+
+"export 'farmlandSave' was not found in '@/services/gis'
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  css/chunk-vendors.7b8a3df6.css (374 KiB)
+  js/chunk-vendors.e8ef7d8d.js (1.13 MiB)
+  js/customize-mark~greenhouse-mark~household-mark~land-plot~park-block-plot~park-customize-mark~park-web~22ad1ba1.6b4e0eb8.js (436 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.63 MiB)
+      css/chunk-vendors.7b8a3df6.css
+      js/chunk-vendors.e8ef7d8d.js
+      css/app.fe1d457b.css
+      js/app.14f2040a.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\console\child\dvs-gi    1156.34 KiB      335.11 KiB
+  s\js\chunk-vendors.e8ef7d8d.js
+  ..\..\release\cms\console\child\dvs-gi    435.74 KiB       111.67 KiB
+  s\js\customize-mark~greenhouse-mark~ho
+  usehold-mark~land-plot~park-block-plot
+  ~park-customize-mark~park-web~22ad1ba1
+  .6b4e0eb8.js
+  ..\..\release\cms\console\child\dvs-gi    195.78 KiB       39.18 KiB
+  s\js\land-plot.0039bf9c.js
+  ..\..\release\cms\console\child\dvs-gi    138.82 KiB       51.25 KiB
+  s\js\app.14f2040a.js
+  ..\..\release\cms\console\child\dvs-gi    44.33 KiB        12.58 KiB
+  s\js\customize-mark~customize-mark-man
+  age~greenhouse-manage~greenhouse-mark~
+  household-mark~land-manage~la~0ee56caf
+  .9ee06ef2.js
+  ..\..\release\cms\console\child\dvs-gi    373.93 KiB       97.59 KiB
+  s\css\chunk-vendors.7b8a3df6.css
+  ..\..\release\cms\console\child\dvs-gi    28.81 KiB        10.13 KiB
+  s\css\customize-mark~greenhouse-mark~h
+  ousehold-mark~land-plot~park-block-plo
+  t~park-customize-mark~park-web~22ad1ba
+  1.16cb1040.css
+  ..\..\release\cms\console\child\dvs-gi    11.52 KiB        1.60 KiB
+  s\css\land-plot.1f55c19f.css
+  ..\..\release\cms\console\child\dvs-gi    3.05 KiB         0.98 KiB
+  s\css\app.fe1d457b.css
+  ..\..\release\cms\console\child\dvs-gi    0.62 KiB         0.35 KiB
+  s\css\customize-mark~customize-mark-ma
+  nage~greenhouse-manage~greenhouse-mark
+  ~household-mark~land-manage~la~0ee56ca
+  f.f3d61dbb.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\console\child\dvs-gis directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 30.19s.
+编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis} 成功
+准备开始编译PC
+开始拉取项目:<<园区app>>
+Already up to date.
+拉取项目<<园区app>>成功
+-------------------------------------------------
+开始编译项目:<<园区app>>
+yarn run v1.22.10
+$ vite build --emptyOutDir
+vite v2.1.5 building for production...
+transforming...
+✓ 727 modules transformed.
+rendering chunks...
+../release/cms/park/assets/icon_logo.629e8153.png                29.30kb
+../release/cms/park/index.html                                   0.81kb
+../release/cms/park/assets/index.685aa03d.js                     110.21kb
+../release/cms/park/assets/Home.0494d03c.js                      10.67kb
+../release/cms/park/assets/index.73aa7c8f.js                     1.05kb
+../release/cms/park/assets/index.5d24074f.js                     5.09kb
+../release/cms/park/assets/tabbar.48cd18ec.js                    1.31kb
+../release/cms/park/assets/index.b15c09ba.js                     1.35kb
+../release/cms/park/assets/request.bce0e525.js                   16.63kb
+../release/cms/park/assets/index.bf501cb4.js                     2.44kb
+../release/cms/park/assets/index.c2eb8da8.js                     10.05kb
+../release/cms/park/assets/index.b7f3ae55.js                     3.62kb
+../release/cms/park/assets/index.ae18b483.js                     3.10kb
+../release/cms/park/assets/number.523547d7.js                    0.33kb
+../release/cms/park/assets/scroll.527fc4da.js                    0.67kb
+../release/cms/park/assets/ar.eb132d1b.js                        1.14kb
+../release/cms/park/assets/me.332d1860.js                        126.93kb
+../release/cms/park/assets/index.c79f7d15.js                     1.45kb
+../release/cms/park/assets/index.947ebaf9.js                     6.20kb
+../release/cms/park/assets/_commonjsHelpers.59e8ddea.js          0.34kb
+../release/cms/park/assets/use-link-field.1af2b795.js            0.27kb
+../release/cms/park/assets/products-publish.2c1afd5a.js          14.23kb
+../release/cms/park/assets/index.5d7e3a0a.js                     6.56kb
+../release/cms/park/assets/index.1a654f63.js                     1.60kb
+../release/cms/park/assets/use-refs.5545ea3a.js                  0.14kb
+../release/cms/park/assets/products-list.7922e1fd.js             3.87kb
+../release/cms/park/assets/index.e4801750.js                     8.56kb
+../release/cms/park/assets/products-details.c00caedc.js          3.86kb
+../release/cms/park/assets/index.e4135ff5.js                     0.41kb
+../release/cms/park/assets/recentnews-list.347ef5dc.js           3.62kb
+../release/cms/park/assets/index.e7d4a062.js                     20.42kb
+../release/cms/park/assets/recentnews-details.bac1c7f6.js        1.77kb
+../release/cms/park/assets/test.4ec1fdec.js                      2.51kb
+../release/cms/park/assets/park-position.2844959d.js             6.23kb
+../release/cms/park/assets/home-page.2749cb40.js                 2.01kb
+../release/cms/park/assets/area-of-base.ca61d890.js              1.86kb
+../release/cms/park/assets/list-of-crops.8c9075a3.js             1.95kb
+../release/cms/park/assets/add-crops.1ca913a9.js                 2.08kb
+../release/cms/park/assets/vr-configuration.a9a28513.js          2.00kb
+../release/cms/park/assets/park-Introduced.44eee9d0.js           3.47kb
+../release/cms/park/assets/img-upload2.dc9b5e1c.js               13.10kb
+../release/cms/park/assets/index.f67553c1.js                     1.66kb
+../release/cms/park/assets/login.b6e1e552.js                     12.30kb
+../release/cms/park/assets/index.6546a36b.js                     0.82kb
+../release/cms/park/assets/verification-code.db9b8b8a.js         8.30kb
+../release/cms/park/assets/icon_logo.92bfe101.js                 0.05kb
+../release/cms/park/assets/icon_password.20dfff95.js             4.21kb
+../release/cms/park/assets/md5.24f1044d.js                       10.01kb
+../release/cms/park/assets/user.7c576910.js                      0.41kb
+../release/cms/park/assets/update-password.b534f2d1.js           4.06kb
+../release/cms/park/assets/change-password.71687af0.js           2.25kb
+../release/cms/park/assets/setting-up.88fc355c.js                2.27kb
+../release/cms/park/assets/enterprise-information.a92ebe90.js    7.55kb
+../release/cms/park/assets/account-information.35a0a95f.js       8.18kb
+../release/cms/park/assets/about-us.2c3a4e3a.js                  2.52kb
+../release/cms/park/assets/privacy-agreement.6980e57a.js         4.32kb
+../release/cms/park/assets/index.9a400b9d.css                    46.99kb
+../release/cms/park/assets/Home.3d5b23d0.css                     3.91kb
+../release/cms/park/assets/index.bbe54e89.css                    0.86kb
+../release/cms/park/assets/index.616c71ce.css                    0.83kb
+../release/cms/park/assets/request.5b162e30.css                  0.76kb
+../release/cms/park/assets/index.232c1ed8.css                    4.55kb
+../release/cms/park/assets/index.78da84f3.css                    4.45kb
+../release/cms/park/assets/index.04a2476c.css                    0.65kb
+../release/cms/park/assets/index.36c92d18.css                    0.34kb
+../release/cms/park/assets/ar.6995f6df.css                       0.05kb
+../release/cms/park/assets/me.f7a990b3.css                       0.78kb
+../release/cms/park/assets/index.9b904ad4.css                    1.27kb
+../release/cms/park/assets/index.b1f185a6.css                    2.21kb
+../release/cms/park/assets/products-publish.4f2f65b6.css         3.11kb
+../release/cms/park/assets/index.81f04b45.css                    1.55kb
+../release/cms/park/assets/products-list.6feb9b5d.css            1.27kb
+../release/cms/park/assets/index.fb6a4b05.css                    1.92kb
+../release/cms/park/assets/products-details.20681760.css         2.12kb
+../release/cms/park/assets/index.0e4c17df.css                    0.13kb
+../release/cms/park/assets/recentnews-list.8ba32ec9.css          1.09kb
+../release/cms/park/assets/recentnews-details.2b6961bf.css       0.70kb
+../release/cms/park/assets/test.511ab1c4.css                     0.13kb
+../release/cms/park/assets/park-position.95ff874f.css            1.30kb
+../release/cms/park/assets/list-of-crops.5c4a36af.css            0.89kb
+../release/cms/park/assets/add-crops.9dcceb50.css                0.12kb
+../release/cms/park/assets/park-Introduced.3949e494.css          1.03kb
+../release/cms/park/assets/img-upload2.b26fbac1.css              3.20kb
+../release/cms/park/assets/index.ce9987be.css                    0.53kb
+../release/cms/park/assets/login.40847497.css                    5.36kb
+../release/cms/park/assets/index.bdd42bf6.css                    0.37kb
+../release/cms/park/assets/verification-code.103d4afd.css        0.56kb
+../release/cms/park/assets/update-password.2ab95583.css          0.14kb
+../release/cms/park/assets/change-password.92e31134.css          0.14kb
+../release/cms/park/assets/setting-up.ed31a220.css               0.08kb
+../release/cms/park/assets/enterprise-information.e7d4db68.css   0.07kb
+../release/cms/park/assets/account-information.1ab3119b.css      1.00kb
+../release/cms/park/assets/about-us.7e83b1ba.css                 0.45kb
+../release/cms/park/assets/privacy-agreement.3067b13c.css        0.17kb
+Done in 16.34s.
+编译项目<<园区app>>成功
+-------------------------------------------------
+开始打tag项目:<<园区app>>
+不需要进行打tag
+开始拉取项目:<<一户一码>>
+Updating 2d002fa..3b8160e
+Fast-forward
+ src/services/dateil.js                       |   9 ++
+ src/views/firstPage.vue                      |   4 +-
+ src/views/member/member.vue                  |   6 +-
+ src/views/prevention/preventionCheck.vue     |   2 +-
+ src/views/prevention/preventionPerplo.vue    | 227 ++++++++++++++-------------
+ src/views/prevention/preventionStatement.vue |  43 +++--
+ src/views/register/registerAddition.vue      | 131 +++++++++-------
+ src/views/register/registerDateil.vue        | 111 +++++++------
+ src/views/register/registerFamily.vue        |  83 +++++-----
+ src/views/register/registerIndex.vue         |  33 ++--
+ src/views/register/registerJudge.vue         |  59 -------
+ src/views/register/registerList.vue          |  97 +++++++-----
+ 12 files changed, 424 insertions(+), 381 deletions(-)
+ delete mode 100644 src/views/register/registerJudge.vue
+拉取项目<<一户一码>>成功
+-------------------------------------------------
+开始编译项目:<<一户一码>>
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 4 warnings上午11:05:15
+
+ warning  
+
+chunk chunk-0b149d1f [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??ref--6-oneOf-3-2!./node_modules/vant/es/cell/index.css
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??ref--6-oneOf-3-2!./node_modules/vant/es/list/index.css
+   - couldn't fulfill desired order of chunk group(s) 
+
+ warning  
+
+chunk chunk-0b149d1f [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??ref--6-oneOf-3-2!./node_modules/vant/es/list/index.css
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??ref--6-oneOf-3-2!./node_modules/vant/es/field/index.css
+   - couldn't fulfill desired order of chunk group(s) 
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  js/chunk-vendors.81d774af.js (1.28 MiB)
+  images/61301..png (250 KiB)
+  images/banner-c6a.png (397 KiB)
+  images/banner-c58.png (310 KiB)
+  images/banner-ced.png (396 KiB)
+  images/liuyajun-event.jpg (398 KiB)
+  images/natest.png (337 KiB)
+  images/tiandegong-event.jpg (445 KiB)
+  images/banner-7ea.png (608 KiB)
+  images/banner-c3e.png (536 KiB)
+  images/banner-c3f.png (903 KiB)
+  images/banner-natest.png (694 KiB)
+  images/banner-c54.png (951 KiB)
+  images/banner-cdd.png (1010 KiB)
+  images/liuningxia-event.png (513 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.46 MiB)
+      css/chunk-vendors.615f2a6b.css
+      js/chunk-vendors.81d774af.js
+      css/app.5f713248.css
+      js/app.618cdbe5.js
+
+
+  File                                      Size             Gzipped
+
+  ..\release\cms\qrcode\js\chunk-vendors    1310.19 KiB      414.59 KiB
+  .81d774af.js
+  ..\release\cms\qrcode\js\chunk-697d2ba    145.66 KiB       45.74 KiB
+  c.6ff4e2a0.js
+  ..\release\cms\qrcode\js\chunk-1144d60    98.48 KiB        36.09 KiB
+  9.f6e305e1.js
+  ..\release\cms\qrcode\js\app.618cdbe5.    82.08 KiB        39.48 KiB
+  js
+  ..\release\cms\qrcode\js\chunk-934ab42    49.34 KiB        14.66 KiB
+  4.6e370ac1.js
+  ..\release\cms\qrcode\js\chunk-369a112    34.31 KiB        13.73 KiB
+  2.5ea59a7b.js
+  ..\release\cms\qrcode\js\chunk-4499037    32.94 KiB        11.73 KiB
+  f.4a90d6c8.js
+  ..\release\cms\qrcode\js\chunk-adfe5f8    32.82 KiB        11.18 KiB
+  6.19736b7c.js
+  ..\release\cms\qrcode\js\chunk-d9a5a26    32.46 KiB        10.34 KiB
+  4.e010015a.js
+  ..\release\cms\qrcode\js\chunk-1995a3b    31.00 KiB        10.53 KiB
+  5.fdbf176a.js
+  ..\release\cms\qrcode\js\chunk-7333424    29.97 KiB        9.41 KiB
+  c.77039131.js
+  ..\release\cms\qrcode\js\chunk-21a8570    28.31 KiB        11.24 KiB
+  0.b4ddc9c7.js
+  ..\release\cms\qrcode\js\chunk-7d32854    25.19 KiB        7.71 KiB
+  7.c13bde0c.js
+  ..\release\cms\qrcode\js\chunk-ebf70f9    24.30 KiB        9.25 KiB
+  c.7f3d7b06.js
+  ..\release\cms\qrcode\js\chunk-1b8b74b    22.67 KiB        7.48 KiB
+  a.7a3ad184.js
+  ..\release\cms\qrcode\js\chunk-0b149d1    22.09 KiB        7.25 KiB
+  f.06900c4f.js
+  ..\release\cms\qrcode\js\chunk-c53e410    21.29 KiB        6.63 KiB
+  4.f07706d0.js
+  ..\release\cms\qrcode\js\chunk-fb20852    20.68 KiB        7.91 KiB
+  e.162c966f.js
+  ..\release\cms\qrcode\js\chunk-6b77731    18.36 KiB        5.96 KiB
+  e.869fd3a1.js
+  ..\release\cms\qrcode\js\chunk-ae02fc0    17.35 KiB        8.15 KiB
+  4.9fcad435.js
+  ..\release\cms\qrcode\js\chunk-5f7cca0    17.00 KiB        5.85 KiB
+  9.6fd7b0d0.js
+  ..\release\cms\qrcode\js\chunk-6119c54    16.84 KiB        5.82 KiB
+  1.d3036a00.js
+  ..\release\cms\qrcode\js\chunk-24baeee    16.61 KiB        5.75 KiB
+  6.90707fc2.js
+  ..\release\cms\qrcode\js\chunk-407c9a1    16.53 KiB        7.91 KiB
+  e.15d4ca48.js
+  ..\release\cms\qrcode\js\chunk-414aaf7    15.97 KiB        5.26 KiB
+  e.0690a799.js
+  ..\release\cms\qrcode\js\chunk-44a5290    15.97 KiB        7.54 KiB
+  e.8898951c.js
+  ..\release\cms\qrcode\js\chunk-3f3a8ae    15.94 KiB        7.48 KiB
+  7.261c54b0.js
+  ..\release\cms\qrcode\js\chunk-8aeda88    14.38 KiB        4.67 KiB
+  0.929349e0.js
+  ..\release\cms\qrcode\js\chunk-45b9ac6    13.05 KiB        4.56 KiB
+  2.7520b6a6.js
+  ..\release\cms\qrcode\js\chunk-246b14b    12.59 KiB        4.12 KiB
+  3.8ebf15cb.js
+  ..\release\cms\qrcode\js\chunk-8e476ad    9.71 KiB         5.28 KiB
+  8.f634a3c2.js
+  ..\release\cms\qrcode\js\chunk-54586b0    8.09 KiB         4.58 KiB
+  4.3ed7cfdd.js
+  ..\release\cms\qrcode\js\chunk-f93e96a    7.80 KiB         3.81 KiB
+  e.08d4e3c2.js
+  ..\release\cms\qrcode\js\chunk-6d988d9    7.67 KiB         2.90 KiB
+  3.ba2002ac.js
+  ..\release\cms\qrcode\js\chunk-8b4250f    6.72 KiB         2.48 KiB
+  2.7541ba52.js
+  ..\release\cms\qrcode\js\chunk-5c5ea4b    4.24 KiB         1.81 KiB
+  e.32434758.js
+  ..\release\cms\qrcode\js\chunk-2acfc03    4.23 KiB         1.84 KiB
+  8.d3348388.js
+  ..\release\cms\qrcode\js\chunk-7faea00    4.23 KiB         1.91 KiB
+  e.0cea59ae.js
+  ..\release\cms\qrcode\js\chunk-adf1043    3.41 KiB         1.58 KiB
+  a.05de7a8e.js
+  ..\release\cms\qrcode\js\chunk-5853d1a    3.26 KiB         1.55 KiB
+  1.d51200b1.js
+  ..\release\cms\qrcode\js\chunk-2d22d74    2.50 KiB         1.27 KiB
+  6.47b7b175.js
+  ..\release\cms\qrcode\config.js           1.60 KiB         0.54 KiB
+  ..\release\cms\qrcode\js\chunk-21a62bf    1.32 KiB         0.80 KiB
+  8.c6f39eba.js
+  ..\release\cms\qrcode\css\chunk-vendor    70.80 KiB        31.53 KiB
+  s.615f2a6b.css
+  ..\release\cms\qrcode\css\app.5f713248    29.39 KiB        6.29 KiB
+  .css
+  ..\release\cms\qrcode\css\chunk-697d2b    14.58 KiB        6.14 KiB
+  ac.f32eaac2.css
+  ..\release\cms\qrcode\css\chunk-449903    14.15 KiB        2.93 KiB
+  7f.95222ba5.css
+  ..\release\cms\qrcode\css\chunk-d9a5a2    13.95 KiB        2.75 KiB
+  64.d04c3faf.css
+  ..\release\cms\qrcode\css\chunk-ebf70f    11.41 KiB        2.47 KiB
+  9c.783beeb4.css
+  ..\release\cms\qrcode\css\chunk-934ab4    10.71 KiB        2.34 KiB
+  24.42d2c446.css
+  ..\release\cms\qrcode\css\chunk-1b8b74    10.62 KiB        2.43 KiB
+  ba.fe79bee4.css
+  ..\release\cms\qrcode\css\chunk-0b149d    10.16 KiB        2.38 KiB
+  1f.a229b256.css
+  ..\release\cms\qrcode\css\chunk-7d3285    9.89 KiB         2.32 KiB
+  47.c63d21c7.css
+  ..\release\cms\qrcode\css\chunk-369a11    9.66 KiB         2.30 KiB
+  22.4557f16a.css
+  ..\release\cms\qrcode\css\chunk-6119c5    9.17 KiB         2.25 KiB
+  41.7c2018da.css
+  ..\release\cms\qrcode\css\chunk-21a857    9.14 KiB         2.15 KiB
+  00.a468d4c8.css
+  ..\release\cms\qrcode\css\chunk-fb2085    9.11 KiB         2.11 KiB
+  2e.a16010da.css
+  ..\release\cms\qrcode\css\chunk-733342    8.97 KiB         2.30 KiB
+  4c.f5973b42.css
+  ..\release\cms\qrcode\css\chunk-c53e41    8.31 KiB         2.06 KiB
+  04.9b94aa7c.css
+  ..\release\cms\qrcode\css\chunk-ae02fc    8.24 KiB         2.07 KiB
+  04.8e85170b.css
+  ..\release\cms\qrcode\css\chunk-414aaf    7.35 KiB         1.64 KiB
+  7e.b77f2395.css
+  ..\release\cms\qrcode\css\chunk-8aeda8    6.79 KiB         1.70 KiB
+  80.f8e8e643.css
+  ..\release\cms\qrcode\css\chunk-adfe5f    6.56 KiB         1.75 KiB
+  86.cb874312.css
+  ..\release\cms\qrcode\css\chunk-8e476a    6.50 KiB         1.43 KiB
+  d8.6ad11588.css
+  ..\release\cms\qrcode\css\chunk-1144d6    6.28 KiB         1.51 KiB
+  09.9b54ed0f.css
+  ..\release\cms\qrcode\css\chunk-1995a3    6.09 KiB         1.42 KiB
+  b5.942827dd.css
+  ..\release\cms\qrcode\css\chunk-7faea0    6.04 KiB         2.98 KiB
+  0e.c8f5161c.css
+  ..\release\cms\qrcode\css\chunk-54586b    6.00 KiB         1.32 KiB
+  04.f2829473.css
+  ..\release\cms\qrcode\css\chunk-3f3a8a    5.59 KiB         1.44 KiB
+  e7.147e35e2.css
+  ..\release\cms\qrcode\css\chunk-44a529    5.31 KiB         1.40 KiB
+  0e.fe0b8bf9.css
+  ..\release\cms\qrcode\css\chunk-45b9ac    5.21 KiB         1.44 KiB
+  62.070b71ee.css
+  ..\release\cms\qrcode\css\chunk-407c9a    5.04 KiB         1.36 KiB
+  1e.f1d859fc.css
+  ..\release\cms\qrcode\css\chunk-5f7cca    4.33 KiB         1.27 KiB
+  09.1a7070ee.css
+  ..\release\cms\qrcode\css\chunk-6b7773    4.23 KiB         1.24 KiB
+  1e.a2888bd5.css
+  ..\release\cms\qrcode\css\chunk-24baee    4.21 KiB         0.96 KiB
+  e6.b8b5c67d.css
+  ..\release\cms\qrcode\css\chunk-adf104    3.58 KiB         0.81 KiB
+  3a.fac3aec1.css
+  ..\release\cms\qrcode\css\chunk-f93e96    3.45 KiB         0.94 KiB
+  ae.8e581a76.css
+  ..\release\cms\qrcode\css\chunk-6d988d    3.37 KiB         1.02 KiB
+  93.38bf43eb.css
+  ..\release\cms\qrcode\css\chunk-8b4250    3.20 KiB         1.01 KiB
+  f2.ada39046.css
+  ..\release\cms\qrcode\css\chunk-2acfc0    3.10 KiB         0.98 KiB
+  38.34d26c15.css
+  ..\release\cms\qrcode\css\chunk-5c5ea4    3.10 KiB         0.98 KiB
+  be.57199607.css
+  ..\release\cms\qrcode\css\chunk-246b14    2.61 KiB         0.85 KiB
+  b3.d7777bfc.css
+  ..\release\cms\qrcode\css\chunk-5853d1    1.91 KiB         0.67 KiB
+  a1.038630ca.css
+  ..\release\cms\qrcode\css\chunk-21a62b    1.55 KiB         0.56 KiB
+  f8.6e0c396c.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\release\cms\qrcode directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 56.91s.
+编译项目<<一户一码>>成功
+-------------------------------------------------
+开始打tag项目:<<一户一码>>
+不需要进行打tag
+开始拉取项目:<<微信公众号>>
+Updating cf0e22a..0acfdc2
+Fast-forward
+ public/config.js                                   |   2 +
+ src/router/index.js                                |  10 +-
+ src/services/public.js                             |   6 +
+ src/views/Home.vue                                 |   3 +-
+ src/views/Mine.vue                                 |   1 +
+ src/views/Test.vue                                 | 155 +++++++++++++++++++++
+ .../villagersCertification.vue                     | 107 ++++++++++++--
+ 7 files changed, 269 insertions(+), 15 deletions(-)
+ create mode 100644 src/views/Test.vue
+拉取项目<<微信公众号>>成功
+-------------------------------------------------
+开始编译项目:<<微信公众号>>
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings上午11:06:25
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  img/bgimg.edfcba02.png (494 KiB)
+  js/app.fa2c6d22.js (437 KiB)
+  js/chunk-7409d908.4d6b758f.js (662 KiB)
+  img/banner/appbanner.png (303 KiB)
+  mp4/k0384ilytx2.p712.1.mp4 (16.9 MiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (502 KiB)
+      css/app.987933e8.css
+      js/app.fa2c6d22.js
+
+
+  File                                      Size             Gzipped
+
+  ..\release\cms\wechat\js\chunk-7409d90    662.01 KiB       227.35 KiB
+  8.4d6b758f.js
+  ..\release\cms\wechat\js\app.fa2c6d22.    437.19 KiB       152.91 KiB
+  js
+  ..\release\cms\wechat\config.js           7.46 KiB         1.01 KiB
+  ..\release\cms\wechat\css\chunk-7409d9    211.29 KiB       27.79 KiB
+  08.3fcaf2a5.css
+  ..\release\cms\wechat\css\app.987933e8    65.09 KiB        30.57 KiB
+  .css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\release\cms\wechat directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 59.86s.
+编译项目<<微信公众号>>成功
+-------------------------------------------------
+开始打tag项目:<<微信公众号>>
+不需要进行打tag
+删除项目： 中的配置文件成功
+删除项目： 中的配置文件成功
+删除项目： 中的配置文件成功
