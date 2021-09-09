@@ -49,6 +49,11 @@
 
 ## 九月份
 
+## 9 月 9 日
+
+- 245 vite-qiankun 插件
+  - https://github.com/tengmaoqing/vite-plugin-qiankun
+
 ## 9 月 4 日
 
 - 244 数据大屏可视化配置
