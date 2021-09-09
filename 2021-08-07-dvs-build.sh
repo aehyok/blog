@@ -52,6 +52,7 @@ do
   if [[ $project == *$key* ]]
   then
      if test $key = "c"; then
+     projectName=${projectList[$key]}
       echo -e "开始拉取项目:<<${projectName}>>";
       git pull
       echo -e "拉取项目<<${projectName}>>成功";
@@ -69,8 +70,9 @@ do
       echo -e "编译项目<<${projectName}>>成功";
       echo '-------------------------------------------------'
       echo -e "开始打tag项目:<<${projectName}>>";
-      
-      if [[ "$tag" == "" ]] 
+    fi
+
+    if [[ "$tag" == "" ]] 
       then
         if test $version = $tagVersion ; then
           echo 'tag 已经存在要先进行删除'
@@ -94,7 +96,6 @@ do
       else
         echo  -e "不需要进行打tag"
       fi
-    fi
   fi
 done
 
@@ -103,16 +104,16 @@ declare -A deleteBuildConfig_pathArr
 deleteBuildConfig_pathArr["a"]="/e/work/git/dvs-2.x/release/cms/app"
 deleteBuildConfig_pathArr["w"]="/e/work/git/dvs-2.x/release/cms/wechat"
 deleteBuildConfig_pathArr["q"]="/e/work/git/dvs-2.x/release/cms/qrcode"
-for key in ${!deleteBuildConfig_pathArr[@]}
-do
-  if [[ $project == *$key* ]]
-  then
-    project_path=${deleteBuildConfig_pathArr[${key}]}
-    cd $project_path
-    # rm config.js
-    echo -e "删除项目：${deleteBuildConfig_pathArr[i]} 中的配置文件成功";
-  fi
-done
+# for key in ${!deleteBuildConfig_pathArr[@]}
+# do
+#   if [[ $project == *$key* ]]
+#   then
+#     project_path=${deleteBuildConfig_pathArr[${key}]}
+#     cd $project_path
+#     # rm config.js
+#     echo -e "删除项目：${deleteBuildConfig_pathArr[i]} 中的配置文件成功";
+#   fi
+# done
 
 ########### 4、dvs2.0将本地打包文件上传至服务器 ############
 

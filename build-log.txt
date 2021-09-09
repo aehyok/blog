@@ -1,31 +1,62 @@
-tag tag
+tag 
 包含c------pc后台管理
- 命令行中包含的版本号: 2.3.0.0002
+ 命令行中包含的版本号: 2.3.0.001
 -------------------------------------------------
-开始拉取项目:<<>>
-拉取项目<<>>成功
+开始拉取项目:<<pc后台管理>>
+Already up to date.
+拉取项目<<pc后台管理>>成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main 
 yarn run v1.22.10
 $ vite build --emptyOutDir
-vite v2.3.4 building for production...
+vite v2.5.5 building for production...
 transforming...
-✓ 885 modules transformed.
-info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+✓ 1405 modules transformed.
+rendering chunks...
+../../release/cms/console/assets/element-icons.9c88a535.woff    24.24 KiB
+../../release/cms/console/assets/bg_right.ebe508b4.png          83.38 KiB
+../../release/cms/console/assets/bg.52c4a751.png                123.52 KiB
+../../release/cms/console/assets/bg_login.20b0afd0.png          146.54 KiB
+../../release/cms/console/assets/element-icons.de5eb258.ttf     49.19 KiB
+../../release/cms/console/assets/bg_left.60616a71.png           1286.97 KiB
+../../release/cms/console/index.html                            1.15 KiB
+../../release/cms/console/assets/index.324d7311.js              8.22 KiB
+../../release/cms/console/assets/vendor.1a98072b.js             795.60 KiB
+../../release/cms/console/assets/Home.0e3d4c96.js               1085.36 KiB
+../../release/cms/console/assets/update-password.005dfff9.js    3.23 KiB
+../../release/cms/console/assets/useModule.ef9e712f.js          1.86 KiB
+../../release/cms/console/assets/index.200e583c.js              0.16 KiB
+../../release/cms/console/assets/md5.f1f308a8.js                10.00 KiB
+../../release/cms/console/assets/init-password.d3f2dc53.js      3.52 KiB
+../../release/cms/console/assets/login.08fe5698.js              12.32 KiB
+../../release/cms/console/assets/not-found.06216edc.js          0.63 KiB
+../../release/cms/console/assets/index.36a781d0.js              2.28 KiB
+../../release/cms/console/assets/header.18005896.js             5.23 KiB
+../../release/cms/console/assets/side-menu.70baa006.js          2.14 KiB
+../../release/cms/console/assets/update-password.f2c3df81.css   0.53 KiB
+../../release/cms/console/assets/login.4fa8a85e.css             2.10 KiB
+../../release/cms/console/assets/not-found.29c7b295.css         0.39 KiB
+../../release/cms/console/assets/index.37eab154.css             0.73 KiB
+../../release/cms/console/assets/header.5773c1a9.css            1.43 KiB
+../../release/cms/console/assets/init-password.de63258b.css     1.52 KiB
+../../release/cms/console/assets/side-menu.4bd48e11.css         1.04 KiB
+../../release/cms/console/assets/Home.36989421.css              19.90 KiB
+../../release/cms/console/assets/index.120accd4.css             328.97 KiB
+Done in 18.41s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic 
 yarn run v1.22.10
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午4:08:23
+ WARNING  Compiled with 2 warnings下午6:46:38
 
  warning  
 
 asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 This can impact web performance.
 Assets: 
-  css/app.77ca2c83.css (328 KiB)
+  css/app.58e32a31.css (328 KiB)
   js/chunk-13a12806.ec3d059f.js (279 KiB)
-  css/chunk-77438be4.e9fdd021.css (1.45 MiB)
+  css/chunk-77438be4.b6b8bcc0.css (1.45 MiB)
   js/chunk-vendors.d6285aa1.js (858 KiB)
 
  warning  
@@ -34,8 +65,8 @@ entrypoint size limit: The following entrypoint(s) combined asset size exceeds t
 Entrypoints:
   app (1.29 MiB)
       js/chunk-vendors.d6285aa1.js
-      css/app.77ca2c83.css
-      js/app.0522b198.js
+      css/app.58e32a31.css
+      js/app.4f78c238.js
 
 
   File                                      Size             Gzipped
@@ -44,32 +75,32 @@ Entrypoints:
   sic\js\chunk-vendors.d6285aa1.js
   ..\..\release\cms\console\child\dvs-ba    279.31 KiB       76.75 KiB
   sic\js\chunk-13a12806.ec3d059f.js
-  ..\..\release\cms\console\child\dvs-ba    129.78 KiB       54.49 KiB
-  sic\js\app.0522b198.js
-  ..\..\release\cms\console\child\dvs-ba    100.66 KiB       22.38 KiB
-  sic\js\chunk-de36a660.d7d5aaee.js
-  ..\..\release\cms\console\child\dvs-ba    23.94 KiB        6.53 KiB
-  sic\js\chunk-33093baf.b9eaf02f.js
-  ..\..\release\cms\console\child\dvs-ba    20.56 KiB        6.37 KiB
-  sic\js\chunk-7dbd11ab.9847b689.js
-  ..\..\release\cms\console\child\dvs-ba    18.82 KiB        6.65 KiB
-  sic\js\chunk-77438be4.e4b007a0.js
-  ..\..\release\cms\console\child\dvs-ba    18.06 KiB        4.74 KiB
-  sic\js\chunk-5a4374c0.52dff0c7.js
-  ..\..\release\cms\console\child\dvs-ba    17.88 KiB        5.02 KiB
-  sic\js\chunk-00ef4310.5c91a85f.js
+  ..\..\release\cms\console\child\dvs-ba    129.81 KiB       54.50 KiB
+  sic\js\app.4f78c238.js
+  ..\..\release\cms\console\child\dvs-ba    101.24 KiB       22.58 KiB
+  sic\js\chunk-de36a660.4876ba7e.js
+  ..\..\release\cms\console\child\dvs-ba    24.49 KiB        6.64 KiB
+  sic\js\chunk-33093baf.720e7113.js
+  ..\..\release\cms\console\child\dvs-ba    20.47 KiB        6.32 KiB
+  sic\js\chunk-6adc217b.7a4bd5cd.js
+  ..\..\release\cms\console\child\dvs-ba    18.85 KiB        6.66 KiB
+  sic\js\chunk-77438be4.bec839d2.js
+  ..\..\release\cms\console\child\dvs-ba    18.09 KiB        4.75 KiB
+  sic\js\chunk-5a4374c0.3f4bbd14.js
+  ..\..\release\cms\console\child\dvs-ba    17.92 KiB        5.04 KiB
+  sic\js\chunk-00ef4310.5f9a6c4b.js
   ..\..\release\cms\console\child\dvs-ba    17.58 KiB        5.03 KiB
-  sic\js\chunk-089eaaf1.96e86459.js
-  ..\..\release\cms\console\child\dvs-ba    11.90 KiB        4.17 KiB
-  sic\js\chunk-35101580.b3dbf8a2.js
-  ..\..\release\cms\console\child\dvs-ba    10.18 KiB        3.60 KiB
-  sic\js\chunk-6dcd85e2.4927b419.js
-  ..\..\release\cms\console\child\dvs-ba    9.63 KiB         3.45 KiB
-  sic\js\chunk-6c8cff20.4fad87ba.js
+  sic\js\chunk-089eaaf1.7f30bece.js
+  ..\..\release\cms\console\child\dvs-ba    13.32 KiB        4.77 KiB
+  sic\js\chunk-3dcdf4cf.11f37f8c.js
+  ..\..\release\cms\console\child\dvs-ba    10.22 KiB        3.61 KiB
+  sic\js\chunk-6dcd85e2.30330b65.js
+  ..\..\release\cms\console\child\dvs-ba    9.67 KiB         3.46 KiB
+  sic\js\chunk-6c8cff20.fb7e98e8.js
   ..\..\release\cms\console\child\dvs-ba    8.46 KiB         2.72 KiB
   sic\js\chunk-feff6786.0cc592f7.js
   ..\..\release\cms\console\child\dvs-ba    7.22 KiB         2.35 KiB
-  sic\js\chunk-482849fd.b097c7ce.js
+  sic\js\chunk-164d4132.0a59ad60.js
   ..\..\release\cms\console\child\dvs-ba    5.36 KiB         1.89 KiB
   sic\js\chunk-29fd18c4.de6d4e33.js
   ..\..\release\cms\console\child\dvs-ba    5.10 KiB         1.93 KiB
@@ -112,67 +143,71 @@ Entrypoints:
   sic\js\chunk-2d0dae79.473a0a2b.js
   ..\..\release\cms\console\child\dvs-ba    0.30 KiB         0.22 KiB
   sic\js\chunk-2d0ac950.821dcd29.js
-  ..\..\release\cms\console\child\dvs-ba    1483.71 KiB      1120.44 KiB
-  sic\css\chunk-77438be4.e9fdd021.css
-  ..\..\release\cms\console\child\dvs-ba    328.26 KiB       93.93 KiB
-  sic\css\app.77ca2c83.css
-  ..\..\release\cms\console\child\dvs-ba    8.91 KiB         1.30 KiB
-  sic\css\chunk-482849fd.a2caa526.css
-  ..\..\release\cms\console\child\dvs-ba    8.65 KiB         2.87 KiB
-  sic\css\chunk-6c8cff20.57d4f781.css
-  ..\..\release\cms\console\child\dvs-ba    8.65 KiB         2.87 KiB
-  sic\css\chunk-6dcd85e2.57d4f781.css
-  ..\..\release\cms\console\child\dvs-ba    6.97 KiB         1.50 KiB
-  sic\css\chunk-5a4374c0.37ae8341.css
-  ..\..\release\cms\console\child\dvs-ba    6.09 KiB         1.11 KiB
-  sic\css\chunk-5a95d287.1015f965.css
-  ..\..\release\cms\console\child\dvs-ba    6.05 KiB         1.11 KiB
-  sic\css\chunk-1993e5fc.23b86a98.css
-  ..\..\release\cms\console\child\dvs-ba    5.77 KiB         1.02 KiB
-  sic\css\chunk-f39752d6.17269161.css
-  ..\..\release\cms\console\child\dvs-ba    5.77 KiB         1.03 KiB
-  sic\css\chunk-296a09d2.6d7fd2f1.css
-  ..\..\release\cms\console\child\dvs-ba    5.77 KiB         1.03 KiB
-  sic\css\chunk-2a7e7664.863a92ee.css
-  ..\..\release\cms\console\child\dvs-ba    5.77 KiB         1.03 KiB
-  sic\css\chunk-44969a1c.ef0e3a98.css
-  ..\..\release\cms\console\child\dvs-ba    5.77 KiB         1.03 KiB
-  sic\css\chunk-70aaa392.d67e5ebd.css
-  ..\..\release\cms\console\child\dvs-ba    3.50 KiB         0.96 KiB
-  sic\css\chunk-00ef4310.0a84134c.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-140990ae.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-29fd18c4.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-35101580.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-58a7455b.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-651daff0.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-b6a5af2c.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-c2502c5c.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.98 KiB         0.85 KiB
-  sic\css\chunk-feff6786.12f3fc68.css
-  ..\..\release\cms\console\child\dvs-ba    2.87 KiB         0.81 KiB
-  sic\css\chunk-7dbd11ab.4833661e.css
-  ..\..\release\cms\console\child\dvs-ba    2.87 KiB         0.81 KiB
-  sic\css\chunk-de36a660.4833661e.css
+  ..\..\release\cms\console\child\dvs-ba    1483.80 KiB      1120.46 KiB
+  sic\css\chunk-77438be4.b6b8bcc0.css
+  ..\..\release\cms\console\child\dvs-ba    328.41 KiB       93.96 KiB
+  sic\css\app.58e32a31.css
+  ..\..\release\cms\console\child\dvs-ba    9.13 KiB         1.33 KiB
+  sic\css\chunk-164d4132.691f5091.css
+  ..\..\release\cms\console\child\dvs-ba    8.82 KiB         2.90 KiB
+  sic\css\chunk-6c8cff20.c93ebb79.css
+  ..\..\release\cms\console\child\dvs-ba    8.82 KiB         2.90 KiB
+  sic\css\chunk-6dcd85e2.c93ebb79.css
+  ..\..\release\cms\console\child\dvs-ba    7.14 KiB         1.53 KiB
+  sic\css\chunk-5a4374c0.39f5755e.css
+  ..\..\release\cms\console\child\dvs-ba    6.24 KiB         1.13 KiB
+  sic\css\chunk-5a95d287.fdc396d5.css
+  ..\..\release\cms\console\child\dvs-ba    6.20 KiB         1.13 KiB
+  sic\css\chunk-1993e5fc.7a5a724b.css
+  ..\..\release\cms\console\child\dvs-ba    5.92 KiB         1.04 KiB
+  sic\css\chunk-f39752d6.c231a9fa.css
+  ..\..\release\cms\console\child\dvs-ba    5.92 KiB         1.04 KiB
+  sic\css\chunk-296a09d2.ad129a5b.css
+  ..\..\release\cms\console\child\dvs-ba    5.92 KiB         1.04 KiB
+  sic\css\chunk-2a7e7664.d82aa177.css
+  ..\..\release\cms\console\child\dvs-ba    5.92 KiB         1.04 KiB
+  sic\css\chunk-44969a1c.97eba12e.css
+  ..\..\release\cms\console\child\dvs-ba    5.92 KiB         1.04 KiB
+  sic\css\chunk-70aaa392.f4673acc.css
+  ..\..\release\cms\console\child\dvs-ba    3.60 KiB         0.98 KiB
+  sic\css\chunk-00ef4310.c69e7eac.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-140990ae.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-29fd18c4.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-3dcdf4cf.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-58a7455b.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-651daff0.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-b6a5af2c.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-c2502c5c.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    3.06 KiB         0.86 KiB
+  sic\css\chunk-feff6786.395d899f.css
+  ..\..\release\cms\console\child\dvs-ba    2.95 KiB         0.82 KiB
+  sic\css\chunk-6adc217b.747283cc.css
+  ..\..\release\cms\console\child\dvs-ba    2.95 KiB         0.82 KiB
+  sic\css\chunk-de36a660.747283cc.css
 
   Images and other types of assets omitted.
 
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-basic directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 32.14s.
+Done in 14.70s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons 
 yarn run v1.22.10
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午4:08:58
+ WARNING  Compiled with 3 warnings下午6:46:48
+
+ warning  in ./src/views/conveniently/pass.vue?vue&type=script&lang=js
+
+"export 'getBasicDictionaryList' was not found in '@/services/household'
 
  warning  
 
@@ -180,7 +215,7 @@ asset size limit: The following asset(s) exceed the recommended size limit (244 
 This can impact web performance.
 Assets: 
   css/chunk-vendors.1ab89bae.css (413 KiB)
-  js/chunk-vendors.f193f47e.js (1.09 MiB)
+  js/chunk-vendors.a7626316.js (1.09 MiB)
 
  warning  
 
@@ -188,19 +223,19 @@ entrypoint size limit: The following entrypoint(s) combined asset size exceeds t
 Entrypoints:
   app (1.61 MiB)
       css/chunk-vendors.1ab89bae.css
-      js/chunk-vendors.f193f47e.js
-      css/app.0ad1d4e2.css
-      js/app.457fd892.js
+      js/chunk-vendors.a7626316.js
+      css/app.151c14b8.css
+      js/app.c24b2682.js
 
 
   File                                      Size             Gzipped
 
   ..\..\release\cms\console\child\dvs-co    1116.55 KiB      322.83 KiB
-  ns\js\chunk-vendors.f193f47e.js
-  ..\..\release\cms\console\child\dvs-co    133.65 KiB       39.41 KiB
-  ns\js\chunk-bbcc5f26.4b6a846e.js
-  ..\..\release\cms\console\child\dvs-co    116.60 KiB       41.28 KiB
-  ns\js\app.457fd892.js
+  ns\js\chunk-vendors.a7626316.js
+  ..\..\release\cms\console\child\dvs-co    133.55 KiB       39.42 KiB
+  ns\js\chunk-9730cac0.574051f3.js
+  ..\..\release\cms\console\child\dvs-co    114.34 KiB       40.87 KiB
+  ns\js\app.c24b2682.js
   ..\..\release\cms\console\child\dvs-co    13.31 KiB        7.40 KiB
   ns\js\chunk-a2ebb3b8.0009c79a.js
   ..\..\release\cms\console\child\dvs-co    5.46 KiB         1.99 KiB
@@ -208,22 +243,339 @@ Entrypoints:
   ..\..\release\cms\console\child\dvs-co    413.48 KiB       99.71 KiB
   ns\css\chunk-vendors.1ab89bae.css
   ..\..\release\cms\console\child\dvs-co    5.30 KiB         1.08 KiB
-  ns\css\chunk-bbcc5f26.dc725d70.css
+  ns\css\chunk-9730cac0.6b0ea1ff.css
   ..\..\release\cms\console\child\dvs-co    4.03 KiB         1.94 KiB
   ns\css\chunk-a2ebb3b8.47d1105c.css
   ..\..\release\cms\console\child\dvs-co    3.29 KiB         1.79 KiB
   ns\css\chunk-b02b6938.b57055ff.css
   ..\..\release\cms\console\child\dvs-co    1.44 KiB         0.57 KiB
-  ns\css\app.0ad1d4e2.css
+  ns\css\app.151c14b8.css
 
   Images and other types of assets omitted.
 
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-cons directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 34.28s.
+Done in 9.35s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village 
 yarn run v1.22.10
 $ vue-cli-service build
 
+ WARNING  Compiled with 7 warnings下午6:47:07
+
+ warning  in ./src/views/pestilence/vaccines.vue?vue&type=script&setup=true&lang=js
+
+"export 'downloadFile' was not found in '../../../../common/utils/utils'
+
+ warning  in ./src/views/household-code.vue?vue&type=script&lang=js
+
+"export 'downloadFile' was not found in '../../../common/utils/utils'
+
+ warning  
+
+chunk chunk-4089875d [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/page-setting.vue?vue&type=style&index=0&id=f2bd6aec&lang=scss&scoped=true
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/search/index.vue?vue&type=style&index=0&id=6a480d7c&scoped=true&lang=css
+   - couldn't fulfill desired order of chunk group(s) , 
+   - while fulfilling desired order of chunk group(s) , 
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/views/pestilence/returnees-popu.vue?vue&type=style&index=0&id=7ee585d0&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) 
+
+ warning  
+
+chunk chunk-4089875d [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/views/pestilence/returnees-popu.vue?vue&type=style&index=0&id=7ee585d0&lang=scss&scoped=true
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/index.vue?vue&type=style&index=0&id=417cf49a&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) 
+
+ warning  
+
+chunk chunk-4089875d [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/search/index.vue?vue&type=style&index=0&id=6a480d7c&scoped=true&lang=css
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/index.vue?vue&type=style&index=0&id=417cf49a&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) , 
+   - while fulfilling desired order of chunk group(s) , 
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  js/chunk-4089875d.ca5fee13.js (676 KiB)
+  css/chunk-vendors.7b8a3df6.css (374 KiB)
+  js/chunk-vendors.97138a24.js (1.12 MiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.62 MiB)
+      css/chunk-vendors.7b8a3df6.css
+      js/chunk-vendors.97138a24.js
+      css/app.8d3b7f91.css
+      js/app.8333f1f2.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\console\child\dvs-vi    1146.74 KiB      332.88 KiB
+  llage\js\chunk-vendors.97138a24.js
+  ..\..\release\cms\console\child\dvs-vi    675.78 KiB       163.92 KiB
+  llage\js\chunk-4089875d.ca5fee13.js
+  ..\..\release\cms\console\child\dvs-vi    138.90 KiB       51.89 KiB
+  llage\js\app.8333f1f2.js
+  ..\..\release\cms\console\child\dvs-vi    79.65 KiB        30.37 KiB
+  llage\js\chunk-2d2107eb.2f581fb8.js
+  ..\..\release\cms\console\child\dvs-vi    62.29 KiB        16.65 KiB
+  llage\js\chunk-c99feb1a.a038cb33.js
+  ..\..\release\cms\console\child\dvs-vi    373.93 KiB       97.59 KiB
+  llage\css\chunk-vendors.7b8a3df6.css
+  ..\..\release\cms\console\child\dvs-vi    46.25 KiB        12.91 KiB
+  llage\css\chunk-4089875d.6599c4c8.css
+  ..\..\release\cms\console\child\dvs-vi    3.89 KiB         0.96 KiB
+  llage\css\chunk-c99feb1a.8adff6aa.css
+  ..\..\release\cms\console\child\dvs-vi    2.97 KiB         0.97 KiB
+  llage\css\app.8d3b7f91.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\console\child\dvs-village directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 17.84s.
+编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village} 成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital 
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 3 warnings下午6:47:23
+
+ warning  in ./src/views/office/document-info.vue?vue&type=script&lang=js
+
+"export 'downloadFile' was not found in '../../../../common/utils/utils'
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  css/chunk-vendors.7b8a3df6.css (374 KiB)
+  js/chunk-vendors.e549e4de.js (1.1 MiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.6 MiB)
+      css/chunk-vendors.7b8a3df6.css
+      js/chunk-vendors.e549e4de.js
+      css/app.4d0f5e5d.css
+      js/app.1b2f98d2.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\console\child\dvs-di    1130.25 KiB      327.18 KiB
+  gital\js\chunk-vendors.e549e4de.js
+  ..\..\release\cms\console\child\dvs-di    144.22 KiB       32.61 KiB
+  gital\js\chunk-0da02024.46bbf2b2.js
+  ..\..\release\cms\console\child\dvs-di    135.03 KiB       51.43 KiB
+  gital\js\app.1b2f98d2.js
+  ..\..\release\cms\console\child\dvs-di    3.80 KiB         1.79 KiB
+  gital\js\chunk-f7179fa4.23affceb.js
+  ..\..\release\cms\console\child\dvs-di    3.71 KiB         1.69 KiB
+  gital\js\chunk-cacbc814.33bef288.js
+  ..\..\release\cms\console\child\dvs-di    373.93 KiB       97.59 KiB
+  gital\css\chunk-vendors.7b8a3df6.css
+  ..\..\release\cms\console\child\dvs-di    134.93 KiB       98.59 KiB
+  gital\css\chunk-0da02024.72180507.css
+  ..\..\release\cms\console\child\dvs-di    2.67 KiB         0.89 KiB
+  gital\css\app.4d0f5e5d.css
+  ..\..\release\cms\console\child\dvs-di    0.42 KiB         0.17 KiB
+  gital\css\chunk-cacbc814.63a99b7b.css
+  ..\..\release\cms\console\child\dvs-di    0.42 KiB         0.17 KiB
+  gital\css\chunk-f7179fa4.00506890.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\console\child\dvs-digital directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 15.99s.
+编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital} 成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park 
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings下午6:47:33
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  css/chunk-7ab65c3a.1cfa6c84.css (11.7 MiB)
+  js/chunk-d42afcfe.80e8dda8.js (436 KiB)
+  css/chunk-vendors.7b8a3df6.css (374 KiB)
+  js/chunk-vendors.00808ec7.js (830 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.21 MiB)
+      css/chunk-vendors.7b8a3df6.css
+      js/chunk-vendors.00808ec7.js
+      css/app.14bd5bf1.css
+      js/app.62f9ce9b.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\console\child\dvs-pa    830.41 KiB       242.14 KiB
+  rk\js\chunk-vendors.00808ec7.js
+  ..\..\release\cms\console\child\dvs-pa    435.77 KiB       114.02 KiB
+  rk\js\chunk-d42afcfe.80e8dda8.js
+  ..\..\release\cms\console\child\dvs-pa    38.84 KiB        24.30 KiB
+  rk\js\chunk-7ab65c3a.4d0ea5f8.js
+  ..\..\release\cms\console\child\dvs-pa    25.72 KiB        9.02 KiB
+  rk\js\chunk-2e538a24.4b761ab0.js
+  ..\..\release\cms\console\child\dvs-pa    23.92 KiB        12.15 KiB
+  rk\js\app.62f9ce9b.js
+  ..\..\release\cms\console\child\dvs-pa    12005.96 KiB     9083.96 KiB
+  rk\css\chunk-7ab65c3a.1cfa6c84.css
+  ..\..\release\cms\console\child\dvs-pa    373.93 KiB       97.59 KiB
+  rk\css\chunk-vendors.7b8a3df6.css
+  ..\..\release\cms\console\child\dvs-pa    29.14 KiB        10.26 KiB
+  rk\css\chunk-d42afcfe.e891332d.css
+  ..\..\release\cms\console\child\dvs-pa    8.39 KiB         3.54 KiB
+  rk\css\app.14bd5bf1.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\console\child\dvs-park directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 8.88s.
+编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park} 成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis 
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 6 warnings下午6:47:54
+
+ warning  in ./src/views/greenhouse-manage/index.vue?vue&type=script&lang=js
+
+"export 'downloadFile' was not found in '../../../../common/utils/utils'
+
+ warning  in ./src/views/map-icon-manage/icon-add.vue?vue&type=script&lang=js
+
+"export 'farmlandSave' was not found in '@/services/gis'
+
+ warning  
+
+chunk land-plot [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/page-setting.vue?vue&type=style&index=0&id=f2bd6aec&lang=scss&scoped=true
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/tree.vue?vue&type=style&index=0&id=810468c4&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) customize-mark-manage, public-facility-manage, planning-land-manage
+   - while fulfilling desired order of chunk group(s) land-manage, greenhouse-manage, webcam-manage
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/views/customize-mark-manage/customize-add.vue?vue&type=style&index=0&id=3e6273fe&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) customize-mark-manage
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/upload.vue?vue&type=style&index=0&id=19fe8992&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) customize-mark-manage, public-facility-manage
+   - while fulfilling desired order of chunk group(s) customize-mark, planning-land-plot
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/Pagination.vue?vue&type=style&index=0&id=2133882e&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) customize-mark-manage, land-manage
+   - while fulfilling desired order of chunk group(s) customize-mark, public-facility-mark, planning-land-plot
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/views/public-facility-manage/public-add.vue?vue&type=style&index=0&id=37edfbfd&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) public-facility-manage
+
+ warning  
+
+chunk land-plot [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/index.vue?vue&type=style&index=0&id=417cf49a&lang=scss&scoped=true
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/tree.vue?vue&type=style&index=0&id=810468c4&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) customize-mark-manage, public-facility-manage, planning-land-manage
+   - while fulfilling desired order of chunk group(s) land-manage, greenhouse-manage, webcam-manage
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/views/customize-mark-manage/customize-add.vue?vue&type=style&index=0&id=3e6273fe&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) customize-mark-manage
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/upload.vue?vue&type=style&index=0&id=19fe8992&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) customize-mark-manage, public-facility-manage
+   - while fulfilling desired order of chunk group(s) customize-mark, planning-land-plot
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/Pagination.vue?vue&type=style&index=0&id=2133882e&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) customize-mark-manage, land-manage
+   - while fulfilling desired order of chunk group(s) customize-mark, public-facility-mark, planning-land-plot
+ * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/views/public-facility-manage/public-add.vue?vue&type=style&index=0&id=37edfbfd&lang=scss&scoped=true
+   - couldn't fulfill desired order of chunk group(s) public-facility-manage
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  css/chunk-vendors.7b8a3df6.css (374 KiB)
+  js/chunk-vendors.8b9b19c1.js (1.13 MiB)
+  js/customize-mark~greenhouse-mark~household-mark~land-plot~park-block-plot~park-customize-mark~park-web~22ad1ba1.95c1e11c.js (436 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.63 MiB)
+      css/chunk-vendors.7b8a3df6.css
+      js/chunk-vendors.8b9b19c1.js
+      css/app.fe1d457b.css
+      js/app.fd8930b2.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\console\child\dvs-gi    1152.66 KiB      333.79 KiB
+  s\js\chunk-vendors.8b9b19c1.js
+  ..\..\release\cms\console\child\dvs-gi    435.75 KiB       111.68 KiB
+  s\js\customize-mark~greenhouse-mark~ho
+  usehold-mark~land-plot~park-block-plot
+  ~park-customize-mark~park-web~22ad1ba1
+  .95c1e11c.js
+  ..\..\release\cms\console\child\dvs-gi    186.66 KiB       41.46 KiB
+  s\js\land-plot.31562a6f.js
+  ..\..\release\cms\console\child\dvs-gi    136.04 KiB       51.08 KiB
+  s\js\app.fd8930b2.js
+  ..\..\release\cms\console\child\dvs-gi    40.78 KiB        8.42 KiB
+  s\js\webcam-manage.29b5407a.js
+  ..\..\release\cms\console\child\dvs-gi    373.93 KiB       97.59 KiB
+  s\css\chunk-vendors.7b8a3df6.css
+  ..\..\release\cms\console\child\dvs-gi    28.81 KiB        10.13 KiB
+  s\css\customize-mark~greenhouse-mark~h
+  ousehold-mark~land-plot~park-block-plo
+  t~park-customize-mark~park-web~22ad1ba
+  1.16cb1040.css
+  ..\..\release\cms\console\child\dvs-gi    8.88 KiB         1.50 KiB
+  s\css\land-plot.8303f5d2.css
+  ..\..\release\cms\console\child\dvs-gi    3.25 KiB         0.59 KiB
+  s\css\webcam-manage.9c8250bb.css
+  ..\..\release\cms\console\child\dvs-gi    3.05 KiB         0.98 KiB
+  s\css\app.fe1d457b.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\console\child\dvs-gis directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 20.56s.
+编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis} 成功
+准备开始编译PC
+tag 已经存在要先进行删除
+Deleted tag '2.3.0.001' (was 9f67db7)
+tag已删除要进行git tag
