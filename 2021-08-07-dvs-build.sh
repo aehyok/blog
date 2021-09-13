@@ -104,28 +104,28 @@ declare -A deleteBuildConfig_pathArr
 deleteBuildConfig_pathArr["a"]="/e/work/git/dvs-2.x/release/cms/app"
 deleteBuildConfig_pathArr["w"]="/e/work/git/dvs-2.x/release/cms/wechat"
 deleteBuildConfig_pathArr["q"]="/e/work/git/dvs-2.x/release/cms/qrcode"
-# for key in ${!deleteBuildConfig_pathArr[@]}
-# do
-#   if [[ $project == *$key* ]]
-#   then
-#     project_path=${deleteBuildConfig_pathArr[${key}]}
-#     cd $project_path
-#     # rm config.js
-#     echo -e "删除项目：${deleteBuildConfig_pathArr[i]} 中的配置文件成功";
-#   fi
-# done
+for key in ${!deleteBuildConfig_pathArr[@]}
+do
+  if [[ $project == *$key* ]]
+  then
+    project_path=${deleteBuildConfig_pathArr[${key}]}
+    cd $project_path
+    # rm config.js
+    echo -e "删除项目：${deleteBuildConfig_pathArr[i]} 中的配置文件成功";
+  fi
+done
 
 ########### 4、dvs2.0将本地打包文件上传至服务器 ############
 
-scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
+# scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
 
 # ########### 5、拷贝完之后进行git 的提交  ##############
-cd /e/work/git/dvs-2.x/release
-git add .
-sleep 2s
-message="chore：前端app、qrocde、wechat、park、console(child)commit-version:${version}"
-git commit -m $message .
-git push origin
+# cd /e/work/git/dvs-2.x/release
+# git add .
+# sleep 2s
+# message="build：前端app、qrocde、wechat、park、console(child)commit-version:${version}"
+# git commit -m $message .
+# git push origin
 
 echo "5秒后将自动退出本脚本："
 for i in $(seq 5 -1 1)
@@ -133,4 +133,4 @@ do
   echo -e $i;sleep 1
 done
 exit
-## 执行脚本  sh 2021-08-06-dvs-build数字乡村.sh |tee build-log.txt
+## 执行脚本  sh 2021-08-07-dvs-build.sh  -v 2.3.0.003 -p awqpc  |tee build-log.txt

@@ -49,8 +49,17 @@
 
 ## 九月份
 
+## 9 月 11 日
+
+- 248 vue 可视化技术分析
+  - https://github.com/woai3c/visual-drag-demo
+- 247 vue drag 样例
+  - https://www.cnblogs.com/yalong/p/10036463.html
+
 ## 9 月 9 日
 
+- 246 video 标签弹窗层级控制
+  - https://www.cnblogs.com/shimily/articles/12750055.html
 - 245 vite-qiankun 插件
   - https://github.com/tengmaoqing/vite-plugin-qiankun
 
