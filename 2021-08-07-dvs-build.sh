@@ -52,7 +52,8 @@ do
   if [[ $project == *$key* ]]
   then
      if test $key = "c"; then
-     projectName=${projectList[$key]}
+      cd ${gitpull_pathArray[${key}]}
+      projectName=${projectList[$key]}
       echo -e "开始拉取项目:<<${projectName}>>";
       git pull
       echo -e "拉取项目<<${projectName}>>成功";
