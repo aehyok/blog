@@ -1,7 +1,7 @@
 # ## 当前脚本文件所在路径
 current_path=$(cd $(dirname $0); pwd)
-version='2.2.1.005'
-
+tagVersion='2.2.1.005'
+branchVersion='2.3.x'
 # ## 打印当前目录
 echo $current_path
 
