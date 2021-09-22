@@ -1,6 +1,7 @@
 # ## 当前脚本文件所在路径
 source ./versions # 版本文件历史记录
 source ./2021-08-09-dvs-build-pc.sh
+branchVersion="2.3.x"
 current_path=$(cd $(dirname $0); pwd)
 
 ################1、 通过命令行执行传入的参数值   ##############
@@ -54,6 +55,7 @@ do
      if test $key = "c"; then
       cd ${gitpull_pathArray[${key}]}
       projectName=${projectList[$key]}
+      git checkout $branchVersion
       echo -e "开始拉取项目:<<${projectName}>>";
       git pull
       echo -e "拉取项目<<${projectName}>>成功";
@@ -62,6 +64,7 @@ do
     else
       cd ${gitpull_pathArray[${key}]}
       projectName=${projectList[$key]}
+      git checkout $branchVersion
       echo -e "开始拉取项目:<<${projectName}>>";
       git pull
       echo -e "拉取项目<<${projectName}>>成功";
