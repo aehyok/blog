@@ -1,4 +1,4 @@
-# ## 当前脚本文件所在路径
+# ## 在
 current_path=$(cd $(dirname $0); pwd)
 tagVersion='2.2.1.005'
 branchVersion='2.3.x'

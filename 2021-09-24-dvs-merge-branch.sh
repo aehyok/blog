@@ -1,4 +1,4 @@
-### 根据tag创建新的分支
+### 将sourceBranch分支的代码合并到targetBranch分支
 
 # ## 当前脚本文件所在路径
 current_path=$(cd $(dirname $0); pwd)
@@ -11,10 +11,10 @@ sourceBranch='2.3.x'
 echo $current_path
 
 gitpull_pathArr=(
-  # "/e/work/git/dvs-2.x/dvs-app-h5-develop"
-  # "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
-  # "/e/work/git/dvs-2.x/qrcode-demo-dev"
-  # "/e/work/git/dvs-2.x/dvs-park-h5-app"
+  "/e/work/git/dvs-2.x/dvs-app-h5-develop"
+  "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
+  "/e/work/git/dvs-2.x/qrcode-demo-dev"
+  "/e/work/git/dvs-2.x/dvs-park-h5-app"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev"
 )
 
@@ -24,8 +24,8 @@ do
   project_path=${gitpull_pathArr[i]}
   cd $project_path
     git checkout $targetBranch
-    # git pull
-    # git merge $sourceBranch
+    git pull
+    git merge $sourceBranch
     git push
   echo -e "由[${sourceBranch}]分支合并到[${targetBranch}]分支成功";
 done

@@ -22,6 +22,7 @@ for ((i=0;i<${#gitpull_pathArr[*]};i++))
 do
   project_path=${gitpull_pathArr[i]}
   cd $project_path
+    git pull
     git branch $branchVersion $tagVersion
     git checkout $branchVersion
     git push --set-upstream origin $branchVersion
