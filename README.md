@@ -48,6 +48,10 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 九月份
+## 9月29日
+- 259 display inline-block和block和inline之间的区别
+  - https://blog.csdn.net/xuanwugang/article/details/80254401
+  - https://www.cnblogs.com/brainworld/p/6693531.html
 ## 9月28日
 - 258 go 环境搭建
   - https://www.cnblogs.com/htc524/p/12616839.html
