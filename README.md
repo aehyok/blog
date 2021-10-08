@@ -48,7 +48,9 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 十月份
-### 10 月 8日
+### 10 月 8 日
+- 263 字节跳动微前端框架
+  - https://github.com/modern-js-dev/garfish/blob/master/README.ch.md
 - 262 form表单生成器
   - https://mp.weixin.qq.com/s/4mwXHEKoqSh_M8QBpNX1jQ
   - https://juejin.cn/post/7012421311301419022
