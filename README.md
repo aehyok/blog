@@ -49,8 +49,15 @@
 
 # 十月份
 ### 10 月 8 日
+- 266 C# 链接mysql数据库关闭ssl
+  - https://stackoverflow.com/questions/45086283/mysql-data-mysqlclient-mysqlexception-the-host-localhost-does-not-support-ssl
+- 265 dotnetcore3.1中引入swagger 
+  - https://www.cnblogs.com/dotnet261010/p/12425572.html
+- 264 swagger 引入后swagger/v1/swagger.json 500
+  - https://www.cnblogs.com/oBehavior/p/14384201.html
 - 263 字节跳动微前端框架
   - https://github.com/modern-js-dev/garfish/blob/master/README.ch.md
+  - https://garfish.top/guide/
 - 262 form表单生成器
   - https://mp.weixin.qq.com/s/4mwXHEKoqSh_M8QBpNX1jQ
   - https://juejin.cn/post/7012421311301419022
