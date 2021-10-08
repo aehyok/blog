@@ -48,35 +48,35 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 十月份
-### 10月2日
+### 10 月 2 日
 - 261 mysql数据库导入导出
   - https://www.cnblogs.com/jpfss/p/7967046.html
-### 10月1日
+### 10 月 1 日
 - 260 donetcore 3.1 下载地址（mac window  Linux）
   - https://dotnet.microsoft.com/download/dotnet/3.1
 # 九月份
-## 9月29日
+## 9 月 29 日
 - 259 display inline-block和block和inline之间的区别
   - https://blog.csdn.net/xuanwugang/article/details/80254401
   - https://www.cnblogs.com/brainworld/p/6693531.html
-## 9月28日
+## 9 月 28 日
 - 258 go 环境搭建
   - https://www.cnblogs.com/htc524/p/12616839.html
-## 9月27日
+## 9 月 27 日
 - 257 vue3 onBeforeRouterEnter
   - https://www.jianshu.com/p/67f882a39d78
-## 9月26日
+## 9 月 26 日
 - 256 storyBook 
   - https://github.com/storybookjs/storybook/
-## 9月24日
+## 9 月 24 日
 - 255 自定义表单组件封装
   - https://v2.formilyjs.org/zh-CN/guide/quick-start
-## 9月22日
+## 9 月 22 日
 - 254 tab 菜单切换
   - https://github.com/buqiyuan/vite-vue3-admin
 - 253 数据权限设计
   - https://www.cnblogs.com/yubaolee/p/DataPrivilege.html
-## 9月21日
+## 9 月 21 日
 - 252 nuxtjs.cn
   - https://www.nuxtjs.cn/
 - 251 css modules 
@@ -84,7 +84,7 @@
 - 250 taro
   - https://b2nil.github.io/taro-ui-vue3/
   - https://github.com/b2nil/taro-ui-vue3/
-## 9月18日
+## 9 月 18 日
 - 249 C#调用Web Api 接口的类库 Flurl 
   - https://flurl.dev/
 ## 9 月 11 日
@@ -796,9 +796,6 @@
   - https://blog.csdn.net/xuhua32100/article/details/113518217
 - 220 vue3 useRoute 和 useStore 的使用
   - http://lanwuyaojiu.cn/blogm/blogart-110.html
-
-###
-
 - 219 typescript tsconfig.json
   - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
