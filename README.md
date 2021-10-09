@@ -49,6 +49,9 @@
 
 # 十月份
 ### 10 月 9 日
+- 268 autofac 自动依赖注入
+  - https://github.com/toddams/RazorLight/issues/294
+  - https://github.com/dotnet/aspnetcore/issues/14418#issuecomment-535107767(先看这个)
 - 267 form表单配置器
   - https://mp.weixin.qq.com/s/4mwXHEKoqSh_M8QBpNX1jQ
 ### 10 月 8 日
