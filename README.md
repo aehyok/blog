@@ -49,6 +49,8 @@
 
 # 十月份
 ### 10 月 9 日
+- 269 etcd简单介绍
+  - https://www.cnblogs.com/wujuntian/p/12837926.html
 - 268 autofac 自动依赖注入
   - https://github.com/toddams/RazorLight/issues/294
   - https://github.com/dotnet/aspnetcore/issues/14418#issuecomment-535107767(先看这个)
