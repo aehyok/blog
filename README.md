@@ -48,6 +48,9 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 十月份
+### 10 月 9 日
+- 267 form表单配置器
+  - https://mp.weixin.qq.com/s/4mwXHEKoqSh_M8QBpNX1jQ
 ### 10 月 8 日
 - 266 C# 链接mysql数据库关闭ssl
   - https://stackoverflow.com/questions/45086283/mysql-data-mysqlclient-mysqlexception-the-host-localhost-does-not-support-ssl
