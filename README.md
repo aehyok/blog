@@ -49,6 +49,9 @@
 
 # 十月份
 ### 10 月 9 日
+- 270 smartSql
+  - https://github.com/dotnetcore/SmartSql
+  - https://smartsql.net/guide/
 - 269 etcd简单介绍
   - https://www.cnblogs.com/wujuntian/p/12837926.html
 - 268 autofac 自动依赖注入

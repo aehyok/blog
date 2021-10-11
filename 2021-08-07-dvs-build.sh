@@ -88,14 +88,14 @@ do
           git push origin $version
           echo -e "打tag项目:<<${projectName}>>成功";
           cd $current_path
-          echo "tagVersion=\"$version\"  # $(date)" >> ./versions
+          echo "<<${projectName}>>:tagVersion=\"$version\"  # $(date)" >> ./versions
         else  
           echo 'tag不存在 要进行git tag'
           git tag -a $version -m "${version}"
           git push origin $version
           echo -e "打tag项目:<<${projectName}>>成功";
           cd $current_path
-          echo "tagVersion=\"$version\"  # $(date)" >> ./versions
+          echo "<<${projectName}>>:tagVersion=\"$version\"  # $(date)" >> ./versions
         fi
       else
         echo  -e "不需要进行打tag"
