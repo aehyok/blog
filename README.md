@@ -49,6 +49,8 @@
 
 # 十月份
 ### 10 月 16 日
+- 277 css
+  - https://www.tailwindcss.cn/
 - 276 跳槽后一年后的回顾
   - https://www.cnblogs.com/strick/p/15223931.html
 ### 10 月 15日
