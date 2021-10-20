@@ -48,13 +48,19 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 十月份
+### 10 月 20 日
+- 281 vite2 vue3 低代码平台
+  - https://github.com/buqiyuan/vite-vue3-lowcode
+- 280 webfunny 轻量级的前端监控系统
+  - https://github.com/a597873885/webfunny_monitor
+  - https://www.webfunny.cn/
 ### 10 月 19 日
-  - 279 vue3 vite2 tsx项目模板讲解和代码仓库
-    - https://juejin.cn/post/6972094589251354632#heading-13
-    - https://github.com/cangshudada/vite-vue3-tsx
+- 279 vue3 vite2 tsx项目模板讲解和代码仓库
+  - https://juejin.cn/post/6972094589251354632#heading-13
+  - https://github.com/cangshudada/vite-vue3-tsx
 ### 10 月 18 日
-  - 278 websocket 心跳机制
-    - https://www.cnblogs.com/tugenhua0707/p/8648044.html
+- 278 websocket 心跳机制
+  - https://www.cnblogs.com/tugenhua0707/p/8648044.html
 ### 10 月 16 日
 - 277 css
   - https://www.tailwindcss.cn/
