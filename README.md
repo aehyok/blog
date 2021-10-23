@@ -48,7 +48,13 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 十月份
-### 10 月 23日
+
+### 10 月 23 日
+- 285 vscode counter 插件统计代码行数
+  -
+- 284 vite中替换webpack require.context
+  - https://blog.csdn.net/weixin_43857376/article/details/114687031
+  - https://www.jianshu.com/p/f427694d659f
 - 283 页面刷新关闭websocket
   - https://blog.csdn.net/weixin_41144066/article/details/80343380
 - 282 页面切换关闭settimeout
