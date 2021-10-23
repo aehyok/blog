@@ -48,6 +48,11 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 十月份
+### 10 月 23日
+- 283 页面刷新关闭websocket
+  - https://blog.csdn.net/weixin_41144066/article/details/80343380
+- 282 页面切换关闭settimeout
+  - https://blog.csdn.net/qq_34749453/article/details/81488908
 ### 10 月 20 日
 - 281 vite2 vue3 低代码平台
   - https://github.com/buqiyuan/vite-vue3-lowcode
