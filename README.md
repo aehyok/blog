@@ -49,6 +49,9 @@
 
 # 十月份
 ### 10 月 27 日
+- 293 vue 动态form表单字段的联动展示和隐藏（启用和禁用可类似）
+  - https://github.com/dream2023/vue-ele-form
+  - https://www.yuque.com/chaojie-vjiel/vbwzgu/loffm6#wOVyc
 - 292 数据库客户端
   - https://github.com/dbeaver/dbeaver
   - https://dbeaver.io/download/
