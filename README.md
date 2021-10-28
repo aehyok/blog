@@ -48,6 +48,9 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 十月份
+### 10 月 28 日
+- 294 鲁班H5
+  - https://h5.luban-h5.com/#/editor/35496
 ### 10 月 27 日
 - 293 vue 动态form表单字段的联动展示和隐藏（启用和禁用可类似）
   - https://github.com/dream2023/vue-ele-form
