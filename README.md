@@ -33,6 +33,8 @@
   - 接口文档配置 https://hellosean1025.github.io/yapi/index.html
   - 乾坤官网介绍 https://qiankun.umijs.org/zh/api
   - 搭建框架 vue3 https://juejin.cn/post/6951649464637636622
+  - vscode 中 editorconfig 的正确姿势 https://juejin.cn/post/6844903640595972103
+
   - 乾坤全局函数 https://www.freesion.com/article/1714630234/
   - 乾坤路由跳转 https://www.codenong.com/cs109313017/
   - 路由设置 https://blog.csdn.net/qq_33396780/article/details/110694871
@@ -51,6 +53,8 @@
 
 ### 10 月 31 日
 
+- 297 typescript interface 和 type 的异同点
+  - https://blog.csdn.net/weixin_43758377/article/details/110470780
 - 296 form 表单生成器(生成 vue 代码部分可参考)
   - https://github.com/Kchengz/k-form-design
 
