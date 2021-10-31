@@ -48,144 +48,201 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 十月份
+
+### 10 月 31 日
+
+- 296 form 表单生成器(生成 vue 代码部分可参考)
+  - https://github.com/Kchengz/k-form-design
+
 ### 10 月 29 日
+
 - 295 css、sass、scss
   - https://segmentfault.com/a/1190000019573996
+
 ### 10 月 28 日
-- 294 鲁班H5
+
+- 294 鲁班 H5
   - https://h5.luban-h5.com/#/editor/35496
+
 ### 10 月 27 日
-- 293 vue 动态form表单字段的联动展示和隐藏（启用和禁用可类似）
+
+- 293 vue 动态 form 表单字段的联动展示和隐藏（启用和禁用可类似）
   - https://github.com/dream2023/vue-ele-form
   - https://www.yuque.com/chaojie-vjiel/vbwzgu/loffm6#wOVyc
 - 292 数据库客户端
   - https://github.com/dbeaver/dbeaver
   - https://dbeaver.io/download/
-- 291 promise.all理解
+- 291 promise.all 理解
   - https://www.jianshu.com/p/7e60fc1be1b2
+
 ### 10 月 26 日
+
 - 290 lodash 介绍
   - https://www.lodashjs.com/
+
 ### 10 月 25 日
+
 - 289 tortoiseGit
   - https://www.cnblogs.com/popfisher/p/5466174.html
+
 ### 10 月 24 日
+
 - 288 shelljs
   - https://github.com/shelljs/shelljs
   - https://www.kancloud.cn/outsider/clitool/313191
-- 288 gulp 
-  - https://www.gulpjs.com.cn/  
+- 288 gulp
+  - https://www.gulpjs.com.cn/
 - 287 rollup.js
   - https://www.rollupjs.com/
   - https://www.gulpjs.com.cn/
 - 286 sentry、zanePerfor 监控
   - https://zhuanlan.zhihu.com/p/210765546
-  - https://github.com/wangweianger/zanePerfor 
+  - https://github.com/wangweianger/zanePerfor
 
 ### 10 月 23 日
-- 285 vscode counter 插件统计代码行数
-  -
-- 284 vite中替换webpack require.context
+
+- ## 285 vscode counter 插件统计代码行数
+- 284 vite 中替换 webpack require.context
   - https://blog.csdn.net/weixin_43857376/article/details/114687031
   - https://www.jianshu.com/p/f427694d659f
-- 283 页面刷新关闭websocket
+- 283 页面刷新关闭 websocket
   - https://blog.csdn.net/weixin_41144066/article/details/80343380
-- 282 页面切换关闭settimeout
+- 282 页面切换关闭 settimeout
   - https://blog.csdn.net/qq_34749453/article/details/81488908
+
 ### 10 月 20 日
+
 - 281 vite2 vue3 低代码平台
   - https://github.com/buqiyuan/vite-vue3-lowcode
 - 280 webfunny 轻量级的前端监控系统
   - https://github.com/a597873885/webfunny_monitor
   - https://www.webfunny.cn/
+
 ### 10 月 19 日
-- 279 vue3 vite2 tsx项目模板讲解和代码仓库
+
+- 279 vue3 vite2 tsx 项目模板讲解和代码仓库
   - https://juejin.cn/post/6972094589251354632#heading-13
   - https://github.com/cangshudada/vite-vue3-tsx
+
 ### 10 月 18 日
+
 - 278 websocket 心跳机制
   - https://www.cnblogs.com/tugenhua0707/p/8648044.html
+
 ### 10 月 16 日
+
 - 277 css
   - https://www.tailwindcss.cn/
 - 276 跳槽后一年后的回顾
   - https://www.cnblogs.com/strick/p/15223931.html
+
 ### 10 月 15 日
+
 - 275 vue3 websocket 封装
   - https://github.com/likaia/vue-native-websocket-vue3
 - 274 分布式锁解决并发
   - https://www.cnblogs.com/zhumengke/articles/11829188.html
+
 ### 10 月 14 日
+
 - 273 关系图谱介绍
   - https://www.jianshu.com/p/752a17bb95c5
 - 272 javascript 正则表达式
   - https://www.liaoxuefeng.com/wiki/1022910821149312/1023021582119488
+
 ### 10 月 13 日
+
 - 271 正则 js
   - https://www.cnblogs.com/zhanglw456/p/10442477.html
+
 ### 10 月 9 日
+
 - 270 smartSql
   - https://github.com/dotnetcore/SmartSql
   - https://smartsql.net/guide/
-- 269 etcd简单介绍
+- 269 etcd 简单介绍
   - https://www.cnblogs.com/wujuntian/p/12837926.html
 - 268 autofac 自动依赖注入
   - https://github.com/toddams/RazorLight/issues/294
   - https://github.com/dotnet/aspnetcore/issues/14418#issuecomment-535107767(先看这个)
-- 267 form表单配置器
+- 267 form 表单配置器
   - https://mp.weixin.qq.com/s/4mwXHEKoqSh_M8QBpNX1jQ
+
 ### 10 月 8 日
-- 266 C# 链接mysql数据库关闭ssl
+
+- 266 C# 链接 mysql 数据库关闭 ssl
   - https://stackoverflow.com/questions/45086283/mysql-data-mysqlclient-mysqlexception-the-host-localhost-does-not-support-ssl
-- 265 dotnetcore3.1中引入swagger 
+- 265 dotnetcore3.1 中引入 swagger
   - https://www.cnblogs.com/dotnet261010/p/12425572.html
-- 264 swagger 引入后swagger/v1/swagger.json 500
+- 264 swagger 引入后 swagger/v1/swagger.json 500
   - https://www.cnblogs.com/oBehavior/p/14384201.html
 - 263 字节跳动微前端框架
   - https://github.com/modern-js-dev/garfish/blob/master/README.ch.md
   - https://garfish.top/guide/
-- 262 form表单生成器
+- 262 form 表单生成器
   - https://mp.weixin.qq.com/s/4mwXHEKoqSh_M8QBpNX1jQ
   - https://juejin.cn/post/7012421311301419022
+
 ### 10 月 2 日
-- 261 mysql数据库导入导出
+
+- 261 mysql 数据库导入导出
   - https://www.cnblogs.com/jpfss/p/7967046.html
+
 ### 10 月 1 日
-- 260 donetcore 3.1 下载地址（mac window  Linux）
+
+- 260 donetcore 3.1 下载地址（mac window Linux）
   - https://dotnet.microsoft.com/download/dotnet/3.1
+
 # 九月份
+
 ## 9 月 29 日
-- 259 display inline-block和block和inline之间的区别
+
+- 259 display inline-block 和 block 和 inline 之间的区别
   - https://blog.csdn.net/xuanwugang/article/details/80254401
   - https://www.cnblogs.com/brainworld/p/6693531.html
+
 ## 9 月 28 日
+
 - 258 go 环境搭建
   - https://www.cnblogs.com/htc524/p/12616839.html
+
 ## 9 月 27 日
+
 - 257 vue3 onBeforeRouterEnter
   - https://www.jianshu.com/p/67f882a39d78
+
 ## 9 月 26 日
-- 256 storyBook 
+
+- 256 storyBook
   - https://github.com/storybookjs/storybook/
+
 ## 9 月 24 日
+
 - 255 自定义表单组件封装
   - https://v2.formilyjs.org/zh-CN/guide/quick-start
+
 ## 9 月 22 日
+
 - 254 tab 菜单切换
   - https://github.com/buqiyuan/vite-vue3-admin
 - 253 数据权限设计
   - https://www.cnblogs.com/yubaolee/p/DataPrivilege.html
+
 ## 9 月 21 日
+
 - 252 nuxtjs.cn
   - https://www.nuxtjs.cn/
-- 251 css modules 
+- 251 css modules
   - https://www.cnblogs.com/rynxiao/p/9538058.html
 - 250 taro
   - https://b2nil.github.io/taro-ui-vue3/
   - https://github.com/b2nil/taro-ui-vue3/
+
 ## 9 月 18 日
-- 249 C#调用Web Api 接口的类库 Flurl 
+
+- 249 C#调用 Web Api 接口的类库 Flurl
   - https://flurl.dev/
+
 ## 9 月 11 日
 
 - 248 vue 可视化技术分析
