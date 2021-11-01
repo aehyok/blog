@@ -21,6 +21,16 @@
   - [ ] vue3 vite2 typescript vant 通过配置 json 生成移动端动态 form 表单
   - [ ] 跟着大圣持续学习极客时间 vue3 全家桶系列
   - [ ] form 表单拖拽配置器自动生成配置的 json
+  - [ ] vue3 中 jsx 和 tsx 模式在项目中的应用
+  - [ ] 查看源代码
+
+    - [ ] https://github.com/vueuse/vueuse
+    - [ ] https://github.com/anncwb/vue-vben-admin
+    - [ ] https://github.com/cuixiaorui/mini-vue
+
+  - [ ] 将 2020 年 1 月份到 10 月底的记录进行整理
+
+---
 
     本年度重点计划：通用页面配置化搭建、可视化页面研究、后台配置页面数据（Vue 和 React）
 
