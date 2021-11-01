@@ -14,13 +14,13 @@
 
 - 学习计划
 
-  - [] 搭建移动端 h5 项目支架
-    - [] vue3 vite2 typescript vant vuex vue-router
-    - [] EditorConfig + Prettier + ESlint 项目代码结构规范
-    - [] 实现一个扫一扫的功能
-  - [] vue3 vite2 typescript vant 通过配置 json 生成移动端动态 form 表单
-  - [] 跟着大圣持续学习极客时间 vue3 全家桶系列
-  - [] form 表单拖拽配置器自动生成配置的 json
+  - [ ] 搭建移动端 h5 项目支架
+    - [ ] vue3 vite2 typescript vant vuex vue-router
+    - [ ] EditorConfig + Prettier + ESlint 项目代码结构规范
+    - [ ] 实现一个扫一扫的功能
+  - [ ] vue3 vite2 typescript vant 通过配置 json 生成移动端动态 form 表单
+  - [ ] 跟着大圣持续学习极客时间 vue3 全家桶系列
+  - [ ] form 表单拖拽配置器自动生成配置的 json
 
     本年度重点计划：通用页面配置化搭建、可视化页面研究、后台配置页面数据（Vue 和 React）
 
