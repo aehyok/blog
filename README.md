@@ -12,7 +12,7 @@
   - [x] [通过配置 json 生成动态 table 列表] (https://github.com/aehyok/vue-qiankun/blob/dev/docs/tableconfig.md)
   - [x] [通过 qiankun 搭建 PC 端微前端框架] (https://github.com/aehyok/vue-qiankun/blob/dev/docs/qiankun.md))
 
-- 学习计划
+- 一期学习计划
 
   - [ ] 搭建移动端 h5 项目支架
     - [ ] vue3 vite2 typescript vant vuex vue-router
@@ -28,6 +28,9 @@
     - [ ] https://github.com/anncwb/vue-vben-admin
     - [ ] https://github.com/cuixiaorui/mini-vue
 
+- 二期学习计划
+  - [ ] el-table 列表数据过多点击多选框会有明显的卡顿
+  - [ ] app h5 首屏加载比较慢的优化
   - [ ] 将 2020 年 1 月份到 10 月底的记录进行整理
 
 ---
