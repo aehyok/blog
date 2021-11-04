@@ -14,29 +14,30 @@
 
 - 一期学习计划
 
-| 序号 | 添加日期 | 内容                                              | 参考链接                                             | 完成日期 |
-| :--- | :------- | :------------------------------------------------ | :--------------------------------------------------- | :------- |
-| 1    | 11-1     | - 搭建移动端 h5 项目支架                          | [掘金](https://juejin.cn/post/6951649464637636622)   | 11-2     |
-| 1.1  | 11-1     | - - vue3+vite2+typescript+vant                    |                                                      | 11-2     |
-| 1.2  | 11-1     | - - Prettier + ESlint 项目代码结构规范            |                                                      | 11-2     |
-| 1.3  | 11-1     | - - 实现一个扫一扫的功能                          | [github](https://github.com/dragonir/h5-scan-qrcode) |          |
-| 1.4  | 11-1     | - - 通过配置 json 生成移动端动态 form 表单        |                                                      |          |
-| 2    | 11-1     | - 跟着大圣持续学习极客时间 vue3 全家桶系列        | 极客时间                                             |          |
-| 3    | 11-1     | - form 表单拖拽配置器自动生成配置的 json          | [vue-qiankun](https://github.com/aehyok/vue-qiankun) |          |
-| 3.1  | 11-1     | - - form 表单拖拽配置器自动生成配置的 json        | vue-qiankun/webpack-app                              |          |
-| 3.2  | 11-1     | - - vue3 中 jsx 和 tsx 模式在项目中的应用         | vue-qiankun/vite-tsx                                 |          |
-| 4    | 11-1     | - 源代码仓库阅读                                  |                                                      |          |
-| 4.1  | 11-1     | - - https://github.com/vueuse/vueuse              |                                                      |          |
-| 4.2  | 11-1     | - - https://github.com/anncwb/vue-vben-admin      |                                                      |          |
-| 4.3  | 11-1     | - - https://github.com/cuixiaorui/mini-vue        |                                                      |          |
-| 5    | 11-2     | - 优化相关                                        |                                                      |          |
-| 5.1  | 11-2     | - - el-table 列表数据过多点击多选框会有明显的卡顿 |                                                      |          |
-| 5.2  | 11-2     | - - app h5 首屏加载比较慢的优化                   |                                                      |          |
-| 5.3  | 11-2     | - - 快速搭建项目                                  | 通过 oclif 制作一个脚手架                            |          |
-| 6    | 11-2     | - 面试知识点学习                                  | 剑指 offer 面试题集锦                                |          |
-| 7    | 11-2     | - 整理学习相关                                    |                                                      |          |
-| 7.1  | 11-2     | - 将 2020 年 1 月份到 10 月底的记录进行整理       |                                                      |          |
-| 7.2  | 11-2     | - JavaScript 常用工具                             | [github](https://github.com/dragonir/Utils.js)       |          |
+| 序号 | 添加日期 | 内容                                              | 参考链接                                                 | 完成日期 |
+| :--- | :------- | :------------------------------------------------ | :------------------------------------------------------- | :------- |
+| 1    | 11-1     | - 搭建移动端 h5 项目支架                          | [掘金](https://juejin.cn/post/6951649464637636622)       | 11-2     |
+| 1.1  | 11-1     | - - vue3+vite2+typescript+vant                    |                                                          | 11-2     |
+| 1.2  | 11-1     | - - Prettier + ESlint 项目代码结构规范            |                                                          | 11-2     |
+| 1.3  | 11-1     | - - 实现一个扫一扫的功能                          | [github](https://github.com/dragonir/h5-scan-qrcode)     |          |
+| 1.4  | 11-1     | - - 通过配置 json 生成移动端动态 form 表单        |                                                          |          |
+| 2    | 11-1     | - 跟着大圣持续学习极客时间 vue3 全家桶系列        | 极客时间                                                 |          |
+| 3    | 11-1     | - form 表单拖拽配置器自动生成配置的 json          | [vue-qiankun](https://github.com/aehyok/vue-qiankun)     |          |
+| 3.1  | 11-1     | - - form 表单拖拽配置器自动生成配置的 json        | vue-qiankun/webpack-app                                  |          |
+| 3.2  | 11-1     | - - vue3 中 jsx 和 tsx 模式在项目中的应用         | vue-qiankun/vite-tsx                                     |          |
+| 3.3  | 11-4     | - - vue3 中 upload 分片断点续传 秒传              | https://www.cnblogs.com/xiahj/p/vue-simple-uploader.html |          |
+| 4    | 11-1     | - 源代码仓库阅读                                  |                                                          |          |
+| 4.1  | 11-1     | - - https://github.com/vueuse/vueuse              |                                                          |          |
+| 4.2  | 11-1     | - - https://github.com/anncwb/vue-vben-admin      |                                                          |          |
+| 4.3  | 11-1     | - - https://github.com/cuixiaorui/mini-vue        |                                                          |          |
+| 5    | 11-2     | - 优化相关                                        |                                                          |          |
+| 5.1  | 11-2     | - - el-table 列表数据过多点击多选框会有明显的卡顿 |                                                          |          |
+| 5.2  | 11-2     | - - app h5 首屏加载比较慢的优化                   |                                                          |          |
+| 5.3  | 11-2     | - - 快速搭建项目                                  | 通过 oclif 制作一个脚手架                                |          |
+| 6    | 11-2     | - 面试知识点学习                                  | 剑指 offer 面试题集锦                                    |          |
+| 7    | 11-2     | - 整理学习相关                                    |                                                          |          |
+| 7.1  | 11-2     | - 将 2020 年 1 月份到 10 月底的记录进行整理       |                                                          |          |
+| 7.2  | 11-2     | - JavaScript 常用工具                             | [github](https://github.com/dragonir/Utils.js)           |          |
 
 ---
 
