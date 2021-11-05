@@ -92,6 +92,52 @@
 
 # 十一月份
 
+## 11 月 4 日
+
+- 299 vue2 web worker 调用
+
+  - https://github.com/israelss/vue-worker
+  - https://www.cnblogs.com/axl234/p/9254755.html
+
+  ```javascipt
+
+    import VueWorker from 'vue-worker'
+    Vue.use(VueWorker)
+
+    created() {
+      this.worker = this.$worker.create([
+        {
+          message: 'hello',
+          func: function (e) {
+            console.log('hel0000lo', e)
+            for (let i = 0; i < 100000; i++) {
+              console.log(i)
+            }
+            return 'hi yiye'
+          }
+        },
+        {
+          message: 'world',
+          func: function (e) {
+            console.log(e)
+            for (let i = 0; i < 100000; i++) {
+              console.log(i)
+            }
+            return 'sss world'
+          }
+        }
+      ])
+  },
+  mounted() {
+    this.worker.postMessage('world', ['i am yiye']).then(function(e) {
+      console.log('post:', e)
+      // for (let i = 0; i < 100000; i++) {
+      //   console.log(i)
+      // }
+    })
+  },
+  ```
+
 ## 11 月 1 日
 
 - 298 https://github.com/oclif/oclif
