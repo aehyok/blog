@@ -38,6 +38,7 @@
 | 7    | 11-2     | - 整理学习相关                                    |                                                          |          |
 | 7.1  | 11-2     | - 将 2020 年 1 月份到 10 月底的记录进行整理       |                                                          |          |
 | 7.2  | 11-2     | - JavaScript 常用工具                             | [github](https://github.com/dragonir/Utils.js)           |          |
+| 7.3  | 11-5     | - https://leetcode-cn.com/leetbook/               | 力扣基础算法                                             |          |
 
 ---
 
