@@ -42,6 +42,13 @@
 
 ---
 
+- 2021 年 11 月 1 日到 6 日
+
+  - 完成 vue3+vite2+vant+typescript+prettier+eslint 框架搭建
+  - 完成 h5 首页等基本布局
+
+---
+
     本年度重点计划：通用页面配置化搭建、可视化页面研究、后台配置页面数据（Vue 和 React）
 
 - 创建自己的 Vue 通用组件代码库 https://github.com/aehyok/vuecomponent
