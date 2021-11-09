@@ -1,6 +1,6 @@
 tag 
 包含a------村委app
- 命令行中包含的版本号: 2.4.0.001-1
+ 命令行中包含的版本号: 2.4.0.003-1
 -------------------------------------------------
 Your branch is up to date with 'origin/dev'.
 开始拉取项目:<<村委app>>
@@ -11,7 +11,7 @@ Already up to date.
 yarn run v1.22.10
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午6:18:08
+ WARNING  Compiled with 2 warnings下午7:19:09
 
  warning  
 
@@ -19,22 +19,22 @@ asset size limit: The following asset(s) exceed the recommended size limit (244 
 This can impact web performance.
 Assets: 
   img/appbanner.ce354529.png (303 KiB)
-  js/chunk-511e85ea.90ff31cd.js (298 KiB)
-  js/chunk-vendors.2f1d39ca.js (2.34 MiB)
+  js/chunk-52fe5006.3a81b988.js (299 KiB)
+  js/chunk-vendors.90937016.js (2.34 MiB)
   configImage/greenhouse(center).png (438 KiB)
   configImage/greenhouse(door).png (393 KiB)
   configImage/secondhouse(northwest).png (460 KiB)
-  scan/u1040.png (297 KiB)
   scan/u1036.png (446 KiB)
-  scan/u1042.png (278 KiB)
   scan/u1039.png (306 KiB)
+  scan/u1040.png (297 KiB)
   scan/u1041.png (447 KiB)
+  scan/u1042.png (278 KiB)
   scan/u1043.png (335 KiB)
   scan/u1044.png (312 KiB)
-  scan/u829.png (250 KiB)
-  scan/u826.png (256 KiB)
   scan/u825.jpg (254 KiB)
+  scan/u826.png (256 KiB)
   scan/u87.png (262 KiB)
+  scan/u829.png (250 KiB)
   configImage/villageDoor.png (610 KiB)
 
  warning  
@@ -43,31 +43,31 @@ entrypoint size limit: The following entrypoint(s) combined asset size exceeds t
 Entrypoints:
   app (2.57 MiB)
       css/chunk-vendors.6b8282f5.css
-      js/chunk-vendors.2f1d39ca.js
+      js/chunk-vendors.90937016.js
       css/app.6629ab80.css
-      js/app.af55365b.js
+      js/app.5665a1d2.js
 
 
   File                                      Size             Gzipped
 
-  ..\release\cms\app\js\chunk-vendors.2f    2392.36 KiB      748.19 KiB
-  1d39ca.js
-  ..\release\cms\app\js\chunk-511e85ea.9    298.23 KiB       125.04 KiB
-  0ff31cd.js
-  ..\release\cms\app\js\app.af55365b.js     21.56 KiB        7.12 KiB
-  ..\release\cms\app\js\chunk-74446e08.a    17.17 KiB        9.59 KiB
-  d94af2b.js
-  ..\release\cms\app\js\chunk-05dac820.9    2.14 KiB         1.08 KiB
-  37a2106.js
+  ..\release\cms\app\js\chunk-vendors.90    2392.61 KiB      748.28 KiB
+  937016.js
+  ..\release\cms\app\js\chunk-52fe5006.3    298.96 KiB       125.34 KiB
+  a81b988.js
+  ..\release\cms\app\js\app.5665a1d2.js     21.71 KiB        7.15 KiB
+  ..\release\cms\app\js\chunk-4ce443f6.4    17.17 KiB        9.59 KiB
+  ef0530a.js
+  ..\release\cms\app\js\chunk-44fd03a1.a    3.11 KiB         1.39 KiB
+  57aaa04.js
   ..\release\cms\app\config.js              1.88 KiB         0.53 KiB
   ..\release\cms\app\css\chunk-vendors.6    217.72 KiB       61.78 KiB
   b8282f5.css
-  ..\release\cms\app\css\chunk-511e85ea.    106.88 KiB       13.20 KiB
-  5666fbc5.css
-  ..\release\cms\app\css\chunk-74446e08.    3.84 KiB         1.17 KiB
-  a8334e90.css
-  ..\release\cms\app\css\chunk-05dac820.    3.61 KiB         1.05 KiB
-  8460a1bc.css
+  ..\release\cms\app\css\chunk-52fe5006.    106.88 KiB       13.43 KiB
+  130ecbac.css
+  ..\release\cms\app\css\chunk-4ce443f6.    3.84 KiB         1.17 KiB
+  43a00a0e.css
+  ..\release\cms\app\css\chunk-44fd03a1.    3.61 KiB         1.05 KiB
+  1b9bcf5f.css
   ..\release\cms\app\css\app.6629ab80.cs    2.35 KiB         0.89 KiB
   s
 
@@ -76,24 +76,30 @@ Entrypoints:
  DONE  Build complete. The ..\release\cms\app directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 22.49s.
+Done in 45.55s.
 编译项目<<村委app>>成功
 -------------------------------------------------
 开始打tag项目:<<村委app>>
-tag 已经存在要先进行删除
-Deleted tag '2.4.0.001-1' (was 2cae8eb)
-tag已删除要进行git tag
+tag不存在 要进行git tag
 打tag项目:<<村委app>>成功
 删除项目： 中的配置文件成功
-[dev 1e53d8aa] build：前端app、qrocde、wechat、park、console(child)commit-version:2.4.0.001-1
- 9 files changed, 1 insertion(+), 112 deletions(-)
- delete mode 100644 cms/app/css/chunk-131f9677.ee166f77.css
- delete mode 100644 cms/app/css/chunk-3b171b53.37aca84f.css
- delete mode 100644 cms/app/js/app.146b1810.js
- delete mode 100644 cms/app/js/chunk-131f9677.936c3fb5.js
- delete mode 100644 cms/app/js/chunk-3b171b53.9ea98476.js
- delete mode 100644 cms/app/js/chunk-51781bf6.fd1fcdf3.js
- delete mode 100644 cms/app/js/chunk-vendors.b61236b2.js
+[dev 7666b3d9] build：前端app、qrocde、wechat、park、console(child)commit-version:2.4.0.003-1
+ 16 files changed, 18 insertions(+), 18 deletions(-)
+ delete mode 100644 cms/app/css/chunk-1d3047e3.9907e75b.css
+ delete mode 100644 cms/app/css/chunk-210c2b5b.e7d66d9b.css
+ create mode 100644 cms/app/css/chunk-44fd03a1.1b9bcf5f.css
+ create mode 100644 cms/app/css/chunk-4ce443f6.43a00a0e.css
+ create mode 100644 cms/app/css/chunk-52fe5006.130ecbac.css
+ delete mode 100644 cms/app/css/chunk-c5b5df04.76f377a5.css
+ create mode 100644 cms/app/js/app.5665a1d2.js
+ delete mode 100644 cms/app/js/app.b02690c7.js
+ delete mode 100644 cms/app/js/chunk-1d3047e3.b1a39eb2.js
+ delete mode 100644 cms/app/js/chunk-210c2b5b.115c286d.js
+ create mode 100644 cms/app/js/chunk-44fd03a1.a57aaa04.js
+ create mode 100644 cms/app/js/chunk-4ce443f6.4ef0530a.js
+ create mode 100644 cms/app/js/chunk-52fe5006.3a81b988.js
+ delete mode 100644 cms/app/js/chunk-c5b5df04.fd3c83cc.js
+ rename cms/app/js/{chunk-vendors.2f1d39ca.js => chunk-vendors.90937016.js} (99%)
 5秒后将自动退出本脚本：
 5
 4
