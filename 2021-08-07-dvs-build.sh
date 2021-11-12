@@ -137,4 +137,4 @@ do
   echo -e $i;sleep 1
 done
 exit
-## 执行脚本  sh 2021-08-07-dvs-build.sh  -v 2.3.0.003 -p awqpc  |tee build-log.txt
+## 执行脚本  sh 2021-08-07-dvs-build.sh  -v 2.4.0.005 -p awqpc  |tee build-log.txt
