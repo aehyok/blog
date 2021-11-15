@@ -49,6 +49,18 @@
 
 ---
 
+- 2021 年 11 月 8 日到 14 日
+
+  - 初步完成基本 H5 页面
+  - 初步完成列表数据页面构建（待优化）
+  - 初步完成 H5 json 生成 form 表单构建（每个组件待优化）
+  - H5 扫一扫功能（待优化）
+
+  ***
+
+  - 计划 脚手架功能基本搭建
+  - 计划 H5 json 生成 form 表单构建
+
 - 2021 年 11 月 1 日到 6 日
 
   - 完成 vue3+vite2+vant+typescript+prettier+eslint 框架搭建
@@ -106,6 +118,13 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 十一月份
+
+## 11 月 14 日
+
+- 300 AST 抽象语法树
+- https://segmentfault.com/a/1190000016231512
+- https://juejin.cn/post/6844904038501187597
+- https://astexplorer.net/
 
 ## 11 月 4 日
 
