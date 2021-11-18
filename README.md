@@ -51,8 +51,8 @@
 
 - 2022 年 4 月 1 日前计划要学习的内容
 
-  - 1、vant H5 json 配置生成 form 表单（双伟在搞）
-  - 2、vant H5 List 列表下拉刷新和上拉刷新的问题（插槽问题没想明白）
+  - 1、vant H5 json 配置生成 form 表单（双伟在搞）——11 月 17 日初步搭建已完成
+  - 2、vant H5 List 列表下拉刷新和上拉刷新的问题（插槽问题没想明白） ——11 月 18 日已完成
   - 3、jenkins 自动化部署以及 docker 安装部署
   - 4、PC 端拖拽实现表单的基本布局和属性配置，生成 json
   - 5、jsx 和 tsx 已基本了解，基础页面也可搭建
@@ -131,6 +131,11 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 十一月份
+
+## 11 月 18 日
+
+- 301 华为 javascript
+  - https://developer.huawei.com/consumer/cn/blog/topic/03726175019000186
 
 ## 11 月 14 日
 
