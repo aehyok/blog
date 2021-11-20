@@ -132,6 +132,15 @@
 
 # 十一月份
 
+## 11 月 19 日
+
+- 302 jenkins
+  - 密码：f7901c3502644636bfbb6a1c33090ff8
+  - 路径：C:\ProgramData\Jenkins\.jenkins\secrets\initialAdminPassword
+  - 使用过程详解 https://juejin.cn/post/7010007745495728164#heading-3
+  - jenkins http://localhost:9090/ aehyok aehyok 455043818@qq.com
+  - 重启地址 http://localhost:9000/restart
+
 ## 11 月 18 日
 
 - 301 华为 javascript
