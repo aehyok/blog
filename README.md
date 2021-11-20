@@ -49,18 +49,47 @@
 
 ---
 
+- 2022 年 4 月 1 日到 10 月 1 日计划要学习的内容
+
+  - 1、搭建一个自己的脚手架（nodejs 初步学习使用）
+    - 参考链接 https://github.com/woai3c/Front-end-articles/issues/22
+    - 后期可通过 oclif 制作一个脚手架
+    - 11 月 12 日已搭建项目 https://github.com/aehyok/ak-vue3
+  - 2、源代码仓库阅读
+    - https://github.com/vueuse/vueuse
+    - https://github.com/anncwb/vue-vben-admin
+    - https://github.com/cuixiaorui/mini-vue
+    - vue3 vue-router vuex 等仓库
+  - 3、https://leetcode-cn.com 算法题目每周一题
+  - 4、常用设计模式和基础算法的攻克
+  - 5、可视化编辑器
+  - 6、react ant design 的深入学习
+  - 7、一些常用优化类的进行思考
+
 - 2022 年 4 月 1 日前计划要学习的内容
 
-  - 1、vant H5 json 配置生成 form 表单（双伟在搞）——11 月 17 日初步搭建已完成
-  - 2、vant H5 List 列表下拉刷新和上拉刷新的问题（插槽问题没想明白） ——11 月 18 日已完成
+  - 1、vant H5 json 配置生成 form 表单（双伟在搞）
+    - 11 月 2 日——项目初始化完成
+    - 11 月 2 日——Eslint Prettier 规划搭建完成
+    - 11 月 16 日——初步搭建已完成
+    - 11 月 17 日—— 下拉框简单使用可配置
+  - 2、vant H5 List 列表下拉刷新和上拉刷新的问题（插槽问题没想明白）
+    - 11 月 16 日——基本列表功能已实现
+    - 11 月 18 日 ——插槽问题已处理已解决
+    - 11 月 20 日 ——keep-alive 使用方式已解决 https://juejin.cn/post/6978772143748153381
   - 3、jenkins 自动化部署以及 docker 安装部署
+    - 11 月 19 日 ——jenkins 已安装
   - 4、PC 端拖拽实现表单的基本布局和属性配置，生成 json
   - 5、jsx 和 tsx 已基本了解，基础页面也可搭建
+    - 11 月 1 日——之前已搭建 demo，并在公司项目使用 jsx,待继续熟练使用
   - 6、ES6 和 typescript 基本学习和深入
   - 7、常用设计模式和基础算法的攻克
   - 8、剑指 offer 和常用基础面试题(每周两题)
   - 9、https://leetcode-cn.com（每周一题）
+    - 11 月 20 日之前已完成 5 题
   - 10、react 和 ant design 搭建和学习
+    - 11 月 20—— 日初始化项目已搭建
+  - 11、一些常用优化类的进行思考
 
 - 2021 年 11 月 8 日到 14 日
 
