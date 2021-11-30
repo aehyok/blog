@@ -52,6 +52,8 @@
 - https://github.com/alibaba/designable
 - https://dotnet.jnpfsoft.com/home
 - 微信小程序 https://developers.weixin.qq.com/miniprogram/dev/framework/
+- 微信小程序登录过程 https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html
+
 - 2022 年 4 月 1 日到 10 月 1 日计划要学习的内容
 
   - 1、搭建一个自己的脚手架（nodejs 初步学习使用）
@@ -93,9 +95,14 @@
   - 10、react 和 ant design 搭建和学习
     - 11 月 20—— 日初始化项目已搭建
   - 11、一些常用优化类的进行思考
-  - 12、元宇宙和区块链的了解
+  - 12、元宇宙和区块链、NFT 的了解
     - 11 月 28 日 ——得到课程 元宇宙的简单了解
+    - https://github.com/houbb/awesome-metaverse-zh
+    - 区块链 https://github.com/chaozh/awesome-blockchain-cn
 
+- 2021 年 11 月 15 日到 18 日
+  - 公司项目投入时间较长
+  - 周四周五请假，故本周没多少时间投入
 - 2021 年 11 月 8 日到 14 日
 
   - 初步完成基本 H5 页面
