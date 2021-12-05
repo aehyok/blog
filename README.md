@@ -99,7 +99,8 @@
     - 11 月 28 日 ——得到课程 元宇宙的简单了解
     - https://github.com/houbb/awesome-metaverse-zh
     - 区块链 https://github.com/chaozh/awesome-blockchain-cn
-
+- 2021年11月29日到12月4日
+  - 公司临时任务公众号转小程序、任务紧急全部投入
 - 2021 年 11 月 15 日到 18 日
   - 公司项目投入时间较长
   - 周四周五请假，故本周没多少时间投入
