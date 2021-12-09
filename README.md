@@ -70,7 +70,7 @@
   - 5、可视化编辑器
   - 6、react ant design 的深入学习
   - 7、一些常用优化类的进行思考
-
+  - 8、单元测试jest
 - 2022 年 4 月 1 日前计划要学习的内容
 
   - 1、vant H5 json 配置生成 form 表单（双伟在搞）
@@ -78,7 +78,7 @@
     - 11 月 2 日——Eslint Prettier 规划搭建完成
     - 11 月 16 日——初步搭建已完成
     - 11 月 17 日—— 下拉框简单使用可配置
-  - 2、vant H5 List 列表下拉刷新和上拉刷新的问题（插槽问题没想明白）
+  - 2、vant H5 List 列表下拉刷新和上拉刷新的问题
     - 11 月 16 日——基本列表功能已实现
     - 11 月 18 日 ——插槽问题已处理已解决
     - 11 月 20 日 ——keep-alive 使用方式已解决 https://juejin.cn/post/6978772143748153381
@@ -99,6 +99,8 @@
     - 11 月 28 日 ——得到课程 元宇宙的简单了解
     - https://github.com/houbb/awesome-metaverse-zh
     - 区块链 https://github.com/chaozh/awesome-blockchain-cn
+  - 13、SSR生成页面
+    - https://space.bilibili.com/480140591/channel/seriesdetail?sid=456250  
 - 2021年11月29日到12月4日
   - 公司临时任务公众号转小程序、任务紧急全部投入
 - 2021 年 11 月 15 日到 18 日
@@ -173,6 +175,9 @@
     - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 # 十二月份
+## 12月8日
+- 305 别人的笔记了解一下
+  - https://github.com/puxiao/notes
 ## 12月6日
 - 304 阿里蚂蚁可视化
   - https://antv.vision/zh
