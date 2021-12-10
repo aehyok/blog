@@ -1,27 +1,95 @@
 tag 
 包含w------微信公众号
- 命令行中包含的版本号: 2.4.1.001
+ 命令行中包含的版本号: 2.4.1.002
 -------------------------------------------------
 Your branch is up to date with 'origin/dev'.
 开始拉取项目:<<微信公众号>>
-Updating 4791539..539e1d5
+Updating 1fb6ca6..c887db8
 Fast-forward
- src/router/index.js                      |   8 ++
- src/services/public.js                   |   6 ++
- src/views/Home.vue                       |  32 ++++---
- src/views/Mine.vue                       |   5 +-
- src/views/Village.vue                    |   8 +-
- src/views/member/memberDetail.vue        | 143 +++++++++++++++++++++++++++++++
- src/views/residentsDemands/eventList.vue |  30 +++++--
- 7 files changed, 201 insertions(+), 31 deletions(-)
- create mode 100644 src/views/member/memberDetail.vue
+ public/config.js                         |   50 +-
+ public/img/income.png                    |  Bin 0 -> 1832 bytes
+ public/img/landInfo.png                  |  Bin 0 -> 2093 bytes
+ public/img/member.png                    |  Bin 0 -> 2008 bytes
+ public/img/registerFamily.png            |  Bin 0 -> 2012 bytes
+ public/img/worker.png                    |  Bin 0 -> 1913 bytes
+ src/assets/2.0/bg_identity.png           |  Bin 0 -> 30515 bytes
+ src/assets/2.0/bg_roof.png               |  Bin 0 -> 7385 bytes
+ src/assets/2.0/bg_sticky.png             |  Bin 0 -> 8062 bytes
+ src/assets/2.0/bg_top.png                |  Bin 0 -> 38466 bytes
+ src/assets/2.0/btn_down.png              |  Bin 0 -> 408 bytes
+ src/assets/2.0/btn_return.png            |  Bin 0 -> 411 bytes
+ src/assets/2.0/heaad.png                 |  Bin 0 -> 22197 bytes
+ src/assets/2.0/head.png                  |  Bin 0 -> 2950 bytes
+ src/assets/2.0/head1.png                 |  Bin 0 -> 3012 bytes
+ src/assets/2.0/icon-address.png          |  Bin 0 -> 2082 bytes
+ src/assets/2.0/icon-alreadydealt.png     |  Bin 0 -> 21016 bytes
+ src/assets/2.0/icon-event.png            |  Bin 0 -> 681 bytes
+ src/assets/2.0/icon_boy.png              |  Bin 0 -> 916 bytes
+ src/assets/2.0/icon_boy@2x.png           |  Bin 0 -> 926 bytes
+ src/assets/2.0/icon_camera.png           |  Bin 0 -> 1142 bytes
+ src/assets/2.0/icon_girl.png             |  Bin 0 -> 791 bytes
+ src/assets/2.0/icon_man.png              |  Bin 0 -> 1103 bytes
+ src/assets/2.0/icon_man@2x.png           |  Bin 0 -> 1367 bytes
+ src/assets/2.0/icon_woman.png            |  Bin 0 -> 1247 bytes
+ src/assets/2.0/icon_woman1@2x.png        |  Bin 0 -> 923 bytes
+ src/assets/2.0/icon_woman@2x.png         |  Bin 0 -> 1338 bytes
+ src/assets/2.0/tags.png                  |  Bin 0 -> 29684 bytes
+ src/assets/img/bg_top.png                |  Bin 38466 -> 6901 bytes
+ src/assets/json/area.js                  | 4047 ++++++++++++++++++++++++++++++
+ src/components/idCardScanning.vue        |  246 ++
+ src/components/panel.vue                 |    2 +-
+ src/main.js                              |    4 +-
+ src/router/index.js                      |   24 +
+ src/services/public.js                   |   39 +
+ src/utils/publicFun.js                   |    8 +
+ src/views/Home.vue                       |    8 +-
+ src/views/Mine.vue                       |    2 +-
+ src/views/member/index.vue               |   77 +
+ src/views/member/memberAdd.vue           |  902 +++++++
+ src/views/member/memberDetail.vue        |    4 +-
+ src/views/member/worker.vue              |  282 +++
+ src/views/myLoveHome/myLoveHome.vue      |   20 +-
+ src/views/residentsDemands/eventList.vue |    2 +-
+ 44 files changed, 5673 insertions(+), 44 deletions(-)
+ create mode 100644 public/img/income.png
+ create mode 100644 public/img/landInfo.png
+ create mode 100644 public/img/member.png
+ create mode 100644 public/img/registerFamily.png
+ create mode 100644 public/img/worker.png
+ create mode 100644 src/assets/2.0/bg_identity.png
+ create mode 100644 src/assets/2.0/bg_roof.png
+ create mode 100644 src/assets/2.0/bg_sticky.png
+ create mode 100644 src/assets/2.0/bg_top.png
+ create mode 100644 src/assets/2.0/btn_down.png
+ create mode 100644 src/assets/2.0/btn_return.png
+ create mode 100644 src/assets/2.0/heaad.png
+ create mode 100644 src/assets/2.0/head.png
+ create mode 100644 src/assets/2.0/head1.png
+ create mode 100644 src/assets/2.0/icon-address.png
+ create mode 100644 src/assets/2.0/icon-alreadydealt.png
+ create mode 100644 src/assets/2.0/icon-event.png
+ create mode 100644 src/assets/2.0/icon_boy.png
+ create mode 100644 src/assets/2.0/icon_boy@2x.png
+ create mode 100644 src/assets/2.0/icon_camera.png
+ create mode 100644 src/assets/2.0/icon_girl.png
+ create mode 100644 src/assets/2.0/icon_man.png
+ create mode 100644 src/assets/2.0/icon_man@2x.png
+ create mode 100644 src/assets/2.0/icon_woman.png
+ create mode 100644 src/assets/2.0/icon_woman1@2x.png
+ create mode 100644 src/assets/2.0/icon_woman@2x.png
+ create mode 100644 src/assets/2.0/tags.png
+ create mode 100644 src/assets/json/area.js
+ create mode 100644 src/components/idCardScanning.vue
+ create mode 100644 src/views/member/index.vue
+ create mode 100644 src/views/member/memberAdd.vue
+ create mode 100644 src/views/member/worker.vue
 拉取项目<<微信公众号>>成功
 -------------------------------------------------
 开始编译项目:<<微信公众号>>
 yarn run v1.22.10
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午8:02:11
+ WARNING  Compiled with 2 warnings下午7:42:43
 
  warning  
 
@@ -31,9 +99,9 @@ Assets:
   img/familyQrcodebg.ce915199.png (258 KiB)
   img/bgimg.edfcba02.png (494 KiB)
   img/familyIntegralDetailBanner.ed11dd86.png (323 KiB)
-  js/app.fe3424ab.js (1.44 MiB)
-  css/chunk-2c546644.b5f35eaa.css (313 KiB)
-  js/chunk-2c546644.b4fb4a97.js (855 KiB)
+  js/app.9d5ce915.js (1.44 MiB)
+  css/chunk-21935d6a.49f94bf5.css (322 KiB)
+  js/chunk-21935d6a.db9058aa.js (972 KiB)
   mp4/k0384ilytx2.p712.1.mp4 (16.9 MiB)
 
  warning  
@@ -42,18 +110,18 @@ entrypoint size limit: The following entrypoint(s) combined asset size exceeds t
 Entrypoints:
   app (1.51 MiB)
       css/app.a9e737aa.css
-      js/app.fe3424ab.js
+      js/app.9d5ce915.js
 
 
   File                                      Size             Gzipped
 
-  ..\release\cms\wechat\js\app.fe3424ab.    1476.98 KiB      481.69 KiB
+  ..\release\cms\wechat\js\app.9d5ce915.    1478.47 KiB      481.97 KiB
   js
-  ..\release\cms\wechat\js\chunk-2c54664    854.94 KiB       312.00 KiB
-  4.b4fb4a97.js
-  ..\release\cms\wechat\config.js           10.47 KiB        1.10 KiB
-  ..\release\cms\wechat\css\chunk-2c5466    312.88 KiB       42.83 KiB
-  44.b5f35eaa.css
+  ..\release\cms\wechat\js\chunk-21935d6    971.98 KiB       356.82 KiB
+  a.db9058aa.js
+  ..\release\cms\wechat\config.js           10.45 KiB        1.26 KiB
+  ..\release\cms\wechat\css\chunk-21935d    321.71 KiB       43.62 KiB
+  6a.49f94bf5.css
   ..\release\cms\wechat\css\app.a9e737aa    67.45 KiB        30.35 KiB
   .css
 
@@ -62,7 +130,7 @@ Entrypoints:
  DONE  Build complete. The ..\release\cms\wechat directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 57.51s.
+Done in 96.99s.
 编译项目<<微信公众号>>成功
 -------------------------------------------------
 开始打tag项目:<<微信公众号>>
@@ -70,89 +138,23 @@ tag 已经存在要先进行删除
 tag已删除要进行git tag
 打tag项目:<<微信公众号>>成功
 删除项目： 中的配置文件成功
-[dev 88ae6493] build：前端app、qrocde、wechat、park、console(child)commit-version:2.4.1.001
- 81 files changed, 76 insertions(+), 188 deletions(-)
- rename cms/wechat/css/{app.3b81c214.css => app.a9e737aa.css} (89%)
- create mode 100644 cms/wechat/css/chunk-2c546644.b5f35eaa.css
- delete mode 100644 cms/wechat/css/chunk-5d6af050.90848e8f.css
- delete mode 100644 cms/wechat/img/tags.4391f6d5.png
- rewrite cms/wechat/index.html (81%)
- delete mode 100644 cms/wechat/js/app.170d2fd8.js
- delete mode 100644 cms/wechat/js/app.369871e1.js
- delete mode 100644 cms/wechat/js/app.e81bc005.js
- create mode 100644 cms/wechat/js/app.fe3424ab.js
- delete mode 100644 cms/wechat/js/chunk-10e2adc4.049c76f3.js
- create mode 100644 cms/wechat/js/chunk-2c546644.b4fb4a97.js
- delete mode 100644 cms/wechat/js/chunk-5d6af050.6aaa13f1.js
- delete mode 100644 cms/wechat/js/chunk-6ade07b0.eea09c34.js
- create mode 100644 cms/wechat/weather/d00.gif
- create mode 100644 cms/wechat/weather/d01.gif
- create mode 100644 cms/wechat/weather/d02.gif
- create mode 100644 cms/wechat/weather/d03.gif
- create mode 100644 cms/wechat/weather/d04.gif
- create mode 100644 cms/wechat/weather/d05.gif
- create mode 100644 cms/wechat/weather/d06.gif
- create mode 100644 cms/wechat/weather/d07.gif
- create mode 100644 cms/wechat/weather/d08.gif
- create mode 100644 cms/wechat/weather/d09.gif
- create mode 100644 cms/wechat/weather/d10.gif
- create mode 100644 cms/wechat/weather/d11.gif
- create mode 100644 cms/wechat/weather/d12.gif
- create mode 100644 cms/wechat/weather/d13.gif
- create mode 100644 cms/wechat/weather/d14.gif
- create mode 100644 cms/wechat/weather/d15.gif
- create mode 100644 cms/wechat/weather/d16.gif
- create mode 100644 cms/wechat/weather/d17.gif
- create mode 100644 cms/wechat/weather/d18.gif
- create mode 100644 cms/wechat/weather/d19.gif
- create mode 100644 cms/wechat/weather/d20.gif
- create mode 100644 cms/wechat/weather/d21.gif
- create mode 100644 cms/wechat/weather/d22.gif
- create mode 100644 cms/wechat/weather/d23.gif
- create mode 100644 cms/wechat/weather/d24.gif
- create mode 100644 cms/wechat/weather/d25.gif
- create mode 100644 cms/wechat/weather/d26.gif
- create mode 100644 cms/wechat/weather/d27.gif
- create mode 100644 cms/wechat/weather/d28.gif
- create mode 100644 cms/wechat/weather/d29.gif
- create mode 100644 cms/wechat/weather/d30.gif
- create mode 100644 cms/wechat/weather/d31.gif
- create mode 100644 cms/wechat/weather/d32.png
- create mode 100644 cms/wechat/weather/d53.gif
- create mode 100644 cms/wechat/weather/n00.gif
- create mode 100644 cms/wechat/weather/n01.gif
- create mode 100644 cms/wechat/weather/n02.gif
- create mode 100644 cms/wechat/weather/n03.gif
- create mode 100644 cms/wechat/weather/n04.gif
- create mode 100644 cms/wechat/weather/n05.gif
- create mode 100644 cms/wechat/weather/n06.gif
- create mode 100644 cms/wechat/weather/n07.gif
- create mode 100644 cms/wechat/weather/n08.gif
- create mode 100644 cms/wechat/weather/n09.gif
- create mode 100644 cms/wechat/weather/n10.gif
- create mode 100644 cms/wechat/weather/n11.gif
- create mode 100644 cms/wechat/weather/n12.gif
- create mode 100644 cms/wechat/weather/n13.gif
- create mode 100644 cms/wechat/weather/n14.gif
- create mode 100644 cms/wechat/weather/n15.gif
- create mode 100644 cms/wechat/weather/n16.gif
- create mode 100644 cms/wechat/weather/n17.gif
- create mode 100644 cms/wechat/weather/n18.gif
- create mode 100644 cms/wechat/weather/n19.gif
- create mode 100644 cms/wechat/weather/n20.gif
- create mode 100644 cms/wechat/weather/n21.gif
- create mode 100644 cms/wechat/weather/n22.gif
- create mode 100644 cms/wechat/weather/n23.gif
- create mode 100644 cms/wechat/weather/n24.gif
- create mode 100644 cms/wechat/weather/n25.gif
- create mode 100644 cms/wechat/weather/n26.gif
- create mode 100644 cms/wechat/weather/n27.gif
- create mode 100644 cms/wechat/weather/n28.gif
- create mode 100644 cms/wechat/weather/n29.gif
- create mode 100644 cms/wechat/weather/n30.gif
- create mode 100644 cms/wechat/weather/n31.gif
- create mode 100644 cms/wechat/weather/n32.png
- create mode 100644 cms/wechat/weather/n53.gif
+[dev 4a3f122a] build：前端app、qrocde、wechat、park、console(child)commit-version:2.4.1.002
+ 17 files changed, 41 insertions(+), 41 deletions(-)
+ delete mode 100644 cms/wechat/ZhongYangShi.png
+ create mode 100644 cms/wechat/css/chunk-21935d6a.49f94bf5.css
+ delete mode 100644 cms/wechat/css/chunk-2c546644.b5f35eaa.css
+ create mode 100644 cms/wechat/img/bg_identity.f7dcb95c.png
+ create mode 100644 cms/wechat/img/bg_roof.622f922d.png
+ create mode 100644 cms/wechat/img/bg_top.6be13cb0.png
+ delete mode 100644 cms/wechat/img/bg_top.fe7b9f2d.png
+ create mode 100644 cms/wechat/img/income.png
+ create mode 100644 cms/wechat/img/landInfo.png
+ create mode 100644 cms/wechat/img/member.png
+ create mode 100644 cms/wechat/img/registerFamily.png
+ create mode 100644 cms/wechat/img/worker.png
+ rename cms/wechat/js/{app.fe3424ab.js => app.9d5ce915.js} (86%)
+ create mode 100644 cms/wechat/js/chunk-21935d6a.db9058aa.js
+ delete mode 100644 cms/wechat/js/chunk-2c546644.b4fb4a97.js
 5秒后将自动退出本脚本：
 5
 4
