@@ -1350,8 +1350,6 @@
 
 ### 3 月 31 日
 
-- 185 富文本框 wangeditor
-  - https://www.wangeditor.com/
 - 184 全局监测录入框事件
 
   ```
@@ -1401,20 +1399,6 @@
   );
   ```
 
-### 3 月 30 日
-
-- 183 nuxt.js 服务端渲染
-  - https://www.nuxtjs.cn/guide
-- 182 vue xss 攻击
-  - https://blog.csdn.net/weixin_36908494/article/details/101268583
-  - https://blog.csdn.net/u011140116/article/details/107994191
-  - https://juejin.cn/post/6844904102137167880#heading-19
-
-### 3 月 28 日
-
-- 181 搭建 nuxt.js 服务端渲染
-  - https://www.nuxtjs.cn/guide
-
 ### 3 月 27 日
 
 - 180 搭建地图加载底图服务
@@ -1454,11 +1438,7 @@
 
 - 172 webpack 打包优化
   - https://mp.weixin.qq.com/s/SzD22kTnYYfQShQwRaAGWA
-- 171 css3 特效
-  - https://www.17sucai.com/pins/20269.html
-  - 关系图 https://www.17sucai.com/pins/36932.html
-  - 关系图 https://www.17sucai.com/pins/27610.html
-  - 关系图 https://www.moyublog.com/codes/7921.html
+- 
 
 ### 3 月 18 日
 
@@ -1475,15 +1455,9 @@
   - https://juejin.cn/post/6844904069958467592
   - https://www.cnblogs.com/chenjun1/p/11668535.html
 
-### 3 月 15 日
-
-- 167 vue videojs 播放视频
-  - https://www.cnblogs.com/qdwds/p/11516241.html
-
 ### 3 月 12 日
 
-- 166 几种通用的表单验证字段
-  - https://www.cnblogs.com/luoxuemei/p/9295506.html
+- 
 - 165 vue $attrs、$listeners 传值
   - https://www.cnblogs.com/vickylinj/p/13376391.html
 
@@ -1514,12 +1488,10 @@
   - https://www.cnblogs.com/ychizzz/p/13743277.html
 
 ### 3 月 6 日
-
 - 157 中国省市县区
   - https://github.com/small-dream/China_Province_City
   - https://github.com/modood/Administrative-divisions-of-China
-- 156 vue-drag-resize
-  - https://github.com/kirillmurashov/vue-drag-resize
+- 156 
 - 155 map-demo
   - https://malagis.com/map-demo/leaflet/note-5.html
 
@@ -1527,15 +1499,6 @@
 
 - 154 wrld.js
   - https://docs.wrld3d.com/wrld.js/latest/docs/examples/
-- 153 eventBus 在 vue 中的使用
-  - https://blog.csdn.net/qq_26834399/article/details/106387585
-
-### 3 月 4 日
-
-- 152 前端 qrcode
-  - https://www.runoob.com/w3cnote/javascript-qrcodejs-library.html
-
-### 3 月 1 日
 
 - 151 vue2-leaflet
   - https://vue2-leaflet.netlify.app/quickstart/
@@ -1551,15 +1514,6 @@
 
 ### 2 月 27 日
 
-- 148 vue env 全局变量
-  - https://www.cnblogs.com/xixiaoxi/p/12593749.html
-
-## 二月份
-
-### 2 月 25 日
-
-- 147 babel 入门
-  - http://www.ruanyifeng.com/blog/2016/01/babel.html?bsh_bid=1656398345
 - 146 webpack 配置详解
   - 基础篇 https://juejin.cn/post/6844904079219490830
   - 进阶篇 https://juejin.cn/post/6844904084927938567
@@ -1569,21 +1523,16 @@
 
 ### 2 月 23 日
 
-- 145 动态 form 表单 https://juejin.cn/post/6844904173691994119
+- 
 
 ### 2 月 21 日
 
 - 144Element-Pro-Crud
   - https://crud.boboooooo.top/
-- 143 vue element npm 发布组件
-  - https://github.com/hwq888/hwq-custom-ui-package
-- 142 imgcook 学习
-  - imgcook https://github.com/imgcook/imgcook/blob/master/README.zh-CN.md
-  - https://www.imgcook.com/docs?slug=simple-example
-- 141 廖雪峰的个人博客
-  - https://www.liaoxuefeng.com/wiki/1016959663602400
-- 140 统计 vscode 使用时长 waketime
-  - https://wakatime.com/vs-code
+- 
+- 142 
+- 141 
+- 
 
 ### 2 月 20 日
 
@@ -1618,27 +1567,16 @@
 
 ### 2 月 4 日
 
-- 133 前端本地存储 GoDb.js
-  - https://juejin.cn/post/6925311938419408904
-  - https://godb-js.github.io/gbah32.html
-  - https://juejin.cn/post/6918705632757415950
+- 133 
 
 ### 2 月 3 日
 
-- 132 jsonEditor 编辑
-  - https://github.com/josdejong/jsoneditor
-  - 暂时使用这个比较方便 https://github.com/yansenlei/VJsoneditor
-  - https://github.com/yansenlei/VJsoneditor/blob/master/src/VueJsoneditor.vue
-  - https://ace.c9.io/
-- 131 全局注册组件
-  - https://segmentfault.com/a/1190000019903495
 - 130 form-create 自定义组件如何注册到 form-create 中使用
   - http://www.form-create.com/v2/guide/custom-form-component.html#%E7%A4%BA%E4%BE%8B
 
 ### 2 月 2 日
 
-- 129 Vue.extend 动态注册子组件
-  - https://www.cnblogs.com/tnnyang/p/10945399.html
+- 
 - 128 go 语言学习网站
   - http://c.biancheng.net/golang/intro/
 - 127 vscode 搭建 go 开发环境
@@ -1666,20 +1604,12 @@
 ### 2 月 1 日
 
 - 126 vue3.0 demo 学习 https://github.com/newbee-ltd/vue3-examples
-- 125 npx 命令使用详解
-  - http://www.ruanyifeng.com/blog/2019/02/npx.html
 - 124 webpack 在线图书
   - http://webpack.wuhaolin.cn/
 - 123 vue.config.js 配置
   - https://cli.vuejs.org/zh/config/
-- 122 commander 打包命令行工具
-  - https://github.com/tj/commander.js/blob/HEAD/Readme_zh-CN.md
 - 121 vue3 源码解读
   - https://github.com/cuixiaorui/mini-vue
-- 120 表单工具可视化拖拽程序
-  - 各种前端轮子 https://mp.weixin.qq.com/s/U3gxd-y5hsLHtaa0MmHlvA
-  - https://gitee.com/MTrun/big-screen-vue-datav
-
 ## 一月份
 
 ### 1 月 30 日
@@ -1687,58 +1617,21 @@
 - 119 webpack 网上图书 http://webpack.wuhaolin.cn/
 - 118 打包 build 时不清除原有打包目录的文件
   - "build": "vue-cli-service build --no-clean",
-- 117 github.io 搭建自己的个人网站
-  - 实际上就是将自己的前端网站打包，然后发布到打包文件 commit 到 aehyok.github.io
-  - https://zhuanlan.zhihu.com/p/28321740
-  - https://github.com/Cazaea/Cazaea.github.io
-
-### 1 月 28 日
-
-- 113 mockjs 想要在 typeScript 中使用，安装 mockjs 之后，需要安装 npm install --save @types/mockjs
-  - https://developer.aliyun.com/mirror/npm/package/@types/mockjs
-- 114 vue3.0 .sync 修饰符的替换
-  - https://dev.to/chenxeed/awesome-breaking-changes-in-vue-3-if-you-migrate-from-vue-2-3b98
-- 115 ffmpeg.wasm
-  - https://ffmpegwasm.github.io/
-  - npm install @ffmpeg/ffmpeg
-- 116 css ::v-deep
-  - https://stackoverflow.com/questions/63986278/vue-3-v-deep-usage-as-a-combinator-has-been-deprecated-use-v-deepinner-se/63986379
-  - https://github.com/vuejs/rfcs/blob/master/active-rfcs/0023-scoped-styles-changes.md
+- 116 
   - vue react npm git webpack typescript nodejs nginx linux
   - mongodb mysql redis
 
-### 1 月 27 日
-
-- 111 动态 import 的用法，动态路由
-  - https://blog.csdn.net/javao_0/article/details/85162458
-  - https://github.com/HenryTSZ/zeit/blob/master/source/_posts/vue-dynamic-router.md
-  - https://router.vuejs.org/zh/guide/essentials/dynamic-matching.html#%E5%93%8D%E5%BA%94%E8%B7%AF%E7%94%B1%E5%8F%82%E6%95%B0%E7%9A%84%E5%8F%98%E5%8C%96
-- 112 document.activeElement.dataset 和 e.target.dataset 问题
-  - https://www.cnblogs.com/xiaoli52qd/p/7857468.html
-
 ### 1 月 26 日
-
-- 108 一个非常棒的开源项目 H5-Dooring 目前 star 3.1k
-  - 开源地址 https://github.com/MrXujiang/h5-Dooring
-  - 基本介绍 http://h5.dooring.cn/doc/zh/guide/
-- 109 npm 发包
-  - https://mp.weixin.qq.com/s/2EL-wzXKwTIhGisUgkr4-g 最重要的一篇
-  - https://my.oschina.net/u/4461771/blog/3188900
-  - https://www.cnblogs.com/zlp-blog/p/10718383.html
-  - https://mp.weixin.qq.com/s/4eE5kHicRK2mVcqEQSM4lg
 - 110 npm publish 发包时异常
   - 403 Forbidden - PUT https://registry.npmjs.org/aehyok-hello - Forbidden
     ```javascript
     npm修改邮箱，要登录邮箱进行验证
     查看npm 仓库源，确保是npmjs.org
     ```
-
 ### 1 月 25 日
 
 - 100 1 月 23 日参加公司年终总结和计划会以及部门会议
-- 101 查看 vue3 github 项目 https://zhuanlan.zhihu.com/p/254219538
-- 102 css !important 该条样式属性声明具有最高优先级
-  - https://www.cnblogs.com/meiwenzx/p/6673302.html
+- 
 - 103 linux 创建文件夹 删除文件夹
   - https://www.cnblogs.com/zf2011/archive/2011/05/17/2049155.html
 - 104 elementui eltree 展开指定层级的节点
@@ -1766,125 +1659,23 @@
         })
       },
   ```
-- 105 发现一个不错的 git 文档库 准备 get 一下
-  - https://github.com/HenryTSZ/zeit/tree/master/source/_posts
-- 106 npm 使用详解
-  - https://javascript.ruanyifeng.com/nodejs/npm.html
-- 107 阮一峰 git 仓库
-  - https://github.com/ruanyf/jstutorial
-  - http://www.ruanyifeng.com/home.html
+- 105 
+
 
 ### 1 月 22 日
 
-- 97 vue3 中的 setup Composition API
-  - https://segmentfault.com/a/1190000023911894
 - 98 vue elementui table 表格的封装
   - https://segmentfault.com/a/1190000023382224
-- 99 vite 工具官网
-  - https://vitejs.dev/
-  - npm install -g create-vite-app 全局安装
-  - create-vite-app projectName
-  - https://www.cnblogs.com/qlb-7/p/13790610.html
-  - https://segmentfault.com/a/1190000023737670 vite 创建项目并添加 typescript
-  - https://github.com/Mstian/Vue-Onepiece-Admin.git 参考一个 vue3 的项目
 
 ### 1 月 21 日
 
-- 90 对比一下 vue2 和 vue3 中分别使用 typeScript 的方式
-  - https://jishuin.proginn.com/p/763bfbd2e891
-  - https://www.cnblogs.com/qq3279338858/p/12631728.html
-  -
-- 91 vue 中 lint 检查的配置
-  - https://www.cnblogs.com/fengyingYZ/p/10369703.html
 - 92 vue create 项目时，手动选择 通过空格键进行选中或者反选，然后进行配置
-- 93 dart-sass 和 node-sass 区别
-  - https://blog.csdn.net/qianxing111/article/details/107617538
-- 94 前端多媒体知识
-  - https://mp.weixin.qq.com/s/yuIkTwHk5dx20r8Z0cpSDA
-- 95 vue3 官网 ts 支持
-  - https://v3.cn.vuejs.org/guide/typescript-support.html
+
 - 96 google 技术栏目
   - https://www.infoq.cn/zones/google/cloud/list?id=2
 
-### 1 月 20 日
-
-- 84 vue-class-component 和 vue-property-decorator vue 类组件
-  - https://www.cnblogs.com/qq3279338858/p/12631728.html
-- 85 css transform scale 放大和缩小
-  - https://www.cnblogs.com/yanggeng/p/11277199.html
-- 86 history.pushState() 可以控制浏览器自带的返回按钮
-  - https://www.cnblogs.com/lguow/p/9222272.html
-- 87 export 和 export default
-  - https://www.cnblogs.com/fanyanzhao/p/10298543.html
-- 88 vue3 项目创建
-  - 创建项目 https://www.cnblogs.com/carlJian/p/13932400.html
-  - 引入 elementui https://element-plus.gitee.io/#/zh-CN/component/quickstart
-  ```javascript
-    npm install element-plus --save
-  ```
   - vue-cli-service serve 命令
     https://cli.vuejs.org/zh/guide/cli-service.html#vue-cli-service-serve
-- 89 prettier 格式化代码的配置
-  - https://www.cnblogs.com/guwufeiyang/p/12886333.html
-  - https://www.cnblogs.com/oneweek/p/11236515.html
-  ```javascript
-      // 局部安装prettier
-      npm install --save -dev  --save-exact prettier
-      // 全局安装
-      npm install --global prettier
-  ```
-
-### 1 月 19 日
-
-- 82 fq 今日更新
-- 83 webassembly 视频进行转码 https://mp.weixin.qq.com/s/5k5f3UDNhFyc9DU-cws3og
-
-### 1 月 18 日
-
-- 81 echarts 地图
-  - 设置 echarts div 的宽度和高度
-  - 边距可以设置 gird 属性中的{top,left:right,bottom}
-  - x 轴和 y 轴，均可设置多个，匹配数据的时候要进行设置 yIndex
-  - 柱状图的柱状 可设置颜色
-  - 顶部选项 可设置 图标 icon，以及字体颜色等
-  - 配置渐变颜色 https://blog.csdn.net/weixin_44897255/article/details/96877562
-
-### 1 月 16 日
-
-- 80 transform
-  - https://www.cnblogs.com/yanggeng/p/11286250.html translate
-  - https://www.cnblogs.com/yanggeng/p/11275771.html rotate
-
-### 1 月 15 日
-
-- 77 vscode 插件韭菜盒子
-  - https://github.com/LeekHub/leek-fund
-- 78 echart 柱状图渐变颜色
-  - https://www.cnblogs.com/myfirstboke/p/11080968.html
-- 79 echart 百度地图数据
-  - https://echarts.apache.org/examples/zh/editor.html?c=doc-example/map-example
-  - http://datav.aliyun.com/tools/atlas/#&lat=30.332329214580188&lng=106.75386074913891&zoom=4.5
-
-### 1 月 14 日
-
-- 76 数字之间的间隔 - letter-spacing:2px;
-- 77 css 小箭头
-  - http://blog.sina.com.cn/s/blog_68128cfd0101nv28.html
-- 78 css display:flex 一行两列一行三列
-  - https://blog.csdn.net/ws19900201/article/details/102564033 文档最后
-
-### 1 月 13 日
-
-- 72 animate.css 动画库
-  - https://github.com/animate-css/animate.css
-- 73 饼状图 legend 圆点设置
-  - https://www.jianshu.com/p/f4338c76b169
-- 74 border-radius 50%和 100%
-  - https://blog.csdn.net/csm0912/article/details/85050562
-- 75 axios 针对请求进行缓存
-  - https://www.wodecun.com/blog/7931.html
-  - https://github.com/ZhengXiaowei/axios-request-cache/
-  - https://github.com/kuitos/axios-extensions
 
 ### 1 月 12 日
 
@@ -1895,13 +1686,8 @@
 - 69 webpack 配置设置
   - https://www.cnblogs.com/hezihao/p/8072750.html
 - 70 cesium 地图
-  - https://zhuanlan.zhihu.com/p/34217817
-  - https://www.thingjs.com/guide/speedcityshow
+
 - 71 百度 echarts
-  - https://github.com/ecomfe/vue-echarts
-  - https://echarts.apache.org/examples/zh/editor.html?c=bar-background
-  - https://echarts.apache.org/examples/zh/index.html 百度 echarts 地图样例
-  - https://echarts.apache.org/zh/option.html#series-bar 配置项目设置
   - 柱状图颜色随机设置
 
 ```javascript
@@ -1920,31 +1706,9 @@
 ```
 
 ### 1 月 11 日
+ 
 
-- 54 无代码 no-code(NCDP)和低代码的解释
-  - https://mp.weixin.qq.com/s/Zhmh6mzCyxJlOvmuDMBSfw
-  - no-code 解释https://www.makerpad.co/blog/what-is-no-code
-- 55 无代码相关的社区
-  - https://www.makerpad.co/
-  - https://www.nocode.tech/
-  - https://www.nucode.co
-- 56 form-create 中是如何通过 control 控制其他组件的
-  - http://www.form-create.com/v2/guide/control.html
-- 57 nginx 使用
-  - https://www.cnblogs.com/taiyonghai/p/9402734.html 安装到初步尝试
-  - https://www.yuque.com/jarvis-zzzhw/frontend/oew2z5 配置详解
-- 58 vconsole 公众号调试,直接在微信聊天中点击下面连接，点击即可
-  - debugmm.qq.com/?forcex5=true
-    59 nginx 安装到使用详解
-  - https://juejin.cn/post/6914160814152744973
-- 60 杀进程的小工具 fkill
-  - https://github.com/sindresorhus/fkill-cli
 - 61 document.documentElement.scrollTop 微信公众号有时候获取值为 0，暂时可考虑使用 document.body.scrollTop 进行设置
-- 62 vue 可视化拖拽组件
-  - https://juejin.cn/post/6908502083075325959#heading-16
-  - 吸附标线 https://github.com/woai3c/visual-drag-demo/blob/main/src/components/Editor/MarkLine.vue
-- 63 前端节流和防抖介绍
-  - https://juejin.cn/post/6901493600098779150
 - 64 vue 组件嵌套会提示'make sure to provid the "name" option'
   - https://blog.csdn.net/Nalaluky/article/details/83007101
   ```javascript
@@ -2071,9 +1835,6 @@
   ![avatar](https://raw.githubusercontent.com/aehyok/2021/main/image/1/003.png)
 
 - 32 常用开发代码函数查询 mac 下 dash，window 下 devDocs
-- 33 elementui table 中的那些基本操作
-
-  - https://www.jianshu.com/p/2251cda42425
 
 - 34 mapBox 地图指引
   - https://account.mapbox.com/ 官网地址，设置 accessTokens
@@ -2084,9 +1845,6 @@
 
   - https://www.cnblogs.com/zhurong/p/12209209.html
 
-- 36 ts 后缀视频播放可通过 mux.js
-  - https://www.cnblogs.com/ypppt/p/13683685.html
-  - https://docs.videojs.com/tutorial-vue.html
 - 37 控制台 console 打印日志的开启和关闭
   ```javascript
   // 判断配置文件是否开启日志调试 是否输出日志 True 输出 False 不输出
@@ -2121,12 +1879,6 @@
            },
          },
   ```
-- 40 Python 命令行神器 Click （pip install -U click），pip 在 python 中
-
-  - https://www.cnblogs.com/nima/p/11751459.html
-
-- 42 查看 markdown.md 文件可以使用 Typora
-  - 下载地址 https://www.typora.io/
 - 43 web 计时机制 performance 对象
   - https://www.cnblogs.com/xiaohuochai/archive/2017/03/09/6523397.html
 - 44 window performance 监测时间
@@ -2139,15 +1891,6 @@
 
 ### 1 月 6 日
 
-- 21 浏览器视频转码
-
-  - https://github.com/bgrins/videoconverter.js
-
-- https://github.com/FFmpeg/FFmpeg
-
-- 22 2020 年大前端技术趋势解读
-
-- https://mp.weixin.qq.com/s/aAmFyYF7Y6F2-9-LrZ-fsg
 
 - 23 css1、css2、css3 以及 Sass、Scss
 
@@ -2207,9 +1950,6 @@
   - 首页加载白屏(暂时感觉是代码执行问题)
   - 图片加载不完全（有时候只显示三分之一、四分之一），机顶盒问题
 
-- 28 今日通用表单没有进行，参考一篇文章
-
-  - http://www.form-create.com/v2/guide/control.html
 
 - 29 markdown 规范参考
   - https://xianbai.me/learn-md/article/syntax/paragraphs-and-line-breaks.html
@@ -2265,11 +2005,6 @@
 
 此为一个子组件，data 会传入值类型要与 this.getList 中设置的 label 值要保持一致(计算属性 value 会去绑定 radio 的 v-model)。
 
-- 13 基于 Vue2.x 封装的 Echarts 图表组件
-
-  - https://echarts.apache.org/zh/index.html
-  - https://github.com/ElemeFE/v-charts
-
 - 14 markdown 中引入图片的方法：先将图片上传到 github 库，然后找到对应库，图片所在的地方，github 上可预览图片的，此时便可右键查看图片地址[https://raw.githubusercontent.com/aehyok/2021/main/image/test.png],图片地址类似是这样的，或者点击 download 可以查看到地址的。
   <br/><br/>
   下面代码可以进行设置位置和宽高
@@ -2303,13 +2038,10 @@
 
   - https://www.zhihu.com/question/30113871
 
-- 19 vconsole，引入项目 - https://blog.csdn.net/weixin_43232488/article/details/83014086
 <div align=center>
   <img src="https://raw.githubusercontent.com/aehyok/2021/main/image/1/001.png" width="560" height="600" align="middle" />
 </div>
 
-- 20 Less 中& 符号的妙用
-  - https://blog.csdn.net/weixin_45959525/article/details/108396944
 
 - 2 IMWeb 前端团队总结 https://mp.weixin.qq.com/s/muljS3iA0c2j1tIICLOhFQ
 
