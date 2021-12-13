@@ -2125,45 +2125,6 @@
 
   - https://www.cnblogs.com/nima/p/11751459.html
 
-- 41 git 针对 tag 标签设置，tag 是针对所有分支的
-
-  - 所有项目，发布版本到 SIT，都需要打标签，以便追溯版本所对应的代码。如果后面需要改版本拉分支修改，也非常方便；
-
-  ```javascript
-  // 添加一个tag
-  git tag -a 3.11.3.001 -m "release 3.11.3.001"
-  git push origin 3.11.3.001
-
-  //删除一个tag
-  git tag -d 3.11.3.001
-  git push origin :refs/tags/3.11.3.001
-
-  // 查看分支
-  git tag
-
-  // 在某个commit 上打tag  git tag
-  git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233　　　　
-  git push origin test_tag　　　　//!!!本地tag推送到线上
-
-  // 根据tag创建分支
-  https://www.cnblogs.com/senlinyang/p/9455426.html
-  git branch newbranch 3.11.3.001
-
-  // 然后可以切换到分支
-  git checkout newbranch
-
-  // 再通过命令将本地仓库推送到远程仓库
-  git push origin newbranch
-
-  // 创建新的分支
-  git branch branchname
-
-  // 是将远程主机的最新内容拉到本地 ,用户在检查了以后决定是否合并到工作本机分支中。
-  git fetch
-  //更多基本操作
-  //https://www.cnblogs.com/runnerjack/p/9342362.html
-  ```
-
 - 42 查看 markdown.md 文件可以使用 Typora
   - 下载地址 https://www.typora.io/
 - 43 web 计时机制 performance 对象
@@ -2258,9 +2219,6 @@
 - 10 vue keepalive 发现一旦设置某个路由为 true,后续通过动态设置就是无效的后来发现 github 官网也有很多人遇到这个问题
   - https://github.com/vuejs/vue-router/issues/811 <br>
     目前通过变通的方式进行解决此问题，凡是要进行缓存的组件页面，开始都将 keepalive 设置为 true，后续通过钩子函数去触发数据列表更新。
-- 11 vue router 官网有时候可以看一下 api，感觉有很多自己是没有用到过的
-
-  - https://router.vuejs.org/zh/installation.html
 
 - 12 vue elementui radio 在封装为表单控件，且可设置为必填项目，其 label 设置与外部赋值要保持一致的数据类型，而且 required 传入值如果为 undefined 要经过判断，代码如下(截取部分)
 
@@ -2345,12 +2303,6 @@
 
   - https://www.zhihu.com/question/30113871
 
-- 17 css 三角箭头
-
-  - http://ourjs.com/detail/532bc9f36922aa7e1d000001
-
-- 18 SSH 阮一峰学习笔记
-  - https://github.com/wangdoc/ssh-tutorial
 - 19 vconsole，引入项目 - https://blog.csdn.net/weixin_43232488/article/details/83014086
 <div align=center>
   <img src="https://raw.githubusercontent.com/aehyok/2021/main/image/1/001.png" width="560" height="600" align="middle" />
@@ -2359,68 +2311,10 @@
 - 20 Less 中& 符号的妙用
   - https://blog.csdn.net/weixin_45959525/article/details/108396944
 
-### 1 月 4 日
-
-- 1 vue 中将 v-for 循环组件（通过 v-if 进行展示），方案修改为 component 组件，简化代码
-
-```javascript
-      <div v-for="(item, index) in columnList" :key="index">
-            <component
-              :is="item.type + 'View'"
-              :column="item"
-              :data.sync="formData[item.name]"
-            />
-            /*
-            <!--文本框Input-->
-            <!-- <TextView
-              :column="item"
-              :data.sync="formData[item.name]"
-              v-if="item.type.toLowerCase() === 'text'"
-            /> -->
-            <!--文本框Input-->
-            <!-- <TextAreaView
-              :column="item"
-              :data.sync="formData[item.name]"
-              v-if="item.type.toLowerCase() === 'textarea'"
-            /> -->
-            <!--数值框Number-->
-            <!-- <NumberView
-              :column="item"
-              :data.sync="formData[item.name]"
-              v-if="item.type.toLowerCase() === 'number'"
-            /> -->
-            */
-```
-
 - 2 IMWeb 前端团队总结 https://mp.weixin.qq.com/s/muljS3iA0c2j1tIICLOhFQ
-
-- 3 WebAssembly(WASM)学习了解
-
-  - https://www.cnblogs.com/jixiaohua/tag/WebAssembly/
-
-  IMWeb 团队擅长的音视频领域，我们通过将 ffmpeg 编译为 wasm 版本且在浏 览器中运行，将过去处于黑盒中，只有浏览器底层才能使用的音视频编解码能力彻底解放。目前我们可以在前端页面中对音视频流直接进行处理，在完全不依赖后台的情况下，便捷、高效的实现了视频播放帧预览与视频帧截图等功能。目前团队正在进一步探索 wasm 在音视频以及其他过去前端无法触及的领域的可行性实践。
-
-- 4 React 可视化框架，目前 3047 个 star
-
-- https://github.com/brick-design/react-visual-editor
-
-- 5 psd.js 将 pds 设计稿转换为 json 数据格式
-
-- https://github.com/meltingice/psd.js
-
-- 6 npm 设置源仓库
-
-  - https://www.cnblogs.com/wenjunwei/p/10078460.html
-  - https://www.cnblogs.com/steven-yang/p/12317646.html
-
-- 7 webpack vuecli 创建项目
-
-  - https://www.cnblogs.com/CL-King/p/14017238.html
-  - https://www.cnblogs.com/gujun1998/p/13659430.html
 
 - 8 mongodb 命令行启动数据库，可改为 window 服务，还未尝试
   - https://www.cnblogs.com/ningskyer/articles/6292891.html
   - https://www.cnblogs.com/wjaaron/p/7800490.html
-- 9 vscode 中保存自动格式化代码的插件 Prettier - Code formatter
 
 ---

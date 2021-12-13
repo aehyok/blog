@@ -1,9 +1,88 @@
 tag 
+包含a------村委app
 包含w------微信公众号
- 命令行中包含的版本号: 2.4.1.003
+ 命令行中包含的版本号: 2.4.1.004-1
 -------------------------------------------------
-M	vue.config.js
-M	yarn.lock
+Your branch is up to date with 'origin/dev'.
+开始拉取项目:<<村委app>>
+Already up to date.
+拉取项目<<村委app>>成功
+-------------------------------------------------
+开始编译项目:<<村委app>>
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings下午7:53:25
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  img/appbanner.ce354529.png (303 KiB)
+  js/chunk-cabd64f4.2533f13c.js (385 KiB)
+  js/chunk-vendors.eef91548.js (2.34 MiB)
+  configImage/greenhouse(center).png (438 KiB)
+  configImage/greenhouse(door).png (393 KiB)
+  configImage/secondhouse(northwest).png (460 KiB)
+  scan/u1036.png (446 KiB)
+  scan/u1039.png (306 KiB)
+  scan/u1040.png (297 KiB)
+  scan/u1042.png (278 KiB)
+  scan/u1043.png (335 KiB)
+  scan/u1041.png (447 KiB)
+  scan/u1044.png (312 KiB)
+  scan/u829.png (250 KiB)
+  scan/u826.png (256 KiB)
+  scan/u825.jpg (254 KiB)
+  scan/u87.png (262 KiB)
+  configImage/villageDoor.png (610 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (2.58 MiB)
+      css/chunk-vendors.6b8282f5.css
+      js/chunk-vendors.eef91548.js
+      css/app.6629ab80.css
+      js/app.a59a4caf.js
+
+
+  File                                      Size             Gzipped
+
+  ..\release\cms\app\js\chunk-vendors.ee    2394.27 KiB      748.92 KiB
+  f91548.js
+  ..\release\cms\app\js\chunk-cabd64f4.2    385.42 KiB       155.58 KiB
+  533f13c.js
+  ..\release\cms\app\js\app.a59a4caf.js     23.31 KiB        7.55 KiB
+  ..\release\cms\app\js\chunk-c22f03c6.8    6.47 KiB         2.36 KiB
+  62b016c.js
+  ..\release\cms\app\js\chunk-78547fc4.9    5.71 KiB         2.46 KiB
+  05dfc59.js
+  ..\release\cms\app\config.js              1.94 KiB         0.53 KiB
+  ..\release\cms\app\css\chunk-vendors.6    217.72 KiB       61.78 KiB
+  b8282f5.css
+  ..\release\cms\app\css\chunk-cabd64f4.    121.58 KiB       15.17 KiB
+  2037b8eb.css
+  ..\release\cms\app\css\chunk-c22f03c6.    6.70 KiB         1.67 KiB
+  f54a217c.css
+  ..\release\cms\app\css\chunk-78547fc4.    4.37 KiB         1.16 KiB
+  d2270c3c.css
+  ..\release\cms\app\css\app.6629ab80.cs    2.35 KiB         0.89 KiB
+  s
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\release\cms\app directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 13.45s.
+编译项目<<村委app>>成功
+-------------------------------------------------
+开始打tag项目:<<村委app>>
+tag不存在 要进行git tag
+打tag项目:<<村委app>>成功
 Your branch is up to date with 'origin/dev'.
 开始拉取项目:<<微信公众号>>
 Already up to date.
@@ -13,7 +92,7 @@ Already up to date.
 yarn run v1.22.10
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings上午9:59:40
+ WARNING  Compiled with 2 warnings下午7:53:59
 
  warning  
 
@@ -23,9 +102,9 @@ Assets:
   img/familyQrcodebg.ce915199.png (258 KiB)
   img/bgimg.edfcba02.png (494 KiB)
   img/familyIntegralDetailBanner.ed11dd86.png (323 KiB)
-  js/app.1bf9903f.js (1.42 MiB)
-  css/chunk-de9be600.599e56fe.css (379 KiB)
-  js/chunk-de9be600.3fef1fac.js (1.15 MiB)
+  js/app.a8c5f412.js (1.42 MiB)
+  css/chunk-ed55d3c2.6a6e748f.css (380 KiB)
+  js/chunk-ed55d3c2.7bfc9420.js (1.16 MiB)
   mp4/k0384ilytx2.p712.1.mp4 (16.9 MiB)
 
  warning  
@@ -34,18 +113,18 @@ entrypoint size limit: The following entrypoint(s) combined asset size exceeds t
 Entrypoints:
   app (1.49 MiB)
       css/app.ab467ff5.css
-      js/app.1bf9903f.js
+      js/app.a8c5f412.js
 
 
   File                                      Size             Gzipped
 
-  ..\release\cms\wechat\js\app.1bf9903f.    1457.24 KiB      473.76 KiB
+  ..\release\cms\wechat\js\app.a8c5f412.    1457.54 KiB      473.78 KiB
   js
-  ..\release\cms\wechat\js\chunk-de9be60    1180.61 KiB      427.45 KiB
-  0.3fef1fac.js
+  ..\release\cms\wechat\js\chunk-ed55d3c    1183.19 KiB      427.94 KiB
+  2.7bfc9420.js
   ..\release\cms\wechat\config.js           11.03 KiB        1.29 KiB
-  ..\release\cms\wechat\css\chunk-de9be6    378.83 KiB       55.98 KiB
-  00.599e56fe.css
+  ..\release\cms\wechat\css\chunk-ed55d3    380.35 KiB       56.15 KiB
+  c2.6a6e748f.css
   ..\release\cms\wechat\css\app.ab467ff5    68.66 KiB        30.91 KiB
   .css
 
@@ -54,158 +133,25 @@ Entrypoints:
  DONE  Build complete. The ..\release\cms\wechat directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 49.03s.
+Done in 29.29s.
 编译项目<<微信公众号>>成功
 -------------------------------------------------
 开始打tag项目:<<微信公众号>>
-tag 已经存在要先进行删除
-Deleted tag '2.4.1.003' (was 9ba180d)
-tag已删除要进行git tag
+tag不存在 要进行git tag
 打tag项目:<<微信公众号>>成功
 删除项目： 中的配置文件成功
-[dev 9d901484] build：前端app、qrocde、wechat、park、console(child)commit-version:2.4.1.003
- 141 files changed, 500 insertions(+)
- create mode 100644 cms/wechat/config.js
- create mode 100644 cms/wechat/css/app.ab467ff5.css
- create mode 100644 cms/wechat/css/chunk-de9be600.599e56fe.css
- create mode 100644 cms/wechat/data/familyIntegralDetail.json
- create mode 100644 cms/wechat/favicon.ico
- create mode 100644 cms/wechat/img/background_img.aecb9417.png
- create mode 100644 cms/wechat/img/banner.6229caaa.png
- create mode 100644 cms/wechat/img/banner/appbanner.png
- create mode 100644 cms/wechat/img/banner233.c1f6d091.png
- create mode 100644 cms/wechat/img/bannerSign.bc52c898.png
- create mode 100644 cms/wechat/img/bgDialog.d742c602.png
- create mode 100644 cms/wechat/img/bgIntegral.3f4689c3.png
- create mode 100644 cms/wechat/img/bg_identity.f7dcb95c.png
- create mode 100644 cms/wechat/img/bg_roof.622f922d.png
- create mode 100644 cms/wechat/img/bg_rzjx@2x.cae55d96.png
- create mode 100644 cms/wechat/img/bg_top.6be13cb0.png
- create mode 100644 cms/wechat/img/bgimg.edfcba02.png
- create mode 100644 cms/wechat/img/bj-cpgk.b4afd3ae.png
- create mode 100644 cms/wechat/img/bj-ssp.8bb5df60.png
- create mode 100644 cms/wechat/img/btnSign.2ee2a042.png
- create mode 100644 cms/wechat/img/btn_bmfw@2x.png
- create mode 100644 cms/wechat/img/btn_call_normal.b94f5a20.png
- create mode 100644 cms/wechat/img/btn_fyxz@2x.png
- create mode 100644 cms/wechat/img/btn_grzj.a328c93e.png
- create mode 100644 cms/wechat/img/btn_ncp@2x.png
- create mode 100644 cms/wechat/img/btn_new_dclssp.d157c3ae.png
- create mode 100644 cms/wechat/img/btn_new_dfncp.36dfbb1d.png
- create mode 100644 cms/wechat/img/btn_new_dfncpsl2.0b84dd55.png
- create mode 100644 cms/wechat/img/btn_ssp@2x.png
- create mode 100644 cms/wechat/img/btn_szny_nomal@3x.png
- create mode 100644 cms/wechat/img/btn_szny_selected@3x.png
- create mode 100644 cms/wechat/img/btn_wawj@2x.png
- create mode 100644 cms/wechat/img/btn_wd_nomal@3x.png
- create mode 100644 cms/wechat/img/btn_wd_selected@3x.png
- create mode 100644 cms/wechat/img/btn_xxgk@2x.png
- create mode 100644 cms/wechat/img/btn_ycyl@2x.png
- create mode 100644 cms/wechat/img/btn_zxyf@2x.png
- create mode 100644 cms/wechat/img/daren.e3aeee17.png
- create mode 100644 cms/wechat/img/dcwsh@2x.3bcd3076.png
- create mode 100644 cms/wechat/img/familyIntegralDetailBanner.ed11dd86.png
- create mode 100644 cms/wechat/img/familyQrcodebg.ce915199.png
- create mode 100644 cms/wechat/img/head.c9902592.png
- create mode 100644 cms/wechat/img/head_portrait-02.08c794c9.png
- create mode 100644 cms/wechat/img/hometown.05c70c06.png
- create mode 100644 cms/wechat/img/icon-alreadydealt.4aa889b5.png
- create mode 100644 cms/wechat/img/iconContinuous.6c58cf25.png
- create mode 100644 cms/wechat/img/icon_rzwdjx@2x.eac922e6.png
- create mode 100644 cms/wechat/img/img_bszn.5d5c31b6.png
- create mode 100644 cms/wechat/img/income.png
- create mode 100644 cms/wechat/img/landInfo.png
- create mode 100644 cms/wechat/img/lb-sztx.dd7a22f2.png
- create mode 100644 cms/wechat/img/linkIcon.05c32373.png
- create mode 100644 cms/wechat/img/member.png
- create mode 100644 cms/wechat/img/official.3d2311b3.png
- create mode 100644 cms/wechat/img/page_yibanli.2987a73b.png
- create mode 100644 cms/wechat/img/prevention.png
- create mode 100644 cms/wechat/img/products.png
- create mode 100644 cms/wechat/img/redPacket.1fd42857.png
- create mode 100644 cms/wechat/img/registerFamily.png
- create mode 100644 cms/wechat/img/renzheng.9c28dc3c.png
- create mode 100644 cms/wechat/img/signExplain.d1a3221f.png
- create mode 100644 cms/wechat/img/tags.4391f6d5.png
- create mode 100644 cms/wechat/img/truetrue_03.c74da596.png
- create mode 100644 cms/wechat/img/worker.png
- create mode 100644 cms/wechat/img/yesbiaotai.7eb2b4e5.png
- create mode 100644 cms/wechat/img/zwfwxx.ffcbdaaa.png
- create mode 100644 "cms/wechat/img/\345\206\234\350\265\204\346\212\225\345\205\245.png"
- create mode 100644 "cms/wechat/img/\347\247\215\345\205\273\346\244\215.png"
- create mode 100644 "cms/wechat/img/\351\232\217\346\211\213\346\213\215.png"
- create mode 100644 cms/wechat/index.html
- create mode 100644 cms/wechat/js/app.1bf9903f.js
- create mode 100644 cms/wechat/js/chunk-de9be600.3fef1fac.js
- create mode 100644 cms/wechat/mp4/k0384ilytx2.p712.1.mp4
- create mode 100644 cms/wechat/weather/d00.gif
- create mode 100644 cms/wechat/weather/d01.gif
- create mode 100644 cms/wechat/weather/d02.gif
- create mode 100644 cms/wechat/weather/d03.gif
- create mode 100644 cms/wechat/weather/d04.gif
- create mode 100644 cms/wechat/weather/d05.gif
- create mode 100644 cms/wechat/weather/d06.gif
- create mode 100644 cms/wechat/weather/d07.gif
- create mode 100644 cms/wechat/weather/d08.gif
- create mode 100644 cms/wechat/weather/d09.gif
- create mode 100644 cms/wechat/weather/d10.gif
- create mode 100644 cms/wechat/weather/d11.gif
- create mode 100644 cms/wechat/weather/d12.gif
- create mode 100644 cms/wechat/weather/d13.gif
- create mode 100644 cms/wechat/weather/d14.gif
- create mode 100644 cms/wechat/weather/d15.gif
- create mode 100644 cms/wechat/weather/d16.gif
- create mode 100644 cms/wechat/weather/d17.gif
- create mode 100644 cms/wechat/weather/d18.gif
- create mode 100644 cms/wechat/weather/d19.gif
- create mode 100644 cms/wechat/weather/d20.gif
- create mode 100644 cms/wechat/weather/d21.gif
- create mode 100644 cms/wechat/weather/d22.gif
- create mode 100644 cms/wechat/weather/d23.gif
- create mode 100644 cms/wechat/weather/d24.gif
- create mode 100644 cms/wechat/weather/d25.gif
- create mode 100644 cms/wechat/weather/d26.gif
- create mode 100644 cms/wechat/weather/d27.gif
- create mode 100644 cms/wechat/weather/d28.gif
- create mode 100644 cms/wechat/weather/d29.gif
- create mode 100644 cms/wechat/weather/d30.gif
- create mode 100644 cms/wechat/weather/d31.gif
- create mode 100644 cms/wechat/weather/d32.png
- create mode 100644 cms/wechat/weather/d53.gif
- create mode 100644 cms/wechat/weather/n00.gif
- create mode 100644 cms/wechat/weather/n01.gif
- create mode 100644 cms/wechat/weather/n02.gif
- create mode 100644 cms/wechat/weather/n03.gif
- create mode 100644 cms/wechat/weather/n04.gif
- create mode 100644 cms/wechat/weather/n05.gif
- create mode 100644 cms/wechat/weather/n06.gif
- create mode 100644 cms/wechat/weather/n07.gif
- create mode 100644 cms/wechat/weather/n08.gif
- create mode 100644 cms/wechat/weather/n09.gif
- create mode 100644 cms/wechat/weather/n10.gif
- create mode 100644 cms/wechat/weather/n11.gif
- create mode 100644 cms/wechat/weather/n12.gif
- create mode 100644 cms/wechat/weather/n13.gif
- create mode 100644 cms/wechat/weather/n14.gif
- create mode 100644 cms/wechat/weather/n15.gif
- create mode 100644 cms/wechat/weather/n16.gif
- create mode 100644 cms/wechat/weather/n17.gif
- create mode 100644 cms/wechat/weather/n18.gif
- create mode 100644 cms/wechat/weather/n19.gif
- create mode 100644 cms/wechat/weather/n20.gif
- create mode 100644 cms/wechat/weather/n21.gif
- create mode 100644 cms/wechat/weather/n22.gif
- create mode 100644 cms/wechat/weather/n23.gif
- create mode 100644 cms/wechat/weather/n24.gif
- create mode 100644 cms/wechat/weather/n25.gif
- create mode 100644 cms/wechat/weather/n26.gif
- create mode 100644 cms/wechat/weather/n27.gif
- create mode 100644 cms/wechat/weather/n28.gif
- create mode 100644 cms/wechat/weather/n29.gif
- create mode 100644 cms/wechat/weather/n30.gif
- create mode 100644 cms/wechat/weather/n31.gif
- create mode 100644 cms/wechat/weather/n32.png
- create mode 100644 cms/wechat/weather/n53.gif
+删除项目： 中的配置文件成功
+[dev 8749af50] build：前端app、qrocde、wechat、park、console(child)commit-version:2.4.1.004-1
+ 11 files changed, 21 insertions(+), 21 deletions(-)
+ rename cms/app/css/{chunk-c709491e.6754f9b2.css => chunk-cabd64f4.2037b8eb.css} (97%)
+ rename cms/app/js/{app.0a2f5d1b.js => app.a59a4caf.js} (90%)
+ rename cms/app/js/{chunk-c709491e.92a7de18.js => chunk-cabd64f4.2533f13c.js} (63%)
+ rename cms/wechat/css/{chunk-5c843680.81bdbbc0.css => chunk-ed55d3c2.6a6e748f.css} (57%)
+ rewrite cms/wechat/img/banner/appbanner.png (98%)
+ create mode 100644 cms/wechat/img/defaultuser.png
+ rename cms/wechat/js/{app.924facc6.js => app.a8c5f412.js} (93%)
+ delete mode 100644 cms/wechat/js/chunk-5c843680.18163ac2.js
+ create mode 100644 cms/wechat/js/chunk-ed55d3c2.7bfc9420.js
 5秒后将自动退出本脚本：
 5
 4
