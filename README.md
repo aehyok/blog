@@ -1030,14 +1030,11 @@
   - vite.config.js 中 https: true 属性开启
 - 238 webpack devServer 配置开启 https
   - https://blog.csdn.net/dclnet/article/details/96316401
-- 237 json 美化工具
-  - https://github.com/leezng/vue-json-pretty
+- 237 
 
 ### 5 月 1 日
 
-- 236 axios 请求缓存的处理
-  - https://www.wodecun.com/blog/7931.html
-  - 缓存库 https://github.com/RasCarlito/axios-cache-adapter
+- 
 
 ## 四月份
 
@@ -1062,8 +1059,7 @@
 - 230 微信公众号 H5 页面调用微信登录全过程
   - 详见 ---微信公众号 H5 调用微信登录全过程
   - https://www.cnblogs.com/0201zcr/p/5131602.html
-- 229 微信扫描二维码
-  - https://mp.weixin.qq.com/s/1A30nQNg4j4GwLG1n91DCw
+- 
 
 ### 4 月 22 日
 
@@ -1089,22 +1085,11 @@
 
 - 225 vite mock
   - https://github.com/anncwb/vite-plugin-mock/blob/HEAD/README.zh_CN.md
-- 224 eslint 规范
-  - https://github.com/lin-123/javascript
-  - https://github.com/airbnb/javascript#translation
 
 ### 4 月 19 日
 
-- 223 mitt 事件总线 https://blog.csdn.net/fuweipeng2012/article/details/113812794
-- 222 vue3 替代 vue2 中.sync 的 v-model
-  - https://segmentfault.com/a/1190000023911894
-  - https://blog.csdn.net/wk843620202/article/details/108613493
-- 221 vue3 provide 和 inject 传值
-  - https://blog.csdn.net/xuhua32100/article/details/113518217
 - 220 vue3 useRoute 和 useStore 的使用
   - http://lanwuyaojiu.cn/blogm/blogart-110.html
-- 219 typescript tsconfig.json
-  - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ### 4 月 18 日
 
@@ -1140,11 +1125,6 @@
 
 ### 4 月 15 日
 
-- 211 微信小程序开发
-  - https://uniapp.dcloud.io/
-  - https://vant-contrib.gitee.io/vant-weapp/#/home
-  - https://blog.csdn.net/YNEWA/article/details/106056610
-  - https://liubing.me/uniapp-use-vant-weapp.html
 - 210 vue jsonp 插件跨域请求数据使用
   - https://www.npmjs.com/package/vue-jsonp
 - 209 webpack plugin 各种插件
@@ -1488,9 +1468,6 @@
   - https://www.cnblogs.com/ychizzz/p/13743277.html
 
 ### 3 月 6 日
-- 157 中国省市县区
-  - https://github.com/small-dream/China_Province_City
-  - https://github.com/modood/Administrative-divisions-of-China
 - 156 
 - 155 map-demo
   - https://malagis.com/map-demo/leaflet/note-5.html
@@ -1527,8 +1504,7 @@
 
 ### 2 月 21 日
 
-- 144Element-Pro-Crud
-  - https://crud.boboooooo.top/
+
 - 
 - 142 
 - 141 
@@ -1562,44 +1538,7 @@
 
 ### 2 月 5 日
 
-- 134 husky 使用和介绍
-  - http://www.mamicode.com/info-detail-2916910.html
 
-### 2 月 4 日
-
-- 133 
-
-### 2 月 3 日
-
-- 130 form-create 自定义组件如何注册到 form-create 中使用
-  - http://www.form-create.com/v2/guide/custom-form-component.html#%E7%A4%BA%E4%BE%8B
-
-### 2 月 2 日
-
-- 
-- 128 go 语言学习网站
-  - http://c.biancheng.net/golang/intro/
-- 127 vscode 搭建 go 开发环境
-  - https://juejin.cn/post/6844904122450182151
-  ```javascript
-    //1、go安装包下载
-    https://studygolang.com/dl
-    //2、安装成功cmd命令查看版本号
-    go version
-    //3、设置七牛云代理
-    go env -w GO111MODULE=on
-    go env -w GOPROXY=https://goproxy.cn,direct
-    //4、vscode中下载go扩展插件
-    //5、创建hello.go文件
-    //6、写入代码后编译运行
-    go run helloworld.go
-    //7、将go文件打包成wasm
-    GOOS=js GOARCH=wasm go build -o test.wasm hello.go
-    //8、go打包编译
-    go build -o hello.exe hello.go
-    //9、vscode中Ctrl+Shift+P 安装go插件 全选进行安装
-    https://zhuanlan.zhihu.com/p/320343679
-  ```
 
 ### 2 月 1 日
 
