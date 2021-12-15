@@ -583,20 +583,13 @@
 
 ### 7 月 6 日
 
-- 204 vue hls 使用 播放 m3u8 视频
-  - https://www.cnblogs.com/jin-zhe/p/11975515.html
-  - https://hls-js.netlify.app/demo/
-  - https://github.com/video-dev/hls.js
+- 204 
 
 ### 7 月 3 日
 
 - 203 wx.config url 设置
   - https://www.cnblogs.com/wukongz/p/13371820.html
 
-### 7 月 2 日
-
-- 202 prettier 设置格式化文件代码
-  - https://blog.csdn.net/qq_37815596/article/details/109225879
 
 ### 7 月 1 日
 
