@@ -229,9 +229,6 @@
 
 ## 10 月 26 日
 
-- 290 lodash 介绍
-  - https://www.lodashjs.com/
-
 ## 10 月 25 日
 
 - 289 tortoiseGit
@@ -269,28 +266,16 @@
   - https://github.com/a597873885/webfunny_monitor
   - https://www.webfunny.cn/
 
-## 10 月 19 日
-
-- 279 vue3 vite2 tsx 项目模板讲解和代码仓库
-  - https://juejin.cn/post/6972094589251354632#heading-13
-  - https://github.com/cangshudada/vite-vue3-tsx
-
-## 10 月 18 日
-
-- 278 websocket 心跳机制
-  - https://www.cnblogs.com/tugenhua0707/p/8648044.html
 
 ## 10 月 16 日
 
-- 277 css
-  - https://www.tailwindcss.cn/
+- 
 - 276 跳槽后一年后的回顾
   - https://www.cnblogs.com/strick/p/15223931.html
 
 ## 10 月 15 日
 
-- 275 vue3 websocket 封装
-  - https://github.com/likaia/vue-native-websocket-vue3
+- 275 
 - 274 分布式锁解决并发
   - https://www.cnblogs.com/zhumengke/articles/11829188.html
 
@@ -308,16 +293,13 @@
 
 ## 10 月 9 日
 
-- 270 smartSql
-  - https://github.com/dotnetcore/SmartSql
-  - https://smartsql.net/guide/
+- 270 
 - 269 etcd 简单介绍
   - https://www.cnblogs.com/wujuntian/p/12837926.html
 - 268 autofac 自动依赖注入
   - https://github.com/toddams/RazorLight/issues/294
   - https://github.com/dotnet/aspnetcore/issues/14418#issuecomment-535107767(先看这个)
-- 267 form 表单配置器
-  - https://mp.weixin.qq.com/s/4mwXHEKoqSh_M8QBpNX1jQ
+- 267 
 
 ## 10 月 8 日
 
@@ -354,8 +336,7 @@
 
 ## 9 月 28 日
 
-- 258 go 环境搭建
-  - https://www.cnblogs.com/htc524/p/12616839.html
+- 258 
 
 ## 9 月 27 日
 
@@ -376,18 +357,11 @@
 
 - 254 tab 菜单切换
   - https://github.com/buqiyuan/vite-vue3-admin
-- 253 数据权限设计
-  - https://www.cnblogs.com/yubaolee/p/DataPrivilege.html
+
 
 ## 9 月 21 日
 
-- 252 nuxtjs.cn
-  - https://www.nuxtjs.cn/
-- 251 css modules
-  - https://www.cnblogs.com/rynxiao/p/9538058.html
-- 250 taro
-  - https://b2nil.github.io/taro-ui-vue3/
-  - https://github.com/b2nil/taro-ui-vue3/
+
 
 ## 9 月 18 日
 
@@ -410,20 +384,13 @@
 
 ## 9 月 4 日
 
-- 244 数据大屏可视化配置
-  - https://github.com/dongsuo/vue-data-board
-  - https://v11nlab.com/
+- 244 
 
 ## 9 月 3 日
 
 - 243 video 标签监听事件
   - https://www.cnblogs.com/yuanmo/p/12795104.html
   - 监测视频播放了多久，方便记录下次进来继续播放 https://www.jc2182.com/html/html-audio-video-dom-timeupdate-event.html
-
-## 9 月 1 日
-
-- 242 video.js 指定视频某个播放时间进行播放
-  - https://www.cnblogs.com/zhuwenjun/p/4925372.html
 
 ## 八月份
 
@@ -445,12 +412,8 @@
 
 ### 8 月 14 日
 
-- 238 生成 shortid 短 id
-  - https://github.com/dylang/shortid
-- 237 滴滴团队 PC 和 H5 可配置化前端组件库
-  - https://github.com/epage-team/epage-vant
-  - https://github.com/epage-team/epage-iview
-  - https://github.com/didi/epage
+- 238 
+
 - 236 vue3 vue-dragger
   - https://github.com/SortableJS/vue.draggable.next
 - 235 vue3 vue-drag-resize
@@ -488,31 +451,10 @@
       },
     };
     ```
-
-### 8 月 5 日
-
-- 228 vue.config.js extenals 设置
-  - https://blog.csdn.net/weixin_38107457/article/details/106490372
-
-## 七月份
-
-### 7 月 30 日
-
-- 227 nginx location 规则判断处理
-  - https://www.cnblogs.com/jpfss/p/10418150.html
-
 ### 7 月 28 日
 
 - 226 console.log 的延迟问题
   - https://www.jianshu.com/p/16dae5406c19
-
-### 7 月 23 日
-
-- 225、centos 下安装 mysql
-  - https://cloud.tencent.com/developer/article/1393323
-  - https://www.cnblogs.com/yuanchao-blog/p/10679156.html
-- 224、腾讯云安装 centos mysql
-  - https://cloud.tencent.com/developer/article/1145484?from=14588
 
 ### 7 月 22 日
 
@@ -542,19 +484,7 @@
 - 215 bigemap 获取 kml 文件
   - http://www.bigemap.com/reader/
   - http://www.bigemap.com/introduce.html
-
-### 7 月 19 日
-
-- 214 删除文件和文件夹
-  - rm -rf \*
-- 213 linux 删除目录下的文件指令
-  - https://www.cnblogs.com/a-du/p/9987012.html
-
-### 7 月 18 日
-
-- 212 组件共享 webpack5 Module Federation
-  - https://zhuanlan.zhihu.com/p/144267429
-
+- 
 ### 7 月 17 日
 
 - 211 html 网页 转换为 md 文档工具
@@ -567,9 +497,7 @@
 
 ### 7 月 7 日
 
-- 209 axios typescript 封装
-  - https://github.com/buqiyuan/vue3-antd-admin/tree/main/src/utils/http/axios
-  - https://github.com/anncwb/vue-vben-admin/tree/main/src/utils/http/axios
+- 
 - 208 vue 动态路由的加载
   - https://github.com/buqiyuan/vue3-antd-admin/tree/main/src
 - 207 vue tree blocks
