@@ -410,9 +410,7 @@
 
 ## 9 月 4 日
 
-- 244 数据大屏可视化配置
-  - https://github.com/dongsuo/vue-data-board
-  - https://v11nlab.com/
+- 244 
 
 ## 9 月 3 日
 
