@@ -1,7 +1,7 @@
 # ## 当前脚本文件所在路径
 source ./versions # 版本文件历史记录
 source ./2021-08-09-dvs-build-pc.sh
-branchVersion="2.4.1.fix"
+branchVersion="dev"
 current_path=$(cd $(dirname $0); pwd)
 
 ################1、 通过命令行执行传入的参数值   ##############
