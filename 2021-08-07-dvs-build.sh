@@ -52,7 +52,8 @@ do
   # echo -e "${key}  ----${project}"
   if [[ $project == *$key* ]]
   then
-     if test $key = "c"; then
+     if test $key = "c"; 
+     then
       cd ${gitpull_pathArray[${key}]}
       projectName=${projectList[$key]}
       git checkout $branchVersion
@@ -77,29 +78,29 @@ do
     fi
 
     if [[ "$tag" == "" ]] 
-      then
-        if test $version = $tagVersion ; then
-          echo 'tag 已经存在要先进行删除'
-          git tag -d $version
-          git push origin :refs/tags/$version
+    then
+      if test $version = $tagVersion ; then
+        echo 'tag 已经存在要先进行删除'
+        git tag -d $version
+        git push origin :refs/tags/$version
 
-          echo 'tag已删除要进行git tag'
-          git tag -a $version -m "${version}"
-          git push origin $version
-          echo -e "打tag项目:<<${projectName}>>成功";
-          cd $current_path
-          echo "tagVersion=\"$version\" # <<${projectName}>> # $(date)" >> ./versions
-        else  
-          echo 'tag不存在 要进行git tag'
-          git tag -a $version -m "${version}"
-          git push origin $version
-          echo -e "打tag项目:<<${projectName}>>成功";
-          cd $current_path
-          echo "tagVersion=\"$version\"  #<<${projectName}>> # $(date)" >> ./versions
-        fi
-      else
-        echo  -e "不需要进行打tag"
+        echo 'tag已删除要进行git tag'
+        git tag -a $version -m "${version}"
+        git push origin $version
+        echo -e "打tag项目:<<${projectName}>>成功";
+        cd $current_path
+        echo "tagVersion=\"$version\" # <<${projectName}>> # $(date)" >> ./versions
+      else  
+        echo 'tag不存在 要进行git tag'
+        git tag -a $version -m "${version}"
+        git push origin $version
+        echo -e "打tag项目:<<${projectName}>>成功";
+        cd $current_path
+        echo "tagVersion=\"$version\"  #<<${projectName}>> # $(date)" >> ./versions
       fi
+    else
+      echo  -e "不需要进行打tag"
+    fi
   fi
 done
 
