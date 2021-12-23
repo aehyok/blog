@@ -55,7 +55,7 @@
 - 微信小程序登录过程 https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html
 
   ***
-  - 计划 脚手架功能基本搭建
+  - 计划 脚手架功能基本搭建   
   - 计划 H5 json 生成 form 表单构建
 
 - 2021 年 11 月 1 日到 6 日

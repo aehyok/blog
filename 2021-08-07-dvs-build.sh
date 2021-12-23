@@ -60,7 +60,7 @@ do
       echo -e "开始拉取项目:<<${projectName}>>";
       git pull
       echo -e "拉取项目<<${projectName}>>成功";
-      build_pc_Function
+      build_pc_Function  $tagVersion
       echo -e "准备开始编译PC";
     else
       cd ${gitpull_pathArray[${key}]}
@@ -138,4 +138,4 @@ do
   echo -e $i;sleep 1
 done
 exit
-## 执行脚本  sh 2021-08-07-dvs-build.sh  -v 2.4.0.005 -p awqpc  |tee build-log.txt
+## 执行脚本  sh 2021-08-07-dvs-build.sh  -v 2.4.2.002 -p awqpc  |tee build-log.txt
