@@ -60,7 +60,7 @@ do
       echo -e "开始拉取项目:<<${projectName}>>";
       git pull
       echo -e "拉取项目<<${projectName}>>成功";
-      build_pc_Function  $tagVersion
+      build_pc_Function  $version
       echo -e "准备开始编译PC";
     else
       cd ${gitpull_pathArray[${key}]}
