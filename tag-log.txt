@@ -1,0 +1,11 @@
+/e/work/aehyok/github/2021
+拉取项目：/e/work/git/dvs-2.x/dvs-app-h5-develop 成功
+拉取项目：/e/work/git/dvs-2.x/dvs-offiaccount-dev 成功
+拉取项目：/e/work/git/dvs-2.x/qrcode-demo-dev 成功
+拉取项目：/e/work/git/dvs-2.x/dvs-park-h5-app 成功
+5秒后将自动退出本脚本：
+5
+4
+3
+2
+1

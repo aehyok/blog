@@ -52,14 +52,15 @@ do
   # echo -e "${key}  ----${project}"
   if [[ $project == *$key* ]]
   then
-     if test $key = "c"; then
+     if test $key = "c"; 
+     then
       cd ${gitpull_pathArray[${key}]}
       projectName=${projectList[$key]}
       git checkout $branchVersion
       echo -e "开始拉取项目:<<${projectName}>>";
       git pull
       echo -e "拉取项目<<${projectName}>>成功";
-      build_pc_Function
+      build_pc_Function  $version
       echo -e "准备开始编译PC";
     else
       cd ${gitpull_pathArray[${key}]}
@@ -77,29 +78,29 @@ do
     fi
 
     if [[ "$tag" == "" ]] 
-      then
-        if test $version = $tagVersion ; then
-          echo 'tag 已经存在要先进行删除'
-          git tag -d $version
-          git push origin :refs/tags/$version
+    then
+      if test $version = $tagVersion ; then
+        echo 'tag 已经存在要先进行删除'
+        git tag -d $version
+        git push origin :refs/tags/$version
 
-          echo 'tag已删除要进行git tag'
-          git tag -a $version -m "${version}"
-          git push origin $version
-          echo -e "打tag项目:<<${projectName}>>成功";
-          cd $current_path
-          echo "tagVersion=\"$version\" # <<${projectName}>> # $(date)" >> ./versions
-        else  
-          echo 'tag不存在 要进行git tag'
-          git tag -a $version -m "${version}"
-          git push origin $version
-          echo -e "打tag项目:<<${projectName}>>成功";
-          cd $current_path
-          echo "tagVersion=\"$version\"  #<<${projectName}>> # $(date)" >> ./versions
-        fi
-      else
-        echo  -e "不需要进行打tag"
+        echo 'tag已删除要进行git tag'
+        git tag -a $version -m "${version}"
+        git push origin $version
+        echo -e "打tag项目:<<${projectName}>>成功";
+        cd $current_path
+        echo "tagVersion=\"$version\" # <<${projectName}>> # $(date)" >> ./versions
+      else  
+        echo 'tag不存在 要进行git tag'
+        git tag -a $version -m "${version}"
+        git push origin $version
+        echo -e "打tag项目:<<${projectName}>>成功";
+        cd $current_path
+        echo "tagVersion=\"$version\"  #<<${projectName}>> # $(date)" >> ./versions
       fi
+    else
+      echo  -e "不需要进行打tag"
+    fi
   fi
 done
 
@@ -137,4 +138,4 @@ do
   echo -e $i;sleep 1
 done
 exit
-## 执行脚本  sh 2021-08-07-dvs-build.sh  -v 2.4.0.005 -p awqpc  |tee build-log.txt
+## 执行脚本  sh 2021-08-07-dvs-build.sh  -v 2.4.2.002 -p awqpc  |tee build-log.txt

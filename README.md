@@ -55,8 +55,7 @@
 - 微信小程序登录过程 https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html
 
   ***
-
-  - 计划 脚手架功能基本搭建
+  - 计划 脚手架功能基本搭建   
   - 计划 H5 json 生成 form 表单构建
 
 - 2021 年 11 月 1 日到 6 日
@@ -124,21 +123,6 @@
   - https://antv.vision/zh
 ## 12月2日
 - 303 no-undef https://blog.csdn.net/lhjuejiang/article/details/117817545
-# 十一月份
-
-## 11 月 19 日
-
-- 302 jenkins
-  - 密码：f7901c3502644636bfbb6a1c33090ff8
-  - 路径：C:\ProgramData\Jenkins\.jenkins\secrets\initialAdminPassword
-  - 使用过程详解 https://juejin.cn/post/7010007745495728164#heading-3
-  - jenkins http://localhost:9090/ aehyok aehyok 455043818@qq.com
-  - 重启地址 http://localhost:9000/restart
-
-## 11 月 18 日
-
-- 301 华为 javascript
-  - https://developer.huawei.com/consumer/cn/blog/topic/03726175019000186
 
 ## 11 月 14 日
 
@@ -193,44 +177,14 @@
   },
   ```
 
-## 11 月 1 日
-
-- 298 https://github.com/oclif/oclif
-
-# 十月份
-
-## 10 月 31 日
-
-- 297 typescript interface 和 type 的异同点
-  - https://blog.csdn.net/weixin_43758377/article/details/110470780
-- 296 form 表单生成器(生成 vue 代码部分可参考)
-  - https://github.com/Kchengz/k-form-design
-
-## 10 月 29 日
-
-- 295 css、sass、scss
-  - https://segmentfault.com/a/1190000019573996
-
-## 10 月 28 日
-
-- 294 鲁班 H5
-  - https://h5.luban-h5.com/#/editor/35496
-
 ## 10 月 27 日
 
-- 293 vue 动态 form 表单字段的联动展示和隐藏（启用和禁用可类似）
-  - https://github.com/dream2023/vue-ele-form
-  - https://www.yuque.com/chaojie-vjiel/vbwzgu/loffm6#wOVyc
-- 292 数据库客户端
-  - https://github.com/dbeaver/dbeaver
-  - https://dbeaver.io/download/
+- 293 
+
 - 291 promise.all 理解
   - https://www.jianshu.com/p/7e60fc1be1b2
 
 ## 10 月 26 日
-
-- 290 lodash 介绍
-  - https://www.lodashjs.com/
 
 ## 10 月 25 日
 
@@ -238,9 +192,7 @@
   - https://www.cnblogs.com/popfisher/p/5466174.html
 
 ## 10 月 24 日
-- 288 shelljs
-  - https://github.com/shelljs/shelljs
-  - https://www.kancloud.cn/outsider/clitool/313191
+
 - 288 gulp
   - https://www.gulpjs.com.cn/
 - 287 rollup.js
@@ -252,7 +204,7 @@
 
 ## 10 月 23 日
 
-- 285 vscode counter 插件统计代码行数
+
 - 284 vite 中替换 webpack require.context
   - https://blog.csdn.net/weixin_43857376/article/details/114687031
   - https://www.jianshu.com/p/f427694d659f
@@ -263,34 +215,19 @@
 
 ## 10 月 20 日
 
-- 281 vite2 vue3 低代码平台
-  - https://github.com/buqiyuan/vite-vue3-lowcode
-- 280 webfunny 轻量级的前端监控系统
-  - https://github.com/a597873885/webfunny_monitor
-  - https://www.webfunny.cn/
+- 
+- 
 
-## 10 月 19 日
-
-- 279 vue3 vite2 tsx 项目模板讲解和代码仓库
-  - https://juejin.cn/post/6972094589251354632#heading-13
-  - https://github.com/cangshudada/vite-vue3-tsx
-
-## 10 月 18 日
-
-- 278 websocket 心跳机制
-  - https://www.cnblogs.com/tugenhua0707/p/8648044.html
 
 ## 10 月 16 日
 
-- 277 css
-  - https://www.tailwindcss.cn/
+- 
 - 276 跳槽后一年后的回顾
   - https://www.cnblogs.com/strick/p/15223931.html
 
 ## 10 月 15 日
 
-- 275 vue3 websocket 封装
-  - https://github.com/likaia/vue-native-websocket-vue3
+- 275 
 - 274 分布式锁解决并发
   - https://www.cnblogs.com/zhumengke/articles/11829188.html
 
@@ -308,133 +245,51 @@
 
 ## 10 月 9 日
 
-- 270 smartSql
-  - https://github.com/dotnetcore/SmartSql
-  - https://smartsql.net/guide/
+- 270 
 - 269 etcd 简单介绍
   - https://www.cnblogs.com/wujuntian/p/12837926.html
 - 268 autofac 自动依赖注入
   - https://github.com/toddams/RazorLight/issues/294
   - https://github.com/dotnet/aspnetcore/issues/14418#issuecomment-535107767(先看这个)
-- 267 form 表单配置器
-  - https://mp.weixin.qq.com/s/4mwXHEKoqSh_M8QBpNX1jQ
-
 ## 10 月 8 日
-
 - 266 C# 链接 mysql 数据库关闭 ssl
   - https://stackoverflow.com/questions/45086283/mysql-data-mysqlclient-mysqlexception-the-host-localhost-does-not-support-ssl
 - 265 dotnetcore3.1 中引入 swagger
   - https://www.cnblogs.com/dotnet261010/p/12425572.html
 - 264 swagger 引入后 swagger/v1/swagger.json 500
   - https://www.cnblogs.com/oBehavior/p/14384201.html
-- 263 字节跳动微前端框架
-  - https://github.com/modern-js-dev/garfish/blob/master/README.ch.md
-  - https://garfish.top/guide/
-- 262 form 表单生成器
-  - https://mp.weixin.qq.com/s/4mwXHEKoqSh_M8QBpNX1jQ
-  - https://juejin.cn/post/7012421311301419022
-
 ## 10 月 2 日
-
 - 261 mysql 数据库导入导出
   - https://www.cnblogs.com/jpfss/p/7967046.html
-
 ## 10 月 1 日
 
 - 260 donetcore 3.1 下载地址（mac window Linux）
   - https://dotnet.microsoft.com/download/dotnet/3.1
 
-# 九月份
-
-## 9 月 29 日
-
-- 259 display inline-block 和 block 和 inline 之间的区别
-  - https://blog.csdn.net/xuanwugang/article/details/80254401
-  - https://www.cnblogs.com/brainworld/p/6693531.html
-
-## 9 月 28 日
-
-- 258 go 环境搭建
-  - https://www.cnblogs.com/htc524/p/12616839.html
-
-## 9 月 27 日
-
-- 257 vue3 onBeforeRouterEnter
-  - https://www.jianshu.com/p/67f882a39d78
-
 ## 9 月 26 日
 
 - 256 storyBook
   - https://github.com/storybookjs/storybook/
-
-## 9 月 24 日
-
-- 255 自定义表单组件封装
-  - https://v2.formilyjs.org/zh-CN/guide/quick-start
-
 ## 9 月 22 日
 
 - 254 tab 菜单切换
   - https://github.com/buqiyuan/vite-vue3-admin
-- 253 数据权限设计
-  - https://www.cnblogs.com/yubaolee/p/DataPrivilege.html
+
 
 ## 9 月 21 日
 
-- 252 nuxtjs.cn
-  - https://www.nuxtjs.cn/
-- 251 css modules
-  - https://www.cnblogs.com/rynxiao/p/9538058.html
-- 250 taro
-  - https://b2nil.github.io/taro-ui-vue3/
-  - https://github.com/b2nil/taro-ui-vue3/
+
 
 ## 9 月 18 日
 
 - 249 C#调用 Web Api 接口的类库 Flurl
   - https://flurl.dev/
 
-## 9 月 11 日
 
-- 248 vue 可视化技术分析
-  - https://github.com/woai3c/visual-drag-demo
-- 247 vue drag 样例
-  - https://www.cnblogs.com/yalong/p/10036463.html
-
-## 9 月 9 日
-
-- 246 video 标签弹窗层级控制
-  - https://www.cnblogs.com/shimily/articles/12750055.html
-- 245 vite-qiankun 插件
-  - https://github.com/tengmaoqing/vite-plugin-qiankun
-
-## 9 月 4 日
-
-- 244 
-
-## 9 月 3 日
-
-- 243 video 标签监听事件
-  - https://www.cnblogs.com/yuanmo/p/12795104.html
-  - 监测视频播放了多久，方便记录下次进来继续播放 https://www.jc2182.com/html/html-audio-video-dom-timeupdate-event.html
-
-## 9 月 1 日
-
-- 242 video.js 指定视频某个播放时间进行播放
-  - https://www.cnblogs.com/zhuwenjun/p/4925372.html
-
-## 八月份
-
-### 8 月 28 日
-
-- 241 延迟加载组件
-  - https://blog.csdn.net/duninet/article/details/119701225
 
 ### 8 月 26 日
 
-- 240 vue element ui table 多个字段一起排序
-  - https://segmentfault.com/a/1190000022538605
-  - https://blog.csdn.net/weixin_36894745/article/details/109443811
+
 
 ### 8 月 18 日
 
@@ -443,82 +298,30 @@
 
 ### 8 月 14 日
 
-- 238 生成 shortid 短 id
-  - https://github.com/dylang/shortid
-- 237 滴滴团队 PC 和 H5 可配置化前端组件库
-  - https://github.com/epage-team/epage-vant
-  - https://github.com/epage-team/epage-iview
-  - https://github.com/didi/epage
-- 236 vue3 vue-dragger
-  - https://github.com/SortableJS/vue.draggable.next
-- 235 vue3 vue-drag-resize
-  - https://github.com/kirillmurashov/vue-drag-resize/tree/vue3
+- 238 
+
+
 
 ### 8 月 9 日
 
-- 234 vue3 3.2.1 版本 defineEmits 定义事件问题
-  - https://zhuanlan.zhihu.com/p/386919557
-- 233 vue3 vite2 打包资源文件配置
-  - https://blog.csdn.net/weixin_47021806/article/details/118697540
 
 ### 8 月 8 日
 
-- 232 bash source 命令行的使用
-  - https://www.cnblogs.com/shuiche/p/9436126.html
-
 ### 8 月 7 日
 
-- 231 bash 数组循环便利 （关联数组，可以通过 key 访问）
-  - https://blog.csdn.net/weixin_39883129/article/details/113317457
-  - https://github.com/wangdoc/bash-tutorial/blob/master/docs/array.md
+
 
 ### 8 月 6 日
-
-- 230 shell 脚本 while
-- 229 前端项目编译的时候发生，warning [mini-css-extract-plugin] warning Conflicting order
-  - https://github.com/vuejs/vue-cli/issues/3771
-  - vue.config.js 中设置 css
-    ```javascript
-    // vue.config.js
-    module.exports = {
-      css: {
-        extract: { ignoreOrder: true },
-      },
-    };
-    ```
-
-### 8 月 5 日
-
-- 228 vue.config.js extenals 设置
-  - https://blog.csdn.net/weixin_38107457/article/details/106490372
-
-## 七月份
-
-### 7 月 30 日
-
-- 227 nginx location 规则判断处理
-  - https://www.cnblogs.com/jpfss/p/10418150.html
 
 ### 7 月 28 日
 
 - 226 console.log 的延迟问题
   - https://www.jianshu.com/p/16dae5406c19
 
-### 7 月 23 日
-
-- 225、centos 下安装 mysql
-  - https://cloud.tencent.com/developer/article/1393323
-  - https://www.cnblogs.com/yuanchao-blog/p/10679156.html
-- 224、腾讯云安装 centos mysql
-  - https://cloud.tencent.com/developer/article/1145484?from=14588
-
 ### 7 月 22 日
 
 - 223 postman 汉化版本
   - https://github.com/hlmd/Postman-cn
-- 222 微信公众号调用 wx.config 验证
-  - 校验 wx.config 参数合规性 http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=jsapisign
-  - 微信官方文档 https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#62
 
 ### 7 月 21 日
 
@@ -526,33 +329,14 @@
   - https://lbs.amap.com/demo/javascript-api/example/district-search/draw-district-boundaries
 - 220 map 桌面地图
   - https://zhuanlan.zhihu.com/p/142531621
-- 219 vue 动态 table
-  - https://github.com/TheoXiong/vue-table-dynamic
-- 218 动态菜单 菜单权限 等
-  - https://github.com/GeekQiaQia/vue3.0-template-admin
-- 217 useValidate 验证封装参考
-  - https://github.com/ly1994lyy/Vue3.0_Element_ShopManage/blob/master/src/utils/userValidate.ts
-- 216 utils 封装参考
-  - https://github.com/xiaoxian521/vue-pure-admin/tree/main/src/utils
+
 
 ### 7 月 20 日
 
 - 215 bigemap 获取 kml 文件
   - http://www.bigemap.com/reader/
   - http://www.bigemap.com/introduce.html
-
-### 7 月 19 日
-
-- 214 删除文件和文件夹
-  - rm -rf \*
-- 213 linux 删除目录下的文件指令
-  - https://www.cnblogs.com/a-du/p/9987012.html
-
-### 7 月 18 日
-
-- 212 组件共享 webpack5 Module Federation
-  - https://zhuanlan.zhihu.com/p/144267429
-
+- 
 ### 7 月 17 日
 
 - 211 html 网页 转换为 md 文档工具
@@ -565,9 +349,7 @@
 
 ### 7 月 7 日
 
-- 209 axios typescript 封装
-  - https://github.com/buqiyuan/vue3-antd-admin/tree/main/src/utils/http/axios
-  - https://github.com/anncwb/vue-vben-admin/tree/main/src/utils/http/axios
+- 
 - 208 vue 动态路由的加载
   - https://github.com/buqiyuan/vue3-antd-admin/tree/main/src
 - 207 vue tree blocks
@@ -576,25 +358,6 @@
   - https://github.com/riophae/vue-treeselect
   - https://github.com/megafetis/vue3-treeselect
   - https://www.cnblogs.com/yuwenjing0727/p/10214490.html
-- 205 webpack 打包文件名 hash、 chunkhash、contenthash 意义
-  - https://www.cnblogs.com/giggle/p/9583940.html
-
-### 7 月 6 日
-
-- 204 vue hls 使用 播放 m3u8 视频
-  - https://www.cnblogs.com/jin-zhe/p/11975515.html
-  - https://hls-js.netlify.app/demo/
-  - https://github.com/video-dev/hls.js
-
-### 7 月 3 日
-
-- 203 wx.config url 设置
-  - https://www.cnblogs.com/wukongz/p/13371820.html
-
-### 7 月 2 日
-
-- 202 prettier 设置格式化文件代码
-  - https://blog.csdn.net/qq_37815596/article/details/109225879
 
 ### 7 月 1 日
 
@@ -611,36 +374,7 @@
 
 - 200 vue cesium
   - vite 版本 https://segmentfault.com/a/1190000039344137
-- 199 PC 端自适应设置屏幕样式
 
-  ```javascript
-        @media (min-width: 1024px){
-        body{font-size: 18px}
-        } /*>=1024的设备*/
-
-        @media (min-width: 1100px) {
-        body{font-size: 20px}
-        } /*>=1100的设备*/
-        @media (min-width: 1280px) {
-        body{font-size: 22px;}
-        } /*>=1280的设备*/
-
-        @media (min-width: 1366px) {
-
-        body{font-size: 24px;}
-        }
-
-        @media (min-width: 1440px) {
-        body{font-size: 25px !important;}
-        }
-
-        @media (min-width: 1680px) {
-        body{font-size: 28px;}
-        }
-        @media (min-width: 1920px) {
-        body{font-size: 33px;}
-        }
-  ```
 
 ### 6 月 29 日
 
@@ -655,11 +389,6 @@
   - https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#62 通过接口获取 wx.config 的参数值
 - 196 android app 开启辅助 H5 定位功能
   - https://lbsyun.baidu.com/index.php?title=android-locsdk/guide/addition-func/assistant-h5
-
-### 6 月 26 日
-
-- 195 微信公众号 JSSDK 分享页面
-  - https://blog.csdn.net/qq_29180565/article/details/89487307
 
 ### 6 月 25 日
 
@@ -693,46 +422,11 @@
   - d3 https://www.zhihu.com/question/53469317/answer/1466894972
   - cesium https://zhuanlan.zhihu.com/p/34217817
 
-### 6 月 19 日
-
-- 187 微信公众号页面中
-  - 两个 alert() 会存在覆盖的情况，后者会覆盖前者
-  - 如果 alert() 后面存在重定向的话，alert（）可能来不及执行
-- 186 van-picker 三级联动
-  - https://codesandbox.io/s/k22r4yryo3?file=/src/components/HelloWorld.vue
 
 ### 6 月 15 日
 
-- 185 vite2 vue3 作为乾坤的子应用
-  - https://github.com/umijs/qiankun/issues/1268
-- 184 获取随机数字并且不等于上一次的数值
-  ```javascript
-  // 获取随机数
-  // Math.random 生成0-1之间的随机数字
-  const getRndInteger = (max) => {
-    const tempNum = Math.floor(Math.random() * max);
-    console.log(`当前值：${tempNum},历史值：${window.randomNum}`);
-    if (window.randomNum === tempNum) {
-      console.log("再调用一次方法");
-      getRndInteger(max);
-    } else {
-      window.randomNum = tempNum;
-      // console.log('返回当前值',tempNum)
-      // return tempNum;
-    }
-  };
-  ```
-- 183 数组随机排序
-  https://www.cnblogs.com/7qin/p/9710034.html
-  ```javascript
-  function shuffle(arr) {
-    let i = arr.length;
-    while (i) {
-      let j = Math.floor(Math.random() * i--); //5555
-      [arr[j], arr[i]] = [arr[i], arr[j]];
-    }
-  }
-  ```
+
+
 
 ### 6 月 11 日
 
@@ -763,48 +457,6 @@
   - https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie
   - https://github.com/js-cookie/js-cookie
 
-### 6 月 2 日
-
-- 276 vite2 配置接口代理
-  ```javascript
-   // 本地运行配置，及反向代理配置
-  server: {
-    port: 9900,
-    cors: true, // 默认启用并允许任何源
-    open: true, // 在服务器启动时自动在浏览器中打开应用程序
-    //反向代理配置，注意rewrite写法，开始没看文档在这里踩了坑
-    proxy: {
-      '/infra': {
-        target: 'http://139.9.184.171:10088',   //代理接口
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/infra/, '')
-      }
-    }
-  }
-  ```
-
-### 6 月 1 日
-
-- 275 vite2 和 vue3 升级体验
-  - https://www.mmxiaowu.com/article/606c782c54e901622416aaca
-- 274 vite2 配置 axios 请求代理
-- https://www.cnblogs.com/hy999/p/vue-vite-proxy.html
-
-## 五月份
-
-### 5 月 31 日
-
-- 273 轮播动态
-  - Dynamic slides https://swiperjs.com/demos#pagination
-  - https://codesandbox.io/s/0871t?file=/src/App.vue:13-383
-  - https://github.surmon.me/vue-awesome-swiper/
-- 272 轮播页面插件
-  - https://github.surmon.me/vue-awesome-swiper/
-
-### 5 月 28 日
-
-- 271 vuex 持久化插件
-  - https://github.com/robinvdvleuten/vuex-persistedstate
 
 ### 5 月 26 日
 
@@ -817,11 +469,7 @@
 
 ### 5 月 25 日
 
-- 267 vue3 PC 端项目模板
-  - https://github.com/PanJiaChen/vue-element-admin
-  - https://github.com/lin-xin/vue-manage-system
-- 266 vuex 持久化
-  - https://www.jianshu.com/p/04c288731819?utm_campaign=haruki
+
 
 ### 5 月 24 日
 
@@ -925,10 +573,7 @@
   };
   ```
 
-- 251 es6 module 和 commonjs
-  - export 和 import https://blog.csdn.net/dt1991524/article/details/86497449
-  - 深入 CommonJs 与 ES6 Module https://mp.weixin.qq.com/s/U2_hnwLTkCe-pm6f5z4nMg
-  -
+
 - 250 eslint 初始化
   ```javascript
     npm install eslint --save-dev
@@ -950,35 +595,8 @@
       },
     }
   ```
-
-### 5 月 11 日
-
-- 248 vue3 form 表单 替换 this.$refs
-  - https://segmentfault.com/a/1190000039651772
-
-### 5 月 9 日
-
-- 247 css 样式
-
-  ```javascript
-      // 鼠标悬浮于a标签选择器上的样式变化
-      a:hover
-      {
-          background-color:yellow;
-      }
-
-      // 选择器为活动的链接设置的样式
-      a:active
-      {
-          background-color:yellow;
-      }
-  ```
-
 ### 5 月 8 日
 
-- 246 promise 防抖和节流
-  - https://coding.imooc.com/learn/questiondetail/194653.html
-  - 见 63
 - 245 xgplayer 西瓜视频播放器
   - https://v2.h5player.bytedance.com/
   - https://github.com/bytedance/xgplayer
@@ -1028,14 +646,11 @@
   - vite.config.js 中 https: true 属性开启
 - 238 webpack devServer 配置开启 https
   - https://blog.csdn.net/dclnet/article/details/96316401
-- 237 json 美化工具
-  - https://github.com/leezng/vue-json-pretty
+- 237 
 
 ### 5 月 1 日
 
-- 236 axios 请求缓存的处理
-  - https://www.wodecun.com/blog/7931.html
-  - 缓存库 https://github.com/RasCarlito/axios-cache-adapter
+- 
 
 ## 四月份
 
@@ -1052,31 +667,10 @@
   - https://www.freesion.com/article/3159591401/
 
 ### 4 月 24 日
-
-- 232 微信小程序地图服务
-  - https://lbs.qq.com/product/miniapp/jssdk/
-  - https://lbs.qq.com/miniProgram/jsSdk/jsSdkGuide/methodSearch
-- 231 uni-app pages 数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-- 230 微信公众号 H5 页面调用微信登录全过程
-  - 详见 ---微信公众号 H5 调用微信登录全过程
-  - https://www.cnblogs.com/0201zcr/p/5131602.html
-- 229 微信扫描二维码
-  - https://mp.weixin.qq.com/s/1A30nQNg4j4GwLG1n91DCw
+- 
 
 ### 4 月 22 日
 
-- 228 docker 中 mysql 的控制
-  - https://www.cnblogs.com/jiefu/p/12204555.html
-- 227 docker 安装
-  - https://juejin.cn/post/6950558227490668557
-  - docker 安装和 docker compose 安装
-    - https://get.daocloud.io/
-  - rap2 安装
-    - https://github.com/thx/rap2-delos
-  - docker-compose 安装和卸载
-    - https://www.cnblogs.com/zhihuifan10/articles/11121110.html
-  - docker 安装和卸载
-    - https://www.cnblogs.com/qinxu/p/10032176.html
 
 ### 4 月 21 日
 
@@ -1085,24 +679,6 @@
 
 ### 4 月 20 日
 
-- 225 vite mock
-  - https://github.com/anncwb/vite-plugin-mock/blob/HEAD/README.zh_CN.md
-- 224 eslint 规范
-  - https://github.com/lin-123/javascript
-  - https://github.com/airbnb/javascript#translation
-
-### 4 月 19 日
-
-- 223 mitt 事件总线 https://blog.csdn.net/fuweipeng2012/article/details/113812794
-- 222 vue3 替代 vue2 中.sync 的 v-model
-  - https://segmentfault.com/a/1190000023911894
-  - https://blog.csdn.net/wk843620202/article/details/108613493
-- 221 vue3 provide 和 inject 传值
-  - https://blog.csdn.net/xuhua32100/article/details/113518217
-- 220 vue3 useRoute 和 useStore 的使用
-  - http://lanwuyaojiu.cn/blogm/blogart-110.html
-- 219 typescript tsconfig.json
-  - https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-ReadingNotes/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20tsconfig.json%20%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.md
 
 ### 4 月 18 日
 
@@ -1118,11 +694,6 @@
 
 ### 4 月 17 日
 
-- 214 随机数字生成
-  ```javascript
-  Math.floor(Math.random() * 10); // 返回 0 至 9 之间的数
-  Math.floor(Math.random() * 11);
-  ```
 - 213 适配大屏幕解决方案
   - lib-flexible 库
   - https://www.cnblogs.com/lyzg/p/5058356.html
@@ -1130,19 +701,9 @@
 
 ### 4 月 16 日
 
-- 212 vue vite public 下图片路径的问题
-  ```javascript
-      public 下面的文件路径前要加斜杠 '/'
-      参考 -204下webpack打包public路径设置
-  ```
 
 ### 4 月 15 日
 
-- 211 微信小程序开发
-  - https://uniapp.dcloud.io/
-  - https://vant-contrib.gitee.io/vant-weapp/#/home
-  - https://blog.csdn.net/YNEWA/article/details/106056610
-  - https://liubing.me/uniapp-use-vant-weapp.html
 - 210 vue jsonp 插件跨域请求数据使用
   - https://www.npmjs.com/package/vue-jsonp
 - 209 webpack plugin 各种插件
@@ -1157,34 +718,9 @@
 
 ### 4 月 11 日
 
-- 206 即偶数元素 css 给最后的元素添加样式
-  ```javascript
-      // 第二个元素，里面换成n就是第n个元素
-      div:nth-child(2)
-      {
-      background:#ff0000;
-      }
-      // 选中最后一个奇数
-      div:nth-child(odd):last-child {
-          margin-bottom: 0;
-      }
-      // 选中最后一个偶数
-      div:nth-child(even):last-child {
-          margin-bottom: 0;
-      }
-      // 3的倍数元素的样式，后面的0可以换成m,就是3倍再加m
-      p:nth-child(3n+0)
-      {
-      background:#ff0000;
-      }
-  ```
 
 ### 4 月 10 日
 
-- 205 vue style 绑定样式
-  ```javascript
-      :style="{backgroundImage: 'url(' + item.url + ')'}"
-  ```
 - 204 vue cli public
 
   - 文件夹下面可以放置静态的图片资源和 json 文件
@@ -1239,8 +775,6 @@
 
 ### 4 月 7 日
 
-- 196 微信小程序跳转到小程序
-  - https://www.cnblogs.com/strong514/p/12470365.html
 - 195 vue- vnode
   ```javascript
   Vue.mixin({
@@ -1293,30 +827,7 @@
 
 ### 4 月 2 日
 
-- 193 nodejs 安装
-  - https://blog.csdn.net/weixin_42940467/article/details/113866473
-    ```javascript
-    // 1、可从官网下载nodejs安装包
-    // 2、然后通过xftp上传到服务器
-    // 3、解压文件
-    tar -xvf node-v12.14.1-linux-x64.tar.xz
-    // 4、复制文件夹到指定位置
-    sudo mv ./node-v12.14.1-linux-x64 /usr/local/node
-    // 5、为node和npm创建快捷方式
-    sudo ln -s /usr/local/node/bin/node /usr/bin/node
-    sudo ln -s /usr/local/node/bin/npm /usr/bin/npm
-    // 6、查看版本确认安装是否成功
-    node -v   npm -v
-    ```
-- 192 linux 常用命令使用
-  - https://juejin.cn/post/6938385978004340744
-- 191 xftp 设置，然后 xshell 就可以访问
-  - https://juejin.cn/post/6844903940262199309
-  - https://www.jb51.net/article/127411.htm
-  - https://blog.csdn.net/lwg_1540652358/article/details/84679659
-- 190 nginx
-  - https://juejin.cn/post/6844903701459501070
-  - https://juejin.cn/post/6844904144235413512
+
 
 ### 4 月 1 日
 
@@ -1434,8 +945,6 @@
 
 ### 3 月 19 日
 
-- 172 webpack 打包优化
-  - https://mp.weixin.qq.com/s/SzD22kTnYYfQShQwRaAGWA
 - 
 
 ### 3 月 18 日
@@ -1486,9 +995,6 @@
   - https://www.cnblogs.com/ychizzz/p/13743277.html
 
 ### 3 月 6 日
-- 157 中国省市县区
-  - https://github.com/small-dream/China_Province_City
-  - https://github.com/modood/Administrative-divisions-of-China
 - 156 
 - 155 map-demo
   - https://malagis.com/map-demo/leaflet/note-5.html
@@ -1525,8 +1031,7 @@
 
 ### 2 月 21 日
 
-- 144Element-Pro-Crud
-  - https://crud.boboooooo.top/
+
 - 
 - 142 
 - 141 
@@ -1560,44 +1065,7 @@
 
 ### 2 月 5 日
 
-- 134 husky 使用和介绍
-  - http://www.mamicode.com/info-detail-2916910.html
 
-### 2 月 4 日
-
-- 133 
-
-### 2 月 3 日
-
-- 130 form-create 自定义组件如何注册到 form-create 中使用
-  - http://www.form-create.com/v2/guide/custom-form-component.html#%E7%A4%BA%E4%BE%8B
-
-### 2 月 2 日
-
-- 
-- 128 go 语言学习网站
-  - http://c.biancheng.net/golang/intro/
-- 127 vscode 搭建 go 开发环境
-  - https://juejin.cn/post/6844904122450182151
-  ```javascript
-    //1、go安装包下载
-    https://studygolang.com/dl
-    //2、安装成功cmd命令查看版本号
-    go version
-    //3、设置七牛云代理
-    go env -w GO111MODULE=on
-    go env -w GOPROXY=https://goproxy.cn,direct
-    //4、vscode中下载go扩展插件
-    //5、创建hello.go文件
-    //6、写入代码后编译运行
-    go run helloworld.go
-    //7、将go文件打包成wasm
-    GOOS=js GOARCH=wasm go build -o test.wasm hello.go
-    //8、go打包编译
-    go build -o hello.exe hello.go
-    //9、vscode中Ctrl+Shift+P 安装go插件 全选进行安装
-    https://zhuanlan.zhihu.com/p/320343679
-  ```
 
 ### 2 月 1 日
 

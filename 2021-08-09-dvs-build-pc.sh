@@ -1,7 +1,6 @@
 # ## 当前脚本文件所在路径
 source ./versions # 版本文件
 current_path=$(cd $(dirname $0); pwd)
-
 # ############# pc 相关模块编译路径 ################
 # declare -A build_pathArray
 # build_pathArray['dvs-main']="/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main"
@@ -30,5 +29,7 @@ function build_pc_Function {
     cd $project_path
     yarn build
     echo -e "编译PC 项目路径为{${build_pathArray[i]}} 成功";
+     cd $current_path
+    echo "tagVersion=\"$1\" # <<${build_pathArray[i]}>> # $(date)" >> ./versions
   done
 }

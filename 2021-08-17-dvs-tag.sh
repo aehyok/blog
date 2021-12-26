@@ -1,7 +1,7 @@
 # ## 在
 current_path=$(cd $(dirname $0); pwd)
-tagVersion='2.2.1.005'
-branchVersion='2.3.x'
+tagVersion='2.4.1.006'
+branchVersion='dev'
 # ## 打印当前目录
 echo $current_path
 
@@ -10,7 +10,7 @@ gitpull_pathArr=(
   "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
   "/e/work/git/dvs-2.x/qrcode-demo-dev"
   "/e/work/git/dvs-2.x/dvs-park-h5-app"
-  "/e/work/git/dvs-2.x/dvs-server-ui-dev"
+  # "/e/work/git/dvs-2.x/dvs-server-ui-dev"
 )
 
 ## 开始pull拉取项目
@@ -18,8 +18,8 @@ for ((i=0;i<${#gitpull_pathArr[*]};i++))
 do
   project_path=${gitpull_pathArr[i]}
   cd $project_path
-    git tag -a $version -m "${version}"
-    git push origin $version
+    git tag -a $tagVersion -m "${tagVersion}"
+    git push origin $tagVersion
   echo -e "拉取项目：${gitpull_pathArr[i]} 成功";
 done
 
