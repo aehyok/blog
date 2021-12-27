@@ -179,8 +179,6 @@
 
 ## 10 月 27 日
 
-- 293 
-
 - 291 promise.all 理解
   - https://www.jianshu.com/p/7e60fc1be1b2
 
@@ -213,21 +211,11 @@
 - 282 页面切换关闭 settimeout
   - https://blog.csdn.net/qq_34749453/article/details/81488908
 
-## 10 月 20 日
-
-- 
-- 
-
-
-## 10 月 16 日
-
-- 
 - 276 跳槽后一年后的回顾
   - https://www.cnblogs.com/strick/p/15223931.html
 
 ## 10 月 15 日
 
-- 275 
 - 274 分布式锁解决并发
   - https://www.cnblogs.com/zhumengke/articles/11829188.html
 
@@ -244,8 +232,6 @@
   - https://www.cnblogs.com/zhanglw456/p/10442477.html
 
 ## 10 月 9 日
-
-- 270 
 - 269 etcd 简单介绍
   - https://www.cnblogs.com/wujuntian/p/12837926.html
 - 268 autofac 自动依赖注入
@@ -275,45 +261,16 @@
 - 254 tab 菜单切换
   - https://github.com/buqiyuan/vite-vue3-admin
 
-
-## 9 月 21 日
-
-
-
 ## 9 月 18 日
 
 - 249 C#调用 Web Api 接口的类库 Flurl
   - https://flurl.dev/
-
-
-
-### 8 月 26 日
-
-
-
 ### 8 月 18 日
 
 - 239 typescript actionMap[value] 报错的检查
   - https://blog.csdn.net/beLaity/article/details/108527556
 
 ### 8 月 14 日
-
-- 238 
-
-
-
-### 8 月 9 日
-
-
-### 8 月 8 日
-
-### 8 月 7 日
-
-
-
-### 8 月 6 日
-
-### 7 月 28 日
 
 - 226 console.log 的延迟问题
   - https://www.jianshu.com/p/16dae5406c19
@@ -349,7 +306,6 @@
 
 ### 7 月 7 日
 
-- 
 - 208 vue 动态路由的加载
   - https://github.com/buqiyuan/vue3-antd-admin/tree/main/src
 - 207 vue tree blocks
@@ -367,15 +323,12 @@
   - https://blog.csdn.net/acmdream/article/details/78788889
   - GeoServer 发布 osm 数据地图服务 https://blog.csdn.net/jiang_wang01/article/details/117789270
   - rest api 底图服务搭建 https://www.cnblogs.com/think8848/p/6241836.html
-
 ## 六月份
 
 ### 6 月 30 日
 
 - 200 vue cesium
   - vite 版本 https://segmentfault.com/a/1190000039344137
-
-
 ### 6 月 29 日
 
 - 198 vue 组件中的 key 可以刷新数据
@@ -422,12 +375,6 @@
   - d3 https://www.zhihu.com/question/53469317/answer/1466894972
   - cesium https://zhuanlan.zhihu.com/p/34217817
 
-
-### 6 月 15 日
-
-
-
-
 ### 6 月 11 日
 
 - 282 git bash 中的中文乱码问题处理
@@ -457,7 +404,6 @@
   - https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie
   - https://github.com/js-cookie/js-cookie
 
-
 ### 5 月 26 日
 
 - 270 redis 库
@@ -466,11 +412,6 @@
   - setting.json 文件中设置 "terminal.integrated.shell.windows": "E:/Program Files/Git/bin/bash.exe",
 - 268 File differs from already included file only in casing: correct casing but relative path
   - https://github.com/Microsoft/TypeScript/issues/25460
-
-### 5 月 25 日
-
-
-
 ### 5 月 24 日
 
 - 265 EFCore 标准代码仓库
@@ -648,10 +589,6 @@
   - https://blog.csdn.net/dclnet/article/details/96316401
 - 237 
 
-### 5 月 1 日
-
-- 
-
 ## 四月份
 
 ### 4 月 29 日
@@ -666,20 +603,10 @@
 - 233 HBuilderX 引入 vant
   - https://www.freesion.com/article/3159591401/
 
-### 4 月 24 日
-- 
-
-### 4 月 22 日
-
-
 ### 4 月 21 日
 
 - 226 Husky 提升代码质量
   - https://www.cnblogs.com/xhyccc/p/13941335.html
-
-### 4 月 20 日
-
-
 ### 4 月 18 日
 
 - 218 vue3 vite2 模版项目配置
@@ -698,10 +625,6 @@
   - lib-flexible 库
   - https://www.cnblogs.com/lyzg/p/5058356.html
   - https://vue-loader.vuejs.org/zh/guide/css-modules.html#%E7%94%A8%E6%B3%95
-
-### 4 月 16 日
-
-
 ### 4 月 15 日
 
 - 210 vue jsonp 插件跨域请求数据使用
@@ -715,10 +638,6 @@
   - https://juejin.cn/post/6844903901175496711
 - 207 vue 首页加载慢，路由懒加载、组件懒加载
   - https://blog.csdn.net/mataodehtml/article/details/108867545
-
-### 4 月 11 日
-
-
 ### 4 月 10 日
 
 - 204 vue cli public
@@ -824,10 +743,6 @@
   ```
 - 194 nginx vue 404 not found
   - https://blog.csdn.net/onlysunnyboy/article/details/75270533
-
-### 4 月 2 日
-
-
 
 ### 4 月 1 日
 
@@ -943,10 +858,6 @@
   - https://github.com/loveskyhx/vuePanorama
   - 已 fork 到 https://github.com/aehyok/vuePanorama
 
-### 3 月 19 日
-
-- 
-
 ### 3 月 18 日
 
 - 170 查看端口占用情况
@@ -1025,18 +936,6 @@
   - 从入门到真实项目 https://juejin.cn/post/6844903495959576583
   - 掘金小册子 https://juejin.cn/book/6844733709808041992
 
-### 2 月 23 日
-
-- 
-
-### 2 月 21 日
-
-
-- 
-- 142 
-- 141 
-- 
-
 ### 2 月 20 日
 
 - 139 jquery find 返回多个后代元素
@@ -1046,11 +945,6 @@
 
 - 138 创建自己的 library 类库包并使用 webpack4.x 打包发布到 npm
   - https://www.cnblogs.com/weiqinl/p/9786966.html
-
-### 2 月 18 日
-
-- 137 新年开工第一天，立下一个 flag，自律、自律、自律
-
 ### 2 月 11 日
 
 - 136 mac 下 npm install 安装失败
@@ -1062,11 +956,6 @@
 - https://stackoverflow.com/questions/41983767/vue-template-or-render-function-not-defined-yet-i-am-using-neither
 - https://vuejs.org/v2/guide/installation.html#Runtime-Compiler-vs-Runtime-only
 - https://github.com/JeffreyWay/laravel-mix/issues/198
-
-### 2 月 5 日
-
-
-
 ### 2 月 1 日
 
 - 126 vue3.0 demo 学习 https://github.com/newbee-ltd/vue3-examples
@@ -1076,8 +965,6 @@
   - https://cli.vuejs.org/zh/config/
 - 121 vue3 源码解读
   - https://github.com/cuixiaorui/mini-vue
-## 一月份
-
 ### 1 月 30 日
 
 - 119 webpack 网上图书 http://webpack.wuhaolin.cn/
@@ -1173,7 +1060,6 @@
 
 ### 1 月 11 日
  
-
 - 61 document.documentElement.scrollTop 微信公众号有时候获取值为 0，暂时可考虑使用 document.body.scrollTop 进行设置
 - 64 vue 组件嵌套会提示'make sure to provid the "name" option'
   - https://blog.csdn.net/Nalaluky/article/details/83007101
@@ -1508,11 +1394,6 @@
   <img src="https://raw.githubusercontent.com/aehyok/2021/main/image/1/001.png" width="560" height="600" align="middle" />
 </div>
 
-
-- 2 IMWeb 前端团队总结 https://mp.weixin.qq.com/s/muljS3iA0c2j1tIICLOhFQ
-
 - 8 mongodb 命令行启动数据库，可改为 window 服务，还未尝试
   - https://www.cnblogs.com/ningskyer/articles/6292891.html
   - https://www.cnblogs.com/wjaaron/p/7800490.html
-
----
