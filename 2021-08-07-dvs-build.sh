@@ -80,6 +80,7 @@ do
     if [[ "$tag" == "" ]] 
     then
       if test $version = $tagVersion ; then
+        cd ${gitpull_pathArray[${key}]}
         echo 'tag 已经存在要先进行删除'
         git tag -d $version
         git push origin :refs/tags/$version
@@ -125,12 +126,12 @@ done
 # scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
 
 ########### 5、拷贝完之后进行git 的提交  ##############
-# cd /e/work/git/dvs-2.x/release
-# git add .
-# sleep 2s
-# message="build：前端app、qrocde、wechat、park、console(child)commit-version:${version}"
-# git commit -m $message .
-# git push origin
+cd /e/work/git/dvs-2.x/release
+git add .
+sleep 2s
+message="build：前端app、qrocde、wechat、park、console(child)commit-version:${version}"
+git commit -m $message .
+git push origin
 
 echo "5秒后将自动退出本脚本："
 for i in $(seq 5 -1 1)
