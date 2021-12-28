@@ -29,7 +29,7 @@ function build_pc_Function {
     cd $project_path
     yarn build
     echo -e "编译PC 项目路径为{${build_pathArray[i]}} 成功";
-     cd $current_path
+    cd $current_path
     echo "tagVersion=\"$1\" # <<${build_pathArray[i]}>> # $(date)" >> ./versions
   done
 }
