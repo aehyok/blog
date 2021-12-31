@@ -207,12 +207,7 @@
 - 264 swagger 引入后 swagger/v1/swagger.json 500
   - https://www.cnblogs.com/oBehavior/p/14384201.html
 ## 10 月 2 日
-- 261 mysql 数据库导入导出
-  - https://www.cnblogs.com/jpfss/p/7967046.html
 ## 10 月 1 日
-
-- 260 donetcore 3.1 下载地址（mac window Linux）
-  - https://dotnet.microsoft.com/download/dotnet/3.1
 
 ## 9 月 26 日
 
@@ -225,8 +220,7 @@
 
 ## 9 月 18 日
 
-- 249 C#调用 Web Api 接口的类库 Flurl
-  - https://flurl.dev/
+
 ### 8 月 18 日
 
 - 239 typescript actionMap[value] 报错的检查
@@ -288,9 +282,6 @@
 ## 六月份
 
 ### 6 月 30 日
-
-- 200 vue cesium
-  - vite 版本 https://segmentfault.com/a/1190000039344137
 ### 6 月 29 日
 
 - 198 vue 组件中的 key 可以刷新数据
