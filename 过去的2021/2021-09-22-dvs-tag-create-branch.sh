@@ -3,7 +3,7 @@
 # ## 当前脚本文件所在路径
 current_path=$(cd $(dirname $0); pwd)
 # tag版本号
-tagVersion='2.4.2.006'
+tagVersion='2.4.2.009'
 # 创建的分支
 branchVersion='2.4.2.x'
 # ## 打印当前目录
@@ -14,7 +14,7 @@ gitpull_pathArr=(
   "/e/work/git/dvs-2.x/dvs-offiaccount-dev"
   "/e/work/git/dvs-2.x/qrcode-demo-dev"
   "/e/work/git/dvs-2.x/dvs-park-h5-app"
-  # "/e/work/git/dvs-2.x/dvs-server-ui-dev"
+  "/e/work/git/dvs-2.x/dvs-server-ui-dev"
 )
 
 ## 开始pull拉取项目

@@ -91,7 +91,8 @@ do
         echo -e "打tag项目:<<${projectName}>>成功";
         cd $current_path
         echo "tagVersion=\"$version\" # <<${projectName}>> # $(date)" >> ./versions
-      else  
+      else 
+        cd ${gitpull_pathArray[${key}]}
         echo 'tag不存在 要进行git tag'
         git tag -a $version -m "${version}"
         git push origin $version
