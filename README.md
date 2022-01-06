@@ -4,7 +4,14 @@
 ### 1月份
 // TODO 待学习
   - 抓包 https://www.cnblogs.com/crystal1126/p/11954085.html
-  - https://www.jinchengcom.cn/posts/70581b0e.html
+    - https://www.jinchengcom.cn/posts/70581b0e.html
+    - 破解工具 https://www.zzzmode.com/mytools/charles/
+  - 前端实现录音
+    - https://github.com/xiangyuecn/Recorder
+
+- 1月6日
+  - 后端接口可发布到linux外网访问， 前端react项目待部署到外网环境
+  - 指标接口可调用，开始处理页面和接口之间的逻辑了  
 - 1月5日
   - 前端项目开发环境中可设置接口代理地址，调用接口
   - 后端项目目前可调用指标定义接口，本地可发布，可访问，待发布到linux外网可访问
