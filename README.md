@@ -8,7 +8,11 @@
     - 破解工具 https://www.zzzmode.com/mytools/charles/
   - 前端实现录音
     - https://github.com/xiangyuecn/Recorder
-
+- 1月8日
+  - 将.net core由5.0升级到6.0
+  - 将前端项目和后端项目 放到一个git仓库
+- 1月7日
+  - 调整指标管理的左侧树接口逻辑，以及联动右侧的表单数据
 - 1月6日
   - 后端接口可发布到linux外网访问， 前端react项目待部署到外网环境
   - 指标接口可调用，开始处理页面和接口之间的逻辑了  
