@@ -8,6 +8,8 @@
     - 破解工具 https://www.zzzmode.com/mytools/charles/
   - 前端实现录音
     - https://github.com/xiangyuecn/Recorder
+- 1月9日
+  - svg小图标制作工具 https://mastergo.com/file/49597598216304
 - 1月8日
   - 将.net core由5.0升级到6.0
   - 将前端项目和后端项目 放到一个git仓库
