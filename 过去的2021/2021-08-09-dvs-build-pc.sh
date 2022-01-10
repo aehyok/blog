@@ -19,6 +19,7 @@ build_pathArray=(
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park"
   "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis"
+  "/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-ffp"
 )
 
 function build_pc_Function {
