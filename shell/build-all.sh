@@ -1,6 +1,6 @@
 # ## 当前脚本文件所在路径
 source ./versions # 版本文件历史记录
-source ./2021-08-09-dvs-build-pc.sh
+source ./build-pc.sh
 branchVersion="dev"
 current_path=$(cd $(dirname $0); pwd)
 
@@ -127,12 +127,12 @@ done
 # scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-ui/
 
 ########### 5、拷贝完之后进行git 的提交  ##############
-cd /e/work/git/dvs-2.x/release
-git add .
-sleep 2s
-message="build：前端app、qrocde、wechat、park、console(child)commit-version:${version}"
-git commit -m $message .
-git push origin
+# cd /e/work/git/dvs-2.x/release
+# git add .
+# sleep 2s
+# message="build：前端app、qrocde、wechat、park、console(child)commit-version:${version}"
+# git commit -m $message .
+# git push origin
 
 echo "5秒后将自动退出本脚本："
 for i in $(seq 5 -1 1)
@@ -140,4 +140,4 @@ do
   echo -e $i;sleep 1
 done
 exit
-## 执行脚本  sh 2021-08-07-dvs-build.sh  -v 2.4.2.002 -p awqpc  |tee build-log.txt
+## 执行脚本  sh build-all.sh  -v 2.5.0.001 -p awqpc  |tee build-log.txt

@@ -1,0 +1,267 @@
+tag 
+包含q------一户一码
+ 命令行中包含的版本号: 2.5.0.001
+-------------------------------------------------
+Your branch is up to date with 'origin/dev'.
+开始拉取项目:<<一户一码>>
+Already up to date.
+拉取项目<<一户一码>>成功
+-------------------------------------------------
+开始编译项目:<<一户一码>>
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 4 warnings下午7:06:39
+
+ warning  
+
+chunk chunk-3026d544 [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??ref--6-oneOf-3-2!./node_modules/vant/es/cell/index.css
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??ref--6-oneOf-3-2!./node_modules/vant/es/list/index.css
+   - couldn't fulfill desired order of chunk group(s) 
+
+ warning  
+
+chunk chunk-3026d544 [mini-css-extract-plugin]
+Conflicting order. Following module has been added:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??ref--6-oneOf-3-2!./node_modules/vant/es/list/index.css
+despite it was not able to fulfill desired ordering with these modules:
+ * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??ref--6-oneOf-3-2!./node_modules/vant/es/field/index.css
+   - couldn't fulfill desired order of chunk group(s) 
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  js/chunk-vendors.3fce68ec.js (1.31 MiB)
+  images/61301..png (250 KiB)
+  images/banner-c58.png (310 KiB)
+  images/banner-c6a.png (397 KiB)
+  images/banner-ced.png (396 KiB)
+  images/natest.png (337 KiB)
+  images/liuyajun-event.jpg (398 KiB)
+  images/banner-7ea.png (608 KiB)
+  images/banner-c3e.png (536 KiB)
+  images/tiandegong-event.jpg (445 KiB)
+  images/banner-c54.png (951 KiB)
+  images/banner-c3f.png (903 KiB)
+  images/banner-natest.png (694 KiB)
+  images/banner-cdd.png (1010 KiB)
+  images/liuningxia-event.png (513 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.5 MiB)
+      css/chunk-vendors.22bf6bc9.css
+      js/chunk-vendors.3fce68ec.js
+      css/app.b594b49c.css
+      js/app.e05590b6.js
+
+
+  File                                      Size             Gzipped
+
+  ..\release\cms\qrcode\js\chunk-vendors    1338.52 KiB      423.80 KiB
+  .3fce68ec.js
+  ..\release\cms\qrcode\js\chunk-697d2ba    145.66 KiB       45.74 KiB
+  c.6ff4e2a0.js
+  ..\release\cms\qrcode\js\app.e05590b6.    100.27 KiB       50.58 KiB
+  js
+  ..\release\cms\qrcode\js\chunk-f60a376    98.48 KiB        36.09 KiB
+  6.c8c9252b.js
+  ..\release\cms\qrcode\js\chunk-0c8877d    50.40 KiB        15.04 KiB
+  1.38e9d9ff.js
+  ..\release\cms\qrcode\js\chunk-1bfeb69    45.12 KiB        11.59 KiB
+  4.fcf7a4a4.js
+  ..\release\cms\qrcode\js\chunk-5ace6d1    34.37 KiB        11.15 KiB
+  2.b8a0280e.js
+  ..\release\cms\qrcode\js\chunk-30ffab7    33.08 KiB        11.48 KiB
+  0.6611458b.js
+  ..\release\cms\qrcode\js\chunk-71bcf11    33.01 KiB        10.41 KiB
+  1.95568f73.js
+  ..\release\cms\qrcode\js\chunk-762b0fd    32.67 KiB        10.43 KiB
+  2.55bddf2e.js
+  ..\release\cms\qrcode\js\chunk-47d8cf9    31.21 KiB        11.95 KiB
+  4.a1d9f362.js
+  ..\release\cms\qrcode\js\chunk-11afd9a    30.29 KiB        9.55 KiB
+  0.cd721f72.js
+  ..\release\cms\qrcode\js\chunk-522a289    29.79 KiB        9.52 KiB
+  4.af1cdc86.js
+  ..\release\cms\qrcode\js\chunk-579fbe6    28.61 KiB        11.33 KiB
+  e.dc6ac47c.js
+  ..\release\cms\qrcode\js\chunk-55a8153    28.21 KiB        10.66 KiB
+  3.0e7565b7.js
+  ..\release\cms\qrcode\js\chunk-d1b967d    23.62 KiB        7.45 KiB
+  8.0a4c9fd1.js
+  ..\release\cms\qrcode\js\chunk-03505ee    22.70 KiB        7.49 KiB
+  1.e101b545.js
+  ..\release\cms\qrcode\js\chunk-3026d54    22.15 KiB        7.26 KiB
+  4.bbebfb72.js
+  ..\release\cms\qrcode\js\chunk-059829a    21.41 KiB        6.67 KiB
+  2.e522039f.js
+  ..\release\cms\qrcode\js\chunk-bf9acec    21.25 KiB        8.33 KiB
+  2.7cadec8e.js
+  ..\release\cms\qrcode\js\chunk-1cc1c85    18.66 KiB        6.04 KiB
+  d.17d3269c.js
+  ..\release\cms\qrcode\js\chunk-4396f7c    17.72 KiB        6.06 KiB
+  b.355780cd.js
+  ..\release\cms\qrcode\js\chunk-3decdc9    17.36 KiB        8.14 KiB
+  b.3c74b258.js
+  ..\release\cms\qrcode\js\chunk-2bf6027    17.24 KiB        5.89 KiB
+  8.4ab8e9b3.js
+  ..\release\cms\qrcode\js\chunk-24baeee    16.79 KiB        5.79 KiB
+  6.ba4a8b49.js
+  ..\release\cms\qrcode\js\chunk-43259bf    16.56 KiB        7.92 KiB
+  0.99e49616.js
+  ..\release\cms\qrcode\js\chunk-24a64f1    16.33 KiB        6.96 KiB
+  0.2913c33d.js
+  ..\release\cms\qrcode\js\chunk-44a5290    15.97 KiB        7.54 KiB
+  e.1d01d34f.js
+  ..\release\cms\qrcode\js\chunk-3f3a8ae    15.94 KiB        7.48 KiB
+  7.9a4bf236.js
+  ..\release\cms\qrcode\js\chunk-495818a    15.94 KiB        5.25 KiB
+  2.fa167abe.js
+  ..\release\cms\qrcode\js\chunk-da9b06c    15.78 KiB        5.29 KiB
+  2.054ff98e.js
+  ..\release\cms\qrcode\js\chunk-2ca0316    13.06 KiB        4.56 KiB
+  4.44df9e78.js
+  ..\release\cms\qrcode\js\chunk-7b4da54    12.88 KiB        4.24 KiB
+  4.d253251c.js
+  ..\release\cms\qrcode\js\chunk-6813acb    10.14 KiB        5.47 KiB
+  d.4176aae0.js
+  ..\release\cms\qrcode\js\chunk-d408599    8.40 KiB         3.13 KiB
+  8.8077aa18.js
+  ..\release\cms\qrcode\js\chunk-ea7ceb4    8.09 KiB         4.59 KiB
+  4.fbdd34cc.js
+  ..\release\cms\qrcode\js\chunk-04a27e9    7.55 KiB         4.09 KiB
+  f.16c30acd.js
+  ..\release\cms\qrcode\js\chunk-07f4fec    6.88 KiB         2.52 KiB
+  e.26295fd8.js
+  ..\release\cms\qrcode\js\chunk-3cec5ea    4.33 KiB         1.97 KiB
+  a.b70f764c.js
+  ..\release\cms\qrcode\js\chunk-60510c3    4.30 KiB         1.85 KiB
+  4.1dcbb334.js
+  ..\release\cms\qrcode\js\chunk-1acf4ee    4.23 KiB         1.82 KiB
+  5.73be3ceb.js
+  ..\release\cms\qrcode\js\chunk-531c52f    3.37 KiB         1.54 KiB
+  f.6f4748d2.js
+  ..\release\cms\qrcode\js\chunk-78e2d32    3.16 KiB         1.54 KiB
+  e.85b2d67e.js
+  ..\release\cms\qrcode\js\chunk-2d22d74    2.50 KiB         1.27 KiB
+  6.c02b5ff3.js
+  ..\release\cms\qrcode\config.js           1.60 KiB         0.54 KiB
+  ..\release\cms\qrcode\js\chunk-0ad52df    1.26 KiB         0.77 KiB
+  4.2dd65002.js
+  ..\release\cms\qrcode\css\chunk-vendor    70.80 KiB        31.53 KiB
+  s.22bf6bc9.css
+  ..\release\cms\qrcode\css\app.b594b49c    26.60 KiB        4.70 KiB
+  .css
+  ..\release\cms\qrcode\css\chunk-697d2b    14.58 KiB        6.14 KiB
+  ac.f32eaac2.css
+  ..\release\cms\qrcode\css\chunk-71bcf1    14.15 KiB        2.99 KiB
+  11.f553a5ed.css
+  ..\release\cms\qrcode\css\chunk-762b0f    13.95 KiB        2.75 KiB
+  d2.0fbbe9a9.css
+  ..\release\cms\qrcode\css\chunk-55a815    13.48 KiB        2.83 KiB
+  33.31b7c0cc.css
+  ..\release\cms\qrcode\css\chunk-bf9ace    10.95 KiB        2.38 KiB
+  c2.2f7ef94e.css
+  ..\release\cms\qrcode\css\chunk-03505e    10.76 KiB        2.47 KiB
+  e1.8b8cc66f.css
+  ..\release\cms\qrcode\css\chunk-0c8877    10.71 KiB        2.34 KiB
+  d1.17f71907.css
+  ..\release\cms\qrcode\css\chunk-47d8cf    10.60 KiB        2.35 KiB
+  94.e639c9fc.css
+  ..\release\cms\qrcode\css\chunk-3026d5    10.16 KiB        2.38 KiB
+  44.9387e062.css
+  ..\release\cms\qrcode\css\chunk-d1b967    9.89 KiB         2.32 KiB
+  d8.a3ec996c.css
+  ..\release\cms\qrcode\css\chunk-522a28    9.66 KiB         2.30 KiB
+  94.d6e25034.css
+  ..\release\cms\qrcode\css\chunk-1bfeb6    9.52 KiB         2.33 KiB
+  94.b4e7aa27.css
+  ..\release\cms\qrcode\css\chunk-11afd9    9.48 KiB         2.40 KiB
+  a0.72c06cb0.css
+  ..\release\cms\qrcode\css\chunk-2bf602    9.23 KiB         2.26 KiB
+  78.28c115d5.css
+  ..\release\cms\qrcode\css\chunk-579fbe    9.14 KiB         2.15 KiB
+  6e.aa8e0f3d.css
+  ..\release\cms\qrcode\css\chunk-059829    8.63 KiB         2.10 KiB
+  a2.709aee00.css
+  ..\release\cms\qrcode\css\chunk-3decdc    8.24 KiB         2.07 KiB
+  9b.04041c79.css
+  ..\release\cms\qrcode\css\chunk-24a64f    8.03 KiB         1.93 KiB
+  10.93a53eca.css
+  ..\release\cms\qrcode\css\chunk-da9b06    7.45 KiB         1.81 KiB
+  c2.3bb30ed8.css
+  ..\release\cms\qrcode\css\chunk-495818    7.35 KiB         1.64 KiB
+  a2.6ac5a903.css
+  ..\release\cms\qrcode\css\chunk-30ffab    7.03 KiB         1.82 KiB
+  70.f30af073.css
+  ..\release\cms\qrcode\css\chunk-6813ac    6.50 KiB         1.43 KiB
+  bd.0dd9466b.css
+  ..\release\cms\qrcode\css\chunk-f60a37    6.28 KiB         1.51 KiB
+  66.fad83411.css
+  ..\release\cms\qrcode\css\chunk-3cec5e    6.20 KiB         2.99 KiB
+  aa.24966246.css
+  ..\release\cms\qrcode\css\chunk-5ace6d    6.09 KiB         1.42 KiB
+  12.3b34e16d.css
+  ..\release\cms\qrcode\css\chunk-ea7ceb    6.00 KiB         1.32 KiB
+  44.2542b5a0.css
+  ..\release\cms\qrcode\css\chunk-3f3a8a    5.59 KiB         1.44 KiB
+  e7.147e35e2.css
+  ..\release\cms\qrcode\css\chunk-44a529    5.31 KiB         1.40 KiB
+  0e.fe0b8bf9.css
+  ..\release\cms\qrcode\css\chunk-2ca031    5.21 KiB         1.44 KiB
+  64.b6d9037c.css
+  ..\release\cms\qrcode\css\chunk-43259b    5.04 KiB         1.36 KiB
+  f0.9d66572e.css
+  ..\release\cms\qrcode\css\chunk-4396f7    4.44 KiB         1.29 KiB
+  cb.c6c173e0.css
+  ..\release\cms\qrcode\css\chunk-1cc1c8    4.23 KiB         1.24 KiB
+  5d.b6506fef.css
+  ..\release\cms\qrcode\css\chunk-24baee    4.21 KiB         0.96 KiB
+  e6.b8b5c67d.css
+  ..\release\cms\qrcode\css\chunk-531c52    3.58 KiB         0.81 KiB
+  ff.0d56b332.css
+  ..\release\cms\qrcode\css\chunk-04a27e    3.52 KiB         0.95 KiB
+  9f.c6e688c9.css
+  ..\release\cms\qrcode\css\chunk-d40859    3.37 KiB         1.02 KiB
+  98.1953bf1f.css
+  ..\release\cms\qrcode\css\chunk-07f4fe    3.28 KiB         1.04 KiB
+  ce.d08f24b5.css
+  ..\release\cms\qrcode\css\chunk-1acf4e    3.10 KiB         0.98 KiB
+  e5.537824dd.css
+  ..\release\cms\qrcode\css\chunk-60510c    3.10 KiB         0.98 KiB
+  34.55caa4a2.css
+  ..\release\cms\qrcode\css\chunk-7b4da5    2.61 KiB         0.84 KiB
+  44.00593c2e.css
+  ..\release\cms\qrcode\css\chunk-78e2d3    1.91 KiB         0.67 KiB
+  2e.761710aa.css
+  ..\release\cms\qrcode\css\chunk-0ad52d    1.55 KiB         0.56 KiB
+  f4.c97601d1.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\release\cms\qrcode directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 12.51s.
+编译项目<<一户一码>>成功
+-------------------------------------------------
+开始打tag项目:<<一户一码>>
+tag 已经存在要先进行删除
+Deleted tag '2.5.0.001' (was 40550eb)
+tag已删除要进行git tag
+打tag项目:<<一户一码>>成功
+删除项目： 中的配置文件成功
+5秒后将自动退出本脚本：
+5
+4
+3
+2
+1
