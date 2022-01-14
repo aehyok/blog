@@ -11,20 +11,20 @@ current_path=$(cd $(dirname $0); pwd)
 # build_pathArray['dvs-park']="/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park"
 # build_pathArray['dvs-geography']="/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-geography"
 
-build_pathArray=(
+build_pathArray_app=(
 "/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app"
 "/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app"
 )
 
 function build_app_Function {
-  for ((i=0;i<${#build_pathArray[*]};i++))
+  for ((i=0;i<${#build_pathArray_app[*]};i++))
   do
-    project_path=${build_pathArray[i]}
-    echo -e "开始编译项目：${build_pathArray[i]} ";
-    cd $project_path
+    project_path_app=${build_pathArray_app[i]}
+    echo -e "开始编译项目：${build_pathArray_app[i]} ";
+    cd $project_path_app
     yarn build
-    echo -e "编译APP 项目路径为{${build_pathArray[i]}} 成功";
-    cd $current_path
-    echo "tagVersion=\"$1\" # <<${build_pathArray[i]}>> # $(date)" >> ./versions
+    echo -e "编译APP 项目路径为{${build_pathArray_app[i]}} 成功";
+    cd $project_path_app
+    echo "tagVersion=\"$1\" # <<${build_pathArray_app[i]}>> # $(date)" >> ./versions
   done
 }

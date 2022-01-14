@@ -53,36 +53,36 @@ do
   # echo -e "${key}  ----${project}"
   if [[ $project == *$key* ]] ;then
      if test $key = "c";  then
-      cd ${gitpull_pathArray[${key}]}
-      projectName=${projectList[$key]}
-      git checkout $branchVersion
-      echo -e "开始拉取项目:<<${projectName}>>";
-      git pull
-      echo -e "拉取项目<<${projectName}>>成功";
-      build_pc_Function  $version
-      echo -e "准备开始编译PC";
-      elif  test $key = "a"; then
-      cd ${gitpull_pathArray[${key}]}
-      projectName=${projectList[$key]}
-      git checkout $branchVersion
-      echo -e "开始拉取项目:<<${projectName}>>";
-      git pull
-      echo -e "拉取项目<<${projectName}>>成功";
-      build_app_Function  $version
-      echo -e "准备开始编译PC";  
+        cd ${gitpull_pathArray[${key}]}
+        projectName=${projectList[$key]}
+        git checkout $branchVersion
+        echo -e "开始拉取项目:<<${projectName}>>";
+        git pull
+        echo -e "拉取项目<<${projectName}>>成功";
+        build_pc_Function  $version
+        echo -e "准备开始编译PC";
+     elif  test $key = "a"; then
+        cd ${gitpull_pathArray[${key}]}
+        projectName=${projectList[$key]}
+        git checkout $branchVersion
+        echo -e "开始拉取项目:<<${projectName}>>";
+        git pull
+        echo -e "拉取项目<<${projectName}>>成功";
+        build_app_Function  $version
+        echo -e "准备开始编译PC";  
      else
-      cd ${gitpull_pathArray[${key}]}
-      projectName=${projectList[$key]}
-      git checkout $branchVersion
-      echo -e "开始拉取项目:<<${projectName}>>";
-      git pull
-      echo -e "拉取项目<<${projectName}>>成功";
-      echo '-------------------------------------------------'
-      echo -e "开始编译项目:<<${projectName}>>";
-      yarn build
-      echo -e "编译项目<<${projectName}>>成功";
-      echo '-------------------------------------------------'
-      echo -e "开始打tag项目:<<${projectName}>>";
+        cd ${gitpull_pathArray[${key}]}
+        projectName=${projectList[$key]}
+        git checkout $branchVersion
+        echo -e "开始拉取项目:<<${projectName}>>";
+        git pull
+        echo -e "拉取项目<<${projectName}>>成功";
+        echo '-------------------------------------------------'
+        echo -e "开始编译项目:<<${projectName}>>";
+        yarn build
+        echo -e "编译项目<<${projectName}>>成功";
+        echo '-------------------------------------------------'
+        echo -e "开始打tag项目:<<${projectName}>>";
     fi
 
     if [[ "$tag" == "" ]] ;then
