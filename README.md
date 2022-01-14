@@ -8,6 +8,18 @@
     - 破解工具 https://www.zzzmode.com/mytools/charles/
   - 前端实现录音
     - https://github.com/xiangyuecn/Recorder
+- 1月14日
+  - yarn build 已打包编译，并且配置nginx 后通过代理可访问接口
+  - 准备添加form表单配置前端页面
+- 1月13日
+  - 菜单管理和角色管理前端页面的添加
+- 1月12日
+  - 用户管理和字典管理页面的添加
+- 1月11日
+  - 指标管理页面布局调整
+- 1月10日
+  - 指标管理页面布局调整
+  - 简单修改布局调整
 - 1月9日
   - svg小图标制作工具 https://mastergo.com/file/49597598216304
   - 前端打包待处理（api请求处理）
