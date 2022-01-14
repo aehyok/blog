@@ -1,6 +1,7 @@
 # ## 当前脚本文件所在路径
 source ./versions # 版本文件历史记录
 source ./build-pc.sh
+source ./build-app.sh
 branchVersion="dev"
 current_path=$(cd $(dirname $0); pwd)
 
@@ -50,10 +51,8 @@ gitpull_pathArray["c"]="/e/work/git/dvs-2.x/dvs-server-ui-dev"
 for key in ${!gitpull_pathArray[@]}
 do
   # echo -e "${key}  ----${project}"
-  if [[ $project == *$key* ]]
-  then
-     if test $key = "c"; 
-     then
+  if [[ $project == *$key* ]] ;then
+     if test $key = "c";  then
       cd ${gitpull_pathArray[${key}]}
       projectName=${projectList[$key]}
       git checkout $branchVersion
@@ -62,7 +61,16 @@ do
       echo -e "拉取项目<<${projectName}>>成功";
       build_pc_Function  $version
       echo -e "准备开始编译PC";
-    else
+      elif  test $key = "a"; then
+      cd ${gitpull_pathArray[${key}]}
+      projectName=${projectList[$key]}
+      git checkout $branchVersion
+      echo -e "开始拉取项目:<<${projectName}>>";
+      git pull
+      echo -e "拉取项目<<${projectName}>>成功";
+      build_app_Function  $version
+      echo -e "准备开始编译PC";  
+     else
       cd ${gitpull_pathArray[${key}]}
       projectName=${projectList[$key]}
       git checkout $branchVersion
@@ -77,8 +85,7 @@ do
       echo -e "开始打tag项目:<<${projectName}>>";
     fi
 
-    if [[ "$tag" == "" ]] 
-    then
+    if [[ "$tag" == "" ]] ;then
       if test $version = $tagVersion ; then
         cd ${gitpull_pathArray[${key}]}
         echo 'tag 已经存在要先进行删除'
