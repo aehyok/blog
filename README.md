@@ -8,6 +8,15 @@
     - 破解工具 https://www.zzzmode.com/mytools/charles/
   - 前端实现录音
     - https://github.com/xiangyuecn/Recorder
+  - EFCore 使用
+    - https://www.cnblogs.com/tiaoshuidenong/p/14009432.html  
+
+- 1月15日
+  - EFCore 使用
+    - https://docs.microsoft.com/zh-cn/ef/core/cli/powershell
+    - mysql https://docs.microsoft.com/zh-cn/ef/core/providers/?tabs=dotnet-core-cli
+  - EFCore 可以链接MySql,以及通过数据表生成实体
+  - 用户管理简单的几个接口实现
 - 1月14日
   - yarn build 已打包编译，并且配置nginx 后通过代理可访问接口
   - 准备添加form表单配置前端页面
