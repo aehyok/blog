@@ -13,6 +13,9 @@
   - 可视化流程图
     - logic Flow和G6的了解
     - https://github.com/xiaoxian521/vue-pure-admin
+  - rust 教程
+    - https://github.com/sunface/rust-course
+    - https://course.rs/
 - 1月15日
   - EFCore 使用
     - https://docs.microsoft.com/zh-cn/ef/core/cli/powershell
