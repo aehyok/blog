@@ -10,7 +10,9 @@
     - https://github.com/xiangyuecn/Recorder
   - EFCore 使用
     - https://www.cnblogs.com/tiaoshuidenong/p/14009432.html  
-
+  - 可视化流程图
+    - logic Flow和G6的了解
+    - https://github.com/xiaoxian521/vue-pure-admin
 - 1月15日
   - EFCore 使用
     - https://docs.microsoft.com/zh-cn/ef/core/cli/powershell
