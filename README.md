@@ -16,6 +16,15 @@
   - rust 教程
     - https://github.com/sunface/rust-course
     - https://course.rs/
+  - icejs 待尝试 https://ice.work/docs/guide/basic/vite
+  - redux  https://www.redux.org.cn/docs/introduction/Ecosystem.html  
+
+- 1月21日 
+  - mac下链接Linux 
+  - fileZilla 上传文件
+  - vs2022预览版 安装到mac 安装.net 6.0
+- 1月16日 - 1月20日
+  - logicflow 流程图和流程数据进行关联
 - 1月15日
   - EFCore 使用
     - https://docs.microsoft.com/zh-cn/ef/core/cli/powershell
