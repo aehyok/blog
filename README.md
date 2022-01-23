@@ -18,7 +18,8 @@
     - https://course.rs/
   - icejs 待尝试 https://ice.work/docs/guide/basic/vite
   - redux  https://www.redux.org.cn/docs/introduction/Ecosystem.html  
-
+- 1月22日-1月23日
+  - .net core EF repository 模式搭建
 - 1月21日 
   - mac下链接Linux 
   - fileZilla 上传文件
