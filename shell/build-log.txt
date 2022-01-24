@@ -1,123 +1,229 @@
 tag 
-包含p------园区app
- 命令行中包含的版本号: 2.5.0.008
+包含a------村委app
+包含w------微信公众号
+ 命令行中包含的版本号: 2.5.0.011
 -------------------------------------------------
 Your branch is up to date with 'origin/dev'.
-开始拉取项目:<<园区app>>
-Already up to date.
-拉取项目<<园区app>>成功
--------------------------------------------------
-开始编译项目:<<园区app>>
+开始拉取项目:<<村委app>>
+Updating d743540..6e4f307
+Fast-forward
+ ffp-app/src/assets/images/home/handleTask.png      | Bin 0 -> 2584 bytes
+ .../src/components/editFarmers/eliminate-risk.vue  |   2 +-
+ ffp-app/src/components/item.vue                    |   9 +-
+ ffp-app/src/views/Home.vue                         |   2 +-
+ ffp-app/src/views/detection/detection-detail.vue   |  80 ++++++---------
+ ffp-app/src/views/detection/detection-object.vue   |   4 +-
+ ffp-app/src/views/home/home-Grid.vue               |  86 +++++++++-------
+ ffp-app/src/views/home/home-Modules.vue            | 111 ++++++++++++---------
+ ffp-app/src/views/home/home-News.vue               |  15 ++-
+ ffp-app/src/views/home/home-Swipe.vue              |  18 +++-
+ ffp-app/src/views/inspectRecord/record-index.vue   |   2 +-
+ ffp-app/src/views/inspectRecord/record-month.vue   |   3 +-
+ ffp-app/src/views/passMoPai/pass-moPai.vue         |  14 +--
+ ffp-app/src/views/task/fillInInformation.vue       |   6 +-
+ ffp-app/src/views/task/task-management.vue         |  10 +-
+ main-app/public/config.js                          |   4 +-
+ main-app/src/assets/main/banner/appbanner1.png     | Bin 0 -> 52656 bytes
+ main-app/src/assets/main/banner/appbanner2.png     | Bin 0 -> 76532 bytes
+ main-app/src/views/Home.vue                        |   6 +-
+ main-app/src/views/Mine.vue                        |   2 +-
+ 20 files changed, 208 insertions(+), 166 deletions(-)
+ create mode 100644 ffp-app/src/assets/images/home/handleTask.png
+ create mode 100644 main-app/src/assets/main/banner/appbanner1.png
+ create mode 100644 main-app/src/assets/main/banner/appbanner2.png
+拉取项目<<村委app>>成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app 
 yarn run v1.22.10
-$ vite build --emptyOutDir
-vite v2.1.5 building for production...
-transforming...
-✓ 713 modules transformed.
-rendering chunks...
-../release/cms/park/assets/Android.dfd4ee3d.png                  12.34kb
-../release/cms/park/assets/iPhone.73aac133.png                   11.56kb
-../release/cms/park/assets/icon_logo.629e8153.png                29.30kb
-../release/cms/park/assets/guide.127d2266.png                    38.96kb
-../release/cms/park/assets/content.542f54d1.png                  147.03kb
-../release/cms/park/index.html                                   0.77kb
-../release/cms/park/assets/index.c1f5d401.js                     115.91kb
-../release/cms/park/assets/Home.4db548a3.js                      10.78kb
-../release/cms/park/assets/index.5f02569f.js                     1.07kb
-../release/cms/park/assets/index.71e474af.js                     4.60kb
-../release/cms/park/assets/tabbar.d98bff4f.js                    1.33kb
-../release/cms/park/assets/index.6e158c68.js                     1.57kb
-../release/cms/park/assets/request.84c4c668.js                   16.89kb
-../release/cms/park/assets/index.71042bb0.js                     2.92kb
-../release/cms/park/assets/index.e279506f.js                     8.92kb
-../release/cms/park/assets/index.22b16bfd.js                     3.50kb
-../release/cms/park/assets/index.43d31e50.js                     2.76kb
-../release/cms/park/assets/ar.864ad7cf.js                        1.14kb
-../release/cms/park/assets/me.02592137.js                        155.17kb
-../release/cms/park/assets/index.4e7c6586.js                     1.42kb
-../release/cms/park/assets/index.f4ec9abf.js                     6.17kb
-../release/cms/park/assets/_commonjsHelpers.59e8ddea.js          0.34kb
-../release/cms/park/assets/products-publish.64c3d381.js          15.17kb
-../release/cms/park/assets/index.03fcdc26.js                     6.23kb
-../release/cms/park/assets/index.d15bc3d9.js                     1.55kb
-../release/cms/park/assets/use-refs.8a8b0fb4.js                  0.14kb
-../release/cms/park/assets/products-list.46be5b7d.js             3.91kb
-../release/cms/park/assets/index.d623b1a8.js                     8.55kb
-../release/cms/park/assets/products-details.095fc08d.js          3.87kb
-../release/cms/park/assets/index.7830d7b6.js                     0.46kb
-../release/cms/park/assets/recentnews-list.1e44c318.js           3.54kb
-../release/cms/park/assets/index.e7d4a062.js                     20.42kb
-../release/cms/park/assets/recentnews-details.8e379bde.js        1.73kb
-../release/cms/park/assets/test.de6e269b.js                      2.43kb
-../release/cms/park/assets/park-position.e1e7ee45.js             6.14kb
-../release/cms/park/assets/home-page.f3905f30.js                 2.01kb
-../release/cms/park/assets/area-of-base.df22ea05.js              1.78kb
-../release/cms/park/assets/list-of-crops.93b8e3b6.js             1.96kb
-../release/cms/park/assets/add-crops.d2fded2c.js                 2.00kb
-../release/cms/park/assets/vr-configuration.12aa94c9.js          1.91kb
-../release/cms/park/assets/park-Introduced.755da1d9.js           3.42kb
-../release/cms/park/assets/img-upload2.6e851088.js               12.74kb
-../release/cms/park/assets/index.f1f29b43.js                     1.53kb
-../release/cms/park/assets/login.2b33be61.js                     7.67kb
-../release/cms/park/assets/index.b41bf3af.js                     0.79kb
-../release/cms/park/assets/user.08d2811a.js                      0.48kb
-../release/cms/park/assets/native.2a94c819.js                    1.94kb
-../release/cms/park/assets/icon_logo.92bfe101.js                 0.05kb
-../release/cms/park/assets/icon_password.20dfff95.js             4.21kb
-../release/cms/park/assets/update-password.48e277d6.js           19.65kb
-../release/cms/park/assets/base64.cbc0d62c.js                    1.42kb
-../release/cms/park/assets/change-password.9809fb05.js           2.15kb
-../release/cms/park/assets/setting-up.36ace308.js                2.13kb
-../release/cms/park/assets/enterprise-information.1290a65e.js    7.43kb
-../release/cms/park/assets/account-information.a380c859.js       8.15kb
-../release/cms/park/assets/about-us.6d3e254f.js                  2.45kb
-../release/cms/park/assets/privacy-agreement.ead39a9f.js         4.23kb
-../release/cms/park/assets/download.41331028.js                  41.19kb
-../release/cms/park/assets/index.2a6a8010.css                    49.55kb
-../release/cms/park/assets/Home.9ee13f20.css                     4.56kb
-../release/cms/park/assets/index.b5ab3747.css                    1.44kb
-../release/cms/park/assets/index.aa862ed6.css                    1.53kb
-../release/cms/park/assets/request.96f5d3ad.css                  1.87kb
-../release/cms/park/assets/index.ffd5413e.css                    7.69kb
-../release/cms/park/assets/index.3a2eae47.css                    7.33kb
-../release/cms/park/assets/index.87037c9b.css                    1.33kb
-../release/cms/park/assets/index.9dbf406b.css                    0.96kb
-../release/cms/park/assets/ar.6995f6df.css                       0.05kb
-../release/cms/park/assets/me.25f66ad7.css                       0.78kb
-../release/cms/park/assets/index.efd4dc19.css                    2.83kb
-../release/cms/park/assets/index.dc56f6ce.css                    3.94kb
-../release/cms/park/assets/products-publish.79417db0.css         5.32kb
-../release/cms/park/assets/index.243cce5b.css                    2.74kb
-../release/cms/park/assets/products-list.0ed4a790.css            1.27kb
-../release/cms/park/assets/index.71398a87.css                    3.12kb
-../release/cms/park/assets/products-details.effad32b.css         3.35kb
-../release/cms/park/assets/index.083e801c.css                    1.03kb
-../release/cms/park/assets/recentnews-list.8ba32ec9.css          1.09kb
-../release/cms/park/assets/recentnews-details.2b6961bf.css       0.70kb
-../release/cms/park/assets/test.511ab1c4.css                     0.13kb
-../release/cms/park/assets/park-position.729e4a4a.css            2.23kb
-../release/cms/park/assets/list-of-crops.5c4a36af.css            0.89kb
-../release/cms/park/assets/add-crops.9dcceb50.css                0.12kb
-../release/cms/park/assets/park-Introduced.3949e494.css          1.03kb
-../release/cms/park/assets/img-upload2.6309c6ea.css              6.61kb
-../release/cms/park/assets/index.f1ecaf4a.css                    1.12kb
-../release/cms/park/assets/login.7abe25e0.css                    7.05kb
-../release/cms/park/assets/index.bdd42bf6.css                    0.37kb
-../release/cms/park/assets/update-password.91532c1a.css          0.85kb
-../release/cms/park/assets/change-password.ffaac4bd.css          0.14kb
-../release/cms/park/assets/setting-up.ed31a220.css               0.08kb
-../release/cms/park/assets/enterprise-information.ba982a73.css   0.07kb
-../release/cms/park/assets/account-information.6c1dcb2f.css      1.00kb
-../release/cms/park/assets/about-us.7e83b1ba.css                 0.45kb
-../release/cms/park/assets/privacy-agreement.3067b13c.css        0.17kb
-../release/cms/park/assets/download.d22b0698.css                 0.74kb
-Done in 11.57s.
-编译项目<<园区app>>成功
--------------------------------------------------
-开始打tag项目:<<园区app>>
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings下午3:33:40
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  img/appbanner.ce354529.png (303 KiB)
+  js/chunk-8b4b7d36.334673b1.js (573 KiB)
+  js/chunk-vendors.9dd894f2.js (1.34 MiB)
+  configImage/greenhouse(center).png (438 KiB)
+  configImage/greenhouse(door).png (393 KiB)
+  configImage/secondhouse(northwest).png (460 KiB)
+  scan/u1040.png (297 KiB)
+  scan/u1036.png (446 KiB)
+  scan/u1041.png (447 KiB)
+  scan/u1044.png (312 KiB)
+  scan/u825.jpg (254 KiB)
+  scan/u1039.png (306 KiB)
+  scan/u826.png (256 KiB)
+  scan/u1043.png (335 KiB)
+  scan/u1042.png (278 KiB)
+  scan/u87.png (262 KiB)
+  configImage/villageDoor.png (610 KiB)
+  scan/u829.png (250 KiB)
+  js/chunk-vendors.9dd894f2.js[base].gz (407 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.37 MiB)
+      js/chunk-vendors.9dd894f2.js
+      js/app.085322f4.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\app\js\chunk-vendors    1373.26 KiB      408.48 KiB
+  .9dd894f2.js
+  ..\..\release\cms\app\js\chunk-8b4b7d3    573.23 KiB       195.40 KiB
+  6.334673b1.js
+  ..\..\release\cms\app\js\app.085322f4.    27.80 KiB        8.41 KiB
+  js
+  ..\..\release\cms\app\js\chunk-e82dc61    17.60 KiB        7.99 KiB
+  6.d6e8b83f.js
+  ..\..\release\cms\app\js\chunk-57c072f    7.66 KiB         2.75 KiB
+  0.d9a03174.js
+  ..\..\release\cms\app\config.js           2.00 KiB         0.53 KiB
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\app directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 64.78s.
+编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app} 成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app 
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings下午3:34:51
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  js/about.7b930181.js (550 KiB)
+  js/app.d4404964.js (385 KiB)
+  js/chunk-1d2ea086.2f983c43.js (1.68 MiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (934 KiB)
+      js/about.7b930181.js
+      js/app.d4404964.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\app\child\ffp-app\js    1715.39 KiB      560.79 KiB
+  \chunk-1d2ea086.2f983c43.js
+  ..\..\release\cms\app\child\ffp-app\js    549.71 KiB       182.11 KiB
+  \about.7b930181.js
+  ..\..\release\cms\app\child\ffp-app\js    384.61 KiB       264.17 KiB
+  \app.d4404964.js
+  ..\..\release\cms\app\child\ffp-app\js    6.91 KiB         2.13 KiB
+  \chunk-15238c09.bf2c2d62.js
+  ..\..\release\cms\app\child\ffp-app\js    6.00 KiB         2.59 KiB
+  \chunk-74103c12.cb66b80f.js
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\app\child\ffp-app directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 71.57s.
+编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app} 成功
+准备开始编译PC
 tag 已经存在要先进行删除
-Deleted tag '2.5.0.008' (was dfbe403)
 tag已删除要进行git tag
-打tag项目:<<园区app>>成功
+打tag项目:<<村委app>>成功
+Your branch is up to date with 'origin/dev'.
+开始拉取项目:<<微信公众号>>
+Updating 8237b79..faebb97
+Fast-forward
+ src/views/Mine.vue | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+拉取项目<<微信公众号>>成功
+-------------------------------------------------
+开始编译项目:<<微信公众号>>
+yarn run v1.22.10
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings下午3:35:30
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  img/familyQrcodebg.ce915199.png (258 KiB)
+  img/bgimg.edfcba02.png (494 KiB)
+  img/familyIntegralDetailBanner.ed11dd86.png (323 KiB)
+  js/app.4b4c1db4.js (1.46 MiB)
+  css/chunk-9c43307e.e4010391.css (408 KiB)
+  js/chunk-9c43307e.c9c8f14b.js (1.2 MiB)
+  mp4/k0384ilytx2.p712.1.mp4 (16.9 MiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.53 MiB)
+      css/app.abf4dfa6.css
+      js/app.4b4c1db4.js
+
+
+  File                                      Size             Gzipped
+
+  ..\release\cms\wechat\js\app.4b4c1db4.    1499.40 KiB      491.38 KiB
+  js
+  ..\release\cms\wechat\js\chunk-9c43307    1229.95 KiB      445.80 KiB
+  e.c9c8f14b.js
+  ..\release\cms\wechat\config.js           13.24 KiB        1.46 KiB
+  ..\release\cms\wechat\css\chunk-9c4330    407.57 KiB       59.10 KiB
+  7e.e4010391.css
+  ..\release\cms\wechat\css\app.abf4dfa6    68.66 KiB        30.91 KiB
+  .css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\release\cms\wechat directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 31.38s.
+编译项目<<微信公众号>>成功
+-------------------------------------------------
+开始打tag项目:<<微信公众号>>
+tag 已经存在要先进行删除
+Deleted tag '2.5.0.011' (was af55e72)
+tag已删除要进行git tag
+打tag项目:<<微信公众号>>成功
+删除项目： 中的配置文件成功
+删除项目： 中的配置文件成功
+[dev 69efb36f] build：前端app、qrocde、wechat、park、console(child)commit-version:2.5.0.011
+ 22 files changed, 18 insertions(+), 18 deletions(-)
+ create mode 100644 cms/app/child/ffp-app/js/app.d4404964.js
+ delete mode 100644 cms/app/child/ffp-app/js/app.f6f92210.js
+ rename cms/app/child/ffp-app/js/{chunk-3c4cb572.2d0546a5.js => chunk-1d2ea086.2f983c43.js} (72%)
+ create mode 100644 cms/app/img/appbanner1.c03ef308.png
+ create mode 100644 cms/app/img/appbanner2.ed541f1a.png
+ rename cms/app/js/{app.9157a1a7.js => app.085322f4.js} (90%)
+ create mode 100644 cms/app/js/app.085322f4.js[base].gz
+ delete mode 100644 cms/app/js/app.9157a1a7.js[base].gz
+ delete mode 100644 cms/app/js/chunk-14f50ed3.c32ebdec.js
+ delete mode 100644 cms/app/js/chunk-14f50ed3.c32ebdec.js[base].gz
+ delete mode 100644 cms/app/js/chunk-1b1fd732.a33c6471.js[base].gz
+ rename cms/app/js/{chunk-1b1fd732.a33c6471.js => chunk-8b4b7d36.334673b1.js} (50%)
+ create mode 100644 cms/app/js/chunk-8b4b7d36.334673b1.js[base].gz
+ create mode 100644 cms/app/js/chunk-e82dc616.d6e8b83f.js
+ create mode 100644 cms/app/js/chunk-e82dc616.d6e8b83f.js[base].gz
+ rename cms/wechat/css/{chunk-a6a3b636.d3414580.css => chunk-9c43307e.e4010391.css} (99%)
+ rename cms/wechat/js/{app.72eec470.js => app.4b4c1db4.js} (99%)
+ rename cms/wechat/js/{chunk-a6a3b636.55bd12b3.js => chunk-9c43307e.c9c8f14b.js} (59%)
 5秒后将自动退出本脚本：
 5
 4
