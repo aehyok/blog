@@ -18,8 +18,12 @@
     - https://course.rs/
   - icejs 待尝试 https://ice.work/docs/guide/basic/vite
   - redux  https://www.redux.org.cn/docs/introduction/Ecosystem.html  
+- 1月25日
+  - 将.net core接口设置为可关闭命令行窗口运行
+- 1月24日
+  - 流程类型：列表，添加、编辑、删除已调用接口
 - 1月22日-1月23日
-  - .net core EF repository 模式搭建
+  - .net core EF repository 模式搭建 (上下文一致的问题待处理)
 - 1月21日 
   - mac下链接Linux 
   - fileZilla 上传文件
