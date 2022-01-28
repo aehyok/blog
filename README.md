@@ -18,6 +18,13 @@
     - https://course.rs/
   - icejs 待尝试 https://ice.work/docs/guide/basic/vite
   - redux  https://www.redux.org.cn/docs/introduction/Ecosystem.html  
+  - wiki https://www.5axxw.com/wiki/
+- 1月28日
+  - 实现新增（根菜单和子系统）、删除（要判断是否有子菜单，请先删除子菜单）
+- 1月27日
+  - 实现菜单管理的  新增、编辑、修改和列表、以及递归实现列表转换树  
+- 1月26日
+  - 简单整理将要做的东西，react实现工具，vue来对接工具实现业务，.net core 实现API
 - 1月25日
   - 将.net core接口设置为可关闭命令行窗口运行
 - 1月24日
