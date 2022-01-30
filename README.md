@@ -19,6 +19,15 @@
   - icejs 待尝试 https://ice.work/docs/guide/basic/vite
   - redux  https://www.redux.org.cn/docs/introduction/Ecosystem.html  
   - wiki https://www.5axxw.com/wiki/
+  - graphql 
+    - https://graphql.cn/
+    - https://graphql.cn/code/#c-net
+- 1月30日
+  - 简单整理未来计划的雏形，对2022年规划的具体内容进行了调整，可以说是要做的事情更加具体了。
+  - 29日和30日早上看了一部电影：致命魔术（军总推荐的）
+- 1月29日
+  - 菜单管理功能测试以及异常修复，基本功能已经有了。
+  - TODO 后期可考虑复制、粘贴、导入、导出、批量删除等，暂时可以先不做。
 - 1月28日
   - 实现新增（根菜单和子系统）、删除（要判断是否有子菜单，请先删除子菜单）
 - 1月27日
