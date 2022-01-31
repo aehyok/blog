@@ -22,8 +22,8 @@ module.exports = {
         ]
     ],
     // 网站标题及描述
-    title: 'EL-ADMIN',
-    description: '一个简单且易上手的 Spring boot 后台管理框架',
+    title: 'aehyok',
+    description: '一个简单易上手、帮助开发者快速开发的前后端全栈框架',
     // 主题配置
     themeConfig: {
         // 提取markdown中h2 和 h3 标题，显示在侧边栏上。
@@ -33,30 +33,67 @@ module.exports = {
         // logo
         subSidebar: 'auto',
         logo: '/logo/small.png',
-        author: 'ZhengJie',
+        author: 'aehyok',
         nav: [
+            { text: '项目介绍', link: '/intro/'},
             { text: '开发指南', link: '/guide/'},
             { text: '常见问题', link: '/problem/'},
+            // 下拉列表
+            {
+                text: '常用工具',
+                items: [
+                    {
+                        text: 'AST Explorer',
+                        link: 'https://astexplorer.net/'
+                    },
+                    {
+                        text: '草料二维码',
+                        link: 'https://cli.im'
+                    }
+                ]
+            },
             { text: '更新日志', link: '/version/'},
             { text: '特别鸣谢', link: '/thanks/'},
             { text: '体验地址', link: 'https://el-admin.xin'},
             { text: '作者博客', link: 'https://www.ydyno.com'},
-            // 下拉列表
-            {
-                text: '源码下载',
-                items: [
-                    {
-                        text: 'Github',
-                        link: 'https://github.com/elunez/eladmin'
-                    },
-                    {
-                        text: 'Gitee',
-                        link: 'https://gitee.com/elunez/eladmin'
-                    }
-                ]
-            }
         ],
         sidebar: {
+            '/intro/': [
+                {
+                    title: '项目介绍',
+                    collapsable: false,
+                    children: [
+                        '/intro/',
+                        '/intro/kslj',
+                        '/intro/ksks',
+                        '/intro/hdsc',
+                        '/intro/qdsc',
+                        '/intro/xmbs'
+                    ]
+                },
+                {
+                    title: '前端配置工具端',
+                    collapsable: false,
+                    children: [
+                        '/intro/gxdm',
+                        '/intro/bqsm'
+                    ]
+                },
+                {
+                    title: '前端应用渲染端',
+                    collapsable: false,
+                    children: [
+                        '/intro/donation'
+                    ]
+                },
+                {
+                    title: '后端API提供端',
+                    collapsable: false,
+                    children: [
+                        '/intro/donation'
+                    ]
+                }
+            ],
             '/guide/': [
                 {
                     title: '指南',

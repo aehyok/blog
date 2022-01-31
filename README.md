@@ -1,4 +1,4 @@
-# EL-ADMIN-DOC
+# AEHYOk-BLOG-DOC
 
 EL-ADMIN 文档源码
 
@@ -15,7 +15,7 @@ yarn docs:build
 ```
 
 ## License
-[Version 2.0](https://github.com/elunez/eladmin-doc/blob/master/LICENSE)
+[Version 2.0](https://github.com/aehyok/blog-doc/master/LICENSE)
 
 
 >Powered by [vuepress](https://vuepress.vuejs.org/zh/)

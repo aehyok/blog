@@ -4,17 +4,19 @@ heroImage: /logo/logo.png
 actionText: 快速开始 →
 actionLink: /guide/
 features:
-- title: 技术栈
-  details: 使用 SpringBoot、Jpa、Security、Redis、Vue 等前后端前沿技术开发。
-- title: 模块化
-  details: 后端采用按功能分模块开发方式，提升开发，测试效率。
+- title: 后端技术栈
+  details: 使用 .net 6.0最新后端API框架：.net6.0++EFCore+WebApi+MySql
+- title: 前端配置工具技术栈
+  details: react最新版本： umi3+react+antd-pro
+- title: 前端应用技术栈
+  details: vue最新技术栈：PC端 vue3+Element Plus 全家桶  
 - title: 高效率
-  details: 项目简单可配，内置代码生成器，配置好表信息就能一键生成前后端代码。
+  details: 项目简单可配，内置代码配置渲染器，配置好后可简单调用即可展示使用。
 - title: 分离式
-  details: 前后端完全分离，前端基于 Vue，后端基于 Spring boot。
-- title: 响应式
-  details: 支持电脑、平板、手机等所有主流设备访问。
+  details: 前后端完全分离，前端分为配置工具端和应用渲染端。
 - title: 易用性
   details: 几乎可用于所有Web项目的开发，如 OA、Cms，网址后台管理等。
-footer: © ZhengJie 2018 - 2021 | 浙ICP备18005431号-7
+- title: 扩展性
+  details: 目前刚开始规划为PC端，后期会慢慢加入移动端 app、小程序、请应用等。  
+footer: © 珩行天下 2022 - 2022 | 粤ICP备aehyok号-001
 ---
