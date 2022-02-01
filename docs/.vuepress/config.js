@@ -23,7 +23,7 @@ module.exports = {
     ],
     // 网站标题及描述
     title: 'aehyok',
-    description: '一个简单易上手、帮助开发者快速开发的前后端全栈框架',
+    description: '一个简单易上手快速开发的全栈框架',
     // 主题配置
     themeConfig: {
         // 提取markdown中h2 和 h3 标题，显示在侧边栏上。
@@ -64,7 +64,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '/intro/',
-                        '/intro/kslj',
+                        '/intro/xmjj',
                         '/intro/ksks',
                         '/intro/hdsc',
                         '/intro/qdsc',
