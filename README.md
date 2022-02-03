@@ -26,6 +26,13 @@
     - https://el-admin.xin/nested/menu1/menu1-1  
   - markdown 下的timeline时间轴 
     - https://markdown.jianguoyun.com/2945.html
+- 2月3日
+  - 字典类型接口对接，字典接口待对接    
+- 2月2日
+  - 深圳疫情再起，又要折腾一阵子了
+  - 字典接口和前端调测，完成四分之一
+  - 山月面试查看（山月模拟面试 选集 12）
+  - 山月个人博客--http://shanyue.tech/
 - 2月1日
   - 早起宝安公园溜达了一圈
   - vuepress文档目录
