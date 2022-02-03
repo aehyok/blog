@@ -27,7 +27,8 @@
   - markdown 下的timeline时间轴 
     - https://markdown.jianguoyun.com/2945.html
 - 2月3日
-  - 字典类型接口对接，字典接口待对接    
+  - 字典类型接口对接，字典接口待对接  
+  - BFF https://juejin.cn/post/6844903959333699598  
 - 2月2日
   - 深圳疫情再起，又要折腾一阵子了
   - 字典接口和前端调测，完成四分之一
