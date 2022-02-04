@@ -26,6 +26,10 @@
     - https://el-admin.xin/nested/menu1/menu1-1  
   - markdown 下的timeline时间轴 
     - https://markdown.jianguoyun.com/2945.html
+- 2月4日
+  - TODO 字典接口初步对接完毕，字典子节点添加待处理，树状字典
+  - 准备开始处理，Table字典列表配置页面
+  - 山月 小视频 1、模块化 2、AST 3、运行时
 - 2月3日
   - 字典类型接口对接，字典接口待对接  
   - BFF https://juejin.cn/post/6844903959333699598  
