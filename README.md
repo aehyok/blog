@@ -26,6 +26,10 @@
     - https://el-admin.xin/nested/menu1/menu1-1  
   - markdown 下的timeline时间轴 
     - https://markdown.jianguoyun.com/2945.html
+- 2月5日
+  - 指标管理的useModel使用
+  - 参数列表和结果列表数据待继续绑定处理
+  - 指标管理接口整理    
 - 2月4日
   - TODO 字典接口初步对接完毕，字典子节点添加待处理，树状字典
   - 准备开始处理，Table字典列表配置页面
