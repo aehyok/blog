@@ -26,6 +26,13 @@
     - https://el-admin.xin/nested/menu1/menu1-1  
   - markdown 下的timeline时间轴 
     - https://markdown.jianguoyun.com/2945.html
+  - 低代码参考
+    - https://github.com/H5-Dooring/dooringx
+    - http://x.dooring.cn/editor/home
+- 2月6日
+  - 指标管理中参数列表的编辑和保存、结果字段列表编辑和保存、指标保存接口已调用未生效待查看后端接口
+  - shell bash https://www.bilibili.com/video/BV1ah411R7W6?p=1&share_medium=android&share_plat=android&share_session_id=e9bad094-c68f-4911-9949-711f3b97ddf2&share_source=WEIXIN&share_tag=s_i&timestamp=1644103644&unique_k=hs2J7hF
+  - snipaste mac下下载使用    
 - 2月5日
   - 指标管理的useModel使用
   - 参数列表和结果列表数据待继续绑定处理
