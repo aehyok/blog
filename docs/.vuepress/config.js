@@ -22,7 +22,7 @@ module.exports = {
         ]
     ],
     // 网站标题及描述
-    title: 'aehyok',
+    title: '珩行天下',
     description: '一个简单易上手快速开发的全栈框架',
     // 主题配置
     themeConfig: {
@@ -33,7 +33,7 @@ module.exports = {
         // logo
         subSidebar: 'auto',
         logo: '/logo/small.png',
-        author: 'aehyok',
+        author: '珩行天下',
         nav: [
             { text: '项目介绍', link: '/intro/'},
             { text: '开发指南', link: '/guide/'},

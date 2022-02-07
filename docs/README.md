@@ -5,11 +5,11 @@ actionText: 快速开始 →
 actionLink: /guide/
 features:
 - title: 后端技术栈
-  details: .net6.0+EFCore+WebApi+MySql
+  details: .Net6.0+EFCore+WebApi+MySql
 - title: 前端配置工具技术栈
-  details: umi3+react+antd-pro
+  details: umi3+react+antd(pro)
 - title: 前端应用技术栈
-  details: PC端 vue3+Element Plus 全家桶  
+  details: PC端 vue3+Element Plus
 - title: 高效率
   details: 项目简单可配，内置代码配置渲染器，配置好后可简单调用即可展示使用。
 - title: 易用性
