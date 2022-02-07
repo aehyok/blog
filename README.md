@@ -31,7 +31,8 @@
     - http://x.dooring.cn/editor/home
 - 2月7日
   - 指标管理左侧树添加后，保存时刷新列表处理 https://www.cnblogs.com/yxfboke/p/14837279.html  还未完成
-  - 今天主要把指标管理功能优化一下
+  - 今天主要把指标管理功能优化一下，主要功能都已可以使用了
+  - form 表单接口已实现，待前端调试
 - 2月6日
   - 指标管理中参数列表的编辑和保存、结果字段列表编辑和保存、指标保存接口已调用未生效待查看后端接口
   - shell bash https://www.bilibili.com/video/BV1ah411R7W6?p=1&share_medium=android&share_plat=android&share_session_id=e9bad094-c68f-4911-9949-711f3b97ddf2&share_source=WEIXIN&share_tag=s_i&timestamp=1644103644&unique_k=hs2J7hF
