@@ -30,7 +30,8 @@
     - https://github.com/H5-Dooring/dooringx
     - http://x.dooring.cn/editor/home
 - 2月8日
-  - 最近搞完form表单准备稍微研究一下 http://x.dooring.cn/editor/home 如何操作的    
+  - 最近搞完form表单准备稍微研究一下 http://x.dooring.cn/editor/home 如何操作的
+  - form表单基础功能已对接接口，字段配置正则列表和字段的特殊属性待处理    
 - 2月7日
   - 指标管理左侧树添加后，保存时刷新列表处理 https://www.cnblogs.com/yxfboke/p/14837279.html  还未完成
   - 今天主要把指标管理功能优化一下，主要功能都已可以使用了
