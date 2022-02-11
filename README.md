@@ -29,10 +29,15 @@
   - 低代码参考
     - https://github.com/H5-Dooring/dooringx
     - http://x.dooring.cn/editor/home
+- 2月11日
+  - 用systemctl nginx 托管.netcore 应用
+  - https://www.cnblogs.com/wyy1234/p/10692036.html
 - 2月10日
   - table列表中配置自定义html，如何在应用层进行解析执行
    - https://blog.csdn.net/z1832729975/article/details/102148778
    - https://www.cnblogs.com/zhangfengyang/p/5526024.html
+  - 重装了win10系统
+  - vue-qiankun 项目由于element-plus正式版发布，依赖库需要重装，于是重新创建项目进行移植 
 - 2月9日
   - table列表基础配置也与应用一起对接完毕（细节处理待10日继续优化）
   - form表单基础配置也与应用一起对接完毕（细节处理待10日继续优化）
