@@ -35,7 +35,12 @@
     - https://codesandbox.io/
   - IAAS、PAAS、SAAS  
     - http://www.ruanyifeng.com/blog/2017/07/iaas-paas-saas.html
-
+- 2月12日
+  - pnpm的好处
+    - https://cloud.tencent.com/developer/article/1927549
+    - https://juejin.cn/post/6932046455733485575
+    - vue-qiankun main wepack-app map-app 三个项目都已升级
+    - nvm管理node版本
 - 2月11日
   - 用systemctl nginx 托管.netcore 应用
   - https://www.cnblogs.com/wyy1234/p/10692036.html
