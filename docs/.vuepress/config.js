@@ -99,6 +99,7 @@ module.exports = {
                   title: '基础',
                   collapsable: false,
                   children: [
+                    '/guide/intro',  
                     '/guide/installation',
                     '/guide/introduction',
                     '/guide/instance',
