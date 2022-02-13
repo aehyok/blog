@@ -112,7 +112,101 @@ module.exports = {
                     '/guide/forms',
                     '/guide/component-basics'
                   ]
-                }  
+                },
+                {
+                  title: '深入组件',
+                  collapsable: false,
+                  children: [
+                    '/guide/component-registration',
+                    '/guide/component-props',
+                    '/guide/component-attrs',
+                    '/guide/component-custom-events',
+                    '/guide/component-slots',
+                    '/guide/component-provide-inject',
+                    '/guide/component-dynamic-async',
+                    '/guide/component-template-refs',
+                    '/guide/component-edge-cases'
+                  ]
+                },
+                {
+                  title: '过渡 & 动画',
+                  collapsable: false,
+                  children: [
+                    '/guide/transitions-overview',
+                    '/guide/transitions-enterleave',
+                    '/guide/transitions-list',
+                    '/guide/transitions-state'
+                  ]
+                },
+                {
+                  title: '可复用 & 组合',
+                  collapsable: false,
+                  children: [
+                    {
+                      title: '组合式 API',
+                      children: [
+                        '/guide/composition-api-introduction',
+                        '/guide/composition-api-setup',
+                        '/guide/composition-api-lifecycle-hooks',
+                        '/guide/composition-api-provide-inject',
+                        '/guide/composition-api-template-refs'
+                      ]
+                    },
+                    '/guide/mixins',
+                    '/guide/custom-directive',
+                    '/guide/teleport',
+                    '/guide/render-function',
+                    '/guide/plugins'
+                  ]
+                },
+                {
+                  title: '高阶指南',
+                  collapsable: false,
+                  children: [
+                    '/guide/web-components',
+                    {
+                      title: '响应性',
+                      children: [
+                        '/guide/reactivity',
+                        '/guide/reactivity-fundamentals',
+                        '/guide/reactivity-computed-watchers'
+                      ]
+                    },
+                    '/guide/optimizations',
+                    '/guide/change-detection'
+                  ]
+                },
+                {
+                  title: '工具',
+                  collapsable: false,
+                  children: [
+                    '/guide/single-file-component',
+                    '/guide/testing',
+                    '/guide/typescript-support',
+                    '/guide/mobile',
+                    '/guide/tooling/deployment'
+                  ]
+                },
+                {
+                  title: '规模化',
+                  collapsable: false,
+                  children: [
+                    '/guide/routing',
+                    '/guide/state-management',
+                    '/guide/ssr',
+                    '/guide/security'
+                  ]
+                },
+                {
+                  title: '无障碍',
+                  collapsable: false,
+                  children: [
+                    '/guide/a11y-basics',
+                    '/guide/a11y-semantics',
+                    '/guide/a11y-standards',
+                    '/guide/a11y-resources'
+                  ]
+                }
               ],
             '/problem/': [
                 '/problem/',
