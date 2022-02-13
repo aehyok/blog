@@ -36,7 +36,7 @@ module.exports = {
         author: '珩行天下',
         nav: [
             { text: '项目介绍', link: '/intro/'},
-            { text: '开发指南', link: '/guide/'},
+            { text: 'vue3基础入门', link: '/guide/'},
             { text: '常见问题', link: '/problem/'},
             // 下拉列表
             {
@@ -96,33 +96,24 @@ module.exports = {
             ],
             '/guide/': [
                 {
-                    title: '指南',
-                    collapsable: false,
-                    children: [
-                        '/guide/',
-                        '/guide/kslj',
-                        '/guide/ksks',
-                        '/guide/hdsc',
-                        '/guide/qdsc',
-                        '/guide/xmbs'
-                    ]
-                },
-                {
-                    title: '其它',
-                    collapsable: false,
-                    children: [
-                        '/guide/gxdm',
-                        '/guide/bqsm'
-                    ]
-                },
-                {
-                    title: '捐赠',
-                    collapsable: false,
-                    children: [
-                        '/guide/donation'
-                    ]
-                }
-            ],
+                  title: '基础',
+                  collapsable: false,
+                  children: [
+                    '/guide/installation',
+                    '/guide/introduction',
+                    '/guide/instance',
+                    '/guide/template-syntax',
+                    '/guide/data-methods',
+                    '/guide/computed',
+                    '/guide/class-and-style',
+                    '/guide/conditional',
+                    '/guide/list',
+                    '/guide/events',
+                    '/guide/forms',
+                    '/guide/component-basics'
+                  ]
+                }  
+              ],
             '/problem/': [
                 '/problem/',
             ],
