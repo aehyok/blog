@@ -33,8 +33,12 @@
     - https://www.infoq.cn/article/GOVeqCj4WL30dG6dBerw
   - 代码在线运行
     - https://codesandbox.io/
+    - https://codepen.io/team/Vue/pen/poReOvE 
+    - https://stackblitz.com/
   - IAAS、PAAS、SAAS  
     - http://www.ruanyifeng.com/blog/2017/07/iaas-paas-saas.html
+- 2月13日
+  - vuepress blog-doc vue3官网文档梳理一遍，到3月底，不定期有空就修改一些
 - 2月12日
   - pnpm的好处
     - https://cloud.tencent.com/developer/article/1927549
