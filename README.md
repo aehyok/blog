@@ -37,6 +37,19 @@
     - https://stackblitz.com/
   - IAAS、PAAS、SAAS  
     - http://www.ruanyifeng.com/blog/2017/07/iaas-paas-saas.html
+  - CORS Cross Origin Resource Shareing 跨域资源共享
+    - https://www.cnblogs.com/zhaijiahui/p/14626370.html
+    - https://www.cnblogs.com/fnz0/p/15803011.html
+    - nginx详解 https://www.cnblogs.com/48xz/p/15781821.html
+  - http状态码
+    - https://www.cnblogs.com/TankXiao/archive/2013/01/08/2818542.html
+  - window 10 设置右下角显示秒钟
+    - https://jingyan.baidu.com/article/4ae03de3e3c3d03eff9e6be7.html  
+- 2月14日
+  - 计划
+    - qiankun 主应用和子应用框架通讯 [x]
+  - 完成
+
 - 2月13日
   - vuepress blog-doc vue3官网文档梳理一遍，到3月底，不定期有空就修改一些
 - 2月12日
