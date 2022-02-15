@@ -27,6 +27,7 @@
   - markdown 下的timeline时间轴 
     - https://markdown.jianguoyun.com/2945.html
   - 低代码参考
+    - 可视化大屏http://v6.dooring.cn/beta/editor
     - https://github.com/H5-Dooring/dooringx
     - http://x.dooring.cn/editor/home
     - https://www.huxiu.com/article/410080.html
@@ -45,11 +46,18 @@
     - https://www.cnblogs.com/TankXiao/archive/2013/01/08/2818542.html
   - window 10 设置右下角显示秒钟
     - https://jingyan.baidu.com/article/4ae03de3e3c3d03eff9e6be7.html  
+  - 前端编译 
+    - https://juejin.cn/post/6958347736924192782
+    - https://zhuanlan.zhihu.com/p/36301857
+- 2月15日
+  - 了解 https://ide.code.fun/工具
+  - 下载PS，打开PSD文件，然后通过插件，导入到code.fun,然后在code.fun查看页面dom，以及生成源码，粘贴复制到vscode 即可预览
+  - 实现接口指标可以传递参数进行过滤，
+  - C qiankun 子应用中扫一扫功能无法实现，移植到主应用然后进行跳转即可
 - 2月14日
   - 计划
-    - qiankun 主应用和子应用框架通讯 [x]
-  - 完成
-
+    - qiankun 主应用和子应用框架通讯 [已完成]
+  - 将JavaScript中eval 找到new Function来替换，但存在问题（调用外部函数时找不到定义）
 - 2月13日
   - vuepress blog-doc vue3官网文档梳理一遍，到3月底，不定期有空就修改一些
 - 2月12日
