@@ -49,14 +49,18 @@
   - 前端编译 
     - https://juejin.cn/post/6958347736924192782
     - https://zhuanlan.zhihu.com/p/36301857
+- 2月16日
+  - TODO 接口分页还未实现、字段排序功能
+  - TODO form表单 正则的编辑、其他属性的编辑    
 - 2月15日
   - 了解 https://ide.code.fun/工具
   - 下载PS，打开PSD文件，然后通过插件，导入到code.fun,然后在code.fun查看页面dom，以及生成源码，粘贴复制到vscode 即可预览
-  - 实现接口指标可以传递参数进行过滤，
-  - C qiankun 子应用中扫一扫功能无法实现，移植到主应用然后进行跳转即可
+  - 实现接口指标可以传递参数进行过滤
+  - vue3中 可传递参数给指标接口
+  - C qiankun 子应用中扫一扫功能无法实现，移植到主应用然后进行跳转即可 [已完成]
 - 2月14日
   - 计划
-    - qiankun 主应用和子应用框架通讯 [已完成]
+    - C qiankun 主应用和子应用框架通讯 [已完成]
   - 将JavaScript中eval 找到new Function来替换，但存在问题（调用外部函数时找不到定义）
 - 2月13日
   - vuepress blog-doc vue3官网文档梳理一遍，到3月底，不定期有空就修改一些
