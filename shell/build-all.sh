@@ -147,4 +147,4 @@ do
   echo -e $i;sleep 1
 done
 exit
-## 执行脚本  sh build-all.sh  -v 2.5.0.001 -p awqpc  |tee build-log.txt
+## 执行脚本  sh build-all.sh  -v 2.5.1.00x -p a  |tee build-log.txt

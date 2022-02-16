@@ -49,9 +49,14 @@
   - 前端编译 
     - https://juejin.cn/post/6958347736924192782
     - https://zhuanlan.zhihu.com/p/36301857
+
+
 - 2月16日
   - TODO 接口分页还未实现、字段排序功能
   - TODO form表单 正则的编辑、其他属性的编辑    
+  - typescript 各种类型 https://zhuanlan.zhihu.com/p/120802610
+  - vue3 keepalive 遇到的问题，需要在Component组件上加Key
+    - https://www.cnblogs.com/chailuG/p/15775185.html
 - 2月15日
   - 了解 https://ide.code.fun/工具
   - 下载PS，打开PSD文件，然后通过插件，导入到code.fun,然后在code.fun查看页面dom，以及生成源码，粘贴复制到vscode 即可预览
