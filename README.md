@@ -32,6 +32,9 @@
     - http://x.dooring.cn/editor/home
     - https://www.huxiu.com/article/410080.html
     - https://www.infoq.cn/article/GOVeqCj4WL30dG6dBerw
+    - https://www.zhihu.com/question/493891614/answer/2264072484
+    - https://www.zhihu.com/question/514763047/answer/2339539512
+    - https://mp.weixin.qq.com/s/igQXhr8xSpTP1sU-2ZW5yA
   - 代码在线运行
     - https://codesandbox.io/
     - https://codepen.io/team/Vue/pen/poReOvE 
@@ -49,8 +52,12 @@
   - 前端编译 
     - https://juejin.cn/post/6958347736924192782
     - https://zhuanlan.zhihu.com/p/36301857
-
-
+  - 想法
+    - 指标管理中定义的指标算法，后期可以考虑动态生成，根据数据表定义进行关联拼接[感觉上是靠谱的但实现起来有点麻烦]
+- 2月17日
+  - vant H5 form表单开始[已可运行，待优化补充]
+  - 购买华为源服务器 [已完成]
+  - 并在服务器上使用docker、将react项目发布上去了[已完成]
 - 2月16日
   - TODO 接口分页还未实现、字段排序功能
   - TODO form表单 正则的编辑、其他属性的编辑 [待继续]    

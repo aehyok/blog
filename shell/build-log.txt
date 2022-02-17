@@ -1,79 +1,192 @@
 tag 
+包含a------村委app
 包含c------pc后台管理
- 命令行中包含的版本号: 2.5.1.00x
+ 命令行中包含的版本号: 2.5.1.00xx
 -------------------------------------------------
 Your branch is up to date with 'origin/dev'.
-开始拉取项目:<<pc后台管理>>
-Updating 6d09f956..14abf6dc
+开始拉取项目:<<村委app>>
+Updating 9e9f1b5..729e529
 Fast-forward
- .../components/form/input/item-view/selectView.vue | 226 +++++-----
- common/components/table/index.vue                  |  16 +-
- common/components/tree-above.vue                   | 142 ++++++
- dvs-base/src/assets/images/icon-affair1.png        | Bin 0 -> 710 bytes
- dvs-base/src/assets/images/icon-affair2.png        | Bin 0 -> 676 bytes
- dvs-base/src/assets/images/icon-bian.png           | Bin 0 -> 8874 bytes
- dvs-base/src/assets/images/icon-zhi.png            | Bin 0 -> 6838 bytes
- dvs-base/src/components/selectTree.vue             |  17 +-
- dvs-base/src/router/index.ts                       | 100 +++++
- dvs-base/src/services/api.js                       | 181 +++++++-
- dvs-base/src/services/household.js                 |   7 +
- dvs-base/src/services/port.js                      |  46 +-
- dvs-base/src/views/depart-manage/department.vue    | 224 ++++++++++
- dvs-base/src/views/ep-manage/columnList.js         | 120 +++++
- dvs-base/src/views/ep-manage/garden-eps.vue        | 495 +++++++++++++++++++++
- dvs-base/src/views/ep-manage/garden-epuser.vue     | 466 +++++++++++++++++++
- dvs-base/src/views/ep-manage/garden-epvr.vue       | 249 +++++++++++
- dvs-base/src/views/ep-manage/garden-tree.vue       | 168 +++++++
- dvs-base/src/views/guide-manage/affairAdd.vue      | 195 ++++++++
- dvs-base/src/views/guide-manage/affairDetail.vue   | 200 +++++++++
- dvs-base/src/views/guide-manage/columnList.js      |  22 +
- dvs-base/src/views/guide-manage/queryAdd.vue       | 152 +++++++
- dvs-base/src/views/guide-manage/queryDetail.vue    | 179 ++++++++
- dvs-base/src/views/guide-manage/serve-affair.vue   | 203 +++++++++
- dvs-base/src/views/guide-manage/serve-query.vue    | 199 +++++++++
- dvs-base/src/views/user/columnList.js              |  86 +++-
- dvs-base/src/views/user/editGovenment.vue          | 183 ++++++--
- dvs-base/src/views/user/govenment.vue              | 139 +++---
- dvs-base/src/views/user/gridding.vue               | 236 ++++++++++
- dvs-base/src/views/user/public.vue                 |   6 +-
- .../src/views/user/publicModule/family-Ties.vue    |   2 +-
- dvs-base/src/views/user/village.vue                | 163 ++++---
- dvs-base/src/views/user/villageAdd.vue             | 365 ++++++---------
- dvs-ffp/src/services/port.js                       |   7 -
- dvs-ffp/src/services/review.js                     |  51 ++-
- dvs-ffp/src/views/comment/columnList.js            |   2 +-
- dvs-ffp/src/views/comment/commentIndex.vue         | 171 +++++--
- dvs-ffp/src/views/commentReport/columnList.js      |   2 +-
- .../src/views/commentReport/commentReportIndex.vue |  89 ++--
- .../views/dictionaries/prevent-dictionaries.vue    |  12 +-
- dvs-ffp/src/views/preview/application.vue          | 186 ++++++--
- dvs-ffp/src/views/preview/columnList.js            |  36 +-
- dvs-ffp/src/views/preview/generalComponents.vue    | 118 +++--
- .../src/views/preview/informationCollection.vue    | 423 +++++++++++++-----
- .../src/views/publicityList/publicityListIndex.vue | 118 +++--
- dvs-ffp/src/views/regionalGrid/grid-management.vue |  14 +-
- dvs-ffp/src/views/roster/roster-management.vue     |  52 ++-
- dvs-main/src/layout/side-menu.vue                  |   2 +-
- 48 files changed, 5228 insertions(+), 842 deletions(-)
- create mode 100644 common/components/tree-above.vue
- create mode 100644 dvs-base/src/assets/images/icon-affair1.png
- create mode 100644 dvs-base/src/assets/images/icon-affair2.png
- create mode 100644 dvs-base/src/assets/images/icon-bian.png
- create mode 100644 dvs-base/src/assets/images/icon-zhi.png
- create mode 100644 dvs-base/src/views/depart-manage/department.vue
- create mode 100644 dvs-base/src/views/ep-manage/columnList.js
- create mode 100644 dvs-base/src/views/ep-manage/garden-eps.vue
- create mode 100644 dvs-base/src/views/ep-manage/garden-epuser.vue
- create mode 100644 dvs-base/src/views/ep-manage/garden-epvr.vue
- create mode 100644 dvs-base/src/views/ep-manage/garden-tree.vue
- create mode 100644 dvs-base/src/views/guide-manage/affairAdd.vue
- create mode 100644 dvs-base/src/views/guide-manage/affairDetail.vue
- create mode 100644 dvs-base/src/views/guide-manage/columnList.js
- create mode 100644 dvs-base/src/views/guide-manage/queryAdd.vue
- create mode 100644 dvs-base/src/views/guide-manage/queryDetail.vue
- create mode 100644 dvs-base/src/views/guide-manage/serve-affair.vue
- create mode 100644 dvs-base/src/views/guide-manage/serve-query.vue
- create mode 100644 dvs-base/src/views/user/gridding.vue
+ common/.gitignore                                  |    24 +
+ common/babel.config.js                             |    16 +
+ .../field/item-view/calendarFieldVant.vue          |   120 +-
+ .../field/item-view/checkBoxFieldVant.vue          |   140 -
+ common/components/index.vue                        |     2 +-
+ common/package.json                                |    63 +
+ common/services/common.js                          |    81 +
+ common/utils/auto-component-register.js            |    32 +
+ common/utils/date.js                               |    16 +
+ common/utils/form-validator.js                     |    36 +
+ common/utils/request.js                            |   103 +
+ common/utils/utils.js                              |    16 +
+ ffp-app/package-lock.json                          | 17690 +++++++++++++++-
+ ffp-app/package.json                               |     2 +-
+ ffp-app/src/components/field/component-view.vue    |    28 +
+ .../field/item-view/calendarFieldVant.vue          |    92 +
+ .../field/item-view/checkBoxFieldVant.vue          |   144 +
+ .../components/field/item-view/imageFieldVant.vue  |     7 +-
+ .../src}/components/field/item-view/imgUpload2.vue |    10 +-
+ .../components/field/item-view/inputFieldVant.vue  |    10 +-
+ .../field/item-view/locationFieldVant.vue          |     8 +-
+ .../components/field/item-view/remarkFieldVant.vue |     8 +-
+ .../components/field/item-view/selectFieldVant.vue |     9 +-
+ ffp-app/src/components/index.vue                   |    38 +
+ ffp-app/src/main.ts                                |     3 +
+ ffp-app/src/services/common.js                     |    81 +
+ ffp-app/src/utils/auto-component-register.js       |    32 +
+ ffp-app/src/utils/utils.js                         |    16 +
+ ffp-app/src/views/roster/register.vue              |   127 +
+ ffp-app/yarn.lock                                  | 20329 ++++++++++---------
+ 30 files changed, 29002 insertions(+), 10281 deletions(-)
+ create mode 100644 common/.gitignore
+ create mode 100644 common/babel.config.js
+ delete mode 100644 common/components/field/item-view/checkBoxFieldVant.vue
+ create mode 100644 common/package.json
+ create mode 100644 common/services/common.js
+ create mode 100644 common/utils/auto-component-register.js
+ create mode 100644 common/utils/date.js
+ create mode 100644 common/utils/form-validator.js
+ create mode 100644 common/utils/request.js
+ create mode 100644 common/utils/utils.js
+ create mode 100644 ffp-app/src/components/field/component-view.vue
+ create mode 100644 ffp-app/src/components/field/item-view/calendarFieldVant.vue
+ create mode 100644 ffp-app/src/components/field/item-view/checkBoxFieldVant.vue
+ rename {common => ffp-app/src}/components/field/item-view/imageFieldVant.vue (92%)
+ rename {common => ffp-app/src}/components/field/item-view/imgUpload2.vue (94%)
+ rename {common => ffp-app/src}/components/field/item-view/inputFieldVant.vue (92%)
+ rename {common => ffp-app/src}/components/field/item-view/locationFieldVant.vue (91%)
+ rename {common => ffp-app/src}/components/field/item-view/remarkFieldVant.vue (86%)
+ rename {common => ffp-app/src}/components/field/item-view/selectFieldVant.vue (88%)
+ create mode 100644 ffp-app/src/components/index.vue
+ create mode 100644 ffp-app/src/services/common.js
+ create mode 100644 ffp-app/src/utils/auto-component-register.js
+ create mode 100644 ffp-app/src/utils/utils.js
+拉取项目<<村委app>>成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app 
+yarn run v1.22.17
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings上午10:26:03
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  img/appbanner.ce354529.png (303 KiB)
+  js/chunk-4cfefbb9.82ab86ff.js (581 KiB)
+  js/chunk-vendors.9dd894f2.js (1.34 MiB)
+  configImage/greenhouse(center).png (438 KiB)
+  configImage/greenhouse(door).png (393 KiB)
+  configImage/secondhouse(northwest).png (460 KiB)
+  scan/u1036.png (446 KiB)
+  scan/u1039.png (306 KiB)
+  scan/u1040.png (297 KiB)
+  scan/u1043.png (335 KiB)
+  scan/u1041.png (447 KiB)
+  scan/u1044.png (312 KiB)
+  scan/u1042.png (278 KiB)
+  scan/u826.png (256 KiB)
+  scan/u829.png (250 KiB)
+  scan/u87.png (262 KiB)
+  configImage/villageDoor.png (610 KiB)
+  scan/u825.jpg (254 KiB)
+  js/chunk-vendors.9dd894f2.js[base].gz (407 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.37 MiB)
+      js/chunk-vendors.9dd894f2.js
+      js/app.5a6f3b89.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\app\js\chunk-vendors    1373.26 KiB      408.48 KiB
+  .9dd894f2.js
+  ..\..\release\cms\app\js\chunk-4cfefbb    580.91 KiB       196.19 KiB
+  9.82ab86ff.js
+  ..\..\release\cms\app\js\app.5a6f3b89.    27.93 KiB        8.43 KiB
+  js
+  ..\..\release\cms\app\js\chunk-4f9dacc    17.60 KiB        8.00 KiB
+  a.e86a3605.js
+  ..\..\release\cms\app\js\chunk-57c072f    7.66 KiB         2.75 KiB
+  0.d9a03174.js
+  ..\..\release\cms\app\config.js           2.00 KiB         0.53 KiB
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\app directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 99.78s.
+编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app} 成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app 
+yarn run v1.22.17
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings上午10:27:55
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  js/about.9cb858c9.js (624 KiB)
+  js/app.e6e8aef0.js (488 KiB)
+  js/chunk-249e7b1b.86767184.js (1.48 MiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.09 MiB)
+      js/about.9cb858c9.js
+      js/app.e6e8aef0.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\app\child\ffp-app\js    1516.54 KiB      478.77 KiB
+  \chunk-249e7b1b.86767184.js
+  ..\..\release\cms\app\child\ffp-app\js    624.11 KiB       206.22 KiB
+  \about.9cb858c9.js
+  ..\..\release\cms\app\child\ffp-app\js    488.28 KiB       301.58 KiB
+  \app.e6e8aef0.js
+  ..\..\release\cms\app\child\ffp-app\js    115.20 KiB       47.76 KiB
+  \chunk-bfc3cf66.c76ad5fb.js
+  ..\..\release\cms\app\child\ffp-app\js    6.91 KiB         2.13 KiB
+  \chunk-82acdd0e.74b49aaa.js
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\app\child\ffp-app directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 112.11s.
+编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app} 成功
+准备开始编译PC
+tag不存在 要进行git tag
+打tag项目:<<村委app>>成功
+Your branch is up to date with 'origin/dev'.
+开始拉取项目:<<pc后台管理>>
+Updating 14abf6dc..49832a3a
+Fast-forward
+ ...46\200\201form\350\241\250\345\215\225 copy.md" |  22 +-
+ .../form/input/item-view/tierSelectView.vue        |  92 ++++++
+ dvs-base/src/services/api.js                       |  10 +-
+ dvs-base/src/views/depart-manage/department.vue    | 115 +++++--
+ dvs-ffp/src/services/review.js                     |  15 +
+ .../src/views/commentReport/commentReportIndex.vue |   1 -
+ .../views/dictionaries/prevent-dictionaries.vue    |   4 +-
+ dvs-ffp/src/views/preview/application.vue          |  86 +++---
+ dvs-ffp/src/views/preview/democraticReview.vue     |   1 -
+ .../src/views/preview/informationCollection.vue    | 342 ++++++++++++++++++---
+ dvs-ffp/src/views/regionalGrid/grid-management.vue |   4 +-
+ 11 files changed, 574 insertions(+), 118 deletions(-)
+ create mode 100644 common/components/form/input/item-view/tierSelectView.vue
 拉取项目<<pc后台管理>>成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main 
 yarn run v1.22.17
@@ -104,22 +217,22 @@ rendering chunks...
 ../../release/cms/console/assets/index.117fdb49.js                 2.34 KiB
 ../../release/cms/console/assets/header.8bfb9e1f.js                5.52 KiB
 ../../release/cms/console/assets/side-menu.9bc56cab.js             2.13 KiB
-../../release/cms/console/assets/update-password.691b805b.css      0.53 KiB
-../../release/cms/console/assets/header.785d88ec.css               1.43 KiB
-../../release/cms/console/assets/not-found.29c7b295.css            0.39 KiB
-../../release/cms/console/assets/init-password.0062fda6.css        1.52 KiB
 ../../release/cms/console/assets/index.37eab154.css                0.73 KiB
-../../release/cms/console/assets/login.70758dd8.css                2.78 KiB
+../../release/cms/console/assets/update-password.691b805b.css      0.53 KiB
 ../../release/cms/console/assets/side-menu.4b961cac.css            1.04 KiB
+../../release/cms/console/assets/init-password.0062fda6.css        1.52 KiB
+../../release/cms/console/assets/not-found.29c7b295.css            0.39 KiB
+../../release/cms/console/assets/header.785d88ec.css               1.43 KiB
+../../release/cms/console/assets/login.70758dd8.css                2.78 KiB
 ../../release/cms/console/assets/index.9329f01e.css                326.85 KiB
 ../../release/cms/console/assets/Home.963185b3.css                 23.20 KiB
-Done in 39.37s.
+Done in 43.19s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings上午10:15:07
+ WARNING  Compiled with 2 warnings上午10:29:44
 
  warning  
 
@@ -297,13 +410,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-basic directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 44.46s.
+Done in 46.48s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 5 warnings上午10:16:10
+ WARNING  Compiled with 5 warnings上午10:30:46
 
  warning  
 
@@ -357,7 +470,7 @@ Entrypoints:
       css/chunk-vendors.18b67b47.css
       js/chunk-vendors.8008198c.js
       css/app.0b4d76a7.css
-      js/app.28d759cf.js
+      js/app.8a6e78e4.js
 
 
   File                                      Size             Gzipped
@@ -366,8 +479,8 @@ Entrypoints:
   ns\js\chunk-vendors.8008198c.js
   ..\..\release\cms\console\child\dvs-co    140.17 KiB       46.03 KiB
   ns\js\chunk-13e03dce.9d966367.js
-  ..\..\release\cms\console\child\dvs-co    134.20 KiB       44.70 KiB
-  ns\js\app.28d759cf.js
+  ..\..\release\cms\console\child\dvs-co    135.76 KiB       44.98 KiB
+  ns\js\app.8a6e78e4.js
   ..\..\release\cms\console\child\dvs-co    5.36 KiB         1.94 KiB
   ns\js\chunk-213ebd64.436f4655.js
   ..\..\release\cms\console\child\dvs-co    4.22 KiB         1.70 KiB
@@ -388,13 +501,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-cons directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 62.89s.
+Done in 60.76s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 7 warnings上午10:17:11
+ WARNING  Compiled with 7 warnings上午10:31:40
 
  warning  
 
@@ -466,11 +579,11 @@ Assets:
 
 entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 Entrypoints:
-  app (1.64 MiB)
+  app (1.65 MiB)
       css/chunk-vendors.7b8a3df6.css
       js/chunk-vendors.4db57d48.js
       css/app.c34c9d27.css
-      js/app.7d038c3f.js
+      js/app.93c28f98.js
 
 
   File                                      Size             Gzipped
@@ -481,8 +594,8 @@ Entrypoints:
   llage\js\chunk-52cd259e.7a277b25.js
   ..\..\release\cms\console\child\dvs-vi    305.70 KiB       72.58 KiB
   llage\js\chunk-b6e1ffbc.1071cbc7.js
-  ..\..\release\cms\console\child\dvs-vi    138.40 KiB       45.42 KiB
-  llage\js\app.7d038c3f.js
+  ..\..\release\cms\console\child\dvs-vi    139.96 KiB       45.71 KiB
+  llage\js\app.93c28f98.js
   ..\..\release\cms\console\child\dvs-vi    105.26 KiB       37.69 KiB
   llage\js\chunk-65d5decc.0ecd9faa.js
   ..\..\release\cms\console\child\dvs-vi    373.93 KiB       97.59 KiB
@@ -501,13 +614,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-village directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 60.33s.
+Done in 53.24s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 6 warnings上午10:18:16
+ WARNING  Compiled with 6 warnings上午10:32:38
 
  warning  
 
@@ -573,7 +686,7 @@ Entrypoints:
       css/chunk-vendors.9ea3c739.css
       js/chunk-vendors.6c60bbc0.js
       css/app.cfeea98a.css
-      js/app.4b27596c.js
+      js/app.ab92a0bd.js
 
 
   File                                      Size             Gzipped
@@ -582,8 +695,8 @@ Entrypoints:
   gital\js\chunk-vendors.6c60bbc0.js
   ..\..\release\cms\console\child\dvs-di    232.76 KiB       63.65 KiB
   gital\js\chunk-6386dda1.8b3054ee.js
-  ..\..\release\cms\console\child\dvs-di    163.73 KiB       50.31 KiB
-  gital\js\app.4b27596c.js
+  ..\..\release\cms\console\child\dvs-di    165.30 KiB       50.59 KiB
+  gital\js\app.ab92a0bd.js
   ..\..\release\cms\console\child\dvs-di    37.56 KiB        16.60 KiB
   gital\js\chunk-0d323f1c.ad50245e.js
   ..\..\release\cms\console\child\dvs-di    18.34 KiB        6.96 KiB
@@ -602,13 +715,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-digital directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 63.79s.
+Done in 58.02s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings上午10:19:09
+ WARNING  Compiled with 2 warnings上午10:33:24
 
  warning  
 
@@ -658,13 +771,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-park directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 51.86s.
+Done in 45.21s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 5 warnings上午10:20:32
+ WARNING  Compiled with 5 warnings上午10:34:47
 
  warning  in ./src/views/map-icon-manage/icon-add.vue?vue&type=script&lang=js
 
@@ -728,7 +841,7 @@ Entrypoints:
       css/chunk-vendors.7b8a3df6.css
       js/chunk-vendors.4d4355c8.js
       css/app.f2a8707c.css
-      js/app.d851bb3f.js
+      js/app.bd8171ee.js
 
 
   File                                      Size             Gzipped
@@ -742,8 +855,8 @@ Entrypoints:
   .da7f3af0.js
   ..\..\release\cms\console\child\dvs-gi    244.79 KiB       54.37 KiB
   s\js\land-plot.f7b6dd48.js
-  ..\..\release\cms\console\child\dvs-gi    143.79 KiB       45.94 KiB
-  s\js\app.d851bb3f.js
+  ..\..\release\cms\console\child\dvs-gi    145.35 KiB       46.27 KiB
+  s\js\app.bd8171ee.js
   ..\..\release\cms\console\child\dvs-gi    26.12 KiB        7.33 KiB
   s\js\customize-mark~customize-mark-man
   age~greenhouse-manage~land-manage~plan
@@ -771,13 +884,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-gis directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 82.72s.
+Done in 81.99s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-ffp 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings上午10:21:29
+ WARNING  Compiled with 2 warnings上午10:35:40
 
  warning  
 
@@ -795,25 +908,25 @@ Entrypoints:
       css/about.7b8a3df6.css
       js/about.3cb307b5.js
       css/app.a416fbf1.css
-      js/app.bd87f1e2.js
+      js/app.a2328cbd.js
 
 
   File                                      Size             Gzipped
 
   ..\..\release\cms\console\child\dvs-ff    1160.13 KiB      336.52 KiB
   p\js\about.3cb307b5.js
-  ..\..\release\cms\console\child\dvs-ff    212.75 KiB       44.07 KiB
-  p\js\chunk-11ef8428.447094ac.js
-  ..\..\release\cms\console\child\dvs-ff    136.75 KiB       45.18 KiB
-  p\js\app.bd87f1e2.js
+  ..\..\release\cms\console\child\dvs-ff    221.92 KiB       45.63 KiB
+  p\js\chunk-09572f20.cdb99145.js
+  ..\..\release\cms\console\child\dvs-ff    138.31 KiB       45.47 KiB
+  p\js\app.a2328cbd.js
   ..\..\release\cms\console\child\dvs-ff    79.64 KiB        30.36 KiB
   p\js\chunk-2d2107eb.d0a98f02.js
   ..\..\release\cms\console\child\dvs-ff    53.46 KiB        11.72 KiB
   p\js\chunk-b4b2bed8.722c854e.js
   ..\..\release\cms\console\child\dvs-ff    373.93 KiB       97.59 KiB
   p\css\about.7b8a3df6.css
-  ..\..\release\cms\console\child\dvs-ff    25.65 KiB        3.59 KiB
-  p\css\chunk-11ef8428.2bd26b69.css
+  ..\..\release\cms\console\child\dvs-ff    25.96 KiB        3.59 KiB
+  p\css\chunk-09572f20.cc7d5954.css
   ..\..\release\cms\console\child\dvs-ff    5.00 KiB         1.41 KiB
   p\css\app.a416fbf1.css
   ..\..\release\cms\console\child\dvs-ff    0.48 KiB         0.20 KiB
@@ -824,50 +937,32 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-ffp directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 56.57s.
+Done in 52.28s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-ffp} 成功
 准备开始编译PC
-tag 已经存在要先进行删除
-tag已删除要进行git tag
+tag不存在 要进行git tag
 打tag项目:<<pc后台管理>>成功
-[dev f16ff012] build：前端app、qrocde、wechat、park、console(child)commit-version:2.5.1.00x
- 42 files changed, 47 insertions(+), 47 deletions(-)
- rename cms/console/assets/{Home.74b71825.js => Home.daf2de58.js} (99%)
- rename cms/console/assets/{header.6b76a0b1.js => header.8bfb9e1f.js} (73%)
- rename cms/console/assets/{index.a1ad0546.js => index.117fdb49.js} (57%)
- rename cms/console/assets/{index.f169320a.js => index.e50ffbdb.js} (92%)
- rename cms/console/assets/{init-password.b50bcad7.js => init-password.02c3aa05.js} (98%)
- rename cms/console/assets/{login.b629035e.js => login.afb602b0.js} (99%)
- create mode 100644 cms/console/assets/side-menu.4b961cac.css
- delete mode 100644 cms/console/assets/side-menu.79d1e339.css
- delete mode 100644 cms/console/assets/side-menu.8af91a2e.js
- create mode 100644 cms/console/assets/side-menu.9bc56cab.js
- rename cms/console/assets/{update-password.955f32b4.js => update-password.9b0eaea0.js} (98%)
- rename cms/console/assets/{useModule.833de72c.js => useModule.6db3b2d1.js} (98%)
- rename cms/console/child/dvs-cons/css/{chunk-13ebc851.b30f8eb4.css => chunk-13e03dce.6b703ef5.css} (97%)
- rename cms/console/child/dvs-cons/js/{app.d60ca117.js => app.28d759cf.js} (99%)
- create mode 100644 cms/console/child/dvs-cons/js/chunk-13e03dce.9d966367.js
- delete mode 100644 cms/console/child/dvs-cons/js/chunk-13ebc851.f62e099e.js
- rename cms/console/child/dvs-digital/css/{chunk-9b4911e6.a2f8a9e8.css => chunk-6386dda1.bbe21419.css} (99%)
- rename cms/console/child/dvs-digital/js/{app.239c3f77.js => app.4b27596c.js} (98%)
- rename cms/console/child/dvs-digital/js/{chunk-9b4911e6.a93b1b85.js => chunk-6386dda1.8b3054ee.js} (60%)
- create mode 100644 cms/console/child/dvs-ffp/css/chunk-11ef8428.2bd26b69.css
- delete mode 100644 cms/console/child/dvs-ffp/css/chunk-45edfa4b.0fd33a49.css
- rename cms/console/child/dvs-ffp/css/{chunk-ad674b42.3e59f481.css => chunk-b4b2bed8.3e59f481.css} (100%)
- rename cms/console/child/dvs-ffp/js/{about.8a25386a.js => about.3cb307b5.js} (91%)
- rename cms/console/child/dvs-ffp/js/{app.45c8bcfa.js => app.bd87f1e2.js} (84%)
- create mode 100644 cms/console/child/dvs-ffp/js/chunk-11ef8428.447094ac.js
- delete mode 100644 cms/console/child/dvs-ffp/js/chunk-45edfa4b.85c09aa9.js
- delete mode 100644 cms/console/child/dvs-ffp/js/chunk-ad674b42.077a18bf.js
- create mode 100644 cms/console/child/dvs-ffp/js/chunk-b4b2bed8.722c854e.js
- rename cms/console/child/dvs-gis/css/{land-plot.86c759eb.css => land-plot.c2add690.css} (98%)
- rename cms/console/child/dvs-gis/js/{app.f3da5533.js => app.d851bb3f.js} (99%)
- delete mode 100644 cms/console/child/dvs-gis/js/land-plot.82cd2333.js
- create mode 100644 cms/console/child/dvs-gis/js/land-plot.f7b6dd48.js
- rename cms/console/child/dvs-village/css/{chunk-4fa5e335.84b9d0e2.css => chunk-b6e1ffbc.f92a4543.css} (94%)
- rename cms/console/child/dvs-village/js/{app.c2b7274f.js => app.7d038c3f.js} (96%)
- delete mode 100644 cms/console/child/dvs-village/js/chunk-4fa5e335.9b9e2a0a.js
- create mode 100644 cms/console/child/dvs-village/js/chunk-b6e1ffbc.1071cbc7.js
+删除项目： 中的配置文件成功
+[dev bde307e8] build：前端app、qrocde、wechat、park、console(child)commit-version:2.5.1.00xx
+ 24 files changed, 75 insertions(+), 75 deletions(-)
+ delete mode 100644 cms/app/child/ffp-app/js/about.009b649e.js
+ create mode 100644 cms/app/child/ffp-app/js/about.9cb858c9.js
+ create mode 100644 cms/app/child/ffp-app/js/app.e6e8aef0.js
+ delete mode 100644 cms/app/child/ffp-app/js/app.f68acd26.js
+ delete mode 100644 cms/app/child/ffp-app/js/chunk-01324619.ca566fbf.js
+ create mode 100644 cms/app/child/ffp-app/js/chunk-249e7b1b.86767184.js
+ delete mode 100644 cms/app/child/ffp-app/js/chunk-279d4552.77e6e409.js
+ rename cms/app/child/ffp-app/js/{chunk-15238c09.818ebf53.js => chunk-82acdd0e.74b49aaa.js} (93%)
+ create mode 100644 cms/app/child/ffp-app/js/chunk-bfc3cf66.c76ad5fb.js
+ rename cms/console/child/dvs-cons/js/{app.28d759cf.js => app.8a6e78e4.js} (78%)
+ rename cms/console/child/dvs-digital/js/{app.4b27596c.js => app.ab92a0bd.js} (69%)
+ create mode 100644 cms/console/child/dvs-ffp/css/chunk-09572f20.cc7d5954.css
+ delete mode 100644 cms/console/child/dvs-ffp/css/chunk-11ef8428.2bd26b69.css
+ rename cms/console/child/dvs-ffp/js/{app.bd87f1e2.js => app.a2328cbd.js} (73%)
+ create mode 100644 cms/console/child/dvs-ffp/js/chunk-09572f20.cdb99145.js
+ delete mode 100644 cms/console/child/dvs-ffp/js/chunk-11ef8428.447094ac.js
+ rename cms/console/child/dvs-gis/js/{app.d851bb3f.js => app.bd8171ee.js} (71%)
+ rename cms/console/child/dvs-village/js/{app.7d038c3f.js => app.93c28f98.js} (78%)
 5秒后将自动退出本脚本：
 5
 4
