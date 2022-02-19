@@ -54,8 +54,15 @@
     - https://zhuanlan.zhihu.com/p/36301857
   - 想法
     - 指标管理中定义的指标算法，后期可以考虑动态生成，根据数据表定义进行关联拼接[感觉上是靠谱的但实现起来有点麻烦]
+- 2月19日
+  - Charles 破解
+    - https://zhuanlan.zhihu.com/p/248767986    
+    - 生成激活码 https://www.zzzmode.com/mytools/charles/
+    - 抓包还未尝试，有空用苹果笔记本试一下，公司台式机没有无线网卡[待尝试]
+  - C#爬虫
+    - https://github.com/dotnetcore/DotnetSpider/wiki/1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E7%88%AC%E8%99%AB  
 - 2月18日
-  - form表单 字段的控制是否显示 ifshow
+  - form表单 字段的控制是否显示 ifshow[已完成]
 - 2月17日
   - vant H5 form表单开始[已可运行，待优化补充]
   - 购买华为源服务器 [已完成]
@@ -106,7 +113,7 @@
   - form表单基础功能已对接接口，字段配置正则列表和字段的特殊属性待处理
   - 在应用层可以调用调用到table列表配置数据和form表单配置数据
     - 表单配置数据暂时可以解析出表单，但有一些小问题
-    - table列表配置，配置字段待明天进行重新对接   
+    - table列表配置，配置字段待明天进行重新对接
   - 下个月开始总结几篇文章
     - H5 vue3 vant 下拉刷新，上拉加载数据 统一封装
     - umi3 React antd-pro 使用简单总结
