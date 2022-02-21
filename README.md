@@ -6,6 +6,7 @@
   - 抓包 https://www.cnblogs.com/crystal1126/p/11954085.html
     - https://www.jinchengcom.cn/posts/70581b0e.html
     - 破解工具 https://www.zzzmode.com/mytools/charles/
+    - 代理设置 https://cloud.tencent.com/developer/article/1515941?from=article.detail.1867046 
   - 前端实现录音
     - https://github.com/xiangyuecn/Recorder
   - EFCore 使用
@@ -54,6 +55,9 @@
     - https://zhuanlan.zhihu.com/p/36301857
   - 想法
     - 指标管理中定义的指标算法，后期可以考虑动态生成，根据数据表定义进行关联拼接[感觉上是靠谱的但实现起来有点麻烦]
+- 2月21日
+  - window下可通过charles进行https抓包[已完成]
+  - mac下待测试抓包手机app的[待测试]    
 - 2月20日
   - 接下来的计划做个调整[待完成]
       - 2月底- 4月初 有时间先处理一下爬虫和小程序（小程序不行先搞h5）
