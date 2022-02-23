@@ -55,6 +55,20 @@
     - https://zhuanlan.zhihu.com/p/36301857
   - 想法
     - 指标管理中定义的指标算法，后期可以考虑动态生成，根据数据表定义进行关联拼接[感觉上是靠谱的但实现起来有点麻烦]
+  - editor编辑器
+    - https://github.com/ianstormtaylor/slate
+    - 文档 https://rain120.github.io/athena/zh/slate/Introduction.html#demo
+    - https://github.com/ianstormtaylor/slate/issues/3899
+    - 
+- 2月23日
+  - audio
+    - 播放器 https://github.com/DIYgod/APlayer
+    - 文档  https://aplayer.js.org/#/zh-Hans/?id=%E5%AE%89%E8%A3%85
+- 2月22日
+  - 课程列表和文章列表已保存数据库
+  - 文章已可通过接口获取，slate 待展示 https://rain120.github.io/athena/zh/slate/libraries/slate-react.html#reacteditor [待尝试]
+  - m4a待在页面中展示audio标签 [待尝试]
+  - 列表数据待显示
 - 2月21日
   - window下可通过charles进行https抓包[已完成]
   - mac下待测试抓包手机app的[待测试]    
