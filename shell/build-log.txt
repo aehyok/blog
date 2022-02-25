@@ -1,42 +1,18 @@
 tag 
 包含a------村委app
 包含c------pc后台管理
- 命令行中包含的版本号: 2.5.1.005
+ 命令行中包含的版本号: 2.5.1.007
 -------------------------------------------------
+M	main-app/public/config.js
 Your branch is up to date with 'origin/dev'.
 开始拉取项目:<<村委app>>
-Updating 44cb9e2..c107723
-Fast-forward
- .../components/editFarmers/member-information.vue  |   9 +-
- ffp-app/src/components/list/index.vue              |   5 +
- ffp-app/src/store/farmersDetails.js                |   2 +-
- ffp-app/src/utils/publicFun.js                     |  12 ++-
- ffp-app/src/views/Home.vue                         |   4 +-
- ffp-app/src/views/detection/detection-detail.vue   |  14 ++-
- ffp-app/src/views/detection/detection-edit.vue     |   4 +-
- ffp-app/src/views/detection/detection-object.vue   |   4 +-
- ffp-app/src/views/detection/detection-record.vue   |   3 +-
- ffp-app/src/views/home/home-Grid.vue               |  15 ++-
- ffp-app/src/views/home/home-Modules.vue            |   4 +-
- ffp-app/src/views/home/home-News.vue               |   6 +-
- ffp-app/src/views/inspectRecord/record-index.vue   |   3 +-
- ffp-app/src/views/inspectRecord/record-month.vue   |   4 +-
- .../src/views/passMoPai/application-formRecord.vue |   4 +-
- ffp-app/src/views/passMoPai/pass-moPai.vue         |   6 +-
- ffp-app/src/views/preview/farmerDetails.vue        | 113 +++++++++++----------
- ffp-app/src/views/report/report-index.vue          |   3 +-
- ffp-app/src/views/rollCall/choiceCall.vue          |   6 +-
- ffp-app/src/views/rollCall/generateCall.vue        |  23 ++++-
- ffp-app/src/views/rollCall/reviewedDetail.vue      |   2 +
- ffp-app/src/views/task/task-management.vue         |  20 ++--
- main-app/src/views/Mine.vue                        |   2 +-
- 23 files changed, 166 insertions(+), 102 deletions(-)
+Already up to date.
 拉取项目<<村委app>>成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午7:12:30
+ WARNING  Compiled with 2 warnings下午5:55:38
 
  warning  
 
@@ -44,22 +20,22 @@ asset size limit: The following asset(s) exceed the recommended size limit (244 
 This can impact web performance.
 Assets: 
   img/appbanner.ce354529.png (303 KiB)
-  js/chunk-35bf0e9c.b37d355e.js (581 KiB)
+  js/chunk-7c27f912.2fb26853.js (581 KiB)
   js/chunk-vendors.9dd894f2.js (1.34 MiB)
   configImage/greenhouse(center).png (438 KiB)
   configImage/greenhouse(door).png (393 KiB)
   configImage/secondhouse(northwest).png (460 KiB)
-  scan/u1036.png (446 KiB)
   scan/u1039.png (306 KiB)
+  scan/u1036.png (446 KiB)
   scan/u1040.png (297 KiB)
-  scan/u1041.png (447 KiB)
   scan/u1042.png (278 KiB)
+  scan/u1041.png (447 KiB)
   scan/u1043.png (335 KiB)
   scan/u1044.png (312 KiB)
   scan/u825.jpg (254 KiB)
   scan/u826.png (256 KiB)
-  scan/u87.png (262 KiB)
   scan/u829.png (250 KiB)
+  scan/u87.png (262 KiB)
   configImage/villageDoor.png (610 KiB)
   js/chunk-vendors.9dd894f2.js[base].gz (407 KiB)
 
@@ -69,89 +45,86 @@ entrypoint size limit: The following entrypoint(s) combined asset size exceeds t
 Entrypoints:
   app (1.37 MiB)
       js/chunk-vendors.9dd894f2.js
-      js/app.afd43ee6.js
+      js/app.0172fb9f.js
 
 
   File                                      Size             Gzipped
 
   ..\..\release\cms\app\js\chunk-vendors    1373.26 KiB      408.48 KiB
   .9dd894f2.js
-  ..\..\release\cms\app\js\chunk-35bf0e9    580.95 KiB       195.91 KiB
-  c.b37d355e.js
-  ..\..\release\cms\app\js\app.afd43ee6.    27.93 KiB        8.43 KiB
+  ..\..\release\cms\app\js\chunk-7c27f91    580.99 KiB       196.12 KiB
+  2.2fb26853.js
+  ..\..\release\cms\app\js\app.0172fb9f.    27.93 KiB        8.43 KiB
   js
-  ..\..\release\cms\app\js\chunk-e75616a    17.60 KiB        8.00 KiB
-  a.d576ffd2.js
+  ..\..\release\cms\app\js\chunk-2c74f98    17.60 KiB        8.00 KiB
+  6.e8c97251.js
   ..\..\release\cms\app\js\chunk-57c072f    7.66 KiB         2.75 KiB
   0.d9a03174.js
-  ..\..\release\cms\app\config.js           2.00 KiB         0.53 KiB
+  ..\..\release\cms\app\config.js           2.61 KiB         0.56 KiB
 
   Images and other types of assets omitted.
 
  DONE  Build complete. The ..\..\release\cms\app directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 83.13s.
+Done in 71.34s.
 编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午7:14:20
+ WARNING  Compiled with 2 warnings下午5:56:17
 
  warning  
 
 asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 This can impact web performance.
 Assets: 
-  js/about.50d14c5b.js (721 KiB)
-  js/app.af162dfd.js (532 KiB)
-  js/chunk-8db79940.588d13c9.js (1.45 MiB)
+  js/about.bd8ccb13.js (759 KiB)
+  js/app.97f3d435.js (547 KiB)
+  js/chunk-67f8fe9d.5d323a4b.js (1.42 MiB)
 
  warning  
 
 entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 Entrypoints:
-  app (1.22 MiB)
-      js/about.50d14c5b.js
-      js/app.af162dfd.js
+  app (1.28 MiB)
+      js/about.bd8ccb13.js
+      js/app.97f3d435.js
 
 
   File                                      Size             Gzipped
 
-  ..\..\release\cms\app\child\ffp-app\js    1489.90 KiB      470.76 KiB
-  \chunk-8db79940.588d13c9.js
-  ..\..\release\cms\app\child\ffp-app\js    721.20 KiB       238.22 KiB
-  \about.50d14c5b.js
-  ..\..\release\cms\app\child\ffp-app\js    532.47 KiB       323.08 KiB
-  \app.af162dfd.js
-  ..\..\release\cms\app\child\ffp-app\js    14.17 KiB        3.51 KiB
-  \chunk-192eb8b9.970a89cd.js
-  ..\..\release\cms\app\child\ffp-app\js    11.49 KiB        3.21 KiB
-  \chunk-59506bea.a23c03a7.js
+  ..\..\release\cms\app\child\ffp-app\js    1458.38 KiB      455.15 KiB
+  \chunk-67f8fe9d.5d323a4b.js
+  ..\..\release\cms\app\child\ffp-app\js    759.28 KiB       250.57 KiB
+  \about.bd8ccb13.js
+  ..\..\release\cms\app\child\ffp-app\js    546.51 KiB       325.69 KiB
+  \app.97f3d435.js
+  ..\..\release\cms\app\child\ffp-app\js    10.21 KiB        3.03 KiB
+  \chunk-a245b3ce.28cbb7e5.js
+  ..\..\release\cms\app\child\ffp-app\js    7.18 KiB         2.18 KiB
+  \chunk-491f1e44.3539f6a0.js
 
   Images and other types of assets omitted.
 
  DONE  Build complete. The ..\..\release\cms\app\child\ffp-app directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 110.03s.
+Done in 38.74s.
 编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app} 成功
 准备开始编译PC
 tag不存在 要进行git tag
 打tag项目:<<村委app>>成功
 Your branch is up to date with 'origin/dev'.
 开始拉取项目:<<pc后台管理>>
-Updating 2911ee26..a225dddb
+Updating 291ee9f5..985a6981
 Fast-forward
- dvs-base/src/views/depart-manage/department.vue | 34 ++++++++++++++++++++++---
- dvs-basic/src/metas/user.jsx                    |  5 ++--
- dvs-ffp/src/views/comment/commentIndex.vue      |  5 ++++
- dvs-ffp/src/views/preview/democraticReview.vue  |  4 +--
- dvs-ffp/src/views/preview/generalComponents.vue |  2 +-
- dvs-ffp/src/views/roster/roster-management.vue  | 20 +++++++--------
- dvs-main/src/layout/side-menu.vue               |  2 +-
- 7 files changed, 52 insertions(+), 20 deletions(-)
+ dvs-ffp/src/views/preview/informationCollection.vue   |  8 ++++----
+ dvs-ffp/src/views/roster/roster-managementDetails.vue | 13 ++++++++-----
+ dvs-main/src/layout/side-menu.vue                     |  2 +-
+ dvs-village/src/views/pestilence/bill-returnees.vue   |  2 +-
+ 4 files changed, 14 insertions(+), 11 deletions(-)
 拉取项目<<pc后台管理>>成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main 
 yarn run v1.22.17
@@ -169,378 +142,35 @@ rendering chunks...
 ../../release/cms/console/assets/NotoSansHans-Light.8f64e48d.otf   8102.80 KiB
 ../../release/cms/console/assets/NotoSansHans-Bold.9e7729ef.otf    8406.21 KiB
 ../../release/cms/console/index.html                               1.01 KiB
-../../release/cms/console/assets/index.386a210f.js                 9.09 KiB
+../../release/cms/console/assets/index.adb62e6e.js                 9.09 KiB
 ../../release/cms/console/assets/vendor.e90cd9c9.js                797.27 KiB
-../../release/cms/console/assets/Home.fea5f2fb.js                  1115.55 KiB
-../../release/cms/console/assets/update-password.0a4f511e.js       3.50 KiB
-../../release/cms/console/assets/useModule.c0bca8cb.js             3.19 KiB
+../../release/cms/console/assets/Home.53bbe1ca.js                  1115.55 KiB
+../../release/cms/console/assets/update-password.e495eeb5.js       3.50 KiB
+../../release/cms/console/assets/useModule.06c77512.js             3.19 KiB
 ../../release/cms/console/assets/index.e84a6182.js                 0.16 KiB
 ../../release/cms/console/assets/base64.6000bb2a.js                2.60 KiB
-../../release/cms/console/assets/init-password.bfbf5262.js         3.64 KiB
-../../release/cms/console/assets/login.b2060e14.js                 24.97 KiB
+../../release/cms/console/assets/init-password.fc43066d.js         3.64 KiB
+../../release/cms/console/assets/login.23923895.js                 24.97 KiB
 ../../release/cms/console/assets/not-found.c6744c67.js             0.63 KiB
-../../release/cms/console/assets/index.1e1f2e74.js                 2.34 KiB
-../../release/cms/console/assets/header.7619a7f6.js                5.52 KiB
-../../release/cms/console/assets/side-menu.ab36dfab.js             2.13 KiB
+../../release/cms/console/assets/index.926a83b9.js                 2.34 KiB
+../../release/cms/console/assets/header.8e84467b.js                5.52 KiB
+../../release/cms/console/assets/side-menu.be9fe788.js             2.13 KiB
+../../release/cms/console/assets/update-password.691b805b.css      0.53 KiB
+../../release/cms/console/assets/side-menu.93807c95.css            1.04 KiB
+../../release/cms/console/assets/init-password.0062fda6.css        1.52 KiB
 ../../release/cms/console/assets/not-found.29c7b295.css            0.39 KiB
+../../release/cms/console/assets/header.785d88ec.css               1.43 KiB
 ../../release/cms/console/assets/index.37eab154.css                0.73 KiB
 ../../release/cms/console/assets/login.70758dd8.css                2.78 KiB
-../../release/cms/console/assets/side-menu.dba08087.css            1.04 KiB
-../../release/cms/console/assets/init-password.0062fda6.css        1.52 KiB
-../../release/cms/console/assets/header.785d88ec.css               1.43 KiB
-../../release/cms/console/assets/update-password.691b805b.css      0.53 KiB
 ../../release/cms/console/assets/Home.963185b3.css                 23.20 KiB
 ../../release/cms/console/assets/index.9329f01e.css                326.85 KiB
-Done in 43.58s.
+Done in 41.38s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 3 warnings下午7:16:11
-
- warning  in ./src/metas/user.jsx
-
-Module Warning (from ./node_modules/thread-loader/dist/cjs.js):
-
-E:\work\git\dvs-2.x\dvs-server-ui-dev\dvs-basic\src\metas\user.jsx
-    1:57  warning  Delete `␍`                                prettier/prettier
-    2:78  warning  Delete `␍`                                prettier/prettier
-    3:9   warning  Delete `␍`                                prettier/prettier
-    4:14  warning  Delete `␍`                                prettier/prettier
-    5:14  warning  Delete `␍`                                prettier/prettier
-    6:30  warning  Delete `␍`                                prettier/prettier
-    7:22  warning  Delete `␍`                                prettier/prettier
-    8:18  warning  Delete `␍`                                prettier/prettier
-    9:19  warning  Delete `␍`                                prettier/prettier
-   10:25  warning  Delete `␍`                                prettier/prettier
-   11:21  warning  Delete `␍`                                prettier/prettier
-   12:19  warning  Delete `␍`                                prettier/prettier
-   13:22  warning  Delete `␍`                                prettier/prettier
-   14:11  warning  Delete `␍`                                prettier/prettier
-   15:26  warning  Delete `␍`                                prettier/prettier
-   16:21  warning  Delete `␍`                                prettier/prettier
-   17:23  warning  Delete `␍`                                prettier/prettier
-   18:22  warning  Delete `␍`                                prettier/prettier
-   19:21  warning  Delete `␍`                                prettier/prettier
-   20:15  warning  Delete `␍`                                prettier/prettier
-   21:18  warning  Delete `␍`                                prettier/prettier
-   22:63  warning  Delete `␍`                                prettier/prettier
-   23:9   warning  Delete `␍`                                prettier/prettier
-   24:24  warning  Delete `␍`                                prettier/prettier
-   25:25  warning  Delete `␍`                                prettier/prettier
-   26:29  warning  Delete `␍`                                prettier/prettier
-   27:21  warning  Delete `␍`                                prettier/prettier
-   28:14  warning  Delete `␍`                                prettier/prettier
-   29:29  warning  Delete `␍`                                prettier/prettier
-   30:37  warning  Delete `␍`                                prettier/prettier
-   31:57  warning  Delete `␍`                                prettier/prettier
-   32:1   warning  Delete `␍`                                prettier/prettier
-   33:17  warning  Delete `␍`                                prettier/prettier
-   34:32  warning  Delete `␍`                                prettier/prettier
-   35:37  warning  Delete `␍`                                prettier/prettier
-   36:34  warning  Delete `␍`                                prettier/prettier
-   37:2   warning  Delete `␍`                                prettier/prettier
-   38:1   warning  Delete `␍`                                prettier/prettier
-   39:24  warning  Delete `␍`                                prettier/prettier
-   40:32  warning  Delete `␍`                                prettier/prettier
-   41:34  warning  Delete `␍`                                prettier/prettier
-   42:2   warning  Delete `␍`                                prettier/prettier
-   43:1   warning  Delete `␍`                                prettier/prettier
-   44:47  warning  Delete `␍`                                prettier/prettier
-   45:11  warning  Delete `␍`                                prettier/prettier
-   46:25  warning  Delete `␍`                                prettier/prettier
-   47:22  warning  Delete `␍`                                prettier/prettier
-   48:32  warning  Delete `␍`                                prettier/prettier
-   49:36  warning  Delete `␍`                                prettier/prettier
-   50:35  warning  Delete `␍`                                prettier/prettier
-   51:4   warning  Delete `␍`                                prettier/prettier
-   52:2   warning  Delete `␍`                                prettier/prettier
-   53:48  warning  Delete `␍`                                prettier/prettier
-   54:24  warning  Delete `␍`                                prettier/prettier
-   55:18  warning  Delete `␍`                                prettier/prettier
-   56:1   warning  Delete `␍`                                prettier/prettier
-   57:11  warning  Delete `␍`                                prettier/prettier
-   58:12  warning  Delete `␍`                                prettier/prettier
-   59:26  warning  Delete `␍`                                prettier/prettier
-   60:27  warning  Delete `␍`                                prettier/prettier
-   61:26  warning  Delete `␍`                                prettier/prettier
-   62:8   warning  Delete `␍`                                prettier/prettier
-   63:20  warning  Delete `␍`                                prettier/prettier
-   64:49  warning  Delete `␍`                                prettier/prettier
-   65:32  warning  Delete `␍`                                prettier/prettier
-   66:32  warning  Delete `␍`                                prettier/prettier
-   67:9   warning  Delete `␍`                                prettier/prettier
-   68:4   warning  Delete `␍`                                prettier/prettier
-   69:2   warning  Delete `␍`                                prettier/prettier
-   70:1   warning  Delete `␍`                                prettier/prettier
-   71:42  warning  Delete `␍`                                prettier/prettier
-   72:11  warning  Delete `␍`                                prettier/prettier
-   73:47  warning  Delete `␍`                                prettier/prettier
-   74:29  warning  Delete `␍`                                prettier/prettier
-   75:25  warning  Delete `␍`                                prettier/prettier
-   76:22  warning  Delete `␍`                                prettier/prettier
-   77:32  warning  Delete `␍`                                prettier/prettier
-   78:36  warning  Delete `␍`                                prettier/prettier
-   79:23  warning  Delete `␍`                                prettier/prettier
-   80:43  warning  Replace `},·'请输入'),␍` with `·},·'请输入'),`  prettier/prettier
-   81:23  warning  Delete `␍`                                prettier/prettier
-   82:25  warning  Delete `␍`                                prettier/prettier
-   83:4   warning  Delete `␍`                                prettier/prettier
-   84:2   warning  Delete `␍`                                prettier/prettier
-   85:43  warning  Delete `␍`                                prettier/prettier
-   86:11  warning  Delete `␍`                                prettier/prettier
-   87:12  warning  Delete `␍`                                prettier/prettier
-   88:26  warning  Delete `␍`                                prettier/prettier
-   89:27  warning  Delete `␍`                                prettier/prettier
-   90:26  warning  Delete `␍`                                prettier/prettier
-   91:8   warning  Delete `␍`                                prettier/prettier
-   92:20  warning  Delete `␍`                                prettier/prettier
-   93:27  warning  Delete `␍`                                prettier/prettier
-   94:75  warning  Delete `␍`                                prettier/prettier
-   95:21  warning  Delete `␍`                                prettier/prettier
-   96:27  warning  Delete `␍`                                prettier/prettier
-   97:49  warning  Delete `␍`                                prettier/prettier
-   98:26  warning  Delete `␍`                                prettier/prettier
-   99:32  warning  Delete `␍`                                prettier/prettier
-  100:15  warning  Delete `␍`                                prettier/prettier
-  101:4   warning  Delete `␍`                                prettier/prettier
-  102:2   warning  Delete `␍`                                prettier/prettier
-  103:1   warning  Delete `␍`                                prettier/prettier
-  104:44  warning  Delete `␍`                                prettier/prettier
-  105:11  warning  Delete `␍`                                prettier/prettier
-  106:47  warning  Delete `␍`                                prettier/prettier
-  107:25  warning  Delete `␍`                                prettier/prettier
-  108:22  warning  Delete `␍`                                prettier/prettier
-  109:32  warning  Delete `␍`                                prettier/prettier
-  110:36  warning  Delete `␍`                                prettier/prettier
-  111:23  warning  Delete `␍`                                prettier/prettier
-  112:43  warning  Replace `},·'请输入'),␍` with `·},·'请输入'),`  prettier/prettier
-  113:23  warning  Delete `␍`                                prettier/prettier
-  114:4   warning  Delete `␍`                                prettier/prettier
-  115:2   warning  Delete `␍`                                prettier/prettier
-  116:45  warning  Delete `␍`                                prettier/prettier
-  117:11  warning  Delete `␍`                                prettier/prettier
-  118:12  warning  Delete `␍`                                prettier/prettier
-  119:26  warning  Delete `␍`                                prettier/prettier
-  120:27  warning  Delete `␍`                                prettier/prettier
-  121:26  warning  Delete `␍`                                prettier/prettier
-  122:8   warning  Delete `␍`                                prettier/prettier
-  123:20  warning  Delete `␍`                                prettier/prettier
-  124:27  warning  Delete `␍`                                prettier/prettier
-  125:21  warning  Delete `␍`                                prettier/prettier
-  126:27  warning  Delete `␍`                                prettier/prettier
-  127:49  warning  Delete `␍`                                prettier/prettier
-  128:26  warning  Delete `␍`                                prettier/prettier
-  129:32  warning  Delete `␍`                                prettier/prettier
-  130:15  warning  Delete `␍`                                prettier/prettier
-  131:4   warning  Delete `␍`                                prettier/prettier
-  132:2   warning  Delete `␍`                                prettier/prettier
-  133:1   warning  Delete `␍`                                prettier/prettier
-  134:43  warning  Delete `␍`                                prettier/prettier
-  135:11  warning  Delete `␍`                                prettier/prettier
-  136:35  warning  Delete `␍`                                prettier/prettier
-  137:22  warning  Delete `␍`                                prettier/prettier
-  138:30  warning  Delete `␍`                                prettier/prettier
-  139:36  warning  Delete `␍`                                prettier/prettier
-  140:23  warning  Delete `␍`                                prettier/prettier
-  141:4   warning  Delete `␍`                                prettier/prettier
-  142:2   warning  Delete `␍`                                prettier/prettier
-  143:44  warning  Delete `␍`                                prettier/prettier
-  144:11  warning  Delete `␍`                                prettier/prettier
-  145:12  warning  Delete `␍`                                prettier/prettier
-  146:26  warning  Delete `␍`                                prettier/prettier
-  147:26  warning  Delete `␍`                                prettier/prettier
-  148:31  warning  Delete `␍`                                prettier/prettier
-  149:40  warning  Delete `␍`                                prettier/prettier
-  150:45  warning  Delete `␍`                                prettier/prettier
-  151:45  warning  Delete `␍`                                prettier/prettier
-  152:8   warning  Delete `␍`                                prettier/prettier
-  153:32  warning  Delete `␍`                                prettier/prettier
-  154:22  warning  Delete `␍`                                prettier/prettier
-  155:4   warning  Delete `␍`                                prettier/prettier
-  156:2   warning  Delete `␍`                                prettier/prettier
-  157:1   warning  Delete `␍`                                prettier/prettier
-  158:57  warning  Delete `␍`                                prettier/prettier
-  159:67  warning  Delete `␍`                                prettier/prettier
-  160:35  warning  Delete `␍`                                prettier/prettier
-  161:27  warning  Delete `␍`                                prettier/prettier
-  162:4   warning  Delete `␍`                                prettier/prettier
-  163:34  warning  Delete `␍`                                prettier/prettier
-  164:2   warning  Delete `␍`                                prettier/prettier
-  165:1   warning  Delete `␍`                                prettier/prettier
-  166:61  warning  Delete `␍`                                prettier/prettier
-  167:11  warning  Delete `␍`                                prettier/prettier
-  168:30  warning  Delete `␍`                                prettier/prettier
-  169:24  warning  Delete `␍`                                prettier/prettier
-  170:28  warning  Delete `␍`                                prettier/prettier
-  171:42  warning  Delete `␍`                                prettier/prettier
-  172:38  warning  Delete `␍`                                prettier/prettier
-  173:9   warning  Delete `␍`                                prettier/prettier
-  174:14  warning  Delete `␍`                                prettier/prettier
-  175:49  warning  Delete `␍`                                prettier/prettier
-  176:41  warning  Delete `␍`                                prettier/prettier
-  177:15  warning  Delete `␍`                                prettier/prettier
-  178:8   warning  Delete `␍`                                prettier/prettier
-  179:4   warning  Delete `␍`                                prettier/prettier
-  180:2   warning  Delete `␍`                                prettier/prettier
-  181:1   warning  Delete `␍`                                prettier/prettier
-  182:4   warning  Delete `␍`                                prettier/prettier
-  183:26  warning  Delete `␍`                                prettier/prettier
-  184:47  warning  Delete `␍`                                prettier/prettier
-  185:36  warning  Delete `␍`                                prettier/prettier
-  186:44  warning  Delete `␍`                                prettier/prettier
-  187:4   warning  Delete `␍`                                prettier/prettier
-  188:51  warning  Delete `␍`                                prettier/prettier
-  189:16  warning  Delete `␍`                                prettier/prettier
-  190:21  warning  Delete `␍`                                prettier/prettier
-  191:43  warning  Delete `␍`                                prettier/prettier
-  192:5   warning  Delete `␍`                                prettier/prettier
-  193:2   warning  Delete `␍`                                prettier/prettier
-  194:1   warning  Delete `␍`                                prettier/prettier
-  195:50  warning  Delete `␍`                                prettier/prettier
-  196:58  warning  Delete `␍`                                prettier/prettier
-  197:2   warning  Delete `␍`                                prettier/prettier
-  198:1   warning  Delete `␍`                                prettier/prettier
-  199:54  warning  Delete `␍`                                prettier/prettier
-  200:74  warning  Delete `␍`                                prettier/prettier
-  201:11  warning  Delete `␍`                                prettier/prettier
-  202:34  warning  Delete `␍`                                prettier/prettier
-  203:80  warning  Delete `␍`                                prettier/prettier
-  204:8   warning  Delete `␍`                                prettier/prettier
-  205:34  warning  Delete `␍`                                prettier/prettier
-  206:52  warning  Delete `␍`                                prettier/prettier
-  207:8   warning  Delete `␍`                                prettier/prettier
-  208:34  warning  Delete `␍`                                prettier/prettier
-  209:53  warning  Delete `␍`                                prettier/prettier
-  210:8   warning  Delete `␍`                                prettier/prettier
-  211:34  warning  Delete `␍`                                prettier/prettier
-  212:57  warning  Delete `␍`                                prettier/prettier
-  213:8   warning  Delete `␍`                                prettier/prettier
-  214:52  warning  Delete `␍`                                prettier/prettier
-  215:45  warning  Delete `␍`                                prettier/prettier
-  216:4   warning  Delete `␍`                                prettier/prettier
-  217:2   warning  Delete `␍`                                prettier/prettier
-  218:1   warning  Delete `␍`                                prettier/prettier
-  219:55  warning  Delete `␍`                                prettier/prettier
-  220:11  warning  Delete `␍`                                prettier/prettier
-  221:61  warning  Delete `␍`                                prettier/prettier
-  222:30  warning  Delete `␍`                                prettier/prettier
-  223:31  warning  Delete `␍`                                prettier/prettier
-  224:4   warning  Delete `␍`                                prettier/prettier
-  225:2   warning  Delete `␍`                                prettier/prettier
-  226:1   warning  Delete `␍`                                prettier/prettier
-  227:47  warning  Delete `␍`                                prettier/prettier
-  228:11  warning  Delete `␍`                                prettier/prettier
-  229:25  warning  Delete `␍`                                prettier/prettier
-  230:20  warning  Delete `␍`                                prettier/prettier
-  231:28  warning  Delete `␍`                                prettier/prettier
-  232:32  warning  Delete `␍`                                prettier/prettier
-  233:27  warning  Delete `␍`                                prettier/prettier
-  234:27  warning  Delete `␍`                                prettier/prettier
-  235:25  warning  Delete `␍`                                prettier/prettier
-  236:4   warning  Delete `␍`                                prettier/prettier
-  237:2   warning  Delete `␍`                                prettier/prettier
-  238:1   warning  Delete `␍`                                prettier/prettier
-  239:48  warning  Delete `␍`                                prettier/prettier
-  240:14  warning  Delete `␍`                                prettier/prettier
-  241:6   warning  Delete `␍`                                prettier/prettier
-  242:14  warning  Delete `␍`                                prettier/prettier
-  243:22  warning  Delete `␍`                                prettier/prettier
-  244:57  warning  Delete `␍`                                prettier/prettier
-  245:7   warning  Delete `␍`                                prettier/prettier
-  246:6   warning  Delete `␍`                                prettier/prettier
-  247:13  warning  Delete `␍`                                prettier/prettier
-  248:23  warning  Delete `␍`                                prettier/prettier
-  249:69  warning  Delete `␍`                                prettier/prettier
-  250:7   warning  Delete `␍`                                prettier/prettier
-  251:27  warning  Delete `␍`                                prettier/prettier
-  252:24  warning  Delete `␍`                                prettier/prettier
-  253:6   warning  Delete `␍`                                prettier/prettier
-  254:16  warning  Delete `␍`                                prettier/prettier
-  255:19  warning  Delete `␍`                                prettier/prettier
-  256:21  warning  Delete `␍`                                prettier/prettier
-  257:54  warning  Delete `␍`                                prettier/prettier
-  258:38  warning  Delete `␍`                                prettier/prettier
-  259:16  warning  Delete `␍`                                prettier/prettier
-  260:9   warning  Delete `␍`                                prettier/prettier
-  261:7   warning  Delete `␍`                                prettier/prettier
-  262:24  warning  Delete `␍`                                prettier/prettier
-  263:5   warning  Delete `␍`                                prettier/prettier
-  264:2   warning  Delete `␍`                                prettier/prettier
-  265:1   warning  Delete `␍`                                prettier/prettier
-  266:76  warning  Delete `␍`                                prettier/prettier
-  267:49  warning  Delete `␍`                                prettier/prettier
-  268:11  warning  Delete `␍`                                prettier/prettier
-  269:14  warning  Delete `␍`                                prettier/prettier
-  270:11  warning  Delete `␍`                                prettier/prettier
-  271:31  warning  Delete `␍`                                prettier/prettier
-  272:30  warning  Delete `␍`                                prettier/prettier
-  273:28  warning  Delete `␍`                                prettier/prettier
-  274:28  warning  Delete `␍`                                prettier/prettier
-  275:35  warning  Delete `␍`                                prettier/prettier
-  276:51  warning  Delete `␍`                                prettier/prettier
-  277:78  warning  Delete `␍`                                prettier/prettier
-  278:26  warning  Delete `␍`                                prettier/prettier
-  279:10  warning  Delete `␍`                                prettier/prettier
-  280:22  warning  Delete `␍`                                prettier/prettier
-  281:33  warning  Delete `␍`                                prettier/prettier
-  282:49  warning  Delete `␍`                                prettier/prettier
-  283:11  warning  Delete `␍`                                prettier/prettier
-  284:66  warning  Delete `␍`                                prettier/prettier
-  285:70  warning  Delete `␍`                                prettier/prettier
-  286:29  warning  Delete `␍`                                prettier/prettier
-  287:10  warning  Delete `␍`                                prettier/prettier
-  288:22  warning  Delete `␍`                                prettier/prettier
-  289:29  warning  Delete `␍`                                prettier/prettier
-  290:45  warning  Delete `␍`                                prettier/prettier
-  291:11  warning  Delete `␍`                                prettier/prettier
-  292:31  warning  Delete `␍`                                prettier/prettier
-  293:30  warning  Delete `␍`                                prettier/prettier
-  294:29  warning  Delete `␍`                                prettier/prettier
-  295:64  warning  Delete `␍`                                prettier/prettier
-  296:30  warning  Delete `␍`                                prettier/prettier
-  297:10  warning  Delete `␍`                                prettier/prettier
-  298:9   warning  Delete `␍`                                prettier/prettier
-  299:7   warning  Delete `␍`                                prettier/prettier
-  300:23  warning  Delete `␍`                                prettier/prettier
-  301:4   warning  Delete `␍`                                prettier/prettier
-  302:2   warning  Delete `␍`                                prettier/prettier
-  303:1   warning  Delete `␍`                                prettier/prettier
-  304:44  warning  Delete `␍`                                prettier/prettier
-  305:11  warning  Delete `␍`                                prettier/prettier
-  306:14  warning  Delete `␍`                                prettier/prettier
-  307:11  warning  Delete `␍`                                prettier/prettier
-  308:28  warning  Delete `␍`                                prettier/prettier
-  309:51  warning  Delete `␍`                                prettier/prettier
-  310:28  warning  Delete `␍`                                prettier/prettier
-  311:26  warning  Delete `␍`                                prettier/prettier
-  312:29  warning  Delete `␍`                                prettier/prettier
-  313:30  warning  Delete `␍`                                prettier/prettier
-  314:30  warning  Delete `␍`                                prettier/prettier
-  315:29  warning  Delete `␍`                                prettier/prettier
-  316:71  warning  Delete `␍`                                prettier/prettier
-  317:30  warning  Delete `␍`                                prettier/prettier
-  318:30  warning  Delete `␍`                                prettier/prettier
-  319:30  warning  Delete `␍`                                prettier/prettier
-  320:32  warning  Delete `␍`                                prettier/prettier
-  321:64  warning  Delete `␍`                                prettier/prettier
-  322:10  warning  Delete `␍`                                prettier/prettier
-  323:9   warning  Delete `␍`                                prettier/prettier
-  324:7   warning  Delete `␍`                                prettier/prettier
-  325:23  warning  Delete `␍`                                prettier/prettier
-  326:4   warning  Delete `␍`                                prettier/prettier
-  327:2   warning  Delete `␍`                                prettier/prettier
-
-✖ 327 problems (0 errors, 327 warnings)
-  0 errors and 327 warnings potentially fixable with the `--fix` option.
-
-
- @ ./src/views/user/Detail.jsx 13:0-72 57:23-31
- @ ./src/router/user.js
- @ ./src/router/index.js
- @ ./src/main.js
- @ multi ./src/main.js
+ WARNING  Compiled with 2 warnings下午5:57:48
 
  warning  
 
@@ -559,7 +189,7 @@ Entrypoints:
   app (1.36 MiB)
       js/chunk-vendors.14aee265.js
       css/app.46cb2f6d.css
-      js/app.7ba740c4.js
+      js/app.450fc355.js
 
 
   File                                      Size             Gzipped
@@ -569,9 +199,9 @@ Entrypoints:
   ..\..\release\cms\console\child\dvs-ba    271.31 KiB       74.03 KiB
   sic\js\chunk-289d7297.aaaf22da.js
   ..\..\release\cms\console\child\dvs-ba    138.19 KiB       56.68 KiB
-  sic\js\app.7ba740c4.js
+  sic\js\app.450fc355.js
   ..\..\release\cms\console\child\dvs-ba    91.49 KiB        21.74 KiB
-  sic\js\chunk-8b6eab86.0168bba9.js
+  sic\js\chunk-8b6eab86.21a71fd5.js
   ..\..\release\cms\console\child\dvs-ba    35.89 KiB        9.36 KiB
   sic\js\chunk-454f031c.fc1fe725.js
   ..\..\release\cms\console\child\dvs-ba    32.42 KiB        9.67 KiB
@@ -602,8 +232,8 @@ Entrypoints:
   sic\js\chunk-5bad774c.8775881b.js
   ..\..\release\cms\console\child\dvs-ba    7.51 KiB         2.43 KiB
   sic\js\chunk-347797e1.478b001a.js
-  ..\..\release\cms\console\child\dvs-ba    7.22 KiB         2.35 KiB
-  sic\js\chunk-164d4132.016c5780.js
+  ..\..\release\cms\console\child\dvs-ba    7.29 KiB         2.38 KiB
+  sic\js\chunk-164d4132.ede225c0.js
   ..\..\release\cms\console\child\dvs-ba    6.29 KiB         2.54 KiB
   sic\js\chunk-feff6786.623cbf5d.js
   ..\..\release\cms\console\child\dvs-ba    5.62 KiB         2.12 KiB
@@ -718,13 +348,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-basic directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 46.35s.
+Done in 40.69s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 5 warnings下午7:17:05
+ WARNING  Compiled with 5 warnings下午5:58:42
 
  warning  
 
@@ -809,17 +439,17 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-cons directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 52.45s.
+Done in 53.59s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 7 warnings下午7:17:54
+ WARNING  Compiled with 7 warnings下午5:59:35
 
  warning  
 
-chunk chunk-b6e1ffbc [mini-css-extract-plugin]
+chunk chunk-1d835ce8 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/uploadSystemPrompt.vue?vue&type=style&index=0&id=1058d6c8&lang=scss&scoped=true
 despite it was not able to fulfill desired ordering with these modules:
@@ -828,7 +458,7 @@ despite it was not able to fulfill desired ordering with these modules:
 
  warning  
 
-chunk chunk-b6e1ffbc [mini-css-extract-plugin]
+chunk chunk-1d835ce8 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/tree.vue?vue&type=style&index=0&id=63494d45&lang=scss&scoped=true
 despite it was not able to fulfill desired ordering with these modules:
@@ -844,7 +474,7 @@ despite it was not able to fulfill desired ordering with these modules:
 
  warning  
 
-chunk chunk-b6e1ffbc [mini-css-extract-plugin]
+chunk chunk-1d835ce8 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/page-setting.vue?vue&type=style&index=0&id=e47b9396&lang=scss&scoped=true
 despite it was not able to fulfill desired ordering with these modules:
@@ -856,7 +486,7 @@ despite it was not able to fulfill desired ordering with these modules:
 
  warning  
 
-chunk chunk-b6e1ffbc [mini-css-extract-plugin]
+chunk chunk-1d835ce8 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/views/pestilence/returnees-popu.vue?vue&type=style&index=0&id=7ca651f4&lang=scss&scoped=true
 despite it was not able to fulfill desired ordering with these modules:
@@ -865,7 +495,7 @@ despite it was not able to fulfill desired ordering with these modules:
 
  warning  
 
-chunk chunk-b6e1ffbc [mini-css-extract-plugin]
+chunk chunk-1d835ce8 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/search/index.vue?vue&type=style&index=0&id=d833d396&scoped=true&lang=css
 despite it was not able to fulfill desired ordering with these modules:
@@ -878,8 +508,8 @@ despite it was not able to fulfill desired ordering with these modules:
 asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 This can impact web performance.
 Assets: 
+  js/chunk-1d835ce8.0508f2e3.js (306 KiB)
   js/chunk-52cd259e.7a277b25.js (431 KiB)
-  js/chunk-b6e1ffbc.1071cbc7.js (306 KiB)
   css/chunk-vendors.7b8a3df6.css (374 KiB)
   js/chunk-vendors.4db57d48.js (1.14 MiB)
 
@@ -891,7 +521,7 @@ Entrypoints:
       css/chunk-vendors.7b8a3df6.css
       js/chunk-vendors.4db57d48.js
       css/app.c34c9d27.css
-      js/app.b85d3009.js
+      js/app.8a0a33ea.js
 
 
   File                                      Size             Gzipped
@@ -900,10 +530,10 @@ Entrypoints:
   llage\js\chunk-vendors.4db57d48.js
   ..\..\release\cms\console\child\dvs-vi    431.13 KiB       113.40 KiB
   llage\js\chunk-52cd259e.7a277b25.js
-  ..\..\release\cms\console\child\dvs-vi    305.70 KiB       72.58 KiB
-  llage\js\chunk-b6e1ffbc.1071cbc7.js
-  ..\..\release\cms\console\child\dvs-vi    139.93 KiB       45.71 KiB
-  llage\js\app.b85d3009.js
+  ..\..\release\cms\console\child\dvs-vi    305.70 KiB       72.59 KiB
+  llage\js\chunk-1d835ce8.0508f2e3.js
+  ..\..\release\cms\console\child\dvs-vi    139.93 KiB       45.70 KiB
+  llage\js\app.8a0a33ea.js
   ..\..\release\cms\console\child\dvs-vi    105.26 KiB       37.69 KiB
   llage\js\chunk-65d5decc.0ecd9faa.js
   ..\..\release\cms\console\child\dvs-vi    373.93 KiB       97.59 KiB
@@ -911,7 +541,7 @@ Entrypoints:
   ..\..\release\cms\console\child\dvs-vi    29.30 KiB        10.31 KiB
   llage\css\chunk-52cd259e.0e766b10.css
   ..\..\release\cms\console\child\dvs-vi    21.78 KiB        3.12 KiB
-  llage\css\chunk-b6e1ffbc.f92a4543.css
+  llage\css\chunk-1d835ce8.e373a296.css
   ..\..\release\cms\console\child\dvs-vi    2.71 KiB         0.88 KiB
   llage\css\app.c34c9d27.css
   ..\..\release\cms\console\child\dvs-vi    2.28 KiB         0.61 KiB
@@ -922,13 +552,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-village directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 48.27s.
+Done in 51.79s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 6 warnings下午7:18:46
+ WARNING  Compiled with 6 warnings下午6:00:24
 
  warning  
 
@@ -1023,13 +653,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-digital directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 52.18s.
+Done in 48.90s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午7:19:33
+ WARNING  Compiled with 2 warnings下午6:01:11
 
  warning  
 
@@ -1079,13 +709,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-park directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 45.37s.
+Done in 46.20s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 5 warnings下午7:21:03
+ WARNING  Compiled with 5 warnings下午6:02:34
 
  warning  in ./src/views/map-icon-manage/icon-add.vue?vue&type=script&lang=js
 
@@ -1192,13 +822,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-gis directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 88.84s.
+Done in 82.51s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-ffp 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午7:22:00
+ WARNING  Compiled with 2 warnings下午6:03:22
 
  warning  
 
@@ -1216,17 +846,17 @@ Entrypoints:
       css/about.7b8a3df6.css
       js/about.3cb307b5.js
       css/app.a416fbf1.css
-      js/app.f110b1f2.js
+      js/app.c69c7ae7.js
 
 
   File                                      Size             Gzipped
 
   ..\..\release\cms\console\child\dvs-ff    1160.13 KiB      336.52 KiB
   p\js\about.3cb307b5.js
-  ..\..\release\cms\console\child\dvs-ff    221.27 KiB       45.79 KiB
-  p\js\chunk-0f21ec2c.03dab3e8.js
+  ..\..\release\cms\console\child\dvs-ff    221.43 KiB       45.86 KiB
+  p\js\chunk-2072dd3a.c3f422fb.js
   ..\..\release\cms\console\child\dvs-ff    138.27 KiB       45.47 KiB
-  p\js\app.f110b1f2.js
+  p\js\app.c69c7ae7.js
   ..\..\release\cms\console\child\dvs-ff    79.64 KiB        30.36 KiB
   p\js\chunk-2d2107eb.d0a98f02.js
   ..\..\release\cms\console\child\dvs-ff    53.46 KiB        11.72 KiB
@@ -1234,7 +864,7 @@ Entrypoints:
   ..\..\release\cms\console\child\dvs-ff    373.93 KiB       97.59 KiB
   p\css\about.7b8a3df6.css
   ..\..\release\cms\console\child\dvs-ff    26.15 KiB        3.63 KiB
-  p\css\chunk-0f21ec2c.1993f726.css
+  p\css\chunk-2072dd3a.1b232c05.css
   ..\..\release\cms\console\child\dvs-ff    5.00 KiB         1.41 KiB
   p\css\app.a416fbf1.css
   ..\..\release\cms\console\child\dvs-ff    0.48 KiB         0.20 KiB
@@ -1245,45 +875,54 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-ffp directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 56.13s.
+Done in 47.41s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-ffp} 成功
 准备开始编译PC
 tag不存在 要进行git tag
 打tag项目:<<pc后台管理>>成功
 删除项目： 中的配置文件成功
-[dev 89a5f756] build：前端app、qrocde、wechat、park、console(child)commit-version:2.5.1.005
- 36 files changed, 43 insertions(+), 58 deletions(-)
- delete mode 100644 cms/app/child/ffp-app/js/app.19e2d8a3.js
- create mode 100644 cms/app/child/ffp-app/js/app.af162dfd.js
- rename cms/app/child/ffp-app/js/{chunk-192eb8b9.bfb5315d.js => chunk-192eb8b9.970a89cd.js} (100%)
- delete mode 100644 cms/app/child/ffp-app/js/chunk-395b9686.5c1e5646.js
- rename cms/app/child/ffp-app/js/{chunk-59506bea.c5a3998e.js => chunk-59506bea.a23c03a7.js} (98%)
- create mode 100644 cms/app/child/ffp-app/js/chunk-8db79940.588d13c9.js
- delete mode 100644 cms/app/js/app.2ef6f020.js[base].gz
- rename cms/app/js/{app.2ef6f020.js => app.afd43ee6.js} (99%)
- create mode 100644 cms/app/js/app.afd43ee6.js[base].gz
- delete mode 100644 cms/app/js/chunk-d67d8fa8.0a24caa4.js
- delete mode 100644 cms/app/js/chunk-d67d8fa8.0a24caa4.js[base].gz
- create mode 100644 cms/app/js/chunk-e75616aa.d576ffd2.js
- create mode 100644 cms/app/js/chunk-e75616aa.d576ffd2.js[base].gz
- rename cms/console/assets/{Home.7d70af2c.js => Home.fea5f2fb.js} (99%)
- rename cms/console/assets/{header.93bc2e9c.js => header.7619a7f6.js} (78%)
- rename cms/console/assets/{index.10f04f19.js => index.1e1f2e74.js} (70%)
- rename cms/console/assets/{index.95e0aa82.js => index.386a210f.js} (94%)
- rename cms/console/assets/{init-password.b905bbdc.js => init-password.bfbf5262.js} (62%)
- rename cms/console/assets/{login.df259f3f.js => login.b2060e14.js} (99%)
- delete mode 100644 cms/console/assets/side-menu.06db71a1.js
- delete mode 100644 cms/console/assets/side-menu.4bcaaa32.css
- create mode 100644 cms/console/assets/side-menu.ab36dfab.js
- create mode 100644 cms/console/assets/side-menu.dba08087.css
- rename cms/console/assets/{update-password.e4ee4e70.js => update-password.0a4f511e.js} (98%)
- rename cms/console/assets/{useModule.8570247f.js => useModule.c0bca8cb.js} (98%)
- rename cms/console/child/dvs-basic/js/{app.ec449e6f.js => app.7ba740c4.js} (99%)
- rename cms/console/child/dvs-basic/js/{chunk-1e9568dc.bd671a14.js => chunk-1e9568dc.9a8a78d2.js} (76%)
- rename cms/console/child/dvs-ffp/css/{chunk-7a1c832c.4cbdeb77.css => chunk-0f21ec2c.1993f726.css} (79%)
- rename cms/console/child/dvs-ffp/js/{app.8836b969.js => app.f110b1f2.js} (98%)
- create mode 100644 cms/console/child/dvs-ffp/js/chunk-0f21ec2c.03dab3e8.js
- delete mode 100644 cms/console/child/dvs-ffp/js/chunk-7a1c832c.2eefe477.js
+[dev cc51d828] build：前端app、qrocde、wechat、park、console(child)commit-version:2.5.1.007
+ 45 files changed, 96 insertions(+), 85 deletions(-)
+ delete mode 100644 cms/app/child/ffp-app/js/about.50d14c5b.js
+ create mode 100644 cms/app/child/ffp-app/js/about.bd8ccb13.js
+ delete mode 100644 cms/app/child/ffp-app/js/app.0c17be82.js
+ create mode 100644 cms/app/child/ffp-app/js/app.97f3d435.js
+ delete mode 100644 cms/app/child/ffp-app/js/chunk-1444ef2b.adf44be5.js
+ delete mode 100644 cms/app/child/ffp-app/js/chunk-192eb8b9.970a89cd.js
+ create mode 100644 cms/app/child/ffp-app/js/chunk-491f1e44.3539f6a0.js
+ delete mode 100644 cms/app/child/ffp-app/js/chunk-59506bea.a23c03a7.js
+ create mode 100644 cms/app/child/ffp-app/js/chunk-67f8fe9d.5d323a4b.js
+ create mode 100644 cms/app/child/ffp-app/js/chunk-a245b3ce.28cbb7e5.js
+ rename cms/app/js/{app.258b161a.js => app.0172fb9f.js} (90%)
+ create mode 100644 cms/app/js/app.0172fb9f.js[base].gz
+ delete mode 100644 cms/app/js/app.258b161a.js[base].gz
+ create mode 100644 cms/app/js/chunk-2c74f986.e8c97251.js
+ create mode 100644 cms/app/js/chunk-2c74f986.e8c97251.js[base].gz
+ delete mode 100644 cms/app/js/chunk-35bf0e9c.b37d355e.js
+ delete mode 100644 cms/app/js/chunk-35bf0e9c.b37d355e.js[base].gz
+ delete mode 100644 cms/app/js/chunk-56fee663.c1a7cff9.js
+ delete mode 100644 cms/app/js/chunk-56fee663.c1a7cff9.js[base].gz
+ create mode 100644 cms/app/js/chunk-7c27f912.2fb26853.js
+ create mode 100644 cms/app/js/chunk-7c27f912.2fb26853.js[base].gz
+ rename cms/console/assets/{Home.778ab406.js => Home.53bbe1ca.js} (99%)
+ rename cms/console/assets/{header.55855e22.js => header.8e84467b.js} (97%)
+ rename cms/console/assets/{index.687e9b05.js => index.926a83b9.js} (65%)
+ rename cms/console/assets/{index.a735a5e8.js => index.adb62e6e.js} (92%)
+ rename cms/console/assets/{init-password.45b94a38.js => init-password.fc43066d.js} (65%)
+ rename cms/console/assets/{login.986dc879.js => login.23923895.js} (99%)
+ delete mode 100644 cms/console/assets/side-menu.0619e8dd.js
+ create mode 100644 cms/console/assets/side-menu.93807c95.css
+ create mode 100644 cms/console/assets/side-menu.be9fe788.js
+ delete mode 100644 cms/console/assets/side-menu.d6db23bf.css
+ rename cms/console/assets/{update-password.29d283a3.js => update-password.e495eeb5.js} (98%)
+ rename cms/console/assets/{useModule.3019b0e4.js => useModule.06c77512.js} (98%)
+ rename cms/console/child/dvs-ffp/css/{chunk-6e0cee1f.ddf8bd13.css => chunk-2072dd3a.1b232c05.css} (93%)
+ rename cms/console/child/dvs-ffp/js/{app.62eed809.js => app.c69c7ae7.js} (81%)
+ create mode 100644 cms/console/child/dvs-ffp/js/chunk-2072dd3a.c3f422fb.js
+ delete mode 100644 cms/console/child/dvs-ffp/js/chunk-6e0cee1f.0ffec2a3.js
+ rename cms/console/child/dvs-village/css/{chunk-b6e1ffbc.f92a4543.css => chunk-1d835ce8.e373a296.css} (97%)
+ rename cms/console/child/dvs-village/js/{app.b85d3009.js => app.8a0a33ea.js} (96%)
+ rename cms/console/child/dvs-village/js/{chunk-b6e1ffbc.1071cbc7.js => chunk-1d835ce8.0508f2e3.js} (74%)
 5秒后将自动退出本脚本：
 5
 4

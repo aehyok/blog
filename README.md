@@ -60,8 +60,17 @@
     - 文档 https://rain120.github.io/athena/zh/slate/Introduction.html#demo
     - https://github.com/ianstormtaylor/slate/issues/3899
     - 
+- 2月25日
+  - 下载资料
+  - 吾爱破解 https://www.52pojie.cn/[待破解]
+- 2月24日
+  - EFCore Where和Select的使用
+    - 要引入System.Linq，搞死我了，好多天的问题了。
+  - 数据库已由腾讯云迁移到华为云
+  - API服务待迁移到华为云[待尝试]
+
 - 2月23日
-  - audio
+  - audio 
     - 播放器 https://github.com/DIYgod/APlayer
     - 文档  https://aplayer.js.org/#/zh-Hans/?id=%E5%AE%89%E8%A3%85
 - 2月22日
