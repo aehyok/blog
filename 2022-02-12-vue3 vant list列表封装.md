@@ -375,5 +375,13 @@
   5、上拉加载列表数据判断仍热存在统一封装
   6、最后一次加载数据进行判断处理
   7、TypeScript用的还不够熟练，数据列表这一块的封装还不到位，争取有时间再进行深入一下。
-  
-  --、再加上效果图，或者GIF，以及小视频进行展示效果
+
+## 总结
+  - 实际使用过程中还可以继续优化很多的细节工作，比如有些列表一次性加载即可，不需要进行下拉刷新或者上拉加载的功能，都可以通过传递参数进行控制等等。
+  - 封装的过程就是对那些重复性的工作进行提炼，提高代码的复用性，减少代码的拷贝粘贴，这样调用组件后的代码也方便维护和测试工作，相对来说稳定性也更加强劲。
+
+> [https://github.com/aehyok/vue-qiankun/vite-vue+react+demo/vite-h5/src/views/news-list/](https://github.com/aehyok/vue-qiankun/vite-vue+react+demo/vite-h5/src/views/news-list/) 
+  本文中涉及到的代码链接，其中的news-before是没有封装的代码，news-after则是封装后的代码。
+
+> [https://github.com/aehyok/2022](https://github.com/aehyok/2022) 
+   最后自己每天工作中的笔记记录仓库，主要以文章链接和问题处理方案为主。

@@ -1,18 +1,32 @@
 tag 
 包含a------村委app
 包含c------pc后台管理
- 命令行中包含的版本号: 2.5.1.007
+ 命令行中包含的版本号: 2.5.1.011
 -------------------------------------------------
 M	main-app/public/config.js
 Your branch is up to date with 'origin/dev'.
 开始拉取项目:<<村委app>>
-Already up to date.
+Updating 62d931b..dc49ff4
+Fast-forward
+ ffp-app/src/views/Home.vue                         |  2 +-
+ ffp-app/src/views/detection/detection-detail.vue   | 20 +++++-----
+ ffp-app/src/views/inspectRecord/record-index.vue   | 10 ++---
+ ffp-app/src/views/inspectRecord/record-month.vue   | 45 ++++++++++++----------
+ .../src/views/passDeliberate/pass-deliberate.vue   | 11 +++---
+ ffp-app/src/views/passMoPai/pass-moPai.vue         |  2 +-
+ ffp-app/src/views/report/report-index.vue          |  2 +-
+ ffp-app/src/views/rollCall/choiceCall.vue          |  2 +-
+ ffp-app/src/views/rollCall/generateCall.vue        |  2 +-
+ ffp-app/src/views/roster/register.vue              |  4 +-
+ ffp-app/src/views/task/task-management.vue         |  7 +++-
+ main-app/src/views/Mine.vue                        |  2 +-
+ 12 files changed, 58 insertions(+), 51 deletions(-)
 拉取项目<<村委app>>成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午5:55:38
+ WARNING  Compiled with 2 warnings下午7:29:52
 
  warning  
 
@@ -25,17 +39,17 @@ Assets:
   configImage/greenhouse(center).png (438 KiB)
   configImage/greenhouse(door).png (393 KiB)
   configImage/secondhouse(northwest).png (460 KiB)
-  scan/u1039.png (306 KiB)
   scan/u1036.png (446 KiB)
+  scan/u1039.png (306 KiB)
   scan/u1040.png (297 KiB)
-  scan/u1042.png (278 KiB)
   scan/u1041.png (447 KiB)
-  scan/u1043.png (335 KiB)
   scan/u1044.png (312 KiB)
+  scan/u1042.png (278 KiB)
+  scan/u1043.png (335 KiB)
   scan/u825.jpg (254 KiB)
   scan/u826.png (256 KiB)
-  scan/u829.png (250 KiB)
   scan/u87.png (262 KiB)
+  scan/u829.png (250 KiB)
   configImage/villageDoor.png (610 KiB)
   js/chunk-vendors.9dd894f2.js[base].gz (407 KiB)
 
@@ -45,7 +59,7 @@ entrypoint size limit: The following entrypoint(s) combined asset size exceeds t
 Entrypoints:
   app (1.37 MiB)
       js/chunk-vendors.9dd894f2.js
-      js/app.0172fb9f.js
+      js/app.6f02947c.js
 
 
   File                                      Size             Gzipped
@@ -54,10 +68,10 @@ Entrypoints:
   .9dd894f2.js
   ..\..\release\cms\app\js\chunk-7c27f91    580.99 KiB       196.12 KiB
   2.2fb26853.js
-  ..\..\release\cms\app\js\app.0172fb9f.    27.93 KiB        8.43 KiB
+  ..\..\release\cms\app\js\app.6f02947c.    27.93 KiB        8.43 KiB
   js
-  ..\..\release\cms\app\js\chunk-2c74f98    17.60 KiB        8.00 KiB
-  6.e8c97251.js
+  ..\..\release\cms\app\js\chunk-ed391c9    17.60 KiB        8.00 KiB
+  6.77012849.js
   ..\..\release\cms\app\js\chunk-57c072f    7.66 KiB         2.75 KiB
   0.d9a03174.js
   ..\..\release\cms\app\config.js           2.61 KiB         0.56 KiB
@@ -67,64 +81,58 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\app directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 71.34s.
+Done in 74.95s.
 编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午5:56:17
+ WARNING  Compiled with 2 warnings下午7:30:43
 
  warning  
 
 asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 This can impact web performance.
 Assets: 
-  js/about.bd8ccb13.js (759 KiB)
-  js/app.97f3d435.js (547 KiB)
-  js/chunk-67f8fe9d.5d323a4b.js (1.42 MiB)
+  js/about.9fb6c9fe.js (775 KiB)
+  js/app.0ab8c821.js (567 KiB)
+  js/chunk-2bb5e376.f8e2e3fa.js (1.36 MiB)
 
  warning  
 
 entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 Entrypoints:
-  app (1.28 MiB)
-      js/about.bd8ccb13.js
-      js/app.97f3d435.js
+  app (1.31 MiB)
+      js/about.9fb6c9fe.js
+      js/app.0ab8c821.js
 
 
   File                                      Size             Gzipped
 
-  ..\..\release\cms\app\child\ffp-app\js    1458.38 KiB      455.15 KiB
-  \chunk-67f8fe9d.5d323a4b.js
-  ..\..\release\cms\app\child\ffp-app\js    759.28 KiB       250.57 KiB
-  \about.bd8ccb13.js
-  ..\..\release\cms\app\child\ffp-app\js    546.51 KiB       325.69 KiB
-  \app.97f3d435.js
-  ..\..\release\cms\app\child\ffp-app\js    10.21 KiB        3.03 KiB
-  \chunk-a245b3ce.28cbb7e5.js
-  ..\..\release\cms\app\child\ffp-app\js    7.18 KiB         2.18 KiB
-  \chunk-491f1e44.3539f6a0.js
+  ..\..\release\cms\app\child\ffp-app\js    1390.31 KiB      444.88 KiB
+  \chunk-2bb5e376.f8e2e3fa.js
+  ..\..\release\cms\app\child\ffp-app\js    774.85 KiB       255.68 KiB
+  \about.9fb6c9fe.js
+  ..\..\release\cms\app\child\ffp-app\js    566.68 KiB       329.23 KiB
+  \app.0ab8c821.js
+  ..\..\release\cms\app\child\ffp-app\js    22.43 KiB        5.46 KiB
+  \chunk-a6ac591a.97e32d40.js
+  ..\..\release\cms\app\child\ffp-app\js    15.55 KiB        3.60 KiB
+  \chunk-cc30ae7a.f7def806.js
 
   Images and other types of assets omitted.
 
  DONE  Build complete. The ..\..\release\cms\app\child\ffp-app directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 38.74s.
+Done in 51.03s.
 编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app} 成功
 准备开始编译PC
 tag不存在 要进行git tag
 打tag项目:<<村委app>>成功
 Your branch is up to date with 'origin/dev'.
 开始拉取项目:<<pc后台管理>>
-Updating 291ee9f5..985a6981
-Fast-forward
- dvs-ffp/src/views/preview/informationCollection.vue   |  8 ++++----
- dvs-ffp/src/views/roster/roster-managementDetails.vue | 13 ++++++++-----
- dvs-main/src/layout/side-menu.vue                     |  2 +-
- dvs-village/src/views/pestilence/bill-returnees.vue   |  2 +-
- 4 files changed, 14 insertions(+), 11 deletions(-)
+Already up to date.
 拉取项目<<pc后台管理>>成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main 
 yarn run v1.22.17
@@ -133,44 +141,44 @@ vite v2.5.6 building for production...
 transforming...
 ✓ 1424 modules transformed.
 rendering chunks...
-../../release/cms/console/assets/bg_right.ebe508b4.png             83.38 KiB
-../../release/cms/console/assets/bg.52c4a751.png                   123.52 KiB
 ../../release/cms/console/assets/element-icons.9c88a535.woff       24.24 KiB
 ../../release/cms/console/assets/element-icons.de5eb258.ttf        49.19 KiB
-../../release/cms/console/assets/bg_nav.34419d1c.png               569.38 KiB
+../../release/cms/console/assets/bg_right.ebe508b4.png             83.38 KiB
+../../release/cms/console/assets/bg.52c4a751.png                   123.52 KiB
 ../../release/cms/console/assets/icon_developing.4f4e3bc3.png      9.01 KiB
+../../release/cms/console/assets/bg_nav.34419d1c.png               569.38 KiB
 ../../release/cms/console/assets/NotoSansHans-Light.8f64e48d.otf   8102.80 KiB
 ../../release/cms/console/assets/NotoSansHans-Bold.9e7729ef.otf    8406.21 KiB
 ../../release/cms/console/index.html                               1.01 KiB
-../../release/cms/console/assets/index.adb62e6e.js                 9.09 KiB
+../../release/cms/console/assets/index.d2946e78.js                 9.09 KiB
 ../../release/cms/console/assets/vendor.e90cd9c9.js                797.27 KiB
-../../release/cms/console/assets/Home.53bbe1ca.js                  1115.55 KiB
-../../release/cms/console/assets/update-password.e495eeb5.js       3.50 KiB
-../../release/cms/console/assets/useModule.06c77512.js             3.19 KiB
+../../release/cms/console/assets/Home.de57ce11.js                  1115.55 KiB
+../../release/cms/console/assets/update-password.abb03b0d.js       3.50 KiB
+../../release/cms/console/assets/useModule.b5adbf3e.js             3.19 KiB
 ../../release/cms/console/assets/index.e84a6182.js                 0.16 KiB
 ../../release/cms/console/assets/base64.6000bb2a.js                2.60 KiB
-../../release/cms/console/assets/init-password.fc43066d.js         3.64 KiB
-../../release/cms/console/assets/login.23923895.js                 24.97 KiB
+../../release/cms/console/assets/init-password.1aa59bf2.js         3.64 KiB
+../../release/cms/console/assets/login.ce08771a.js                 24.97 KiB
 ../../release/cms/console/assets/not-found.c6744c67.js             0.63 KiB
-../../release/cms/console/assets/index.926a83b9.js                 2.34 KiB
-../../release/cms/console/assets/header.8e84467b.js                5.52 KiB
-../../release/cms/console/assets/side-menu.be9fe788.js             2.13 KiB
+../../release/cms/console/assets/index.af4edf6c.js                 2.34 KiB
+../../release/cms/console/assets/header.f52c8241.js                5.52 KiB
+../../release/cms/console/assets/side-menu.364b5dc6.js             2.13 KiB
 ../../release/cms/console/assets/update-password.691b805b.css      0.53 KiB
-../../release/cms/console/assets/side-menu.93807c95.css            1.04 KiB
-../../release/cms/console/assets/init-password.0062fda6.css        1.52 KiB
-../../release/cms/console/assets/not-found.29c7b295.css            0.39 KiB
-../../release/cms/console/assets/header.785d88ec.css               1.43 KiB
+../../release/cms/console/assets/side-menu.de9d11c3.css            1.04 KiB
 ../../release/cms/console/assets/index.37eab154.css                0.73 KiB
+../../release/cms/console/assets/header.785d88ec.css               1.43 KiB
+../../release/cms/console/assets/not-found.29c7b295.css            0.39 KiB
+../../release/cms/console/assets/init-password.0062fda6.css        1.52 KiB
 ../../release/cms/console/assets/login.70758dd8.css                2.78 KiB
 ../../release/cms/console/assets/Home.963185b3.css                 23.20 KiB
 ../../release/cms/console/assets/index.9329f01e.css                326.85 KiB
-Done in 41.38s.
+Done in 35.31s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午5:57:48
+ WARNING  Compiled with 2 warnings下午7:32:09
 
  warning  
 
@@ -348,13 +356,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-basic directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 40.69s.
+Done in 43.99s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 5 warnings下午5:58:42
+ WARNING  Compiled with 5 warnings下午7:33:02
 
  warning  
 
@@ -439,17 +447,17 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-cons directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 53.59s.
+Done in 52.09s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 7 warnings下午5:59:35
+ WARNING  Compiled with 7 warnings下午7:33:51
 
  warning  
 
-chunk chunk-1d835ce8 [mini-css-extract-plugin]
+chunk chunk-1f2e2199 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/uploadSystemPrompt.vue?vue&type=style&index=0&id=1058d6c8&lang=scss&scoped=true
 despite it was not able to fulfill desired ordering with these modules:
@@ -458,7 +466,7 @@ despite it was not able to fulfill desired ordering with these modules:
 
  warning  
 
-chunk chunk-1d835ce8 [mini-css-extract-plugin]
+chunk chunk-1f2e2199 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/tree.vue?vue&type=style&index=0&id=63494d45&lang=scss&scoped=true
 despite it was not able to fulfill desired ordering with these modules:
@@ -474,7 +482,7 @@ despite it was not able to fulfill desired ordering with these modules:
 
  warning  
 
-chunk chunk-1d835ce8 [mini-css-extract-plugin]
+chunk chunk-1f2e2199 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/page-setting.vue?vue&type=style&index=0&id=e47b9396&lang=scss&scoped=true
 despite it was not able to fulfill desired ordering with these modules:
@@ -486,7 +494,7 @@ despite it was not able to fulfill desired ordering with these modules:
 
  warning  
 
-chunk chunk-1d835ce8 [mini-css-extract-plugin]
+chunk chunk-1f2e2199 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/views/pestilence/returnees-popu.vue?vue&type=style&index=0&id=7ca651f4&lang=scss&scoped=true
 despite it was not able to fulfill desired ordering with these modules:
@@ -495,7 +503,7 @@ despite it was not able to fulfill desired ordering with these modules:
 
  warning  
 
-chunk chunk-1d835ce8 [mini-css-extract-plugin]
+chunk chunk-1f2e2199 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!../common/components/search/index.vue?vue&type=style&index=0&id=d833d396&scoped=true&lang=css
 despite it was not able to fulfill desired ordering with these modules:
@@ -508,7 +516,7 @@ despite it was not able to fulfill desired ordering with these modules:
 asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 This can impact web performance.
 Assets: 
-  js/chunk-1d835ce8.0508f2e3.js (306 KiB)
+  js/chunk-1f2e2199.60993974.js (305 KiB)
   js/chunk-52cd259e.7a277b25.js (431 KiB)
   css/chunk-vendors.7b8a3df6.css (374 KiB)
   js/chunk-vendors.4db57d48.js (1.14 MiB)
@@ -521,7 +529,7 @@ Entrypoints:
       css/chunk-vendors.7b8a3df6.css
       js/chunk-vendors.4db57d48.js
       css/app.c34c9d27.css
-      js/app.8a0a33ea.js
+      js/app.92ab1034.js
 
 
   File                                      Size             Gzipped
@@ -530,10 +538,10 @@ Entrypoints:
   llage\js\chunk-vendors.4db57d48.js
   ..\..\release\cms\console\child\dvs-vi    431.13 KiB       113.40 KiB
   llage\js\chunk-52cd259e.7a277b25.js
-  ..\..\release\cms\console\child\dvs-vi    305.70 KiB       72.59 KiB
-  llage\js\chunk-1d835ce8.0508f2e3.js
-  ..\..\release\cms\console\child\dvs-vi    139.93 KiB       45.70 KiB
-  llage\js\app.8a0a33ea.js
+  ..\..\release\cms\console\child\dvs-vi    305.45 KiB       72.46 KiB
+  llage\js\chunk-1f2e2199.60993974.js
+  ..\..\release\cms\console\child\dvs-vi    139.93 KiB       45.71 KiB
+  llage\js\app.92ab1034.js
   ..\..\release\cms\console\child\dvs-vi    105.26 KiB       37.69 KiB
   llage\js\chunk-65d5decc.0ecd9faa.js
   ..\..\release\cms\console\child\dvs-vi    373.93 KiB       97.59 KiB
@@ -541,7 +549,7 @@ Entrypoints:
   ..\..\release\cms\console\child\dvs-vi    29.30 KiB        10.31 KiB
   llage\css\chunk-52cd259e.0e766b10.css
   ..\..\release\cms\console\child\dvs-vi    21.78 KiB        3.12 KiB
-  llage\css\chunk-1d835ce8.e373a296.css
+  llage\css\chunk-1f2e2199.b38cf509.css
   ..\..\release\cms\console\child\dvs-vi    2.71 KiB         0.88 KiB
   llage\css\app.c34c9d27.css
   ..\..\release\cms\console\child\dvs-vi    2.28 KiB         0.61 KiB
@@ -552,17 +560,17 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-village directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 51.79s.
+Done in 48.81s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-village} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 6 warnings下午6:00:24
+ WARNING  Compiled with 6 warnings下午7:34:43
 
  warning  
 
-chunk chunk-6386dda1 [mini-css-extract-plugin]
+chunk chunk-a116c266 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/page-setting.vue?vue&type=style&index=0&id=e47b9396&lang=scss&scoped=true
 despite it was not able to fulfill desired ordering with these modules:
@@ -576,7 +584,7 @@ despite it was not able to fulfill desired ordering with these modules:
 
  warning  
 
-chunk chunk-6386dda1 [mini-css-extract-plugin]
+chunk chunk-a116c266 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!../common/components/select-tree.vue?vue&type=style&index=0&id=10955b73&lang=scss&scoped=true
 despite it was not able to fulfill desired ordering with these modules:
@@ -589,7 +597,7 @@ despite it was not able to fulfill desired ordering with these modules:
 
  warning  
 
-chunk chunk-6386dda1 [mini-css-extract-plugin]
+chunk chunk-a116c266 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!../common/components/table/index.vue?vue&type=style&index=0&id=593d6170&lang=scss&scoped=true
 despite it was not able to fulfill desired ordering with these modules:
@@ -601,7 +609,7 @@ despite it was not able to fulfill desired ordering with these modules:
 
  warning  
 
-chunk chunk-6386dda1 [mini-css-extract-plugin]
+chunk chunk-a116c266 [mini-css-extract-plugin]
 Conflicting order. Following module has been added:
  * css ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/vue-loader-v16/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!../common/components/search/index.vue?vue&type=style&index=0&id=d833d396&scoped=true&lang=css
 despite it was not able to fulfill desired ordering with these modules:
@@ -624,17 +632,17 @@ Entrypoints:
       css/chunk-vendors.9ea3c739.css
       js/chunk-vendors.6c60bbc0.js
       css/app.cfeea98a.css
-      js/app.184cd724.js
+      js/app.2dd54fee.js
 
 
   File                                      Size             Gzipped
 
   ..\..\release\cms\console\child\dvs-di    1154.98 KiB      334.59 KiB
   gital\js\chunk-vendors.6c60bbc0.js
-  ..\..\release\cms\console\child\dvs-di    232.76 KiB       63.65 KiB
-  gital\js\chunk-6386dda1.8b3054ee.js
+  ..\..\release\cms\console\child\dvs-di    232.94 KiB       63.71 KiB
+  gital\js\chunk-a116c266.62c3e2ae.js
   ..\..\release\cms\console\child\dvs-di    165.27 KiB       50.58 KiB
-  gital\js\app.184cd724.js
+  gital\js\app.2dd54fee.js
   ..\..\release\cms\console\child\dvs-di    37.56 KiB        16.60 KiB
   gital\js\chunk-0d323f1c.ad50245e.js
   ..\..\release\cms\console\child\dvs-di    18.34 KiB        6.96 KiB
@@ -642,7 +650,7 @@ Entrypoints:
   ..\..\release\cms\console\child\dvs-di    374.40 KiB       97.76 KiB
   gital\css\chunk-vendors.9ea3c739.css
   ..\..\release\cms\console\child\dvs-di    138.52 KiB       99.46 KiB
-  gital\css\chunk-6386dda1.bbe21419.css
+  gital\css\chunk-a116c266.1f3b2bff.css
   ..\..\release\cms\console\child\dvs-di    4.41 KiB         1.06 KiB
   gital\css\chunk-0d323f1c.da274720.css
   ..\..\release\cms\console\child\dvs-di    3.25 KiB         0.99 KiB
@@ -653,13 +661,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-digital directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 48.90s.
+Done in 51.20s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-digital} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午6:01:11
+ WARNING  Compiled with 2 warnings下午7:35:26
 
  warning  
 
@@ -709,13 +717,13 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-park directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 46.20s.
+Done in 42.78s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-park} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 5 warnings下午6:02:34
+ WARNING  Compiled with 5 warnings下午7:36:46
 
  warning  in ./src/views/map-icon-manage/icon-add.vue?vue&type=script&lang=js
 
@@ -769,7 +777,7 @@ Assets:
   css/chunk-vendors.7b8a3df6.css (374 KiB)
   js/chunk-vendors.4d4355c8.js (1.14 MiB)
   js/customize-mark~greenhouse-mark~household-mark~land-plot~park-block-plot~park-customize-mark~park-web~22ad1ba1.da7f3af0.js (438 KiB)
-  js/land-plot.f7b6dd48.js (245 KiB)
+  js/land-plot.4a1e6553.js (245 KiB)
 
  warning  
 
@@ -779,7 +787,7 @@ Entrypoints:
       css/chunk-vendors.7b8a3df6.css
       js/chunk-vendors.4d4355c8.js
       css/app.f2a8707c.css
-      js/app.3535a704.js
+      js/app.933dd489.js
 
 
   File                                      Size             Gzipped
@@ -791,15 +799,15 @@ Entrypoints:
   usehold-mark~land-plot~park-block-plot
   ~park-customize-mark~park-web~22ad1ba1
   .da7f3af0.js
-  ..\..\release\cms\console\child\dvs-gi    244.79 KiB       54.37 KiB
-  s\js\land-plot.f7b6dd48.js
+  ..\..\release\cms\console\child\dvs-gi    244.85 KiB       54.39 KiB
+  s\js\land-plot.4a1e6553.js
   ..\..\release\cms\console\child\dvs-gi    145.32 KiB       46.26 KiB
-  s\js\app.3535a704.js
-  ..\..\release\cms\console\child\dvs-gi    26.12 KiB        7.33 KiB
+  s\js\app.933dd489.js
+  ..\..\release\cms\console\child\dvs-gi    26.25 KiB        7.34 KiB
   s\js\customize-mark~customize-mark-man
   age~greenhouse-manage~land-manage~plan
   ning-land-plot~public-facilit~32a77586
-  .68010936.js
+  .f765589a.js
   ..\..\release\cms\console\child\dvs-gi    373.93 KiB       97.59 KiB
   s\css\chunk-vendors.7b8a3df6.css
   ..\..\release\cms\console\child\dvs-gi    28.81 KiB        10.13 KiB
@@ -808,27 +816,27 @@ Entrypoints:
   t~park-customize-mark~park-web~22ad1ba
   1.16cb1040.css
   ..\..\release\cms\console\child\dvs-gi    12.36 KiB        1.80 KiB
-  s\css\land-plot.c2add690.css
+  s\css\land-plot.a8cca948.css
   ..\..\release\cms\console\child\dvs-gi    3.97 KiB         1.14 KiB
   s\css\app.f2a8707c.css
   ..\..\release\cms\console\child\dvs-gi    0.50 KiB         0.30 KiB
   s\css\customize-mark~customize-mark-ma
   nage~greenhouse-manage~land-manage~pla
   nning-land-plot~public-facilit~32a7758
-  6.32ba4ae4.css
+  6.c418f545.css
 
   Images and other types of assets omitted.
 
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-gis directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 82.51s.
+Done in 78.72s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-gis} 成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-ffp 
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings下午6:03:22
+ WARNING  Compiled with 2 warnings下午7:37:38
 
  warning  
 
@@ -846,17 +854,17 @@ Entrypoints:
       css/about.7b8a3df6.css
       js/about.3cb307b5.js
       css/app.a416fbf1.css
-      js/app.c69c7ae7.js
+      js/app.ef7255a0.js
 
 
   File                                      Size             Gzipped
 
   ..\..\release\cms\console\child\dvs-ff    1160.13 KiB      336.52 KiB
   p\js\about.3cb307b5.js
-  ..\..\release\cms\console\child\dvs-ff    221.43 KiB       45.86 KiB
-  p\js\chunk-2072dd3a.c3f422fb.js
+  ..\..\release\cms\console\child\dvs-ff    221.68 KiB       45.88 KiB
+  p\js\chunk-d4bc3ee2.3bc912bd.js
   ..\..\release\cms\console\child\dvs-ff    138.27 KiB       45.47 KiB
-  p\js\app.c69c7ae7.js
+  p\js\app.ef7255a0.js
   ..\..\release\cms\console\child\dvs-ff    79.64 KiB        30.36 KiB
   p\js\chunk-2d2107eb.d0a98f02.js
   ..\..\release\cms\console\child\dvs-ff    53.46 KiB        11.72 KiB
@@ -864,7 +872,7 @@ Entrypoints:
   ..\..\release\cms\console\child\dvs-ff    373.93 KiB       97.59 KiB
   p\css\about.7b8a3df6.css
   ..\..\release\cms\console\child\dvs-ff    26.15 KiB        3.63 KiB
-  p\css\chunk-2072dd3a.1b232c05.css
+  p\css\chunk-d4bc3ee2.b2143624.css
   ..\..\release\cms\console\child\dvs-ff    5.00 KiB         1.41 KiB
   p\css\app.a416fbf1.css
   ..\..\release\cms\console\child\dvs-ff    0.48 KiB         0.20 KiB
@@ -875,54 +883,38 @@ Entrypoints:
  DONE  Build complete. The ..\..\release\cms\console\child\dvs-ffp directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 47.41s.
+Done in 51.45s.
 编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-ffp} 成功
 准备开始编译PC
 tag不存在 要进行git tag
 打tag项目:<<pc后台管理>>成功
 删除项目： 中的配置文件成功
-[dev cc51d828] build：前端app、qrocde、wechat、park、console(child)commit-version:2.5.1.007
- 45 files changed, 96 insertions(+), 85 deletions(-)
- delete mode 100644 cms/app/child/ffp-app/js/about.50d14c5b.js
- create mode 100644 cms/app/child/ffp-app/js/about.bd8ccb13.js
- delete mode 100644 cms/app/child/ffp-app/js/app.0c17be82.js
- create mode 100644 cms/app/child/ffp-app/js/app.97f3d435.js
- delete mode 100644 cms/app/child/ffp-app/js/chunk-1444ef2b.adf44be5.js
- delete mode 100644 cms/app/child/ffp-app/js/chunk-192eb8b9.970a89cd.js
- create mode 100644 cms/app/child/ffp-app/js/chunk-491f1e44.3539f6a0.js
- delete mode 100644 cms/app/child/ffp-app/js/chunk-59506bea.a23c03a7.js
- create mode 100644 cms/app/child/ffp-app/js/chunk-67f8fe9d.5d323a4b.js
- create mode 100644 cms/app/child/ffp-app/js/chunk-a245b3ce.28cbb7e5.js
- rename cms/app/js/{app.258b161a.js => app.0172fb9f.js} (90%)
- create mode 100644 cms/app/js/app.0172fb9f.js[base].gz
- delete mode 100644 cms/app/js/app.258b161a.js[base].gz
- create mode 100644 cms/app/js/chunk-2c74f986.e8c97251.js
- create mode 100644 cms/app/js/chunk-2c74f986.e8c97251.js[base].gz
- delete mode 100644 cms/app/js/chunk-35bf0e9c.b37d355e.js
- delete mode 100644 cms/app/js/chunk-35bf0e9c.b37d355e.js[base].gz
- delete mode 100644 cms/app/js/chunk-56fee663.c1a7cff9.js
- delete mode 100644 cms/app/js/chunk-56fee663.c1a7cff9.js[base].gz
- create mode 100644 cms/app/js/chunk-7c27f912.2fb26853.js
- create mode 100644 cms/app/js/chunk-7c27f912.2fb26853.js[base].gz
- rename cms/console/assets/{Home.778ab406.js => Home.53bbe1ca.js} (99%)
- rename cms/console/assets/{header.55855e22.js => header.8e84467b.js} (97%)
- rename cms/console/assets/{index.687e9b05.js => index.926a83b9.js} (65%)
- rename cms/console/assets/{index.a735a5e8.js => index.adb62e6e.js} (92%)
- rename cms/console/assets/{init-password.45b94a38.js => init-password.fc43066d.js} (65%)
- rename cms/console/assets/{login.986dc879.js => login.23923895.js} (99%)
- delete mode 100644 cms/console/assets/side-menu.0619e8dd.js
- create mode 100644 cms/console/assets/side-menu.93807c95.css
- create mode 100644 cms/console/assets/side-menu.be9fe788.js
- delete mode 100644 cms/console/assets/side-menu.d6db23bf.css
- rename cms/console/assets/{update-password.29d283a3.js => update-password.e495eeb5.js} (98%)
- rename cms/console/assets/{useModule.3019b0e4.js => useModule.06c77512.js} (98%)
- rename cms/console/child/dvs-ffp/css/{chunk-6e0cee1f.ddf8bd13.css => chunk-2072dd3a.1b232c05.css} (93%)
- rename cms/console/child/dvs-ffp/js/{app.62eed809.js => app.c69c7ae7.js} (81%)
- create mode 100644 cms/console/child/dvs-ffp/js/chunk-2072dd3a.c3f422fb.js
- delete mode 100644 cms/console/child/dvs-ffp/js/chunk-6e0cee1f.0ffec2a3.js
- rename cms/console/child/dvs-village/css/{chunk-b6e1ffbc.f92a4543.css => chunk-1d835ce8.e373a296.css} (97%)
- rename cms/console/child/dvs-village/js/{app.b85d3009.js => app.8a0a33ea.js} (96%)
- rename cms/console/child/dvs-village/js/{chunk-b6e1ffbc.1071cbc7.js => chunk-1d835ce8.0508f2e3.js} (74%)
+[dev 9f998946] build：前端app、qrocde、wechat、park、console(child)commit-version:2.5.1.011
+ 28 files changed, 23 insertions(+), 23 deletions(-)
+ rename cms/app/child/ffp-app/js/{app.21564b15.js => app.0ab8c821.js} (83%)
+ rename cms/app/child/ffp-app/js/{chunk-d35ebdac.1d1d9de5.js => chunk-2bb5e376.f8e2e3fa.js} (75%)
+ delete mode 100644 cms/app/js/app.6b4f6a95.js[base].gz
+ rename cms/app/js/{app.6b4f6a95.js => app.6f02947c.js} (98%)
+ create mode 100644 cms/app/js/app.6f02947c.js[base].gz
+ delete mode 100644 cms/app/js/chunk-22b3962a.53fad1e0.js
+ delete mode 100644 cms/app/js/chunk-22b3962a.53fad1e0.js[base].gz
+ create mode 100644 cms/app/js/chunk-ed391c96.77012849.js
+ create mode 100644 cms/app/js/chunk-ed391c96.77012849.js[base].gz
+ rename cms/console/assets/{Home.bc326feb.js => Home.de57ce11.js} (99%)
+ rename cms/console/assets/{header.286f8ad8.js => header.f52c8241.js} (85%)
+ rename cms/console/assets/{index.9915c93b.js => index.af4edf6c.js} (70%)
+ rename cms/console/assets/{index.1a6d5209.js => index.d2946e78.js} (94%)
+ rename cms/console/assets/{init-password.3686342d.js => init-password.1aa59bf2.js} (98%)
+ rename cms/console/assets/{login.1501e16e.js => login.ce08771a.js} (99%)
+ rename cms/console/assets/{side-menu.815aef77.js => side-menu.364b5dc6.js} (64%)
+ delete mode 100644 cms/console/assets/side-menu.af3d1517.css
+ create mode 100644 cms/console/assets/side-menu.de9d11c3.css
+ rename cms/console/assets/{update-password.2961c8ec.js => update-password.abb03b0d.js} (98%)
+ rename cms/console/assets/{useModule.1d841c46.js => useModule.b5adbf3e.js} (98%)
+ rename cms/console/child/dvs-ffp/css/{chunk-2072dd3a.1b232c05.css => chunk-d4bc3ee2.b2143624.css} (91%)
+ rename cms/console/child/dvs-ffp/js/{app.c69c7ae7.js => app.ef7255a0.js} (81%)
+ delete mode 100644 cms/console/child/dvs-ffp/js/chunk-2072dd3a.c3f422fb.js
+ create mode 100644 cms/console/child/dvs-ffp/js/chunk-d4bc3ee2.3bc912bd.js
 5秒后将自动退出本脚本：
 5
 4
