@@ -1,0 +1,15 @@
+{
+  "name": "zx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "zx test.mjs -v 2.5.1.012 -p awpqc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "zx": "^5.2.0"
+  }
+}

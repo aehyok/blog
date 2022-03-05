@@ -60,6 +60,11 @@
     - 文档 https://rain120.github.io/athena/zh/slate/Introduction.html#demo
     - https://github.com/ianstormtaylor/slate/issues/3899
     - 
+- 3月4日
+  - 2.5.1.012 为最后的tag，实际版本号为013
+  - docker 学习笔记
+    - https://github.com/LiangJunrong/document-library/tree/master/%E7%B3%BB%E5%88%97-%E5%89%8D%E7%AB%AF%E8%B5%84%E6%96%99/Node/Node%20%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2/Docker
+  - H5中课程可根据用户权限进行获取，暂时通过直接操作数据库进行
 - 3月3日
   - typescript 在线转换为JavaScript https://www.typescriptlang.org/play
   - EFCore 关联查询两个上下文  https://www.cnblogs.com/myzony/p/11863489.html
