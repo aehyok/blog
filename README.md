@@ -59,9 +59,12 @@
     - https://github.com/ianstormtaylor/slate
     - 文档 https://rain120.github.io/athena/zh/slate/Introduction.html#demo
     - https://github.com/ianstormtaylor/slate/issues/3899
-    - 
+  - m3u8 音视频下载
+    - https://github.com/HeiSir2014/M3U8-Downloader
+    - https://github.com/Momo707577045/m3u8-downloader
+    - https://github.com/llychao/m3u8-downloader
 - 3月5日
-
+  - 开始 微信小程序 vue3 typescript taro nutui mini-program
 - 3月4日
   - 2.5.1.012 为最后的tag，实际版本号为013
   - docker 学习笔记
