@@ -42,3 +42,13 @@
       })
     }
   ```  
+
+ - 3、ref reactive props computed使用typescript
+  - https://juejin.cn/post/6966502107230765070 
+ - 4、defineProps和defineEmits
+  - https://juejin.cn/post/7012814138145505287 
+
+  https://github.com/vbenjs/vue-vben-admin
+  https://github.com/biaochenxuying/blog-vue-typescript
+  https://github.com/buqiyuan/vite-vue3-lowcode
+  https://github.com/xiaoxian521/vue-pure-admin
