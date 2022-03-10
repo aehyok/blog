@@ -42,7 +42,62 @@
       })
     }
   ```  
+- 3、泛型函数和 箭头泛型函数
+  ```javascript
+    function getUser<T>(id: string) {
+      console.log(id, '普通的泛型函数')
+    }
 
+    //但是如果是如下箭头函数将会报错
+    //
+    const getUser<T> = (id: string) {
+      console.log(id, '箭头泛型函数')
+    }
+
+    // 要改成如下代码
+    const getUser = <T> (id: string) {
+      console.log(id, '箭头泛型函数')
+    }
+
+  ```
+- 4、配置路径别名
+  ```javascript
+     // vite.config.ts
+       resolve: {
+        alias: [
+          {
+            find: 'vue-i18n',
+            replacement: 'vue-i18n/dist/vue-i18n.cjs.js',
+          },
+          {
+            find: /\/@\//,
+            replacement: pathResolve('src') + '/',
+          },
+          // /#/xxxx => types/xxxx
+          {
+            find: /\/#\//,
+            replacement: pathResolve('types') + '/',
+          },
+        ],
+      },
+
+      // 同时ts.config中进行配置
+      "paths": {
+        "/@/*": [
+          "src/*"
+        ],
+        "/#/*": [
+          "types/*"
+        ]
+      }
+  ```
+- 、、类型“Window & typeof globalThis”上不存在属性“webkit”。ts(2339)
+  ```javascript
+     // 可在全局的d.ts文件中进行TS声明
+     interface Window {
+      webkit: any
+    }
+  ```
  - 3、ref reactive props computed使用typescript
   - https://juejin.cn/post/6966502107230765070 
  - 4、defineProps和defineEmits
@@ -52,3 +107,8 @@
   https://github.com/biaochenxuying/blog-vue-typescript
   https://github.com/buqiyuan/vite-vue3-lowcode
   https://github.com/xiaoxian521/vue-pure-admin
+
+
+- axios ts封装参考实例
+  - https://www.wjsljc.com/document/ts-axios/axios/chapter1/require.html#features
+  - https://juejin.cn/post/6969070102868131853#comment
