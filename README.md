@@ -63,6 +63,8 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 3月11日
+  - 二进制的四个运算符 &  http://c.biancheng.net/view/5469.html
 - 3月5日
   - 开始 微信小程序 vue3 typescript taro nutui mini-program
 - 3月4日
