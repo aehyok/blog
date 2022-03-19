@@ -112,3 +112,15 @@
 - axios ts封装参考实例
   - https://www.wjsljc.com/document/ts-axios/axios/chapter1/require.html#features
   - https://juejin.cn/post/6969070102868131853#comment
+
+- vue3 typescript computed
+  ```javascript
+    const value = computed<string>({
+      get: function () {
+        return props.data;
+      },
+      set: function (val) {
+        emit("update:data", val);
+      },
+    });
+  ```
