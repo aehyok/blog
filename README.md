@@ -63,11 +63,39 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 3月20日
+  - 将form表单 FormRule、FormTextItem、 FormNumberItem、 FormItemCommon
+  - 修改 text、number两个字段的拆分和typescript化，待继续优化和处理其他组件
+- 3月19日
+  - 在线服务或自部署服务  https://xdts.xdocin.com/
+  - 在线预览服务 http://view.officeapps.live.com/op/view.aspx?src=文档url
+  - https://dvs-dev.sunlight-tech.com/test.docx
+
+  - 自己搭建officeapps
+    - https://www.cnblogs.com/littlehb/p/10572984.html
+  - iframe 细节处理
+    - https://segmentfault.com/a/1190000004502619
+  - officeapp两种模式、通过接口转换成html
+    -  https://www.cnblogs.com/oucbl/p/14185437.html 
+    -  
+- 3月18日
+  - 今天周五居家办公五天了
+  -  居家办公好处
+    - 1、小孩可以有更多的时间看到你，休息的时候可以多跟他玩玩，或者下去测核酸的时候
+    - 2、居家办公，省去了交通的时间，吃饭加上地铁的时间省去了两个半小时
+    - 3、如果规划比较合理的话，效率还是蛮高的
+    - 4、感觉休息的时间更多一些
+    - 5、一天的时间，整体更加自由一些
 - 3月15日
   - 居家办公第二天，vue3 qiankun问题还真是处理不了，mac环境的差异没找到问题点。
   - 
 - 3月14日
-  - 全深圳居家隔离第一天，公司环境和家里环境 有差异 vue3 qiankun    
+  - 全深圳居家隔离第一天，公司环境和家里环境 有差异 vue3 qiankun
+  - docx 预览  excel预览 https://kuangyx.cn/
+  - docx https://github.com/zVolodymyr/docxjs
+  - excel https://github.com/exceljs/exceljs
+  - 导出Excel https://juejin.cn/post/7030291455243452429
+     
 - 3月11日
   - 二进制的四个运算符 &  http://c.biancheng.net/view/5469.html
 - 3月5日
