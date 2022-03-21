@@ -63,6 +63,8 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 3月21日
+  - vscode插件 vue3-snippets-for-vscode    
 - 3月20日
   - 将form表单 FormRule、FormTextItem、 FormNumberItem、 FormItemCommon
   - 修改 text、number两个字段的拆分和typescript化，待继续优化和处理其他组件
