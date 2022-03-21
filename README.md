@@ -63,6 +63,9 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 3月15日
+  - 居家办公第二天，vue3 qiankun问题还真是处理不了，mac环境的差异没找到问题点。
+  - 
 - 3月14日
   - 全深圳居家隔离第一天，公司环境和家里环境 有差异 vue3 qiankun    
 - 3月11日
