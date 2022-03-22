@@ -63,6 +63,8 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 3月22日
+  - taro vue3 mini-program 小程序撸一小波
 - 3月21日
   - vscode插件 vue3-snippets-for-vscode    
 - 3月20日
