@@ -65,6 +65,8 @@
     - https://github.com/llychao/m3u8-downloader
 
 - 3月24日
+  - 微信公众号将录音保存到本地服务器
+    - https://juejin.cn/post/6885163128821121032
   - taro nutui picker有晃动的问题，暂时先用微信原生进行开发
   - taro nutui upload 上传组件暂时有异常，通过小程序跳转到h5,h5再返回到页面吧。
 - 3月22日
