@@ -63,6 +63,10 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+
+- 3月24日
+  - taro nutui picker有晃动的问题，暂时先用微信原生进行开发
+  - taro nutui upload 上传组件暂时有异常，通过小程序跳转到h5,h5再返回到页面吧。
 - 3月22日
   - taro vue3 mini-program 小程序撸一小波
 - 3月21日
