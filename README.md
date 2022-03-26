@@ -63,7 +63,10 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
-
+- 3月26日
+  - 微信公众号录制语音后，还要通过Media进行下载，上传到本地自己的服务器
+- 3月25日
+  - 将.net core服务由腾讯云切换到华为云
 - 3月24日
   - 微信公众号将录音保存到本地服务器
     - https://juejin.cn/post/6885163128821121032
