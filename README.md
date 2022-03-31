@@ -63,6 +63,9 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 3月31日
+  - 部署 jenkins
+    - https://juejin.cn/post/6887751398499287054
 - 3月30日
   - vue3 拖拽
     https://github.com/kirillmurashov/vue-drag-resize/tree/v2.0.0#props
