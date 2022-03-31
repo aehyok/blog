@@ -64,8 +64,9 @@
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
 - 3月31日
-  - 部署 jenkins
+  -[x] 部署 jenkins
     - https://juejin.cn/post/6887751398499287054
+  - h5端 list列表中item布局通过拖拽实现，待继续 
 - 3月30日
   - vue3 拖拽
     https://github.com/kirillmurashov/vue-drag-resize/tree/v2.0.0#props
