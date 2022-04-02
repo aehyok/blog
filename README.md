@@ -63,6 +63,8 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 4月2日
+  - vant form 表单的动态实现，还待继续优化
 - 3月31日
   -[x] 部署 jenkins
     - https://juejin.cn/post/6887751398499287054
