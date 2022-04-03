@@ -63,6 +63,11 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 4月3日 代码生成器
+  - https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FGiantGo%2Fgiantgo-render%3Fmode%3Ddark
+  - 竟然都解析schema了为啥不上codegen，ts api 生成器:https://github.com/pregalaxyer/nemo, mock api：https://github.com/pregalaxyer/sardine
+  - swagger有生成ts api文档的官方工具，阿里也有个pont。
+  - https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fany86%2Fany-type%3Fmode%3Ddark
 - 4月2日
   - vant form 表单的动态实现，还待继续优化
 - 3月31日
