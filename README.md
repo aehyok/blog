@@ -63,6 +63,13 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 4月4日
+  - 问答模式  付费问答
+    - https://github.com/BetaSu/fe-hunter
+  - https://github.com/zhangdaiscott/jeecg-boot
+  - http://www.jeecg.com/
+  - https://github.com/jeecgboot/jeecgboot-vue3
+  - 演示地址 http://boot.jeecg.com/
 - 4月3日 代码生成器
   - https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FGiantGo%2Fgiantgo-render%3Fmode%3Ddark
   - 竟然都解析schema了为啥不上codegen，ts api 生成器:https://github.com/pregalaxyer/nemo, mock api：https://github.com/pregalaxyer/sardine
