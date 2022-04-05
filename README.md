@@ -63,6 +63,11 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 4月5日
+  - form表单生成器 代码
+    - 表单设计器 https://github.com/JakHuang/form-generator/issues/30
+    - 表单解析器 https://github.com/JakHuang/form-generator/issues/32
+    - vue 代码生成器 https://github.com/JakHuang/form-generator/issues/31
 - 4月4日
   - 问答模式  付费问答
     - https://github.com/BetaSu/fe-hunter
