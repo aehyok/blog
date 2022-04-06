@@ -63,6 +63,9 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 4月6日
+  - 利用transform：scale属性完成移动端适配     
+    - https://www.jianshu.com/p/bab49c0f25d1
 - 4月5日
   - form表单生成器 代码
     - 表单设计器 https://github.com/JakHuang/form-generator/issues/30
