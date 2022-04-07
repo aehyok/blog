@@ -67,6 +67,9 @@
 - 4月7日
   - 低代码平台
     - https://java.jnpfsoft.com/home
+  - 大屏 
+    - http://v6.dooring.cn/beta/editor
+    - https://java.jnpfsoft.com/DataV/build/36
   - h5 vant form表单组件通过接口，待移动待vue-qiankun
 - 4月6日
   - 利用transform：scale属性完成移动端适配     
