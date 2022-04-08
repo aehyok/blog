@@ -63,10 +63,14 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
-
+- 4月8日
+  - 脚手架
+    - https://xie.infoq.cn/article/ff65081e5119720f142f9d20c
+    - https://xie.infoq.cn/article/4d9add6ecdde2b092c38c309f?source=app_share
 - 4月7日
   - 低代码平台
     - https://java.jnpfsoft.com/home
+    - https://cli.avuejs.com/wel/index
   - 大屏 
     - http://v6.dooring.cn/beta/editor
     - https://java.jnpfsoft.com/DataV/build/36

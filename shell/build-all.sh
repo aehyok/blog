@@ -124,7 +124,7 @@ do
   then
     project_path=${deleteBuildConfig_pathArr[${key}]}
     cd $project_path
-    # rm config.js
+    rm config.js
     echo -e "删除项目：${deleteBuildConfig_pathArr[i]} 中的配置文件成功";
   fi
 done
