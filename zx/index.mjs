@@ -28,15 +28,15 @@ async function buildApp() {
     console.log('app编译开始')
     for(const item in array) {
         console.log(array[item], 'item')
-        cd(array[item])
-        await sleep(5000);
-        await $`git pull`;
+        // cd(array[item])
+        // await sleep(5000);
+        // await $`git pull`;
     }
     console.log('app编译结束')
 }
 
 const pc = await buildPc()
 const app = await buildApp()
-Promise.all([buildPc, buildApp]).then((values) => {
+Promise.all([buildApp, buildPc]).then((values) => {
     console.log(values, 'values')
 })
