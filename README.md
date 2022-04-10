@@ -64,6 +64,7 @@
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
 - 4月8日
+  - https://github.com/wangyuan389/mall-cook
   - 脚手架
     - https://xie.infoq.cn/article/ff65081e5119720f142f9d20c
     - https://xie.infoq.cn/article/4d9add6ecdde2b092c38c309f?source=app_share
