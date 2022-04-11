@@ -60,6 +60,23 @@
     }
 
   ```
+
+- 4、通过type和interface 限制某个字符串变量的具体字符串
+  ```javascript 
+    
+    type EventType = '工资' | '放假'
+    let eventType: EventType = '发放'   // 报错
+    let eventType1: EventType = '工资'  // OK 赋值只能为“工资”或“放假”
+
+    interface IEventType {
+        name?: '工资' | '放假'
+    }
+
+    let iType1: IEventType = {}
+    iType1.name= '工资'    // OK 赋值只能为“工资”或“放假”
+    iType1.name = '测试'  // 报错
+  ```  
+
 - 4、配置路径别名
   ```javascript
      // vite.config.ts
@@ -124,3 +141,9 @@
       },
     });
   ```
+
+  - lodash中的 深拷贝和浅拷贝
+    - 浅拷贝： 拷贝基础类型和引用类型的地址，修改值之后会影响其他对象。
+    - 深拷贝： 拷贝所有属性，并拷贝属性指向新的动态地址。
+    - 深拷贝比浅拷贝慢，但是深拷贝后两个对象互不影响。
+    
