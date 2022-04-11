@@ -63,6 +63,9 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 4月9日
+  - nginx get请求  json 文件过大处理
+    - https://www.cnblogs.com/youcong/p/13828579.html
 - 4月8日
   - https://github.com/wangyuan389/mall-cook
   - 脚手架
