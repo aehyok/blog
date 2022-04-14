@@ -1,3 +1,5 @@
+#!/usr/bin/env zx
+
 import { sleep } from "zx";
 import { $, cd, argv } from "zx";
 $.verbose = true;
@@ -10,6 +12,20 @@ console.log(argv.v,'v')
 // 获取项目信息
 console.log(argv.p, 'p')
 
+
+/**
+ * fetch 请求
+ */
+const data = await fetch('https://api.github.com/users/aehyok/repos')
+const urls = await data.json()
+console.log(urls)
+
+
+
+const repos = urls.filter(item => {
+    return !item.fork
+}).map(item => item.git_url)
+console.log(repos, 'res')
 let array = []
 const windowArray =[
     'E:/work/git/dvs-2.x/dvs-app-h5-develop/main-app',
@@ -39,9 +55,9 @@ async function buildApp() {
     console.log('app编译开始')
     for(const item in array) {
         console.log(array[item], 'item')
-        // cd(array[item])
-        // await sleep(5000);
-        // await $`git pull`;
+        cd(array[item])
+        await sleep(5000);
+        await $`git pull`;
     }
     console.log('app编译结束')
 }
@@ -49,6 +65,8 @@ async function buildApp() {
 console.log(process.platform, '系统')
 const pc = await buildPc()
 const app = await buildApp()
-Promise.all([buildApp, buildPc]).then((values) => {
+console.log(pc, 'pc')
+console.log(app, 'app')
+Promise.all([pc, app]).then((values) => {
     console.log(values, 'values')
 })
