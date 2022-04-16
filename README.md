@@ -63,8 +63,22 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+
+- 4月16日 
+  - mac抓包工具 charles
+    - https://www.charles.ren/ 注册码
+    - https://juejin.cn/post/6844903559968866312
+    - https://juejin.cn/post/6844904049955848206
+- 4月15日
+  - 微信公众号认证
+    https://juejin.cn/post/6844904070445006856
+    https://blog.csdn.net/qq_38652871/article/details/108140658
+    https://juejin.cn/post/6961227243322507278#heading-17
+  - ace 
+    - https://github.com/ajaxorg/ace
 - 4月13日
   - 装饰器模式了解一下
+    https://juejin.cn/post/6956513060253073422
 - 4月12日
   - json2html
     - https://tooltt.com/json2html/
