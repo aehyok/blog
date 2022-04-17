@@ -63,7 +63,8 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
-
+- 4月17日
+  - https://cn.vitest.dev/
 - 4月16日 
   - mac抓包工具 charles
     - https://www.charles.ren/ 注册码
