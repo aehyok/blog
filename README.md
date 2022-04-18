@@ -64,6 +64,7 @@
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
 - 4月18日
+  - map 和weakmap区别
   - https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
   - 判断一个数字是否为正数
     - Number.isInteger
@@ -74,10 +75,14 @@
   - 2**2 3**4 Math.Pow(2, 3)
   - 三列均分布局
     - grid和flex布局 https://juejin.cn/post/6854573220306255880#comment
+  - 左侧固定右侧自适应  
   - Object.assign
   - Array
     - 判断数组   Array.isArray instanceof  Object.prototype.toString.call
     - https://juejin.cn/post/7042229652970029069
+  - 大屏可视化 缩放的问题
+    - https://juejin.cn/post/6966103143402700837
+    - https://juejin.cn/post/7075253747567296548#comment
 - 4月17日
   - https://cn.vitest.dev/
 - 4月16日 
