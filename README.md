@@ -63,6 +63,21 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 4月18日
+  - https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
+  - 判断一个数字是否为正数
+    - Number.isInteger
+  - typeof NaN的输出为number
+  - type null的输出为object
+  - 0.1+0.2等于多少
+    - https://juejin.cn/post/7056934829920616461
+  - 2**2 3**4 Math.Pow(2, 3)
+  - 三列均分布局
+    - grid和flex布局 https://juejin.cn/post/6854573220306255880#comment
+  - Object.assign
+  - Array
+    - 判断数组   Array.isArray instanceof  Object.prototype.toString.call
+    - https://juejin.cn/post/7042229652970029069
 - 4月17日
   - https://cn.vitest.dev/
 - 4月16日 
