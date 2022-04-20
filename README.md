@@ -63,6 +63,11 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+
+- 4月19日
+  - https://yill625.github.io/pages/interview/JavaScriptBase/ExecutionContext.html
+  - vite 开发时为什么那么快、Rollup
+
 - 4月18日
   - map 和weakmap区别
   - https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
