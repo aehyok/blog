@@ -63,7 +63,12 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
-
+- 4月21日
+  - vue 部署更新后还是旧的版本
+    - https://blog.csdn.net/RevolCat/article/details/105953847
+    - https://blog.csdn.net/qq_35713752/article/details/102921315
+  - 微信小程序嵌入vant h5页面，如果发布新版本部署以后，重新设置
+  - canvas https://www.cnblogs.com/ljx20180807/p/10323697.html
 - 4月19日
   - https://yill625.github.io/pages/interview/JavaScriptBase/ExecutionContext.html
   - vite 开发时为什么那么快、Rollup
