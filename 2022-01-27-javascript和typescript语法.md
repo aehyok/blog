@@ -9,7 +9,7 @@
 
 - 2、typescript中的枚举操作
   ```js
-    //1、声明一个枚举类型
+    //1、声明一个枚举类型   最好定义在ts文件中，不要定义在.d.ts文件中，import引入的时候有问题
     export enum ColumnType {
       static = '只读文本',
       text= '文本框',

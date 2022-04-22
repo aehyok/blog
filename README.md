@@ -63,6 +63,15 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 4月22日
+  - https://github.com/geekan/HowToLiveLonger
+  - json valid 
+    - https://jsonvisio.com/editor
+    - https://github.com/AykutSarac/jsonvisio.com
+  - FeHelper
+    - https://github.com/zxlie/FeHelper
+  - json handle
+    - https://jsonhandle.sinaapp.com/
 - 4月21日
   - vue 部署更新后还是旧的版本
     - https://blog.csdn.net/RevolCat/article/details/105953847
