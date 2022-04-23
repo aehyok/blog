@@ -147,5 +147,24 @@
     - 深拷贝： 拷贝所有属性，并拷贝属性指向新的动态地址。
     - 深拷贝比浅拷贝慢，但是深拷贝后两个对象互不影响。
 
- - 装饰器模式
-    -    
+ 
+ - 判断是在微信中，还是在H5中
+ - 是在微信小程序里还是在微信的H5中
+  ```javascript
+    import wx from 'weixin-js-sdk'
+    
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        //ios的ua中无miniProgram，但都有MicroMessenger（表示是微信浏览器）
+        wx.miniProgram.getEnv((res)=>{
+           if (res.miniprogram) {
+               alert("在小程序里");
+           } else {
+               alert("不在小程序里");
+           }
+        })
+    }else{
+        alert('不在微信里');
+    }
+
+  ```

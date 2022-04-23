@@ -1,13 +1,132 @@
 tag 
 包含a------村委app
-包含c------pc后台管理
-包含p------园区app
-包含q------一户一码
-包含w------微信公众号
- 命令行中包含的版本号: 2.5.2.009
+ 命令行中包含的版本号: 2.5.2.006
 -------------------------------------------------
+D	ffp-app/src/types/api.ts
+M	ffp-app/src/views/Home.vue
+M	ffp-app/src/views/home/home-Grid.vue
+M	main-app/src/views/Mine.vue
+M	main-app/src/views/login/login-cellPhone.vue
+M	main-app/src/views/mine/aboutUs.vue
+M	main-app/src/views/mine/accountInformation.vue
+M	main-app/src/views/mine/changePassword.vue
+M	main-app/src/views/mine/settingUp.vue
 Your branch is up to date with 'origin/dev'.
 开始拉取项目:<<村委app>>
 Already up to date.
 拉取项目<<村委app>>成功
 开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app 
+yarn run v1.22.17
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings上午10:39:03
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  img/appbanner.ce354529.png (303 KiB)
+  js/chunk-4e3bb842.a69b6db0.js (605 KiB)
+  js/chunk-vendors.4170bb74.js (1.41 MiB)
+  configImage/greenhouse(door).png (393 KiB)
+  configImage/secondhouse(northwest).png (460 KiB)
+  configImage/greenhouse(center).png (438 KiB)
+  scan/u1040.png (297 KiB)
+  scan/u1039.png (306 KiB)
+  scan/u1043.png (335 KiB)
+  scan/u1036.png (446 KiB)
+  scan/u1042.png (278 KiB)
+  scan/u1044.png (312 KiB)
+  scan/u1041.png (447 KiB)
+  scan/u825.jpg (254 KiB)
+  scan/u826.png (256 KiB)
+  scan/u829.png (250 KiB)
+  scan/u87.png (262 KiB)
+  configImage/villageDoor.png (610 KiB)
+  js/chunk-vendors.4170bb74.js[base].gz (432 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.44 MiB)
+      js/chunk-vendors.4170bb74.js
+      js/app.c21a3216.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\app\js\chunk-vendors    1445.15 KiB      433.53 KiB
+  .4170bb74.js
+  ..\..\release\cms\app\js\chunk-4e3bb84    605.37 KiB       206.55 KiB
+  2.a69b6db0.js
+  ..\..\release\cms\app\js\app.c21a3216.    28.33 KiB        8.52 KiB
+  js
+  ..\..\release\cms\app\js\chunk-74be218    17.60 KiB        8.00 KiB
+  3.58eb81f1.js
+  ..\..\release\cms\app\js\chunk-57c072f    7.66 KiB         2.75 KiB
+  0.b363a4e3.js
+  ..\..\release\cms\app\config.js           2.60 KiB         0.57 KiB
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\app directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 40.42s.
+编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app} 成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app 
+yarn run v1.22.17
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings上午10:40:07
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  js/app.32e8d32e.js (620 KiB)
+  js/chunk-01c689a0.30437950.js (1.86 MiB)
+  js/chunk-vendors.315810d8.js (783 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.37 MiB)
+      js/chunk-vendors.315810d8.js
+      js/app.32e8d32e.js
+
+
+  File                                      Size             Gzipped
+
+  ..\..\release\cms\app\child\ffp-app\js    1909.24 KiB      717.35 KiB
+  \chunk-01c689a0.30437950.js
+  ..\..\release\cms\app\child\ffp-app\js    783.37 KiB       259.93 KiB
+  \chunk-vendors.315810d8.js
+  ..\..\release\cms\app\child\ffp-app\js    619.63 KiB       337.61 KiB
+  \app.32e8d32e.js
+  ..\..\release\cms\app\child\ffp-app\js    35.36 KiB        9.17 KiB
+  \chunk-63da7136.ba3d8bda.js
+  ..\..\release\cms\app\child\ffp-app\js    21.43 KiB        4.09 KiB
+  \chunk-a3832806.e0c67cc2.js
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ..\..\release\cms\app\child\ffp-app directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 61.41s.
+编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app} 成功
+准备开始编译PC
+tag不存在 要进行git tag
+打tag项目:<<村委app>>成功
+删除项目： 中的配置文件成功
+5秒后将自动退出本脚本：
+5
+4
+3
+2
+1
