@@ -152,7 +152,7 @@
  - 是在微信小程序里还是在微信的H5中
   ```javascript
     import wx from 'weixin-js-sdk'
-    
+
     var ua = navigator.userAgent.toLowerCase();
     if(ua.match(/MicroMessenger/i)=="micromessenger") {
         //ios的ua中无miniProgram，但都有MicroMessenger（表示是微信浏览器）
@@ -168,3 +168,5 @@
     }
 
   ```
+
+  ### vue3中父组件传递到子组件的值为reactive或者ref，这样在子组件中想修改里面的值，直接修改即可，无需使用emit。

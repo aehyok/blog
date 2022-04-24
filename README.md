@@ -63,6 +63,9 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 4月24日
+  - lerna管理包
+  - https://github.com/gaiyonghuyichengxian/lerna-vue3-component
 - 4月23日
   - canvas 月影 https://github.com/akira-cn/graphics/blob/master/canvas/hierarchy/index.html
   
