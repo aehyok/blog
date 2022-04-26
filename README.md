@@ -65,6 +65,9 @@
     - https://github.com/llychao/m3u8-downloader
 - 4月26日
   - https://juejin.cn/post/7044880716793905183
+  - 在线压缩代码
+    https://try.terser.org/
+
 - 4月24日
   - lerna管理包
   - https://github.com/gaiyonghuyichengxian/lerna-vue3-component
