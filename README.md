@@ -63,6 +63,10 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 4月27日
+  - pdf.js
+    - https://mozilla.github.io/pdf.js/web/viewer.html
+    - https://mozilla.github.io/pdf.js/getting_started/
 - 4月26日
   - https://juejin.cn/post/7044880716793905183
   - 在线压缩代码
@@ -73,7 +77,6 @@
   - https://github.com/gaiyonghuyichengxian/lerna-vue3-component
 - 4月23日
   - canvas 月影 https://github.com/akira-cn/graphics/blob/master/canvas/hierarchy/index.html
-  
 - 4月22日
   - https://github.com/geekan/HowToLiveLonger
   - json valid 
