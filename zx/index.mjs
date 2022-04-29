@@ -54,6 +54,8 @@ const windowArray = [
   "E:/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app",
 ];
 
+
+
 const macArray = [];
 
 const isMac = () => {
@@ -70,6 +72,8 @@ const output = (await $`ls`).stdout;
 function buildPc() {
   console.log("pc 编译");
   $`sleep 8`;
+
+
   console.log("pc 编译结束");
 }
 

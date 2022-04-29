@@ -7,7 +7,7 @@ current_path=$(cd $(dirname $0); pwd)
 
 ################1、 通过命令行执行传入的参数值   ##############
 # a(app) 、w(wechat)、 p(park)、q(qrcode)、c(pc)
-tag=""  # 默认为空的时候要打tag,不为空的时候不进行tag管理
+# tag=""  # 默认为空的时候要打tag,不为空的时候不进行tag管理
 while getopts tv:p: opt
 do
     case "$opt" in
@@ -58,6 +58,11 @@ do
         git checkout $branchVersion
         echo -e "开始拉取项目:<<${projectName}>>";
         git pull
+        if [ $? == 0 ];then
+          echo -e "git pull:<<${projectName}>>成功";
+        else
+            echo -e "git pull:<<${projectName}>>失败";
+        fi
         echo -e "拉取项目<<${projectName}>>成功";
         build_pc_Function  $version
         echo -e "准备开始编译PC";
