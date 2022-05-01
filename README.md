@@ -63,6 +63,11 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+
+- 5月1日
+  - 打印
+    - https://github.com/Power-kxLee/vue-print-nb#vue3-version
+
 - 4月27日
   - pdf.js
     - https://mozilla.github.io/pdf.js/web/viewer.html
