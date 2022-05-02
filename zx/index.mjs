@@ -93,6 +93,3 @@ const app = await buildApp();
 // console.log(pc, 'pc')
 // console.log(app, 'app')
 
-Promise.all([pc, app]).then((values) => {
-  console.log(values, "values");
-});

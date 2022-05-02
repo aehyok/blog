@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "zx index.mjs -v 2.5.1.012 -p awpqc"
+    "start": "zx index.mjs -v 2.5.1.012 -p a  & zx index.mjs -v 2.5.1.013 -p w"
   },
   "keywords": [],
   "author": "",
