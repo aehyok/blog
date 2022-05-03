@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {  
+  "scripts": {
     "start-dev": "zx index.mjs -v 2.5.1.0app -p app  & zx index.mjs -v 2.5.1.0pc -p pc",
     "start": "zx index.mjs -v 2.5.1.0app -p app"
   },
@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "zx": "^5.2.0"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0"
   }
 }
