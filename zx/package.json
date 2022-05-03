@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "zx index.mjs -v 2.5.1.012 -p a  & zx index.mjs -v 2.5.1.013 -p w"
+  "scripts": {  
+    "start-dev": "zx index.mjs -v 2.5.1.0app -p app  & zx index.mjs -v 2.5.1.0pc -p pc",
+    "start": "zx index.mjs -v 2.5.1.0app -p app"
   },
   "keywords": [],
   "author": "",
