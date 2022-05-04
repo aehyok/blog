@@ -4,8 +4,11 @@ var os = require('os')
 export const logger = (errorString) => {
     let date = (new Date()).toLocaleDateString() + " " + (new Date()).toLocaleTimeString()
     console.log(date)
-    fs.appendFileSync('log', errorString + '#' + date + os.EOL, 'utf8', (err) => {
-        if (err) throw err; // 若写入错误，则抛出err
+    fs.appendFileSync('./log', errorString + '#' + date + os.EOL, 'utf8', (err) => {
+        if (err) {
+            console.log('log error')
+            throw err
+        }; // 若写入错误，则抛出err
         console.log('文件已1111被保存'); // 若写入成功，则打印‘文件已被保存’
     });
 }
