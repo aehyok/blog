@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "zx index.mjs -v 2.5.1.012 -p awpqc"
+    "start-dev": "zx index.mjs -v 2.5.1.0app -p app  & zx index.mjs -v 2.5.1.0pc -p pc",
+    "start": "zx index.mjs -v 2.5.1.0app -p app"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "zx": "^5.2.0"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0"
   }
 }

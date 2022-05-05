@@ -63,7 +63,16 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
-
+- 5月2日
+  - npm run build 
+    - https://juejin.cn/post/7078924628525056007
+  - pnpm + lerna + ts 
+    - https://juejin.cn/post/7043998041786810398
+  - rollup打包组件库
+    - https://mp.weixin.qq.com/s/LqdE6FP7cnoCBs3TYF3CCA
+  - npm 并行运行脚本
+    - https://juejin.cn/post/6917533974285778957#heading-13
+    - https://juejin.cn/post/6854573216363446286
 - 5月1日
   - 打印
     - https://github.com/Power-kxLee/vue-print-nb#vue3-version
