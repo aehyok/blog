@@ -6,17 +6,18 @@ const current = await $`pwd`;
 const currentPath = current.stdout.substring(0, current.stdout.length - 1);
 console.log(currentPath, "currentPath");
 
-const project = "vue-qiankun";
+const project = "dvs-app-h5-develop";
 const gitProject = baseUrl + project;
-const main = gitProject + "/" + "main-vite-app-ts";
+const main = gitProject + "/" + "main-app";
 const appList = [
-  gitProject + "/" + "webpack-app-ts",
+  gitProject + "/" + "ffp-app",
   gitProject + "/" + "map-app-ts",
 ];
 
 export const build_app = async (version) => {
-  cd(gitProject);
-
+  $`cd ${gitProject}`;
+  await $`pwd`;
+  console.log('项目当前路径', gitProject) 
   //   try {
   //     let pullInfo = await $`git pull`;
   //     console.log(pullInfo, "pullInfo");
@@ -35,8 +36,8 @@ export const build_app = async (version) => {
   //     single(element)
   // });
 
-  buildAppMain()
-  buildAppChildList()
+  await buildAppMain()
+  // await buildAppChildList()
   console.log("开始编译app的", version);
 };
 
@@ -45,7 +46,10 @@ export const build_app = async (version) => {
  */
 const buildAppMain = async() => {
     try {
-        cd(currentPath);
+        console.log("开始编译app的main");
+        // cd(currentPath);
+        $`cd ${currentPath}`;
+        console.log("开始编译app的main- cd后");
         logger("开始编译：build main");
         cd(main);
         console.log("before");
