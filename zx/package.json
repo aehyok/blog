@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "zx index.mjs -v 2.5.1.0app -p app  & zx index.mjs -v 2.5.1.0pc -p pc",
-    "start": "zx index.mjs -v 2.5.1.0app -p app"
+    "start": "zx index.mjs -v 2.5.1.0app -p app",
+    "build": "zx"
   },
   "keywords": [],
   "author": "",
