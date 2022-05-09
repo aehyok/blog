@@ -4,45 +4,30 @@ import { baseUrl } from "./utils/index.mjs";
 import { logger } from "./utils/log.mjs";
 const current = await $`pwd`;
 
-// $.shell = '/usr/bin/bash'
-const currentPath = current.stdout.substring(0, current.stdout.length - 1);
-console.log(currentPath, "currentPath");
-
 const project = "dvs-app-h5-develop";
 const gitProject = baseUrl + project;
 const main = gitProject + "/" + "main-app";
-const appList = [gitProject + "/" + "ffp-app", gitProject + "/" + "map-app-ts"];
+const appList = [gitProject + "/" + "ffp-app"];
 
 export const build_app = async (version) => {
-  // $`cd ${gitProject}`;
-  // goPath(gitProject)
-  await $`cd ${gitProject}`
-  await $`git pull`;
-  console.log("项目当前路径", gitProject);
-  //   try {
-  //     let pullInfo = await $`git pull`;
-  //     console.log(pullInfo, "pullInfo");
-  //     if (pullInfo.exitCode == 0) {
-  //       console.log("success");
-  //     } else {
-  //       console.log("fail", $`$?`);
-  //     }
-  //   } catch {
-  //     console.log('sssssssssssssss')
-  //     cd(currentPath.stdout)
-  //     logger("拉去代码发生异常");
-  //   }
+  currentLogger("git pull 仓库代码： 开始");
+  try {
+    const gitPull = await $`cd ${gitProject}; git pull;`;
+    console.log(gitPull, "pullInfo");
+    if (gitPull.exitCode == 0) {
+      console.log("success");
+      currentLogger("git pull 仓库代码：成功");
+    } else {
+      console.log("fail", $`$?`);
+    }
+  } catch {
+    currentLogger("拉去代码发生异常");
+  }
 
-  // appList.forEach(element => {
-  //     single(element)
-  // });
+  await buildAppMain();
 
-  // await buildAppMain();
-  await $`cd ${main}; yarn build;`
-  console.log("项目当前路径", main);
-  // await $ `yarn build`
-  // await buildAppChildList()
-  console.log("开始编译app的", version);
+  await buildAppChildList();
+  // console.log("开始编译app的", version)
 };
 
 /**
@@ -50,27 +35,16 @@ export const build_app = async (version) => {
  */
 const buildAppMain = async () => {
   try {
-    console.log("开始编译app的main");
-    // cd(currentPath);
-    goCurrentPath()
-    console.log("开始编译app的main- cd后", main);
-    // logger("开始编译：build main");
-    // $`cd ${main}`;
-    goPath(main)
-    // console.log("before");
-    await $`npm run build`;
-    // let buildInfo = await $`yarn build`;
-    // console.log(buildInfo, "buildInfo");
-    // if (buildInfo.exitCode) {
-    //   // cd(currentPath);
-    //   console.log("结束编译：编译成功build main");
-    // }
-    // $`cd ${currentPath}`;
-    // logger("结束编译：编译成功build main");
+    currentLogger("start build main-app");
+    const buildInfo = await $` cd ${main};yarn build;`;
+    console.log(buildInfo, "buildInfo");
+    if (buildInfo.exitCode === 0) {
+      currentLogger("success build main-app");
+    } else {
+      currentLogger(`build main-app error: ${buildInfo.stderr}`);
+    }
   } catch {
-    // $`cd ${currentPath}`;
-    // logger("build main发生错误");
-    console.error("build main发生错误");
+    currentLogger("buildAppMain 发生错误");
   }
 };
 
@@ -78,26 +52,31 @@ const buildAppMain = async () => {
  * 编译APP的子应用
  */
 const buildAppChildList = () => {
+  currentLogger('start build app childList')
   try {
     Promise.all(
       appList.map((item) => {
         return $`cd ${item}; yarn build`;
       })
-    );
+    ).then(res => {
+      console.log(res, 'res')
+      currentLogger('success build app childList')
+    })
   } catch {
-    console.log("sssssssssssssss-2");
-    cd(currentPath);
-
-    logger("child build error");
-    console.log("child build error");
+    currentLogger("child build error");
   }
 };
 
-
-const goCurrentPath = () => {
-  $`cd ${currentPath}`;
-}
+const goCurrentPath = async () => {
+  const currentPath = current.stdout.substring(0, current.stdout.length - 1);
+  await $`cd ${currentPath}`;
+};
 
 const goPath = (path) => {
   $`cd ${path}`;
-}
+};
+
+const currentLogger = async (info) => {
+  await goCurrentPath();
+  logger(info);
+};

@@ -25,3 +25,40 @@ build main发生错误#2022/5/7 下午7:31:50
 开始编译：build main#2022/5/8 下午11:08:51
 开始编译：build main#2022/5/8 下午11:11:40
 开始编译：build main#2022/5/8 下午11:13:27
+开始编译：build main#2022/5/9 下午1:53:16
+开始编译：build main#2022/5/9 下午1:58:13
+开始编译：build main#2022/5/9 下午1:58:33
+开始git pull 仓库代码#2022/5/9 下午2:02:34
+开始git pull：build main#2022/5/9 下午2:02:35
+git pull 仓库代码： 开始#2022/5/9 下午2:16:59
+git pull 仓库代码：成功#2022/5/9 下午2:17:00
+start build main-app#2022/5/9 下午2:17:00
+build main-app error: -  Building for production...
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+#2022/5/9 下午2:17:12
+git pull 仓库代码： 开始#2022/5/9 下午2:20:14
+git pull 仓库代码：成功#2022/5/9 下午2:20:16
+start build main-app#2022/5/9 下午2:20:16
+build main-app error: -  Building for production...
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+#2022/5/9 下午2:20:27
+git pull 仓库代码： 开始#####2022/5/9 下午2:23:00
+git pull 仓库代码：成功#####2022/5/9 下午2:23:02
+start build main-app#####2022/5/9 下午2:23:02
+success build main-app#####2022/5/9 下午2:23:13
+git pull 仓库代码： 开始#####2022/5/9 下午2:25:58
+start build main-app#####2022/5/9 下午2:25:59
+git pull 仓库代码：成功#####2022/5/9 下午2:25:59
+success build main-app#####2022/5/9 下午2:26:10
+start build app childList#####2022/5/9 下午2:26:10
+success build app childList#####2022/5/9 下午2:26:27
+-----project:app-------------------------#####2022/5/9 下午2:33:03
+-----version:2.5.1.0app-------------------------#####2022/5/9 下午2:33:03
+git pull 仓库代码： 开始#####2022/5/9 下午2:33:03
+start build main-app#####2022/5/9 下午2:33:05
+git pull 仓库代码：成功#####2022/5/9 下午2:33:05
+success build main-app#####2022/5/9 下午2:33:17
+start build app childList#####2022/5/9 下午2:33:17
+success build app childList#####2022/5/9 下午2:33:34

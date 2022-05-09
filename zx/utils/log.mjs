@@ -4,7 +4,7 @@ var os = require('os')
 export const logger = (errorString) => {
     let date = (new Date()).toLocaleDateString() + " " + (new Date()).toLocaleTimeString()
     console.log(date, 'logger')
-    fs.appendFileSync('./log', errorString + '#' + date + os.EOL, 'utf8', (err) => {
+    fs.appendFileSync('./log', errorString + '#####' + date + os.EOL, 'utf8', (err) => {
         if (err) {
             console.log('log error')
             throw err
