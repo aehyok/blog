@@ -1,5 +1,4 @@
-import { $, cd } from "zx";
-import { sleep } from "zx";
+import { $ } from "zx";
 import { baseUrl } from "./utils/index.mjs";
 import { logger } from "./utils/log.mjs";
 const current = await $`pwd`;
@@ -52,16 +51,16 @@ const buildAppMain = async () => {
  * 编译APP的子应用
  */
 const buildAppChildList = () => {
-  currentLogger('start build app childList')
+  currentLogger("start build app childList");
   try {
     Promise.all(
       appList.map((item) => {
         return $`cd ${item}; yarn build`;
       })
-    ).then(res => {
-      console.log(res, 'res')
-      currentLogger('success build app childList')
-    })
+    ).then((res) => {
+      console.log(res, "res");
+      currentLogger("success build app childList");
+    });
   } catch {
     currentLogger("child build error");
   }
