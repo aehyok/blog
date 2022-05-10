@@ -59,7 +59,9 @@ const buildone = async () => {
  * 创建Git Tag标签
  */
 const creatTag = async(version) => {
-  const tagListInfo = await $` cd ${gitProject};git tag;`
+  const tagListInfo = await $` cd ${gitProject};
+                                git tag;`
+  console.log('判断是否存在tag')
   if(tagListInfo && tagListInfo.exitCode === 0) {
     if(tagListInfo.stdout.includes(version)) {
       console.log(version, 'you')
@@ -70,15 +72,14 @@ const creatTag = async(version) => {
         if(gitTagInfo.exitCode === 0) {
           oneLogger('删除tag成功')
         }
-    } else {
-      console.log(version, 'wu')
+    }
+    console.log(version, '好了tag没有了，重新打tag吧')
       const gitTagInfo = await $` cd ${gitProject};
                                   git tag -a ${version} -m 'chore:version ${version}版本号'; 
                                   git push origin ${version};`
       if(gitTagInfo.exitCode === 0) {
         oneLogger('create git tag success')
       }
-    }
   }
   // console.log(gt, 'tg')
   
