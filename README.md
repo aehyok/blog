@@ -63,6 +63,10 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 5月10日
+  - npm-run-all https://github.com/mysticatea/npm-run-all/blob/master/docs/npm-run-all.md
+  - npm 玩法详解 https://www.ruanyifeng.com/blog/2016/10/npm_scripts.html
+  - https://zhuanlan.zhihu.com/p/365625019
 - 5月2日
   - npm run build 
     - https://juejin.cn/post/7078924628525056007

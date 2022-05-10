@@ -47,20 +47,20 @@ let version = argv.v
 console.log(argv.p, "p");
 let projectName = argv.p
 
-currentLogger(current, `--------------------------------------------------------`)
-currentLogger(current, `--------------------------------------------------------`)
-currentLogger(current, `--------------------------------------------------------`)
+// await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.159.245.209:/usr/local/aehyok/sunlight/`
+
 currentLogger(current, `-----version:${version}---------------------------------`)
 currentLogger(current, `-----project:${projectName}-----------------------------`)
 if(projectName === 'pc') {
   await build_pc(version)
 } 
 if(projectName === 'app') {
-  build_app(version)
+  await build_app(version)
 }
 let currentProject = projectList.find(item => !item.isqiankun && item.shortName === projectName)
 console.log(currentProject, 'currentProject');
 if(currentProject && Object.keys(currentProject).length > 0) {
   // projectList.find(item => item.shortName === projectName)
-  build(version, projectList.find(item => item.shortName === projectName).fullName)
+  await build(version, projectList.find(item => item.shortName === projectName).fullName)
 }
+await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-uis/`

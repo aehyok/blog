@@ -1,353 +1,75 @@
 tag 
-包含a------村委app
-包含c------pc后台管理
- 命令行中包含的版本号: 2.5.3.003
+包含w------微信公众号
+ 命令行中包含的版本号: 2.5.3.004
 -------------------------------------------------
 Your branch is up to date with 'origin/dev'.
-开始拉取项目:<<村委app>>
+开始拉取项目:<<微信公众号>>
 Already up to date.
-拉取项目<<村委app>>成功
-开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app 
+拉取项目<<微信公众号>>成功
+-------------------------------------------------
+开始编译项目:<<微信公众号>>
 yarn run v1.22.17
 $ vue-cli-service build
 
- WARNING  Compiled with 2 warnings上午12:33:35
+ WARNING  Compiled with 2 warnings下午3:31:54
 
  warning  
 
 asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 This can impact web performance.
 Assets: 
-  img/appbanner.ce354529.png (303 KiB)
-  js/chunk-9d79285c.61a09640.js (606 KiB)
-  js/chunk-vendors.b8ceaca5.js (1.41 MiB)
-  configImage/greenhouse(door).png (393 KiB)
-  configImage/greenhouse(center).png (438 KiB)
-  configImage/secondhouse(northwest).png (460 KiB)
-  scan/u1036.png (446 KiB)
-  scan/u1039.png (306 KiB)
-  scan/u1040.png (297 KiB)
-  scan/u1042.png (278 KiB)
-  scan/u1043.png (335 KiB)
-  scan/u1041.png (447 KiB)
-  scan/u825.jpg (254 KiB)
-  scan/u1044.png (312 KiB)
-  scan/u829.png (250 KiB)
-  scan/u826.png (256 KiB)
-  scan/u87.png (262 KiB)
-  configImage/villageDoor.png (610 KiB)
-  js/chunk-vendors.b8ceaca5.js[base].gz (432 KiB)
+  img/familyQrcodebg.ce915199.png (258 KiB)
+  img/bgimg.edfcba02.png (494 KiB)
+  img/familyIntegralDetailBanner.ed11dd86.png (323 KiB)
+  js/app.b05e5542.js (1.64 MiB)
+  css/chunk-0515e31a.93679fdf.css (424 KiB)
+  js/chunk-0515e31a.c4c232c6.js (1.35 MiB)
+  img/demo.jpg (452 KiB)
+  img/leaders/2.jpg (367 KiB)
+  img/leaders/1.jpg (289 KiB)
+  img/leaders/3.jpg (332 KiB)
+  img/leaders/4.jpg (335 KiB)
+  img/leaders/5.jpg (352 KiB)
+  img/leaders/6.jpg (346 KiB)
+  mp4/k0384ilytx2.p712.1.mp4 (16.9 MiB)
 
  warning  
 
 entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 Entrypoints:
-  app (1.44 MiB)
-      js/chunk-vendors.b8ceaca5.js
-      js/app.47cfaf72.js
+  app (1.7 MiB)
+      css/app.a20c6f7c.css
+      js/app.b05e5542.js
 
 
   File                                      Size             Gzipped
 
-  ..\..\release\cms\app\js\chunk-vendors    1445.03 KiB      433.44 KiB
-  .b8ceaca5.js
-  ..\..\release\cms\app\js\chunk-9d79285    606.17 KiB       207.17 KiB
-  c.61a09640.js
-  ..\..\release\cms\app\js\app.47cfaf72.    27.98 KiB        8.30 KiB
+  ..\release\cms\wechat\js\app.b05e5542.    1675.12 KiB      541.74 KiB
   js
-  ..\..\release\cms\app\js\chunk-1c43d3e    17.60 KiB        8.00 KiB
-  c.de01d16b.js
-  ..\..\release\cms\app\js\chunk-57c072f    7.66 KiB         2.75 KiB
-  0.b363a4e3.js
-  ..\..\release\cms\app\config.js           3.14 KiB         0.60 KiB
+  ..\release\cms\wechat\js\chunk-0515e31    1387.27 KiB      507.02 KiB
+  a.c4c232c6.js
+  ..\release\cms\wechat\config.js           20.08 KiB        2.03 KiB
+  ..\release\cms\wechat\css\chunk-0515e3    423.89 KiB       63.07 KiB
+  1a.93679fdf.css
+  ..\release\cms\wechat\css\app.a20c6f7c    67.47 KiB        30.35 KiB
+  .css
 
   Images and other types of assets omitted.
 
- DONE  Build complete. The ..\..\release\cms\app directory is ready to be deployed.
+ DONE  Build complete. The ..\release\cms\wechat directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
-Done in 44.73s.
-编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/main-app} 成功
-开始编译项目：/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app 
-yarn run v1.22.17
-$ vue-cli-service build
-
- WARNING  Compiled with 2 warnings上午12:34:16
-
- warning  
-
-asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
-This can impact web performance.
-Assets: 
-  js/app.51844c77.js (654 KiB)
-  js/chunk-39ec9eca.e9b34038.js (388 KiB)
-  js/chunk-6c049432.f8578177.js (1.99 MiB)
-  js/chunk-vendors.b4cd32cf.js (813 KiB)
-
- warning  
-
-entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
-Entrypoints:
-  app (1.43 MiB)
-      js/chunk-vendors.b4cd32cf.js
-      js/app.51844c77.js
-
-
-  File                                      Size             Gzipped
-
-  ..\..\release\cms\app\child\ffp-app\js    2037.82 KiB      793.23 KiB
-  \chunk-6c049432.f8578177.js
-  ..\..\release\cms\app\child\ffp-app\js    812.70 KiB       269.03 KiB
-  \chunk-vendors.b4cd32cf.js
-  ..\..\release\cms\app\child\ffp-app\js    653.56 KiB       352.37 KiB
-  \app.51844c77.js
-  ..\..\release\cms\app\child\ffp-app\js    387.67 KiB       143.92 KiB
-  \chunk-39ec9eca.e9b34038.js
-  ..\..\release\cms\app\child\ffp-app\js    109.46 KiB       19.89 KiB
-  \chunk-78b4f3ce.d972f3fd.js
-
-  Images and other types of assets omitted.
-
- DONE  Build complete. The ..\..\release\cms\app\child\ffp-app directory is ready to be deployed.
- INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
-      
-Done in 39.89s.
-编译APP 项目路径为{/e/work/git/dvs-2.x/dvs-app-h5-develop/ffp-app} 成功
-准备开始编译PC
-tag不存在 要进行git tag
-打tag项目:<<村委app>>成功
-M	dvs-ffp/src/views/basic/household-details.vue
-M	dvs-ffp/src/views/roster/roster-management.vue
-Your branch is up to date with 'origin/dev'.
-开始拉取项目:<<pc后台管理>>
-Updating b507f884..402942e6
-git pull:<<pc后台管理>>失败
-拉取项目<<pc后台管理>>成功
-开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main 
-yarn run v1.22.17
-$ vite build --emptyOutDir
-vite v2.5.6 building for production...
-transforming...
-✓ 1424 modules transformed.
-rendering chunks...
-../../release/cms/console/assets/element-icons.9c88a535.woff       24.24 KiB
-../../release/cms/console/assets/element-icons.de5eb258.ttf        49.19 KiB
-../../release/cms/console/assets/NotoSansHans-Light.8f64e48d.otf   8102.80 KiB
-../../release/cms/console/assets/NotoSansHans-Bold.9e7729ef.otf    8406.21 KiB
-../../release/cms/console/assets/bg.52c4a751.png                   123.52 KiB
-../../release/cms/console/assets/bg_right.ebe508b4.png             83.38 KiB
-../../release/cms/console/assets/icon_developing.4f4e3bc3.png      9.01 KiB
-../../release/cms/console/assets/bg_nav.34419d1c.png               569.38 KiB
-../../release/cms/console/index.html                               1.04 KiB
-../../release/cms/console/assets/index.105c1c56.js                 9.00 KiB
-../../release/cms/console/assets/vendor.e90cd9c9.js                797.27 KiB
-../../release/cms/console/assets/Home.72d66834.js                  1115.55 KiB
-../../release/cms/console/assets/update-password.7981301b.js       3.50 KiB
-../../release/cms/console/assets/useModule.1b30dc27.js             3.19 KiB
-../../release/cms/console/assets/index.e84a6182.js                 0.16 KiB
-../../release/cms/console/assets/base64.6000bb2a.js                2.60 KiB
-../../release/cms/console/assets/init-password.70b3a5a6.js         3.64 KiB
-../../release/cms/console/assets/login.f6cb7b20.js                 24.97 KiB
-../../release/cms/console/assets/not-found.c6744c67.js             0.63 KiB
-../../release/cms/console/assets/index.a6413ea3.js                 2.34 KiB
-../../release/cms/console/assets/header.4fcffa45.js                5.52 KiB
-../../release/cms/console/assets/side-menu.38cf9a0a.js             2.13 KiB
-../../release/cms/console/assets/update-password.691b805b.css      0.53 KiB
-../../release/cms/console/assets/not-found.29c7b295.css            0.39 KiB
-../../release/cms/console/assets/login.d69dfafc.css                2.78 KiB
-../../release/cms/console/assets/index.37eab154.css                0.73 KiB
-../../release/cms/console/assets/header.785d88ec.css               1.43 KiB
-../../release/cms/console/assets/init-password.0062fda6.css        1.52 KiB
-../../release/cms/console/assets/side-menu.c1c65616.css            1.04 KiB
-../../release/cms/console/assets/Home.963185b3.css                 23.20 KiB
-../../release/cms/console/assets/index.9329f01e.css                326.85 KiB
-Done in 32.76s.
-编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main} 成功
-开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic 
-yarn run v1.22.17
-$ vue-cli-service build
-
- WARNING  Compiled with 2 warnings上午12:35:37
-
- warning  
-
-asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
-This can impact web performance.
-Assets: 
-  css/app.46cb2f6d.css (329 KiB)
-  js/chunk-289d7297.aaaf22da.js (271 KiB)
-  css/chunk-77438be4.3b38e582.css (1.45 MiB)
-  js/chunk-vendors.14aee265.js (924 KiB)
-
- warning  
-
-entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
-Entrypoints:
-  app (1.36 MiB)
-      js/chunk-vendors.14aee265.js
-      css/app.46cb2f6d.css
-      js/app.e12a6b8e.js
-
-
-  File                                      Size             Gzipped
-
-  ..\..\release\cms\console\child\dvs-ba    923.81 KiB       279.52 KiB
-  sic\js\chunk-vendors.14aee265.js
-  ..\..\release\cms\console\child\dvs-ba    271.31 KiB       74.03 KiB
-  sic\js\chunk-289d7297.aaaf22da.js
-  ..\..\release\cms\console\child\dvs-ba    138.19 KiB       56.69 KiB
-  sic\js\app.e12a6b8e.js
-  ..\..\release\cms\console\child\dvs-ba    91.49 KiB        21.74 KiB
-  sic\js\chunk-8b6eab86.21a71fd5.js
-  ..\..\release\cms\console\child\dvs-ba    35.89 KiB        9.36 KiB
-  sic\js\chunk-454f031c.fc1fe725.js
-  ..\..\release\cms\console\child\dvs-ba    32.41 KiB        9.67 KiB
-  sic\js\chunk-36af6df1.c1823a78.js
-  ..\..\release\cms\console\child\dvs-ba    22.24 KiB        6.48 KiB
-  sic\js\chunk-1e9568dc.62354949.js
-  ..\..\release\cms\console\child\dvs-ba    19.88 KiB        5.98 KiB
-  sic\js\chunk-38728345.d289f576.js
-  ..\..\release\cms\console\child\dvs-ba    19.57 KiB        6.39 KiB
-  sic\js\chunk-5b29141f.91e22f5c.js
-  ..\..\release\cms\console\child\dvs-ba    19.22 KiB        6.76 KiB
-  sic\js\chunk-77438be4.7fe31729.js
-  ..\..\release\cms\console\child\dvs-ba    17.89 KiB        6.36 KiB
-  sic\js\chunk-5cb4e19a.d7cc2ab4.js
-  ..\..\release\cms\console\child\dvs-ba    14.76 KiB        4.80 KiB
-  sic\js\chunk-1097e1b4.f679a503.js
-  ..\..\release\cms\console\child\dvs-ba    13.52 KiB        3.38 KiB
-  sic\js\chunk-5a89f306.4024f9f8.js
-  ..\..\release\cms\console\child\dvs-ba    10.60 KiB        3.71 KiB
-  sic\js\chunk-6dcd85e2.af1bfc0f.js
-  ..\..\release\cms\console\child\dvs-ba    10.20 KiB        2.85 KiB
-  sic\js\chunk-6b74211b.1ceac056.js
-  ..\..\release\cms\console\child\dvs-ba    10.05 KiB        3.57 KiB
-  sic\js\chunk-6c8cff20.529befb5.js
-  ..\..\release\cms\console\child\dvs-ba    9.34 KiB         2.81 KiB
-  sic\js\chunk-497c3cd4.d13e343a.js
-  ..\..\release\cms\console\child\dvs-ba    8.71 KiB         3.02 KiB
-  sic\js\chunk-5bad774c.8775881b.js
-  ..\..\release\cms\console\child\dvs-ba    7.51 KiB         2.43 KiB
-  sic\js\chunk-347797e1.478b001a.js
-  ..\..\release\cms\console\child\dvs-ba    7.29 KiB         2.38 KiB
-  sic\js\chunk-164d4132.ede225c0.js
-  ..\..\release\cms\console\child\dvs-ba    6.29 KiB         2.54 KiB
-  sic\js\chunk-feff6786.623cbf5d.js
-  ..\..\release\cms\console\child\dvs-ba    5.62 KiB         2.12 KiB
-  sic\js\chunk-7df7d767.72cd3c81.js
-  ..\..\release\cms\console\child\dvs-ba    2.54 KiB         1.15 KiB
-  sic\js\chunk-29fd18c4.20681bb9.js
-  ..\..\release\cms\console\child\dvs-ba    1.76 KiB         0.78 KiB
-  sic\js\chunk-f39752d6.704ed8af.js
-  ..\..\release\cms\console\child\dvs-ba    1.75 KiB         0.76 KiB
-  sic\js\chunk-5a95d287.7e872bc5.js
-  ..\..\release\cms\console\child\dvs-ba    1.75 KiB         0.76 KiB
-  sic\js\chunk-70aaa392.989c93eb.js
-  ..\..\release\cms\console\child\dvs-ba    1.75 KiB         0.76 KiB
-  sic\js\chunk-44969a1c.953eb632.js
-  ..\..\release\cms\console\child\dvs-ba    1.74 KiB         0.75 KiB
-  sic\js\chunk-08ef5d6d.12325a6e.js
-  ..\..\release\cms\console\child\dvs-ba    1.64 KiB         0.78 KiB
-  sic\js\chunk-9119dfea.c5501c64.js
-  ..\..\release\cms\console\child\dvs-ba    1.37 KiB         0.67 KiB
-  sic\js\chunk-651daff0.8775cf26.js
-  ..\..\release\cms\console\child\dvs-ba    1.37 KiB         0.66 KiB
-  sic\js\chunk-58a7455b.b360e695.js
-  ..\..\release\cms\console\child\dvs-ba    1.36 KiB         0.66 KiB
-  sic\js\chunk-b6a5af2c.28de94f1.js
-  ..\..\release\cms\console\child\dvs-ba    1.36 KiB         0.66 KiB
-  sic\js\chunk-c2502c5c.12c314cd.js
-  ..\..\release\cms\console\child\dvs-ba    1.36 KiB         0.65 KiB
-  sic\js\chunk-140990ae.037108f3.js
-  ..\..\release\cms\console\child\dvs-ba    0.71 KiB         0.41 KiB
-  sic\js\chunk-70d90db2.6bd37ff3.js
-  ..\..\release\cms\console\child\dvs-ba    0.36 KiB         0.26 KiB
-  sic\js\chunk-2d0b5f94.b5114b9b.js
-  ..\..\release\cms\console\child\dvs-ba    0.34 KiB         0.26 KiB
-  sic\js\chunk-2d0cf8a6.20f366c4.js
-  ..\..\release\cms\console\child\dvs-ba    0.34 KiB         0.26 KiB
-  sic\js\chunk-2d0e6c2b.028323ca.js
-  ..\..\release\cms\console\child\dvs-ba    0.34 KiB         0.25 KiB
-  sic\js\chunk-2d0c55e1.4ec890d1.js
-  ..\..\release\cms\console\child\dvs-ba    0.34 KiB         0.25 KiB
-  sic\js\chunk-2d0e4ff3.d7ea3788.js
-  ..\..\release\cms\console\child\dvs-ba    0.33 KiB         0.25 KiB
-  sic\js\chunk-2d0deca2.c0783767.js
-  ..\..\release\cms\console\child\dvs-ba    0.32 KiB         0.24 KiB
-  sic\js\chunk-2d0dae79.87d118e0.js
-  ..\..\release\cms\console\child\dvs-ba    0.30 KiB         0.22 KiB
-  sic\js\chunk-2d0ac950.821dcd29.js
-  ..\..\release\cms\console\child\dvs-ba    1484.06 KiB      1120.56 KiB
-  sic\css\chunk-77438be4.3b38e582.css
-  ..\..\release\cms\console\child\dvs-ba    328.81 KiB       94.11 KiB
-  sic\css\app.46cb2f6d.css
-  ..\..\release\cms\console\child\dvs-ba    9.82 KiB         1.44 KiB
-  sic\css\chunk-164d4132.d70a9e5a.css
-  ..\..\release\cms\console\child\dvs-ba    9.53 KiB         1.35 KiB
-  sic\css\chunk-1097e1b4.52f44954.css
-  ..\..\release\cms\console\child\dvs-ba    9.30 KiB         3.03 KiB
-  sic\css\chunk-6c8cff20.ad1486a4.css
-  ..\..\release\cms\console\child\dvs-ba    9.30 KiB         3.03 KiB
-  sic\css\chunk-6dcd85e2.ad1486a4.css
-  ..\..\release\cms\console\child\dvs-ba    7.62 KiB         1.66 KiB
-  sic\css\chunk-347797e1.2e589ad2.css
-  ..\..\release\cms\console\child\dvs-ba    7.34 KiB         1.34 KiB
-  sic\css\chunk-6b74211b.d15d1523.css
-  ..\..\release\cms\console\child\dvs-ba    7.04 KiB         1.44 KiB
-  sic\css\chunk-36af6df1.dbb836ed.css
-  ..\..\release\cms\console\child\dvs-ba    6.69 KiB         1.22 KiB
-  sic\css\chunk-5a95d287.501e0a80.css
-  ..\..\release\cms\console\child\dvs-ba    6.66 KiB         1.22 KiB
-  sic\css\chunk-7df7d767.9499ec1a.css
-  ..\..\release\cms\console\child\dvs-ba    6.57 KiB         1.18 KiB
-  sic\css\chunk-5a89f306.615fab14.css
-  ..\..\release\cms\console\child\dvs-ba    6.46 KiB         1.16 KiB
-  sic\css\chunk-497c3cd4.fddac64e.css
-  ..\..\release\cms\console\child\dvs-ba    6.46 KiB         1.16 KiB
-  sic\css\chunk-5cb4e19a.4cb4a0fa.css
-  ..\..\release\cms\console\child\dvs-ba    6.43 KiB         1.16 KiB
-  sic\css\chunk-08ef5d6d.534ac3f1.css
-  ..\..\release\cms\console\child\dvs-ba    6.38 KiB         1.14 KiB
-  sic\css\chunk-f39752d6.18d10dd9.css
-  ..\..\release\cms\console\child\dvs-ba    6.38 KiB         1.14 KiB
-  sic\css\chunk-44969a1c.35ff27df.css
-  ..\..\release\cms\console\child\dvs-ba    6.38 KiB         1.14 KiB
-  sic\css\chunk-70aaa392.6044b4a1.css
-  ..\..\release\cms\console\child\dvs-ba    3.28 KiB         0.94 KiB
-  sic\css\chunk-140990ae.de18982d.css
-  ..\..\release\cms\console\child\dvs-ba    3.28 KiB         0.94 KiB
-  sic\css\chunk-29fd18c4.de18982d.css
-  ..\..\release\cms\console\child\dvs-ba    3.28 KiB         0.94 KiB
-  sic\css\chunk-58a7455b.de18982d.css
-  ..\..\release\cms\console\child\dvs-ba    3.28 KiB         0.94 KiB
-  sic\css\chunk-5bad774c.de18982d.css
-  ..\..\release\cms\console\child\dvs-ba    3.28 KiB         0.94 KiB
-  sic\css\chunk-651daff0.de18982d.css
-  ..\..\release\cms\console\child\dvs-ba    3.28 KiB         0.94 KiB
-  sic\css\chunk-9119dfea.de18982d.css
-  ..\..\release\cms\console\child\dvs-ba    3.28 KiB         0.94 KiB
-  sic\css\chunk-b6a5af2c.de18982d.css
-  ..\..\release\cms\console\child\dvs-ba    3.28 KiB         0.94 KiB
-  sic\css\chunk-c2502c5c.de18982d.css
-  ..\..\release\cms\console\child\dvs-ba    3.28 KiB         0.94 KiB
-  sic\css\chunk-feff6786.de18982d.css
-  ..\..\release\cms\console\child\dvs-ba    3.18 KiB         0.89 KiB
-  sic\css\chunk-1e9568dc.f91a59b7.css
-  ..\..\release\cms\console\child\dvs-ba    3.18 KiB         0.89 KiB
-  sic\css\chunk-38728345.f91a59b7.css
-  ..\..\release\cms\console\child\dvs-ba    3.18 KiB         0.89 KiB
-  sic\css\chunk-5b29141f.f91a59b7.css
-  ..\..\release\cms\console\child\dvs-ba    3.03 KiB         0.86 KiB
-  sic\css\chunk-70d90db2.f923810b.css
-
-  Images and other types of assets omitted.
-
- DONE  Build complete. The ..\..\release\cms\console\child\dvs-basic directory is ready to be deployed.
- INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
-      
-Done in 39.31s.
-编译PC 项目路径为{/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-basic} 成功
-开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-cons 
-yarn run v1.22.17
-$ vue-cli-service build
-
+Done in 36.80s.
+编译项目<<微信公众号>>成功
+-------------------------------------------------
+开始打tag项目:<<微信公众号>>
+tag 已经存在要先进行删除
+tag已删除要进行git tag
+打tag项目:<<微信公众号>>成功
+删除项目： 中的配置文件成功
+5秒后将自动退出本脚本：
+5
+4
+3
+2
+1

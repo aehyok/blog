@@ -53,3 +53,20 @@ const buildone = async () => {
     oneLogger("buildAppMain 发生错误");
   }
 };
+
+/**
+ * 创建Git Tag标签
+ */
+const creatTag = () => {
+  // cd ${gitpull_pathArray[${key}]}
+  // echo 'tag 已经存在要先进行删除'
+  // git tag -d $version
+  // git push origin :refs/tags/$version
+
+  // echo 'tag已删除要进行git tag'
+  // git tag -a $version -m "${version}"
+  // git push origin $version
+  // echo -e "打tag项目:<<${projectName}>>成功";
+  // cd $current_path
+  // echo "tagVersion=\"$version\" # <<${projectName}>> # $(date)" >> ./versions
+}
