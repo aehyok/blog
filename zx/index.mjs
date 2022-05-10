@@ -17,8 +17,8 @@ const mainLogger = (info) => {
 export const gitPull = async() => {
   try {
       mainLogger(`${projectRelease}::: start git pull`);
-      const gitPull = await $`cd ${gitProject}; git pull;`;
-      console.log(gitPull, "pullInfo");
+      const gitPullInfo = await $`cd ${gitProject}; git pull;`;
+      console.log(gitPullInfo, "pullInfo");
       if (gitPull.exitCode == 0) {
         console.log("success");
         mainLogger(`${projectRelease}:::success git pull`);
@@ -64,22 +64,22 @@ let version = argv.v
 // 获取项目信息
 console.log(argv.p, "p");
 let projectName = argv.p
-await gitPull()
+// await gitPull()
 
 // await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.159.245.209:/usr/local/aehyok/sunlight/`
 
 currentLogger(current, `-----version:${version}---------------------------------`)
 currentLogger(current, `-----project:${projectName}-----------------------------`)
-if(projectName === 'pc') {
-  await build_pc(version)
-} 
-if(projectName === 'app') {
-  await build_app(version)
-}
-let currentProject = projectList.find(item => !item.isqiankun && item.shortName === projectName)
-console.log(currentProject, 'currentProject');
-if(currentProject && Object.keys(currentProject).length > 0) {
-  // projectList.find(item => item.shortName === projectName)
-  await build(version, projectList.find(item => item.shortName === projectName).fullName)
-}
+// if(projectName === 'pc') {
+//   await build_pc(version)
+// } 
+// if(projectName === 'app') {
+//   await build_app(version)
+// }
+// let currentProject = projectList.find(item => !item.isqiankun && item.shortName === projectName)
+// console.log(currentProject, 'currentProject');
+// if(currentProject && Object.keys(currentProject).length > 0) {
+//   // projectList.find(item => item.shortName === projectName)
+//   await build(version, projectList.find(item => item.shortName === projectName).fullName)
+// }
 // await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-uis/`
