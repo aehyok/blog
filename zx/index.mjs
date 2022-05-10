@@ -6,6 +6,7 @@ import { build_pc } from './build-pc.mjs'
 import { build } from "./build-one.mjs";
 import { currentLogger } from './utils/log.mjs'
 import { baseUrl } from './utils/index.mjs'
+import { testSql } from './utils/data.mjs'
 $.verbose = true;
 const current = await $`pwd`;
 let projectRelease = 'release';
@@ -83,3 +84,5 @@ currentLogger(current, `-----project:${projectName}-----------------------------
 //   await build(version, projectList.find(item => item.shortName === projectName).fullName)
 // }
 // await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-uis/`
+
+testSql()

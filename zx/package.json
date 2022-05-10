@@ -18,6 +18,7 @@
     "zx": "^5.2.0"
   },
   "dependencies": {
-    "fs-extra": "^10.1.0"
+    "fs-extra": "^10.1.0",
+    "mysql": "^2.18.1"
   }
 }
