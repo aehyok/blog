@@ -76,5 +76,5 @@ const buildAppChildList = () => {
 
 const currentLogger = async (info) => {
   // await goCurrentPath();
-  addLog(project, info, window.version);
+  addLog(project, info, version);
 };

@@ -47,7 +47,7 @@ let projectList = [
 // 获取版本信息
 console.log(argv.v, "v");
 let version = argv.v
-window.version = version
+// window.version = version
 // 获取项目信息
 console.log(argv.p, "p");
 let projectName = argv.p
