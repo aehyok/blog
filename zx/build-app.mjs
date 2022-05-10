@@ -1,14 +1,17 @@
 import { $ } from "zx";
 import { baseUrl } from "./utils/index.mjs";
-import { logger } from "./utils/log.mjs";
+// import { logger } from "./utils/log.mjs";
+import { addLog } from "./utils/data.mjs";
 const current = await $`pwd`;
 
 const project = "dvs-app-h5-develop";
 const gitProject = baseUrl + project;
 const main = gitProject + "/" + "main-app";
 const appList = [gitProject + "/" + "ffp-app"];
-
+let version = ''
 export const build_app = async (version) => {
+  console.log(version, 'appversion');
+  version = version
   currentLogger("git pull 仓库代码： 开始");
   try {
     const gitPull = await $`cd ${gitProject}; git pull;`;
@@ -66,16 +69,12 @@ const buildAppChildList = () => {
   }
 };
 
-const goCurrentPath = async () => {
-  const currentPath = current.stdout.substring(0, current.stdout.length - 1);
-  await $`cd ${currentPath}`;
-};
-
-const goPath = (path) => {
-  $`cd ${path}`;
-};
+// const goCurrentPath = async () => {
+//   const currentPath = current.stdout.substring(0, current.stdout.length - 1);
+//   await $`cd ${currentPath}`;
+// };
 
 const currentLogger = async (info) => {
-  await goCurrentPath();
-  logger(info);
+  // await goCurrentPath();
+  addLog(project, info, window.version);
 };

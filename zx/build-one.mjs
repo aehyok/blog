@@ -1,13 +1,15 @@
 import { baseUrl } from "./utils/index.mjs";
 import { currentLogger } from "./utils/log.mjs";
-
+import { addLog } from "./utils/data.mjs";
 const current = await $`pwd`;
 // const project = "dvs-offiaccount-dev";
 let gitProject = '' // baseUrl + project;
+let project = ''
 let main = '' // gitProject;
-
+let version = ''
 const oneLogger = (info) => {
-    currentLogger(current, info)
+    // currentLogger(current, info)
+    addLog(project, info, version)
 }
 
 const init = (project) => {
@@ -17,6 +19,8 @@ const init = (project) => {
 }
 
 export const build = async (version, project) => {
+  this.project = project
+  this.version = version
   oneLogger(`开始初始化:${project}`);
   init(project)
   // await gitPull();
