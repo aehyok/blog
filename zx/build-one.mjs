@@ -19,8 +19,9 @@ const init = (project) => {
 export const build = async (version, project) => {
   oneLogger(`开始初始化:${project}`);
   init(project)
-  await gitPull();
-  await buildone();
+  // await gitPull();
+  // await buildone();
+  await creatTag(version)
 };
 
 const gitPull = async () => {
@@ -57,8 +58,31 @@ const buildone = async () => {
 /**
  * 创建Git Tag标签
  */
-const creatTag = () => {
-  // cd ${gitpull_pathArray[${key}]}
+const creatTag = async(version) => {
+  const tagListInfo = await $` cd ${gitProject};git tag;`
+  if(tagListInfo && tagListInfo.exitCode === 0) {
+    if(tagListInfo.stdout.includes(version)) {
+      console.log(version, 'you')
+      oneLogger('已存在tag删除')
+        const gitTagInfo = await $` cd ${gitProject}; 
+                                    git tag -d ${version}; 
+                                    git push origin :refs/tags/${version}`
+        if(gitTagInfo.exitCode === 0) {
+          oneLogger('删除tag成功')
+        }
+    } else {
+      console.log(version, 'wu')
+      const gitTagInfo = await $` cd ${gitProject};
+                                  git tag -a ${version} -m 'chore:version ${version}版本号'; 
+                                  git push origin ${version};`
+      if(gitTagInfo.exitCode === 0) {
+        oneLogger('create git tag success')
+      }
+    }
+  }
+  // console.log(gt, 'tg')
+  
+  // console.log(gitTagInfo, 'gitTagInfo')
   // echo 'tag 已经存在要先进行删除'
   // git tag -d $version
   // git push origin :refs/tags/$version

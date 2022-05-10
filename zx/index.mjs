@@ -5,13 +5,31 @@ import { build_app } from './build-app.mjs'
 import { build_pc } from './build-pc.mjs'
 import { build } from "./build-one.mjs";
 import { currentLogger } from './utils/log.mjs'
+import { baseUrl } from './utils/index.mjs'
 $.verbose = true;
 const current = await $`pwd`;
-// gitpull_pathArray["a"]="/e/work/git/dvs-2.x/dvs-app-h5-develop"
-// gitpull_pathArray["w"]="/e/work/git/dvs-2.x/dvs-offiaccount-dev"
-// gitpull_pathArray["p"]="/e/work/git/dvs-2.x/dvs-park-h5-app"
-// gitpull_pathArray["q"]="/e/work/git/dvs-2.x/qrcode-demo-dev"
-// gitpull_pathArray["c"]="/e/work/git/dvs-2.x/dvs-server-ui-dev"
+let projectRelease = 'release';
+let gitProject =  baseUrl + projectRelease;
+
+const mainLogger = (info) => {
+  currentLogger(current, info)
+}
+export const gitPull = async() => {
+  try {
+      mainLogger(`${projectRelease}::: start git pull`);
+      const gitPull = await $`cd ${gitProject}; git pull;`;
+      console.log(gitPull, "pullInfo");
+      if (gitPull.exitCode == 0) {
+        console.log("success");
+        mainLogger(`${projectRelease}:::success git pull`);
+      } else {
+        console.log("fail", $`$?`);
+      }
+    } catch {
+      mainLogger(`${projectRelease}:::error git pull`);
+    }
+}
+
 let projectList = [
   {
     shortName: 'pc',
@@ -46,6 +64,7 @@ let version = argv.v
 // 获取项目信息
 console.log(argv.p, "p");
 let projectName = argv.p
+await gitPull()
 
 // await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.159.245.209:/usr/local/aehyok/sunlight/`
 
@@ -63,4 +82,4 @@ if(currentProject && Object.keys(currentProject).length > 0) {
   // projectList.find(item => item.shortName === projectName)
   await build(version, projectList.find(item => item.shortName === projectName).fullName)
 }
-await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-uis/`
+// await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-uis/`

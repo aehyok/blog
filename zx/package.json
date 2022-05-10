@@ -7,7 +7,7 @@
     "start-all": "zx index.mjs -v 2.5.1.0 -p app  & zx index.mjs -v 2.5.1.0 -p pc & zx index.mjs -v 2.5.1.0pc -p wechat & zx index.mjs -v 2.5.1.0pc -p park   & zx index.mjs -v 2.5.1.0pc -p qrcode",
     "start-app": "zx index.mjs -v 2.5.1.0 -p app",
     "start-pc": "zx index.mjs -v 2.5.1.0 -p pc",
-    "start-wechat": "zx index.mjs -v 2.5.1.0 -p wechat",
+    "start-wechat": "zx index.mjs -v 2.5.1.1 -p wechat",
     "start-park": "zx index.mjs -v 2.5.1.0 -p park",
     "start-qrcode": "zx index.mjs -v 2.5.1.0 -p qrcode"
   },
