@@ -21,7 +21,7 @@ export const gitPullBy = async (name, path) => {
     const gitPullInfo = await $`cd ${path}; git pull;`;
     console.log(gitPullInfo, "pullInfo");
     if (gitPullInfo.exitCode === 0) {
-      console.log("success");
+      console.log("success",gitPullInfo);
       await addLog(name, `git pull end success`, global.version);
     } else {
       console.log("fail", $`$?`);
