@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-all": "zx index.mjs -v 2.5.1.0 -p app  & zx index.mjs -v 2.5.1.0 -p pc & zx index.mjs -v 2.5.1.0pc -p wechat & zx index.mjs -v 2.5.1.0pc -p park   & zx index.mjs -v 2.5.1.0pc -p qrcode",
-    "start-app": "zx index.mjs -v 2.5.1.0 -p app",
-    "start-pc": "zx index.mjs -v 2.5.1.0 -p pc",
-    "start-wechat": "zx index.mjs -v 2.5.1.1 -p wechat",
-    "start-park": "zx index.mjs -v 2.5.1.0 -p park",
-    "start-qrcode": "zx index.mjs -v 2.5.1.0 -p qrcode"
+    "start-all": "zx index.mjs -v 2.5.3.005 -p app  & zx index.mjs -v 2.5.3.005 -p pc & zx index.mjs -v 2.5.3.005pc -p wechat & zx index.mjs -v 2.5.3.005 -p park   & zx index.mjs -v 2.5.3.005pc -p qrcode",
+    "start-app": "zx index.mjs -v 2.5.3.005a -p app",
+    "start-pc": "zx index.mjs -v 2.5.3.005c -p pc",
+    "start-wechat": "zx index.mjs -v 2.5.3.005w -p wechat",
+    "start-park": "zx index.mjs -v 2.5.3.005p -p park",
+    "start-qrcode": "zx index.mjs -v 2.5.3.005q -p qrcode"
   },
   "keywords": [],
   "author": "",
