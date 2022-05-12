@@ -64,6 +64,8 @@
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
 - 5月12日
+  - pnpm workspaces 
+    - https://juejin.cn/post/7071992448511279141
   - pnpm官网
     - https://pnpm.io/zh/installation
   - 正则表达式
