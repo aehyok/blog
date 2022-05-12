@@ -18,6 +18,6 @@ export const build_app = async () => {
 
   await yarnBuildChildList(appChildListPath);
 
-  // await gitTag(path);
+  await gitTag(path);
   // global.connection.destory()
 };

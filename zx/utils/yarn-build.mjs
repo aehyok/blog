@@ -31,7 +31,7 @@ export const yarnBuildChildList = async(list) => {
         })
       )
       if(result) {
-          console.log('all', result)
+          console.log('all', 'result')
       }
     } catch {
       oneLogger("yarn build childList error");
