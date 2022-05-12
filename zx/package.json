@@ -12,7 +12,8 @@
     "start-qrcode": "zx index.mjs -v 4.5.3.006q -p qrcode",
     "prestart:all": "zx pull.mjs",
     "start:all": " zx index.mjs -v 4.5.3.006pc -p app & zx index.mjs -v 4.5.3.006pc -p pc & zx index.mjs -v 4.5.3.006 -p wechat & zx index.mjs -v 4.5.3.006 -p park   & zx index.mjs -v 4.5.3.006pc -p qrcode",
-    "poststart:all": "zx push.mjs"
+    "poststart:all": "zx push.mjs",
+    "release": "standard-version"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "fs-extra": "^10.1.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "standard-version": "^9.3.2"
   }
 }
