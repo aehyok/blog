@@ -13,5 +13,5 @@ export const build = async () => {
   await gitPull();
   await yarnBuild()
   // global.connection.destroy()
-  // await gitTag(gitProject);
+  await gitTag(gitProject);
 };
