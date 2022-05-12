@@ -1,5 +1,5 @@
-import { baseUrl } from "./index.mjs";
-import { addLog } from "./data.mjs";
+import { baseUrl } from "./common.mjs";
+import { addLog } from "./sql-helper.mjs";
 
 export const gitTag = async () => {
     const { name } = global.project

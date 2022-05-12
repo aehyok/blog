@@ -1,5 +1,6 @@
-import { baseUrl, gitPullBy } from './utils/index.mjs'
-
+import { baseUrl } from './utils/common.mjs'
+import { gitPullBy } from './utils/git-pull.mjs'
+// import {  close } from './utils/sql-helper.mjs'
 let projectRelease = 'release';
 let gitProject =  baseUrl + projectRelease;
 
@@ -7,5 +8,5 @@ let gitProject =  baseUrl + projectRelease;
 console.log(argv.v, "v");
 let version = argv.v
 global.version = version
-
 await gitPullBy(projectRelease, gitProject)
+// close()

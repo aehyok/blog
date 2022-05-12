@@ -1,4 +1,7 @@
-import { baseUrl, gitPull, yarnBuildBy, yarnBuildChildList } from "./utils/index.mjs";
+// import { gitPull, yarnBuildBy, yarnBuildChildList } from "./utils/index.mjs";
+import { gitPull } from "./utils/git-pull.mjs";
+import { yarnBuildBy, yarnBuildChildList } from "./utils/yarn-build.mjs";
+import { baseUrl } from "./utils/common.mjs";
 
 const project = "dvs-server-ui-dev";
 const path = baseUrl + project;

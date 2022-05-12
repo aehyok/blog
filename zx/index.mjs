@@ -1,14 +1,18 @@
 #!/usr/bin/env zx
 
-import { $ } from "zx";
+
+import { $, argv } from "zx";
 import { build_app } from './build-app.mjs'
 import { build_pc } from './build-pc.mjs'
 import { build } from "./build-one.mjs";
-import { baseUrl, gitPushBy} from './utils/index.mjs'
+import { baseUrl } from './utils/common.mjs'
+import { gitPullBy } from "./utils/git-pull.mjs";
+// import { gitPushBy, gitPullBy} from './utils/index.mjs'
+// import { gitPushBy } from './utils/git-push.mjs'
 $.verbose = true;
 
-// let projectRelease = 'release';
-// let gitProject =  baseUrl + projectRelease;
+let projectRelease = 'release';
+let gitProject =  baseUrl + projectRelease;
 
 let projectList = [
   {
@@ -48,7 +52,6 @@ let projectName = argv.p
 global.project = projectList.find(item => item.shortName === projectName)
 
 // await gitPullBy(projectRelease, gitProject)
-
 // await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.159.245.209:/usr/local/aehyok/sunlight/`
 
 if(projectName === 'pc') {
@@ -62,10 +65,9 @@ console.log(currentProject, 'currentProject');
 if(currentProject && Object.keys(currentProject).length > 0) {
   // projectList.find(item => item.shortName === projectName)
   global.projectName = projectList.find(item => item.shortName === projectName).fullName
-  console.log('build app');
+  console.log('sssss-before')
   await build()
+  console.log('ssssss-after')
 }
-
-console.log('push app');
 // await gitPushBy(projectRelease, gitProject)
 // await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-uis/`

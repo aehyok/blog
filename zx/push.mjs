@@ -1,4 +1,5 @@
-import { baseUrl, gitPushBy } from './utils/index.mjs'
+import { gitPushBy } from './utils/git-push.mjs'
+import { baseUrl } from './utils/common.mjs'
 let projectRelease = 'release';
 let gitProject =  baseUrl + projectRelease;
 
@@ -8,3 +9,4 @@ let version = argv.v
 global.version = version
 
 await gitPushBy(projectRelease, gitProject)
+global.connection.destroy()
