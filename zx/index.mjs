@@ -51,7 +51,6 @@ console.log(argv.p, "p");
 let projectName = argv.p
 global.project = projectList.find(item => item.shortName === projectName)
 
-// await gitPullBy(projectRelease, gitProject)
 // await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.159.245.209:/usr/local/aehyok/sunlight/`
 
 if(projectName === 'pc') {
@@ -63,11 +62,7 @@ if(projectName === 'app') {
 let currentProject = projectList.find(item => !item.isqiankun && item.shortName === projectName)
 console.log(currentProject, 'currentProject');
 if(currentProject && Object.keys(currentProject).length > 0) {
-  // projectList.find(item => item.shortName === projectName)
   global.projectName = projectList.find(item => item.shortName === projectName).fullName
-  console.log('sssss-before')
   await build()
-  console.log('ssssss-after')
 }
-// await gitPushBy(projectRelease, gitProject)
 // await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-uis/`

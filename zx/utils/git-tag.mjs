@@ -1,5 +1,5 @@
 import { baseUrl } from "./common.mjs";
-import { addLog } from "./sql-helper.mjs";
+import { writerLog } from "./sql-helper.mjs";
 
 export const gitTag = async () => {
     const { name } = global.project
@@ -63,5 +63,5 @@ const addTag = async (path, isExist) => {
 const oneLogger = (info) => {
   console.log(info);
   const { name } = global.project
-  addLog(name, info, global.version);
+  writerLog(name, info, global.version);
 };

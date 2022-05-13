@@ -48,11 +48,11 @@ const close = (conn) => {
         if(err) {
             console.log('error ', err)
         } else {
-            console.log('关闭成功');
+            console.log('关闭成功',conn.state, conn.threadId);
         }
     })
 }
 
-export const addLog = async(project, content, version) => {
+export const writerLog = async(project, content, version) => {
     await executeSql("INSERT INTO buildlog values(null,?,?,?,null)",[project, content, version])
 }

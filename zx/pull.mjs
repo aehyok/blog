@@ -9,4 +9,3 @@ let version = argv.v
 global.version = version
 
 await gitPullBy(projectRelease, gitProject)
-// close()

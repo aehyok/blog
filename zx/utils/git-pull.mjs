@@ -1,6 +1,5 @@
-import { addLog } from "./sql-helper.mjs";
+import { writerLog } from "./sql-helper.mjs";
 import { baseUrl } from "./common.mjs";
-import { $ } from "zx";
 /**
  * 通过全局项目进行拉取
  */
@@ -17,15 +16,15 @@ export const gitPull = async () => {
  */
 export const gitPullBy = async(name, path) => {
   try {
-     addLog(name, `git pull start`, global.version);
+     writerLog(name, `git pull start`, global.version);
     const gitPullInfo = await $`cd ${path}; git pull;`;
     console.log(gitPullInfo, "pullInfo");
     if (gitPullInfo.exitCode === 0) {
-       addLog(name, `git pull end success`, global.version);
+       writerLog(name, `git pull end success`, global.version);
     } else {
       console.log("fail", $`$?`);
     }
   } catch {
-     addLog(name, `git pull error`, global.version);
+     writerLog(name, `git pull error`, global.version);
   }
 };

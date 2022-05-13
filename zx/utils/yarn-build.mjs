@@ -1,4 +1,4 @@
-import { addLog } from "./sql-helper.mjs";
+import { writerLog } from "./sql-helper.mjs";
 import { baseUrl } from "./common.mjs";
 export const yarnBuild = async () => {
   const { name } = global.project;
@@ -41,5 +41,5 @@ export const yarnBuildChildList = async(list) => {
 const oneLogger = (info) => {
   console.log(info);
   const { name } = global.project;
-  addLog(name, info, global.version);
+  writerLog(name, info, global.version);
 };
