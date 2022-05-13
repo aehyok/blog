@@ -1,11 +1,11 @@
-import { baseUrl } from './utils/common.mjs'
-import { gitPullBy } from './utils/git-pull.mjs'
+import { baseUrl } from "./utils/common.mjs";
+import { gitPullBy } from "./utils/git-pull.mjs";
 
-let projectRelease = 'release';
-let gitProject =  baseUrl + projectRelease;
+let projectRelease = "release";
+let gitProject = baseUrl + projectRelease;
 
 console.log(argv.v, "v");
-let version = argv.v
-global.version = version
+let version = argv.v;
+global.version = version;
 
-await gitPullBy(projectRelease, gitProject)
+await gitPullBy(projectRelease, gitProject);
