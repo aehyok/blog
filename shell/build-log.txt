@@ -1,75 +1,10 @@
 tag 
-包含w------微信公众号
- 命令行中包含的版本号: 2.5.3.004
+包含c------pc后台管理
+ 命令行中包含的版本号: 2.5.3.006
 -------------------------------------------------
 Your branch is up to date with 'origin/dev'.
-开始拉取项目:<<微信公众号>>
+开始拉取项目:<<pc后台管理>>
 Already up to date.
-拉取项目<<微信公众号>>成功
--------------------------------------------------
-开始编译项目:<<微信公众号>>
-yarn run v1.22.17
-$ vue-cli-service build
-
- WARNING  Compiled with 2 warnings下午3:31:54
-
- warning  
-
-asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
-This can impact web performance.
-Assets: 
-  img/familyQrcodebg.ce915199.png (258 KiB)
-  img/bgimg.edfcba02.png (494 KiB)
-  img/familyIntegralDetailBanner.ed11dd86.png (323 KiB)
-  js/app.b05e5542.js (1.64 MiB)
-  css/chunk-0515e31a.93679fdf.css (424 KiB)
-  js/chunk-0515e31a.c4c232c6.js (1.35 MiB)
-  img/demo.jpg (452 KiB)
-  img/leaders/2.jpg (367 KiB)
-  img/leaders/1.jpg (289 KiB)
-  img/leaders/3.jpg (332 KiB)
-  img/leaders/4.jpg (335 KiB)
-  img/leaders/5.jpg (352 KiB)
-  img/leaders/6.jpg (346 KiB)
-  mp4/k0384ilytx2.p712.1.mp4 (16.9 MiB)
-
- warning  
-
-entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
-Entrypoints:
-  app (1.7 MiB)
-      css/app.a20c6f7c.css
-      js/app.b05e5542.js
-
-
-  File                                      Size             Gzipped
-
-  ..\release\cms\wechat\js\app.b05e5542.    1675.12 KiB      541.74 KiB
-  js
-  ..\release\cms\wechat\js\chunk-0515e31    1387.27 KiB      507.02 KiB
-  a.c4c232c6.js
-  ..\release\cms\wechat\config.js           20.08 KiB        2.03 KiB
-  ..\release\cms\wechat\css\chunk-0515e3    423.89 KiB       63.07 KiB
-  1a.93679fdf.css
-  ..\release\cms\wechat\css\app.a20c6f7c    67.47 KiB        30.35 KiB
-  .css
-
-  Images and other types of assets omitted.
-
- DONE  Build complete. The ..\release\cms\wechat directory is ready to be deployed.
- INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
-      
-Done in 36.80s.
-编译项目<<微信公众号>>成功
--------------------------------------------------
-开始打tag项目:<<微信公众号>>
-tag 已经存在要先进行删除
-tag已删除要进行git tag
-打tag项目:<<微信公众号>>成功
-删除项目： 中的配置文件成功
-5秒后将自动退出本脚本：
-5
-4
-3
-2
-1
+git pull:<<pc后台管理>>成功
+拉取项目<<pc后台管理>>成功
+开始编译项目：/e/work/git/dvs-2.x/dvs-server-ui-dev/dvs-main 

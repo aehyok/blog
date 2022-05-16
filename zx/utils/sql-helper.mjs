@@ -1,12 +1,14 @@
 import mysql from "mysql";
 
+let _conn ={}
+
 const logDbStat = function () {
-  console.log(
-    "db state %s and threadID %s",
-    connection.state,
-    connection.threadId
-  );
-};
+    console.log(
+      "db state %s and threadID %s",
+      _conn.state,
+      _conn.threadId
+    );
+  };
 
 const executeSql = (sql, params) => {
   let _conn = mysql.createConnection({
@@ -25,8 +27,8 @@ const executeSql = (sql, params) => {
     // 这里正真连接上数据库了。
     console.log(
       "链接成功--db state %s and threadID %s",
-      connection.state,
-      connection.threadId
+      _conn.state,
+      _conn.threadId
     );
     logDbStat();
   });
@@ -61,9 +63,9 @@ const close = (conn) => {
 };
 
 export const writerLog = async (project, content, version) => {
-  await executeSql("INSERT INTO buildlog values(null,?,?,?,null)", [
-    project,
-    content,
-    version,
-  ]);
+//   await executeSql("INSERT INTO CiCdLog values(null,?,?,?,null)", [
+//     project,
+//     content,
+//     version,
+//   ]);
 };
