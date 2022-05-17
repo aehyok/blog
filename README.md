@@ -63,6 +63,9 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 5月17日
+  - github多人协作
+    - https://blog.csdn.net/qq_45804132/article/details/118669698
 - 5月13日
   - pnpm monorepo
     - https://juejin.cn/post/6964328103447363614
