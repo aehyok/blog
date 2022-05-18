@@ -1,4 +1,5 @@
 import mysql from "mysql";
+import shortid from "shortid";
 
 let _conn ={}
 
@@ -63,9 +64,10 @@ const close = (conn) => {
 };
 
 export const writerLog = async (project, content, version) => {
-//   await executeSql("INSERT INTO CiCdLog values(null,?,?,?,null)", [
-//     project,
-//     content,
-//     version,
-//   ]);
+    let id = shortid.generate()
+  await executeSql("INSERT INTO CiCdLog values(?,?,?,?,null,null)", [id,
+    project,
+    content,
+    version,
+  ]);
 };

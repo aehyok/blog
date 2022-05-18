@@ -42,6 +42,8 @@ let projectList = [
 ];
 
 // 获取版本信息
+
+console.log(argv, '---------------parameters---------------')
 console.log(argv.v, "v");
 let version = argv.v;
 global.version = version;

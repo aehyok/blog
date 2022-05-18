@@ -25,6 +25,7 @@
   "dependencies": {
     "fs-extra": "^10.1.0",
     "mysql": "^2.18.1",
+    "shortid": "^2.2.16",
     "standard-version": "^9.3.2"
   }
 }
