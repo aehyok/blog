@@ -9,6 +9,7 @@
     ```javascript
 
         // 在setup初始化中，先获取keepalive实例
+        // getCurrentInstance() 可以获取当前组件的实例
         const instance = getCurrentInstance()!
         // KeepAlive communicates with the instantiated renderer via the
         // ctx where the renderer passes in its internals,
@@ -308,31 +309,30 @@
 
         </script>
     ```
-- 通过pinia 来处理include缓存，和保存滚动条位置
+- 通过pinia保存临时数据， 来处理include缓存，和保存滚动条位置
     ```javascript
         import { defineStore } from "pinia";
 
         export const useKeepAliverStore = defineStore("useKeepAliverStore", {
-        state: () => ({
-            caches: [] as any,
-            scrollList: new Map(),
-        }),
+            state: () => ({
+                caches: [] as any,
+                scrollList: new Map(),
+            }),
 
-        actions: {
-            add(name: string) {
-                this.caches.push(name);
-            },
-            remove(name: string) {
-                console.log(this.caches, 'this.caches')
-                this.caches = this.caches.filter((item: any) => item !== name);
-                console.log(this.caches, 'this.caches')
-            },
-            clear() {
-                this.caches = []
+            actions: {
+                add(name: string) {
+                    this.caches.push(name);
+                },
+                remove(name: string) {
+                    console.log(this.caches, 'this.caches')
+                    this.caches = this.caches.filter((item: any) => item !== name);
+                    console.log(this.caches, 'this.caches')
+                },
+                clear() {
+                    this.caches = []
+                }
             }
-        }
         });
-
     ```
 
 - 组件路由进入前进行判断，是否加入缓存
