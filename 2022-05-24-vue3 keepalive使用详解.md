@@ -172,8 +172,8 @@
     ```javascript
         npm i pnpm -g
     ```
+
 - 4、安装完成以后，找到根目录package.json文件中的scripts
-    - 
     - 参考https://juejin.cn/post/6991653445161713671
     ```javascript
         // 在dev命令后添加 --source-map是从已转换的代码，映射到原始的源文件
