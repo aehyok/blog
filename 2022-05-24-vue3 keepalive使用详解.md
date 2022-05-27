@@ -42,7 +42,7 @@
         import { useKeepAliverStore } from "@/store";
         const useStore = useKeepAliverStore();
         const keepAliveCache = computed(() => {
-        return useStore.caches;
+            return useStore.caches;
         });
 
         </script>
