@@ -164,23 +164,22 @@
         git clone git@github.com:vuejs/core.git
     ```
 
-- 2、按照依赖
+- 2、安装依赖
     ```javascript
         pnpm i
     ``` 
-- 3、如果没有按照pnpm,先通过npm安装一下 
+- 3、如果不能使用pnpm,可以先通过npm安装一下 
     ```javascript
         npm i pnpm -g
     ```
-- 4、安装完成以后，找到根目录一下package.json文件中scripts
-    - source-map是从已转换的代码，映射到原始的源文件
-    - 参考
+- 4、安装完成以后，找到根目录package.json文件中的scripts
+    - 
+    - 参考https://juejin.cn/post/6991653445161713671
     ```javascript
-        // 
-        // https://juejin.cn/post/6991653445161713671
+        // 在dev命令后添加 --source-map是从已转换的代码，映射到原始的源文件
         "dev": "node scripts/dev.js  --sourcemap"
     ```
-- 5、执行pnpm run dev则会build vue源码(2022年)
+- 5、执行pnpm run dev则会build vue源码
     ```javascript
         pnpm run dev
 
@@ -189,6 +188,8 @@
         > node scripts/dev.js  --sourcemap
 
         watching: packages\vue\dist\vue.global.js
+
+        //到..\..\core\packages\vue\dist便可以看到编译成功，以及可以查看到examples样例demo页面
     ```
 - 6、然后在 ..\..\core\packages\vue\examples\composition中添加一个aehyok.html文件，将如下代码进行拷贝，然后通过chrome浏览器打开，F12，找到源代码的Tab页面，通过快捷键Ctrl+ P 输入KeepAlive便可以找到这个组件，然后通过左侧行标右键就可以添加断点，进行调试，也可以通过右侧的【调用堆栈】进行快速跳转代码进行调试。
     ```javascript
@@ -270,6 +271,10 @@
         }).mount('#demo')
         </script>
     ```
+ - 7、调试源码发现 keepalive中的render函数（或者说时setup中的return 函数）在子组件切换时就会去执行，变更逻辑缓存
+    - 第一次进入页面初始化keepalive组件会执行一次，
+    - 然后点击组件一，再次执行render函数
+    - 然后点击组件二，会再次执行render函数
 ## 5、vue3 keealive源码粗浅分析
 - 通过查看vue3 KeepAlive.ts源码,源码路径：https://github.com/vuejs/core/blob/main/packages/runtime-core/src/components/KeepAlive.ts
     ```javascript
@@ -551,5 +556,3 @@
         current = vnode
         return isSuspense(rawVNode.type) ? rawVNode : vnode
     ```
-
-- 调试源码发现 keepalive中的render函数子组件变化就会去执行，变更逻辑缓存
