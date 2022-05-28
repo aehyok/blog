@@ -63,6 +63,8 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 5月29日
+  - 科学上网 https://github.com/Alvin9999/new-pac
 - 5月21日
   - vueuse
     - https://vueuse.org/core/usestorage/#usage
