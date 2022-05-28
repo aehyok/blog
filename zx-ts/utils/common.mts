@@ -6,6 +6,6 @@ export const isMac = () => {
 }
 
 /**
- * dvs项目基础路径
+ * dvs项目基础路径test
  */
 export const baseUrl = isMac() ? '/Users/tanghongling/Desktop/aehyok/github/' : '/e/work/git/dvs-2.x/' 
