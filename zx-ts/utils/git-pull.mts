@@ -1,5 +1,6 @@
 import { writerLog } from "./sql-helper.mjs";
 import { baseUrl } from "./common.mjs";
+import { $ } from 'zx'
 /**
  * 通过全局项目进行拉取
  */

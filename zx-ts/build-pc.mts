@@ -26,5 +26,5 @@ export const build_pc = async () => {
 
   await yarnBuildChildList(appChildListPath);
 
-  await gitTag(path);
+  await gitTag();
 };

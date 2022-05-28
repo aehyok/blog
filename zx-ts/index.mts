@@ -55,7 +55,7 @@ global.project = projectList.find((item) => item.shortName === projectName);
 // await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.159.245.209:/usr/local/aehyok/sunlight/`
 
 if (projectName === "pc") {
-  await build_pc(global.version);
+  await build_pc();
 }
 if (projectName === "app") {
   await build_app();
@@ -67,7 +67,7 @@ console.log(currentProject, "currentProject");
 if (currentProject && Object.keys(currentProject).length > 0) {
   global.projectName = projectList.find(
     (item) => item.shortName === projectName
-  ).fullName;
+  ).name;
   await build();
 }
-// await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-uis/`
+// // await $`scp -r /e/work/git/dvs-2.x/release/cms/* root@139.9.184.171:/usr/local/sunlight/dvs/dvs-uis/`

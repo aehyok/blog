@@ -13,5 +13,5 @@ export const build = async () => {
   
   await gitPull();
   await yarnBuild()
-  await gitTag(path);
+  await gitTag();
 };

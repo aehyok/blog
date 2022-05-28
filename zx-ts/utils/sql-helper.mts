@@ -1,7 +1,7 @@
 import mysql from "mysql";
 import shortid from "shortid";
 
-let _conn ={}
+let _conn: any = {}
 
 const logDbStat = function () {
     console.log(

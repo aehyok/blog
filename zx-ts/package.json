@@ -5,7 +5,7 @@
   "main": "index.mjs",
   "type": "module",
   "scripts": {
-    "start:app": "zx index.mjs -v 4.5.3.006a -p app",
+    "start:app": "ts-node-esm index.mts -v 4.5.3.006a -p app",
     "start:pc": "zx index.mjs -v 4.5.3.006c -p pc",
     "start": "zx index.mjs -v 4.5.3.006a -p app & zx index.mjs -v 4.5.3.006a -p pc",
     "start:wechat": "zx index.mjs -v 4.5.3.006w -p wechat",
@@ -16,7 +16,7 @@
     "poststart:all": "zx push.mjs",
     "release": "standard-version",
     "delete:tag": "zx ",
-    "ts": "ts-node-esm hello.ts"
+    "ts": "ts-node-esm hello.mts"
   },
   "keywords": [],
   "author": "",

@@ -1,5 +1,6 @@
 import { writerLog } from "./sql-helper.mjs"
 import { baseUrl } from "./common.mjs";
+import { $ } from 'zx'
 
 export const gitPush = async() => {
     const { name } = global.project

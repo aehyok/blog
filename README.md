@@ -65,6 +65,9 @@
     - https://github.com/llychao/m3u8-downloader
 - 5月29日
   - 科学上网 https://github.com/Alvin9999/new-pac
+  - nodejs中引入 ts  ts-node
+    - https://github.com/TypeStrong/ts-node 搜索experimentalResolver
+    - 引入ts文件  import {} from './xxx.mjs' 就是mts 
 - 5月21日
   - vueuse
     - https://vueuse.org/core/usestorage/#usage

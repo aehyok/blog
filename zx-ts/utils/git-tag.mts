@@ -1,5 +1,6 @@
 import { baseUrl } from "./common.mjs";
 import { writerLog } from "./sql-helper.mjs";
+import { $ } from 'zx'
 
 export const gitTag = async () => {
     const { name } = global.project

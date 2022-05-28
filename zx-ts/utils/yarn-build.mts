@@ -1,5 +1,7 @@
 import { writerLog } from "./sql-helper.mjs";
 import { baseUrl } from "./common.mjs";
+import { $ } from 'zx'
+
 export const yarnBuild = async () => {
   const { name } = global.project;
   const path = baseUrl + name;
