@@ -15,7 +15,7 @@ export const gitPull = async () => {
  * @param {*} name
  * @param {*} path
  */
-export const gitPullBy = async(name, path) => {
+export const gitPullBy = async(name: string, path: string) => {
   try {
      writerLog(name, `git pull start`, global.version);
     const gitPullInfo = await $`cd ${path}; git pull;`;

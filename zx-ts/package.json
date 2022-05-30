@@ -1,6 +1,6 @@
 {
   "name": "zx",
-  "version": null,
+  "version": "2.0.0.0",
   "description": "",
   "main": "index.mts",
   "type": "module",

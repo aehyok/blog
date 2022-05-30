@@ -99,7 +99,8 @@
 - 5月10日
   - npm-run-all https://github.com/mysticatea/npm-run-all/blob/master/docs/npm-run-all.md
   - npm 玩法详解 https://www.ruanyifeng.com/blog/2016/10/npm_scripts.html
-  - https://zhuanlan.zhihu.com/p/365625019
+  - https://juejin.cn/post/6844903879943913485
+  - vscode中修改 git bash 为默认命令行工具 https://zhuanlan.zhihu.com/p/365625019
 - 5月2日
   - npm run build 
     - https://juejin.cn/post/7078924628525056007
