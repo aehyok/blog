@@ -63,6 +63,9 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 6月2日
+  - Preview.js
+    - https://previewjs.com/docs/platforms/vscode
 - 6月1日
   - monorepo 
     - https://juejin.cn/post/7102452341210611720
