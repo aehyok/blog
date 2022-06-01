@@ -66,7 +66,6 @@
 - 6月1日
   - monorepo https://juejin.cn/post/7102452341210611720
               https://juejin.cn/post/6972139870231724045#heading-4
-
   - jenkins 
     - https://juejin.cn/post/6995588010934796302
     - https://juejin.cn/post/7102360505313918983                
