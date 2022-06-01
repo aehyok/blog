@@ -1,7 +1,5 @@
-- keep-alive 源码原理学习笔记https://juejin.cn/post/7069422231387439111
-- 滚动条行为控制 https://mp.weixin.qq.com/s/tkX-F5cQHaBP15oCJ2BJZw
+持续创作，加速成长！这是我参与「掘金日新计划 · 6 月更文挑战」的第1天，[点击查看活动详情](https://juejin.cn/post/7099702781094674468 "https://juejin.cn/post/7099702781094674468")
 
-# vue3 keepalive 迫不得已我硬着头皮查看了源码，解决了工作中的问题
 
 - 1、通过本文可以了解到vue3 keepalive功能
 - 2、通过本文可以了解到vue3 keepalive使用场景
@@ -22,6 +20,10 @@
 - 上述另外一个场景：进入页面直接缓存，然后就结束了，这个比较简单本文就不讨论了
 
 ## 3、在项目中的使用过程
+
+
+![vue3 keepalive (1).png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2de9fcf26acd44c9b0a388dbba44cfb2~tplv-k3u1fbpfcp-watermark.image?)
+
 
 - keepalive组件总共有三个参数
     - include：可传字符串、正则表达式、数组，名称匹配成功的组件会被缓存
@@ -73,7 +75,7 @@
         });
     ```
 
-- 组件路由刚刚切换时，通过beforeRouteEnter将组件写入include, 此时组件生命周期还没开始。如果都已经开始执行组件生命周期了，再写入就意义了。所以这个钩子函数就不能写在setup中，要单独提出来写。
+- 组件路由刚刚切换时，通过beforeRouteEnter将组件写入include, 此时组件生命周期还没开始。如果都已经开始执行组件生命周期了，再写入就意义了。所以这个钩子函数就不能写在setup中，要单独提出来写。当然你也可以换成路由的其他钩子函数处理beforeEach，但这里面使用的话，好像使用不了pinia，这个还需要进一步研究一下。
     ```javascript
         import { useRoute, useRouter, onBeforeRouteLeave } from "vue-router";
         import { useKeepAliverStore } from "@/store";
@@ -144,6 +146,11 @@
         }
 
     ```
+- 上面注册scroll事件中使用了一个useThrottleFn,这个类库是@vueuse/core中提供的，其中封装了很多工具都非常不错，用兴趣的可以研究研究
+    ```javascript
+        https://vueuse.org/shared/usethrottlefn/#usethrottlefn
+    ```
+
 - 此时也可以查看找到实例的vnode查找到keepalive,是在keepalive紧挨着的子组件里
     ```
         const instance = getCurrentInstance()
@@ -208,32 +215,30 @@
         const { reactive, computed } = Vue
 
         const Demo1 = {
-        name: 'Demo1',
-        template: '#template-1',
-        setup(props) {
-        }
+            name: 'Demo1',
+            template: '#template-1',
+            setup(props) {
+            }
         }
 
         const Demo2 = {
             name: 'Demo2',
-        template: '#template-2',
-        setup(props) {
-        }
+            template: '#template-2',
+            setup(props) {
+            }
         }
         </script>
 
         <!-- App template (in DOM) -->
         <div id="demo">
+            <div>Hello World</div>
+            <div>Hello World</div>
+            <div>Hello World</div>
             <button @click="changeClick(1)">组件一</button>
             <button @click="changeClick(2)">组件二</button>
             <keep-alive :include="includeCache">
                 <component :is="componentCache" :key="componentName" v-if="componentName" />
             </keep-alive>
-        <form id="search">
-            Search <input name="query" v-model="searchQuery">
-        </form>
-        <demo1>
-        </demo1>
         </div>
         <!-- App script -->
         <script>
@@ -275,6 +280,12 @@
     - 第一次进入页面初始化keepalive组件会执行一次，
     - 然后点击组件一，再次执行render函数
     - 然后点击组件二，会再次执行render函数
+ - 8、调试截图说明     
+ 
+    ![Snipaste_2022-05-30_11-30-46.jpg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/20c4acde464c4ccebabba06b8376c780~tplv-k3u1fbpfcp-watermark.image?)
+  -9、调试操作，小视频观看
+      
+    ![1.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e51e1633b3a74dc3a91045795d5d310b~tplv-k3u1fbpfcp-watermark.image?)
 ## 5、vue3 keealive源码粗浅分析
 - 通过查看vue3 KeepAlive.ts源码,源码路径：https://github.com/vuejs/core/blob/main/packages/runtime-core/src/components/KeepAlive.ts
     ```javascript
@@ -458,101 +469,114 @@
         
         // 判断keepalive组件中的子组件，如果大于1个的话，直接警告处理了
         // 另外如果渲染的不是虚拟dom（vNode）,则直接返回渲染即可。
-        const children = slots.default()
-        const rawVNode = children[0]
-        if (children.length > 1) {
-            if (__DEV__) {
-            warn(`KeepAlive should contain exactly one component child.`)
+
+        return () => {
+            // eslint-disable-next-line no-debugger
+            console.log(props.include, 'watch-include')
+            pendingCacheKey = null
+
+            if (!slots.default) {
+                return null
             }
-            current = null
-            return children
-        } else if (
-            !isVNode(rawVNode) ||
-            (!(rawVNode.shapeFlag & ShapeFlags.STATEFUL_COMPONENT) &&
-            !(rawVNode.shapeFlag & ShapeFlags.SUSPENSE))
-        ) {
-            current = null
-            return rawVNode
-        }
 
-        // 接下来处理时Vnode虚拟dom的情况，先获取vnode
-        let vnode = getInnerChild(rawVNode)
-        // 节点类型
-        const comp = vnode.type as ConcreteComponent
+            const children = slots.default()
+            const rawVNode = children[0]
+            if (children.length > 1) {
+                if (__DEV__) {
+                warn(`KeepAlive should contain exactly one component child.`)
+                }
+                current = null
+                return children
+            } else if (
+                !isVNode(rawVNode) ||
+                (!(rawVNode.shapeFlag & ShapeFlags.STATEFUL_COMPONENT) &&
+                !(rawVNode.shapeFlag & ShapeFlags.SUSPENSE))
+            ) {
+                current = null
+                return rawVNode
+            }
 
-        // for async components, name check should be based in its loaded
-        // inner component if available
-        // 获取组件名称
-        const name = getComponentName(
-            isAsyncWrapper(vnode)
-            ? (vnode.type as ComponentOptions).__asyncResolved || {}
-            : comp
-        )
+            // 接下来处理时Vnode虚拟dom的情况，先获取vnode
+            let vnode = getInnerChild(rawVNode)
+            // 节点类型
+            const comp = vnode.type as ConcreteComponent
 
-        //这个算是最熟悉的通过props传递进行的参数，进行解构
-        const { include, exclude, max } = props
+            // for async components, name check should be based in its loaded
+            // inner component if available
+            // 获取组件名称
+            const name = getComponentName(
+                isAsyncWrapper(vnode)
+                ? (vnode.type as ComponentOptions).__asyncResolved || {}
+                : comp
+            )
 
-        // include判断 组件名称如果没有设置， 或者组件名称不在include中，
-        // exclude判断 组件名称有了，或者匹配了
-        // 对以上两种情况都不进行缓存处理，直接返回当前vnode虚拟dom即可。
-        if (
-            (include && (!name || !matches(include, name))) ||
-            (exclude && name && matches(exclude, name))
-        ) {
+            //这个算是最熟悉的通过props传递进行的参数，进行解构
+            const { include, exclude, max } = props
+
+            // include判断 组件名称如果没有设置， 或者组件名称不在include中，
+            // exclude判断 组件名称有了，或者匹配了
+            // 对以上两种情况都不进行缓存处理，直接返回当前vnode虚拟dom即可。
+            if (
+                (include && (!name || !matches(include, name))) ||
+                (exclude && name && matches(exclude, name))
+            ) {
+                current = vnode
+                return rawVNode
+            }
+
+            // 接下来开始处理有缓存或者要缓存的了
+
+            // 先获取一下vnode的key设置，然后看看cache缓存中是否存在
+            const key = vnode.key == null ? comp : vnode.key
+            const cachedVNode = cache.get(key)
+
+            // 这一段可以忽略了，好像时ssContent相关，暂时不管了，没看明白？？
+            // clone vnode if it's reused because we are going to mutate it
+            if (vnode.el) {
+                vnode = cloneVNode(vnode)
+                if (rawVNode.shapeFlag & ShapeFlags.SUSPENSE) {
+                rawVNode.ssContent = vnode
+                }
+            }
+
+            // 上面判断了，如果没有设置key，则使用vNode的type作为key值
+            pendingCacheKey = key
+
+            //判断上面缓存中是否存在vNode
+
+            // if 存在的话，就将缓存中的vnode复制给当前的vnode
+            // 同时还判断了组件是否为过渡组件 transition，如果是的话 需要注册过渡组件的钩子
+            // 同时先删除key，然后再重新添加key
+
+            // else 不存在的话，就添加到缓存即可
+            // 并且要判断一下max最大缓存的数量是否超过了，超过了，则通过淘汰LPR算法，删除最旧的一个缓存
+            // 最后又判断了一下是否为Suspense。也是vue3新增的高阶组件。
+            if (cachedVNode) {
+                // copy over mounted state
+                vnode.el = cachedVNode.el
+                vnode.component = cachedVNode.component
+                if (vnode.transition) {
+                // recursively update transition hooks on subTree
+                setTransitionHooks(vnode, vnode.transition!)
+                }
+                // avoid vnode being mounted as fresh
+                vnode.shapeFlag |= ShapeFlags.COMPONENT_KEPT_ALIVE
+                // make this key the freshest
+                keys.delete(key)
+                keys.add(key)
+            } else {
+                keys.add(key)
+                // prune oldest entry
+                if (max && keys.size > parseInt(max as string, 10)) {
+                pruneCacheEntry(keys.values().next().value)
+                }
+            }
+            // avoid vnode being unmounted
+            vnode.shapeFlag |= ShapeFlags.COMPONENT_SHOULD_KEEP_ALIVE
+
             current = vnode
-            return rawVNode
-        }
-
-        // 接下来开始处理有缓存或者要缓存的了
-
-        // 先获取一下vnode的key设置，然后看看cache缓存中是否存在
-        const key = vnode.key == null ? comp : vnode.key
-        const cachedVNode = cache.get(key)
-
-        // 这一段可以忽略了，好像时ssContent相关，暂时不管了，没看明白？？
-        // clone vnode if it's reused because we are going to mutate it
-        if (vnode.el) {
-            vnode = cloneVNode(vnode)
-            if (rawVNode.shapeFlag & ShapeFlags.SUSPENSE) {
-            rawVNode.ssContent = vnode
-            }
-        }
-
-        // 上面判断了，如果没有设置key，则使用vNode的type作为key值
-        pendingCacheKey = key
-
-        //判断上面缓存中是否存在vNode
-
-        // if 存在的话，就将缓存中的vnode复制给当前的vnode
-        // 同时还判断了组件是否为过渡组件 transition，如果是的话 需要注册过渡组件的钩子
-        // 同时先删除key，然后再重新添加key
-
-        // else 不存在的话，就添加到缓存即可
-        // 并且要判断一下max最大缓存的数量是否超过了，超过了，则通过淘汰LPR算法，删除最旧的一个缓存
-        // 最后又判断了一下是否为Suspense。也是vue3新增的高阶组件。
-        if (cachedVNode) {
-            // copy over mounted state
-            vnode.el = cachedVNode.el
-            vnode.component = cachedVNode.component
-            if (vnode.transition) {
-            // recursively update transition hooks on subTree
-            setTransitionHooks(vnode, vnode.transition!)
-            }
-            // avoid vnode being mounted as fresh
-            vnode.shapeFlag |= ShapeFlags.COMPONENT_KEPT_ALIVE
-            // make this key the freshest
-            keys.delete(key)
-            keys.add(key)
-        } else {
-            keys.add(key)
-            // prune oldest entry
-            if (max && keys.size > parseInt(max as string, 10)) {
-            pruneCacheEntry(keys.values().next().value)
-            }
-        }
-        // avoid vnode being unmounted
-        vnode.shapeFlag |= ShapeFlags.COMPONENT_SHOULD_KEEP_ALIVE
-
-        current = vnode
-        return isSuspense(rawVNode.type) ? rawVNode : vnode
+            return isSuspense(rawVNode.type) ? rawVNode : vnode
     ```
+ ## 总结
+
+    通过这次查看vue3 keepalive源码发现，其实也没那么难，当然这次查看源代码也只是粗略查看，并没有看的那么细，主要还是先解决问题。动动手调试一下，有时候真的就是不逼一下自己都不知道自己有多么的优秀。原来我也能稍微看看源代码了。以后有空可以多看看vue3源代码，学习一下vue3的精髓。了解vue3更为细节的一些知识点。   
