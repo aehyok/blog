@@ -1,5 +1,6 @@
 import { gitPushBy } from "./utils/git-push.mjs";
 import { baseUrl } from "./utils/common.mjs";
+import { argv } from "zx";
 let projectName = "release";
 let path = baseUrl + projectName;
 

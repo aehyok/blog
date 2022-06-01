@@ -63,6 +63,13 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+- 6月1日
+  - monorepo https://juejin.cn/post/7102452341210611720
+              https://juejin.cn/post/6972139870231724045#heading-4
+
+  - jenkins 
+    - https://juejin.cn/post/6995588010934796302
+    - https://juejin.cn/post/7102360505313918983                
 - 5月29日
   - 科学上网 https://github.com/Alvin9999/new-pac
   - nodejs中引入 ts  ts-node
