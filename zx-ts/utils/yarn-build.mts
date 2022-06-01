@@ -8,7 +8,7 @@ export const yarnBuild = async () => {
     await yarnBuildBy(path)
 };
 
-export const yarnBuildBy = async (path) => {
+export const yarnBuildBy = async (path: string) => {
     try {
          oneLogger(`yarn build start`);
         const buildInfo = await $` cd ${path};yarn build;`;
@@ -24,7 +24,7 @@ export const yarnBuildBy = async (path) => {
       }
 }
 
-export const yarnBuildChildList = async(list) => {
+export const yarnBuildChildList = async(list: any) => {
   oneLogger("yarn build childList start");
     try {
       const result =await Promise.all(
