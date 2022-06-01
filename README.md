@@ -69,7 +69,9 @@
     - https://juejin.cn/post/6972139870231724045#heading-4
   - jenkins 
     - https://juejin.cn/post/6995588010934796302
-    - https://juejin.cn/post/7102360505313918983                
+    - https://juejin.cn/post/7102360505313918983
+  - keepalive
+    - https://github.com/Zippowxk/stack-keep-alive                
 - 5月29日
   - 科学上网 https://github.com/Alvin9999/new-pac
   - nodejs中引入 ts  ts-node
