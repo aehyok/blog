@@ -37,7 +37,7 @@ const deleteTag = async (path) => {
                             git tag -d ${global.version}; 
                             git push origin :refs/tags/${global.version}`;
   if (result.exitCode === 0) {
-    oneLogger(`delete tag [${global.version}] end success`);
+    await oneLogger(`delete tag [${global.version}] end success`);
     return true;
   }
   return false;
@@ -49,14 +49,15 @@ const deleteTag = async (path) => {
  * @param {*} isExist 0为不存在，直接创建的；1为已存在删除的，重新创建
  */
 const addTag = async (path, isExist) => {
-  const result = await $`cd ${path};
+  console.log(path, '----------------path---------------')
+  const result = await $` cd ${path};
                            git tag -a ${global.version} -m 'chore:version ${global.version}版本号'; 
                            git push origin ${global.version};`;
   if (result && result.exitCode === 0) {
     if (isExist) {
-      oneLogger(`re create tag [${global.version}] success`);
+      await oneLogger(`re create tag [${global.version}] success`);
     } else {
-      oneLogger(`create tag [${global.version}] success`);
+      await oneLogger(`create tag [${global.version}] success`);
     }
   }
 };

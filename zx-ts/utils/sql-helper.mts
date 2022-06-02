@@ -3,7 +3,7 @@ import shortid from "shortid";
 
 let _conn: any = {}
 
-const logDbStat = function () {
+const logDbState = function () {
     console.log(
       "db state %s and threadID %s",
       _conn.state,
@@ -31,7 +31,7 @@ const executeSql = (sql, params) => {
       _conn.state,
       _conn.threadId
     );
-    logDbStat();
+    logDbState();
   });
   return new Promise((resolve, reject) => {
     try {
@@ -64,7 +64,7 @@ const close = (conn) => {
 };
 
 export const writerLog = async (project, content, version) => {
-    let id = shortid.generate()
+  let id = shortid.generate()
   await executeSql("INSERT INTO CiCdLog values(?,?,?,?,null,null)", [id,
     project,
     content,

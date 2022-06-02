@@ -3,18 +3,13 @@ import { yarnBuildBy, yarnBuildChildList } from "./utils/yarn-build.mjs";
 import { baseUrl } from "./utils/common.mjs";
 import { gitTag } from "./utils/git-tag.mjs";
 
-const project = "dvs-server-ui-dev";
+const project = "vue-qiankun";
 const path = baseUrl + project;
-const mainPath = path + "/" + "dvs-main";
+const mainPath = path + "/" + "packages/main-vite-app-ts";
 
 const appChildListPath =  [
-  path + "/" + "dvs-basic",
-  path + "/" + "dvs-cons",
-  path + "/" + "dvs-village",
-  path + "/" + "dvs-digital",
-  path + "/" + "dvs-park",
-  path + "/" + "dvs-gis",
-  path + "/" + "dvs-ffp",
+  path + "/" + "packages/webpack-app-ts",
+  path + "/" + "packages/map-app-ts",
 ];
 
 export const build_pc = async () => {

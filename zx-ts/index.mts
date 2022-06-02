@@ -16,7 +16,7 @@ let gitProject = baseUrl + projectRelease;
 let projectList = [
   {
     shortName: "pc",
-    name: "dvs-server-ui-dev",
+    name: "vue-qiankun",
     isqiankun: true,
   },
   {
