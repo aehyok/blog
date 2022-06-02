@@ -33,7 +33,7 @@ export const yarnBuildChildList = async(list: any) => {
         })
       )
       if(result) {
-          console.log('all', 'result')
+          console.log('all', result)
           oneLogger("yarn build childList start");
       }
     } catch {

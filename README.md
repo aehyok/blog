@@ -64,8 +64,18 @@
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
 - 6月2日
-  - Preview.js
+  - vscode插件 Preview.js
     - https://previewjs.com/docs/platforms/vscode
+  - lerna重新开始更新了
+    - https://github.com/lerna/lerna
+  - release-it
+    - https://github.com/release-it/release-it
+  - Vue.js发布流程
+    - https://juejin.cn/post/6997943192851054606#heading-28
+  - standard-version https://github.com/conventional-changelog/standard-version
+  - semver 
+    - https://github.com/semver/semver
+    - https://juejin.cn/post/7025606860300353566
 - 6月1日
   - monorepo 
     - https://juejin.cn/post/7102452341210611720
