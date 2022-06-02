@@ -1,6 +1,6 @@
 {
   "name": "zx",
-  "version": null,
+  "version": "0.0.2",
   "description": "",
   "main": "index.mts",
   "type": "module",
@@ -13,7 +13,8 @@
     "release-major": "standard-version --release-as major",
     "release-minor": "standard-version --release-as minor",
     "release-patch": "standard-version --release-as patch",
-    "release": "standard-version"
+    "release": "standard-version",
+    "release-version": "standard-version release-as 0.0.2.001"
   },
   "keywords": [],
   "author": "",
