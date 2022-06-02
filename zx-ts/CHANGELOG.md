@@ -2,7 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [](https://github.com/aehyok/2022/compare/v2.0.0...v) (2022-05-30)
+## [](https://github.com/aehyok/2022/compare/v2.0.0...v) (2022-06-02)
+
+
+### Features
+
+* 调整zx-ts ([bb9bf59](https://github.com/aehyok/2022/commit/bb9bf59af0d50ceac7c0c38e6c4cc74ca9928926))
 
 ## [2.0.0](https://github.com/aehyok/2022/compare/v1.1.0...v2.0.0) (2022-05-30)
 
