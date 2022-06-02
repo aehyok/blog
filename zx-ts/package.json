@@ -11,7 +11,7 @@
     "build": "concurrently \"pnpm build:pc\"",
     "postbuild": "ts-node-esm push.mts -v 1.0.0.0010",
     "release-major": "standard-version --release-as major",
-    "release-minor": "standard-version --release-as mino",
+    "release-minor": "standard-version --release-as minor",
     "release-patch": "standard-version --release-as patch",
     "release": "standard-version"
   },
