@@ -63,6 +63,13 @@
     - https://github.com/HeiSir2014/M3U8-Downloader
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
+  - html2md  helloworld社区
+    - editor https://www.helloworld.net/html2md
+    - editor https://editor.mdnice.com/
+    - npm https://npm.devtool.tech/
+    - mdn https://developer.mozilla.org/zh-CN/docs/Web
+    - es6 https://es6.ruanyifeng.com
+    - ts https://www.typescriptlang.org
 - 6月2日
   - vscode插件 Preview.js
     - https://previewjs.com/docs/platforms/vscode
