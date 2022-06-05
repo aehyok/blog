@@ -70,6 +70,7 @@
     - mdn https://developer.mozilla.org/zh-CN/docs/Web
     - es6 https://es6.ruanyifeng.com
     - ts https://www.typescriptlang.org
+    - 文章翻译系列 https://github.com/xitu/gold-miner
 - 6月2日
   - vscode插件 Preview.js
     - https://previewjs.com/docs/platforms/vscode
@@ -132,6 +133,8 @@
   - npm 玩法详解 https://www.ruanyifeng.com/blog/2016/10/npm_scripts.html
   - https://juejin.cn/post/6844903879943913485
   - vscode中修改 git bash 为默认命令行工具 https://zhuanlan.zhihu.com/p/365625019
+  - exports 关键字 https://www.jianshu.com/p/094797a1e299
+    - https://juejin.cn/post/7087083454059249701
 - 5月2日
   - npm run build 
     - https://juejin.cn/post/7078924628525056007
