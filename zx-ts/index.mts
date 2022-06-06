@@ -5,11 +5,8 @@ import { build_app } from "./build-app.mjs";
 import { build_pc } from "./build-pc.mjs";
 import { build } from "./build-one.mjs";
 import { baseUrl } from "./utils/common.mjs";
-import { gitPullBy } from "./utils/git-pull.mjs";
-// import { gitPushBy, gitPullBy} from './utils/index.mjs'
-// import { gitPushBy } from './utils/git-push.mjs'
-$.verbose = true;
 
+$.verbose = true;
 let projectRelease = "release";
 let gitProject = baseUrl + projectRelease;
 

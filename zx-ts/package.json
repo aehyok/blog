@@ -14,7 +14,8 @@
     "release-minor": "standard-version --release-as minor",
     "release-patch": "standard-version --release-as patch",
     "release": "standard-version",
-    "release-version": "standard-version release-as 0.0.2.001"
+    "release-version": "standard-version release-as 0.0.2.001",
+    "node": "node  --experimental-json-modules ./other/minimist.mjs -a aa -b bb -c cc"
   },
   "keywords": [],
   "author": "",
@@ -26,9 +27,13 @@
   },
   "dependencies": {
     "@types/node": "*",
+    "chalk": "^5.0.1",
     "concurrently": "^7.2.1",
+    "enquirer": "^2.3.6",
     "fs-extra": "^10.1.0",
+    "minimist": "^1.2.6",
     "mysql": "^2.18.1",
+    "semver": "^7.3.7",
     "shortid": "^2.2.16",
     "standard-version": "^9.3.2"
   }

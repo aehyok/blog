@@ -70,7 +70,7 @@
     - https://github.com/Momo707577045/m3u8-downloader
     - https://github.com/llychao/m3u8-downloader
   - chorme 浏览器插件
-    - 
+    - 多环境favicon.ico区分：https://juejin.cn/post/7098162076866052133
 - 6月6日
   - monorepo
     - https://www.robinwieruch.de/javascript-monorepos/#what-is-a-monorepo

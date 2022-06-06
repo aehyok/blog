@@ -6,5 +6,5 @@
           // 决定如何处理模块。
        "moduleResolution": "node",
     },
-    "include": ["**/*.ts", "*.ts"],
+    "include": ["**/*.ts", "*.ts", "**/*.json"],
 }
