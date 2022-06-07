@@ -27,3 +27,4 @@
   console.log(result)  //Boolean {false}
   console.log(result.toString()) // false 注意是个字符串的‘false’
   ```
+  
