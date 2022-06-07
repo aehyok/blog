@@ -30,6 +30,7 @@
     "chalk": "^5.0.1",
     "concurrently": "^7.2.1",
     "enquirer": "^2.3.6",
+    "execa": "^6.1.0",
     "fs-extra": "^10.1.0",
     "minimist": "^1.2.6",
     "mysql": "^2.18.1",
