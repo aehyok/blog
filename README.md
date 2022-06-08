@@ -72,6 +72,10 @@
     - https://github.com/llychao/m3u8-downloader
   - chorme 浏览器插件
     - 多环境favicon.ico区分：https://juejin.cn/post/7098162076866052133
+- 6月8日
+  - element-plus el-date-picker 选中时分秒 无效的问题
+    - https://github.com/element-plus/element-plus/issues/3923
+    - https://stackoverflow.com/questions/71221327/vue3-typescript-ts2345-argument-of-type-router-is-not-assignable-to-parame
 - 6月6日
   - monorepo
     - https://www.robinwieruch.de/javascript-monorepos/#what-is-a-monorepo
