@@ -28,3 +28,33 @@
   console.log(result.toString()) // false 注意是个字符串的‘false’
   ```
   
+
+# 判断一个值是否是一个对象
+    ```javascript
+      // 这里有一个很重要的点   typeof null 的值为 "object"
+      // https://github.com/lodash/lodash/blob/2f79053d7bc7c9c9561a30dda202b3dcd2b72b90/isObject.js
+      const isObject = (value) => {
+        const type = typeof value
+        return value != null && (['object', 'function'].includes(type)
+      }
+
+      isObject({})   // true
+      isObject(null) // false
+      isObject(Function) // true
+    ```
+
+# 类型判断
+- typeof 能够判断出的类型
+```javascript
+  typeof undefined; //undefined 有效
+  typeof null; //object 无效
+  typeof NaN; // number 要注意的点
+  typeof 10; // number 有效，但要注意NaN
+  typeof '';//string 有效
+  typeof true; //boolean 有效
+  typeof {}; // object 有效
+  typeof new Function(); // function 有效
+  typeof Symbol(); // symbol有效
+  typeof []  new Date()  new RegExp()
+// https://juejin.cn/post/6844903623231537159
+```
