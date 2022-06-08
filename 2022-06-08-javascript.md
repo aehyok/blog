@@ -1,6 +1,6 @@
 - https://github.com/KieSun/all-of-frontend
 
-## 数据类型
+## 1、数据类型
 - 基本数据类型
   - 布尔类型
   - Null类型
@@ -11,7 +11,7 @@
   - BigInt类型（ES2020添加）
 - 对象类型
 
-# 布尔类型
+# 2、布尔类型
   - 通常布尔表示逻辑实体，可以有两个值 true和false。
   ```javascript
     let result = true
@@ -29,7 +29,7 @@
   ```
   
 
-# 判断一个值是否是一个对象
+# 3、判断一个值是否是一个对象
     ```javascript
       // 这里有一个很重要的点   typeof null 的值为 "object"
       // https://github.com/lodash/lodash/blob/2f79053d7bc7c9c9561a30dda202b3dcd2b72b90/isObject.js
@@ -43,18 +43,78 @@
       isObject(Function) // true
     ```
 
-# 类型判断
+# 4、typeof类型判断
 - typeof 能够判断出的类型
 ```javascript
-  typeof undefined; //undefined 有效
-  typeof null; //object 无效
+  typeof undefined; //undefined 
+  typeof null; //object 
   typeof NaN; // number 要注意的点
-  typeof 10; // number 有效，但要注意NaN
-  typeof '';//string 有效
-  typeof true; //boolean 有效
-  typeof {}; // object 有效
-  typeof new Function(); // function 有效
-  typeof Symbol(); // symbol有效
-  typeof []  new Date()  new RegExp()
+  typeof 10; // number 但要注意NaN
+  typeof '';//string 
+  typeof true; //boolean
+  typeof {}; // object 
+  typeof new Function(); // function 
+  typeof Symbol(); // symbol
+  
+  //object,结果都是object，那么对于object如何判断呢，我们接着看下面的instanceof
+  typeof []  new Date()  new RegExp()   
 // https://juejin.cn/post/6844903623231537159
+
 ```
+
+｜ null作为一个基本数据类型为什么会被typeof运算符识别为object类型呢？
+这个bug是第一版Javascript留下来的，javascript中不同对象在底层都表示为二进制，而javascript 中会把二进制前三位都为0的判断为object类型，而null的二进制表示全都是0，自然前三位也是0，所以执行typeof时会返回 'object'。
+----引用自《你不知道的javascript（上卷）》
+| 为什么typeof new Function() 不返回 object？？？？？
+
+# 5、instanceof 判断对象的具体类型，注意首先要先是一个object才行
+```javascript
+  
+  // '' , null, undefined 分别去instanceof object 都会是false， 首先他们都不是object，不能用于判断原始类型哟
+  // typeof null 结果为object，但是instantceof 就不认为它是一个object了
+  
+  // 这里是会报错的，因为{} 有可能是一个代码块有可能是一个空对象，两种可能性不能100%的确定它就是一个对象
+  {} instanceof Object   // Uncaught SyntaxError: Unexpected token 'instanceof' 
+  ({}) instanceof Obejct  // true
+  
+  new Function() instanceof Function  // true 
+  new Function() instanceof Object // true
+
+  new Date() instanceof Date;  //true
+  new Date() instanceof Object;//true
+
+  new RegExp() instanceof RegExp // true
+  new RegExp() instanceof Object // true
+
+  function Animal() {}
+  new Animal() instanceof Animal  // true
+  new Animal() instanceof Object // true
+```
+
+# constructor 判断数据类型
+  
+```javascript
+  true.constructor === Boolean  // true
+  '1'.constructor === String  // true
+
+  const fun = function () {}
+  fun.constructor === Function // true
+
+  const num = 100
+  num.constructor === Number // true
+
+  [].constructor === Array // true
+
+  new Date().constructor === Date //true
+```
+# 6、 prototype和__proto__
+```javascript
+  // 这是我见过最好理解的了，写的非常棒
+  https://juejin.cn/post/6844903837623386126
+
+```
+
+# 8、 {} + 10 https://juejin.cn/post/6916876446766104589
+
+
+# 7、constructor
