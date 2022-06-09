@@ -1,13 +1,15 @@
 # 2022
+  - 前端阅读系列
+    - 前端每周更新 https://github.com/ascoders/weekly
+    - es6 https://es6.ruanyifeng.com
+    - ts https://www.typescriptlang.org
+    - 文章翻译系列 https://github.com/xitu/gold-miner
   - 博客发文所需小工具
     - html2md  helloworld社区
     - editor https://www.helloworld.net/html2md
     - editor https://editor.mdnice.com/
     - npm https://npm.devtool.tech/
     - mdn https://developer.mozilla.org/zh-CN/docs/Web
-    - es6 https://es6.ruanyifeng.com
-    - ts https://www.typescriptlang.org
-    - 文章翻译系列 https://github.com/xitu/gold-miner
     - 简单图片编辑器 https://ui.toast.com/tui-image-editor
     - 抽象语法树 https://astexplorer.net/
   - 抓包 https://www.cnblogs.com/crystal1126/p/11954085.html
