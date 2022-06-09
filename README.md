@@ -5,6 +5,7 @@
     - ts https://www.typescriptlang.org
     - 文章翻译系列 https://github.com/xitu/gold-miner
   - 博客发文所需小工具
+    - 掘金笔记模版：https://github.com/xitu/juejin-markdown-themes
     - html2md  helloworld社区
     - editor https://www.helloworld.net/html2md
     - editor https://editor.mdnice.com/

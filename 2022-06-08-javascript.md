@@ -13,7 +13,7 @@
 # 4、类型判断
 - typeof 能够判断出的类型
 
-通过浏览器控制台直接可以输出
+  通过浏览器控制台直接可以输出
 
 ```javascript
   typeof undefined; //undefined 
@@ -34,7 +34,7 @@
 ```
 - typeof null 输出 object
 
-null作为一个基本数据类型为什么会被typeof运算符识别为object类型呢？这个bug是第一版Javascript留下来的，javascript中不同对象在底层都表示为二进制，而javascript 中会把二进制前三位都为0的判断为object类型，而null的二进制表示全都是0，自然前三位也是0，所以执行typeof时会返回 'object'。 ----引用自《你不知道的javascript（上卷）》
+  null作为一个基本数据类型为什么会被typeof运算符识别为object类型呢？这个bug是第一版Javascript留下来的，javascript中不同对象在底层都表示为二进制，而javascript 中会把二进制前三位都为0的判断为object类型，而null的二进制表示全都是0，自然前三位也是0，所以执行typeof时会返回 'object'。 ----引用自《你不知道的javascript（上卷）》
 
 - typeof NaN 输出为number
 
