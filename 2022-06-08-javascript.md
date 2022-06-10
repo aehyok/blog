@@ -425,7 +425,64 @@ try {
   当JavaScript调用一个函数的时候，JavaScript引擎遍会为其创建`执行上下文`,并把该`执行上下文`压入`调用栈`，然后JavaScript引擎开始执行函数的代码。
   当某个函数执行完毕的时候，JavaScript引擎会将函数的`执行上下文`弹出栈。
   当`调用栈`的空间满了以后，就会引发`堆栈溢出`的问题。
-- 词法分析
+
+- 作用域
+  我们还是先来看一下执行上下文中使用的代码,我将其中的var 声明变量的关键字，改为let
+      ```javascript
+      <script>
+        a_Function()
+        let a_variable = 'aehyok'
+        console.log(a_variable)
+        function a_Function() {
+            console.log('函数a_Function执行了', a_variable);
+        }
+      </script>
+      ```
+
+      改完代码保存后刷新
+      ```javascript
+      js执行过程.html:6 Uncaught ReferenceError: Cannot access 'a_variable' before initialization
+      at a_Function (js执行过程.html:6:38)
+      at js执行过程.html:2:3
+      ```
+      通过翻译发现，a_variable变量在函数中的console.log打印时还没被初始化。那么就说明let（const）声明变量的时候不存在`变量提升`了。
+      
+      作用域是在程序运行时代码中的某些特定部分中变量、函数的可访问性。通俗的理解，作用域就是变量函数的可访问范围，即作用域控制着变量函数的可见性和生命周期。
+
+      在ES6之前，ES的作用域只有两种：全局作用域和函数作用域。
+        - 全局作用域中的对象在代码中的任何地方都可以访问，其声明周期伴随着页面的生命周期。
+        - 函数作用域就是在函数内部定义的变量、函数，并且定义的变量或者函数只能在函数内部被访问。函数执行结束之后，函数内部定义的变量会被销毁。
+      在ES6来了以后，通过添加的let和const关键字，使JavaScript支持块级作用域了。
+      
+      ```javascript
+      for (var i = 0; i < 5; i++) { 
+        setTimeout(() => {
+          console.log(i, 'for 循环内的var');
+        }, 1000);
+      }
+      console.log(i, 'for循环外的')
+
+      for (let j = 0; j < 5; j++) { 
+        setTimeout(() => {
+          console.log(j, 'for 循环内的let');
+        }, 1000);
+      }
+      console.log(j, 'for循环外的let')
+      ```
+
+    5 'for循环外的'
+    js执行过程.html:61 Uncaught ReferenceError: j is not defined
+        at js执行过程.html:61:15
+    （匿名） @ js执行过程.html:61
+    5js执行过程.html:51 5 'for 循环内的var'
+    js执行过程.html:58 0 'for 循环内的let'
+    js执行过程.html:58 1 'for 循环内的let'
+    js执行过程.html:58 2 'for 循环内的let'
+    js执行过程.html:58 3 'for 循环内的let'
+    js执行过程.html:58 4 'for 循环内的let'
+
+      可以发现用var声明的变量打印出来的结果都是5，var声明i之后存在变量的提升，所以
+      
 - 语法解析
 - 代码优化
 - 代码生成
