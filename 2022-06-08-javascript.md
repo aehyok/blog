@@ -474,7 +474,7 @@ try {
     js执行过程.html:61 Uncaught ReferenceError: j is not defined
         at js执行过程.html:61:15
     （匿名） @ js执行过程.html:61
-    5js执行过程.html:51 5 'for 循环内的var'
+   5js执行过程.html:51 5 'for 循环内的var'
     js执行过程.html:58 0 'for 循环内的let'
     js执行过程.html:58 1 'for 循环内的let'
     js执行过程.html:58 2 'for 循环内的let'
@@ -482,12 +482,17 @@ try {
     js执行过程.html:58 4 'for 循环内的let'
 
       可以发现用var声明的变量打印出来的结果都是5，var声明i之后存在变量的提升，所以
-      
 - 语法解析
 - 代码优化
 - 代码生成
-- 作用域
+- 作用域链
 - 闭包
 
 - 执行上下文和调用栈
     - https://juejin.cn/post/6844903682283143181
+- JSON.stringify
+  ```javascript
+  //https://github.com/vuejs/core/blob/main/scripts/release.js  161行代码
+  fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n')
+  ```
+  - https://juejin.cn/post/7017588385615200270
