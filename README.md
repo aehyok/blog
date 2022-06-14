@@ -13,6 +13,7 @@
     - mdn https://developer.mozilla.org/zh-CN/docs/Web
     - 简单图片编辑器 https://ui.toast.com/tui-image-editor
     - 抽象语法树 https://astexplorer.net/
+    - https://esprima.org/demo/parse.html#
   - 抓包 https://www.cnblogs.com/crystal1126/p/11954085.html
     - https://www.jinchengcom.cn/posts/70581b0e.html
     - 破解工具 https://www.zzzmode.com/mytools/charles/
@@ -75,6 +76,15 @@
     - https://github.com/llychao/m3u8-downloader
   - chorme 浏览器插件
     - 多环境favicon.ico区分：https://juejin.cn/post/7098162076866052133
+- 6月14日
+  -  各种题目
+    - https://github.com/sisterAn/JavaScript-Algorithms
+  - v8
+    - docs https://v8.dev/docs
+    - tools https://v8.github.io/tools/head/
+    - v8日志 https://www.jianshu.com/p/fba0101096ea
+    - https://www.jianshu.com/p/4f2e2416421a
+    - v8 调试笔记 http://t.zoukankan.com/snip3r-p-12506768.html
 - 6月8日
   - element-plus el-date-picker 选中时分秒 无效的问题
     - https://github.com/element-plus/element-plus/issues/3923
