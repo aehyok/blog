@@ -13,7 +13,9 @@ console.log(pkg.version, 'currentVersion')
 await $`echo -e "开始编译项目：${currentVersion} " `
 const minimistTest = () => {
     console.log('-------minimistTest--------')
-    console.log(process.argv, 'process')
+    const [a, b] = process.argv.slice(2)
+    console.log(a, b , 'aa-bb')
+    console.log(process.argv.slice(2), 'process')
     const argv = minimist(process.argv.slice(2))
 
     console.log(argv, '打印参数列表')

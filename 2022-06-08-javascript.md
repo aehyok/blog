@@ -1,5 +1,14 @@
 - https://github.com/KieSun/all-of-frontend
 
+- https://juejin.cn/post/7109022732162957342#heading-0
+  - https://github.com/lio-mengxiang/node-interview
+  - typeof 
+  - Object.prototype.toString.call()
+  - 原型和原型链
+  - 作用域
+  - 执行上下文
+  - 闭包
+  - 
 ## 1、数据类型
 
 - 基本数据类型

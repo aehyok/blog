@@ -31,7 +31,7 @@
   - icejs 待尝试 https://ice.work/docs/guide/basic/vite
   - redux  https://www.redux.org.cn/docs/introduction/Ecosystem.html  
   - wiki https://www.5axxw.com/wiki/
-  - graphql 
+  - graphql
     - https://graphql.cn/
     - https://graphql.cn/code/#c-net
   - vue 模版功能不错，有些可以作为参考
@@ -76,6 +76,16 @@
     - https://github.com/llychao/m3u8-downloader
   - chorme 浏览器插件
     - 多环境favicon.ico区分：https://juejin.cn/post/7098162076866052133
+- 6月16日
+  - 浏览器回退  back() go()
+    - https://juejin.cn/post/7090942617868828679#heading-2
+- 6月15日
+  - 一个按钮一键部署
+    - https://juejin.cn/post/7070921715492061214
+    - https://github.com/pouchdb/pouchdb
+  - indexdb 
+    - https://github.com/localForage/localForage
+  - 大致了解
 - 6月14日
   -  各种题目
     - https://github.com/sisterAn/JavaScript-Algorithms
@@ -85,6 +95,7 @@
     - v8日志 https://www.jianshu.com/p/fba0101096ea
     - https://www.jianshu.com/p/4f2e2416421a
     - v8 调试笔记 http://t.zoukankan.com/snip3r-p-12506768.html
+    - https://github.com/plctlab/v8-internals
 - 6月8日
   - element-plus el-date-picker 选中时分秒 无效的问题
     - https://github.com/element-plus/element-plus/issues/3923
