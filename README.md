@@ -76,11 +76,12 @@
     - https://github.com/llychao/m3u8-downloader
   - chorme 浏览器插件
     - 多环境favicon.ico区分：https://juejin.cn/post/7098162076866052133
-  
+  - 首屏加载过慢
+    -     - https://juejin.cn/post/6844903961154207757
 - 6月17日
-  - https://github.com/unlayer/vue-email-editor
-  - https://vue-email-editor-demo.netlify.app/
-  - https://juejin.cn/post/6844903961154207757
+  - vue- email - editor 是个类库可以调用有空调用一下
+    - https://github.com/unlayer/vue-email-editor
+    - https://vue-email-editor-demo.netlify.app/
 - 6月16日
   - 浏览器回退  back() go()
     - https://juejin.cn/post/7090942617868828679#heading-2
