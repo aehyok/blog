@@ -80,6 +80,7 @@
     -     - https://juejin.cn/post/6844903961154207757
 - 6月17日
   - vue- email - editor 是个类库可以调用有空调用一下
+    - vue2的组件，看看行不行，行的话 改成vue3
     - https://github.com/unlayer/vue-email-editor
     - https://vue-email-editor-demo.netlify.app/
 - 6月16日
