@@ -1,12 +1,26 @@
 <script>
-  a_Function()
-  let a_variable = 'aehyok'
-  console.log(a_variable)
-  function a_Function() {
-      let a_variable= 'a_aehyok'
-      {
-        console.log(a_variable)
-        let a_variable = 'aa_aehyok'
-      }
+  var a = 10
+
+  function add_d() {
+    var d = 40
+    console.trace('add_d正在执行')
+    return a + d
   }
+
+  function add_c() {
+    var c = 30
+    var dd = add_d()
+    console.trace('add_d已经执行结束,从call stack弹出')
+    return c + dd
+  }
+
+  function add_b() {
+    var b = 20
+    let cc = add_c()
+    console.trace('add_c已经执行结束,从call stack弹出')
+    return b + cc
+  }
+
+  add_b()
+  console.trace('add_b已经执行结束,从call stack弹出')
 </script>
