@@ -77,7 +77,10 @@
   - chorme 浏览器插件
     - 多环境favicon.ico区分：https://juejin.cn/post/7098162076866052133
   - 首屏加载过慢
-    -     - https://juejin.cn/post/6844903961154207757
+    -     - https://juejin.cn/post/6844903961154207757     
+- 6月20日
+    - 程序员副业
+      - https://github.com/easychen/lean-side-bussiness  
 - 6月17日
   - vue- email - editor 是个类库可以调用有空调用一下
     - vue2的组件，看看行不行，行的话 改成vue3
