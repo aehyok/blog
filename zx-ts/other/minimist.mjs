@@ -81,9 +81,9 @@ const execaTest = async() => {
     console.log(stdout, 'stdout')
     await $`echo -e  ${arr}  google/zx仓库`
 }
-minimistTest()
-chalkTest()
-semverTest()
-await execaTest()
-enquirerTest()
+// minimistTest()
+// chalkTest()
+// semverTest()
+// await execaTest()
+// enquirerTest()
  
