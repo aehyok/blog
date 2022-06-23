@@ -5,5 +5,6 @@
     - 4、闭包
     - 5、this
     - 6、原型和原型链
-    
- 
+    - 7 作用域和执行上下文 
+        - https://juejin.cn/post/6963603066507493412#heading-12
+        - https://juejin.cn/post/6844904046050934792
