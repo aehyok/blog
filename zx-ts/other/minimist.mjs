@@ -4,13 +4,16 @@ import semver from'semver'
 import enquirer from 'enquirer'
 import { execa } from 'execa'
 import {$} from 'zx'
+import gradient  from 'gradient-string'
 import pkg from '../package.json'
+import { exec }  from 'child_process'
+import { createSpinner } from 'nanospinner'
 
 // 获取package.json中的版本号
 const currentVersion = pkg.version
-console.log(pkg.version, 'currentVersion')
+// console.log(pkg.version, 'currentVersion')
 
-await $`echo -e "开始编译项目：${currentVersion} " `
+// await $`echo -e "开始编译项目：${currentVersion} " `
 const minimistTest = () => {
     console.log('-------minimistTest--------')
     const [a, b] = process.argv.slice(2)
@@ -56,6 +59,13 @@ const chalkTest = () => {
     log(bgCustom('bgCustom'))
 }
 
+const gradientTest = () => {
+    console.log(gradient('cyan', 'pink')('你好啊赛利亚欢迎来到编码世界'))
+    console.log(gradient('cyan', 'pink')('你好啊赛利亚欢迎来到编码世界'))
+    console.log(gradient('cyan', 'pink')('你好啊赛利亚欢迎来到编码世界'))
+    console.log(gradient('cyan', 'pink')('你好啊赛利亚欢迎来到编码世界'))
+}
+
 const enquirerTest = async() => {
     console.log('-------minimistTest--------')
     let tempArray = ['major(1.0.0)','minor(0.1.0)', 'patch(0.0.4)', "customer" ]
@@ -81,9 +91,53 @@ const execaTest = async() => {
     console.log(stdout, 'stdout')
     await $`echo -e  ${arr}  google/zx仓库`
 }
+
+const execTest = () => {
+    exec('ls',(error, stdout,stderr)=> {
+        if(error) {
+            console.log(error)
+            return;
+        }
+        console.log('stdout: ' + stdout)
+        console.log('执行其他操作')
+    })
+}
+
+const spinnerTest = () => {
+    const spinner = createSpinner('Run test').start()
+
+    setTimeout(() => {
+      spinner.success()
+    }, 2000)
+}
+// spinnerTest()
+// execTest()
+// gradientTest()
 // minimistTest()
 // chalkTest()
 // semverTest()
 // await execaTest()
 // enquirerTest()
+
+const runTest = async () => {
+    console.log('Running test')
+    throw new Error('run test报错了')
+}
  
+runTest().catch(err => {
+    console.log('Error: ' + err)
+})
+
+var d = 20//inner函数的父函数，词法作用域
+function foo() {    
+    var d = 55    
+    //foo的内部函数   
+     function inner() {   
+         console.log(d,'dddd')   
+         return d+2    
+     }
+
+     inner()
+    }
+
+foo()    

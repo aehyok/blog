@@ -36,8 +36,10 @@
     "file-save": "^0.2.0",
     "file-saver": "^2.0.5",
     "fs-extra": "^10.1.0",
+    "gradient-string": "^2.0.1",
     "minimist": "^1.2.6",
     "mysql": "^2.18.1",
+    "nanospinner": "^1.1.0",
     "semver": "^7.3.7",
     "shortid": "^2.2.16",
     "standard-version": "^9.3.2"
