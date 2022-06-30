@@ -4,6 +4,15 @@ highlight: tomorrow-night
 ---
 
 ## 前言
+如何一键为项目自动添加eslint和prettier的支持
+
+你一定一步一步的安装eslint和prettier及相关依赖，一个配置文件一个配置文件的粘贴复制，并修改其中的相关配置。而且可能会在每个项目中都要去处理，如果项目工程规划化以后，eslint和prettier确实是项目少不了的配置。
+
+那么有没有一种更简单的方式去处理呢？答案是我终于遇到了。通过若川大佬的源码共读活动发现了，真的是太棒了。
+
+本文主要以vite脚手架创建的项目为基础研究的，如果是其他脚手架创建的项目，那么就要自己去修改处理，但是原理是一样的。
+
+那么接下来我就要来一探究竟，先看看如何使用，然后查阅一下它的源码，看看它到底是如何实现的呢？
 ## 2、通过pnpm 和vite创建项目
 
 - 创建项目
@@ -74,3 +83,9 @@ const log = console.log
 - path
 - createSpinner
 - enquirer
+
+## 总结
+- npm init xxx的妙用
+- 对于自动添加eslint和prettier配置的原理了解
+- .eslintrc.json、.eslintignore、.prettierrc.json算是直接新增文件，处理相对简单一些
+- 最重要的学习点：对vite.config文件在原有基础上的修改
