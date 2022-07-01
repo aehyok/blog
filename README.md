@@ -80,6 +80,11 @@
     - https://juejin.cn/post/6844903961154207757 
 
 - 7月1日
+  - 为什么 Vue2 this 能够直接获取到 data 和 methods
+    - https://juejin.cn/post/7082984422516981796
+    - https://juejin.cn/post/7010920884789575711
+  - vue2.7 今天更新了
+    - https://juejin.cn/post/7115361618774622216#comment 
   - window下终端设置
     -  https://gitee.com/vacrain/steppp-doc/blob/main/9-vacrain/2022-07.md#%E7%BB%88%E7%AB%AF%E6%8D%A2%E6%88%90-zsh
 - 6月21日
