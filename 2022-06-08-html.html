@@ -1,23 +1,7 @@
 <script>
-  var myName = "全局Name"
-function foo() { 
-  var myName = "fooName" 
-  let test1 = 1
-  const test2 = 2 
-  var innerBar = { 
-    getName:function(){ 
-      console.log(test1) 
-      return myName 
-    }, 
-    setName:function(newName){ 
-      myName = newName
-    } 
-  } 
-  return innerBar
+console.log(this, '全局')
+function foo() {
+  console.log(this, '函数')
 }
-let test1 = 1
-var bar = foo()
-bar.setName("设置Name")
-bar.getName()
-console.log(bar.getName())
+foo()
 </script>
