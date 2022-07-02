@@ -78,7 +78,8 @@
     - 多环境favicon.ico区分：https://juejin.cn/post/7098162076866052133
   - 首屏加载过慢
     - https://juejin.cn/post/6844903961154207757 
-
+- 7月2日
+  - 事件循环 https://juejin.cn/post/6844904079353708557
 - 7月1日
   - 为什么 Vue2 this 能够直接获取到 data 和 methods
     - https://juejin.cn/post/7082984422516981796
