@@ -78,6 +78,8 @@
     - 多环境favicon.ico区分：https://juejin.cn/post/7098162076866052133
   - 首屏加载过慢
     - https://juejin.cn/post/6844903961154207757 
+- 7月3日
+  - 图片封面如何的制作 https://www.canva.cn/
 - 7月2日
   - 事件循环 https://juejin.cn/post/6844904079353708557
 - 7月1日
