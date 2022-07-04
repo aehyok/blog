@@ -1,7 +1,32 @@
 <script>
-console.log(this, '全局')
-function foo() {
-  console.log(this, '函数')
+  'use strict';
+let bar = {
+  name: 'aehyok',
+  fun:function() {
+    console.log(this,'bar函数')
+    let self = this
+    function inner () {
+      console.log(self, 'inner函数')
+    }
+    inner()
+  }
 }
-foo()
+
+bar.fun()
 </script>
+
+
+
+
+
+<!-- 
+var bar = {
+  name: 'aehyok',
+  fun: function () {
+    console.log(this,'bar对象')
+  }
+}
+
+bar.fun()
+const bb = bar.fun
+bb() -->

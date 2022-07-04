@@ -77,7 +77,19 @@
   - chorme 浏览器插件
     - 多环境favicon.ico区分：https://juejin.cn/post/7098162076866052133
   - 首屏加载过慢
-    - https://juejin.cn/post/6844903961154207757 
+    - https://juejin.cn/post/6844903961154207757
+  - 面试题目
+    - https://juejin.cn/post/6844903885488783374    
+- 7月4日
+  - 5743
+  - 鼠标点击
+    - https://whatpulse.org/downloads
+  - zsh 有点香
+    - https://www.zhihu.com/question/21418449/answer/300879747
+    - https://lxchuan12.gitee.io/oh-my-zsh/#%E5%AE%89%E8%A3%85-oh-my-zsh
+    - https://gitee.com/vacrain/steppp-doc/blob/main/9-vacrain/2022-07.md#shell-%E6%8D%A2%E6%88%90-zsh  
+  - 川神推荐的正则
+    - https://juejin.cn/post/6844903501034684430  
 - 7月3日
   - 图片封面如何的制作 https://www.canva.cn/
 - 7月2日
