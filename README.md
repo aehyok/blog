@@ -12,6 +12,7 @@
     - npm https://npm.devtool.tech/
     - mdn https://developer.mozilla.org/zh-CN/docs/Web
     - 简单图片编辑器 https://ui.toast.com/tui-image-editor
+    - 动图图片笔记器 https://www.canva.cn/design/DAFFgelz1VE/VxlwSySIDqmvnWj26iX00A/edit
     - 抽象语法树 https://astexplorer.net/
     - https://esprima.org/demo/parse.html#
   - 抓包 https://www.cnblogs.com/crystal1126/p/11954085.html
@@ -80,6 +81,8 @@
     - https://juejin.cn/post/6844903961154207757
   - 面试题目
     - https://juejin.cn/post/6844903885488783374    
+- 7月15日
+  - 6500
 - 7月4日
   - 5743
   - 鼠标点击
