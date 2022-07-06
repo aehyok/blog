@@ -293,3 +293,10 @@ try {
 
 - 创建对象 {}、new Object、 Object.create()
   - https://juejin.cn/post/6844903917835436045
+
+- Object.defineProperty
+
+- Proxy
+
+Object.defineProperty([], function)
+
