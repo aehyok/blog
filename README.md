@@ -82,7 +82,8 @@
   - 面试题目
     - https://juejin.cn/post/6844903885488783374    
 - 7月11日
-  - jest了解一下
+  - jest了解一下小书一本
+    - https://mp.weixin.qq.com/s/TiYdr0ux5B06mjtQyIRI7g  
   - 数学了解一下
 - 7月8日
   - 原型和原型链了解一下 https://juejin.cn/post/7007416743215759373
