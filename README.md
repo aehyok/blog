@@ -80,7 +80,10 @@
   - 首屏加载过慢
     - https://juejin.cn/post/6844903961154207757
   - 面试题目
-    - https://juejin.cn/post/6844903885488783374    
+    - https://juejin.cn/post/6844903885488783374
+- 7月12日
+  - jest 使用import报错
+    - https://juejin.cn/post/6844903776579485709      
 - 7月11日
   - jest了解一下小书一本
     - https://mp.weixin.qq.com/s/TiYdr0ux5B06mjtQyIRI7g  
