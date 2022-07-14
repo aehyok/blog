@@ -300,3 +300,13 @@ try {
 
 Object.defineProperty([], function)
 
+
+- 浅拷贝和深拷贝
+    - https://juejin.cn/post/7072528644739956773
+- 闭包的使用场景和作用
+  - https://juejin.cn/post/6937469222251560990#heading-9
+
+- 原型和原型链
+  - https://juejin.cn/post/7007416743215759373
+  - https://juejin.cn/post/6934498361475072014#comment
+  - https://juejin.cn/post/6844903930216841230
