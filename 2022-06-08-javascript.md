@@ -310,3 +310,6 @@ Object.defineProperty([], function)
   - https://juejin.cn/post/7007416743215759373
   - https://juejin.cn/post/6934498361475072014#comment
   - https://juejin.cn/post/6844903930216841230
+
+- 事件循环 微任务和宏任务
+  - https://juejin.cn/post/7108751200262029319 

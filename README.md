@@ -81,6 +81,9 @@
     - https://juejin.cn/post/6844903961154207757
   - 面试题目
     - https://juejin.cn/post/6844903885488783374
+- 7月14日
+  - bun了解一下
+    - https://juejin.cn/post/7120179470136246309
 - 7月12日
   - jest 使用import报错
     - https://juejin.cn/post/6844903776579485709      
