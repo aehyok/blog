@@ -1,76 +1,11 @@
 <script>
-function Person(name, age) {
-  this.name = name
-  this.age = age
-  this.country = '中国'
-  this.say = function() {
-    console.log('开始说话吧')
+  var aehyok = "全局"
+function outFunction () { 
+  var aehyok = "out函数" 
+  function innerFunction(){
+    console.log(aehyok)
   }
+  innerFunction()
 }
-
-const p1 = new Person('京东', 21)
-const p2 = new Person('阿里', 23)
-const p3 = new Person('腾讯', 22)
-
-
-
-
-function Fun () {
-
-}
-const fun = new Fun()
-
-//（1--0）
-// fun是对象,不存在prototype,所以为undefined
-console.log(fun.prototype, '小fun的prototype显示原型')   
-
-// （1--5）
-// fun.__proto__  指向 Fun.prototype
-console.log(fun.__proto__ , '小fun 的__proto__隐式原型')
-console.log(fun.__proto__ === Fun.prototype)
-
-//（5--7）
-// Fun.prototype.__proto__(现在是一个对象) 指向Object.prototype
-console.log(Fun.prototype.__proto__ , '大Fun、prototype的__proto__隐式原型')
-console.log(Fun.prototype.__proto__ === Object.prototype)
-
-//(7--8)
-// Object.prototype.__proto__ (终点指向)  指向了 null
-console.log(Object.prototype.__proto__, 'Object.prototype.的隐式原型') 
-
-
-// (2--6)
-// (3--6)
-//（4--6）
-// Fun.__proto__、 Function.__proto__、Object.__proto__ 都指向了  Function.prototype
-console.log(Fun.__proto__ , '大Fun的__proto__隐式原型')
-console.log(Function.__proto__, 'Function.__proto__隐式原型')
-console.log(Object.__proto__, 'Object.__proto__隐式原型')
-
-
-console.log(Fun.__proto__ === Function.prototype)
-console.log(Function.__proto__ === Function.prototype)
-console.log(Object.__proto__ === Function.prototype)
-
-
-//(6--7)
-// Function.prototype.__proto__(现在是一个对象) 指向Object.prototype
-console.log(Function.prototype.__proto__ , 'Function.prototype.__proto__隐式原型')
-console.log(Function.prototype.__proto__ === Object.prototype)
-
-//(7--8)
-// 上面写过，参考上面的
-
-
-console.log(Function.prototype, 'Function的__prototype__原型')
-console.log(Function.__proto__, 'Function的__proto__原型')
-
-// console.log(P.__proto__ === Function.__proto__)
-// console.log(P.__proto__ === Function.prototype)
-console.log(Function.__proto__ === Function.prototype)
-
-
-console.log(Object.__proto__ === Function.prototype)
-
-
+outFunction()
 </script>
