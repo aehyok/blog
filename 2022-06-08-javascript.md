@@ -320,3 +320,6 @@ Object.defineProperty([], function)
   - https://segmentfault.com/a/1190000041404464
   - https://www.cnblogs.com/gaokai/p/15613916.html  
   - https://juejin.cn/post/6932762257675780103
+
+- 浏览器渲染的过程
+  - https://juejin.cn/post/7117815711078023198
