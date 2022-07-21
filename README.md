@@ -84,9 +84,12 @@
   - 面试题目
     - https://juejin.cn/post/6844903885488783374
 - 7月20日
+  - tree list 命令
   - Chrome插件
+    - https://github.com/GoogleChrome/chrome-extensions-samples
     - https://juejin.cn/post/7121653349669142565?share_token=f4aa0701-c07a-4591-a86c-76c6d85a3b78
     - https://juejin.cn/post/6844903793176379399#heading-6
+    - https://developer.chrome.com/docs/extensions/mv3/devtools/
 - 7月18日
   - 查看网站技术栈
     - https://bundlescanner.com/ 
