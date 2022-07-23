@@ -3,6 +3,7 @@ export default {
   description: 'Just playing around.',
   logo: '/logo.svg',
   siteTitle: false,
+  base: '/',
   themeConfig: {
     //顶部菜单
     nav: [
