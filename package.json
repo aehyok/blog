@@ -1,17 +1,19 @@
 {
-  "name": "aehyok-blog",
-  "version": "0.0.1",
-  "description": "aehyok 开发文档",
-  "author": "aehyok",
-  "license": "Apache-2.0",
-  "devDependencies": {
-    "@vuepress/plugin-active-header-links": "^1.8.0",
-    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
-    "vue-script2": "^2.1.0",
-    "vuepress": "^1.3.1"
-  },
+  "name": "blog-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "valine": "^1.5.1",
+    "vitepress": "1.0.0-alpha.4",
+    "vue": "^3.2.37"
   }
 }
