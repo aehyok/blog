@@ -2,12 +2,13 @@ export default {
   title: 'aehyok',
   description: 'Just playing around.',
   siteTitle: false,
-  base: '/blog-doc',
+  base: '/blog-doc/',
   lastUpdated: true,
   themeConfig: {
     logo: '/logo.svg',
     //顶部菜单
     nav: [
+      {text: '首页', link: '/'},
       { text: '每日笔记', link: 'notes/' },
       { text: '月度汇总', link: 'months/' },
       { text: 'github', link: 'https://github.com/aehyok' },
