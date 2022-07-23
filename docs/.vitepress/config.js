@@ -9,8 +9,8 @@ export default {
     //顶部菜单
     nav: [
       {text: '首页', link: '/'},
-      { text: '每日笔记', link: 'notes/' },
-      { text: '月度汇总', link: 'months/' },
+      { text: '每日笔记', link: 'notes/', activeMatch: '^/notes/' },
+      { text: '月度汇总', link: 'months/' , activeMatch: '^/months/'},
       { text: 'github', link: 'https://github.com/aehyok' },
       {
         text: '关于我',
