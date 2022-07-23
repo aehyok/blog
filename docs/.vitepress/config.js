@@ -1,14 +1,15 @@
 export default {
   title: 'aehyok',
   description: 'Just playing around.',
-  logo: '/logo.svg',
   siteTitle: false,
-  base: '/',
+  base: '/blog-doc',
+  lastUpdated: true,
   themeConfig: {
+    logo: '/logo.svg',
     //顶部菜单
     nav: [
-      { text: '每日笔记', link: '/notes/' },
-      { text: '月度汇总', link: '/months/' },
+      { text: '每日笔记', link: 'notes/' },
+      { text: '月度汇总', link: 'months/' },
       { text: 'github', link: 'https://github.com/aehyok' },
       {
         text: '关于我',
@@ -22,8 +23,8 @@ export default {
       {
         text: '每日笔记',
         items: [
-          { text: '2022-07', link: '/notes/' },
-          { text: '2022-06', link: '/notes/2022-06' },
+          { text: '2022-07', link: 'notes/' },
+          { text: '2022-06', link: 'notes/2022-06' },
           { text: '2022-05', link: '/notes/2022-05' },
           { text: '2022-04', link: '/notes/2022-04' },
           { text: '2022-03', link: '/notes/2022-03' },
