@@ -1,19 +1,18 @@
 {
   "name": "blog-doc",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "repository": "https://github.com/aehyok/blog-doc.git",
+  "author": "aehyok",
+  "license": "MIT",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "valine": "^1.5.1",
-    "vitepress": "1.0.0-alpha.4",
-    "vue": "^3.2.37"
+    "@types/node": "^18.0.6",
+    "sass": "^1.53.0",
+    "vitepress": "^1.0.0-alpha.4"
   }
 }
