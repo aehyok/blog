@@ -17,7 +17,7 @@ jobs:
       - run: npm install --frozen-lockfile
 
       - name: Build
-        run: npm docs:build
+        run: npm build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
