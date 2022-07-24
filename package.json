@@ -2,7 +2,7 @@
   "name": "blog-doc",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/aehyok/blog-doc.git",
+  "repository": "https://github.com/aehyok/blog.git",
   "author": "aehyok",
   "license": "MIT",
   "scripts": {
