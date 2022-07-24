@@ -22,10 +22,10 @@ jobs:
         with:
           node-version: 16
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm install --frozen-lockfile
 
       - name: Build
-        run: yarn docs:build
+        run: npm run build
 
       - name: Deploy
         env:
