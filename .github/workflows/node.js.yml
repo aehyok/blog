@@ -9,18 +9,33 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          ref: 'main'
+          persist-credentials: false
+          fetch-depth: 0
+        env:
+          TZ: Asia/Shanghai
+      - name: Use Node.js
+        uses: actions/setup-node@main
         with:
           node-version: 16
-          cache: npm
-      - run: npm install --frozen-lockfile
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
       - name: Build
-        run: npm run build
+        run: yarn docs:build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/.vitepress/dist
+        env:
+          TZ: Asia/Shanghai
+        run: |
+          cd docs/.vitepress/dist
+          git config --global init.defaultBranch main
+          git init
+          git config user.name $GITHUB_ACTOR
+          git config user.email ${{ secrets.GIT_EMAIL }}
+          git add .
+          git commit -q -m "Deploying to gh-pages from @ $GITHUB_SHA in $(date +"%Y年%m月%d日 %T %Z")"
+          git push -f -q https://$GITHUB_ACTOR:${{ github.token }}@github.com/$GITHUB_REPOSITORY.git main:gh-pages --tags
