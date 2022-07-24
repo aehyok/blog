@@ -1,6 +1,66 @@
 ---
-title: months
+title: 本月每日记录
 ---
 
-# 月度总结
+- 7月23日
+  - tree list 命令
+- 7月22日
+  - 代码编辑器
+    - https://github.com/wanglin2/code-run
+- 7月20日
+  - tree list 命令
+  - Chrome插件
+    - https://github.com/GoogleChrome/chrome-extensions-samples
+    - https://juejin.cn/post/7121653349669142565?share_token=f4aa0701-c07a-4591-a86c-76c6d85a3b78
+    - https://juejin.cn/post/6844903793176379399#heading-6
+    - https://developer.chrome.com/docs/extensions/mv3/devtools/
+- 7月18日
+  - 查看网站技术栈
+    - https://bundlescanner.com/ 
+- 7月16日
+  - https://viteconf.org/
+  - 浏览器 进程详解
+    - https://segmentfault.com/a/1190000041404464
+    - https://www.cnblogs.com/gaokai/p/15613916.html  
+- 7月14日
+  - bun了解一下
+    - https://juejin.cn/post/7120179470136246309
+- 7月12日
+  - jest 使用import报错
+    - https://juejin.cn/post/6844903776579485709      
+- 7月11日
+  - jest了解一下小书一本
+    - https://mp.weixin.qq.com/s/TiYdr0ux5B06mjtQyIRI7g  
+  - 数学了解一下
+- 7月8日
+  - 原型和原型链了解一下 https://juejin.cn/post/7007416743215759373
+- 7月7日
+  - 7227 18:00
+  - 了解调用栈，可以更好的熟悉JavaScript的运行机制。这样在使用JavaScript编写代码的时候就能更好的写出更稳定的代码。
+  - 用最通俗的语言，来讲解JavaScript基础，通过谁都能看的懂的代码小demo，让你熟悉了解那些晦涩难懂的知识点，如果我写的你没懂欢迎来啪啪啪的喷我，我会不断改进我的方式。
+- 7月5日
+  - 6500
+- 7月4日
+  - 5743
+  - 鼠标点击
+    - https://whatpulse.org/downloads
+  - zsh 有点香
+    - https://www.zhihu.com/question/21418449/answer/300879747
+    - https://lxchuan12.gitee.io/oh-my-zsh/#%E5%AE%89%E8%A3%85-oh-my-zsh
+    - https://gitee.com/vacrain/steppp-doc/blob/main/9-vacrain/2022-07.md#shell-%E6%8D%A2%E6%88%90-zsh  
+  - 川神推荐的正则
+    - https://juejin.cn/post/6844903501034684430  
+- 7月3日
+  - 图片封面如何的制作 https://www.canva.cn/
+- 7月2日
+  - 事件循环 https://juejin.cn/post/6844904079353708557
+- 7月1日
+  - 为什么 Vue2 this 能够直接获取到 data 和 methods
+    - https://juejin.cn/post/7082984422516981796
+    - https://juejin.cn/post/7010920884789575711
+  - vue2.7 今天更新了
+    - https://juejin.cn/post/7115361618774622216#comment 
+  - window下终端设置
+    -  https://gitee.com/vacrain/steppp-doc/blob/main/9-vacrain/2022-07.md#%E7%BB%88%E7%AB%AF%E6%8D%A2%E6%88%90-zsh
+
 
