@@ -5,7 +5,7 @@
 <template>
   <div class="home-about">
     <div class="container">
-      <img src="../../docs/public/love.svg" alt="love" />
+      <img src="../../docs/public/logo.svg" alt="love" />
       <h2 class="message">Use <span @click="goVitePress()">VitePress</span> Build</h2>
     </div>
   </div>

@@ -8,7 +8,7 @@ hero:
   text: 那个曾经的少年回来了
   tagline: belive in yourself。
   image:
-    src: /logo-with-shadow.svg
+    src: /logo.svg
     alt: logo
   actions:
     - theme: brand
