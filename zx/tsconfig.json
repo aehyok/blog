@@ -1,9 +1,0 @@
-{
-    "type": "module",
-    "compilerOptions": {
-      "target": "es2017",
-      "module": "ESNext",
-          // 决定如何处理模块。
-       "moduleResolution": "node",
-    }
-}
