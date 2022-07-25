@@ -13,6 +13,7 @@
   "devDependencies": {
     "@types/node": "^18.0.6",
     "sass": "^1.53.0",
+    "valine": "^1.5.1",
     "vitepress": "^1.0.0-alpha.4"
   }
 }

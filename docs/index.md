@@ -6,7 +6,7 @@ title: Home
 hero:
   name: aehyok
   text: 那个曾经的少年回来了
-  tagline: belive in yourself。
+  tagline: Believe in yourself, there's nothing you can't do！
   image:
     src: /logo.svg
     alt: logo
