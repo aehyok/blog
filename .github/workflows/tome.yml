@@ -20,7 +20,7 @@ jobs:
   
       # 连接到ssh，并且做一个拷贝操作的action
       - name: Deploy 🚀
-      - uses: appleboy/scp-action@master
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.AK_HOST }} # 服务器host
           username: ${{ secrets.AK_USER }} # 服务器用户名
