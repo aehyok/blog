@@ -29,6 +29,7 @@ export default defineConfig({
           text: '生活感悟',
           items: [
             { text: "社会", link: "/life/" },
+            { text: "社会", link: "/life/" },
             { text: "2022-06年中总结", link: "/life/2022-06" },
             { text: "2021-12年终总结", link: "/life/2021-12" },
           ]

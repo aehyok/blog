@@ -8,7 +8,7 @@ hero:
   text: 那个曾经的少年回来了
   tagline: Believe in yourself, there's nothing you can't do！
   image:
-    src: /logo.svg
+    src: /home.svg
     alt: logo
   actions:
     - theme: brand
