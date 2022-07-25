@@ -20,7 +20,7 @@ jobs:
   
       # 连接到ssh，并且做一个拷贝操作的action
       - name: Deploy 🚀
-        uses: cross-the-world/scp-pipeline@master
+        uses: cross-the-world/scp-pipeline@main
         env:
           WELCOME: "ssh scp ssh pipelines"
           LASTSSH: "Doing something after copying"

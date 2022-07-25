@@ -12,7 +12,7 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "我的笔记", link: "/daily/" },
-      { text: "我的笔记", link: "/javascript/" },
+      { text: "前端总结", link: "/javascript/" },
       { text: "生活感悟", link: "/life/" },
       { text: "我的掘金", link: "https://juejin.cn/user/2242659452477016" },
       { text: "关于我", link: "/me/" },
