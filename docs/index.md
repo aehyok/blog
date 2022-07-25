@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: Show More
-      link: /days/
+      link: /daily/
     - theme: alt
       text: View on GitHub
       link: https://github.com/aehyok

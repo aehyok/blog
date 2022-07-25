@@ -167,8 +167,6 @@
     }
 
   ``` 
-
-
 #### 7、通过type和interface 限制某个字符串变量的具体字符串
   ```javascript 
     
