@@ -12,22 +12,24 @@ hero:
     alt: logo
   actions:
     - theme: brand
-      text: Show More
+      text: 更多详情
       link: /daily/
     - theme: alt
-      text: View on GitHub
+      text: 访问我的GitHub
       link: https://github.com/aehyok
-
+    - theme: vuepress
+      text: 关于我
+      link: /me/
 features:
-  - icon: ⚡️
-    title: Vite, The DX that can't be beat
-    details: Lorem ipsum...
+  - icon: ⚡️ 
+    title: 记录生活，记录学习
+    details: 很多时候我们可以停下来，多回头看看，让那些美好的记忆成为永恒,让那些痛苦成为我们的财富
   - icon: 🖖
-    title: Power of Vue meets Markdown
-    details: Lorem ipsum...
+    title: 浅层的学习靠输入，深层的学习靠输出
+    details: 简单的学习可能达到会用就可以了，但想深入便会漏洞百出，让你原型毕露，所以对原理和细节的捕捉要融会贯通
   - icon: 🛠️
-    title: Simple and minimal, always
-    details: Lorem ipsum...
+    title: 读源码和发博客
+    details: 读懂别人的代码，就像同他人进行交谈，而博客则更像是会自己学习成果的一种展示，最重要的是取悦自己，而非在意那些
 ---
 
 <script setup>

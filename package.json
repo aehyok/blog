@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev docs",
-    "localbuild": "npm run build && zx ./scripts/prebuild.mjs",
+    "postbuild": "zx ./scripts/prebuild.mjs",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs"
   },
