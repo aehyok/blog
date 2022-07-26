@@ -32,8 +32,8 @@ features:
     details: 读懂别人的代码，就像同他人进行交谈，而博客则更像是会自己学习成果的一种展示，最重要的是取悦自己，而非在意那些
 ---
 
-<script setup>
+<!-- <script setup>
 import HomeAboutComponent from '../src/components/HomeAbout.vue'
 </script>
 
-<HomeAboutComponent />
+<HomeAboutComponent /> -->
