@@ -20,7 +20,7 @@ export default defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/aehyok" }],
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright © 2022-07～present aehyok",
+      copyright: "Copyright © 2022-07-27～present aehyok",
     },
 
     sidebar: {
