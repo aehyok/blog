@@ -84,6 +84,13 @@ export default defineConfig({
       host: true,
       port: 3000,
       open: true,
+      proxy: {
+        '/so': {
+          target: 'http://139.159.245.209:5000', // 代理接口
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/so/, '')
+        }
+      }
     },
   },
 });
