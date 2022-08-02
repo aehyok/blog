@@ -4,6 +4,21 @@
   </div>      
 </template>
 <script lang="ts" setup>
+  import axios from 'axios'
+
+  axios.get('http://139.159.245.209:5000/api/WeatherForecast/get')
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .then(function () {
+    // always executed
+  });
+
   const jumpClick = () => window.open('https://juejin.cn/post/7079706017579139102','_blank')
 </script>
 <style lang="scss" scoped>
