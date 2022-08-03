@@ -1,5 +1,5 @@
 {
-  "name": "blog-doc",
+  "name": "blog",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/aehyok/blog.git",
@@ -9,11 +9,13 @@
     "start": "vitepress dev docs",
     "buildtome": "npm run build && zx ./scripts/prebuild.mjs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "release":"release-it"
   },
   "devDependencies": {
     "@types/node": "^18.0.6",
     "axios": "^0.27.2",
+    "release-it": "^15.2.0",
     "sass": "^1.53.0",
     "vitepress": "^1.0.0-alpha.4",
     "zx": "^7.0.7"
