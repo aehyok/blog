@@ -3,7 +3,7 @@
   - 前端阅读系列
     - 前端每周更新 https://github.com/ascoders/weekly
     - es6 https://es6.ruanyifeng.com
-    - ts https://www.typescriptlang.org
+    - ts https://www.typescriptlang.orghttps://www.canva.cn
     - 文章翻译系列 https://github.com/xitu/gold-miner
   - 博客发文所需小工具
     - 掘金笔记模版：https://github.com/xitu/juejin-markdown-themes
@@ -12,7 +12,6 @@
     - editor https://editor.mdnice.com/
     - npm https://npm.devtool.tech/
     - mdn https://developer.mozilla.org/zh-CN/docs/Web
-    - 简单图片编辑器 https://ui.toast.com/tui-image-editor
     - 动图图片笔记器 https://www.canva.cn/design/DAFFgelz1VE/VxlwSySIDqmvnWj26iX00A/edit
     - 抽象语法树 https://astexplorer.net/
     - https://esprima.org/demo/parse.html#
