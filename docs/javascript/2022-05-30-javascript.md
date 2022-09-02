@@ -19,9 +19,14 @@
   - 字符串类型
   - Symbol 类型（ES6 添加）
   - BigInt 类型（ES2020 添加）
-- 对象类型
+- 引用类型
+  - Object对象
+  - Array 数组
+  - Function 函数对象
 
-# 2、类型判断
+基本数据类型存储的数据存在栈中，引用类型的引用地址存在栈中，真实的数据存储在堆中，通过引用地址进行关联。
+
+## 2、类型判断
 
 - typeof 能够判断出的类型
 
@@ -45,11 +50,11 @@
   typeof typeof 10  // string   typeof 10先返回一个"number" 然后typeof "number" 自然返回string
 ```
 
-- typeof null 输出 object
+## typeof null 输出 object
 
   null 作为一个基本数据类型为什么会被 typeof 运算符识别为 object 类型呢？这个 bug 是第一版 Javascript 留下来的，javascript 中不同对象在底层都表示为二进制，而 javascript 中会把二进制前三位都为 0 的判断为 object 类型，而 null 的二进制表示全都是 0，自然前三位也是 0，所以执行 typeof 时会返回 'object'。 ----引用自《你不知道的 javascript（上卷）》
 
-- typeof NaN 输出为 number
+## typeof NaN 输出为 number
 
   NaN ，可以翻译为 not a number ，即不是一个数字。 NaN 是一个“警戒值”（sentinel value，有特殊用途的常规值），常用来指出数字类型中的错误情况，即：“执行数学运算没有成功，这是返回的结果”
   所以有时候我们判断的时候可能要通过 Number.isNaN，而 Number.isNaN 是 ES6 中新增的函数，Number.isNaN()只有对于 NaN 才返回 true，非 NaN 一律返回 false。
@@ -58,7 +63,7 @@
 
 - 为什么 typeof new Function() 不返回 object？？？？？
 
-- instanceof 判断对象的具体类型
+## instanceof 判断对象的具体类型
 
   注意首先要先是一个 object 才行
   '' , null, undefined 分别去 instanceof object 都会是 false， 首先他们都不是 object，不能用于判断原始类型哟
@@ -83,7 +88,7 @@
   new Animal() instanceof Object // true
 ```
 
-- constructor 通过构造函数判断数据类型
+## constructor 通过构造函数判断数据类型
 
 ```javascript
 // 基本类型 null
