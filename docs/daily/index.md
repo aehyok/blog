@@ -28,10 +28,10 @@
     - https://github.com/xiaoxian521/vue-pure-admin
   - rust 教程
     - https://github.com/sunface/rust-course
-    - https://course.rs/
+    - https://course.rs
   - icejs 待尝试 https://ice.work/docs/guide/basic/vite
   - redux  https://www.redux.org.cn/docs/introduction/Ecosystem.html  
-  - wiki https://www.5axxw.com/wiki/
+  - wiki https://www.5axxw.com/wiki
   - graphql
     - https://graphql.cn/
     - https://graphql.cn/code/#c-net
@@ -51,7 +51,7 @@
   - 代码在线运行
     - https://codesandbox.io/
     - https://codepen.io/team/Vue/pen/poReOvE 
-    - https://stackblitz.com/
+    - https://stackblitz.com
   - IAAS、PAAS、SAAS  
     - http://www.ruanyifeng.com/blog/2017/07/iaas-paas-saas.html
   - CORS Cross Origin Resource Shareing 跨域资源共享
