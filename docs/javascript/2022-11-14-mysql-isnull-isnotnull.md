@@ -1,3 +1,5 @@
+## https://www.jb51.net/article/249749.htm
+
 ##  group_concat 详解
 - https://blog.csdn.net/weixin_46544385/article/details/120563650
 
@@ -21,6 +23,26 @@ select * from test where a is null
 select * from test order by a asc;   
 ```
 
+## count 统计
+会将group_num为null的数据过滤掉
+```
+select count(group_num) from sc_base_color;
+```
+
+## group by
+会将null 进行分组统计
+```
+select count(*) from sc_base_color GROUP BY group_num;
+```
+
+
+## where查询条件中>1 <1
+会将null值也过滤掉
+```
+select  * from sc_base_color where  group_num<1;
+```
+
+
 ## null值字段如果是索引字段
 
 - 在mysql 5.7以及5.7以下的版本中
@@ -38,3 +60,12 @@ select * from test where a is not null;
 
 ## 索引跳跃
 - https://juejin.cn/post/6863770705897455623
+- https://dev.mysql.com/doc/refman/8.0/en/range-optimization.html
+
+## 设置默认值
+
+- 1、比如int、bigint类型默认值为-1/0
+
+- 2、比如varchar类型默认值为空串
+
+- 3、bigdecimal类型为0等等。

@@ -49,3 +49,7 @@ docker run -d \
 
 ## mysql 8.0后密码加密规则发生变化
 - https://www.cnblogs.com/hackerxiaoyon/p/10552842.html
+
+
+## mysql8和mysql5.7
+- https://juejin.cn/post/7111255789876019208#heading-5
