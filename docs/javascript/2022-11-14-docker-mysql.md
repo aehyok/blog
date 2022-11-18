@@ -53,7 +53,6 @@ docker run -d \
 - https://juejin.cn/post/7111255789876019208
 
 
-
 > 注意： 不管docker容器开没开都会进行相互间的拷贝
 ## 将docker容器中的文件拷贝到宿主机器中
 ```
@@ -62,3 +61,6 @@ docker run -d \
 
 
 ## 从宿主机器拷贝到docker容器中
+```
+ docker cp /usr/local/aehyok ba52a9d7d924:/var/lib/mysql/ba52a9d7d924-slow.log  
+```
