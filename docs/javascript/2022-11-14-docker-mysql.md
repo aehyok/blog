@@ -46,10 +46,19 @@ docker run -d \
 ## 修改docker容器中的文件
 - https://juejin.cn/post/6875216262830653453
 
-
 ## mysql 8.0后密码加密规则发生变化
 - https://www.cnblogs.com/hackerxiaoyon/p/10552842.html
 
-
 ## mysql8和mysql5.7
-- https://juejin.cn/post/7111255789876019208#heading-5
+- https://juejin.cn/post/7111255789876019208
+
+
+
+> 注意： 不管docker容器开没开都会进行相互间的拷贝
+## 将docker容器中的文件拷贝到宿主机器中
+```
+ docker cp ba52a9d7d924:/var/lib/mysql/ba52a9d7d924-slow.log  /usr/local/aehyok
+```
+
+
+## 从宿主机器拷贝到docker容器中
