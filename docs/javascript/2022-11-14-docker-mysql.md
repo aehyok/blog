@@ -62,5 +62,5 @@ docker run -d \
 
 ## 从宿主机器拷贝到docker容器中
 ```
- docker cp /usr/local/aehyok ba52a9d7d924:/var/lib/mysql/ba52a9d7d924-slow.log  
+ docker cp /usr/local/aehyok ba52a9d7d924:/var/lib/mysql/ba52a9d7d924-1slow.log  
 ```
