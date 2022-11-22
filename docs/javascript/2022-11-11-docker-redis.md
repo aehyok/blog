@@ -52,3 +52,12 @@ docker run -d \
 -v /usr/local/docker/mysql/data/mysql:/var/lib/mysql \
 -e MYSQL_ROOT_PASSWORD=sunlight2021 \
 mysql
+
+
+```
+docker run -d \
+--name mariadb-1 \
+-p 13306:3306 \
+-e MARIADB_ROOT_PASSWORD=sunlight2021 \
+mariadb
+```
