@@ -66,6 +66,12 @@ mysqldumpslow -S r -t 2 /usr/local/aehyok/ba52a9d7d924-slow.log
 - 清空慢查询日志，并恢复
 https://blog.csdn.net/weixin_41275260/article/details/125461408
 
+mysql> FLUSH LOGS;
+Query OK, 0 rows affected (0.01 sec)
+
+慢查询日志文件  删除成功后 flush logs重置成功
+
+
 ## mysql 最大链接数
   - https://juejin.cn/post/6844903876999512078#comment
 
@@ -74,3 +80,8 @@ https://blog.csdn.net/weixin_41275260/article/details/125461408
   ```
   show status like 'Thread%';
   ```
+
+
+  mysqladmin -u root-p flush-logs
+
+flush failed; error: 'Access denied; you need (at least one of) the RELOAD privilege(s) for this operation'
