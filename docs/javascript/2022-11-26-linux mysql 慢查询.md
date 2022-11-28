@@ -59,7 +59,7 @@ show variables like 'slow_query_log_file';
 cd /usr/bin
 
 --  这里-S参数后面跟的r是row的缩写意思是从slow log里查找按照返回行数最高排序，默认是at即平均执行时间。-r 后面跟着的数字是返回几个结果，类似于limit
-mysqldumpslow -S r -t 2 /usr/local/aehyok/ba52a9d7d924-slow.log
+mysqldumpslow -S r -t 20 /usr/local/aehyok/ba52a9d7d924-slow.log
 ```
 
 
@@ -68,6 +68,11 @@ https://blog.csdn.net/weixin_41275260/article/details/125461408
 
 mysql> FLUSH LOGS;
 Query OK, 0 rows affected (0.01 sec)
+
+
+
+- 查看mysql  线程列表
+  select * from PROCESSLIST w where w.USER='dvs' and w.db='dvsdb30' order by TIME desc;
 
 慢查询日志文件  删除成功后 flush logs重置成功
 
@@ -85,3 +90,8 @@ Query OK, 0 rows affected (0.01 sec)
   mysqladmin -u root-p flush-logs
 
 flush failed; error: 'Access denied; you need (at least one of) the RELOAD privilege(s) for this operation'
+
+
+
+## 查看mysql线程
+- https://blog.csdn.net/qq_36551991/article/details/113665145
