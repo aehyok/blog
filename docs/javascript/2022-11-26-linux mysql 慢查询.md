@@ -96,3 +96,27 @@ flush failed; error: 'Access denied; you need (at least one of) the RELOAD privi
 
 ## 查看mysql线程
 - https://blog.csdn.net/qq_36551991/article/details/113665145
+
+
+## order by null
+- https://www.jianshu.com/p/16f827724e8c
+
+## mysql group by 性能优化
+- https://juejin.cn/post/6844903696644440072
+
+
+## 慢查询几个常用的指令
+- https://juejin.cn/post/6844904037888851976#heading-12
+```
+// 得到返回记录集最多的10条SQL：
+mysqldumpslow -s r -t  10 /var/lib/mysql/695f5026f0f6-slow.log
+
+// 得到访问次数最多的10条SQL：
+mysqldumpslow -s r -t  10 /var/lib/mysql/695f5026f0f6-slow.log
+
+得到按照时间排序的前10条里面含有左连接的SQL：
+mysqldumpslow -s t -t 10 -g "left join" /var/lib/mysql/695f5026f0f6-slow.log
+
+也支持管道符命令
+mysqldumpslow -s t -t 10 -g "left join" /var/lib/mysql/695f5026f0f6-slow.log | more //分页显示
+```
