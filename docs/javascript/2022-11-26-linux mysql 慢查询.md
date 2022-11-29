@@ -69,8 +69,9 @@ https://blog.csdn.net/weixin_41275260/article/details/125461408
 mysql> FLUSH LOGS;
 Query OK, 0 rows affected (0.01 sec)
 
-
-
+- 慢查询 日志查看
+  https://cloud.tencent.com/developer/article/2154418
+  https://juejin.cn/post/7033623654416007181
 - 查看mysql  线程列表
   select * from PROCESSLIST w where w.USER='dvs' and w.db='dvsdb30' order by TIME desc;
 
