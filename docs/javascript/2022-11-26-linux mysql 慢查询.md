@@ -36,7 +36,7 @@ mysql -uroot -p
 // 再输入password
 
 //切换到具体的数据库
-use dvsdb30; 
+use dvsdb30;
 
 // 查看慢查询日志是否开启  on为开启  off为关闭 默认是关闭的
 show variables like 'slow_query_log';
