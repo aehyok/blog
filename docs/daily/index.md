@@ -1,3 +1,5 @@
+  - 破解文件汇总网站
+    - https://www.ghxi.com/navicat16.html
   - 若川视野 源码共读
     - https://juejin.cn/column/7078688202092969991
   - 前端阅读系列
