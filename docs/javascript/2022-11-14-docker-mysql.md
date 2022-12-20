@@ -38,6 +38,16 @@ docker run -d \
 
 docker run -d \
 --name mysql \
+-p 3306:3306 \
+-v /usr/local/docker/mysql/config/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf \
+-v /usr/local/docker/mysql/data/mysql:/var/lib/mysql \
+-e MYSQL_ROOT_PASSWORD=sunlight2010 \
+
+
+
+
+docker run -d \
+--name mysql \
 -p 4007:3306 \
 -v /usr/local/docker/mysql/config/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf \
 -v /usr/local/docker/mysql/data/mysql:/var/lib/mysql \
