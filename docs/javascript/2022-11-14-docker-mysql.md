@@ -34,8 +34,6 @@ docker run -d \
 -e MYSQL_ROOT_PASSWORD=sunlight2010 \
 
 
-
-
 docker run -d \
 --name mysql \
 -p 3306:3306 \
