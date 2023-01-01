@@ -1,3 +1,30 @@
+<!--
+ * @Author: aehyok 455043818@qq.com
+ * @Date: 2022-12-24 15:45:14
+ * @LastEditors: aehyok 455043818@qq.com
+ * @LastEditTime: 2022-12-31 10:06:46
+ * @FilePath: /blog/docs/daily/index.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+  - java ioc和aop
+    - https://juejin.cn/post/6844903973715968007
+  - typescript ioc
+    - https://juejin.cn/post/6859314697204662279
+  - 前端ioc
+    - https://juejin.cn/post/6844903698376720398
+  - rabbitmq
+    - https://juejin.cn/post/6854573219253485575
+    - https://juejin.cn/post/6844904192146931720
+    - https://juejin.cn/post/6856571028496351239
+    - https://juejin.cn/post/6844904184920162317
+    - https://juejin.cn/post/6977981645475282958
+    - https://juejin.cn/post/7132268340541653005
+  - grpc
+    - https://juejin.cn/post/7082910429990617124
+  - 微信扫码
+  - 微信扫码登录
+  - 
+
   - 破解文件汇总网站
     - https://www.ghxi.com/navicat16.html
   - 若川视野 源码共读
