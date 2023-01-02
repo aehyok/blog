@@ -2,7 +2,7 @@
  * @Author: aehyok 455043818@qq.com
  * @Date: 2022-12-24 15:45:14
  * @LastEditors: aehyok 455043818@qq.com
- * @LastEditTime: 2022-12-31 10:06:46
+ * @LastEditTime: 2023-01-02 17:38:12
  * @FilePath: /blog/docs/daily/index.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -23,7 +23,14 @@
     - https://juejin.cn/post/7082910429990617124
   - 微信扫码
   - 微信扫码登录
-  - 
+  - 服务注册和服务发现
+    - https://mp.weixin.qq.com/s/HZTfV6MdW_FO-nepPdH6YA
+
+
+
+
+
+
 
   - 破解文件汇总网站
     - https://www.ghxi.com/navicat16.html
