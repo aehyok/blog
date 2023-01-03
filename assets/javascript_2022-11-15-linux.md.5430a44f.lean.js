@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as e}from"./app.0a2a86d4.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/2022-11-15-linux.md","lastUpdated":1672744985000}'),r={name:"javascript/2022-11-15-linux.md"};function s(n,c,o,i,p,_){return a(),e("div")}var m=t(r,[["render",s]]);export{l as __pageData,m as default};

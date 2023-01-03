@@ -1,1 +1,0 @@
-import{_ as e,o as r,c as t,a as l}from"./app.4e2aadac.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"daily/index.md","lastUpdated":1672714362000}'),n={name:"daily/index.md"},o=l("",1),i=[o];function a(p,h,s,c,u,m){return r(),t("div",null,i)}var w=e(n,[["render",a]]);export{g as __pageData,w as default};
