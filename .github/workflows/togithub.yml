@@ -8,10 +8,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    using: "node16"
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
-        using: "node16"
         with:
           cache: npm
       - run: npm install --frozen-lockfile
