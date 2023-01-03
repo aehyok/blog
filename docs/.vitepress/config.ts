@@ -47,9 +47,16 @@ export default defineConfig({
       ],
       "/daily/": [
         {
-          text: "2022年每日笔记",
+          text: "2023年每日笔记",
           items: [
             { text: "current", link: "/daily/" },
+            { text: "2023-01", link: "/daily/2023-01" },
+          ],
+        },
+        {
+          text: "2022年每日笔记",
+          items: [
+            { text: "2022-12", link: "/daily/2022-12" },
             { text: "2022-11", link: "/daily/2022-11" },
             { text: "2022-10", link: "/daily/2022-10" },
             { text: "2022-09", link: "/daily/2022-09" },
