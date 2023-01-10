@@ -2,7 +2,7 @@
 - consul集群需要至少两个consul server节点
 - https://www.cnblogs.com/edisonchou/p/consul_cluster_based_on_docker_introduction.html
 
-
+```
 docker run -d -p 8510:8500 --restart=always -v /usr/local/aehyok/consul/data/server1:/consul/data -v /usr/local/aehyok/consul/conf/server1:/consul/config -e CONSUL_BIND_INTERFACE='eth0' --privileged=true --name=consul_server_1 consul agent -server -bootstrap-expect=3 -ui -node=consul_server_1 -client='0.0.0.0' -data-dir /consul/data -config-dir /consul/config -datacenter=aehyok;
 
 
@@ -15,7 +15,8 @@ docker run -d -p 8530:8500 --restart=always -v /usr/local/aehyok/consul/data/ser
 
 
 docker run -d -p 8540:8500 --restart=always -v /usr/local/aehyok/consul/data/client1:/consul/config -e CONSUL_BIND_INTERFACE='eth0' --name=consul_client_1 consul agent -node=consul_client_1 -join=$JOIN_IP -client='0.0.0.0' -datacenter=aehyok -config-dir /consul/config
-
+```
+```
 参数说明：
      -server : 定义agent运行在server模式
      -bootstrap-expect :在一个datacenter中期望提供的server节点数目,当该值提供的时候,consul一直等到达到指定sever数目的时候才会引导整个集群,该标记不能和bootstrap共用
@@ -26,7 +27,8 @@ docker run -d -p 8540:8500 --restart=always -v /usr/local/aehyok/consul/data/cli
      -config-dir::配置文件目录,里面所有以.json结尾的文件都会被加载
      -rejoin:使consul忽略先前的离开,在再次启动后仍旧尝试加入集群中。
      -client:consul服务侦听地址,这个地址提供HTTP、DNS、RPC等服务,默认是127.0.0.1所以不对外提供服务,如果你要对外提供服务改成0.0.0.0 
-
+```
+```
 version: '3'
 
 services:
@@ -93,7 +95,7 @@ services:
     volumes:
       - ./fabio.properties:/etc/fabio/fabio.properties
 
-
+```
 
 
 
@@ -102,21 +104,7 @@ docker exec consul_server_1 consul operator raft list-peers
 docker exec consul_server_11 consul operator raft list-peers
 
 
-server 有三个，clinet有一个
-
-
-
-// Server  节点 1
-docker run --name cs1 -p 8500:8500  -v /usr/local/aehyok/consul/data/server1:/data consul agent -server -bind 172.17.0.2 -node consul-server-1  -data-dir /data -bootstrap-expect 3 -client 0.0.0.0 -ui
-// Server  节点 2
-docker run --name cs2 -p 7500:8500  -v /usr/local/aehyok/consul/data/server2:/data consul agent -server -bind 172.17.0.3 -node consul-server-2  -data-dir /data -bootstrap-expect 3 -client 0.0.0.0 -ui -join 172.17.0.2
-// Server  节点 3
-docker run --name cs3 -p 6500:8500 -v /usr/local/aehyok/consul/data/server3:/data consul agent -server -bind 172.17.0.4 -node consul-server-3  -data-dir /data -bootstrap-expect 3 -client 0.0.0.0 -ui -join 172.17.0.2
-// Client 节点 1
-docker run --name cc1 -p 5500:8500 -v //usr/local/aehyok/consul/data/client1:/data consul agent        -bind 172.17.0.5 -node consul-client-1 -data-dir /data -client 0.0.0.0 -ui -join 172.17.0.2
-
-
-
+server 有三个，client有一个
 
 ## 安装nginx
 ```
