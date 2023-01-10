@@ -33,7 +33,7 @@ services:
   consul_server_1:
     image: consul
     container_name: consul_server_1
-    command: agent -server -bootstrap-expect=3 -node=consul_server_1 -bind 192.168.1.2 -client=0.0.0.0 -datacenter=aehyok -ui -data-dir /consul/data -config-dir -config-dir /consul/config
+    command: agent -server -bootstrap-expect=3 -node=consul_server_1 -bind 0.0.0.0  -client=0.0.0.0 -datacenter=aehyok -ui -data-dir /consul/data -config-dir /consul/config
     environment:
       CONSUL_BIND_INTERFACE: 'eth0'
     volumes:
@@ -47,9 +47,9 @@ services:
   consul_server_2:
     image: consul
     container_name: consul_server_2
-    command: agent -server -bootstrap-expect=3 -retry-join=consul_server_1 -node=consul_server_2 -bind 0.0.0.0  -client=0.0.0.0 -datacenter=aehyok -ui -config-dir /consul/config
+    command: agent -server -bootstrap-expect=3 -retry-join=consul_server_1 -node=consul_server_2 -bind 0.0.0.0  -client=0.0.0.0 -datacenter=aehyok -ui -data-dir /consul/data -config-dir /consul/config
     environment:
-      CONSUL_BIND_INTERFACE: eth0
+      CONSUL_BIND_INTERFACE: 'eth0'
     volumes:
       - /usr/local/aehyok/consul/data/server2:/consul/data
       - /usr/local/aehyok/consul/conf/server2:/consul/config  
@@ -61,9 +61,9 @@ services:
   consul_server_3:
     image: consul
     container_name: consul_server_3
-    command: agent -server -bootstrap-expect=3 -retry-join=consul_server_1 -node=consul_server_3  -bind 0.0.0.0 -client=0.0.0.0 -datacenter=aehyok -ui -config-dir /consul/config
+    command: agent -server -bootstrap-expect=3 -retry-join=consul_server_1 -node=consul_server_3  -bind 0.0.0.0 -client=0.0.0.0 -datacenter=aehyok -ui -data-dir /consul/data -config-dir /consul/config
     environment:
-      CONSUL_BIND_INTERFACE: eth0
+      CONSUL_BIND_INTERFACE: 'eth0'
     volumes:
       - /usr/local/aehyok/consul/data/server3:/consul/data
       - /usr/local/aehyok/consul/conf/server3:/consul/config 
@@ -75,12 +75,14 @@ services:
   consul_client_1:
     image: consul
     container_name: consul_client_1
-    command: agent -retry-join=consul_server__1 -node=consul_client_1 -bind 0.0.0.0  -client=0.0.0.0 -datacenter=aehyok  -config-dir /consul/config
+    command: agent -retry-join=consul_server__1 -node=consul_client_1 -bind 0.0.0.0  -client=0.0.0.0 -datacenter=aehyok -data-dir /consul/data -config-dir /consul/config
     environment:
-      CONSUL_BIND_INTERFACE: eth0
+      CONSUL_BIND_INTERFACE: 'eth0'
     ports:
       - 8540:8500
     restart: always
+    privileged: true
+
 
   fabio:
     image: "fabiolb/fabio"
