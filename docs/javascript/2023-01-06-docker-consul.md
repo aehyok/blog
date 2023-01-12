@@ -16,6 +16,8 @@ docker run -d -p 8530:8500 --restart=always -v /usr/local/aehyok/consul/data/ser
 
 docker run -d -p 8540:8500 --restart=always -v /usr/local/aehyok/consul/data/client1:/consul/data -v /usr/local/aehyok/consul/conf/client1:/consul/config -e CONSUL_BIND_INTERFACE='eth0'  --privileged=true  --name=consul_client_1 consul agent -node=consul_client_1 -join=$JOIN_IP -client='0.0.0.0' -datacenter=aehyok -data-dir /consul/data -config-dir /consul/config
 
+docker run -d -p 8550:8500 --restart=always -v /usr/local/aehyok/consul/data/client2:/consul/data -v /usr/local/aehyok/consul/conf/client2:/consul/config -e CONSUL_BIND_INTERFACE='eth0'  --privileged=true  --name=consul_client_2 consul agent -node=consul_client_2 -join=$JOIN_IP -client='0.0.0.0' -datacenter=aehyok -data-dir /consul/data -config-dir /consul/config
+
 ```
 ```
 参数说明：
@@ -171,4 +173,8 @@ dotnet Dvs.Digital.Api.dll --urls="http://*:5020"
   - https://github.com/fabiolb/fabio
   - ubuntu https://www.cnblogs.com/xishuai/p/macos-and-ubuntu-install-fabio.html
   - docker fabio https://www.cnblogs.com/weirun/p/16466960.html
-  - 
+
+
+## consul client 配置微服务接口地址
+- json文件 https://www.cnblogs.com/edisonchou/p/9148034.html
+
