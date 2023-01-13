@@ -159,11 +159,17 @@ nginx config
 
 
 ## dotnet 测试服务
-```
-dotnet Dvs.Cons.Api.dll --urls="http://*:5010"
-dotnet Dvs.Cons.Api.dll --urls="http://*:5030"
 
-dotnet Dvs.Digital.Api.dll --urls="http://*:5020"
+```
+dotnet OcelotGateway.dll --urls="http://*:5003"
+dotnet OcelotGateway.dll --urls="http://*:5030"
+dotnet OcelotGateway.dll --urls="http://*:5300"
+
+dotnet StudentService.dll --urls="http://*:5001"
+dotnet StudentService.dll --urls="http://*:5002"
+
+dotnet TeacherService.dll --urls="http://*:5004"
+dotnet TeacherService.dll --urls="http://*:5005"
 ```
 
 
@@ -175,6 +181,14 @@ dotnet Dvs.Digital.Api.dll --urls="http://*:5020"
   - docker fabio https://www.cnblogs.com/weirun/p/16466960.html
 
 
-## consul client 配置微服务接口地址
+## consul client 配置微服务接口配置 、邮件预警发送
 - json文件 https://www.cnblogs.com/edisonchou/p/9148034.html
 
+## ocelot和consul 架构图
+- https://www.cnblogs.com/PatrickLiu/p/14073192.html
+- https://www.cnblogs.com/cheyunhua/p/15718331.html
+
+
+## consul官网 
+- https://developer.hashicorp.com/consul/docs/intro
+- https://blog.51cto.com/wangguishe/5789295
