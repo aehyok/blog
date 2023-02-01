@@ -150,7 +150,6 @@ nginx config
 ## 安装dotnet 6.0 sdk
 - https://learn.microsoft.com/zh-cn/dotnet/core/install/linux-snap
 
-
 ## dotnet consul demo
 - https://www.cnblogs.com/ansheng/p/16035028.html
 - https://www.cnblogs.com/wl-blog/p/15771111.html
