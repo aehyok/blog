@@ -10,14 +10,14 @@
     "buildtome": "npm run build && zx ./scripts/prebuild.mjs",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs",
-    "release":"release-it"
+    "release": "release-it"
   },
   "devDependencies": {
-    "@types/node": "^18.0.6",
+    "@types/node": "^18.14.2",
     "axios": "^0.27.2",
-    "release-it": "^15.2.0",
-    "sass": "^1.53.0",
-    "vitepress": "^1.0.0-alpha.4",
-    "zx": "^7.0.7"
+    "release-it": "^15.6.0",
+    "sass": "^1.58.3",
+    "vitepress": "^1.0.0-alpha.48",
+    "zx": "^7.1.1"
   }
 }
