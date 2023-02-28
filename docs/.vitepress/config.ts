@@ -60,6 +60,12 @@ export default defineConfig({
           items: [
             { text: "1-4", link: "/video/004/01" }
           ]
+        },
+        {
+          text: '抖音飞书文档',
+          items: [
+            { text: "1-4", link: "/video/005/01" }
+          ]
         }
       ],
       "/javascript/": [
