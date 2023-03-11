@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./app.0f646e78.js";import"./chunks/theme.33468903.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"daily/2021-06.md","lastUpdated":1678577188000}'),r={name:"daily/2021-06.md"};function o(s,c,n,d,p,i){return e(),a("div")}const f=t(r,[["render",o]]);export{m as __pageData,f as default};
