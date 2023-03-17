@@ -1,0 +1,67 @@
+https://app.supabase.com/ github账号登录
+
+- 创建组织OpenAI
+- 创建项目 aehyok sN7pR9GUeebWu8iu
+
+
+
+
+
+
+- 盛道和夫
+- https://github.com/ThaddeusJiang/inamori-kazuo-gpt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+qdrant github登录
+
+
+
+
+## qdrant 接口参数详解
+
+- 云服务 https://cloud.qdrant.io/
+curl \
+    -X GET 'https://29bc7cba-253f-40d6-9b4e-e39bd55a8aa1.us-east-1-0.aws.cloud.qdrant.io:6333' \
+    --header 'api-key: MHTxvf5S2sIdE-p0T7B7yA42M5ZXXSBmp6WrtZvatTg4vQ347vD5qA'
+
+
+
+- https://github.com/qdrant/qdrant/blob/master/QUICK_START.md
+
+- 接口swagger https://ui.qdrant.tech/#/
+
+
+[dashboard/user/api_keys](https://api.openai.com/dashboard/user/api_keys)   post 
+
+{
+  action: "create"
+}
+
+
+
