@@ -1,4 +1,4 @@
-## 一个程序员梦开始的地方
+## 一个程序员关于ChatGPT梦开始的地方
 
 #### 3月26日
 - ChatGPT Plugins demo https://github.com/openai/chatgpt-retrieval-plugin
