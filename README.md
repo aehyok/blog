@@ -8,6 +8,8 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
+#### 3月27日
+- 图片提词工具 https://replicate.com/pharmapsychotic/clip-interrogator
 #### 3月26日
 - ChatGPT Plugins demo https://github.com/openai/chatgpt-retrieval-plugin
 - 借助colab平台自动生成srt字幕 https://github.com/JimLiu/whisper-podcast-subtitles
