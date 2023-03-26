@@ -1,9 +1,13 @@
 ## 一个程序员关于ChatGPT梦开始的地方
 - ChatGPT官网 https://ai.com
-- Midjourney官网 https://midjourney.com
+- Midjourney
+  - 官网 https://midjourney.com
+  - 提示词 https://prompt.noonshot.com
+- 文本转视频
+  - https://www.d-id.com
 - 下载各种apk https://apkcombo.com
-
-
+- ai云典 
+  - https://cosoh.com
 #### 3月26日
 - ChatGPT Plugins demo https://github.com/openai/chatgpt-retrieval-plugin
 - 借助colab平台自动生成srt字幕 https://github.com/JimLiu/whisper-podcast-subtitles
