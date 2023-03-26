@@ -1,4 +1,8 @@
 ## 一个程序员关于ChatGPT梦开始的地方
+- ChatGPT官网 https://ai.com
+- Midjourney官网 https://midjourney.com
+- 下载各种apk https://apkcombo.com
+
 
 #### 3月26日
 - ChatGPT Plugins demo https://github.com/openai/chatgpt-retrieval-plugin
