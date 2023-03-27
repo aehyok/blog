@@ -10,6 +10,11 @@
   - https://cosoh.com
 #### 3月27日
 - 图片提词工具 https://replicate.com/pharmapsychotic/clip-interrogator
+- openai whisper 音频转字幕、中文字幕可转英文字幕
+  - https://github.com/openai/whisper    
+  - https://www.youtube.com/watch?v=kFtrvdriLU8
+  - https://www.youtube.com/watch?v=mEbA26dO-xI
+  - 
 #### 3月26日
 - ChatGPT Plugins demo https://github.com/openai/chatgpt-retrieval-plugin
 - 借助colab平台自动生成srt字幕 https://github.com/JimLiu/whisper-podcast-subtitles
