@@ -15,6 +15,9 @@
   - 实践详情 https://mp.weixin.qq.com/s/i4w2qpL1P0mZk4qQY_BznA
   - 使用技术  llama-index、langchain、ChatGPT
 - 通过myGPTReader了解到 https://slack.com (bmpi.dev)
+- llama-index 文档地址 https://gpt-index.readthedocs.io/en/latest/reference/embeddings.html
+- whisper 应用 https://github.com/Ayanaminn/N46Whisper
+- youtobe双语字幕生成
 #### 3月27日
 - 图片提词工具 https://replicate.com/pharmapsychotic/clip-interrogator
 - openai whisper 音频转字幕、中文字幕可转英文字幕
