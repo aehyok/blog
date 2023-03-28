@@ -8,6 +8,8 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
+#### 3月28日
+- ai生成视频 https://app.runwayml.com
 #### 3月27日
 - 图片提词工具 https://replicate.com/pharmapsychotic/clip-interrogator
 - openai whisper 音频转字幕、中文字幕可转英文字幕
