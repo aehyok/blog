@@ -11,14 +11,16 @@
 #### 3月28日
 - ai生成视频 https://app.runwayml.com
 - 中英双语对话语言模型 https://github.com/THUDM/ChatGLM-6B
-- 
+- 自己动手实践知识库私人助理
+  - 实践详情 https://mp.weixin.qq.com/s/i4w2qpL1P0mZk4qQY_BznA
+  - 使用技术  llama-index、langchain、ChatGPT
+- 通过myGPTReader了解到 https://slack.com (bmpi.dev)
 #### 3月27日
 - 图片提词工具 https://replicate.com/pharmapsychotic/clip-interrogator
 - openai whisper 音频转字幕、中文字幕可转英文字幕
   - https://github.com/openai/whisper    
   - https://www.youtube.com/watch?v=kFtrvdriLU8
   - https://www.youtube.com/watch?v=mEbA26dO-xI
-  - 
 #### 3月26日
 - ChatGPT Plugins demo https://github.com/openai/chatgpt-retrieval-plugin
 - 借助colab平台自动生成srt字幕 https://github.com/JimLiu/whisper-podcast-subtitles
@@ -40,3 +42,7 @@
 #### 3月22日
 - ChatGPT官网发布插件 https://platform.openai.com/docs/plugins/introduction
 - 插件可申请试用和api调用waitlist https://openai.com/waitlist/plugins
+#### 3月21日
+- 自己动手实践Embedding模型
+  - 实践详情 https://mp.weixin.qq.com/s/Vntxc4ODqoN7_ty9uD0Qzw
+  - 使用技术 ChatGPT Embedding、Qrdant向量数据库、go语言实践 
