@@ -19,6 +19,7 @@
 - whisper 应用 https://github.com/Ayanaminn/N46Whisper
 - youtobe双语字幕生成 https://alexzhangji-firelink-streamlit-webapp-9fdlcc.streamlit.app/
 - openai官网接口在线测试 https://github.com/openai/openai-cookbook
+- vue2 nodejs openai 几乎所有接口对接 https://github.com/202252197/ChatGPT_JCM
 #### 3月27日
 - 图片提词工具 https://replicate.com/pharmapsychotic/clip-interrogator
 - openai whisper 音频转字幕、中文字幕可转英文字幕
