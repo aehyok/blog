@@ -8,6 +8,14 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
+  
+#### 3月29日
+- 下载视频
+  - https://github.com/yt-dlp/yt-dlp (自己试用真的好用)
+  - https://github.com/ytdl-org/youtube-dl
+- ffmpeg
+- 根本文本内容生成视频开源工具：https://github.com/celebv-text
+- 图片网站：https://civitai.com
 #### 3月28日
 - ai生成视频 https://app.runwayml.com
 - 中英双语对话语言模型 https://github.com/THUDM/ChatGLM-6B
