@@ -9,6 +9,8 @@
 - ai云典 
   - https://cosoh.com
   
+#### 3月30日
+- 比Elastich Search轻量 https://github.com/meilisearch/meilisearch
 #### 3月29日
 - 下载视频
   - https://github.com/yt-dlp/yt-dlp (自己试用真的好用)
