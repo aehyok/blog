@@ -17,6 +17,7 @@
 - 根本文本内容生成视频开源工具：https://github.com/celebv-text
 - 图片网站：https://civitai.com
 - colab加载drive云盘文件 https://zhuanlan.zhihu.com/p/109634905
+- Elastich Search 可以存储Embedding 向量数据 https://zhuanlan.zhihu.com/p/80737146
 #### 3月28日
 - ai生成视频 https://app.runwayml.com
 - 中英双语对话语言模型 https://github.com/THUDM/ChatGLM-6B
