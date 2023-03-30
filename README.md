@@ -9,6 +9,12 @@
 - ai云典 
   - https://cosoh.com
   
+#### 3月31日
+- 处理PDF https://www.chatpdf.com
+- 帮助视障群体应用 
+  - https://www.bemyeyes.com
+  - https://www.microsoft.com/en-us/ai/seeing-ai
+- 免费提供ChatGPT账号和https://freeopenai.xyz
 #### 3月30日
 - 比Elastich Search轻量 https://github.com/meilisearch/meilisearch
 - 服务器托管云 https://streamlit.io
