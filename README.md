@@ -11,6 +11,12 @@
   
 #### 3月30日
 - 比Elastich Search轻量 https://github.com/meilisearch/meilisearch
+- 服务器托管云 https://streamlit.io
+- llama-index 支持哪些文件类型 https://llamahub.ai
+- pdf 阅读
+  - https://github.com/mayooear/gpt4-pdf-chatbot-langchain
+  - https://github.com/mayooear/gpt4-pdf-chatbot-langchain  
+ - https://github.com/jdepoix/youtube-transcript-api
 #### 3月29日
 - 下载视频
   - https://github.com/yt-dlp/yt-dlp (自己试用真的好用)
