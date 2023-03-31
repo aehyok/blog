@@ -17,6 +17,8 @@
 - 免费提供ChatGPT账号和https://freeopenai.xyz
 - Midjourney 出图示例 https://aituts.com/how-to-create-actual-ai-generated-logos/
 - 图片加工https://www.canva.com/zh_cn/
+- 字幕转换为文章（可下载安装，然后切换中文，有一个导出文本）
+  - https://github.com/SubtitleEdit/subtitleedit
 #### 3月30日
 - 比Elastich Search轻量 https://github.com/meilisearch/meilisearch
 - 服务器托管云 https://streamlit.io
