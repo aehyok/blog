@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./chunks/framework.294d0221.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/2023-02-10-单例模式.md","lastUpdated":1680267196000}'),r={name:"javascript/2023-02-10-单例模式.md"};function s(c,o,_,n,p,d){return e(),a("div")}const f=t(r,[["render",s]]);export{m as __pageData,f as default};
