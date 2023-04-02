@@ -10,6 +10,9 @@
   - https://cosoh.com
   
 #### 4月2日
+- giffgaff激活
+  - https://zhuanlan.zhihu.com/p/354518858
+#### 4月1日
 - Midjourney学习资源 https://zl49so8lbq.feishu.cn/wiki/wikcn5xErT0r0KlluyOur0an2yb
 #### 3月31日
 - 处理PDF https://www.chatpdf.com
