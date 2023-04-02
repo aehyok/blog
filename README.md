@@ -12,6 +12,7 @@
 #### 4月2日
 - giffgaff激活
   - https://zhuanlan.zhihu.com/p/354518858
+- 根据srt文件 可生成双语字幕文件 https://github.com/jesselau76/srt-gpt-translator
 #### 4月1日
 - Midjourney学习资源 https://zl49so8lbq.feishu.cn/wiki/wikcn5xErT0r0KlluyOur0an2yb
 #### 3月31日
