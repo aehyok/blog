@@ -14,6 +14,7 @@
   - https://www.autodl.com
   - https://www.codewithgpu.com/i/CrazyBoyM/sd_dreambooth_extension_webui/dreambooth-dreamartist-for-webui
   - https://www.bilibili.com/video/BV1K14y1H7Me/
+- skype 可直接与bing会话
 #### 4月2日
 - giffgaff激活
   - https://zhuanlan.zhihu.com/p/354518858
