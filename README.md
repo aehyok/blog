@@ -11,7 +11,9 @@
   
 #### 4月4日
 - 生成图片 https://labs.openai.com/
-- mac录屏工具 https://www.screen.studio
+- mac录屏工具 
+  - https://www.screen.studio
+  - QuickTime Player
 #### 4月3日
 - 国内跑 Stable diffusion 
   - https://www.autodl.com
