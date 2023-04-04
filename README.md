@@ -13,7 +13,7 @@
 - 生成图片 https://labs.openai.com/
 - mac录屏工具 
   - https://www.screen.studio
-  - QuickTime Player
+  - QuickTime Player+ken burns
 #### 4月3日
 - 国内跑 Stable diffusion 
   - https://www.autodl.com
