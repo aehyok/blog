@@ -9,6 +9,8 @@
 - ai云典 
   - https://cosoh.com
 #### 4月6日
+- 开通 GPT-4: http://aka.ms/oai/get-gpt4
+- 开通 Azure OpenAI Service: http://aka.ms/oai/access 
 - Claude ai申请 https://www.anthropic.com/product
 #### 4月4日
 - 生成图片 https://labs.openai.com/
