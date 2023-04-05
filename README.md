@@ -8,7 +8,8 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
-  
+#### 4月6日
+- Claude ai申请 https://www.anthropic.com/product
 #### 4月4日
 - 生成图片 https://labs.openai.com/
 - mac录屏工具 
