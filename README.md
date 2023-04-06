@@ -8,7 +8,29 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
-  
+#### 4月6日
+- 开通 GPT-4: http://aka.ms/oai/get-gpt4
+- 开通 Azure OpenAI Service: http://aka.ms/oai/access 
+- Claude ai申请 https://www.anthropic.com/product
+#### 4月4日
+- 生成图片 https://labs.openai.com/
+- mac录屏工具 
+  - https://www.screen.studio
+  - QuickTime Player+ken burns
+#### 4月3日
+- 国内跑 Stable diffusion 
+  - https://www.autodl.com
+  - https://www.codewithgpu.com/i/CrazyBoyM/sd_dreambooth_extension_webui/dreambooth-dreamartist-for-webui
+  - https://www.bilibili.com/video/BV1K14y1H7Me/
+- skype 可直接与bing会话
+- 自己动手实践fine-tuning 微调
+#### 4月2日
+- giffgaff激活
+  - https://zhuanlan.zhihu.com/p/354518858
+- 根据srt文件 可生成双语字幕文件 https://github.com/jesselau76/srt-gpt-translator
+- cloudflare 邮箱绑定 https://blog.waterlemons2k.com/Cloudflare-Email-and-Gmail
+#### 4月1日
+- Midjourney学习资源 https://zl49so8lbq.feishu.cn/wiki/wikcn5xErT0r0KlluyOur0an2yb
 #### 3月31日
 - 处理PDF https://www.chatpdf.com
 - 帮助视障群体应用 
@@ -17,6 +39,8 @@
 - 免费提供ChatGPT账号和https://freeopenai.xyz
 - Midjourney 出图示例 https://aituts.com/how-to-create-actual-ai-generated-logos/
 - 图片加工https://www.canva.com/zh_cn/
+- 字幕转换为文章（可下载安装，然后切换中文，有一个导出文本）
+  - https://github.com/SubtitleEdit/subtitleedit
 #### 3月30日
 - 比Elastich Search轻量 https://github.com/meilisearch/meilisearch
 - 服务器托管云 https://streamlit.io
