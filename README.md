@@ -16,6 +16,7 @@
 - react next知识库 https://github.com/c121914yu/FastGPT
 - midjourney教程 https://learningprompt.wiki/docs/midjourney-learning-path
 - meta AI https://segment-anything.com/
+- 无数的ChatGPT AI 应用 https://gitlab.com/awesomeai/awesome-chatgpt-zh
 #### 4月6日
 - 开通 GPT-4: http://aka.ms/oai/get-gpt4
 - 开通 Azure OpenAI Service: http://aka.ms/oai/access 
