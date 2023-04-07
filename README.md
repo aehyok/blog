@@ -10,8 +10,10 @@
   - https://cosoh.com
 
 #### 4月7日
+- azure openai审核已通过，等待 GPT-4的审核 https://www.sunpop.cn/chatgpt_in_china_with_azure_openai_api_free_1_year_odoo/
 - react next知识库 https://github.com/c121914yu/FastGPT
 - midjourney教程 https://learningprompt.wiki/docs/midjourney-learning-path
+- meta AI https://segment-anything.com/
 #### 4月6日
 - 开通 GPT-4: http://aka.ms/oai/get-gpt4
 - 开通 Azure OpenAI Service: http://aka.ms/oai/access 
