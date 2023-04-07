@@ -8,6 +8,9 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
+
+#### 4月7日
+- react next知识库 https://github.com/c121914yu/FastGPT
 #### 4月6日
 - 开通 GPT-4: http://aka.ms/oai/get-gpt4
 - 开通 Azure OpenAI Service: http://aka.ms/oai/access 
