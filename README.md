@@ -11,6 +11,7 @@
 
 #### 4月8日
 github copilot平替 https://github.com/TabbyML/tabby
+一键搭建代理 https://github.com/yeahwu/v2ray-wss
 #### 4月7日
 - azure openai审核已通过，等待 GPT-4的审核 https://www.sunpop.cn/chatgpt_in_china_with_azure_openai_api_free_1_year_odoo/
 - azure openai 文档参考
