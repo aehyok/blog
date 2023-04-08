@@ -10,6 +10,7 @@
   - https://cosoh.com
 
 #### 4月8日
+- 与文件对话 https://github.com/guangzhengli/ChatFiles
 - 3D AI https://wonderdynamics.com/
 github copilot平替 https://github.com/TabbyML/tabby
 一键搭建代理 https://github.com/yeahwu/v2ray-wss
