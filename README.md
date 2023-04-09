@@ -9,6 +9,9 @@
 - ai云典 
   - https://cosoh.com
 ## 4月10日
+- langchain 解析过程
+  - https://blog.csdn.net/qq_35361412/article/details/129797199
+  - https://python.langchain.com/en/latest/modules/agents.html 
 - 调用模型通用工具 
   - https://nat.dev/
   - https://github.com/nat/openplayground
