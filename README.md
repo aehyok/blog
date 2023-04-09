@@ -9,6 +9,8 @@
 - ai云典 
   - https://cosoh.com
 ## 4月9日
+- ChatGPT支持国家列表
+  - https://platform.openai.com/docs/supported-countries
 - azure openai
   - 本地调用成功  
   - https://oai.azure.com
