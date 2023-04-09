@@ -9,6 +9,10 @@
 - ai云典 
   - https://cosoh.com
 ## 4月9日
+- azure openai 
+  - https://oai.azure.com
+  - 文档 https://learn.microsoft.com/zh-cn/azure/cognitive-services/openai/
+  - 文档 https://learn.microsoft.com/zh-cn/azure/cognitive-services/openai/reference
 - 一元机场 https://zhverge.com
 - github 350 star
 - juejin 516 followers
