@@ -9,7 +9,8 @@
 - ai云典 
   - https://cosoh.com
 ## 4月9日
-- azure openai 
+- azure openai
+  - 本地调用成功  
   - https://oai.azure.com
   - 文档 https://learn.microsoft.com/zh-cn/azure/cognitive-services/openai/
   - 文档 https://learn.microsoft.com/zh-cn/azure/cognitive-services/openai/reference
