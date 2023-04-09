@@ -8,6 +8,12 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
+## 4月10日
+- 调用模型通用工具 
+  - https://nat.dev/
+  - https://github.com/nat/openplayground
+- 监测人物的心情 https://github.com/rondinellimorais/facial-expression-recognition
+- 类似于d-id生成视频 https://github.com/Winfredy/SadTalker
 ## 4月9日
 - 欧易到depay充值 https://5best1s.com/okx%E8%B4%AD%E4%B9%B0usdt%E6%B3%B0%E8%BE%BE%E5%B8%81/
 - ChatGPT支持国家列表
@@ -24,7 +30,7 @@
 - wechat 82 followers
 #### 4月8日
 - 与文件对话 https://github.com/guangzhengli/ChatFiles
-- 3D AI https://wonderdynamics.com/
+- 申请 3D AI https://wonderdynamics.com/
 github copilot平替 https://github.com/TabbyML/tabby
 一键搭建代理 https://github.com/yeahwu/v2ray-wss
 #### 4月7日
