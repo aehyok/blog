@@ -9,6 +9,7 @@
 - ai云典 
   - https://cosoh.com
 ## 4月9日
+- 欧易到depay充值 https://5best1s.com/okx%E8%B4%AD%E4%B9%B0usdt%E6%B3%B0%E8%BE%BE%E5%B8%81/
 - ChatGPT支持国家列表
   - https://platform.openai.com/docs/supported-countries
 - azure openai
