@@ -8,6 +8,11 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
+
+## 4月11日
+- langchain 解析
+  -  https://nathankjer.com/introduction-to-langchain/
+  - 将英文视频转换为中文 https://youtu.be/2xxziIWmaSA
 ## 4月10日
 - azure免费功能有那些 https://azure.microsoft.com/zh-cn/pricing/purchase-options/pay-as-you-go/
 - go语言开发的开源向量数据库 https://github.com/milvus-io/milvus
