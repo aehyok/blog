@@ -9,6 +9,7 @@
 - ai云典 
   - https://cosoh.com
 ## 4月10日
+- go语言开发的开源向量数据库 https://github.com/milvus-io/milvus
 - langchain 解析过程
   - https://blog.csdn.net/qq_35361412/article/details/129797199
   - https://python.langchain.com/en/latest/modules/agents.html 
