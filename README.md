@@ -10,7 +10,10 @@
   - https://cosoh.com
 
 ## 4月11日
-- - Claude ai
+- 文字生成网页UI
+  - https://github.com/camenduru/text-generation-webui-colab
+  - https://github.com/oobabooga/text-generation-webui 
+- Claude ai
   - 申请 https://www.anthropic.com/product
   - 体验 https://nat.dev/
   - 开源 https://github.com/nat/openplayground
