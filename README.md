@@ -10,6 +10,10 @@
   - https://cosoh.com
 
 ## 4月11日
+- 沉浸式翻译 https://immersive-translate.owenyoung.com/
+- 阿里开源基于函数部署stable diffuson 
+  - https://github.com/devsapp/fc-stable-diffuson 
+  - 个人实践部署 https://mp.weixin.qq.com/s/wpc_lMXZOr9u1U6ajBhqeQ
 - langchain 解析
   -  https://nathankjer.com/introduction-to-langchain/
   - 将英文视频转换为中文 https://youtu.be/2xxziIWmaSA
