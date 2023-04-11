@@ -10,6 +10,10 @@
   - https://cosoh.com
 
 ## 4月11日
+- - Claude ai
+  - 申请 https://www.anthropic.com/product
+  - 体验 https://nat.dev/
+  - 开源 https://github.com/nat/openplayground
 - 沉浸式翻译 https://immersive-translate.owenyoung.com/
 - 阿里开源基于函数部署stable diffuson 
   - https://github.com/devsapp/fc-stable-diffuson 
