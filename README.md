@@ -10,6 +10,8 @@
   - https://cosoh.com
 ## 4月12日
 - 自主实现你设置的任务 https://github.com/Torantulino/Auto-GPT
+- claude slack 在线不用waitlist体验
+  - https://www.anthropic.com/claude-in-slack 
 ## 4月11日
 - 文字生成网页UI
   - https://github.com/camenduru/text-generation-webui-colab
