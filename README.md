@@ -8,7 +8,8 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
-
+## 4月12日
+- 自主实现你设置的任务 https://github.com/Torantulino/Auto-GPT
 ## 4月11日
 - 文字生成网页UI
   - https://github.com/camenduru/text-generation-webui-colab
