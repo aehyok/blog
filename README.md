@@ -8,6 +8,12 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
+## 4月13日
+- 部署Fast-GPT
+  - 项目地址 https://github.com/c121914yu/FastGPT
+  - 微信支持 https://github.com/yangfuhe/node-wxpay
+- LangFlow
+  - 是基于LangChain和React-Flow搭建的一套工作流系统  
 ## 4月12日
 - 自主实现你设置的任务 https://github.com/Torantulino/Auto-GPT
 - claude slack 在线不用waitlist体验
