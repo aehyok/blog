@@ -8,6 +8,9 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
+## 4月14日
+- 马斯克力荐AI https://turing.ai/
+
 ## 4月13日
 - llama-index+ langchain
   - langchain https://mp.weixin.qq.com/s/zHJDYJBJCwHxvnIWnd7JkA
