@@ -9,6 +9,12 @@
 - ai云典 
   - https://cosoh.com
 ## 4月13日
+- llama-index+ langchain
+  - langchain https://mp.weixin.qq.com/s/zHJDYJBJCwHxvnIWnd7JkA
+  - langchain https://mp.weixin.qq.com/s/WkEi6Sea9IWgoei-w7MUzA
+  - llama-index https://github.com/jerryjliu/llama_index
+  - llama-index https://www.cnblogs.com/v3ucn/p/17285124.html
+  - https://weibo.com/1727858283/MBaMRrRin
 - 部署Fast-GPT
   - 项目地址 https://github.com/c121914yu/FastGPT
   - 微信支持 https://github.com/yangfuhe/node-wxpay
