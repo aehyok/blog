@@ -10,7 +10,9 @@
   - https://cosoh.com
 ## 4月14日
 - 马斯克力荐AI https://turing.ai/
-
+- 部署fastgpt
+  - https://kjqvjse66l.feishu.cn/docx/DmLedTWtUoNGX8xui9ocdUEjnNh
+  - https://github.com/c121914yu/FastGPT 
 ## 4月13日
 - llama-index+ langchain
   - langchain https://mp.weixin.qq.com/s/zHJDYJBJCwHxvnIWnd7JkA
