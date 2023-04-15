@@ -10,6 +10,7 @@
   - https://cosoh.com
 ## 4月15日
 - next.js https://www.nextjs.cn/
+- auto-gpt 免费在线网站体验 https://www.cognosys.ai/
 ## 4月14日
 - 马斯克力荐AI https://turing.ai/
 - 部署fastgpt
