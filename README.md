@@ -8,6 +8,8 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
+## 4月15日
+- next.js https://www.nextjs.cn/
 ## 4月14日
 - 马斯克力荐AI https://turing.ai/
 - 部署fastgpt
