@@ -10,6 +10,7 @@
   - https://cosoh.com
 ## 4月16日
 - 准备安装试玩一下Auto-gpt
+- openai后台key可以自定义名称
 ## 4月15日
 - next.js https://www.nextjs.cn/
 - auto-gpt 免费在线网站体验 https://www.cognosys.ai/
