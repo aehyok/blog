@@ -10,6 +10,7 @@
   - https://cosoh.com
 
 ## 4月17日
+- 支付宝 https://juejin.cn/post/7180312322085224508#comment
 - onekey 申请 https://card.onekey.so/
   - https://0xo.net/491 
   - https://tumutanzi.com/archives/17027
