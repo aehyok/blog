@@ -8,6 +8,12 @@
 - 下载各种apk https://apkcombo.com
 - ai云典 
   - https://cosoh.com
+
+## 4月17日
+- onekey 申请 https://card.onekey.so/
+  - https://0xo.net/491 
+  - https://tumutanzi.com/archives/17027
+  - https://help.onekey.so/hc/zh-cn/articles/6762124467343-%E5%A6%82%E4%BD%95%E5%BC%80%E9%80%9A%E5%B9%B6%E4%BD%BF%E7%94%A8-OneKey-Card
 ## 4月16日
 - 准备安装试玩一下Auto-gpt
 - openai后台key可以自定义名称
