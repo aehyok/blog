@@ -8,8 +8,18 @@
 - 下载各种apk https://apkcombo.com
 - langchain文档 https://js.langchain.com
 ## 4月18日
-- 自动代理工具 https://github.com/muellerberndt/micro-gpt/
-- execute_python, execute_shell, read_file, web_search, web_scrape, or talk_to_user
+- micro-gpt 自动代理工具 
+  - https://github.com/muellerberndt/micro-gpt/
+  - execute_python, execute_shell, read_file, web_search, web_scrape, or talk_to_user
+- 低代码平台 
+  - https://github.com/illacloud/illa-builder
+  - 在线版本 https://illacloud.com/
+ - AgentGPT 
+  - next.js react langchain   
+  - https://github.com/reworkd/AgentGPT
+ - polyglot
+  -   
+  - https://github.com/liou666/polyglot
 ## 4月17日
 - 支付宝 https://juejin.cn/post/7180312322085224508#comment
 - onekey 申请 https://card.onekey.so/
