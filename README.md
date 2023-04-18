@@ -6,7 +6,11 @@
 - 文本转视频
   - https://www.d-id.com
 - 下载各种apk https://apkcombo.com
-- langchain文档 https://js.langchain.com
+- 个人项目
+  - 参考项目  https://github.com/c121914yu/FastGPT 
+  - GPT langchain文档 https://js.langchain.com
+  - 框架 next.js https://www.nextjs.cn/
+  - ui库 https://chakra-ui.com/getting-started
 ## 4月18日
 - micro-gpt 自动代理工具 
   - https://github.com/muellerberndt/micro-gpt/
@@ -18,7 +22,6 @@
   - next.js react langchain   
   - https://github.com/reworkd/AgentGPT
  - polyglot
-  -   
   - https://github.com/liou666/polyglot
 ## 4月17日
 - 支付宝 https://juejin.cn/post/7180312322085224508#comment
