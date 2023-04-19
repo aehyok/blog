@@ -11,6 +11,9 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
+
+## 4月19日
+- 马斯克AI truthgpt.one
 ## 4月18日
 - micro-gpt 自动代理工具 
   - https://github.com/muellerberndt/micro-gpt/
