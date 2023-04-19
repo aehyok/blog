@@ -14,6 +14,12 @@
 
 ## 4月19日
 - 马斯克AI truthgpt.one
+- azure 语音
+  - https://speech.microsoft.com/portal
+  - https://github.com/Azure-Samples/cognitive-services-speech-sdk
+  - https://learn.microsoft.com/zh-cn/azure/cognitive-services/speech-service/ 
+- go语言的 文字转语音  语音转文字
+  - https://github.com/microsoft/cognitive-services-speech-sdk-go 
 ## 4月18日
 - micro-gpt 自动代理工具 
   - https://github.com/muellerberndt/micro-gpt/
