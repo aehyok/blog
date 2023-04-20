@@ -14,7 +14,9 @@
 
 ## 4月20日
 - 解决ChatGPT官网访问各种异常
-  - https://github.com/xcanwin/KeepChatGPT· 
+  - https://github.com/xcanwin/KeepChatGPT
+- 文本转向量（本地的不调用openai）
+  - https://github.com/shibing624/text2vec 
 ## 4月19日
 - 马斯克AI truthgpt.one
 - azure 语音
