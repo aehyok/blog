@@ -12,6 +12,9 @@
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
 
+## 4月20日
+- 解决ChatGPT官网访问各种异常
+  - https://github.com/xcanwin/KeepChatGPT· 
 ## 4月19日
 - 马斯克AI truthgpt.one
 - azure 语音
