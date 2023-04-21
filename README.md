@@ -1,4 +1,4 @@
-## 一个程序员关于ChatGPT梦开始的地方
+## 一个程序员关于ChatGPT学习的过程记录
 - ChatGPT官网 https://ai.com
 - Midjourney
   - 官网 https://midjourney.com
@@ -11,7 +11,8 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
-
+## 4月21日
+- 科学上网详解 https://github.com/haoel/haoel.github.io
 ## 4月20日
 - 解决ChatGPT官网访问各种异常
   - https://github.com/xcanwin/KeepChatGPT
