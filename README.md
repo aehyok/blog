@@ -13,6 +13,7 @@
   - ui库 https://chakra-ui.com/getting-started
 ## 4月23日
 - 开源AI语音合成技术 https://github.com/suno-ai/bark
+- GPT-4免费使用的网站 https://chat.forefront.ai/ 不知道能持续多久
 ## 4月22日
 - 降低官网ChatGPT抱错 https://github.com/xcanwin/KeepChatGPT
 ## 4月21日
