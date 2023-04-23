@@ -14,7 +14,9 @@
 ## 4月22日
 - 降低官网ChatGPT抱错 https://github.com/xcanwin/KeepChatGPT
 ## 4月21日
-- 科学上网详解 https://github.com/haoel/haoel.github.io
+- 科学上网详解 
+  - https://github.com/haoel/haoel.github.io
+  - https://github.com/zhayujie/chatgpt-on-wechat/issues/351
 ## 4月20日
 - 解决ChatGPT官网访问各种异常
   - https://github.com/xcanwin/KeepChatGPT
