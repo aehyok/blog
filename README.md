@@ -13,6 +13,7 @@
   - ui库 https://chakra-ui.com/getting-started
 ## 4月24日
 - linux clash https://github.com/wanhebin/clash-for-linux
+- clash window 汉化 https://github.com/BoyceLig/Clash_Chinese_Patch
 - react ui https://www.radix-ui.com/
 ## 4月23日
 - 开源AI语音合成技术 https://github.com/suno-ai/bark
