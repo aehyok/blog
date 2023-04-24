@@ -11,8 +11,9 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
-## linux clash
-- https://github.com/wanhebin/clash-for-linux
+## 4月24日
+- linux clash https://github.com/wanhebin/clash-for-linux
+- react ui https://www.radix-ui.com/
 ## 4月23日
 - 开源AI语音合成技术 https://github.com/suno-ai/bark
 - GPT-4免费使用的网站 https://chat.forefront.ai/ 不知道能持续多久
