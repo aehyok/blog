@@ -11,6 +11,13 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
+
+## 4月25日
+- 换了个梯子ChatGPT效果还不错
+- langchain关于embeddings查询的弊端，改进
+  - https://twitter.com/river_leaves/status/1650331781781135362
+  - https://note.com/mahlab/n/n7d72e83904cc
+  - https://blog.langchain.dev/improving-document-retrieval-with-contextual-compression/
 ## 4月24日
 - linux clash https://github.com/wanhebin/clash-for-linux
 - clash window 汉化 https://github.com/BoyceLig/Clash_Chinese_Patch
