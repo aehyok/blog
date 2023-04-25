@@ -13,6 +13,8 @@
   - ui库 https://chakra-ui.com/getting-started
 
 ## 4月25日
+- chatglm 开放自己的openai接口 以及embeddings
+  - https://github.com/ninehills/chatglm-openai-api
 - clash 使用详解 https://docs.cfw.lbyczf.com/
 - 换了个梯子ChatGPT效果还不错
 - langchain关于embeddings查询的弊端，改进
