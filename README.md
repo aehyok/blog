@@ -12,6 +12,10 @@
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
 
+## 4月26日
+- 部署 Linux centos clash 代理
+- 本地基于向量的本地文档检索工具 https://github.com/freedmand/semantra
+- 字幕的翻译脚本 https://github.com/gnehs/subtitle-translator-electron
 ## 4月25日
 - chatglm 开放自己的openai接口 以及embeddings
   - https://github.com/ninehills/chatglm-openai-api
