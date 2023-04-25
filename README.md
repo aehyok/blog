@@ -22,7 +22,9 @@
   - https://note.com/mahlab/n/n7d72e83904cc
   - https://blog.langchain.dev/improving-document-retrieval-with-contextual-compression/
 ## 4月24日
-- linux clash https://github.com/wanhebin/clash-for-linux
+- linux clash 
+  - https://blog.iswiftai.com/posts/clash-linux/ 
+  - https://github.com/wanhebin/clash-for-linux
 - clash window 汉化 https://github.com/BoyceLig/Clash_Chinese_Patch
 - react ui https://www.radix-ui.com/
 ## 4月23日
