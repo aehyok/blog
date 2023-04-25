@@ -13,6 +13,7 @@
   - ui库 https://chakra-ui.com/getting-started
 
 ## 4月25日
+- clash 使用详解 https://docs.cfw.lbyczf.com/
 - 换了个梯子ChatGPT效果还不错
 - langchain关于embeddings查询的弊端，改进
   - https://twitter.com/river_leaves/status/1650331781781135362
