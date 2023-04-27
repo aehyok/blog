@@ -1,3 +1,5 @@
+import { link } from "fs";
+import { text } from "stream/consumers";
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
@@ -14,7 +16,7 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "我的笔记", link: "/daily/" },
       { text: "前端总结", link: "/javascript/" },
-      { text: "剪映教程", link: "/video/" },
+      { text: "langchain中文教程", link: "/langchain/" },
       { text: "我的掘金", link: "https://juejin.cn/user/2242659452477016" },
       { text: "关于我", link: "/me/" },
     ],
@@ -25,58 +27,85 @@ export default defineConfig({
     },
 
     sidebar: {
-      "/video/": [
+      "/langchain/": [
         {
-          text: '剪映教程',
+          text: "langchain",
           items: [
-            { text: "current", link: "/video/" },
-            { text: "目录", link: "/video/dir" },
-            { text: "01.认识剪映界面 (04-09)", link: "/video/001/01/3"},
-            
-            { text: "02.剪映基础工具 (11-39)", link: "/video/001/02/10"},
-
-            { text: "03.剪映进阶工具 (41-81)", link: "/video/001/03/40"},
-
-            { text: "04.剪映高阶工具(83-100)", link: "/video/001/04/82"},
-
-            { text: "05.剪映相关问题(102-111)", link: "/video/001/05/101"}
-
-          ]
+            { text: "快速入门", link: "/video/001/01/3" },
+            {
+              text: "Components组件",
+              collapsed: true,
+              items: [
+                {
+                  text: "Schema",
+                  items: [
+                    { text: "Chat Messages", link: "" },
+                    { text: "Document", link: "" },
+                    { text: "Examples", link: "" },
+                  ],
+                },
+                {
+                  text: "Models",
+                  items: [
+                    { text: "Chat Models", link: "" },
+                    { text: "Embeddings", link: "" },
+                    { text: "LLMs", link: "" },
+                  ],
+                },
+                {
+                  text: "Prompts",
+                  items: [
+                    { text: "Prompt Templates", link: "" },
+                    { text: "Output Parsers", link: "" },
+                    { text: "Example Selectors", link: "" },
+                  ],
+                },
+                { 
+                  text: "Indexes", 
+                  items: [
+                    { text: "Document Loaders", link: "" },
+                    { text: "Text Splitters", link: "" },
+                    { text: "Vector Stores", link: "" },
+                    { text: "Retrievers", link: "" },
+                  ],
+                },
+                { text: "Memory", link: "/video/005/01" },
+                { text: "Chains", link: "/video/005/01" },
+                { text: "Agents", link: "/video/005/01" },
+              ],
+            },
+            { text: "使用示例", link: "/video/001/03/40" },
+            { text: "生产环境", link: "/video/001/04/82" },
+            { text: "生态系统", link: "/video/001/05/101" },
+            { text: "API参考", link: "/video/001/05/101" },
+          ],
         },
         {
-          text: '视频剪辑的完整步骤',
-          items: [
-            { text: "1-5", link: "/video/002/01" }
-          ]
+          text: "视频剪辑的完整步骤",
+          items: [{ text: "1-5", link: "/video/002/01" }],
         },
         {
-          text: '抖音相关配置',
-          items: [
-            { text: "1-11", link: "/video/003/01" }
-          ]
+          text: "抖音相关配置",
+          items: [{ text: "1-11", link: "/video/003/01" }],
         },
         {
-          text: '抖音运营技巧',
-          items: [
-            { text: "1-4", link: "/video/004/01" }
-          ]
+          text: "抖音运营技巧",
+          items: [{ text: "1-4", link: "/video/004/01" }],
         },
         {
-          text: '抖音飞书文档',
-          items: [
-            { text: "1-4", link: "/video/005/01" }
-          ]
-        }
+          text: "抖音飞书文档",
+          items: [{ text: "1-4", link: "/video/005/01" }],
+        },
       ],
       "/javascript/": [
         {
-          text: 'JavaScript积累',
+          text: "JavaScript积累",
           items: [
             { text: "社会", link: "/javascript/" },
             { text: "2022-06年中总结", link: "/life/2022-06" },
             { text: "2021-12年终总结", link: "/life/2021-12" },
-          ]
-        }
+          ],
+        },
       ],
       "/daily/": [
         {
@@ -127,15 +156,15 @@ export default defineConfig({
   vite: {
     server: {
       host: true,
-      port: 3000,
-      open: true,
+      port: 3333,
+      open: false,
       proxy: {
-        '/so': {
-          target: 'http://139.159.245.209:5000', // 代理接口
+        "/so": {
+          target: "http://139.159.245.209:5000", // 代理接口
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/so/, '')
-        }
-      }
+          rewrite: (path) => path.replace(/^\/so/, ""),
+        },
+      },
     },
   },
 });
