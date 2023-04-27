@@ -1,3 +1,13 @@
+<!--
+ * @Author: 刘启明 455043818@qq.com
+ * @Date: 2023-01-31 14:51:26
+ * @LastEditors: 刘启明 455043818@qq.com
+ * @LastEditTime: 2023-04-17 10:59:46
+ * @FilePath: \blog\docs\javascript\2023-01-31-docker-dotnet.md
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
+-->
 ## Dockerfile下的内容
 ```
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
