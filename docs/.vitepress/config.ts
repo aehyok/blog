@@ -31,7 +31,7 @@ export default defineConfig({
         {
           text: "langchain",
           items: [
-            { text: "快速入门", link: "/video/001/01/3" },
+            { text: "开始", link: "/video/001/01/3" },
             {
               text: "Components组件",
               collapsed: true,
