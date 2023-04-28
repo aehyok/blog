@@ -11,7 +11,8 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
-
+## 4月28日
+- 吴恩达课程翻译文本包括工具 https://github.com/zard1152/deepLearningAI/wiki
 ## 4月26日
 - 部署 Linux centos clash 代理
 - 本地基于向量的本地文档检索工具 https://github.com/freedmand/semantra
