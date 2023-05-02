@@ -11,6 +11,12 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
+## 5月3日
+- GPU云厂商
+  - https://www.lanrui-ai.com/
+  - https://www.autodl.com/home
+  - https://openbayes.com/console/signup?r=hawei007_oyun
+  - 阿里云 亚马逊。。。。贵
 ## 4月28日
 - 吴恩达课程翻译文本包括工具 https://github.com/zard1152/deepLearningAI/wiki
 ## 4月26日
