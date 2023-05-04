@@ -14,14 +14,16 @@
 ## 5月4日
 - Chrome-GPT 
   - 开源地址 https://github.com/richardyc/Chrome-GPT
-  - AutoGPT代理，利用 Langchain 和 Selenium 来实现对整个Chrome会话的控制。凭借在网页上交互式滚动、单击和输入文本的能力，AutoGPT 代理可以导航和操作网页内容。
+  - AutoGPT代理，利用 Langchain 和 Selenium 来实现对整个Chrome会话的控制
+  - 凭借在网页上交互式滚动、单击和输入文本的能力，AutoGPT 代理可以导航和操作网页内容。
   - 可实现：购买一个AirPod
   - 可实现：帮我找活动场地并填写联络表格
   - 可实现：预约订好一个餐厅
+  - 有空尝试一下
 - 微软发布革命性AI工具- VALLE
   - https://valle-demo.github.io/
   - 可实现3秒音频样本实现精准模仿人声
-- 可汗学院创始人可汗在Ted上的演讲
+- 可汗学院创始人可汗在Ted上的演讲（教育方面）
   - https://gist.github.com/JimLiu/dc415d30b9ce2174df99696f9e970a17 
 - auto-gpt即将推出官方网站
   - https://t.co/dM5XvcMWIW 可申请waitlist
