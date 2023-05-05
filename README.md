@@ -11,6 +11,8 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
+## 5月6日
+- 正则表达式 https://regexgpt.app/
 ## 5月5日
 - 免费压缩视频mp4的网址 https://www.youcompress.com/zh-cn/mp4/
 - 长文本进行摘要的方法 https://twitter.com/dotey/status/1653985654856904709
