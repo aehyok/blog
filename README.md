@@ -11,6 +11,9 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
+
+## 5月7日
+- 销售商店 https://app.lemonsqueezy.com/
 ## 5月6日
 - 正则表达式生成器 https://regexgpt.app/
 - 可完全离线的知识库搭建 
