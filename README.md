@@ -11,7 +11,8 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
-
+## 5月8日
+- https://github.com/xtekky/gpt4free 还能用吗？？
 ## 5月7日
 - 销售商店 https://app.lemonsqueezy.com/
 ## 5月6日
