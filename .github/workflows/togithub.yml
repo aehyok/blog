@@ -1,30 +1,3 @@
-
-
-李文冠
-xshell
-Xftp-7.0.0094p.exe
-38.3 MB
-Xshell-7.0.0096p.exe
-44.7 MB
-cd ~/.ssh
-vue3前端项目一步一步自动化部署到linux的nginx服务上 - 掘金 (juejin.cn)
-
-juejin.cn
-vue3前端项目一步一步自动化部署到linux的nginx服务上 - 掘金
-作为一个前端，从来没有将自己的项目部署到linux服务器上，看到别人折腾，自己也买来服务器试试，一边学习linux，一边继续折腾前端。
-ssh root@139.159.245.209
-export const jumpMp = ():void => {
-    let url = window.location.origin
-    if (url.indexOf('localhost') > -1 || url.indexOf('172.18.') > -1) {
-        window.location.href = `http://${window.location.hostname}:9535/#/`
-    } else {
-        window.location.href = `${url}/mp/`
-    }
-}
-isGrid
-app
-17.6 MB
-新消息
 name: build to my github
 
 on:
@@ -55,5 +28,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/.vitepress/dist
-​​​
-Shift + Enter 换行
