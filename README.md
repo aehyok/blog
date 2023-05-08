@@ -11,6 +11,36 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
+## 5月8日
+- https://github.com/xtekky/gpt4free 还能用吗？？
+- Midjourney 中国版本 https://www.easygpt.cloud/
+- iproyal或ipcheap购买
+## 5月7日
+- 销售商店 https://app.lemonsqueezy.com/
+## 5月6日
+- 正则表达式生成器 https://regexgpt.app/
+- 可完全离线的知识库搭建 
+  - 开源地址 https://github.com/imClumsyPanda/langchain-ChatGLM
+  - 使用说明 https://www.bilibili.com/video/BV1dv4y1J77z/?spm_id_from=333.999.0.0
+## 5月5日
+- 免费压缩视频mp4的网址 https://www.youcompress.com/zh-cn/mp4/
+- 长文本进行摘要的方法 https://twitter.com/dotey/status/1653985654856904709
+## 5月4日
+- Chrome-GPT 
+  - 开源地址 https://github.com/richardyc/Chrome-GPT
+  - AutoGPT代理，利用 Langchain 和 Selenium 来实现对整个Chrome会话的控制
+  - 凭借在网页上交互式滚动、单击和输入文本的能力，AutoGPT 代理可以导航和操作网页内容。
+  - 可实现：购买一个AirPod
+  - 可实现：帮我找活动场地并填写联络表格
+  - 可实现：预约订好一个餐厅
+  - 有空尝试一下
+- 微软发布革命性AI工具- VALLE
+  - https://valle-demo.github.io/
+  - 可实现3秒音频样本实现精准模仿人声
+- 可汗学院创始人可汗在Ted上的演讲（教育方面）
+  - https://gist.github.com/JimLiu/dc415d30b9ce2174df99696f9e970a17 
+- auto-gpt即将推出官方网站
+  - https://t.co/dM5XvcMWIW 可申请waitlist
 ## 5月3日
 - GPU云厂商
   - https://www.lanrui-ai.com/
