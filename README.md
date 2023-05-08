@@ -15,6 +15,7 @@
 - https://github.com/xtekky/gpt4free 还能用吗？？
 - Midjourney 中国版本 https://www.easygpt.cloud/
 - iproyal或ipcheap购买
+- 万字雄文 ChatGPT背后的语言模型简史 https://www.bmpi.dev/dev/deep-learning/nlp-language-models/
 ## 5月7日
 - 销售商店 https://app.lemonsqueezy.com/
 ## 5月6日
