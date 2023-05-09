@@ -12,8 +12,13 @@
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
 ## 5月9日
-- 代码大模型 
-https://mp.weixin.qq.com/s/f-WwzLcEO-ZJczI-_bZh3Q## 5月8日
+- 代码大模型 https://mp.weixin.qq.com/s/f-WwzLcEO-ZJczI-_bZh3Q
+- qdrant 向量数据库
+  - 开源地址 https://github.com/qdrant/qdrant
+  - 可docker私有化部署 
+  - 云数据库地址 https://cloud.qdrant.io/
+  - 课通过API访问 https://ui.qdrant.tech/#/
+## 5月8日
 - https://github.com/xtekky/gpt4free 还能用吗？？
 - Midjourney 中国版本 https://www.easygpt.cloud/
 - iproyal或ipcheap购买
