@@ -11,7 +11,9 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
-## 5月8日
+## 5月9日
+- 代码大模型 
+https://mp.weixin.qq.com/s/f-WwzLcEO-ZJczI-_bZh3Q## 5月8日
 - https://github.com/xtekky/gpt4free 还能用吗？？
 - Midjourney 中国版本 https://www.easygpt.cloud/
 - iproyal或ipcheap购买
