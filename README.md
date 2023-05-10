@@ -15,7 +15,7 @@
 - meta360创新学院 https://docs.meta360.vip/web/#/12/9876
 - MetaAl推出ImageBind: 
   - https://github.com/facebookresearch/ImageBind 
-  - 第一个能够同时绑定来自六种模式的数据的AI模型。这一突破使机器更接近人类
+  - 第一个能够同时绑定来自六种模式的数据的AI模型。
   - Meta 最新的多模态嵌入，不仅涵盖通常的嫌疑对象 (文本、图像、音频) ，还涵盖深度、热(红外)和IMU信号!
 ## 5月9日
 - 代码大模型 https://mp.weixin.qq.com/s/f-WwzLcEO-ZJczI-_bZh3Q
