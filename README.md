@@ -11,6 +11,10 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
+## 5月12日
+- 国内访问ChatGPT神器Pandora  
+  - 开源地址 https://github.com/pengzhile/pandora
+  - 使用详细说明 https://www.youtube.com/watch?v=QjAmFHqsQbw&t=209s
 ## 5月10日
 - meta360创新学院 https://docs.meta360.vip/web/#/12/9876
 - MetaAl推出ImageBind: 
