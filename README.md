@@ -11,6 +11,11 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
+
+## 5月13日
+- ChatGPT Plugins
+  - https://github.com/openai/plugins-quickstart
+  - https://github.com/openai/chatgpt-retrieval-plugin 
 ## 5月12日
 - 国内访问ChatGPT神器Pandora  
   - 开源地址 https://github.com/pengzhile/pandora
