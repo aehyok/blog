@@ -11,7 +11,8 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
-
+## 5月14日
+-onekey 激活，还差最后一步充值
 ## 5月13日
 - ChatGPT Plugins
   - https://github.com/openai/plugins-quickstart
