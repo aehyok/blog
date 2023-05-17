@@ -11,6 +11,9 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
+## 5月16日
+- 美国地址生成器 https://www.meiguodizhi.com/
+- onekey差充值
 ## 5月14日
 -onekey 激活，还差最后一步充值
 ## 5月13日
