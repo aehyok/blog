@@ -11,10 +11,40 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
+## 5月18日
+- 向量数据库
+  - https://github.com/pgvector/pgvector
+## 5月16日
+- 美国地址生成器 https://www.meiguodizhi.com/
+- onekey差充值
+## 5月14日
+-onekey 激活，还差最后一步充值
+## 5月13日
+- ChatGPT Plugins
+  - https://github.com/openai/plugins-quickstart
+  - https://github.com/openai/chatgpt-retrieval-plugin 
+## 5月12日
+- 国内访问ChatGPT神器Pandora  
+  - 开源地址 https://github.com/pengzhile/pandora
+  - 使用详细说明 https://www.youtube.com/watch?v=QjAmFHqsQbw&t=209s
+## 5月10日
+- meta360创新学院 https://docs.meta360.vip/web/#/12/9876
+- MetaAl推出ImageBind: 
+  - https://github.com/facebookresearch/ImageBind 
+  - 第一个能够同时绑定来自六种模式的数据的AI模型。
+  - Meta 最新的多模态嵌入，不仅涵盖通常的嫌疑对象 (文本、图像、音频) ，还涵盖深度、热(红外)和IMU信号!
+## 5月9日
+- 代码大模型 https://mp.weixin.qq.com/s/f-WwzLcEO-ZJczI-_bZh3Q
+- qdrant 向量数据库
+  - 开源地址 https://github.com/qdrant/qdrant
+  - 可docker私有化部署 
+  - 云数据库地址 https://cloud.qdrant.io/
+  - 课通过API访问 https://ui.qdrant.tech/#/
 ## 5月8日
 - https://github.com/xtekky/gpt4free 还能用吗？？
 - Midjourney 中国版本 https://www.easygpt.cloud/
 - iproyal或ipcheap购买
+- 万字雄文 ChatGPT背后的语言模型简史 https://www.bmpi.dev/dev/deep-learning/nlp-language-models/
 ## 5月7日
 - 销售商店 https://app.lemonsqueezy.com/
 ## 5月6日
