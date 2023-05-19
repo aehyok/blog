@@ -14,6 +14,8 @@
 
 ## 5月19日
 - 资源丰富 https://github.com/PlexPt/awesome-chatgpt-prompts-zh/issues/12
+- 电商 https://github.com/nopSolutions/nopCommerce
+- https://www.shopify.cn/pricing
 ## 5月18日
 - 向量数据库
   - https://github.com/pgvector/pgvector
