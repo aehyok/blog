@@ -11,7 +11,8 @@
   - GPT langchain文档 https://js.langchain.com
   - 框架 next.js https://www.nextjs.cn/
   - ui库 https://chakra-ui.com/getting-started
-
+## 5月20日
+- discord https://github.com/discordjs/discord.js
 ## 5月19日
 - 资源丰富 https://github.com/PlexPt/awesome-chatgpt-prompts-zh/issues/12
 - 电商 https://github.com/nopSolutions/nopCommerce
