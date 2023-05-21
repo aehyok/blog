@@ -10,6 +10,7 @@
 
 ## 5月22日
 - 向量数据库 https://segmentfault.com/a/1190000043767638
+- qdrant 集群 https://qdrant.tech/documentation/distributed_deployment 
 ## 5月20日
 - discord https://github.com/discordjs/discord.js
 ## 5月19日
