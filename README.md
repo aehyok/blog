@@ -7,6 +7,9 @@
   - 通义千问 https://tongyi.aliyun.com
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
+
+## 5月22日
+- 向量数据库 https://segmentfault.com/a/1190000043767638
 ## 5月20日
 - discord https://github.com/discordjs/discord.js
 ## 5月19日
