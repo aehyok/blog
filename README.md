@@ -8,7 +8,10 @@
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
 
+## 5月23日
+- 问答知识库提示词的参考 https://github.com/lvwzhen/law-cn-ai/blob/main/pages/api/vector-search.ts
 ## 5月22日
+- 下午Plus失效，可以Renew Plus 继续使用
 - 向量数据库选择 https://segmentfault.com/a/1190000043767638
 - qdrant 集群 https://qdrant.tech/documentation/distributed_deployment 
 ## 5月20日
