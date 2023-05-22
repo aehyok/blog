@@ -489,7 +489,7 @@ with open( xlsxFilePath , 'a', encoding='gbk') as fo:
         for i in range(ln) :
             tmp+=str( rst[i][k])+'\t'
         fo.write(tmp+'\n')
-    fo.close()    
+    fo.close()
 
 ######        
 # rst=pandas.concat( [empDateList,zhongxinguotaichicang,empList,empList, t20Sum])
