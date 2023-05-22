@@ -1,16 +1,22 @@
 ## 一个程序员关于ChatGPT学习的过程记录
 - ChatGPT官网 https://ai.com
-- Midjourney
-  - 官网 https://midjourney.com
-  - 提示词 https://prompt.noonshot.com
-- 文本转视频
-  - https://www.d-id.com
+- Midjourney https://midjourney.com
+- 文本转视频 https://www.d-id.com
 - 下载各种apk https://apkcombo.com
-- 个人项目
-  - 参考项目  https://github.com/c121914yu/FastGPT 
-  - GPT langchain文档 https://js.langchain.com
-  - 框架 next.js https://www.nextjs.cn/
-  - ui库 https://chakra-ui.com/getting-started
+- 国内大模型
+  - 通义千问 https://tongyi.aliyun.com
+  - 文新一言 https://yiyan.baidu.com
+  - 讯飞星火 https://xinghuo.xfyun.cn
+
+## 5月22日
+- 向量数据库选择 https://segmentfault.com/a/1190000043767638
+- qdrant 集群 https://qdrant.tech/documentation/distributed_deployment 
+## 5月20日
+- discord https://github.com/discordjs/discord.js
+## 5月19日
+- 资源丰富 https://github.com/PlexPt/awesome-chatgpt-prompts-zh/issues/12
+- 电商 https://github.com/nopSolutions/nopCommerce
+- https://www.shopify.cn/pricing
 ## 5月18日
 - 向量数据库
   - https://github.com/pgvector/pgvector
