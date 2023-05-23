@@ -1,4 +1,6 @@
 ## 一个程序员关于ChatGPT学习的过程记录
+- 我的现用专梯 
+  - 不用魔法就可访问 https://my.x-air.app:666/#/register?aff=32853 
 - ChatGPT官网 https://ai.com
 - Midjourney https://midjourney.com
 - 文本转视频 https://www.d-id.com
