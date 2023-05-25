@@ -1,4 +1,6 @@
 ## 一个程序员关于ChatGPT学习的过程记录
+- 我的现用专梯 
+  - 不用魔法就可访问 https://my.x-air.app:666/#/register?aff=32853 
 - ChatGPT官网 https://ai.com
 - Midjourney https://midjourney.com
 - 文本转视频 https://www.d-id.com
@@ -8,7 +10,10 @@
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
 
+## 5月23日
+- 问答知识库提示词的参考 https://github.com/lvwzhen/law-cn-ai/blob/main/pages/api/vector-search.ts
 ## 5月22日
+- 下午Plus失效，可以Renew Plus 继续使用
 - 向量数据库选择 https://segmentfault.com/a/1190000043767638
 - qdrant 集群 https://qdrant.tech/documentation/distributed_deployment 
 ## 5月20日
