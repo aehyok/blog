@@ -9,7 +9,8 @@
   - 通义千问 https://tongyi.aliyun.com
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
-
+## 5月25日
+- AI导师：提供个性化的学习体验 https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor
 ## 5月23日
 - 问答知识库提示词的参考 https://github.com/lvwzhen/law-cn-ai/blob/main/pages/api/vector-search.ts
 ## 5月22日
