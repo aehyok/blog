@@ -9,6 +9,8 @@
   - 通义千问 https://tongyi.aliyun.com
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
+## 5月28日
+- 项目突然不更新了 观察一下 https://github.com/Yidadaa/ChatGPT-Next-Web
 ## 5月26日
 - 体验了一下xmind https://xmind.ai/editor/
 ## 5月25日
