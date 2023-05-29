@@ -14,6 +14,8 @@
   - https://github.com/songquanpeng/one-api
 - 交易分析的项目
   - https://web3.bytego123.cn/#/gpt  
+- 目前多了两种付款方式
+  - ecardplay、vvacard，然后nodeapy还能玩，onekey好像也还行？
 ## 5月28日
 - 项目突然不更新了 观察一下 https://github.com/Yidadaa/ChatGPT-Next-Web
 ## 5月26日
