@@ -9,7 +9,21 @@
   - 通义千问 https://tongyi.aliyun.com
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
-
+## 5月30日
+- 检查节点 https://chat.openai.com/cdn-cgi/trace
+## 5月29日
+- 搭建API代理
+  - https://github.com/songquanpeng/one-api
+- 交易分析的项目
+  - https://web3.bytego123.cn/#/gpt  
+- 目前多了两种付款方式
+  - ecardplay、vvacard，然后nodeapy还能玩，onekey好像也还行？
+## 5月28日
+- 项目突然不更新了 观察一下 https://github.com/Yidadaa/ChatGPT-Next-Web
+## 5月26日
+- 体验了一下xmind https://xmind.ai/editor/
+## 5月25日
+- AI导师：提供个性化的学习体验 https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor
 ## 5月23日
 - 问答知识库提示词的参考 https://github.com/lvwzhen/law-cn-ai/blob/main/pages/api/vector-search.ts
 ## 5月22日
