@@ -2,7 +2,7 @@
  * @Author: 刘启明 455043818@qq.com
  * @Date: 2023-05-24 10:44:34
  * @LastEditors: 刘启明 455043818@qq.com
- * @LastEditTime: 2023-05-24 17:38:52
+ * @LastEditTime: 2023-05-25 13:45:00
  * @FilePath: \blog\docs\javascript\2023-05-24-docker-mysql.md
  * @Description: 
  * 
@@ -40,6 +40,7 @@ docker run --name gpt-mysql -p 3306:3306 -v /root/mysql/data:/var/lib/mysql -e M
 docker run --name gpt-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=M9y2512! -d mysql
 
 // 不知道为啥 设置了 映射  就有问题 
+// 于是docker-compose派上用场了
 docker run --name gpt-mysql \
   -p 3306:3306 \
   -v /root/mysql/data:/var/lib/mysql \ 
