@@ -9,6 +9,8 @@
   - 通义千问 https://tongyi.aliyun.com
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
+## 5月31日
+- perplexity.ai 尝试
 ## 5月30日
 - 检查节点 https://chat.openai.com/cdn-cgi/trace
 ## 5月29日
