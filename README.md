@@ -9,6 +9,9 @@
   - 通义千问 https://tongyi.aliyun.com
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
+  - 通义听悟 https://tingwu.aliyun.com
+## 6月1日
+- 通义听悟 https://tingwu.aliyun.com/
 ## 5月31日
 - perplexity.ai 尝试
 ## 5月30日
