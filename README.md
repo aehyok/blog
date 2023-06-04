@@ -10,6 +10,8 @@
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
+## 6月4日
+- 招行visia 有问题？还是link有问题？还是手机卡的问题giff
 ## 6月1日
 - 通义听悟 https://tingwu.aliyun.com/
 ## 5月31日
