@@ -10,6 +10,8 @@
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
+## 6月12日
+- google ai https://cloud.google.com/vertex-ai?hl=zh-cn
 ## 6月7日
 - 阿里下场 https://developer.aliyun.com/article/1239380
 ## 6月4日
