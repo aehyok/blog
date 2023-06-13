@@ -79,7 +79,6 @@ SHOW VARIABLES LIKE 'collation%';
 ```
 
 ## 给用户授权 刷新权限
-
 ```
 CREATE USER 'aehyok'@'localhost' IDENTIFIED BY 'M9y2512!';
 
