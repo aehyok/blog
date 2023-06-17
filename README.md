@@ -10,6 +10,9 @@
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
+## 6月17日
+- ai 低代码 https://mp.weixin.qq.com/s/_3vgfYIfKNW1R0XxtMCQ6g
+- https://mtbird.staringos.com 
 ## 6月12日
 - google ai https://cloud.google.com/vertex-ai?hl=zh-cn
 ## 6月7日
