@@ -11,6 +11,10 @@
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
 
+## 6月22日
+- 星搭小星
+  - https://staringai.com 
+  - 文档 https://staringos.feishu.cn/wiki/GFiJweJ9JiqoYEkondxcG7xGnWf
 ## 6月19日
 - sql AI 自然语言 https://github.com/alibaba/Chat2DB
 ## 6月17日
