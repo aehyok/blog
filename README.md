@@ -11,7 +11,8 @@
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
 
-
+## 6月30日
+- oneapi https://openai.justsong.cn/about
 ## 6月24日
 - 星搭小星 开源地址 https://github.com/staringos
 - 远程工具 https://www.todesk.com
