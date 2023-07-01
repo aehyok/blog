@@ -11,6 +11,10 @@
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
 
+## 7月1日
+- github create token
+  - github settings、Developer settings
+  - https://github.com/settings/tokens  
 ## 6月30日
 - oneapi
   - https://openai.justsong.cn/about
