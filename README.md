@@ -11,6 +11,8 @@
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
 
+## 7月4日
+- 账号购买 https://shop.aichat199.com
 ## 7月1日
 - github create token
   - github settings、Developer settings
