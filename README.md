@@ -13,6 +13,7 @@
 
 ## 7月5日
 - markdown解析 依赖包 marked
+- 新版国内大模型 https://api.minimax.chat
 ## 7月4日
 - 账号购买 https://shop.aichat199.com
 ## 7月1日
