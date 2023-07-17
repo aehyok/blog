@@ -12,7 +12,8 @@
   - 通义听悟 https://tingwu.aliyun.com
 
 ## 7月18日
-- Claude AI
+- https://bard.google.com/ 支持中文了
+- Claude AI 2
   - https://claude.ai/chats 
 ## 7月17日
 - 九天小长假我又回来了
