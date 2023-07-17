@@ -11,6 +11,9 @@
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
 
+## 7月18日
+- Claude AI
+  - https://claude.ai/chats 
 ## 7月17日
 - 九天小长假我又回来了
 - 摩搭社区
