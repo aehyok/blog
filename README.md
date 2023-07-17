@@ -11,6 +11,11 @@
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
 
+## 7月17日
+- 九天小长假我又回来了
+- 摩搭社区
+  - https://github.com/modelscope/modelscope
+  - https://www.modelscope.cn/home 
 ## 7月5日
 - markdown解析 依赖包 marked
 - 新版国内大模型 https://api.minimax.chat
