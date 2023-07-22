@@ -13,6 +13,9 @@
 ## 7月22日
 - api 通过link 4000 支付了5月份的api账单,等周一再看看接口能否调用
 - 美洽 https://meiqia.com/
+- 微途动力 https://www.chinajunying.cn
+
+- https://www.leaferjs.com/   ui结合ai的还在开发中
 ## 7月18日
 - https://bard.google.com/ 支持中文了
 - Claude AI 2
