@@ -16,7 +16,8 @@
 - 微途动力 https://www.chinajunying.cn
 
 - openai function_call 数组对象 json——schema 设置
-  - https://community.openai.com/t/function-call-arrays-as-parameters/268008   
+  - https://community.openai.com/t/function-call-arrays-as-parameters/268008
+  - https://json-schema.org/understanding-json-schema/index.html 
 - https://www.leaferjs.com/   ui结合ai的还在开发中
 ## 7月18日
 - https://bard.google.com/ 支持中文了
