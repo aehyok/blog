@@ -11,7 +11,8 @@
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
 ## 7月22日
-api 通过link 4000 支付了5月份的api账单
+- api 通过link 4000 支付了5月份的api账单,等周一再看看接口能否调用
+- 美洽 https://meiqia.com/
 ## 7月18日
 - https://bard.google.com/ 支持中文了
 - Claude AI 2
