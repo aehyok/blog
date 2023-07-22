@@ -10,7 +10,24 @@
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
+## 7月22日
+- api 通过link 4000 支付了5月份的api账单,等周一再看看接口能否调用
+- 美洽 https://meiqia.com/
+- 微途动力 https://www.chinajunying.cn
 
+- openai function_call 数组对象 json——schema 设置
+  - https://community.openai.com/t/function-call-arrays-as-parameters/268008
+  - https://json-schema.org/understanding-json-schema/index.html 
+- https://www.leaferjs.com/   ui结合ai的还在开发中
+## 7月18日
+- https://bard.google.com/ 支持中文了
+- Claude AI 2
+  - https://claude.ai/chats 
+## 7月17日
+- 九天小长假我又回来了
+- 摩搭社区
+  - https://github.com/modelscope/modelscope
+  - https://www.modelscope.cn/home 
 ## 7月5日
 - markdown解析 依赖包 marked
 - 新版国内大模型 https://api.minimax.chat
