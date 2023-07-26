@@ -10,6 +10,9 @@
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
+## 7月26日
+- 华为盘古大模型申请
+  - https://www.huaweicloud.com/product/pangu.html 
 ## 7月22日
 - api 通过link 4000 支付了5月份的api账单,等周一再看看接口能否调用
 - 美洽 https://meiqia.com/
