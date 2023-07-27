@@ -15,7 +15,9 @@
   - https://zhuanlan.zhihu.com/p/641516393 
 ## 7月26日
 - 华为盘古大模型申请
-  - https://www.huaweicloud.com/product/pangu.html 
+  - https://www.huaweicloud.com/product/pangu.html
+## 7月25日
+- 百度千帆大模型 https://console.bce.baidu.com/ai
 ## 7月22日
 - api 通过link 4000 支付了5月份的api账单,等周一再看看接口能否调用
 - 美洽 https://meiqia.com/
