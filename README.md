@@ -12,7 +12,8 @@
   - 通义听悟 https://tingwu.aliyun.com
 ## 7月27日
 - pgvector 向量查询
-  - https://zhuanlan.zhihu.com/p/641516393 
+  - https://zhuanlan.zhihu.com/p/641516393
+  - https://github.com/pgvector/pgvector
 ## 7月26日
 - 华为盘古大模型申请
   - https://www.huaweicloud.com/product/pangu.html
