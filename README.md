@@ -10,7 +10,10 @@
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
- 
+
+## 7月31日
+- 语音转文字
+- 文字转语音 https://github.com/rany2/edge-tts
 ## 7月29日
 - GPT-4.0的api又重新复活可以使用了 通过重新绑定
 ## 7月27日
