@@ -13,7 +13,7 @@
 - 7月31日 充值绑定ChatGPT API 付费 https://mercury.com
 
 ## 7月31日
-- 语音转文字
+- 语音转文字 
 - 文字转语音 https://github.com/rany2/edge-tts
 - 
 ## 7月29日
