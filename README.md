@@ -12,6 +12,11 @@
   - 通义听悟 https://tingwu.aliyun.com
 - 7月31日 充值绑定ChatGPT API 付费 https://mercury.com
 
+## 8月1日
+- MetaGPT 多代理框架 https://github.com/geekan/MetaGPT
+- 语音、克隆
+  - https://play.ht/
+  - https://docs.play.ht/reference/api-generate-audio
 ## 7月31日
 - 语音转文字 
 - 文字转语音 https://github.com/rany2/edge-tts
