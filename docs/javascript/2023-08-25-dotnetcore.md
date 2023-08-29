@@ -12,3 +12,8 @@ dotnet-ef migrations add XXXX
 dotnet-ef database update
 
 ```
+
+
+## api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题 
+
+更改为直连即可
