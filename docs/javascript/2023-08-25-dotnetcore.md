@@ -17,3 +17,80 @@ dotnet-ef database update
 ## api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题 
 
 更改为直连即可
+
+
+## linux 服务位置
+```
+ // 自定义服务地址
+ /usr/lib/systemd/system/dvsv3-datamonitor.service
+
+ [Unit]
+  Description=dvsv3-datamonitor
+  After=network-online.target
+  Wants=network-online.target
+
+  [Service]
+  # modify when deploy in prod env
+  User=dvs
+  Group=dvs
+
+  Type=simple
+  ExecStart=/usr/local/dotnet-sdk/dotnet /usr/local/sunlight/dvsv3/dvs-datamonitor/DVS.DataMonitor.Api.dll
+  WorkingDirectory=/usr/local/sunlight/dvsv3/dvs-datamonitor
+
+  Restart=always
+  RestartSec=1
+  StartLimitInterval=0
+
+  [Install]
+  WantedBy=multi-user.target
+
+
+
+ // 系统服务地址
+ /etc/systemd/system
+
+
+// 设置服务开机自动启动
+systemctl enable dvsv3-datamonitor
+
+// 重启服务
+systemctl restart dvsv3-datamonitor
+```
+
+
+## nginx 配置
+```
+// 所在路径
+/etc/nginx/conf.d/dvsv3.conf
+// 从这个配置文件中也可以找到swagger 配置路径docs的服务
+
+location ~ ^/api/datamonitor/ {
+    proxy_pass http://127.0.0.1:12017;
+}
+
+修改完毕后nginx -s reload
+```
+
+## 子系统服务配置文件
+```
+/usr/local/sunlight/dvsv3/etc/dvs-datamonitor-appsettings.json
+{
+    "Urls": "http://*:12017",
+    "WorkerId": 8,
+    "Serilog": {
+        "WriteTo": [
+            {},
+            {
+                "Name": "File",
+                "Args": {
+                    "path": "/var/log/sunlight/v3/dvs-datamonitor.txt"
+                }
+            },
+            {}
+        ]
+    }
+}
+
+```
+
