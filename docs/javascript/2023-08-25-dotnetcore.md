@@ -94,3 +94,34 @@ location ~ ^/api/datamonitor/ {
 
 ```
 
+
+## 数据导出
+
+```
+// 导出模版
+// SELECT * FROM Template;
+
+// 异步任务执行装填
+select * from AsyncTask s order by s.CreatedAt desc ;
+
+public enum AsyncTaskState
+{
+    待处理 = 0,
+    处理中 = 1,
+    处理完成 = 2,
+    失败 = 9
+}
+
+ select * from `Options`  
+
+ key: storageoptions:path  是文件上传的路径地址                          
+```
+
+
+## 服务器上log.txt日志文件存放路径
+```
+/var/log/sunlight/v3
+```
+
+## linux下nginx安装
+- 2022-05-11-linux
