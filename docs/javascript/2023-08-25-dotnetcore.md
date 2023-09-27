@@ -56,6 +56,8 @@ systemctl enable dvsv3-datamonitor
 
 // 重启服务
 systemctl restart dvsv3-datamonitor
+
+//
 ```
 
 
@@ -125,3 +127,39 @@ public enum AsyncTaskState
 
 ## linux下nginx安装
 - 2022-05-11-linux
+
+
+## 区域同步
+```
+之前使用的是  BasicArea
+SELECT  SUM(c.total) total,SUM(c.tobeSubmitted) tobeSubmitted, SUM(c.submitted)  submitted 
+FROM  CollectDataHouseholdSummary c 
+ where c.type=2 and c.areaid in (select id from BasicArea t where t.IdSequences like @areaId )  
+
+
+现在 BasicAreaEx
+SELECT  SUM(c.total) total,SUM(c.tobeSubmitted) tobeSubmitted, SUM(c.submitted)  submitted 
+FROM  CollectDataHouseholdSummary c 
+ where c.type=3 and c.areaid in (select t.RegionId from BasicAreaEx t where t.RegionIdSequences like @areaid )  
+```
+
+
+## 修改表编码
+
+```
+ ALTER TABLE BasicAreaEx CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+```
+
+
+
+## mysql数据库操作
+```
+// 展示数据库列表
+SHOW DATABASES;
+
+
+```
+
+
+
+## mysql执行数据同步时有可能有数据表访问权限的问题
