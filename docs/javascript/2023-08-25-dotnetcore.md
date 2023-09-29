@@ -163,3 +163,15 @@ SHOW DATABASES;
 
 
 ## mysql执行数据同步时有可能有数据表访问权限的问题
+
+## 判断枚举是否存在
+```
+            //if (!Enum.IsDefined(typeof(TaskType), model.TaskType))
+            //{
+            //    throw new ErrorCodeException(-1, "传入的任务类型不存在");
+            //}
+            //else
+            //{
+            //    spec.Query.Where(item => item.TaskType == model.TaskType);
+            //}
+```
