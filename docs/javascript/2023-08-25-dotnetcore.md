@@ -11,6 +11,12 @@ dotnet-ef migrations add XXXX
 // 同步到数据库
 dotnet-ef database update
 
+// 超过一个dbcontext就需要指定
+
+dotnet-ef migrations add XXXX -c SecondContext
+
+dotnet-ef database update  -c SecondContext
+
 ```
 
 
