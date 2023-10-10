@@ -1,5 +1,0 @@
-import{_ as a,o as n,c as s,O as e}from"./chunks/framework.ce94e18e.js";const C=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/2023-09-19-bun.md","lastUpdated":1696682207000}'),t={name:"javascript/2023-09-19-bun.md"},l=e(`<h2 id="linux-下安装bun" tabindex="-1">linux 下安装bun <a class="header-anchor" href="#linux-下安装bun" aria-label="Permalink to &quot;linux 下安装bun&quot;">​</a></h2><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">// 先安装nodejs和npm</span></span>
-<span class="line"><span style="color:#A6ACCD;"></span></span>
-<span class="line"><span style="color:#A6ACCD;">// 然后通过npm安装bun</span></span>
-<span class="line"><span style="color:#A6ACCD;">npm i -g bun</span></span>
-<span class="line"><span style="color:#A6ACCD;">\`\`\`npm</span></span></code></pre></div>`,2),p=[l];function o(c,i,r,_,d,u){return n(),s("div",null,p)}const h=a(t,[["render",o]]);export{C as __pageData,h as default};
