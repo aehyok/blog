@@ -15,7 +15,11 @@ dotnet-ef database update
 
 dotnet-ef migrations add XXXX -c SecondContext
 
+dotnet-ef migrations add XXXX -c DvsContext
+
 dotnet-ef database update  -c SecondContext
+
+dotnet-ef database update  -c DvsContext
 
 ```
 
@@ -180,4 +184,13 @@ SHOW DATABASES;
             //{
             //    spec.Query.Where(item => item.TaskType == model.TaskType);
             //}
+```
+
+## 将EFCore IDbContextTransaction转换为 Mysql驱动下 DbTransaction
+
+```
+    public static DbTransaction GetDbTransaction(this IDbContextTransaction source)
+    {
+        return (source as IInfrastructure<DbTransaction>).Instance;
+    }
 ```
