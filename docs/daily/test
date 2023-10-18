@@ -1,0 +1,46 @@
+// 保存数据的时候顺便初始化字段的审核状态
+                    var form = await this.formService.GetAsync(a => a.Name == item.FormNameId);
+                    InputDefine inputDefines = JsonConvert.DeserializeObject<InputDefine>(form.InputDefine);
+
+                    foreach (var formItem in inputDefines.InputGroups[0].Items)
+                    {
+                        //(text、number)
+                        string[] strings = new string[] { "text", "number" };
+                        if (strings.Contains(formItem.Type))
+                        {
+                            var monitorColumn = await this.columnService.GetAsync(item => item.ColumnName == formItem.Name && item.MonitorRecordId == record.Id);
+                            if (item.FormData.ContainsKey(formItem.Name) && item.FormData[formItem.Name] != null) {
+
+                                if(monitorColumn is  null)  // 此字段不存在
+                                {
+                                    var monitorColumnDto = new MonitorColumn()
+                                    {
+                                        ColumnName = formItem.Name,
+                                        MonitorRecordId = record.Id,
+                                        WriteStatus = WriteStatus.待提交
+                                    };
+                                    var columnEntity = await this.columnService.InsertAsync(monitorColumnDto);
+
+                                    //var monitorColumnLogDto = new MonitorColumnLog()
+                                    //{
+                                    //    MonitorColumnId = columnEntity.Id,
+                                    //    WriteStatus = WriteStatus.待提交,
+                                    //    IsHistory = false
+                                    //};
+                                    //await this.columnLogService.InsertAsync(monitorColumnLogDto);
+                                } 
+                                else
+                                {
+                                    // 如果已经存在就不处理
+                                }
+                            }
+                            else
+                            {
+                                if(monitorColumn is  not null)
+                                {
+                                    await this.columnService.DeleteAsync(monitorColumn);
+                                    //await this.columnLogService.DeleteAsync(); // 日志历史暂时不处理
+                                }
+                            }
+                        }
+                    }

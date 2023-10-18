@@ -194,3 +194,8 @@ SHOW DATABASES;
         return (source as IInfrastructure<DbTransaction>).Instance;
     }
 ```
+
+
+
+## 事务里面如果有创建表结构的则不会跟随事务
+
