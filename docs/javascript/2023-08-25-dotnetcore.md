@@ -15,11 +15,11 @@ dotnet-ef database update
 
 dotnet-ef migrations add XXXX -c SecondContext
 
-dotnet-ef migrations add XXXX -c DvsContext
+dotnet-ef migrations add XXXX -c DvsContext --framework net6.0
 
 dotnet-ef database update  -c SecondContext
 
-dotnet-ef database update  -c DvsContext
+dotnet-ef database update  -c DvsContext --framework net6.0
 
 ```
 
