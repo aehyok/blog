@@ -67,7 +67,9 @@ systemctl enable dvsv3-datamonitor
 // 重启服务
 systemctl restart dvsv3-datamonitor
 
-//
+// 修改配置文件
+systemctl daemon-reload
+
 ```
 
 
