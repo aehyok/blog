@@ -39,7 +39,7 @@ mysql -uroot -p
 use dvsdb30;
 
 // 查看慢查询日志是否开启  on为开启  off为关闭 默认是关闭的
-show variables like 'slow_query_log';
+pp
 
 // 设置是否开启慢查询日期记录
 set global slow_query_log = on;    #开启
