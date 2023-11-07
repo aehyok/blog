@@ -11,6 +11,9 @@
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
 - 7月31日 充值绑定ChatGPT API 付费 https://mercury.com
+## 11月7日
+- https://platform.openai.com/playground
+- 
 ## 8月3日
 - https://play.ht/ 文字转语音，语音克隆
 ## 8月1日
