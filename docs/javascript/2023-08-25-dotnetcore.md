@@ -201,3 +201,24 @@ SHOW DATABASES;
 
 ## 事务里面如果有创建表结构的则不会跟随事务
 
+## 数据库菜单更新
+
+```
+etc/dvs-systemservice-appsettings.json 中的MenuSeedData 设置为true
+
+
+// systemctl restart dvsv3-systemservice
+// 则启动服务的时候就会初始化更新菜单
+// 更新菜单的规则：code相等则update，code不相等则insert,code不存在则不操作
+
+// 通过接口将数据初始化到json文件中
+// 接口要在root用户下才能执行
+api/basic/Menu/seed
+
+// 执行完接口后，将接口返回数据的data，也就是菜单数组拷贝到项目中
+DVS.Basic/Templates/Menu.json
+
+// 提交代码后，通过流水线进行自动部署
+
+//指定某个服务进行设置最上面的参数即可
+```
