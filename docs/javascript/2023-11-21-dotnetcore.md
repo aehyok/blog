@@ -222,3 +222,25 @@ DVS.Basic/Templates/Menu.json
 
 //指定某个服务进行设置最上面的参数即可
 ```
+
+## 定时任务 
+    ```
+    // 定时任务存在于dvsv3-systemservice服务中
+
+    // dvs-systemservice-appsettings.json可以配置定时任务的开启时间周期
+
+    // ScheduleTaskOptions.cs 以及可以直接在代码中设置默认的时间和周期 
+
+    // 通过代码 AddCronServices开启
+
+    // 查看所有程序集中的class 继承了 CronScheduleService的定时任务
+
+    // 通过单例模式注册
+    services.Add(new ServiceDescriptor(typeof(IHostedService), a, ServiceLifetime.Singleton));
+
+
+    // 继承了IHostedService ，则相当于后台任务。通过依赖注入注册之后便会在后台运行了
+
+    // 然后 重写ExecuteAsync， 这个服务中的ExecuteAsync 方法会一直执行
+    ```
+
