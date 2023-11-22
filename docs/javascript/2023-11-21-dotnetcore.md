@@ -247,5 +247,19 @@ DVS.Basic/Templates/Menu.json
 
 ## rabbitmq 异步任务处理
 ```
+  // 首先在Program.cs中注册调用 builder.Services.InitServices
+  
+  // 其中 通过services.AddDistributedEventBus(configuration);
+
+  // 实现读取配置文件中的rabbitmq配置信息
+  // 以及通过依赖注册将RabbitMQEventPublisher 发布者和 RabbitMQEventSubscriber 消费者注册到容器中
+
+  //将所有的处理事件通过 services.AddEventHandlers(); 注入容器中
+
+  // rabbitmq 异步任务主要都在dvsv3-systemservice服务中进行处理 
+  // 通过app.InitApp(..,,,,onlyGlobalEvent: false) 
+  // onlyGlobalEvent: false 处理事件
+  // 通过 app.UseDistributedEventBus(onlyGlobalEvent); 中的 subscriber.Subscribe(); 消费者订阅事件
+  
 
 ```
