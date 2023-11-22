@@ -25,9 +25,10 @@ dotnet-ef database update  -c DvsContext --framework net6.0
 
 
 ## api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题 
-
-更改为直连即可
-
+ 
+ ```
+ 将代理更改为直连即可
+ ```
 
 ## linux 服务位置
 ```
@@ -197,8 +198,6 @@ SHOW DATABASES;
     }
 ```
 
-
-
 ## 事务里面如果有创建表结构的则不会跟随事务
 
 ## 数据库菜单更新
@@ -244,3 +243,9 @@ DVS.Basic/Templates/Menu.json
     // 然后 重写ExecuteAsync， 这个服务中的ExecuteAsync 方法会一直执行
     ```
 
+
+
+## rabbitmq 异步任务处理
+```
+
+```

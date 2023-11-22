@@ -11,6 +11,8 @@
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
 - 7月31日 充值绑定ChatGPT API 付费 https://mercury.com
+## 11月22日
+- https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor
 ## 11月7日
 - https://platform.openai.com/playground
 - 
