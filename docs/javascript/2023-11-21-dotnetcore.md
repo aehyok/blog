@@ -263,3 +263,43 @@ DVS.Basic/Templates/Menu.json
   
 
 ```
+
+
+## rabbitmq在项目中的使用
+  ```
+  // 整体官方文档使用介绍
+  https://www.rabbitmq.com/dotnet-api-guide.html
+
+
+
+  // 初始化rabbitmq配置
+  builder.Services.InitServices 中的
+  
+  // 添加rabbitmq的配置,并注册发布者和消费者
+  services.AddDistributedEventBus(configuration);
+
+  // 注册EventHandlers到DI容器中
+  services.AddEventHandlers();
+
+  // 例子：应急发布
+  // Dvs.Basic.Api中 VillageNotifyController SaveAsync方法
+
+  // 发布事件
+  eventPublisher.Publish(new VillageMessageChangedEvent()
+  {
+      MessageId = message.Id,
+      MessageType = message.MessageType,
+      RegionIds = message.PublishRegionIds,
+      Tags = message.PopulationTag
+  });
+  
+  // 发布事件的参数，例如数据实体VillageMessageChangedEvent 要继承 EventBase
+
+
+  // 消费者的Consumer继承IBasicConsumer接口，消息会在到达时自动传递，而不必主动请求。
+  // https://www.rabbitmq.com/dotnet-api-guide.html#consuming
+  
+  // 异步调度实现的Comsumer要继承IAsyncBasicConsumer接口
+  // https://www.rabbitmq.com/dotnet-api-guide.html#consuming-async
+  // 同时要将 ConnectionFactory.DispatchConsumersAsync 属性设置为 true
+  ```
