@@ -15,6 +15,11 @@
  - docker inspect 容器id/容器name
  - docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mysql
 
+## 根据容器ip 登录mysql
+
+ mysql -h xxx.xxx.xx.x -uxxxx -p
+ 123456
+ 
 
 ## 查看容器日志
 ```
