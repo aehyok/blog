@@ -17,6 +17,9 @@ dotnet-ef migrations add XXXX -c SecondContext
 
 dotnet-ef migrations add XXXX -c DvsContext --framework net6.0
 
+// 通过-v可以查看执行过程以及发生错误的具体error信息
+dotnet-ef migrations add XXXX -c DvsContext --framework net6.0 -v
+
 dotnet-ef database update  -c SecondContext
 
 dotnet-ef database update  -c DvsContext --framework net6.0
@@ -260,11 +263,52 @@ DVS.Basic/Templates/Menu.json
   // 通过app.InitApp(..,,,,onlyGlobalEvent: false) 
   // onlyGlobalEvent: false 处理事件
   // 通过 app.UseDistributedEventBus(onlyGlobalEvent); 中的 subscriber.Subscribe(); 消费者订阅事件
-  
-
 ```
 
+## 应急发布逻辑处理
 
+```
+// 保存时写入到VillageMessage表中
+// 保存的最后发布RabbitMQ 事件
+
+// 发布事件
+eventPublisher.Publish(new VillageMessageChangedEvent()
+{
+    MessageId = message.Id,
+    MessageType = message.MessageType,
+    RegionIds = message.PublishRegionIds,
+    Tags = message.PopulationTag
+});
+
+// 通过VillageMessageChangedEvent 找到消费者的处理事件 VillageMessageEventHandler
+
+// VillageMessageEventHandler中的HandleAsync方法中处理逻辑
+
+// 逻辑包括：
+// 插入MessageRegions数据，根据VillageMessage中发布范围RegionIds
+// 然后根据RegionsIds 数组中的每一个RegionId 
+// 通过RegionId 来查找符合条件的人员的UserId
+// 然后批量写入到VillageMessagePushRecord（写入状态为未推送）
+// 最终统计消息发送的总人数，更新到VillageMessage表中
+
+//OK OK OK
+//现在相当于知道要推送的数据了，开始通过定时任务进行推送
+//找到定时推送任务：VillagePushMessageSchedule
+
+// 每次循环最多发送100条
+// 循环中的逻辑如下：
+// 查询出未推送的记录（还加上了推送时间）
+// 将条记录设置为（推送中）
+// 调用IMessageService.SendAsync真正的推送消息
+// 推送成功后，将推送状态设置为（已推送）
+// 如果中间出现异常，则将推送状态设置为（推送失败）
+
+
+
+
+
+
+```
 ## rabbitmq在项目中的使用
   ```
   // 整体官方文档使用介绍

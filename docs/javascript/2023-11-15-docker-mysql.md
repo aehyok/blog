@@ -3,9 +3,9 @@
   
   ```
   docker run -p 13306:3306 --name mysql --restart=always --privileged=true \
-  -v /usr/local/docker/mysql/log:/var/log/mysql \
-  -v /usr/local/docker/mysql/data:/var/lib/mysql \
-  -v /usr/local/docker/mysql/conf:/etc/mysql \
+  -v /data/work/docker/mysql/log:/var/log/mysql \
+  -v /data/work/docker/mysql/data:/var/lib/mysql \
+  -v /data/work/docker/mysql/conf:/etc/mysql \
   -v /etc/local/docker/mysql/conf.d:/etc/mysql/conf.d \
   -e MYSQL_ROOT_PASSWORD=123456 -d mysql
   ```
@@ -24,4 +24,6 @@
 ## 查看容器日志
 ```
 docker logs -f mysql
+
+docker log mysql --tail 10 //最近10条日志记录
 ```
