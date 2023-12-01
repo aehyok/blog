@@ -24,6 +24,8 @@ dotnet-ef database update  -c SecondContext
 
 dotnet-ef database update  -c DvsContext --framework net6.0
 
+dotnet-ef database update  -c DvsContext --framework net6.0 -v 
+
 ```
 
 
