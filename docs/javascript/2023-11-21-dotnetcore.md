@@ -305,12 +305,41 @@ eventPublisher.Publish(new VillageMessageChangedEvent()
 // 推送成功后，将推送状态设置为（已推送）
 // 如果中间出现异常，则将推送状态设置为（推送失败）
 
+```
 
+## 定义微信消息
 
+- MessageDefine 消息定义表数据
 
+```
+  {
+    "Code": "emergency_response_message",
+    "Name": "应急发布消息",
+    "RedirectUri": "package/szxc/pages/emergency-release/detail/msg?id={MessageId}",
+    "Fields": {
+      "MessageId": "消息Id",
+      "Title": "标题",
+      "PublishDate": "发布时间"
+    }
+  },
+```
+
+- 模板表中类型Template ContentType
+```
+    /// <summary>
+    /// 模板内容类型
+    /// </summary>
+    public enum TemplateContentType
+    {
+        文本 = 0,   // 短信模板
+        文件 = 1,   // 导出和导入模板
+        小程序消息模板 = 2,
+        公众号消息模板 = 3,
+    }
 
 
 ```
+
 ## rabbitmq在项目中的使用
   ```
   // 整体官方文档使用介绍
