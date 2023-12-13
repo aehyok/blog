@@ -1,3 +1,18 @@
+## 使用的开源库
+
+```
+- EFCore查询 
+    - https://github.com/ardalis/Specification
+    - https://specification.ardalis.com/getting-started
+- EFCore QueryRepository RepositoryBase
+    - https://github.com/TanvirArjel/EFCore.GenericRepository
+- PaginatedList 数据分页
+    - https://github.com/dncuug/X.PagedList    
+- LinqKit 
+    - https://github.com/scottksmith95/LINQKit    
+- RabbitMQ 
+```
+
 ## 修改数据库的操作 
 ```
 
@@ -7,6 +22,11 @@ dotnet-ef migrations add XXXX
 // 其中如果包含外键相关的，就在 XXXX文件中 将Up和Down方法中的外键相关进行删除
 // 新创建表的时候一起添加外键应该是没问题的，如果是修改表的时候可能就存在问题
 
+//使用命令行工具
+https://learn.microsoft.com/zh-cn/ef/core/cli/dotnet?WT.mc_id=DOP-MVP-5003855#installing-the-tools
+
+// 查看版本
+https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql
 
 // 同步到数据库
 dotnet-ef database update
@@ -20,11 +40,21 @@ dotnet-ef migrations add XXXX -c DvsContext --framework net6.0
 // 通过-v可以查看执行过程以及发生错误的具体error信息
 dotnet-ef migrations add XXXX -c DvsContext --framework net6.0 -v
 
+dotnet-ef migrations add InitTask -c DvsContext --framework net8.0 -v
+
 dotnet-ef database update  -c SecondContext
 
 dotnet-ef database update  -c DvsContext --framework net6.0
 
 dotnet-ef database update  -c DvsContext --framework net6.0 -v 
+
+dotnet-ef database update  -c DvsContext --framework net6.0 -v 
+
+dotnet-ef database update -c DvsContext --framework net8.0 -v
+
+
+// 20231204084647_ModifyHouseholdFiled  从当前的下一个变更生成开始
+dotnet-ef migrations script 20231204084647_ModifyHouseholdFiled  -c DvsContext --framework net6.0 >migrations_2023_1211.sql
 
 ```
 
