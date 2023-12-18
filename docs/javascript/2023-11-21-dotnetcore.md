@@ -1,17 +1,4 @@
-## 使用的开源库
 
-```
-- EFCore查询 
-    - https://github.com/ardalis/Specification
-    - https://specification.ardalis.com/getting-started
-- EFCore QueryRepository RepositoryBase
-    - https://github.com/TanvirArjel/EFCore.GenericRepository
-- PaginatedList 数据分页
-    - https://github.com/dncuug/X.PagedList    
-- LinqKit 
-    - https://github.com/scottksmith95/LINQKit    
-- RabbitMQ 
-```
 
 ## 修改数据库的操作 
 ```
