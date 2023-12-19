@@ -10,13 +10,15 @@
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
-- 7月31日 充值绑定ChatGPT API 付费 https://mercury.com
+- 7月31日 充值绑定ChatGPT API 付费 https://mercury.com(好像是g了)
 - 11月27日 群友的 https://bewildcard.com/create-tips 自己没测试过
+## 12月10日
+- https://ai.google.dev/
+
 ## 11月22日
 - https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor
 ## 11月7日
 - https://platform.openai.com/playground
-- 
 ## 8月3日
 - https://play.ht/ 文字转语音，语音克隆
 ## 8月1日
@@ -57,6 +59,11 @@
 - 摩搭社区
   - https://github.com/modelscope/modelscope
   - https://www.modelscope.cn/home 
+
+## 7月6日
+- https://claude.ai/ 谷歌邮箱
+- https://hrefgo.com/chatgpt/claude-api-key-essential-guide
+- https://www.anthropic.com/earlyaccess
 ## 7月5日
 - markdown解析 依赖包 marked
 - 新版国内大模型 https://api.minimax.chat
