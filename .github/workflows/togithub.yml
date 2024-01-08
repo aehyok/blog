@@ -19,7 +19,7 @@ jobs:
       - name: Install PNPM
         run: npm i -g pnpm
       - name: Install & Build
-        run: pnpm install --frozen-lockfile && pnpm run build
+        run: pnpm install --no-frozen-lockfile && pnpm run build
 
       # - name: CreateTag
       #   run git tag -a
