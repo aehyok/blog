@@ -1,0 +1,5 @@
+import{_ as n,o as a,c as s,b as e}from"./app.232525a4.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[{"level":2,"title":"linux 下安装bun","slug":"linux-下安装bun","link":"#linux-下安装bun","children":[]}],"relativePath":"javascript/2023-09-19-bun.md","lastUpdated":1708478539000}'),t={name:"javascript/2023-09-19-bun.md"},l=e(`<h2 id="linux-下安装bun" tabindex="-1">linux 下安装bun <a class="header-anchor" href="#linux-下安装bun" aria-hidden="true">#</a></h2><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight" tabindex="0"><code><span class="line"><span style="color:#babed8;">// 先安装nodejs和npm</span></span>
+<span class="line"><span style="color:#babed8;"></span></span>
+<span class="line"><span style="color:#babed8;">// 然后通过npm安装bun</span></span>
+<span class="line"><span style="color:#babed8;">npm i -g bun</span></span>
+<span class="line"><span style="color:#babed8;">\`\`\`npm </span></span></code></pre></div>`,2),p=[l];function c(i,o,r,d,_,u){return a(),s("div",null,p)}const m=n(t,[["render",c]]);export{h as __pageData,m as default};
