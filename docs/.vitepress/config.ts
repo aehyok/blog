@@ -29,58 +29,6 @@ export default defineConfig({
     sidebar: {
       "/langchain/": [
         {
-          text: "langchain",
-          items: [
-            { text: "开始", link: "/video/001/01/3" },
-            {
-              text: "Components组件",
-              collapsed: true,
-              items: [
-                {
-                  text: "Schema",
-                  items: [
-                    { text: "Chat Messages", link: "" },
-                    { text: "Document", link: "" },
-                    { text: "Examples", link: "" },
-                  ],
-                },
-                {
-                  text: "Models",
-                  items: [
-                    { text: "Chat Models", link: "" },
-                    { text: "Embeddings", link: "" },
-                    { text: "LLMs", link: "" },
-                  ],
-                },
-                {
-                  text: "Prompts",
-                  items: [
-                    { text: "Prompt Templates", link: "" },
-                    { text: "Output Parsers", link: "" },
-                    { text: "Example Selectors", link: "" },
-                  ],
-                },
-                { 
-                  text: "Indexes", 
-                  items: [
-                    { text: "Document Loaders", link: "" },
-                    { text: "Text Splitters", link: "" },
-                    { text: "Vector Stores", link: "" },
-                    { text: "Retrievers", link: "" },
-                  ],
-                },
-                { text: "Memory", link: "/video/005/01" },
-                { text: "Chains", link: "/video/005/01" },
-                { text: "Agents", link: "/video/005/01" },
-              ],
-            },
-            { text: "使用示例", link: "/video/001/03/40" },
-            { text: "生产环境", link: "/video/001/04/82" },
-            { text: "生态系统", link: "/video/001/05/101" },
-            { text: "API参考", link: "/video/001/05/101" },
-          ],
-        },
-        {
           text: "视频剪辑的完整步骤",
           items: [{ text: "1-5", link: "/video/002/01" }],
         },
@@ -109,9 +57,24 @@ export default defineConfig({
       ],
       "/daily/": [
         {
-          text: "2023年每日笔记",
+          text: "2024年每日笔记",
           items: [
             { text: "current", link: "/daily/" },
+            { text: "2024-02", link: "/daily/2024-02" },
+            { text: "2024-01", link: "/daily/2024-01" },
+          ],
+        },
+        {
+          text: "2023年每日笔记",
+          items: [
+            { text: "2023-12", link: "/daily/2023-12" },
+            { text: "2023-11", link: "/daily/2023-11" },
+            { text: "2023-10", link: "/daily/2023-10" },
+            { text: "2023-09", link: "/daily/2023-09" },
+            { text: "2023-08", link: "/daily/2023-08" },
+            { text: "2023-07", link: "/daily/2023-07" },
+            { text: "2023-06", link: "/daily/2023-06" },
+            { text: "2023-05", link: "/daily/2023-05" },
             { text: "2023-04", link: "/daily/2023-04" },
             { text: "2023-03", link: "/daily/2023-03" },
             { text: "2023-02", link: "/daily/2023-02" },
