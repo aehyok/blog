@@ -12,9 +12,9 @@
   - 通义听悟 https://tingwu.aliyun.com
 - 7月31日 充值绑定ChatGPT API 付费 https://mercury.com(好像是g了)
 - 11月27日 群友的 https://bewildcard.com/create-tips 自己没测试过
+- https://bewildcard.com/open-account-payment
 ## 12月10日
 - https://ai.google.dev/
-
 ## 11月22日
 - https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor
 ## 11月7日
@@ -27,9 +27,8 @@
   - https://play.ht/
   - https://docs.play.ht/reference/api-generate-audio
 ## 7月31日
-- 语音转文字 
+- 语音转文字
 - 文字转语音 https://github.com/rany2/edge-tts
-- 
 ## 7月29日
 - GPT-4.0的api又重新复活可以使用了 通过重新绑定
 ## 7月27日
