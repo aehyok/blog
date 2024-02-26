@@ -19,6 +19,7 @@ export default defineConfig({
       { text: "langchain中文教程", link: "/langchain/" },
       { text: "我的掘金", link: "https://juejin.cn/user/2242659452477016" },
       { text: "关于我", link: "/me/" },
+      { text: '友情链接', link: '/friendly/info', activeMatch: '/friendly/' },
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/aehyok" }],
     footer: {

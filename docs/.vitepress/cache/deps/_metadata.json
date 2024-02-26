@@ -1,23 +1,23 @@
 {
-  "hash": "4fd2e8b5",
-  "browserHash": "bdedc972",
+  "hash": "90e1d216",
+  "browserHash": "9117bbda",
   "optimized": {
     "vue": {
-      "src": "../../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../node_modules/.pnpm/vue@3.4.5/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "68d60ed7",
+      "fileHash": "b8e690ee",
       "needsInterop": false
     },
     "axios": {
       "src": "../../../../node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.js",
       "file": "axios.js",
-      "fileHash": "73251a49",
+      "fileHash": "860567cb",
       "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-RSJERJUL": {
-      "file": "chunk-RSJERJUL.js"
+    "chunk-76J2PTFD": {
+      "file": "chunk-76J2PTFD.js"
     }
   }
 }
