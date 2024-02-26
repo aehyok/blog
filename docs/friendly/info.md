@@ -141,7 +141,7 @@ const members =[
 
 <VPTeamPage>
   <VPTeamPageSection>
-    <template #title>Halo World</template>
+    <template #title>Hello World</template>
     <template #lead>
       我们在此处向一些开发者致敬，感谢他们优秀文章内容的产出。
     </template>
