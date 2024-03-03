@@ -13,6 +13,9 @@
 - 7月31日 充值绑定ChatGPT API 付费 https://mercury.com(好像是g了)
 - 11月27日 群友的 https://bewildcard.com/create-tips 自己没测试过
 - https://bewildcard.com/open-account-payment
+
+## 2024-03-03
+- https://www.stablevideo.com/
 ## 2024-02-27
 - clash window
   - https://github.com/lantongxue/clash_for_windows_pkg
