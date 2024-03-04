@@ -13,6 +13,7 @@
 - 7月31日 充值绑定ChatGPT API 付费 https://mercury.com(好像是g了)
 - 11月27日 群友的 https://bewildcard.com/create-tips 自己没测试过
 - https://bewildcard.com/open-account-payment
+- canva画图 ttps://www.canva.cn
 ## 2024-03-04
 - gemini 不在开放地区
   - chrome://flags/  quic  disable
