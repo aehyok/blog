@@ -16,6 +16,9 @@
 - canva画图 ttps://www.canva.cn
 - 查看openai状态
   - https://status.openai.com/
+## 2024-03-09
+- 生成AI二维码
+  - https://huggingface.co/spaces/huggingface-projects/QR-code-AI-art-generator
 ## 2024-03-08
 - https://juchats.com/gift
 - claude document
