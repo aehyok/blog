@@ -14,7 +14,12 @@
 - 11月27日 群友的 https://bewildcard.com/create-tips 自己没测试过
 - https://bewildcard.com/open-account-payment
 - canva画图 ttps://www.canva.cn
-## 2024-03-07
+- 查看openai状态
+  - https://status.openai.com/
+## 2024-03-08
+- https://juchats.com/gift
+- claude document
+  - https://docs.anthropic.com/claude/reference/complete_post
 - claude3 api 
   - https://github.com/anthropics/anthropic-sdk-typescript
 - gemini 1.5 申请waitlist
