@@ -17,6 +17,8 @@
 - 查看openai状态
   - https://status.openai.com/
 ## 3月10日
+- inf ai
+  - https://pi.ai/talk
 - 免费艺术二维码
   - https://textrapp.com/free-tools/zh/ai-qr-code-free-tool
 ## 2024-03-09
