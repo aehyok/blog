@@ -23,6 +23,7 @@
 - inf ai
   - https://pi.ai/talk
 - 免费艺术二维码
+  - ancient Greek mythology, Olympus, Zeus, Athena, Aphrodite, classical myths, titans, Hercules, mythology, minotaur
   - https://textrapp.com/free-tools/zh/ai-qr-code-free-tool
 ## 2024-03-09
 - 生成AI二维码
