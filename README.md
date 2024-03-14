@@ -17,6 +17,11 @@
 - 查看openai状态
   - https://status.openai.com/
 ## 3月14日
+- 智普
+  - https://chatglm.cn/
+  - https://maas.aminer.cn/usercenter/resourcepack
+- memo ai 下载
+  - https://memo.ac/
 - ffmpeg学习
   - https://www.ruanyifeng.com/blog/2020/01/ffmpeg.html
 ## 3月13日
