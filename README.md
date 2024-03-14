@@ -16,7 +16,9 @@
 - canva画图 ttps://www.canva.cn
 - 查看openai状态
   - https://status.openai.com/
-## 3月11日
+## 3月13日
+- https://www.cognition-labs.com/blog
+# 3月11日
 - 获得文心一言专业版体验卡一张，等拿到手测评一波
   - https://mp.weixin.qq.com/s/MeGn0_mhdcvb_6BLz1r3Pw
 ## 3月10日
