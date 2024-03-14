@@ -16,6 +16,9 @@
 - canva画图 ttps://www.canva.cn
 - 查看openai状态
   - https://status.openai.com/
+## 3月14日
+- ffmpeg学习
+  - https://www.ruanyifeng.com/blog/2020/01/ffmpeg.html
 ## 3月13日
 - https://www.cognition-labs.com/blog
 # 3月11日
