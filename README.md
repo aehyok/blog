@@ -17,6 +17,9 @@
 - 查看openai状态
   - https://status.openai.com/
 ## 3月14日
+- 零一万物
+  - https://www.01.ai/cn
+  - https://platform.lingyiwanwu.com/playground
 - 智普
   - https://chatglm.cn/
   - https://maas.aminer.cn/usercenter/resourcepack
