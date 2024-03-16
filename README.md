@@ -1,21 +1,31 @@
 ## 一个程序员关于ChatGPT学习的过程记录
-- 我的现用专梯 
+- 我的现用专梯（2023-04-04开始，用到2024-03-16，以及至今）一致比较稳定，有专业团队进行维护 
   - 不用魔法就可访问 https://my.x-air.app:666/#/register?aff=32853 
+- 下载各种apk https://apkcombo.com
 - ChatGPT官网 https://ai.com
 - Midjourney https://midjourney.com
 - 文本转视频 https://www.d-id.com
-- 下载各种apk https://apkcombo.com
 - 国内大模型
   - 通义千问 https://tongyi.aliyun.com
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
-- 7月31日 充值绑定ChatGPT API 付费 https://mercury.com(好像是g了)
 - 11月27日 群友的 https://bewildcard.com/create-tips 自己没测试过
 - https://bewildcard.com/open-account-payment
 - canva画图 ttps://www.canva.cn
 - 查看openai状态
   - https://status.openai.com/
+
+## 可好好玩玩的项目
+- https://github.com/sunner/ChatALL
+- https://github.com/labring/FastGPT
+- https://github.com/songquanpeng/one-api
+## 3月15日
+- ChatALL
+  - electron 跨端支持 
+    - 中文官网地址 https://www.electronjs.org/zh/docs/latest/vg
+    - https://juejin.cn/post/7181279242628366397?searchId=20240315194000A1DF9131920D9619EF88 
+  - https://github.com/sunner/ChatALL
 ## 3月14日
 - 零一万物
   - https://www.01.ai/cn
