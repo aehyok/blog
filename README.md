@@ -20,15 +20,18 @@
 - https://github.com/sunner/ChatALL
 - https://github.com/labring/FastGPT
 - https://github.com/songquanpeng/one-api
+## 3月18日
+- 马斯克Grok1开源了
+  - https://github.com/xai-org/grok-1
 ## 3月17日
-- .net8houduan 
+- .net8后端
 - vue3前端
 - ai学习
 - sora视频学习
 - 文章继续整理
 - 简易商城
 - 自定义表单、自定义列表、自定义上传和下载、自定义流程、自定义报表
-
+2024年3月18日马斯克的Grok1开源了
 ## 3月15日
 - ChatALL
   - electron 跨端支持 
