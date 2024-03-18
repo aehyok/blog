@@ -15,12 +15,17 @@
 - canva画图 ttps://www.canva.cn
 - 查看openai状态
   - https://status.openai.com/
-
+## 文字转语音
+- https://modelscope.cn/models?page=1&tasks=text-to-speech&type=audio
 ## 可好好玩玩的项目
 - https://github.com/sunner/ChatALL
 - https://github.com/labring/FastGPT
 - https://github.com/songquanpeng/one-api
+
+
 ## 3月18日
+- 抓取小视频app的各种信息
+  - https://github.com/NanmiCoder/MediaCrawler
 - 马斯克Grok1开源了
   - https://github.com/xai-org/grok-1
 ## 3月17日
@@ -29,7 +34,9 @@
 - ai学习
 - sora视频学习
 - 文章继续整理
+- 自动生成文章小工具
 - 简易商城
+- 物联网
 - 自定义表单、自定义列表、自定义上传和下载、自定义流程、自定义报表
 2024年3月18日马斯克的Grok1开源了
 ## 3月15日
