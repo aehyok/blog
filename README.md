@@ -22,6 +22,8 @@
 - https://github.com/labring/FastGPT
 - https://github.com/songquanpeng/one-api
 
+## 宝玉
+- https://baoyu.io/
 
 ## 3月18日
 - 抓取小视频app的各种信息
@@ -38,7 +40,6 @@
 - 简易商城
 - 物联网
 - 自定义表单、自定义列表、自定义上传和下载、自定义流程、自定义报表
-2024年3月18日马斯克的Grok1开源了
 ## 3月15日
 - ChatALL
   - electron 跨端支持 
