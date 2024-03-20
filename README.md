@@ -24,7 +24,12 @@
 
 ## 宝玉
 - https://baoyu.io/
-
+##3月20日
+- 语音转文字
+  - https://speech.microsoft.com/portal
+## 3月19日
+- 投资界的ai
+  - https://reportify.cc/
 ## 3月18日
 - 抓取小视频app的各种信息
   - https://github.com/NanmiCoder/MediaCrawler
