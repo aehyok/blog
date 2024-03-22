@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.39978e14.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/2022-11-30-.net-core异步.md","lastUpdated":1711116982000}'),r={name:"javascript/2022-11-30-.net-core异步.md"};function o(c,s,n,_,p,d){return t(),a("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};
