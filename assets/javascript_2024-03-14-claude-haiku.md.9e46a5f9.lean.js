@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as t}from"./app.39978e14.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/2024-03-14-claude-haiku.md","lastUpdated":1711242476000}'),r={name:"javascript/2024-03-14-claude-haiku.md"};function c(s,o,n,d,i,p){return e(),t("div")}const u=a(r,[["render",c]]);export{l as __pageData,u as default};
