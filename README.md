@@ -1,4 +1,5 @@
 ## 一个程序员关于ChatGPT学习的过程记录
+- 2024-3-25 充值OpenAI API 成功 https://bewildcard.com/create-tips 
 - 我的现用专梯（2023-04-04开始，用到2024-03-16，以及至今）一致比较稳定，有专业团队进行维护 
   - 不用魔法就可访问 https://my.x-air.app:666/#/register?aff=32853 
 - 下载各种apk https://apkcombo.com
@@ -10,7 +11,6 @@
   - 文新一言 https://yiyan.baidu.com
   - 讯飞星火 https://xinghuo.xfyun.cn
   - 通义听悟 https://tingwu.aliyun.com
-- 11月27日 群友的 https://bewildcard.com/create-tips 自己没测试过
 - https://bewildcard.com/open-account-payment
 - canva画图 ttps://www.canva.cn
 - 查看openai状态
@@ -25,9 +25,13 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
-
+## 3月25日
+- 可每天免费玩玩
+  - https://www.perplexity.ai/
 ## 3月24日
-- Suno.ai
+- Suno.ai 
+- https://bibigpt.co/
+- https://www.capcut.cn/
 ## 3月23日
 - https://www.valla.ai/
 - 
