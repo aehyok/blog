@@ -21,10 +21,12 @@
 - https://github.com/sunner/ChatALL
 - https://github.com/labring/FastGPT
 - https://github.com/songquanpeng/one-api
-
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 3月27日
+- 这个视频总结工具有点棒棒哒
+  - https://summarize.ing/ 
 ## 3月25日
 - 可每天免费玩玩
   - https://www.perplexity.ai/
