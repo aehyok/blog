@@ -1,1 +1,0 @@
-import{_ as a,o as t,c as e}from"./app.6101b62d.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/2023-01-09-nacos.md","lastUpdated":1711852805000}'),s={name:"javascript/2023-01-09-nacos.md"};function c(o,r,n,p,_,d){return t(),e("div")}const f=a(s,[["render",c]]);export{m as __pageData,f as default};
