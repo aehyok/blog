@@ -24,6 +24,14 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 4月1日
+- memo ai
+  - https://memo.ac/
+    - 视频链接 播客链接 本地音视频 转换为文字
+    - 支持多语言转录后翻译
+    - 文字可转换为新的音频
+    - 单独的翻译长文章和文档的功能
+    - 支持众多翻译API类型（google翻译、openai api 翻译、 claude api 翻译、 Gemini Api 翻译 等等）
 ## 3月27日
 - 这个视频总结工具有点棒棒哒
   - https://summarize.ing/ 
