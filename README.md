@@ -24,6 +24,14 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 4月4日
+- 免费GPT-3.5的方法
+  - https://github.com/missuo/FreeGPT35
+- 不蒜子 统计网页基数
+  - https://busuanzi.ibruce.info/
+- 视频总结和翻译网页
+  - https://glarity.app/zh-CN
+  - https://github.com/sparticleinc/chatgpt-google-summary-extension
 ## 4月1日
 - memo ai
   - https://memo.ac/
