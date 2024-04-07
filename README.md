@@ -40,6 +40,11 @@
 - 视频总结和翻译网页
   - https://glarity.app/zh-CN
   - https://github.com/sparticleinc/chatgpt-google-summary-extension
+## 4月7日
+- 视频翻译和配音工具
+  - https://github.com/jianchang512/pyvideotrans
+- 文字生成音频
+  - https://www.cnblogs.com/jijunjian/p/18118366
 ## 4月1日
 - memo ai
   - https://memo.ac/
@@ -60,7 +65,6 @@
 - https://www.capcut.cn/
 ## 3月23日
 - https://www.valla.ai/
-- 
 - viggle.ai
 - 使用免费的GPU部署文生图大模型
   - https://www.cnblogs.com/xuxiaona/p/18088404
