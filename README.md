@@ -24,6 +24,14 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 4月6日
+- coze.cn 扣子平台不容忽视
+  - https://www.coze.cn/
+  - https://www.coze.com/
+## 4月5日
+- 通过云函数免费使用GPT-3.5
+  - https://juejin.cn/post/7353849549540589587
+  - https://zmix.cn/article/8672e047-ce50-4c82-a666-ef83eb006593
 ## 4月4日
 - 免费GPT-3.5的方法
   - https://github.com/missuo/FreeGPT35
