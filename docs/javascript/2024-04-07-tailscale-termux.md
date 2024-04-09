@@ -56,9 +56,28 @@ passwd
 
 ```
 
+然后在电脑上通过ssh登录到手机上
+ssh -p 8022 u0_a461@xxx.xx.xx.xx,ip记得从TailScale上获取即可
 
 ## tailscale
 - linux上的安装指南，所有不同linux系统上安装应该都有 https://tailscale.com/download/linux/debian-stretch
 
 ## android 上同时使用 tailscale 和 clash 共存的方式
 - https://www.kxxt.dev/blog/clash-for-android-and-tailscale/
+
+## Hugging Face了解一下
+现在我们开始准备大模型了，那么大模型从那里来呢？于是就有了这个Hugging Face
+官网地址：https://huggingface.co/
+
+Hugging Face 不仅是一个名字，它更象征着 AI 技术的民主化。想象有一个地方，AI 开发就像在 GitHub 上一样简易和互助，这就是 Hugging Face 的基本理念。由于 Hugging Face 的服务器设在海外，国内用户可能需要通过特定方式访问以获取最佳体验。Hugging Face 的魅力所在就是能够降低了 AI 开发的门槛。它不仅仅为大型企业服务，也支持个人开发者利用有限资源创造出惊人的 AI 应用。Hugging Face 的影响力正在重塑我们对机器学习开发方式的理解。通过提供简易、高效且开放的工具，它让每一个对 AI 技术充满热情的人，都有机会在这个领域内留下自己的足迹。
+
+可以通过python进行安装huggingface
+
+```
+// 通过pip进行安装，当然要提前安装python
+pip3 install huggingface_hub
+
+// 然后就可以直接在代码中调用
+// 或者通过huggingface-cli 命令行进行下载模型
+```
+

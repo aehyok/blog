@@ -15,8 +15,7 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "我的笔记", link: "/daily/" },
-      { text: "前端总结", link: "/javascript/" },
-      { text: "langchain中文教程", link: "/langchain/" },
+      { text: "武器库", link: "/tools/" },
       { text: "我的掘金", link: "https://juejin.cn/user/2242659452477016" },
       { text: "关于我", link: "/me/" },
       { text: "友情链接", link: "/friendly/info", activeMatch: "/friendly/" },
@@ -28,34 +27,6 @@ export default defineConfig({
     },
 
     sidebar: {
-      "/langchain/": [
-        {
-          text: "视频剪辑的完整步骤",
-          items: [{ text: "1-5", link: "/video/002/01" }],
-        },
-        {
-          text: "抖音相关配置",
-          items: [{ text: "1-11", link: "/video/003/01" }],
-        },
-        {
-          text: "抖音运营技巧",
-          items: [{ text: "1-4", link: "/video/004/01" }],
-        },
-        {
-          text: "抖音飞书文档",
-          items: [{ text: "1-4", link: "/video/005/01" }],
-        },
-      ],
-      "/javascript/": [
-        {
-          text: "JavaScript积累",
-          items: [
-            { text: "社会", link: "/javascript/" },
-            { text: "2022-06年中总结", link: "/life/2022-06" },
-            { text: "2021-12年终总结", link: "/life/2021-12" },
-          ],
-        },
-      ],
       "/daily/": [
         {
           text: "2024年每日笔记",
