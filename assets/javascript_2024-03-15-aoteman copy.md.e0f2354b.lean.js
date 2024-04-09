@@ -1,1 +1,0 @@
-import{_ as t,o as a,c as e}from"./app.de907897.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/2024-03-15-aoteman copy.md","lastUpdated":1712627945000}'),o={name:"javascript/2024-03-15-aoteman copy.md"};function c(r,s,n,p,_,d){return a(),e("div")}const f=t(o,[["render",c]]);export{m as __pageData,f as default};
