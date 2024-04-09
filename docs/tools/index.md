@@ -3,23 +3,6 @@ layout: home
 
 title: Home
 
-hero:
-  name: aehyok
-  text: 那个曾经的少年回来了
-  tagline: Believe in yourself, there's nothing you can't do！
-  image:
-    src: /home.svg
-    alt: logo
-  actions:
-    - theme: brand
-      text: 更多详情
-      link: /daily/
-    - theme: alt
-      text: 访问我的GitHub
-      link: https://github.com/aehyok
-    - theme: alt
-      text: 关于我
-      link: /me/
 features:
   - icon: ⚡️ 
     title: 记录生活，记录学习
@@ -31,9 +14,3 @@ features:
     title: 读源码和发博客
     details: 读懂别人的代码，就像同他人进行交谈，而博客则更像是会自己学习成果的一种展示，最重要的是取悦自己，而非在意那些
 ---
-
-<script setup>
-import middle from '../src/components/middle.vue'
-</script>
-
-<middle />
