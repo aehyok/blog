@@ -24,6 +24,15 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+
+## 4月10日
+- https://ai.google.dev/pricing?hl=zh-cn
+- 5 种速率限制：
+  - RPM（每分钟请求数）
+  - RPD（每天请求数）
+  - TPM（每分钟 tokens 数量）
+  - TPD（每天 tokens 数量）
+  -  IPM（每分钟图像数量）
 ## 4月6日
 - coze.cn 扣子平台不容忽视
   - https://www.coze.cn/

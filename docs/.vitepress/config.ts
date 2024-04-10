@@ -16,6 +16,7 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "我的笔记", link: "/daily/" },
       { text: "武器库", link: "/tools/" },
+      { text: "AI Blogs", link: "/ai/" },
       { text: "我的掘金", link: "https://juejin.cn/user/2242659452477016" },
       { text: "关于我", link: "/me/" },
       { text: "友情链接", link: "/friendly/info", activeMatch: "/friendly/" },
