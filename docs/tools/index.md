@@ -17,7 +17,6 @@ features:
     details: 读懂别人的代码，就像同他人进行交谈，而博客则更像是会自己学习成果的一种展示，最重要的是取悦自己，而非在意那些
     link: https://www.weixin.com
 
-ais:
   - icon: ⚡️ 
     title: 我的专梯
     details: 通过它来打开AI的大门，让我的生活更加便捷，让我的学习更加高效
