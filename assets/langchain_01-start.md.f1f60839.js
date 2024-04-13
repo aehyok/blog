@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as e}from"./app.8c2fb036.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"langchain/01-start.md","lastUpdated":1713037829000}'),r={name:"langchain/01-start.md"};function n(s,c,o,p,_,d){return a(),e("div")}const m=t(r,[["render",n]]);export{l as __pageData,m as default};
