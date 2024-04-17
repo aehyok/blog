@@ -24,7 +24,9 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
-
+## 4月17日
+- srt 2 lrc歌词
+  - https://gotranscript.com/subtitle-converter
 ## 4月10日
 - https://ai.google.dev/pricing?hl=zh-cn
 - 5 种速率限制：
