@@ -24,6 +24,14 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 4月18日
+- 短链地址还不错 https://link3.cc/
+- Kimi后台
+  - https://platform.moonshot.cn/console/info
+
+## 4月18日
+- stability.ai有api了
+  - https://platform.stability.ai/account/overview
 ## 4月17日
 - srt 2 lrc歌词
   - https://gotranscript.com/subtitle-converter
