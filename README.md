@@ -29,6 +29,9 @@
 - Kimi后台
   - https://platform.moonshot.cn/console/info
 
+## 4月19日
+- 下载字体（字语青梅硬笔）
+  - https://www.mianfeiziti.com/
 ## 4月18日
 - stability.ai有api了
   - https://platform.stability.ai/account/overview
