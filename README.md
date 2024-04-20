@@ -25,6 +25,10 @@
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
 ## 4月20日
+- 破解android root
+  - https://gitlab.com/st42/termux-sudo
+  - https://blog.csdn.net/weixin_61216736/article/details/129256320
+  - https://www.bilibili.com/read/cv32453978/?jump_opus=1
 - 图床
   - https://github.com/Molunerfinn/PicGo
 ## 4月19日
