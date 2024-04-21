@@ -24,6 +24,8 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 4月21日
+- 大模型如何进行微调呢？
 ## 4月20日
 - 破解android root
   - https://gitlab.com/st42/termux-sudo
