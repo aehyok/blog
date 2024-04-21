@@ -33,8 +33,18 @@ features:
     title: OpenAI(ChatGPT API)
     details: 
     link: https://platform.openai.com
+    - icon: 🛠️
+    title: huggingface
+    details: 
+    link: https://huggingface.co/
+    - icon: 🛠️
+    title: huggingface chat
+    details: 
+    link: https://huggingface.co/chat
+    - icon: 🛠️
+    title: ollama(类似docker 部署管理大模型)
+    details: 
+    link: https://ollama.com/
 ---
-
-
 
 
