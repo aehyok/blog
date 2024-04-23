@@ -45,6 +45,10 @@ features:
     title: ollama(类似docker 部署管理大模型)
     details: 
     link: https://ollama.com/
+    - icon: 🛠️
+    title: 在线压缩图片
+    details: 
+    link: https://tinypng.com/cn/
 ---
 
 
