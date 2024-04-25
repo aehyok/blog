@@ -49,6 +49,15 @@ features:
     title: 在线压缩图片
     details: 
     link: https://tinypng.com/cn/
+    - icon: 🛠️
+    title: 给代码拍照
+    details: 
+    link: https://snappify.com/editor
+    - icon: 🛠️
+    title: 给代码拍照
+    details: 
+    link: https://vividshare.io/tweet
+    
 ---
 
 
