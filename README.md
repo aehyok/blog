@@ -24,6 +24,16 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+
+## 4月26日
+- waytoagi.com
+- 阿里的魔搭社区
+  - https://modelscope.cn/
+- Google vertex ai 代理
+  - https://github.com/ShinChven/vertex-ai-proxy
+  - 参考readme创建 key等
+- Gemini 1.5 Pro 代理
+  - https://github.com/haruiz/geminiplayground
 ## 4月21日
 - 大模型如何进行微调呢？
 ## 4月20日
