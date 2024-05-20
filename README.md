@@ -24,6 +24,10 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 5月20日
+- whisper模型下载地址
+  - https://github.com/openai/whisper/blob/f296bcd3fac41525f1c5ab467062776f8e13e4d0/whisper/__init__.py
+  - https://github.com/openai/whisper/discussions/63
 ## 5月7日
 - https://chat.deepseek.com/
 - https://platform.deepseek.com/usage
