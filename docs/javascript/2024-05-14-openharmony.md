@@ -14,3 +14,14 @@
 - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V2/ide-command-line-ohpm-0000001490235312-V2
 
 https://ohpm.openharmony.cn/
+
+
+## 社区
+- https://developer.huawei.com/consumer/cn/forum/
+
+
+## 组件
+- https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-preferences-0000001813416160#ZH-CN_TOPIC_0000001813416160__%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97
+
+## 类库
+- https://ohpm.openharmony.cn/#/cn/detail/@pura%2Fharmony-utils
