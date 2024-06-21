@@ -24,6 +24,9 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 6月21日
+- 批量操作手机
+  - https://www.laixi.app/zh-CN
 ## 6月19日
 - 网站安全
   - https://waf-ce.chaitin.cn/
