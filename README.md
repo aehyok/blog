@@ -24,8 +24,10 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
-## 6月21
-
+## 7月4日
+- 高温排行榜
+  - http://wx.nmc.cn/f/page/eb18ad1b8ee748948f62084d9e40cb58/weatherMonitor/temperatureLiveOrder?
+## 6月21日
 - 批量操作手机
   - https://www.laixi.app/zh-CN
 ## 6月19日
