@@ -24,7 +24,9 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
-
+## 7月11日
+- 流光卡片
+  - https://fireflycard.shushiai.com/zh
 ## 7月8日
 - ssl https 自动续期
   - https://certbot.eff.org/
