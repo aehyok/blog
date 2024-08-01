@@ -39,6 +39,20 @@ dotnet-ef database update  -c DvsContext --framework net6.0 -v
 
 dotnet-ef database update -c DvsContext --framework net8.0 -v
 
+---------------2024-08-01------------------------------------
+参考链接 https://learn.microsoft.com/zh-tw/ef/core/cli/dotnet
+安装命令 dotnet tool install --global dotnet-ef
+
+dotnet ef
+
+dotnet ef migrations add MonitorTaskAnonymous -c DvsContext --framework net6.0 -v
+
+dotnet ef database update -c DvsContext --framework net6.0 -v
+---
+
+
+
+
 
 // 20231204084647_ModifyHouseholdFiled  从当前的下一个变更生成开始
 dotnet-ef migrations script 20231204084647_ModifyHouseholdFiled  -c DvsContext --framework net6.0 >migrations_2023_1211.sql
