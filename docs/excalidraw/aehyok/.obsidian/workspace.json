@@ -1,0 +1,156 @@
+{
+  "main": {
+    "id": "3c04f462ca67a44b",
+    "type": "split",
+    "children": [
+      {
+        "id": "1010513d18164d42",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2568ee2d9f5ce88",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "08-06-excel导入.excalidraw.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e0838ab25713eb56",
+    "type": "split",
+    "children": [
+      {
+        "id": "26defb42bf9b4a30",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd3b102a084c8b44",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ac83270de80b99e6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "186f942bfcd37a69",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "610e1ec56f8ec403",
+    "type": "split",
+    "children": [
+      {
+        "id": "a410e0c95ac37fbf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bd465d6b45dd41fe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "08-06-excel导入.excalidraw.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "76319a36529e6bd7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "08-06-excel导入.excalidraw.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "49cd427c11966c85",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "79cc688c54215425",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "08-06-excel导入.excalidraw.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "fd3b102a084c8b44",
+  "lastOpenFiles": [
+    "08-02 19.45.52.excalidraw.md",
+    "08-06-excel导入.excalidraw.md",
+    "Fonts/字语青梅硬笔.ttf",
+    "Fonts",
+    "欢迎.md"
+  ]
+}
