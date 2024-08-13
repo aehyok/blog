@@ -24,6 +24,9 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 8月13日
+- google search
+  - https://search.google.com/search-console/welcome
 ## 8月6日
 - 统计用户 
   - https://v6.51.la/report/realtime?comId=458058
