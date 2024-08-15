@@ -1,23 +1,10 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/aehyok/blog.git",
-  "author": "aehyok",
-  "license": "MIT",
   "scripts": {
     "start": "vitepress dev docs",
-    "buildtome": "npm run build && zx ./scripts/prebuild.mjs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs",
-    "release": "release-it"
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@types/node": "^18.14.2",
-    "axios": "^0.27.2",
-    "release-it": "^15.6.0",
-    "sass": "^1.58.3",
-    "vitepress": "^1.0.0-alpha.48",
-    "zx": "^7.1.1"
+    "vitepress": "^1.3.2"
   }
 }

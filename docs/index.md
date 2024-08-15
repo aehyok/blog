@@ -1,4 +1,5 @@
 ---
+# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 title: Home
@@ -32,8 +33,4 @@ features:
     details: 读懂别人的代码，就像同他人进行交谈，而博客则更像是会自己学习成果的一种展示，最重要的是取悦自己，而非在意那些
 ---
 
-<script setup>
-import middle from '../src/components/middle.vue'
-</script>
-
-<middle />
+<!-- <script>LA.init({id:"3JJEFDvRA49JBrSC",ck:"3JJEFDvRA49JBrSC"})</script> -->
