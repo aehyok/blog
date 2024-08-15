@@ -20,4 +20,4 @@ selenium-debug.log
 *.sln
 
 # ad
-docs/.vuepress/theme
+cache
