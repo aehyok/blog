@@ -25,6 +25,8 @@
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
 ## 8月26日
+- google可以多开分身账号（一台电脑）
+## 8月26日
 - cursor
   - https://www.cursor.com/
 ## 8月13日
