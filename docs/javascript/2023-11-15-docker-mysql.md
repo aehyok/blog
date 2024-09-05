@@ -14,7 +14,7 @@
 ```
 docker stop mysql-原来的容器
 
-//创建一个新的MySQL容器，覆盖默认的命令
+//创建一个新的MySQL容器，覆盖默认的命令（跳过权限）
 docker run --name mysql-temp -v /root/docker/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:8.0 --skip-grant-tables
 
 //稍等片刻 进入容器，并直接进入mysql
@@ -33,7 +33,7 @@ docker rm mysql-temp
 
 // 重新启动原始的MySQL容器（使用新密码）
 docker start mysql-container
-```  
+```
 
 ## 查看容器的ip地址
  - docker inspect 容器id/容器name
