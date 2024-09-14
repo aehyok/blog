@@ -48,6 +48,7 @@ dotnet ef
 dotnet ef migrations add MonitorTaskAnonymous -c DvsContext --framework net6.0 -v
 
 dotnet ef database update -c DvsContext --framework net6.0 -v
+
 ---
 
 
