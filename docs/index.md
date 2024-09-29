@@ -32,5 +32,3 @@ features:
     title: 读源码和发博客
     details: 读懂别人的代码，就像同他人进行交谈，而博客则更像是会自己学习成果的一种展示，最重要的是取悦自己，而非在意那些
 ---
-
-<script>LA.init({id:"3JJEFDvRA49JBrSC",ck:"3JJEFDvRA49JBrSC"})</script>
