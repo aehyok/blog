@@ -105,7 +105,6 @@ import{_ as s,c as a,o as n,a3 as p}from"./chunks/framework.CaAmY9F2.js";const b
 <span class="line"><span>// 查看版本</span></span>
 <span class="line"><span>docker-compose version</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span></span></span>
 <span class="line"><span>// 发现python </span></span>
 <span class="line"><span>pip</span></span></code></pre></div><h2 id="安装git" tabindex="-1">安装git <a class="header-anchor" href="#安装git" aria-label="Permalink to &quot;安装git&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>  zypper install git</span></span>
 <span class="line"><span></span></span>

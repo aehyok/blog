@@ -44,6 +44,7 @@ import{_ as s,c as n,o as a,a3 as p}from"./chunks/framework.CaAmY9F2.js";const b
 <span class="line"><span>dotnet ef migrations add MonitorTaskAnonymous -c DvsContext --framework net6.0 -v</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>dotnet ef database update -c DvsContext --framework net6.0 -v</span></span>
+<span class="line"><span></span></span>
 <span class="line"><span>---</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span></span></span>
