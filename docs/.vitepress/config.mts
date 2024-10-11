@@ -30,6 +30,7 @@ export default defineConfig({
         {
           text: "2024年每日笔记",
           items: [
+            { text: "2024-09", link: "/daily/2024-09" },
             { text: "2024-08", link: "/daily/2024-08" },
             { text: "2024-07", link: "/daily/2024-07" },
             { text: "2024-06", link: "/daily/2024-06" },
