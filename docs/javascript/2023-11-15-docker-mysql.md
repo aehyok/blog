@@ -7,7 +7,7 @@
   -v /root/docker/mysql/data:/var/lib/mysql \
   -v /root/docker/mysql/conf:/etc/mysql \
   -v /etc/local/docker/mysql/conf.d:/etc/mysql/conf.d \
-  -e MYSQL_ROOT_PASSWORD=123456 -d mysql
+  -e MYSQL_ROOT_PASSWORD=M9y2512! -d mysql:8.0
   ```
 
 ## 创建一个无密码的容器
@@ -48,7 +48,7 @@ docker start mysql-container
 
 ## 查看容器日志
 ```
-docker logs -f mysql
+c
 
 docker log mysql --tail 10 //最近10条日志记录
 ```
