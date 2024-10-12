@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "blog",
   description: "那个曾经的少年回来了",
-  base: "/",
+  base: "/blog",
   ignoreDeadLinks: true,
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "logo.svg" }],
