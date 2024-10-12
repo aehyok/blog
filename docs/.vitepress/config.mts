@@ -10,9 +10,12 @@ export default defineConfig({
     ["link", { rel: "icon", type: "image/svg+xml", href: "logo.svg" }],
     ["script", 
       {
-      src: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+        src: "https://hananalytics-ene.pages.dev/tracker.min.js",
+        defer: true,
+      "data-website-id": "blog"
     }]
   ],
+  // <script defer src="https://https://.pages.dev/.pages.dev/tracker.min.js" data-website-id="自定义网站唯一标识"></script>
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
