@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r,a3 as l}from"./chunks/framework.CaAmY9F2.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"daily/index.md","filePath":"daily/index.md"}'),i={name:"daily/index.md"},a=l("",1),n=[a];function o(h,s,c,p,u,m){return r(),t("div",null,n)}const w=e(i,[["render",o]]);export{g as __pageData,w as default};

@@ -1,1 +1,0 @@
-import{_ as e,c as l,o as a,a3 as i}from"./chunks/framework.DDglavJf.js";const b=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"daily/2024-08.md","filePath":"daily/2024-08.md"}'),t={name:"daily/2024-08.md"},r=i("",12),o=[r];function s(n,c,h,u,d,p){return a(),l("div",null,o)}const f=e(t,[["render",s]]);export{b as __pageData,f as default};
