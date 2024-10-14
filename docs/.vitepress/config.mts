@@ -20,6 +20,9 @@ export default defineConfig({
   // <script defer src="https://https://.pages.dev/.pages.dev/tracker.min.js" data-website-id="自定义网站唯一标识"></script>
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: "首页", link: "/" },
       { text: "我的笔记", link: "/daily/" },
@@ -105,5 +108,5 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aehyok' }
     ]
-  }
+  },
 })
