@@ -1,4 +1,6 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress' 
+import ai from "./ai.json"
+import javascript from "./javascript.json"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -21,7 +23,7 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "我的笔记", link: "/daily/" },
-      { text: "武器库", link: "/tools/" },
+      { text: "武器库", link: "/javascript/" },
       { text: "AI Blogs", link: "/ai/" },
       { text: "我的掘金", link: "https://juejin.cn/user/2242659452477016" },
       { text: "关于我", link: "/me/" },
@@ -96,6 +98,8 @@ export default defineConfig({
           ],
         },
       ],
+      "/javascript/": javascript,
+      "/ai/": ai
     },
 
     socialLinks: [
