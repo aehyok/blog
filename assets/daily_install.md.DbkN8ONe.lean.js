@@ -1,0 +1,1 @@
+import{_ as a,c as n,o as s,a5 as e}from"./chunks/framework.CW9jv5bj.js";const x=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"daily/install.md","filePath":"daily/install.md"}'),t={name:"daily/install.md"},l=e("",4),i=[l];function p(o,d,c,r,_,u){return s(),n("div",null,i)}const m=a(t,[["render",p]]);export{x as __pageData,m as default};

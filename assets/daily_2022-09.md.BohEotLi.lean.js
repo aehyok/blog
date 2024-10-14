@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as l,a5 as t}from"./chunks/framework.CW9jv5bj.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"daily/2022-09.md","filePath":"daily/2022-09.md"}'),i={name:"daily/2022-09.md"},r=t("",41),s=[r];function n(h,o,p,u,c,k){return l(),a("div",null,s)}const j=e(i,[["render",n]]);export{g as __pageData,j as default};
