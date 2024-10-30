@@ -13,6 +13,9 @@
   - 通义听悟 https://tingwu.aliyun.com
 - https://bewildcard.com/open-account-payment
 - canva画图 ttps://www.canva.cn
+- openai api接口地址
+  - https://openai.weibo.at
+  - https://api.openai.com
 - 查看openai状态
   - https://status.openai.com/
 ## 文字转语音
