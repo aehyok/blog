@@ -51,15 +51,11 @@ dotnet ef database update -c DvsContext --framework net6.0 -v
 
 ---
 
-
-
-
-
 // 20231204084647_ModifyHouseholdFiled  从当前的下一个变更生成开始
 dotnet-ef migrations script 20231204084647_ModifyHouseholdFiled  -c DvsContext --framework net6.0 >migrations_2023_1211.sql
 ```
 
-## api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题 
+## api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题
  
  ```
  将代理更改为直连即可
