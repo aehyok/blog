@@ -47,10 +47,6 @@ import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.CW9jv5bj.js";const b
 <span class="line"><span></span></span>
 <span class="line"><span>---</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
 <span class="line"><span>// 20231204084647_ModifyHouseholdFiled  从当前的下一个变更生成开始</span></span>
 <span class="line"><span>dotnet-ef migrations script 20231204084647_ModifyHouseholdFiled  -c DvsContext --framework net6.0 &gt;migrations_2023_1211.sql</span></span></code></pre></div><h2 id="api-nuget-ogr-v3-index-json无法访问是因为翻墙的问题" tabindex="-1">api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题 <a class="header-anchor" href="#api-nuget-ogr-v3-index-json无法访问是因为翻墙的问题" aria-label="Permalink to &quot;api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>将代理更改为直连即可</span></span></code></pre></div><h2 id="linux-服务位置" tabindex="-1">linux 服务位置 <a class="header-anchor" href="#linux-服务位置" aria-label="Permalink to &quot;linux 服务位置&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span> // 自定义服务地址</span></span>
 <span class="line"><span> /usr/lib/systemd/system/dvsv3-datamonitor.service</span></span>
