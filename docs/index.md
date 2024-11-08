@@ -1,5 +1,8 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
+head:
+  - - meta
+    - name: baidu-site-verification
+      content: codeva-Fvp1kD6Rtm
 layout: home
 
 title: Home
