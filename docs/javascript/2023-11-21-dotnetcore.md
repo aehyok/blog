@@ -49,10 +49,23 @@ dotnet ef migrations add MonitorTaskAnonymous -c DvsContext --framework net6.0 -
 
 dotnet ef database update -c DvsContext --framework net6.0 -v
 
+
+// 回滚到上一次的变更
+// 列出所有的数据库变更list
+dotnet ef migrations list -c DvsContext --framework net6.0 -v
+
+// (如果已经变更到数据了)将数据库变更退回到某个变更
+dotnet ef database update 20241114015954_VillageParty111401 -c DvsContext --framework net6.0 -v
+
+// 如果只是生成了迁移文件，还没有
 ---
 
 // 20231204084647_ModifyHouseholdFiled  从当前的下一个变更生成开始
-dotnet-ef migrations script 20231204084647_ModifyHouseholdFiled  -c DvsContext --framework net6.0 >migrations_2023_1211.sql
+dotnet-ef migrations script 20241114015954_VillageParty111401  -c DvsContext --framework net6.0 -o migrations_2024_1116.sql
+
+// 上面的生成可能包含日志，可以再加入一个参数--idempotent
+// 包含了事物处理保护、版本检查、可重复执行
+dotnet-ef migrations script 20241114015954_VillageParty111401  -c DvsContext --framework net6.0  -o migrations_2024_1116-2.sql  --idempotent
 ```
 
 ## api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题
