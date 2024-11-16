@@ -45,10 +45,23 @@ import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.CW9jv5bj.js";const b
 <span class="line"><span></span></span>
 <span class="line"><span>dotnet ef database update -c DvsContext --framework net6.0 -v</span></span>
 <span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 回滚到上一次的变更</span></span>
+<span class="line"><span>// 列出所有的数据库变更list</span></span>
+<span class="line"><span>dotnet ef migrations list -c DvsContext --framework net6.0 -v</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// (如果已经变更到数据了)将数据库变更退回到某个变更</span></span>
+<span class="line"><span>dotnet ef database update 20241114015954_VillageParty111401 -c DvsContext --framework net6.0 -v</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 如果只是生成了迁移文件，还没有</span></span>
 <span class="line"><span>---</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>// 20231204084647_ModifyHouseholdFiled  从当前的下一个变更生成开始</span></span>
-<span class="line"><span>dotnet-ef migrations script 20231204084647_ModifyHouseholdFiled  -c DvsContext --framework net6.0 &gt;migrations_2023_1211.sql</span></span></code></pre></div><h2 id="api-nuget-ogr-v3-index-json无法访问是因为翻墙的问题" tabindex="-1">api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题 <a class="header-anchor" href="#api-nuget-ogr-v3-index-json无法访问是因为翻墙的问题" aria-label="Permalink to &quot;api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>将代理更改为直连即可</span></span></code></pre></div><h2 id="linux-服务位置" tabindex="-1">linux 服务位置 <a class="header-anchor" href="#linux-服务位置" aria-label="Permalink to &quot;linux 服务位置&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span> // 自定义服务地址</span></span>
+<span class="line"><span>dotnet-ef migrations script 20241114015954_VillageParty111401  -c DvsContext --framework net6.0 -o migrations_2024_1116.sql</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 上面的生成可能包含日志，可以再加入一个参数--idempotent</span></span>
+<span class="line"><span>// 包含了事物处理保护、版本检查、可重复执行</span></span>
+<span class="line"><span>dotnet-ef migrations script 20241114015954_VillageParty111401  -c DvsContext --framework net6.0  -o migrations_2024_1116-2.sql  --idempotent</span></span></code></pre></div><h2 id="api-nuget-ogr-v3-index-json无法访问是因为翻墙的问题" tabindex="-1">api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题 <a class="header-anchor" href="#api-nuget-ogr-v3-index-json无法访问是因为翻墙的问题" aria-label="Permalink to &quot;api.nuget.ogr/v3/index.json无法访问是因为翻墙的问题&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>将代理更改为直连即可</span></span></code></pre></div><h2 id="linux-服务位置" tabindex="-1">linux 服务位置 <a class="header-anchor" href="#linux-服务位置" aria-label="Permalink to &quot;linux 服务位置&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span> // 自定义服务地址</span></span>
 <span class="line"><span> /usr/lib/systemd/system/dvsv3-datamonitor.service</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span> [Unit]</span></span>
