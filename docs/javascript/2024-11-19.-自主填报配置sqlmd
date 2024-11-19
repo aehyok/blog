@@ -15,40 +15,48 @@ select UUID() id, @taskid taskid  from User u where u=@userid
 
 
 - 保证必须有数据的
-SELECT UUID() id, @taskid taskid, p.`Name` c1,CONCAT(hn.`Name`, h.HouseNumber) as c2,vp.Contact c3,p.IdCard c4  FROM  `User` u 
-LEFT JOIN Population p on p.Id = u.PopulationId
-LEFT JOIN VillagePopulation vp on vp.PopulationId = u.PopulationId
-LEFT JOIN VillageHouseholdPopulation hp on hp.PopulationId = u.PopulationId
-LEFT JOIN VillageHousehold h on h.Id = hp.VillageHouseholdId
-LEFT JOIN VillageHouseName hn on hn.Id = h.HouseNameId
-WHERE u.Id = @userid 
-
-
-
+  ```
+  SELECT UUID() id, @taskid taskid, p.`Name` c1,CONCAT(hn.`Name`, h.HouseNumber) as c2,vp.Contact c3,p.IdCard c4  FROM  `User` u 
+  LEFT JOIN Population p on p.Id = u.PopulationId
+  LEFT JOIN VillagePopulation vp on vp.PopulationId = u.PopulationId
+  LEFT JOIN VillageHouseholdPopulation hp on hp.PopulationId = u.PopulationId
+  LEFT JOIN VillageHousehold h on h.Id = hp.VillageHouseholdId
+  LEFT JOIN VillageHouseName hn on hn.Id = h.HouseNameId
+  WHERE u.Id = @userid 
+  ```
 - 后面的查询sql可能没有数据的话，就要通过left join进行关联查询来保证有数据 
-SELECT 
-    base.id,
-    base.taskid,
-    temp.c1,
-    temp.c2,
-    temp.c3,
-    temp.c4
- from  (
-    SELECT 
-        UUID() as id,
-        @taskid as taskid
-) AS base
-LEFT JOIN (
-    SELECT 
-        p.`Name` as c1,
-        CONCAT(hn.`Name`, h.HouseNumber) as c2,
-        vp.Contact as c3,
-        p.IdCard as c4
-    FROM `User` u  
-    LEFT JOIN Population p on p.Id = u.PopulationId 
-    LEFT JOIN VillagePopulation vp on vp.PopulationId = u.PopulationId 
-    LEFT JOIN VillageHouseholdPopulation hp on hp.PopulationId = u.PopulationId 
-    LEFT JOIN VillageHousehold h on h.Id = hp.VillageHouseholdId 
-    LEFT JOIN VillageHouseName hn on hn.Id = h.HouseNameId 
-    WHERE u.Id = @userid
-) AS temp ON 1=1
+  ```
+  SELECT 
+      base.id,
+      base.taskid,
+      temp.c1,
+      temp.c2,
+      temp.c3,
+      temp.c4
+  from  (
+      SELECT 
+          UUID() as id,
+          @taskid as taskid
+  ) AS base
+  LEFT JOIN (
+      SELECT 
+          p.`Name` as c1,
+          CONCAT(hn.`Name`, h.HouseNumber) as c2,
+          vp.Contact as c3,
+          p.IdCard as c4
+      FROM `User` u  
+      LEFT JOIN Population p on p.Id = u.PopulationId 
+      LEFT JOIN VillagePopulation vp on vp.PopulationId = u.PopulationId 
+      LEFT JOIN VillageHouseholdPopulation hp on hp.PopulationId = u.PopulationId 
+      LEFT JOIN VillageHousehold h on h.Id = hp.VillageHouseholdId 
+      LEFT JOIN VillageHouseName hn on hn.Id = h.HouseNameId 
+      WHERE u.Id = @userid
+  ) AS temp ON 1=1
+  ```
+
+## 自主填报 视图获取人信息
+```
+SELECT v.`Name`, v.IdCard, v.Contact, v.HouseName, v.HouseNumber FROM `User` u
+LEFT JOIN VillageHouseholdPopulationView v on v.PopulationId = u.PopulationId
+WHERE u.Id = 1676431146113699840
+```
