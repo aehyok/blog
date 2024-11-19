@@ -1,0 +1,14 @@
+
+## 自主填报配置sql算法注意事项
+  - sql中可以使用的几个字段
+    - userid
+    - regionid
+    - taskid
+    - populationid
+
+## 例子
+- 如下 id，是业务表的guid字段， taskid是业务表的关联taskid，其他字段则是业务表的字段
+select UUID() id, @taskid taskid  from User u where u=@userid
+
+## 注意事项
+- 要发布自主填报之后才可以写sql
