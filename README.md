@@ -27,6 +27,10 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+
+## 11月21日
+- 生成简单的logo图标
+  - https://mi-logo.lvwzhen.com/
 ## 8月26日
 - google可以多开分身账号（一台电脑）
 ## 8月26日
@@ -634,7 +638,7 @@ github copilot平替 https://github.com/TabbyML/tabby
 #### 3月27日
 - 图片提词工具 https://replicate.com/pharmapsychotic/clip-interrogator
 - openai whisper 音频转字幕、中文字幕可转英文字幕
-  - https://github.com/openai/whisper    
+  - https://github.com/openai/whisper
   - https://www.youtube.com/watch?v=kFtrvdriLU8
   - https://www.youtube.com/watch?v=mEbA26dO-xI
 #### 3月26日

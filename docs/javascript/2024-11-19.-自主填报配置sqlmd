@@ -22,7 +22,7 @@ select UUID() id, @taskid taskid  from User u where u=@userid
   LEFT JOIN VillageHouseholdPopulation hp on hp.PopulationId = u.PopulationId
   LEFT JOIN VillageHousehold h on h.Id = hp.VillageHouseholdId
   LEFT JOIN VillageHouseName hn on hn.Id = h.HouseNameId
-  WHERE u.Id = @userid 
+  WHERE u.Id = @userid
   ```
 - 后面的查询sql可能没有数据的话，就要通过left join进行关联查询来保证有数据 
   ```
