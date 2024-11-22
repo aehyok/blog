@@ -23,7 +23,7 @@ docker exec -it mysql-temp mysql
 
 # 5. 在MySQL提示符下，执行以下SQL命令来重置root密码
 FLUSH PRIVILEGES;
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'M9y2512!!!???';
 FLUSH PRIVILEGES;
 EXIT;
 
