@@ -14,7 +14,7 @@ import{_ as s,c as a,o as n,a5 as e}from"./chunks/framework.CW9jv5bj.js";const u
 <span class="line"><span></span></span>
 <span class="line"><span># 5. 在MySQL提示符下，执行以下SQL命令来重置root密码</span></span>
 <span class="line"><span>FLUSH PRIVILEGES;</span></span>
-<span class="line"><span>ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;new_password&#39;;</span></span>
+<span class="line"><span>ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;M9y2512!!!???&#39;;</span></span>
 <span class="line"><span>FLUSH PRIVILEGES;</span></span>
 <span class="line"><span>EXIT;</span></span>
 <span class="line"><span></span></span>
