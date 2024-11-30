@@ -2,6 +2,7 @@
 - 2024-3-25 充值OpenAI API 成功 https://bewildcard.com/create-tips 
 - 我的现用专梯（2023-04-04开始，用到2024-03-16，以及至今）一致比较稳定，有专业团队进行维护 
   - 不用魔法就可访问 https://my.x-air.app:666/#/register?aff=32853 
+  - 其余推荐专梯 https://github.com/microsoft/graphrag/issues/361
 - 下载各种apk https://apkcombo.com
 - ChatGPT官网 https://ai.com
 - Midjourney https://midjourney.com
