@@ -49,7 +49,6 @@ dotnet ef migrations add MonitorTaskAnonymous -c DvsContext --framework net6.0 -
 
 dotnet ef database update -c DvsContext --framework net6.0 -v
 
-
 // 回滚到上一次的变更
 // 列出所有的数据库变更list
 dotnet ef migrations list -c DvsContext --framework net6.0 -v
