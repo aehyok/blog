@@ -45,7 +45,6 @@ import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.CW9jv5bj.js";const b
 <span class="line"><span></span></span>
 <span class="line"><span>dotnet ef database update -c DvsContext --framework net6.0 -v</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span></span></span>
 <span class="line"><span>// 回滚到上一次的变更</span></span>
 <span class="line"><span>// 列出所有的数据库变更list</span></span>
 <span class="line"><span>dotnet ef migrations list -c DvsContext --framework net6.0 -v</span></span>
