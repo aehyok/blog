@@ -11,7 +11,7 @@ import{_ as a,c as s,o as n,a5 as e}from"./chunks/framework.CW9jv5bj.js";const q
 <span class="line"><span>## 通过IsSearch来设置是否可以作为查询字段</span></span>
 <span class="line"><span>SELECT * FROM ColumnSchema S WHERE S.IsSearch = 1</span></span></code></pre></div><h2 id="一套表任务配置列表" tabindex="-1">一套表任务配置列表 <a class="header-anchor" href="#一套表任务配置列表" aria-label="Permalink to &quot;一套表任务配置列表&quot;">​</a></h2><p>select * from DynamicReport(包含QueryId、TableSchemaId)</p><p>select * from DynamicReport s where s.TableSchemaId is not null</p><h2 id="数据查询算法-sql或者c-逻辑" tabindex="-1">数据查询算法（sql或者C#逻辑） <a class="header-anchor" href="#数据查询算法-sql或者c-逻辑" aria-label="Permalink to &quot;数据查询算法（sql或者C#逻辑）&quot;">​</a></h2><p>select * from <code>Query</code> s where s.Id= 1674720456927744000</p><h2 id="一套表数据修改" tabindex="-1">一套表数据修改 <a class="header-anchor" href="#一套表数据修改" aria-label="Permalink to &quot;一套表数据修改&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>{</span></span>
 <span class="line"><span>  &quot;action&quot;: 2,</span></span>
-<span class="line"><span>  &quot;formName&quot;: &quot;123&quot;,</span></span>
+<span class="line"><span>  &quot;formName&quot;: &quot;1839216387046920192-dynamicReportId&quot;,</span></span>
 <span class="line"><span>  &quot;areaId&quot;: 0,</span></span>
 <span class="line"><span>  &quot;parameters&quot;: {</span></span>
 <span class="line"><span>    &quot;id&quot;: &quot;1847161187184300032&quot;,</span></span>
