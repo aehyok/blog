@@ -28,6 +28,8 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 2025年1月2日
+- https://www.deepseek.com/
 ## 12月30日
 - 随机生成头像
   - https://notion-avatar.vercel.app/zh
