@@ -1,5 +1,5 @@
 ## 一个程序员关于ChatGPT学习的过程记录
-- 2024-3-25 充值OpenAI API 成功 https://bewildcard.com/create-tips 
+- 2025-02-18日 充值OpenAI API 成功 https://yeka.ai/i/QIMING16 
 - 我的现用专梯（2023-04-04开始，用到2024-03-16，以及至今）一致比较稳定，有专业团队进行维护 
   - 不用魔法就可访问 https://my.x-air.app:666/#/register?aff=32853 
   - 其余推荐专梯 https://github.com/microsoft/graphrag/issues/361
@@ -28,6 +28,10 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+
+## 2025年2月18日
+- Grok3 https://console.x.ai/team
+- https://grok.com/?referrer=website
 ## 2025年1月2日
 - https://www.deepseek.com/
 ## 12月30日
@@ -671,3 +675,13 @@ github copilot平替 https://github.com/TabbyML/tabby
 - 自己动手实践Embedding模型
   - 实践详情 https://mp.weixin.qq.com/s/Vntxc4ODqoN7_ty9uD0Qzw
   - 使用技术 ChatGPT Embedding、Qrdant向量数据库、go语言实践 
+
+
+
+
+## autodl 训练
+```
+git clone https://github.com/hiyouga/LLaMA-Factory.git
+cd LLaMA-Factory
+pip install -e .[metrics]
+```
