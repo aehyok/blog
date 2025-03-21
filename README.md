@@ -29,6 +29,12 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 3月21日
+- 网站测速工具
+  - https://tool.chinaz.com/sitespeed/
+## 3月20日
+- mcp收集站点
+  - https://mcp.so/
 ## 3月15日
 - 部署大模型的工具 https://github.com/vllm-project/vllm
 ## 2025年3月10日
