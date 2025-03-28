@@ -26,9 +26,15 @@
 - https://github.com/sunner/ChatALL
 - https://github.com/labring/FastGPT
 - https://github.com/songquanpeng/one-api
-## 个人博客
+## 个人博客s
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 3月26日
+- 卡片生成小工具
+  - https://card.3min.top/?v=BETA
+  - 
+- 图床工具
+  - https://piclist.cn/
 ## 3月24日
 - 标记空间物体大模型
 ```
