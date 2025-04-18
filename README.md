@@ -29,6 +29,9 @@
 ## 个人博客s
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 4月18日
+- 云服务器
+  - https://docs.run.claw.cloud/clawcloud-run/pricing
 ## 4月11日
 - google 新工具
   - https://studio.firebase.google.com/
