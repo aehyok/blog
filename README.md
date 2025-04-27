@@ -29,6 +29,9 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 4月27日
+- ai-proxy 代理
+  - J:\github\ai-proxy
 ## 4月23日
 - 外文博客
   - https://www.newsweek.com/
