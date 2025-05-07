@@ -29,6 +29,16 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 4月28日
+- 树莓派
+  - https://www.21ic.com/a/985833.html
+- 语音实时对话
+  - https://platform.openai.com/docs/guides/realtime-conversations
+  - https://aistudio.google.com/app/live
+  - https://ai.google.dev/gemini-api/docs/live?hl=zh_cn
+  - https://www.modelscope.cn/models/moonshotai/Kimi-Audio-7B/
+  - https://github.com/THUDM/GLM-4-Voice
+  - https://console.shengwang.cn/overview
 ## 4月27日
 - ai-proxy 代理
   - J:\github\ai-proxy
