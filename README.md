@@ -29,6 +29,14 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+# 5月14日
+- 即梦提示词
+  - https://edui123.com/jm/
+- ip 域名归属地
+  - https://ping0.cc/
+## 4月30日
+- 扣子空间
+  - https://space.coze.cn/
 ## 4月28日
 - 树莓派
   - https://www.21ic.com/a/985833.html
