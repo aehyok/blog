@@ -137,3 +137,6 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+html>body {
+  cursor: url(default.cur), default;
+}
