@@ -1,1 +1,0 @@
-import{_ as t,c as a,o as e}from"./chunks/framework.CW9jv5bj.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/ddd.md","filePath":"javascript/ddd.md"}'),d={name:"javascript/ddd.md"};function r(s,c,o,n,p,i){return e(),a("div")}const f=t(d,[["render",r]]);export{m as __pageData,f as default};
