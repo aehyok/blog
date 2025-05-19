@@ -6,7 +6,7 @@
       <div class="post-grid">
         <!-- Post 7 -->
         <template v-for="item in group.children">
-          <div class="post-card" @click="openClick(item.url)">
+          <div class="post-card" @click="openClick(item)">
             <div class="post-image">
               <img :src="item.cover" alt="开源项目1" />
             </div>
@@ -30,6 +30,9 @@
 </template>
 <script setup lang="ts">
 import { reactive } from "vue";
+import { useRoute, useRouter } from 'vitepress'
+
+const router = useRouter()
 
 const state = reactive({
   groupList:[
@@ -43,6 +46,7 @@ const state = reactive({
           cover: "https://imgur.aehyok.uk/v2/9TCD4qy.png",
           description: "目前全方位最强的AI工具",
           url: "https://www.openai.com/chatgpt",
+          isExternalLink: true,
           tags: ["#AI", "#文生图", "#文生视频", "#深度搜索"],
         },
         {
@@ -51,6 +55,7 @@ const state = reactive({
           cover: "https://imgur.aehyok.uk/v2/ZSeQGvq.jpeg",
           description: "地表代码能力最强工具",
           url: "https://claude.ai/",
+          isExternalLink: true,
           tags: ["#AI", "#生成代码", "#深度搜索"],
         },
         {
@@ -59,6 +64,7 @@ const state = reactive({
           cover: "https://imgur.aehyok.uk/v2/sJDfe4o.jpeg",
           description: "后起直追OpenAI的最佳选手",
           url: "https://gemini.google.com/",
+          isExternalLink: true,
           tags: ["#AI", "#长文", "#深度搜索", "文生图", "文生视频"],
         },
         {
@@ -67,6 +73,7 @@ const state = reactive({
           cover: "https://imgur.aehyok.uk/v2/0vk7QT9.png",
           description: "后起直追OpenAI的最佳选手",
           url: "https://aistudio.google.com/app",
+          isExternalLink: true,
           tags: ["#AI", "#长文", "#深度搜索", "文生图", "文生视频","免费API"],
         },
         {
@@ -75,6 +82,7 @@ const state = reactive({
           cover: "https://imgur.aehyok.uk/v2/oK7t93C.jpeg",
           description: "马一龙全球首富的AI工具",
           url: "https://grok.com",
+          isExternalLink: true,
           tags: ["#AI", "#长文", "#深度搜索", "文生图", "实时搜索","免费API"],
         },
       ],
@@ -89,6 +97,7 @@ const state = reactive({
           cover: "https://imgur.aehyok.uk/v2/6ZD4oAz.jpeg",
           description: "目前全方位最强的AI工具",
           url: "https://space.coze.cn/",
+          isExternalLink: true,
           tags: ["#AI", "自主规划任务"],
         },
         {
@@ -97,20 +106,22 @@ const state = reactive({
           cover: "https://imgur.aehyok.uk/v2/UiJTdK7.jpeg",
           description: "全球首款通用AI Agent",
           url: "https://manus.im/",
+          isExternalLink: true,
           tags: ["#AI", "自主规划任务"],
         }
       ]
     },
     {
       id: 3,
-      name: "学习资源",
+      name: "日常使用小工具",
       children: [
         {
           id: 1,
-          name: "各类学习资源汇总下载",
+          name: "移除背景小工具",
           cover: "https://imgur.aehyok.uk/v2/PuGVUpG.png",
           description: "少儿、小学、初中、高中、大学、研究生、博士生的学习资源",
-          url: "https://github.com/mswnlz/edu-knowlege",
+          url: "https://www.remove.bg/zh/upload",
+          isExternalLink: true,
           tags: ["学而思","名师","直播录课"],
         },
         {
@@ -119,6 +130,55 @@ const state = reactive({
           cover: "https://imgur.aehyok.uk/v2/J39UE3b.png",
           description: "小学、初中、高中、大学PDF教材",
           url: "https://github.com/TapXWorld/ChinaTextbook",
+          isExternalLink: true,
+          tags: ["语文", "数学", "英语", "物理", "化学", "生物", "地理", "历史"],
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "github上孩子学习资源",
+      children: [
+        {
+          id: 1,
+          name: "各类学习资源汇总下载",
+          cover: "https://imgur.aehyok.uk/v2/PuGVUpG.png",
+          description: "少儿、小学、初中、高中、大学、研究生、博士生的学习资源",
+          url: "https://github.com/mswnlz/edu-knowlege",
+          isExternalLink: true,
+          tags: ["学而思","名师","直播录课"],
+        },
+        {
+          id: 2,
+          name: "PDF教材",
+          cover: "https://imgur.aehyok.uk/v2/J39UE3b.png",
+          description: "小学、初中、高中、大学PDF教材",
+          url: "https://github.com/TapXWorld/ChinaTextbook",
+          isExternalLink: true,
+          tags: ["语文", "数学", "英语", "物理", "化学", "生物", "地理", "历史"],
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "拼音歌词",
+      children: [
+        {
+          id: 1,
+          name: "各类学习资源汇总下载",
+          cover: "https://imgur.aehyok.uk/v2/PuGVUpG.png",
+          description: "少儿、小学、初中、高中、大学、研究生、博士生的学习资源",
+          url: "https://github.com/mswnlz/edu-knowlege",
+          isExternalLink: false,
+          tags: ["学而思","名师","直播录课"],
+        },
+        {
+          id: 2,
+          name: "PDF教材",
+          cover: "https://imgur.aehyok.uk/v2/J39UE3b.png",
+          description: "小学、初中、高中、大学PDF教材",
+          url: "https://github.com/TapXWorld/ChinaTextbook",
+          isExternalLink: true,
           tags: ["语文", "数学", "英语", "物理", "化学", "生物", "地理", "历史"],
         }
       ]
@@ -126,11 +186,11 @@ const state = reactive({
   ]
 });
 
-const openClick = (url: string) => {
-  if (url) {
-    window.open(url, "_blank");
+const openClick = (item: any) => {
+  if (item.url && item.isExternalLink) {
+    window.open(item.url, "_blank");
   } else {
-
+    router.go('/blog/lyrics/keneng.html')
   }
 };
 
@@ -150,7 +210,7 @@ const openClick = (url: string) => {
 
 .post-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   margin-bottom: 40px;
 }
@@ -172,7 +232,7 @@ const openClick = (url: string) => {
 
 .post-image {
   width: 100%;
-  height: 180px;
+  height: 160px;
   overflow: hidden;
 }
 
@@ -188,7 +248,7 @@ const openClick = (url: string) => {
 }
 
 .post-content {
-  padding: 16px;
+  padding: 8px;
 }
 
 .post-category {
