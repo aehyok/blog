@@ -31,7 +31,11 @@
 <script setup lang="ts">
 import { reactive } from "vue";
 import { useRoute, useRouter } from 'vitepress'
+import { useData } from 'vitepress'
 
+const { site } = useData()
+const base = site.value.base
+console.log("base", base);
 const router = useRouter()
 
 const state = reactive({
@@ -86,6 +90,30 @@ const state = reactive({
           tags: ["#AI", "#长文", "#深度搜索", "文生图", "实时搜索","免费API"],
         },
       ],
+    },
+    {
+      id: 2,
+      name: "益智小游戏",
+      children: [
+        {
+          id: 1,
+          name: "舒尔特表格训练",
+          cover: "https://imgur.aehyok.uk/v2/6ZD4oAz.jpeg",
+          description: "提高儿童专注力的小游戏，可长期训练",
+          url: "./game?html=schulte_table",
+          isExternalLink: false,
+          tags: ["#AI小游戏", "#益智小游戏"],
+        },
+        {
+          id: 2,
+          name: "Manus",
+          cover: "https://imgur.aehyok.uk/v2/UiJTdK7.jpeg",
+          description: "全球首款通用AI Agent",
+          url: "https://manus.im/",
+          isExternalLink: true,
+          tags: ["#AI", "自主规划任务"],
+        }
+      ]
     },
     {
       id: 2,
@@ -190,7 +218,8 @@ const openClick = (item: any) => {
   if (item.url && item.isExternalLink) {
     window.open(item.url, "_blank");
   } else {
-    router.go('/blog/lyrics/keneng.html')
+    const url = base !== "/" ? base + item.url : item.url
+    router.go(url)
   }
 };
 
