@@ -38,10 +38,5 @@ layout: home
 
 <script setup lang="ts">
   import Group from "./components/group.vue"
-  import { ref } from "vue"
-  console.log(window.location.href, "window.location.href")
-  const url = ref(window.location.href + "html/game/schulte_table.html")
 </script>
-<iframe :src="url" width="100%" height="500px" frameborder="0">
-</iframe>
 <Group />

@@ -8,6 +8,7 @@ export default defineConfig({
   description: "那个曾经的少年回来了",
   base: "/blog",
   ignoreDeadLinks: true,
+  lastUpdated: true,
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "logo.svg" }],
     ["script", 

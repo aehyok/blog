@@ -29,6 +29,12 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 5月21日
+- 精美个人博客
+  - https://gitee.com/onlyonexl/vitepress-theme-teek-one-public
+  - https://onedayxyy.cn/
+- 网站访问排名
+  - https://zh.semrush.com/features/
 # 5月14日
 - 即梦提示词
   - https://edui123.com/jm/
