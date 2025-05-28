@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
   import { ref } from "vue"
   import { useRoute, useRouter } from 'vitepress'
   import { useData } from 'vitepress'
@@ -16,4 +16,9 @@
   style="width: 100%; height: 100vh;"
   @on-ready="() => console.log('onReady')"
   :src="url">
-</IframeResizer>
+</IframeResizer> -->
+<script lang="ts" setup>
+  import Shuerte from "./shuerte.vue"
+</script>
+
+<Shuerte />
