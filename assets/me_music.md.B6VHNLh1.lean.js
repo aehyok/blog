@@ -1,1 +1,0 @@
-import{_ as t,c as d,o as r,a5 as e}from"./chunks/framework.A9OIOolY.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"me/music.md","filePath":"me/music.md"}'),a={name:"me/music.md"},o=e("",2),n=[o];function s(_,c,h,i,m,l){return r(),d("div",null,n)}const f=t(a,[["render",s]]);export{u as __pageData,f as default};
