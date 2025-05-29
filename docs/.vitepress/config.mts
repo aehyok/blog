@@ -37,8 +37,22 @@ export default defineConfig({
     sidebar: {
       "/daily/": [
         {
+          text: "2025年每日笔记",
+          items: [
+            { text: "2025-06", link: "/daily/2025-06" },
+            { text: "2025-05", link: "/daily/2025-05" },
+            { text: "2025-04", link: "/daily/2025-04" },
+            { text: "2025-03", link: "/daily/2025-03" },
+            { text: "2025-02", link: "/daily/2025-02" },
+            { text: "2025-01", link: "/daily/2025-01" },
+          ],
+        },
+        {
           text: "2024年每日笔记",
           items: [
+            { text: "2024-12", link: "/daily/2024-12" },
+            { text: "2024-11", link: "/daily/2024-11" },
+            { text: "2024-10", link: "/daily/2024-10" },
             { text: "2024-09", link: "/daily/2024-09" },
             { text: "2024-08", link: "/daily/2024-08" },
             { text: "2024-07", link: "/daily/2024-07" },

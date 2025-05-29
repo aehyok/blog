@@ -55,9 +55,6 @@
   onMounted(() => {
     type.value = getUrlParam("type") || "";
   })
-
-  console.log("location", window.location.href)
-
 </script>
 
 <Shuerte v-if="type == 'shuerte'" />

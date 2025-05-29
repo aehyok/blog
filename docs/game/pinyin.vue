@@ -1,7 +1,7 @@
 <template>
   <div class="game-container">
     <div class="header">
-      <h1 class="title">🧩 声母韵母拼装游戏</h1>
+      <h1 class="title">🧩 拼音拼装游戏</h1>
       <div class="score">得分: <span>{{ score }}</span> | 关卡: <span>{{ currentLevel }}</span></div>
     </div>
 
@@ -1109,6 +1109,8 @@ export default {
                                 piece.includes(vowel));
     },
     handleDragStart(e, index) {
+      e.stopPropagation(); 
+      document.body.style.overflow = 'hidden';
       e.dataTransfer.setData('text/plain', this.availablePieces[index].text);
       this.draggingIndex = index;
     },
@@ -1119,6 +1121,7 @@ export default {
     
     handleDrop(e, zoneIndex) {
       e.preventDefault();
+
       const piece = e.dataTransfer.getData('text/plain');
       
       if (this.dropZones[zoneIndex] === '') {
@@ -1138,6 +1141,7 @@ export default {
     handleDragEnd() {
       this.draggingIndex = null;
       this.dragOverIndex = null;
+      document.body.style.overflow = '';
     },
     
     handlePieceClick(pieceText, index) {
@@ -1345,6 +1349,7 @@ export default {
   color: #2d3748;
   transition: all 0.3s ease;
   position: relative;
+  touch-action: manipulation;
 }
 
 .drop-zone.drag-over {
@@ -1383,6 +1388,8 @@ export default {
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   user-select: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .piece:hover {
@@ -1416,6 +1423,12 @@ export default {
   animation: pulse 1s infinite;
 }
 
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(66, 153, 225, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(66, 153, 225, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(66, 153, 225, 0); }
+}
+
 .controls {
   display: flex;
   justify-content: center;
@@ -1432,6 +1445,8 @@ export default {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-primary {
@@ -1491,24 +1506,23 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
+/* 平板设备适配 */
+@media (min-width: 769px) and (max-width: 1024px) {
   .game-container > div:first-child {
-    padding: 20px;
-    margin: 10px;
-  }
-  
-  .instruction-tip {
-    font-size: 14px;
-    padding: 10px 12px;
+    padding: 25px;
   }
   
   .title {
-    font-size: 24px;
+    font-size: 28px;
+  }
+  
+  .score {
+    font-size: 18px;
   }
   
   .piece {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     font-size: 20px;
   }
   
@@ -1516,6 +1530,222 @@ export default {
     width: 70px;
     height: 70px;
     font-size: 24px;
+  }
+}
+
+/* 中等平板设备 */
+@media (min-width: 481px) and (max-width: 768px) {
+  .game-container {
+    padding: 15px;
+  }
+  
+  .game-container > div:first-child {
+    padding: 25px;
+  }
+  
+  .title {
+    font-size: 26px;
+  }
+  
+  .score {
+    font-size: 18px;
+  }
+  
+  .instruction-tip {
+    font-size: 15px;
+  }
+  
+  .target-word {
+    font-size: 20px;
+  }
+  
+  .target-image {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+  }
+  
+  .drop-zones {
+    gap: 15px;
+  }
+  
+  .drop-zone {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+  }
+  
+  .piece {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+  
+  .controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .btn {
+    min-width: 120px;
+  }
+}
+
+/* 移动端优化 */
+@media (max-width: 480px) {
+  .game-container {
+    padding: 5px;
+  }
+  
+  .game-container > div:first-child {
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .header {
+    margin-bottom: 15px;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .score {
+    font-size: 14px;
+  }
+  
+  .game-area {
+    gap: 15px;
+  }
+  
+  .instruction-tip {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  
+  .target-area {
+    padding: 12px;
+    border-radius: 10px;
+  }
+  
+  .target-word {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .target-image {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .drop-zones {
+    gap: 6px;
+    margin-top: 10px;
+  }
+  
+  .drop-zone {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    border-width: 2px;
+  }
+  
+  .pieces-area {
+    padding: 10px;
+    gap: 6px;
+  }
+  
+  .piece {
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+  }
+  
+  .controls {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 10px 16px;
+    font-size: 12px;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .success-animation {
+    font-size: 28px;
+  }
+  
+  .confetti {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* 超小屏幕设备 */
+@media (max-width: 360px) {
+  .title {
+    font-size: 18px;
+  }
+  
+  .drop-zone {
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+  }
+  
+  .piece {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  }
+  
+  .target-image {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+  
+  .drop-zones {
+    gap: 4px;
+  }
+  
+  .pieces-area {
+    gap: 4px;
+  }
+}
+
+/* 横屏模式优化 */
+@media (orientation: landscape) and (max-height: 600px) {
+  .game-container {
+    padding: 5px;
+  }
+  
+  .game-area {
+    gap: 10px;
+  }
+  
+  .header {
+    margin-bottom: 10px;
+  }
+  
+  .target-area {
+    padding: 10px;
+  }
+  
+  .pieces-area {
+    padding: 10px;
+  }
+  
+  .controls {
+    margin-top: 10px;
   }
 }
 </style>
