@@ -5,7 +5,7 @@
     <div class="stats">
       <div class="stat-item">
         <div class="stat-label">当前进度</div>
-        <div class="stat-value">{{ currentNumber - 1 }}/25</div>
+        <div class="stat-value">{{ currentNumber - 1 }}/{{ totalCells }}</div>
       </div>
       <div class="stat-item">
         <div class="stat-label">计时</div>
@@ -18,31 +18,50 @@
     </div>
 
     <div class="controls">
-      <button 
-        class="start-btn" 
-        :disabled="gameStarted && !gameCompleted"
-        @click="generateNewGrid"
-      >
-        {{ gameStarted && !gameCompleted ? '游戏进行中' : '开始新游戏' }}
-      </button>
-      <button class="reset-btn" @click="resetGame">重置</button>
-      <button 
-        class="toggle-btn" 
-        :class="{ active: showClickedNumbers }"
-        @click="toggleClickedNumbers"
-      >
-        {{ showClickedNumbers ? '隐藏已点' : '显示已点' }}
-      </button>
-      <button 
-        class="toggle-btn hover-toggle" 
-        :class="{ active: showHoverEffect }"
-        @click="toggleHoverEffect"
-      >
-        {{ showHoverEffect ? '隐藏悬停' : '显示悬停' }}
-      </button>
+      <div class="control-row">
+        <div class="grid-size-selector">
+          <label for="gridSize">网格尺寸:</label>
+          <select 
+            id="gridSize" 
+            v-model="gridSize" 
+            @change="handleGridSizeChange"
+            :disabled="gameStarted && !gameCompleted"
+          >
+            <option v-for="size in gridSizes" :key="size.value" :value="size.value">
+              {{ size.label }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="control-row">
+        <button 
+          class="start-btn" 
+          :disabled="gameStarted && !gameCompleted"
+          @click="generateNewGrid"
+        >
+          {{ gameStarted && !gameCompleted ? '游戏进行中' : '开始新游戏' }}
+        </button>
+        <button class="reset-btn" @click="resetGame">重置</button>
+      </div>
+      <div class="control-row">
+        <button 
+          class="toggle-btn" 
+          :class="{ active: showClickedNumbers }"
+          @click="toggleClickedNumbers"
+        >
+          {{ showClickedNumbers ? '隐藏已点' : '显示已点' }}
+        </button>
+        <button 
+          class="toggle-btn hover-toggle" 
+          :class="{ active: showHoverEffect }"
+          @click="toggleHoverEffect"
+        >
+          {{ showHoverEffect ? '隐藏悬停' : '显示悬停' }}
+        </button>
+      </div>
     </div>
 
-    <div class="grid">
+    <div class="grid" :style="{ gridTemplateColumns: `repeat(${gridSize}, 1fr)` }">
       <div 
         v-for="(number, index) in grid" 
         :key="index"
@@ -65,7 +84,7 @@
     </div>
 
     <div class="history" :class="{ show: gameHistory.length > 0 }">
-      <h3>历史记录</h3>
+      <h3>历史记录 ({{ gridSize }}×{{ gridSize }})</h3>
       <div>
         <div 
           v-for="(record, index) in reversedHistory" 
@@ -87,7 +106,19 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 
+// 网格尺寸选项
+const gridSizes = [
+  { value: 1, label: '1×1 (1格)' },
+  { value: 2, label: '2×2 (4格)' },
+  { value: 3, label: '3×3 (9格)' },
+  { value: 4, label: '4×4 (16格)' },
+  { value: 5, label: '5×5 (25格)' },
+  { value: 6, label: '6×6 (36格)' },
+  { value: 7, label: '7×7 (49格)' }
+]
+
 // 响应式数据
+const gridSize = ref(5)
 const grid = ref([])
 const currentNumber = ref(1)
 const clickedNumbers = ref([])
@@ -108,18 +139,26 @@ const showClickedNumbers = ref(true)
 const showHoverEffect = ref(true)
 
 // 计算属性
+const totalCells = computed(() => gridSize.value * gridSize.value)
+
 const reversedHistory = computed(() => {
   return [...gameHistory.value].reverse()
 })
 
 // 生成随机网格
 const generateRandomGrid = () => {
-  const numbers = Array.from({ length: 25 }, (_, i) => i + 1)
+  const numbers = Array.from({ length: totalCells.value }, (_, i) => i + 1)
   for (let i = numbers.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [numbers[i], numbers[j]] = [numbers[j], numbers[i]]
   }
   return numbers
+}
+
+// 处理网格尺寸变化
+const handleGridSizeChange = () => {
+  loadSavedData()
+  generateNewGrid()
 }
 
 // 生成新网格
@@ -163,7 +202,7 @@ const cellClick = (number, index) => {
     currentNumber.value++
 
     // 检查是否完成
-    if (currentNumber.value > 25) {
+    if (currentNumber.value > totalCells.value) {
       completeGame()
     }
   } else if (gameStarted.value) {
@@ -207,7 +246,7 @@ const completeGame = () => {
   if (isNewRecord.value) {
     bestTime.value = completionTime.value
     try {
-      localStorage.setItem('schulte-best-time', bestTime.value.toString())
+      localStorage.setItem(`schulte-best-time-${gridSize.value}x${gridSize.value}`, bestTime.value.toString())
     } catch (e) {
       console.error('Failed to save best time:', e)
     }
@@ -220,7 +259,7 @@ const completeGame = () => {
   })
   
   try {
-    localStorage.setItem('schulte-history', JSON.stringify(gameHistory.value))
+    localStorage.setItem(`schulte-history-${gridSize.value}x${gridSize.value}`, JSON.stringify(gameHistory.value))
   } catch (e) {
     console.error('Failed to save history:', e)
   }
@@ -267,14 +306,18 @@ const formatTime = (ms) => {
 // 加载保存的数据
 const loadSavedData = () => {
   try {
-    const savedBestTime = localStorage.getItem('schulte-best-time')
+    const savedBestTime = localStorage.getItem(`schulte-best-time-${gridSize.value}x${gridSize.value}`)
     if (savedBestTime) {
       bestTime.value = parseInt(savedBestTime)
+    } else {
+      bestTime.value = null
     }
 
-    const savedHistory = localStorage.getItem('schulte-history')
+    const savedHistory = localStorage.getItem(`schulte-history-${gridSize.value}x${gridSize.value}`)
     if (savedHistory) {
       gameHistory.value = JSON.parse(savedHistory)
+    } else {
+      gameHistory.value = []
     }
 
     const savedShowClicked = localStorage.getItem('schulte-show-clicked')
@@ -286,8 +329,22 @@ const loadSavedData = () => {
     if (savedShowHover !== null) {
       showHoverEffect.value = savedShowHover === 'true'
     }
+
+    const savedGridSize = localStorage.getItem('schulte-grid-size')
+    if (savedGridSize) {
+      gridSize.value = parseInt(savedGridSize)
+    }
   } catch (e) {
     console.error('Failed to load saved data:', e)
+  }
+}
+
+// 保存网格尺寸
+const saveGridSize = () => {
+  try {
+    localStorage.setItem('schulte-grid-size', gridSize.value.toString())
+  } catch (e) {
+    console.error('Failed to save grid size:', e)
   }
 }
 
@@ -315,24 +372,24 @@ onUnmounted(() => {
   font-family: Arial, sans-serif;
   background: white;
   border-radius: 15px;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
   margin: 0 auto;
 }
 
 h1 {
   color: #333;
-  margin-bottom: 20px;
-  font-size: 2.5rem;
+  margin-bottom: 25px;
+  font-size: 2.2rem;
 }
 
 .stats {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   background: #f8f9fa;
   padding: 15px;
   border-radius: 10px;
@@ -343,13 +400,13 @@ h1 {
 }
 
 .stat-label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #666;
   margin-bottom: 5px;
 }
 
 .stat-value {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #333;
 }
@@ -358,14 +415,91 @@ h1 {
   color: #e74c3c;
 }
 
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.control-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-size-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.grid-size-selector label {
+  color: #333;
+  font-weight: bold;
+}
+
+.grid-size-selector select {
+  padding: 8px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background: white;
+  color: #333;
+  transition: all 0.3s ease;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%23666' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 12px;
+  padding-right: 30px;
+  min-width: 120px;
+}
+
+.grid-size-selector select:hover {
+  border-color: #667eea;
+  background-color: #f8f9fa;
+}
+
+.grid-size-selector select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.grid-size-selector select:disabled {
+  background: #f5f5f5;
+  color: #999;
+  cursor: not-allowed;
+  border-color: #ccc;
+}
+
+.grid-size-selector select option {
+  background: white;
+  color: #333;
+  padding: 8px;
+  border: none;
+}
+
+.grid-size-selector select option:hover {
+  background: #f8f9fa;
+}
+
+.grid-size-selector select option:checked {
+  background: #667eea;
+  color: white;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  max-width: 400px;
-  margin: 0 auto 30px;
+  gap: 6px;
+  max-width: min(500px, 95vw);
+  margin: 0 auto 25px;
   background: #fff;
-  padding: 20px;
+  padding: 12px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -373,17 +507,17 @@ h1 {
 .cell {
   aspect-ratio: 1;
   border: 2px solid #ddd;
-  border-radius: 8px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: clamp(0.7rem, 2vw, 1.2rem);
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
   background: white;
   color: #333;
-  min-height: 60px;
+  min-height: clamp(25px, 6vw, 45px);
 }
 
 .cell:hover {
@@ -416,32 +550,26 @@ h1 {
   75% { transform: translateX(5px); }
 }
 
-.controls {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
 button {
-  padding: 12px 25px;
+  padding: 8px 16px;
   border: none;
-  border-radius: 25px;
-  font-size: 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-  min-width: 120px;
+  min-width: 90px;
 }
 
 .start-btn {
   background: #2ecc71;
   color: white;
+  min-width: 110px;
 }
 
 .start-btn:hover {
   background: #27ae60;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .reset-btn {
@@ -451,7 +579,7 @@ button {
 
 .reset-btn:hover {
   background: #2980b9;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .start-btn:disabled {
@@ -467,7 +595,7 @@ button {
 
 .toggle-btn:hover {
   background: #8e44ad;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .toggle-btn.active {
@@ -498,7 +626,7 @@ button {
   background: #d4edda;
   border: 1px solid #c3e6cb;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   margin-top: 20px;
   color: #155724;
   display: none;
@@ -509,13 +637,13 @@ button {
 }
 
 .completion-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .history {
-  margin-top: 30px;
+  margin-top: 25px;
   text-align: left;
   display: none;
 }
@@ -525,18 +653,20 @@ button {
 }
 
 .history h3 {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   color: #333;
+  font-size: 1.1rem;
 }
 
 .history-item {
   background: #f8f9fa;
-  padding: 10px;
+  padding: 8px 12px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.9rem;
 }
 
 .history-time {
@@ -550,11 +680,12 @@ button {
   right: 20px;
   background: #e74c3c;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 5px;
   transform: translateX(300px);
   transition: transform 0.3s ease;
   z-index: 1000;
+  font-size: 0.9rem;
 }
 
 .error-message.show {

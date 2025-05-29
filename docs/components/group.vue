@@ -98,7 +98,7 @@ const state = reactive({
         {
           id: 1,
           name: "舒尔特表格训练",
-          cover: "https://imgur.aehyok.uk/v2/6ZD4oAz.jpeg",
+          cover: "https://imgur.aehyok.uk/v2/ZwNn8zQ.png",
           description: "提高儿童专注力的小游戏，可长期训练",
           url: "./game?html=schulte_table",
           isExternalLink: false,
