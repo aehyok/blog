@@ -97,19 +97,19 @@ const state = reactive({
       children: [
         {
           id: 1,
-          name: "舒尔特表格训练",
+          name: "舒尔特表格小游戏",
           cover: "https://imgur.aehyok.uk/v2/ZwNn8zQ.png",
           description: "提高儿童专注力的小游戏，可长期训练",
-          url: "./game?html=schulte_table",
+          url: "./game?type=shuerte",
           isExternalLink: false,
           tags: ["#AI小游戏", "#益智小游戏"],
         },
         {
           id: 2,
-          name: "Manus",
-          cover: "https://imgur.aehyok.uk/v2/UiJTdK7.jpeg",
-          description: "全球首款通用AI Agent",
-          url: "https://manus.im/",
+          name: "拼音组装小游戏",
+          cover: "https://imgur.aehyok.uk/v2/dGPlHBa.jpeg",
+          description: "拼音识别小游戏",
+          url: "./game?type=pinyin",
           isExternalLink: true,
           tags: ["#AI", "自主规划任务"],
         }
@@ -299,6 +299,9 @@ const openClick = (item: any) => {
   margin-bottom: 10px;
   color: #111;
   line-height: 1.4;
+   h3 {
+    margin: 0
+  }
 }
 
 .post-excerpt {
