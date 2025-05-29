@@ -9,6 +9,7 @@
       <div class="target-area">
         <div class="target-word">拼出下面的拼音:</div>
         <div class="target-image">{{ currentLevelData.emoji }}</div>
+        <div class="instruction-tip">提示：拖动拼音块到正确的位置</div>
         <div>{{ currentLevelData.pinyin }} ({{ currentLevelData.word }})</div>
         <div class="drop-zones">
           <div 
@@ -88,42 +89,965 @@ export default {
       showSuccessAnimation: false,
       confettiList: [],
       availablePieces: [],
-      
       levels: [
         {
-          word: "苹果",
-          pinyin: "píng guǒ",
-          answer: ["p", "íng", "g", "uǒ"],
-          emoji: "🍎",
-          pieces: ["p", "íng", "uǒ", "g", "b", "ā", "m", "ì"]
+          "word": "水果",
+          "pinyin": "shuǐ guǒ",
+          "answer": ["sh", "uǐ", "g", "uǒ"],
+          "emoji": "🍓",
+          "pieces": ["sh", "uǐ", "uǒ", "g", "t", "ián", "m", "ò"]
         },
         {
-          word: "小猫",
-          pinyin: "xiǎo māo",
-          answer: ["x", "iǎo", "m", "āo"],
-          emoji: "🐱",
-          pieces: ["x", "iǎo", "āo", "m", "d", "ù", "l", "ǐ"]
+          "word": "朋友",
+          "pinyin": "péng yǒu",
+          "answer": ["p", "éng", "y", "ǒu"],
+          "emoji": "👫",
+          "pieces": ["p", "éng", "ǒu", "y", "l", "ǐ", "x", "īn"]
         },
         {
-          word: "太阳",
-          pinyin: "tài yáng",
-          answer: ["t", "ài", "y", "áng"],
-          emoji: "☀️",
-          pieces: ["t", "ài", "áng", "y", "h", "ē", "w", "ú"]
+          "word": "学校",
+          "pinyin": "xué xiào",
+          "answer": ["x", "ué", "x", "iào"],
+          "emoji": "🏫",
+          "pieces": ["x", "ué", "iào", "x", "j", "īn", "q", "ì"]
         },
         {
-          word: "月亮",
-          pinyin: "yuè liàng",
-          answer: ["y", "uè", "l", "iàng"],
-          emoji: "🌙",
-          pieces: ["y", "uè", "iàng", "l", "s", "ǐ", "n", "ǚ"]
+          "word": "家庭",
+          "pinyin": "jiā tíng",
+          "answer": ["j", "iā", "t", "íng"],
+          "emoji": "🏠",
+          "pieces": ["j", "iā", "íng", "t", "w", "ài", "r", "én"]
         },
         {
-          word: "花朵",
-          pinyin: "huā duǒ",
-          answer: ["h", "uā", "d", "uǒ"],
-          emoji: "🌸",
-          pieces: ["h", "uā", "uǒ", "d", "k", "ě", "z", "ī"]
+          "word": "时间",
+          "pinyin": "shí jiān",
+          "answer": ["sh", "í", "j", "iān"],
+          "emoji": "⏰",
+          "pieces": ["sh", "í", "iān", "j", "k", "ōng", "l", "ì"]
+        },
+        {
+          "word": "电话",
+          "pinyin": "diàn huà",
+          "answer": ["d", "iàn", "h", "uà"],
+          "emoji": "📞",
+          "pieces": ["d", "iàn", "uà", "h", "m", "ǎi", "s", "hū"]
+        },
+        {
+          "word": "工作",
+          "pinyin": "gōng zuò",
+          "answer": ["g", "ōng", "z", "uò"],
+          "emoji": "💼",
+          "pieces": ["g", "ōng", "uò", "z", "x", "iū", "b", "ān"]
+        },
+        {
+          "word": "医生",
+          "pinyin": "yī shēng",
+          "answer": ["y", "ī", "sh", "ēng"],
+          "emoji": "👨‍⚕️",
+          "pieces": ["y", "ī", "ēng", "sh", "c", "huáng", "n", "ǚ"]
+        },
+        {
+          "word": "老师",
+          "pinyin": "lǎo shī",
+          "answer": ["l", "ǎo", "sh", "ī"],
+          "emoji": "👩‍🏫",
+          "pieces": ["l", "ǎo", "ī", "sh", "m", "ěi", "q", "īng"]
+        },
+        {
+          "word": "学生",
+          "pinyin": "xué shēng",
+          "answer": ["x", "ué", "sh", "ēng"],
+          "emoji": "🎓",
+          "pieces": ["x", "ué", "ēng", "sh", "h", "ǎo", "t", "ài"]
+        },
+        {
+          "word": "汽车",
+          "pinyin": "qì chē",
+          "answer": ["q", "ì", "ch", "ē"],
+          "emoji": "🚗",
+          "pieces": ["q", "ì", "ē", "ch", "f", "ēi", "m", "ǎ"]
+        },
+        {
+          "word": "飞机",
+          "pinyin": "fēi jī",
+          "answer": ["f", "ēi", "j", "ī"],
+          "emoji": "✈️",
+          "pieces": ["f", "ēi", "ī", "j", "g", "āo", "k", "uài"]
+        },
+        {
+          "word": "火车",
+          "pinyin": "huǒ chē",
+          "answer": ["h", "uǒ", "ch", "ē"],
+          "emoji": "🚂",
+          "pieces": ["h", "uǒ", "ē", "ch", "l", "ù", "m", "àn"]
+        },
+        {
+          "word": "手机",
+          "pinyin": "shǒu jī",
+          "answer": ["sh", "ǒu", "j", "ī"],
+          "emoji": "📱",
+          "pieces": ["sh", "ǒu", "ī", "j", "d", "iàn", "n", "ǎo"]
+        },
+        {
+          "word": "电脑",
+          "pinyin": "diàn nǎo",
+          "answer": ["d", "iàn", "n", "ǎo"],
+          "emoji": "💻",
+          "pieces": ["d", "iàn", "ǎo", "n", "y", "óu", "x", "ì"]
+        },
+        {
+          "word": "书籍",
+          "pinyin": "shū jí",
+          "answer": ["sh", "ū", "j", "í"],
+          "emoji": "📚",
+          "pieces": ["sh", "ū", "í", "j", "w", "én", "z", "ì"]
+        },
+        {
+          "word": "音乐",
+          "pinyin": "yīn yuè",
+          "answer": ["y", "īn", "y", "uè"],
+          "emoji": "🎵",
+          "pieces": ["y", "īn", "uè", "y", "g", "ē", "q", "ǔ"]
+        },
+        {
+          "word": "电影",
+          "pinyin": "diàn yǐng",
+          "answer": ["d", "iàn", "y", "ǐng"],
+          "emoji": "🎬",
+          "pieces": ["d", "iàn", "ǐng", "y", "j", "ù", "ch", "ǎng"]
+        },
+        {
+          "word": "运动",
+          "pinyin": "yùn dòng",
+          "answer": ["y", "ùn", "d", "òng"],
+          "emoji": "⚽",
+          "pieces": ["y", "ùn", "òng", "d", "p", "ǎo", "b", "ù"]
+        },
+        {
+          "word": "游戏",
+          "pinyin": "yóu xì",
+          "answer": ["y", "óu", "x", "ì"],
+          "emoji": "🎮",
+          "pieces": ["y", "óu", "ì", "x", "w", "án", "l", "è"]
+        },
+        {
+          "word": "美食",
+          "pinyin": "měi shí",
+          "answer": ["m", "ěi", "sh", "í"],
+          "emoji": "🍽️",
+          "pieces": ["m", "ěi", "í", "sh", "c", "ài", "f", "àn"]
+        },
+        {
+          "word": "咖啡",
+          "pinyin": "kā fēi",
+          "answer": ["k", "ā", "f", "ēi"],
+          "emoji": "☕",
+          "pieces": ["k", "ā", "ēi", "f", "ch", "á", "n", "ǎi"]
+        },
+        {
+          "word": "茶叶",
+          "pinyin": "chá yè",
+          "answer": ["ch", "á", "y", "è"],
+          "emoji": "🍵",
+          "pieces": ["ch", "á", "è", "y", "s", "huǐ", "b", "ēi"]
+        },
+        {
+          "word": "衣服",
+          "pinyin": "yī fú",
+          "answer": ["y", "ī", "f", "ú"],
+          "emoji": "👕",
+          "pieces": ["y", "ī", "ú", "f", "k", "ù", "z", "i"]
+        },
+        {
+          "word": "鞋子",
+          "pinyin": "xié zi",
+          "answer": ["x", "ié", "z", "i"],
+          "emoji": "👟",
+          "pieces": ["x", "ié", "i", "z", "w", "à", "t", "ào"]
+        },
+        {
+          "word": "帽子",
+          "pinyin": "mào zi",
+          "answer": ["m", "ào", "z", "i"],
+          "emoji": "🎩",
+          "pieces": ["m", "ào", "i", "z", "t", "óu", "d", "ài"]
+        },
+        {
+          "word": "眼镜",
+          "pinyin": "yǎn jìng",
+          "answer": ["y", "ǎn", "j", "ìng"],
+          "emoji": "👓",
+          "pieces": ["y", "ǎn", "ìng", "j", "k", "àn", "q", "īng"]
+        },
+        {
+          "word": "头发",
+          "pinyin": "tóu fà",
+          "answer": ["t", "óu", "f", "à"],
+          "emoji": "💇",
+          "pieces": ["t", "óu", "à", "f", "l", "iǎn", "m", "ěi"]
+        },
+        {
+          "word": "身体",
+          "pinyin": "shēn tǐ",
+          "answer": ["sh", "ēn", "t", "ǐ"],
+          "emoji": "🧘",
+          "pieces": ["sh", "ēn", "ǐ", "t", "j", "iàn", "k", "āng"]
+        },
+        {
+          "word": "健康",
+          "pinyin": "jiàn kāng",
+          "answer": ["j", "iàn", "k", "āng"],
+          "emoji": "💪",
+          "pieces": ["j", "iàn", "āng", "k", "b", "ìng", "y", "ào"]
+        },
+        {
+          "word": "快乐",
+          "pinyin": "kuài lè",
+          "answer": ["k", "uài", "l", "è"],
+          "emoji": "😊",
+          "pieces": ["k", "uài", "è", "l", "x", "ìng", "f", "ú"]
+        },
+        {
+          "word": "幸福",
+          "pinyin": "xìng fú",
+          "answer": ["x", "ìng", "f", "ú"],
+          "emoji": "🍀",
+          "pieces": ["x", "ìng", "ú", "f", "ài", "q", "íng", "r"]
+        },
+        {
+          "word": "爱情",
+          "pinyin": "ài qíng",
+          "answer": ["ài", "", "q", "íng"],
+          "emoji": "❤️",
+          "pieces": ["ài", "", "íng", "q", "h", "ūn", "y", "īn"]
+        },
+        {
+          "word": "婚姻",
+          "pinyin": "hūn yīn",
+          "answer": ["h", "ūn", "y", "īn"],
+          "emoji": "💒",
+          "pieces": ["h", "ūn", "īn", "y", "j", "iā", "t", "íng"]
+        },
+        {
+          "word": "孩子",
+          "pinyin": "hái zi",
+          "answer": ["h", "ái", "z", "i"],
+          "emoji": "👶",
+          "pieces": ["h", "ái", "i", "z", "x", "iǎo", "b", "ǎo"]
+        },
+        {
+          "word": "父母",
+          "pinyin": "fù mǔ",
+          "answer": ["f", "ù", "m", "ǔ"],
+          "emoji": "👨‍👩‍👧‍👦",
+          "pieces": ["f", "ù", "ǔ", "m", "z", "ǔ", "x", "iān"]
+        },
+        {
+          "word": "祖先",
+          "pinyin": "zǔ xiān",
+          "answer": ["z", "ǔ", "x", "iān"],
+          "emoji": "👴",
+          "pieces": ["z", "ǔ", "iān", "x", "h", "òu", "d", "ài"]
+        },
+        {
+          "word": "后代",
+          "pinyin": "hòu dài",
+          "answer": ["h", "òu", "d", "ài"],
+          "emoji": "👨‍👩‍👧",
+          "pieces": ["h", "òu", "ài", "d", "z", "ǐ", "s", "ūn"]
+        },
+        {
+          "word": "子孙",
+          "pinyin": "zǐ sūn",
+          "answer": ["z", "ǐ", "s", "ūn"],
+          "emoji": "👪",
+          "pieces": ["z", "ǐ", "ūn", "s", "sh", "ì", "j", "iè"]
+        },
+        {
+          "word": "世界",
+          "pinyin": "shì jiè",
+          "answer": ["sh", "ì", "j", "iè"],
+          "emoji": "🌍",
+          "pieces": ["sh", "ì", "iè", "j", "d", "ì", "q", "iú"]
+        },
+        {
+          "word": "地球",
+          "pinyin": "dì qiú",
+          "answer": ["d", "ì", "q", "iú"],
+          "emoji": "🌎",
+          "pieces": ["d", "ì", "iú", "q", "t", "iān", "k", "ōng"]
+        },
+        {
+          "word": "天空",
+          "pinyin": "tiān kōng",
+          "answer": ["t", "iān", "k", "ōng"],
+          "emoji": "☁️",
+          "pieces": ["t", "iān", "ōng", "k", "b", "ái", "y", "ún"]
+        },
+        {
+          "word": "白云",
+          "pinyin": "bái yún",
+          "answer": ["b", "ái", "y", "ún"],
+          "emoji": "☁️",
+          "pieces": ["b", "ái", "ún", "y", "f", "ēng", "y", "ǔ"]
+        },
+        {
+          "word": "风雨",
+          "pinyin": "fēng yǔ",
+          "answer": ["f", "ēng", "y", "ǔ"],
+          "emoji": "🌧️",
+          "pieces": ["f", "ēng", "ǔ", "y", "x", "uě", "h", "uā"]
+        },
+        {
+          "word": "雪花",
+          "pinyin": "xuě huā",
+          "answer": ["x", "uě", "h", "uā"],
+          "emoji": "❄️",
+          "pieces": ["x", "uě", "uā", "h", "b", "īng", "l", "ěng"]
+        },
+        {
+          "word": "冰冷",
+          "pinyin": "bīng lěng",
+          "answer": ["b", "īng", "l", "ěng"],
+          "emoji": "🧊",
+          "pieces": ["b", "īng", "ěng", "l", "w", "ēn", "n", "uǎn"]
+        },
+        {
+          "word": "温暖",
+          "pinyin": "wēn nuǎn",
+          "answer": ["w", "ēn", "n", "uǎn"],
+          "emoji": "🔥",
+          "pieces": ["w", "ēn", "uǎn", "n", "r", "è", "l", "iàng"]
+        },
+        {
+          "word": "热量",
+          "pinyin": "rè liàng",
+          "answer": ["r", "è", "l", "iàng"],
+          "emoji": "🌡️",
+          "pieces": ["r", "è", "iàng", "l", "g", "uāng", "m", "íng"]
+        },
+        {
+          "word": "光明",
+          "pinyin": "guāng míng",
+          "answer": ["g", "uāng", "m", "íng"],
+          "emoji": "💡",
+          "pieces": ["g", "uāng", "íng", "m", "h", "ēi", "àn", ""]
+        },
+        {
+          "word": "黑暗",
+          "pinyin": "hēi àn",
+          "answer": ["h", "ēi", "àn", ""],
+          "emoji": "🌚",
+          "pieces": ["h", "ēi", "àn", "", "y", "è", "w", "ǎn"]
+        },
+        {
+          "word": "夜晚",
+          "pinyin": "yè wǎn",
+          "answer": ["y", "è", "w", "ǎn"],
+          "emoji": "🌃",
+          "pieces": ["y", "è", "ǎn", "w", "z", "ǎo", "ch", "én"]
+        },
+        {
+          "word": "早晨",
+          "pinyin": "zǎo chén",
+          "answer": ["z", "ǎo", "ch", "én"],
+          "emoji": "🌅",
+          "pieces": ["z", "ǎo", "én", "ch", "zh", "ōng", "w", "ǔ"]
+        },
+        {
+          "word": "中午",
+          "pinyin": "zhōng wǔ",
+          "answer": ["zh", "ōng", "w", "ǔ"],
+          "emoji": "☀️",
+          "pieces": ["zh", "ōng", "ǔ", "w", "x", "ià", "t", "iān"]
+        },
+        {
+          "word": "夏天",
+          "pinyin": "xià tiān",
+          "answer": ["x", "ià", "t", "iān"],
+          "emoji": "🌞",
+          "pieces": ["x", "ià", "iān", "t", "d", "ōng", "j", "ì"]
+        },
+        {
+          "word": "冬季",
+          "pinyin": "dōng jì",
+          "answer": ["d", "ōng", "j", "ì"],
+          "emoji": "⛄",
+          "pieces": ["d", "ōng", "ì", "j", "ch", "ūn", "q", "iū"]
+        },
+        {
+          "word": "春秋",
+          "pinyin": "chūn qiū",
+          "answer": ["ch", "ūn", "q", "iū"],
+          "emoji": "🍂",
+          "pieces": ["ch", "ūn", "iū", "q", "n", "ián", "l", "íng"]
+        },
+        {
+          "word": "年龄",
+          "pinyin": "nián líng",
+          "answer": ["n", "ián", "l", "íng"],
+          "emoji": "🎂",
+          "pieces": ["n", "ián", "íng", "l", "sh", "ēng", "r", "ì"]
+        },
+        {
+          "word": "生日",
+          "pinyin": "shēng rì",
+          "answer": ["sh", "ēng", "r", "ì"],
+          "emoji": "🎉",
+          "pieces": ["sh", "ēng", "ì", "r", "j", "ié", "q", "ìng"]
+        },
+        {
+          "word": "节庆",
+          "pinyin": "jié qìng",
+          "answer": ["j", "ié", "q", "ìng"],
+          "emoji": "🎊",
+          "pieces": ["j", "ié", "ìng", "q", "k", "uài", "h", "uó"]
+        },
+        {
+          "word": "快活",
+          "pinyin": "kuài huó",
+          "answer": ["k", "uài", "h", "uó"],
+          "emoji": "😄",
+          "pieces": ["k", "uài", "uó", "h", "g", "āo", "x", "ìng"]
+        },
+        {
+          "word": "高兴",
+          "pinyin": "gāo xìng",
+          "answer": ["g", "āo", "x", "ìng"],
+          "emoji": "😃",
+          "pieces": ["g", "āo", "ìng", "x", "n", "án", "g", "uò"]
+        },
+        {
+          "word": "难过",
+          "pinyin": "nán guò",
+          "answer": ["n", "án", "g", "uò"],
+          "emoji": "😢",
+          "pieces": ["n", "án", "uò", "g", "t", "òng", "k", "ǔ"]
+        },
+        {
+          "word": "痛苦",
+          "pinyin": "tòng kǔ",
+          "answer": ["t", "òng", "k", "ǔ"],
+          "emoji": "😖",
+          "pieces": ["t", "òng", "ǔ", "k", "y", "ōu", "ch", "óu"]
+        },
+        {
+          "word": "忧愁",
+          "pinyin": "yōu chóu",
+          "answer": ["y", "ōu", "ch", "óu"],
+          "emoji": "😔",
+          "pieces": ["y", "ōu", "óu", "ch", "d", "ān", "x", "īn"]
+        },
+        {
+          "word": "担心",
+          "pinyin": "dān xīn",
+          "answer": ["d", "ān", "x", "īn"],
+          "emoji": "😟",
+          "pieces": ["d", "ān", "īn", "x", "f", "àng", "x", "īn"]
+        },
+        {
+          "word": "放心",
+          "pinyin": "fàng xīn",
+          "answer": ["f", "àng", "x", "īn"],
+          "emoji": "😌",
+          "pieces": ["f", "àng", "īn", "x", "ān", "q", "uán", ""]
+        },
+        {
+          "word": "安全",
+          "pinyin": "ān quán",
+          "answer": ["ān", "", "q", "uán"],
+          "emoji": "🛡️",
+          "pieces": ["ān", "", "uán", "q", "w", "ēi", "x", "iǎn"]
+        },
+        {
+          "word": "危险",
+          "pinyin": "wēi xiǎn",
+          "answer": ["w", "ēi", "x", "iǎn"],
+          "emoji": "⚠️",
+          "pieces": ["w", "ēi", "iǎn", "x", "b", "ǎo", "h", "ù"]
+        },
+        {
+          "word": "保护",
+          "pinyin": "bǎo hù",
+          "answer": ["b", "ǎo", "h", "ù"],
+          "emoji": "🛡️",
+          "pieces": ["b", "ǎo", "ù", "h", "zh", "ào", "g", "ù"]
+        },
+        {
+          "word": "照顾",
+          "pinyin": "zhào gù",
+          "answer": ["zh", "ào", "g", "ù"],
+          "emoji": "🤗",
+          "pieces": ["zh", "ào", "ù", "g", "g", "uān", "x", "īn"]
+        },
+        {
+          "word": "关心",
+          "pinyin": "guān xīn",
+          "answer": ["g", "uān", "x", "īn"],
+          "emoji": "💝",
+          "pieces": ["g", "uān", "īn", "x", "t", "ǐ", "t", "iē"]
+        },
+        {
+          "word": "体贴",
+          "pinyin": "tǐ tiē",
+          "answer": ["t", "ǐ", "t", "iē"],
+          "emoji": "🥰",
+          "pieces": ["t", "ǐ", "iē", "t", "w", "ēn", "r", "óu"]
+        },
+        {
+          "word": "温柔",
+          "pinyin": "wēn róu",
+          "answer": ["w", "ēn", "r", "óu"],
+          "emoji": "🌸",
+          "pieces": ["w", "ēn", "óu", "r", "q", "iáng", "y", "ìng"]
+        },
+        {
+          "word": "强硬",
+          "pinyin": "qiáng yìng",
+          "answer": ["q", "iáng", "y", "ìng"],
+          "emoji": "💪",
+          "pieces": ["q", "iáng", "ìng", "y", "r", "uò", "x", "iǎo"]
+        },
+        {
+          "word": "弱小",
+          "pinyin": "ruò xiǎo",
+          "answer": ["r", "uò", "x", "iǎo"],
+          "emoji": "🐣",
+          "pieces": ["r", "uò", "iǎo", "x", "d", "à", "q", "iáng"]
+        },
+        {
+          "word": "大强",
+          "pinyin": "dà qiáng",
+          "answer": ["d", "à", "q", "iáng"],
+          "emoji": "🦁",
+          "pieces": ["d", "à", "iáng", "q", "x", "iǎo", "r", "uò"]
+        },
+        {
+          "word": "成功",
+          "pinyin": "chéng gōng",
+          "answer": ["ch", "éng", "g", "ōng"],
+          "emoji": "🏆",
+          "pieces": ["ch", "éng", "ōng", "g", "sh", "ī", "b", "ài"]
+        },
+        {
+          "word": "失败",
+          "pinyin": "shī bài",
+          "answer": ["sh", "ī", "b", "ài"],
+          "emoji": "❌",
+          "pieces": ["sh", "ī", "ài", "b", "n", "ǔ", "l", "ì"]
+        },
+        {
+          "word": "努力",
+          "pinyin": "nǔ lì",
+          "answer": ["n", "ǔ", "l", "ì"],
+          "emoji": "💪",
+          "pieces": ["n", "ǔ", "ì", "l", "j", "iān", "ch", "í"]
+        },
+        {
+          "word": "坚持",
+          "pinyin": "jiān chí",
+          "answer": ["j", "iān", "ch", "í"],
+          "emoji": "⚡",
+          "pieces": ["j", "iān", "í", "ch", "f", "àng", "q", "ì"]
+        },
+        {
+          "word": "放弃",
+          "pinyin": "fàng qì",
+          "answer": ["f", "àng", "q", "ì"],
+          "emoji": "🏳️",
+          "pieces": ["f", "àng", "ì", "q", "x", "īn", "w", "àng"]
+        },
+        {
+          "word": "希望",
+          "pinyin": "xī wàng",
+          "answer": ["x", "ī", "w", "àng"],
+          "emoji": "🌟",
+          "pieces": ["x", "ī", "àng", "w", "m", "èng", "x", "iǎng"]
+        },
+        {
+          "word": "梦想",
+          "pinyin": "mèng xiǎng",
+          "answer": ["m", "èng", "x", "iǎng"],
+          "emoji": "💭",
+          "pieces": ["m", "èng", "iǎng", "x", "l", "ǐ", "x", "iǎng"]
+        },
+        {
+          "word": "理想",
+          "pinyin": "lǐ xiǎng",
+          "answer": ["l", "ǐ", "x", "iǎng"],
+          "emoji": "🎯",
+          "pieces": ["l", "ǐ", "iǎng", "x", "m", "ù", "b", "iāo"]
+        },
+        {
+          "word": "目标",
+          "pinyin": "mù biāo",
+          "answer": ["m", "ù", "b", "iāo"],
+          "emoji": "🎯",
+          "pieces": ["m", "ù", "iāo", "b", "j", "ì", "h", "uà"]
+        },
+        {
+          "word": "计划",
+          "pinyin": "jì huà",
+          "answer": ["j", "ì", "h", "uà"],
+          "emoji": "📋",
+          "pieces": ["j", "ì", "uà", "h", "zh", "ǔn", "b", "èi"]
+        },
+        {
+          "word": "准备",
+          "pinyin": "zhǔn bèi",
+          "answer": ["zh", "ǔn", "b", "èi"],
+          "emoji": "📦",
+          "pieces": ["zh", "ǔn", "èi", "b", "k", "āi", "sh", "ǐ"]
+        },
+        {
+          "word": "开始",
+          "pinyin": "kāi shǐ",
+          "answer": ["k", "āi", "sh", "ǐ"],
+          "emoji": "🚀",
+          "pieces": ["k", "āi", "ǐ", "sh", "j", "iē", "sh", "ù"]
+        },
+        {
+          "word": "结束",
+          "pinyin": "jié shù",
+          "answer": ["j", "ié", "sh", "ù"],
+          "emoji": "🏁",
+          "pieces": ["j", "ié", "ù", "sh", "w", "án", "ch", "éng"]
+        },
+        {
+          "word": "完成",
+          "pinyin": "wán chéng",
+          "answer": ["w", "án", "ch", "éng"],
+          "emoji": "✅",
+          "pieces": ["w", "án", "éng", "ch", "j", "ìn", "b", "ù"]
+        },
+        {
+          "word": "进步",
+          "pinyin": "jìn bù",
+          "answer": ["j", "ìn", "b", "ù"],
+          "emoji": "📈",
+          "pieces": ["j", "ìn", "ù", "b", "t", "uì", "h", "òu"]
+        },
+        {
+          "word": "退后",
+          "pinyin": "tuì hòu",
+          "answer": ["t", "uì", "h", "òu"],
+          "emoji": "⬅️",
+          "pieces": ["t", "uì", "òu", "h", "q", "ián", "j", "ìn"]
+        },
+        {
+          "word": "前进",
+          "pinyin": "qián jìn",
+          "answer": ["q", "ián", "j", "ìn"],
+          "emoji": "➡️",
+          "pieces": ["q", "ián", "ìn", "j", "f", "ǎn", "h", "uí"]
+        },
+        {
+          "word": "返回",
+          "pinyin": "fǎn huí",
+          "answer": ["f", "ǎn", "h", "uí"],
+          "emoji": "🔄",
+          "pieces": ["f", "ǎn", "uí", "h", "l", "í", "k", "āi"]
+        },
+        {
+          "word": "离开",
+          "pinyin": "lí kāi",
+          "answer": ["l", "í", "k", "āi"],
+          "emoji": "🚪",
+          "pieces": ["l", "í", "āi", "k", "d", "ào", "d", "á"]
+        },
+        {
+          "word": "到达",
+          "pinyin": "dào dá",
+          "answer": ["d", "ào", "d", "á"],
+          "emoji": "🎯",
+          "pieces": ["d", "ào", "á", "d", "ch", "ū", "f", "ā"]
+        },
+        {
+          "word": "出发",
+          "pinyin": "chū fā",
+          "answer": ["ch", "ū", "f", "ā"],
+          "emoji": "🏃",
+          "pieces": ["ch", "ū", "ā", "f", "l", "ù", "t", "ú"]
+        },
+        {
+          "word": "路途",
+          "pinyin": "lù tú",
+          "answer": ["l", "ù", "t", "ú"],
+          "emoji": "🛤️",
+          "pieces": ["l", "ù", "ú", "t", "f", "āng", "x", "iàng"]
+        },
+        {
+          "word": "方向",
+          "pinyin": "fāng xiàng",
+          "answer": ["f", "āng", "x", "iàng"],
+          "emoji": "🧭",
+          "pieces": ["f", "āng", "iàng", "x", "z", "uǒ", "y", "òu"]
+        },
+        {
+          "word": "左右",
+          "pinyin": "zuǒ yòu",
+          "answer": ["z", "uǒ", "y", "òu"],
+          "emoji": "↔️",
+          "pieces": ["z", "uǒ", "òu", "y", "sh", "àng", "x", "ià"]
+        },
+        {
+          "word": "上下",
+          "pinyin": "shàng xià",
+          "answer": ["sh", "àng", "x", "ià"],
+          "emoji": "↕️",
+          "pieces": ["sh", "àng", "ià", "x", "d", "ōng", "x", "ī"]
+        },
+        {
+          "word": "东西",
+          "pinyin": "dōng xī",
+          "answer": ["d", "ōng", "x", "ī"],
+          "emoji": "🧳",
+          "pieces": ["d", "ōng", "ī", "x", "n", "án", "b", "ěi"]
+        },
+        {
+          "word": "南北",
+          "pinyin": "nán běi",
+          "answer": ["n", "án", "b", "ěi"],
+          "emoji": "🧭",
+          "pieces": ["n", "án", "ěi", "b", "zh", "ōng", "y", "āng"]
+        },
+        {
+          "word": "中央",
+          "pinyin": "zhōng yāng",
+          "answer": ["zh", "ōng", "y", "āng"],
+          "emoji": "🎯",
+          "pieces": ["zh", "ōng", "āng", "y", "b", "iān", "y", "uán"]
+        },
+        {
+          "word": "边缘",
+          "pinyin": "biān yuán",
+          "answer": ["b", "iān", "y", "uán"],
+          "emoji": "🔲",
+          "pieces": ["b", "iān", "uán", "y", "j", "ìn", "r", "ù"]
+        },
+        {
+          "word": "进入",
+          "pinyin": "jìn rù",
+          "answer": ["j", "ìn", "r", "ù"],
+          "emoji": "🚪",
+          "pieces": ["j", "ìn", "ù", "r", "ch", "ū", "q", "ù"]
+        },
+        {
+          "word": "出去",
+          "pinyin": "chū qù",
+          "answer": ["ch", "ū", "q", "ù"],
+          "emoji": "🚪",
+          "pieces": ["ch", "ū", "ù", "q", "j", "ìn", "l", "ái"]
+        },
+        {
+          "word": "进来",
+          "pinyin": "jìn lái",
+          "answer": ["j", "ìn", "l", "ái"],
+          "emoji": "👋",
+          "pieces": ["j", "ìn", "ái", "l", "h", "uí", "q", "ù"]
+        },
+        {
+          "word": "回去",
+          "pinyin": "huí qù",
+          "answer": ["h", "uí", "q", "ù"],
+          "emoji": "🏠",
+          "pieces": ["h", "uí", "ù", "q", "l", "ái", "d", "ào"]
+        },
+        {
+          "word": "来到",
+          "pinyin": "lái dào",
+          "answer": ["l", "ái", "d", "ào"],
+          "emoji": "👋",
+          "pieces": ["l", "ái", "ào", "d", "z", "ǒu", "l", "ù"]
+        },
+        {
+          "word": "走路",
+          "pinyin": "zǒu lù",
+          "answer": ["z", "ǒu", "l", "ù"],
+          "emoji": "🚶",
+          "pieces": ["z", "ǒu", "ù", "l", "p", "ǎo", "b", "ù"]
+        },
+        {
+          "word": "跑步",
+          "pinyin": "pǎo bù",
+          "answer": ["p", "ǎo", "b", "ù"],
+          "emoji": "🏃",
+          "pieces": ["p", "ǎo", "ù", "b", "t", "iào", "w", "ǔ"]
+        },
+        {
+          "word": "跳舞",
+          "pinyin": "tiào wǔ",
+          "answer": ["t", "iào", "w", "ǔ"],
+          "emoji": "💃",
+          "pieces": ["t", "iào", "ǔ", "w", "ch", "àng", "g", "ē"]
+        },
+        {
+          "word": "唱歌",
+          "pinyin": "chàng gē",
+          "answer": ["ch", "àng", "g", "ē"],
+          "emoji": "🎤",
+          "pieces": ["ch", "àng", "ē", "g", "h", "uà", "h", "uà"]
+        },
+        {
+          "word": "画画",
+          "pinyin": "huà huà",
+          "answer": ["h", "uà", "h", "uà"],
+          "emoji": "🎨",
+          "pieces": ["h", "uà", "uà", "h", "x", "iě", "z", "ì"]
+        },
+        {
+          "word": "写字",
+          "pinyin": "xiě zì",
+          "answer": ["x", "iě", "z", "ì"],
+          "emoji": "✍️",
+          "pieces": ["x", "iě", "ì", "z", "d", "ú", "sh", "ū"]
+        },
+        {
+          "word": "读书",
+          "pinyin": "dú shū",
+          "answer": ["d", "ú", "sh", "ū"],
+          "emoji": "📖",
+          "pieces": ["d", "ú", "ū", "sh", "x", "ué", "x", "í"]
+        },
+        {
+          "word": "学习",
+          "pinyin": "xué xí",
+          "answer": ["x", "ué", "x", "í"],
+          "emoji": "📚",
+          "pieces": ["x", "ué", "í", "x", "j", "iāo", "y", "ù"]
+        },
+        {
+          "word": "教育",
+          "pinyin": "jiāo yù",
+          "answer": ["j", "iāo", "y", "ù"],
+          "emoji": "🎓",
+          "pieces": ["j", "iāo", "ù", "y", "zh", "ī", "sh", "í"]
+        },
+        {
+          "word": "知识",
+          "pinyin": "zhī shí",
+          "answer": ["zh", "ī", "sh", "í"],
+          "emoji": "🧠",
+          "pieces": ["zh", "ī", "í", "sh", "j", "ì", "y", "ì"]
+        },
+        {
+          "word": "记忆",
+          "pinyin": "jì yì",
+          "answer": ["j", "ì", "y", "ì"],
+          "emoji": "🧠",
+          "pieces": ["j", "ì", "ì", "y", "w", "àng", "j", "ì"]
+        },
+        {
+          "word": "忘记",
+          "pinyin": "wàng jì",
+          "answer": ["w", "àng", "j", "ì"],
+          "emoji": "🤔",
+          "pieces": ["w", "àng", "ì", "j", "s", "ī", "k", "ǎo"]
+        },
+        {
+          "word": "思考",
+          "pinyin": "sī kǎo",
+          "answer": ["s", "ī", "k", "ǎo"],
+          "emoji": "💭",
+          "pieces": ["s", "ī", "ǎo", "k", "l", "ǐ", "j", "iě"]
+        },
+        {
+          "word": "理解",
+          "pinyin": "lǐ jiě",
+          "answer": ["l", "ǐ", "j", "iě"],
+          "emoji": "💡",
+          "pieces": ["l", "ǐ", "iě", "j", "m", "íng", "b", "ái"]
+        },
+        {
+          "word": "明白",
+          "pinyin": "míng bái",
+          "answer": ["m", "íng", "b", "ái"],
+          "emoji": "💡",
+          "pieces": ["m", "íng", "ái", "b", "h", "ú", "t", "ú"]
+        },
+        {
+          "word": "糊涂",
+          "pinyin": "hú tú",
+          "answer": ["h", "ú", "t", "ú"],
+          "emoji": "😵",
+          "pieces": ["h", "ú", "ú", "t", "q", "īng", "ch", "ǔ"]
+        },
+        {
+          "word": "清楚",
+          "pinyin": "qīng chǔ",
+          "answer": ["q", "īng", "ch", "ǔ"],
+          "emoji": "🔍",
+          "pieces": ["q", "īng", "ǔ", "ch", "m", "ó", "h", "ú"]
+        },
+        {
+          "word": "模糊",
+          "pinyin": "mó hú",
+          "answer": ["m", "ó", "h", "ú"],
+          "emoji": "🌫️",
+          "pieces": ["m", "ó", "ú", "h", "q", "īng", "x", "ī"]
+        },
+        {
+          "word": "清晰",
+          "pinyin": "qīng xī",
+          "answer": ["q", "īng", "x", "ī"],
+          "emoji": "🔎",
+          "pieces": ["q", "īng", "ī", "x", "z", "ǐ", "x", "ì"]
+        },
+        {
+          "word": "仔细",
+          "pinyin": "zǐ xì",
+          "answer": ["z", "ǐ", "x", "ì"],
+          "emoji": "🔍",
+          "pieces": ["z", "ǐ", "ì", "x", "c", "ū", "x", "īn"]
+        },
+        {
+          "word": "粗心",
+          "pinyin": "cū xīn",
+          "answer": ["c", "ū", "x", "īn"],
+          "emoji": "😅",
+          "pieces": ["c", "ū", "īn", "x", "x", "iǎo", "x", "īn"]
+        },
+        {
+          "word": "小心",
+          "pinyin": "xiǎo xīn",
+          "answer": ["x", "iǎo", "x", "īn"],
+          "emoji": "⚠️",
+          "pieces": ["x", "iǎo", "īn", "x", "d", "ǎn", "d", "à"]
+        },
+        {
+          "word": "胆大",
+          "pinyin": "dǎn dà",
+          "answer": ["d", "ǎn", "d", "à"],
+          "emoji": "😤",
+          "pieces": ["d", "ǎn", "à", "d", "y", "ǒng", "g", "ǎn"]
+        },
+        {
+          "word": "勇敢",
+          "pinyin": "yǒng gǎn",
+          "answer": ["y", "ǒng", "g", "ǎn"],
+          "emoji": "🦁",
+          "pieces": ["y", "ǒng", "ǎn", "g", "d", "ǎn", "q", "iè"]
+        },
+        {
+          "word": "胆怯",
+          "pinyin": "dǎn qiè",
+          "answer": ["d", "ǎn", "q", "iè"],
+          "emoji": "😰",
+          "pieces": ["d", "ǎn", "iè", "q", "h", "ài", "p", "à"]
+        },
+        {
+          "word": "害怕",
+          "pinyin": "hài pà",
+          "answer": ["h", "ài", "p", "à"],
+          "emoji": "😨",
+          "pieces": ["h", "ài", "à", "p", "k", "ǒng", "j", "ù"]
+        },
+        {
+          "word": "恐惧",
+          "pinyin": "kǒng jù",
+          "answer": ["k", "ǒng", "j", "ù"],
+          "emoji": "😱",
+          "pieces": ["k", "ǒng", "ù", "j", "yī", "y", "uàn", ""]
         }
       ]
     }
@@ -149,7 +1073,6 @@ export default {
       this.selectedPiece = null;
       this.generatePieces();
     },
-    
     generatePieces() {
       // 打乱拼音块顺序
       const shuffledPieces = [...this.currentLevelData.pieces].sort(() => Math.random() - 0.5);
@@ -158,14 +1081,12 @@ export default {
         used: false
       }));
     },
-    
     isVowel(piece) {
       const vowels = ['ā', 'á', 'ǎ', 'à', 'ē', 'é', 'ě', 'è', 'ī', 'í', 'ǐ', 'ì', 
                      'ō', 'ó', 'ǒ', 'ò', 'ū', 'ú', 'ǔ', 'ù', 'ǚ', 'ǘ', 'ǜ', 'ǖ',
                      'āi', 'ái', 'ǎi', 'ài', 'ēi', 'éi', 'ěi', 'èi',
                      'āo', 'áo', 'ǎo', 'ào', 'ōu', 'óu', 'ǒu', 'òu',
-                     'ān', 'án', 'ǎn', 'àn', 'ēn', 'én', 'ěn', 'èn',
-                     'īn', 'ín', 'ǐn', 'ìn', 'ūn', 'ún', 'ǔn', 'ùn',
+                     'ān', 'án', 'ǎn', 'àn', 'ēn', 'én', 'ěn', 'èn', 'īn', 'ín', 'ǐn', 'ìn', 'ūn', 'ún', 'ǔn', 'ùn',
                      'āng', 'áng', 'ǎng', 'àng', 'ēng', 'éng', 'ěng', 'èng',
                      'īng', 'íng', 'ǐng', 'ìng', 'ōng', 'óng', 'ǒng', 'òng',
                      'uā', 'uá', 'uǎ', 'uà', 'uō', 'uó', 'uǒ', 'uò',
@@ -178,12 +1099,10 @@ export default {
       return vowels.some(vowel => piece.includes(vowel.replace(/[āáǎàēéěèīíǐìōóǒòūúǔùǚǘǜǖ]/g, match => match)) || 
                                 piece.includes(vowel));
     },
-    
     handleDragStart(e, index) {
       e.dataTransfer.setData('text/plain', this.availablePieces[index].text);
       this.draggingIndex = index;
     },
-    
     handleDragOver(e, index) {
       e.preventDefault();
       this.dragOverIndex = index;
@@ -195,7 +1114,6 @@ export default {
       
       if (this.dropZones[zoneIndex] === '') {
         this.dropZones.splice(zoneIndex, 1, piece);
-        
         // 标记拼音块为已使用
         const pieceIndex = this.availablePieces.findIndex(p => p.text === piece && !p.used);
         if (pieceIndex !== -1) {
@@ -205,7 +1123,7 @@ export default {
         this.playSound('place');
       }
       
-      this.dragOverIndex = null;
+      this.dragOverIndex = null;  
     },
     
     handleDragEnd() {
@@ -219,7 +1137,6 @@ export default {
       // 清除之前的选择
       this.selectedPiece = this.selectedPiece === pieceText ? null : pieceText;
     },
-    
     handleDropZoneClick(zoneIndex) {
       if (this.selectedPiece && this.dropZones[zoneIndex] === '') {
         this.dropZones.splice(zoneIndex, 1, this.selectedPiece);
@@ -229,12 +1146,10 @@ export default {
         if (pieceIndex !== -1) {
           this.availablePieces[pieceIndex].used = true;
         }
-        
         this.selectedPiece = null;
         this.playSound('place');
       }
-    },
-    
+    },    
     checkAnswer() {
       const isCorrect = JSON.stringify(this.dropZones) === JSON.stringify(this.currentLevelData.answer);
       
@@ -250,7 +1165,6 @@ export default {
         this.playSound('error');
       }
     },
-    
     nextLevel() {
       this.currentLevel++;
       if (this.currentLevel > this.levels.length) {
@@ -260,22 +1174,18 @@ export default {
       }
       this.loadLevel();
     },
-    
     resetGame() {
       this.currentLevel = 1;
       this.score = 0;
       this.loadLevel();
     },
-    
     showSuccess() {
       this.showSuccessAnimation = true;
       setTimeout(() => {
         this.showSuccessAnimation = false;
       }, 1000);
-      
       this.createConfetti();
     },
-    
     createConfetti() {
       const colors = ['#4299e1', '#38a169', '#ed8936', '#9f40ba', '#f56565'];
       
@@ -299,7 +1209,6 @@ export default {
         }, 5000);
       }
     },
-    
     playSound(type) {
       // 这里可以添加音效播放逻辑
       console.log(`Playing ${type} sound`);
@@ -327,12 +1236,12 @@ export default {
 }
 
 .game-container > div:first-child {
+  max-width: 900px;
+  width: 95%;
   background: white;
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-  max-width: 900px;
-  width: 95%;
   position: relative;
 }
 
@@ -352,6 +1261,7 @@ export default {
   font-size: 20px;
   color: #38a169;
   font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 .game-area {
@@ -360,11 +1270,22 @@ export default {
   gap: 30px;
 }
 
+.instruction-tip {
+  background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+  border-left: 4px solid #4fd1c7;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #234e52;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(79, 209, 199, 0.1);
+}
+
 .target-area {
+  text-align: center;
   background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
   border-radius: 15px;
   padding: 20px;
-  text-align: center;
   border: 3px dashed #e2e8f0;
   min-height: 120px;
   display: flex;
@@ -485,12 +1406,6 @@ export default {
   animation: pulse 1s infinite;
 }
 
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(66, 153, 225, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(66, 153, 225, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(66, 153, 225, 0); }
-}
-
 .controls {
   display: flex;
   justify-content: center;
@@ -570,6 +1485,11 @@ export default {
   .game-container > div:first-child {
     padding: 20px;
     margin: 10px;
+  }
+  
+  .instruction-tip {
+    font-size: 14px;
+    padding: 10px 12px;
   }
   
   .title {
