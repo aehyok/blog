@@ -41,6 +41,30 @@ const router = useRouter()
 const state = reactive({
   groupList:[
     {
+      id: 2,
+      name: "益智小游戏",
+      children: [
+        {
+          id: 1,
+          name: "舒尔特表格小游戏",
+          cover: "https://imgur.aehyok.uk/v2/ZwNn8zQ.png",
+          description: "提高儿童专注力的小游戏，可长期训练",
+          url: "./game?type=shuerte",
+          isExternalLink: false,
+          tags: ["#AI拼音", "#小游戏"],
+        },
+        {
+          id: 2,
+          name: "拼音组装小游戏",
+          cover: "https://imgur.aehyok.uk/v2/dGPlHBa.jpeg",
+          description: "拼音识别小游戏",
+          url: "./game?type=pinyin",
+          isExternalLink: true,
+          tags: ["#AI", "自主规划任务"],
+        }
+      ]
+    },
+    {
       id: 1,
       name: "AI工具",
       children: [
@@ -90,30 +114,6 @@ const state = reactive({
           tags: ["#AI", "#长文", "#深度搜索", "文生图", "实时搜索","免费API"],
         },
       ],
-    },
-    {
-      id: 2,
-      name: "益智小游戏",
-      children: [
-        {
-          id: 1,
-          name: "舒尔特表格小游戏",
-          cover: "https://imgur.aehyok.uk/v2/ZwNn8zQ.png",
-          description: "提高儿童专注力的小游戏，可长期训练",
-          url: "./game?type=shuerte",
-          isExternalLink: false,
-          tags: ["#AI小游戏", "#益智小游戏"],
-        },
-        {
-          id: 2,
-          name: "拼音组装小游戏",
-          cover: "https://imgur.aehyok.uk/v2/dGPlHBa.jpeg",
-          description: "拼音识别小游戏",
-          url: "./game?type=pinyin",
-          isExternalLink: true,
-          tags: ["#AI", "自主规划任务"],
-        }
-      ]
     },
     {
       id: 2,
@@ -357,5 +357,9 @@ const openClick = (item: any) => {
   .post-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.vp-doc h3 {
+  margin: 10px 0;
 }
 </style>

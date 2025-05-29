@@ -1060,10 +1060,19 @@ export default {
   },
   
   mounted() {
+    this.shuffleLevels();
     this.initGame();
   },
   
   methods: {
+    shuffleLevels() {
+      // 使用Fisher-Yates洗牌算法随机重排关卡顺序
+      for (let i = this.levels.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [this.levels[i], this.levels[j]] = [this.levels[j], this.levels[i]];
+      }
+    },
+    
     initGame() {
       this.loadLevel();
     },
@@ -1177,6 +1186,7 @@ export default {
     resetGame() {
       this.currentLevel = 1;
       this.score = 0;
+      this.shuffleLevels();
       this.loadLevel();
     },
     showSuccess() {
