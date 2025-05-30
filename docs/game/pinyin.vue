@@ -1,66 +1,68 @@
 <template>
   <div class="game-container">
-    <div class="header">
-      <h1 class="title">🧩 拼音拼装游戏</h1>
-      <div class="score">得分: <span>{{ score }}</span> | 关卡: <span>{{ currentLevel }}</span></div>
-    </div>
+    <div class="game-content">
+      <div class="header">
+        <h1 class="title">🧩 拼音拼装游戏</h1>
+        <div class="score">得分: <span>{{ score }}</span> | 关卡: <span>{{ currentLevel }}</span></div>
+      </div>
 
-    <div class="game-area">
-      <div class="target-area">
-        <div class="target-word">拼出下面的拼音:</div>
-        <div class="target-image">{{ currentLevelData.emoji }}</div>
-        <div class="instruction-tip">提示：拖动拼音块到正确的位置</div>
-        <div>{{ currentLevelData.pinyin }} ({{ currentLevelData.word }})</div>
-        <div class="drop-zones">
-          <div 
-            v-for="(zone, index) in dropZones" 
-            :key="index"
-            class="drop-zone"
-            :class="{ 
-              'drag-over': dragOverIndex === index,
-              'filled': zone !== '',
-              'clickable': selectedPiece && zone === ''
-            }"
-            @dragover="handleDragOver($event, index)"
-            @drop="handleDrop($event, index)"
-            @click="handleDropZoneClick(index)"
-          >
-            {{ zone }}
+      <div class="game-area">
+        <div class="target-area">
+          <div class="target-word">拼出下面的拼音:</div>
+          <div class="target-image">{{ currentLevelData.emoji }}</div>
+          <div class="instruction-tip">提示：拖动拼音块到正确的位置</div>
+          <div>{{ currentLevelData.pinyin }} ({{ currentLevelData.word }})</div>
+          <div class="drop-zones">
+            <div 
+              v-for="(zone, index) in dropZones" 
+              :key="index"
+              class="drop-zone"
+              :class="{ 
+                'drag-over': dragOverIndex === index,
+                'filled': zone !== '',
+                'clickable': selectedPiece
+              }"
+              @dragover="handleDragOver($event, index)"
+              @drop="handleDrop($event, index)"
+              @click="handleDropZoneClick(index)"
+            >
+              {{ zone }}
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="pieces-area">
-        <div 
-          v-for="(piece, index) in availablePieces" 
-          :key="index"
-          class="piece"
-          :class="{ 
-            'vowel': isVowel(piece.text),
-            'dragging': draggingIndex === index,
-            'selected': selectedPiece === piece.text && !piece.used,
-            'used': piece.used
-          }"
-          :style="{ display: piece.used ? 'none' : 'flex' }"
-          :draggable="!piece.used"
-          @dragstart="handleDragStart($event, index)"
-          @dragend="handleDragEnd"
-          @click="handlePieceClick(piece.text, index)"
-        >
-          {{ piece.text }}
+        <div class="pieces-area">
+          <div 
+            v-for="(piece, index) in availablePieces" 
+            :key="index"
+            class="piece"
+            :class="{ 
+              'vowel': isVowel(piece.text),
+              'dragging': draggingIndex === index,
+              'selected': selectedPiece === piece.text && !piece.used,
+              'used': piece.used
+            }"
+            :style="{ display: piece.used ? 'none' : 'flex' }"
+            :draggable="!piece.used"
+            @dragstart="handleDragStart($event, index)"
+            @dragend="handleDragEnd"
+            @click="handlePieceClick(piece.text, index)"
+          >
+            {{ piece.text }}
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="btn btn-secondary" @click="checkAnswer">🎯 检查答案</button>
+          <button class="btn btn-primary" @click="nextLevel">🎉 下一关</button>
+          <button class="btn btn-primary" @click="resetGame">🔄 重新开始</button>
         </div>
       </div>
 
-      <div class="controls">
-        <button class="btn btn-secondary" @click="checkAnswer">🎯 检查答案</button>
-        <button class="btn btn-primary" @click="nextLevel">🎉 下一关</button>
-        <button class="btn btn-primary" @click="resetGame">🔄 重新开始</button>
+      <!-- 成功动画 -->
+      <div v-if="showSuccessAnimation" class="success-animation">
+        🎉 太棒了！
       </div>
-    </div>
-
-    <!-- 成功动画 -->
-    <div v-if="showSuccessAnimation" class="success-animation">
-      🎉 太棒了！
     </div>
 
     <!-- 彩带动画 -->
@@ -1121,40 +1123,44 @@ export default {
     
     handleDrop(e, zoneIndex) {
       e.preventDefault();
-
       const piece = e.dataTransfer.getData('text/plain');
       
-      if (this.dropZones[zoneIndex] === '') {
-        this.dropZones.splice(zoneIndex, 1, piece);
-        // 标记拼音块为已使用
-        const pieceIndex = this.availablePieces.findIndex(p => p.text === piece && !p.used);
-        if (pieceIndex !== -1) {
-          this.availablePieces[pieceIndex].used = true;
+      // 如果目标位置已有内容，先将原内容恢复为可用状态
+      if (this.dropZones[zoneIndex] !== '') {
+        const originalPiece = this.dropZones[zoneIndex];
+        const originalPieceIndex = this.availablePieces.findIndex(p => p.text === originalPiece && p.used);
+        if (originalPieceIndex !== -1) {
+          this.availablePieces[originalPieceIndex].used = false;
         }
-        
-        this.playSound('place');
       }
       
+      // 放置新的拼音块
+      this.dropZones.splice(zoneIndex, 1, piece);
+      // 标记新拼音块为已使用
+      const pieceIndex = this.availablePieces.findIndex(p => p.text === piece && !p.used);
+      if (pieceIndex !== -1) {
+        this.availablePieces[pieceIndex].used = true;
+      }
+      
+      this.playSound('place');
       this.dragOverIndex = null;  
     },
     
-    handleDragEnd() {
-      this.draggingIndex = null;
-      this.dragOverIndex = null;
-      document.body.style.overflow = '';
-    },
-    
-    handlePieceClick(pieceText, index) {
-      if (this.availablePieces[index].used) return;
-      
-      // 清除之前的选择
-      this.selectedPiece = this.selectedPiece === pieceText ? null : pieceText;
-    },
     handleDropZoneClick(zoneIndex) {
-      if (this.selectedPiece && this.dropZones[zoneIndex] === '') {
+      if (this.selectedPiece) {
+        // 如果目标位置已有内容，先将原内容恢复为可用状态
+        if (this.dropZones[zoneIndex] !== '') {
+          const originalPiece = this.dropZones[zoneIndex];
+          const originalPieceIndex = this.availablePieces.findIndex(p => p.text === originalPiece && p.used);
+          if (originalPieceIndex !== -1) {
+            this.availablePieces[originalPieceIndex].used = false;
+          }
+        }
+        
+        // 放置新的拼音块
         this.dropZones.splice(zoneIndex, 1, this.selectedPiece);
         
-        // 标记拼音块为已使用
+        // 标记新拼音块为已使用
         const pieceIndex = this.availablePieces.findIndex(p => p.text === this.selectedPiece && !p.used);
         if (pieceIndex !== -1) {
           this.availablePieces[pieceIndex].used = true;
@@ -1162,10 +1168,10 @@ export default {
         this.selectedPiece = null;
         this.playSound('place');
       }
-    },    
+    },
+    
     checkAnswer() {
       const isCorrect = JSON.stringify(this.dropZones) === JSON.stringify(this.currentLevelData.answer);
-      
       if (isCorrect) {
         this.score += 100;
         this.showSuccess();
@@ -1184,6 +1190,8 @@ export default {
         alert(`恭喜你完成了所有关卡！\n总得分: ${this.score}分\n🎉🎉🎉`);
         this.currentLevel = 1;
         this.score = 0;
+      } else {
+        this.showSuccess();
       }
       this.loadLevel();
     },
@@ -1249,7 +1257,7 @@ export default {
   padding: 20px;
 }
 
-.game-container > div:first-child {
+.game-content {
   max-width: 900px;
   width: 95%;
   background: white;
@@ -1262,6 +1270,7 @@ export default {
 .header {
   text-align: center;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .title {
@@ -1275,13 +1284,15 @@ export default {
   font-size: 20px;
   color: #38a169;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .game-area {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 .instruction-tip {
@@ -1292,7 +1303,7 @@ export default {
   font-size: 16px;
   color: #234e52;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(79, 209, 199, 0.1);
+  margin-bottom: 10px;
 }
 
 .target-area {
@@ -1347,6 +1358,7 @@ export default {
   font-size: 28px;
   font-weight: bold;
   color: #2d3748;
+  text-align: center;
   transition: all 0.3s ease;
   position: relative;
   touch-action: manipulation;
@@ -1369,8 +1381,6 @@ export default {
   justify-content: center;
   gap: 15px;
   padding: 20px;
-  background: rgba(237, 242, 247, 0.5);
-  border-radius: 15px;
 }
 
 .piece {
@@ -1508,7 +1518,7 @@ export default {
 
 /* 平板设备适配 */
 @media (min-width: 769px) and (max-width: 1024px) {
-  .game-container > div:first-child {
+  .game-content {
     padding: 25px;
   }
   
@@ -1538,8 +1548,8 @@ export default {
   .game-container {
     padding: 15px;
   }
-  
-  .game-container > div:first-child {
+
+  .game-content {
     padding: 25px;
   }
   
@@ -1551,44 +1561,15 @@ export default {
     font-size: 18px;
   }
   
-  .instruction-tip {
-    font-size: 15px;
-  }
-  
-  .target-word {
-    font-size: 20px;
-  }
-  
-  .target-image {
-    width: 70px;
-    height: 70px;
-    font-size: 32px;
-  }
-  
-  .drop-zones {
-    gap: 15px;
+  .piece {
+    width: 65px;
+    height: 65px;
   }
   
   .drop-zone {
     width: 70px;
     height: 70px;
     font-size: 24px;
-  }
-  
-  .piece {
-    width: 60px;
-    height: 60px;
-    font-size: 18px;
-  }
-  
-  .controls {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .btn {
-    min-width: 120px;
   }
 }
 
@@ -1597,8 +1578,8 @@ export default {
   .game-container {
     padding: 5px;
   }
-  
-  .game-container > div:first-child {
+
+  .game-content {
     padding: 15px;
     border-radius: 10px;
   }
@@ -1614,10 +1595,6 @@ export default {
   
   .score {
     font-size: 14px;
-  }
-  
-  .game-area {
-    gap: 15px;
   }
   
   .instruction-tip {
@@ -1639,12 +1616,10 @@ export default {
     width: 50px;
     height: 50px;
     font-size: 24px;
-    margin-bottom: 8px;
   }
   
   .drop-zones {
     gap: 6px;
-    margin-top: 10px;
   }
   
   .drop-zone {
@@ -1652,11 +1627,6 @@ export default {
     height: 50px;
     font-size: 16px;
     border-width: 2px;
-  }
-  
-  .pieces-area {
-    padding: 10px;
-    gap: 6px;
   }
   
   .piece {
@@ -1682,11 +1652,6 @@ export default {
   .success-animation {
     font-size: 28px;
   }
-  
-  .confetti {
-    width: 6px;
-    height: 6px;
-  }
 }
 
 /* 超小屏幕设备 */
@@ -1707,18 +1672,9 @@ export default {
     font-size: 12px;
   }
   
-  .target-image {
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-  }
-  
-  .drop-zones {
-    gap: 4px;
-  }
-  
-  .pieces-area {
-    gap: 4px;
+  .confetti {
+    width: 6px;
+    height: 6px;
   }
 }
 
@@ -1727,7 +1683,7 @@ export default {
   .game-container {
     padding: 5px;
   }
-  
+
   .game-area {
     gap: 10px;
   }
@@ -1738,14 +1694,6 @@ export default {
   
   .target-area {
     padding: 10px;
-  }
-  
-  .pieces-area {
-    padding: 10px;
-  }
-  
-  .controls {
-    margin-top: 10px;
   }
 }
 </style>
