@@ -211,6 +211,30 @@ const state = reactive({
         }
       ]
     },
+    {
+      id: 5,
+      name: "自己使用小工具",
+      children: [
+        {
+          id: 1,
+          name: "数据AES解密",
+          cover: "https://imgur.aehyok.uk/v2/PuGVUpG.png",
+          description: "",
+          url: "./tool?type=aes",
+          isExternalLink: false,
+          tags: [],
+        },
+        {
+          id: 2,
+          name: "base64图片展示",
+          cover: "https://imgur.aehyok.uk/v2/J39UE3b.png",
+          description: "",
+          url: "./tool?type=base64",
+          isExternalLink: false,
+          tags: [],
+        }
+      ]
+    },
   ]
 });
 

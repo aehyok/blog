@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-  import Shuerte from "./shuerte.vue"
-  import Pinyin from "./pinyin.vue"
+  import Aes from "./aes-decrypt-tool.vue"
+  import Base64Image from "./base64-image.vue"
   import { onMounted, ref } from 'vue'
   // 方法1: 使用URLSearchParams (推荐，现代浏览器支持)
   function getUrlParams(url = window.location.href) {
@@ -38,5 +38,5 @@
   })
 </script>
 
-<Shuerte v-if="type == 'shuerte'" />
-<Pinyin v-if="type == 'pinyin'" />
+<Aes v-if="type == 'aes'" />
+<Base64Image v-if="type == 'base64'" />
