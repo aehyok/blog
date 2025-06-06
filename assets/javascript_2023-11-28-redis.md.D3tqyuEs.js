@@ -1,0 +1,35 @@
+import{_ as n,c as a,o as p,ag as e}from"./chunks/framework.Dv47j_Ni.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/2023-11-28-redis.md","filePath":"javascript/2023-11-28-redis.md","lastUpdated":1749179374000}'),i={name:"javascript/2023-11-28-redis.md"};function l(r,s,c,t,d,o){return p(),a("div",null,s[0]||(s[0]=[e(`<h2 id="docker下创建redis容器" tabindex="-1">docker下创建redis容器 <a class="header-anchor" href="#docker下创建redis容器" aria-label="Permalink to &quot;docker下创建redis容器&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>  // 查看redis镜像，找到Stars数量最多的</span></span>
+<span class="line"><span>  docker search redis</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 拉取redis镜像</span></span>
+<span class="line"><span>  docker pull redis</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 查看本地镜像</span></span>
+<span class="line"><span>  docker images</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 运行容器，指定映射端口号号容器名称  redis,并设置容器重启启动</span></span>
+<span class="line"><span>  docker run --restart always -itd --name redis -p 16379:6379 redis</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 如果你的系统是ARM64 上运行的容器，那么很可能会报如下错误</span></span>
+<span class="line"><span>  Redis will now exit to prevent data corruption. Note that it is possible to suppress this warning by setting the following config: ignore-warnings ARM64-COW-BUG</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 此时我重新运行容器，指定参数</span></span>
+<span class="line"><span>  docker run --restart always -itd --name redis -p 16379:6379 redis --ignore-warnings ARM64-COW-BUG</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 查看容器是否运行</span></span>
+<span class="line"><span>  dock</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 再查看容器日志（查看是否启动成功）</span></span>
+<span class="line"><span>  docker logs redis </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 进入容器</span></span>
+<span class="line"><span>  docker exec -it redis /bin/bash</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 进入redis</span></span>
+<span class="line"><span>  redis-cli</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 查看redis版本</span></span>
+<span class="line"><span>  info</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  //此时已经连入，exit退出redis-cli， 设置密码（）</span></span>
+<span class="line"><span>  redis-cli CONFIG SET requirepass 123456</span></span></code></pre></div>`,2)]))}const g=n(i,[["render",l]]);export{h as __pageData,g as default};
