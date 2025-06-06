@@ -29,14 +29,14 @@ fs.readdir(folderPath, (err, files) => {
       // 将每个文件信息添加到对应年份的数组中
       groupedData[year].push({
         text: fileNameWithoutExtension, // 文件名不带后缀
-        link: `/${directory}/${fileNameWithoutExtension}` // 链接不带后缀
+        link: `/article/${directory}/${fileNameWithoutExtension}` // 链接不带后缀
       });
     }
   });
 
   const obj = {
     "ai": "-ai资讯",
-    "javascript": "-知识点积累"
+    "代码开发": "-知识点积累"
   }
 
   // 将分组数据结构转换成所需格式并按年份倒序排序

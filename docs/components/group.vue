@@ -220,7 +220,7 @@ const state = reactive({
           name: "数据AES解密",
           cover: "https://imgur.aehyok.uk/v2/e4zz38f.png",
           description: "",
-          url: "./tool?type=aes",
+          url: "./views/tool?type=aes",
           isExternalLink: false,
           tags: [],
         },
@@ -229,7 +229,7 @@ const state = reactive({
           name: "base64图片展示",
           cover: "https://imgur.aehyok.uk/v2/5uQr6T9.png",
           description: "",
-          url: "./tool?type=base64",
+          url: "./views/tool?type=base64",
           isExternalLink: false,
           tags: [],
         }
