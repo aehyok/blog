@@ -1,6 +1,43 @@
 [
   {
-    "text": "2024知识点积累",
+    "text": "2025-知识点积累",
+    "items": [
+      {
+        "text": "2025-01-03-nas",
+        "link": "/javascript/2025-01-03-nas"
+      },
+      {
+        "text": "2025-01-20-ready",
+        "link": "/javascript/2025-01-20-ready"
+      },
+      {
+        "text": "2025-02-10-deepseek",
+        "link": "/javascript/2025-02-10-deepseek"
+      },
+      {
+        "text": "2025-03-10-知识库",
+        "link": "/javascript/2025-03-10-知识库"
+      },
+      {
+        "text": "2025-0306-ag",
+        "link": "/javascript/2025-0306-ag"
+      },
+      {
+        "text": "2025-04-12-anythingllm",
+        "link": "/javascript/2025-04-12-anythingllm"
+      },
+      {
+        "text": "2025-04-15-vue",
+        "link": "/javascript/2025-04-15-vue"
+      },
+      {
+        "text": "2025-04-18-ai-proxy",
+        "link": "/javascript/2025-04-18-ai-proxy"
+      }
+    ]
+  },
+  {
+    "text": "2024-知识点积累",
     "items": [
       {
         "text": "2024-01-02-fastgpt",
@@ -11,8 +48,16 @@
         "link": "/javascript/2024-01-15-zabbix"
       },
       {
+        "text": "2024-02-24-埋点",
+        "link": "/javascript/2024-02-24-埋点"
+      },
+      {
         "text": "2024-02-28-seq",
         "link": "/javascript/2024-02-28-seq"
+      },
+      {
+        "text": "2024-03-03-整理",
+        "link": "/javascript/2024-03-03-整理"
       },
       {
         "text": "2024-03-07-youtobe",
@@ -157,11 +202,55 @@
       {
         "text": "2024-10-11-gs",
         "link": "/javascript/2024-10-11-gs"
+      },
+      {
+        "text": "2024-10-15-qrcode",
+        "link": "/javascript/2024-10-15-qrcode"
+      },
+      {
+        "text": "2024-10-21-zx",
+        "link": "/javascript/2024-10-21-zx"
+      },
+      {
+        "text": "2024-10-30-lin-linux",
+        "link": "/javascript/2024-10-30-lin-linux"
+      },
+      {
+        "text": "2024-11-19.-自主填报配置sql",
+        "link": "/javascript/2024-11-19.-自主填报配置sql"
+      },
+      {
+        "text": "2024-11-22-台账",
+        "link": "/javascript/2024-11-22-台账"
+      },
+      {
+        "text": "2024-11-29-java",
+        "link": "/javascript/2024-11-29-java"
+      },
+      {
+        "text": "2024-12-07-univer",
+        "link": "/javascript/2024-12-07-univer"
+      },
+      {
+        "text": "2024-12-13-散装油迁移",
+        "link": "/javascript/2024-12-13-散装油迁移"
+      },
+      {
+        "text": "2024-12-14-散装油迁移-his",
+        "link": "/javascript/2024-12-14-散装油迁移-his"
+      },
+      {
+        "text": "2024-12-24-小程序订阅消息",
+        "link": "/javascript/2024-12-24-小程序订阅消息"
+      },
+      {
+        "text": "2024-12-28-独立站",
+        "link": "/javascript/2024-12-28-独立站"
       }
     ]
   },
   {
-    "text": "2023知识点积累",
+    "text": "2023-知识点积累",
     "items": [
       {
         "text": "2023-01-04-docker",
@@ -438,7 +527,7 @@
     ]
   },
   {
-    "text": "2022知识点积累",
+    "text": "2022-知识点积累",
     "items": [
       {
         "text": "2022-05-07-git",
