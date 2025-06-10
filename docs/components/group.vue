@@ -49,7 +49,7 @@ const state = reactive({
           name: "舒尔特表格小游戏",
           cover: "https://imgur.aehyok.uk/v2/ZwNn8zQ.png",
           description: "提高儿童专注力的小游戏，可长期训练",
-          url: "./game?type=shuerte",
+          url: "./views/game?type=shuerte",
           isExternalLink: false,
           tags: ["#AI拼音", "#小游戏"],
         },
@@ -58,7 +58,7 @@ const state = reactive({
           name: "拼音组装小游戏",
           cover: "https://imgur.aehyok.uk/v2/dGPlHBa.jpeg",
           description: "拼音识别小游戏",
-          url: "./game?type=pinyin",
+          url: "./views/game?type=pinyin",
           isExternalLink: true,
           tags: ["#AI", "自主规划任务"],
         }
