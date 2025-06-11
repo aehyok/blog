@@ -1,6 +1,7 @@
 <script lang="ts" setup>
   import Aes from "./aes-decrypt-tool.vue"
   import Base64Image from "./base64-image.vue"
+  import ImageCompress from "./image-compress.vue"
   import { onMounted, ref } from 'vue'
   // 方法1: 使用URLSearchParams (推荐，现代浏览器支持)
   function getUrlParams(url = window.location.href) {
@@ -40,3 +41,4 @@
 
 <Aes v-if="type == 'aes'" />
 <Base64Image v-if="type == 'base64'" />
+<ImageCompress v-if="type == 'compress'" />
