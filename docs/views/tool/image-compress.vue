@@ -124,11 +124,11 @@
         </div>
         
         <div class="buttons">
-          <button class="btn-primary" @click="downloadCompressed">
-            💾 下载压缩图片
-          </button>
           <button class="btn-secondary" @click="reset">
             🔄 重新选择
+          </button>
+          <button class="btn-primary" @click="downloadCompressed">
+            💾 下载压缩图片
           </button>
         </div>
       </div>
@@ -418,8 +418,8 @@ onUnmounted(() => {
 .header {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 40px;
+  border-radius: 10px;
+  padding: 10px;
   text-align: center;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -456,8 +456,8 @@ h1 {
 }
 
 .upload-area:hover {
-  border-color: #667eea;
-  background: rgba(102, 126, 234, 0.05);
+  border-color: #764EA5;
+  background: rgba(255, 255, 255, 0.75);
   transform: translateY(-2px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }

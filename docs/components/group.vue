@@ -236,7 +236,7 @@ const state = reactive({
         {
           id: 3,
           name: "图片压缩",
-          cover: "https://imgur.aehyok.uk/v2/5uQr6T9.png",
+          cover: "https://imgur.aehyok.uk/v2/AE9kROr.png",
           description: "",
           url: "./views/tool?type=compress",
           isExternalLink: false,

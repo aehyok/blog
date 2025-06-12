@@ -4,7 +4,7 @@ import codes from "./code.json"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "那个曾经的少年回来了的个人网站",
+  title: "的个人网站",
   description: "那个曾经的少年回来了",
   base: "/blog",
   ignoreDeadLinks: true,
