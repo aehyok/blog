@@ -4,8 +4,9 @@
     "build": "vitepress build docs",
     "build-cf": "vitepress build docs --base /",
     "docs:preview": "vitepress preview docs",
-    "javascript": "node createjson.js -c code",
-    "ai": "node createjson.js -c ai"
+    "javascript": "node create_year_json.js -c code",
+    "reviews": "node create_week_json.js -c reviews",
+    "ai": "node create_year_json.js -c ai"
   },
   "devDependencies": {
     "vitepress": "^1.3.2"

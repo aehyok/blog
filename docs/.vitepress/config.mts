@@ -1,10 +1,11 @@
 import { defineConfig } from 'vitepress' 
 import ai from "./ai.json"
 import codes from "./code.json"
+import reviews from "./reviews.json"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "的个人网站",
+  title: "珩行天下的个人网站",
   description: "那个曾经的少年回来了",
   base: "/blog",
   ignoreDeadLinks: true,
@@ -28,7 +29,7 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "我的笔记", link: "/article/daily/" },
       { text: "武器库", link: "/article/code/" },
-      { text: "七星联盟股市日常", link: "/article/economy/" },
+      { text: "七星联盟股市日常", link: "/article/economy/reviews" },
       { text: "关于我", link: "/me/" },
       { text: "友情链接", link: "/friendly/info", activeMatch: "/friendly/" },
     ],
@@ -115,6 +116,7 @@ export default defineConfig({
           ],
         },
       ],
+      "/article/economy/reviews": reviews,
       "/article/code/": codes,
       "/ai/": ai
     },
