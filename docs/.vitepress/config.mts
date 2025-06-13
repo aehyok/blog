@@ -28,7 +28,7 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "我的笔记", link: "/article/daily/" },
       { text: "武器库", link: "/article/code/" },
-      { text: "七星联盟股市日常", link: "article/economy/" },
+      { text: "七星联盟股市日常", link: "/article/economy/" },
       { text: "关于我", link: "/me/" },
       { text: "友情链接", link: "/friendly/info", activeMatch: "/friendly/" },
     ],

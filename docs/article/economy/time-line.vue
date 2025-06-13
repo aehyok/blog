@@ -56,7 +56,12 @@ export default {
       modalDate: '',
       timelineItems: [
         {
-          date: '2025年6月11日早上6点30分',
+          date: '2025年6月13日早上6点30分',
+          image: 'https://imgur.aehyok.uk/v2/GzNo6k0.png',
+          alt: '时间轴图片'
+        },
+        {
+          date: '2025年6月12日早上6点30分',
           image: 'https://imgur.aehyok.uk/v2/PVH6GEK.png',
           alt: '时间轴图片'
         },
