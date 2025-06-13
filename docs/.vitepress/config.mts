@@ -12,7 +12,7 @@ export default defineConfig({
   lastUpdated: true,
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "logo.svg" }],
-    ["script", 
+    ["script",
       {
         src: "https://hananalytics-ene.pages.dev/tracker.min.js",
         defer: true,
@@ -32,6 +32,7 @@ export default defineConfig({
       { text: "七星联盟股市日常", link: "/article/economy/reviews" },
       { text: "中美贸易战", link: "/article/economy" },
       { text: "关于我", link: "/me/" },
+      { text: "币安", link: "https://new.alphabot.cm" }
       // { text: "友情链接", link: "/friendly/info", activeMatch: "/friendly/" },
     ],
 
