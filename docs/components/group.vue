@@ -241,6 +241,15 @@ const state = reactive({
           url: "./views/tool?type=compress",
           isExternalLink: false,
           tags: [],
+        },
+        {
+          id: 4,
+          name: "图片格式转换",
+          cover: "https://imgur.aehyok.uk/v2/AE9kROr.png",
+          description: "",
+          url: "./views/tool?type=convert",
+          isExternalLink: false,
+          tags: [],
         }
       ]
     },
