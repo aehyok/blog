@@ -3,6 +3,7 @@
   import Base64Image from "./base64-image.vue"
   import ImageCompress from "./image-compress.vue"
   import ImageFormatConvert from "./image-format-convert.vue"
+  import ImageToSvgConvert from "./image-to-svg-convert.vue"
   import { onMounted, ref } from 'vue'
   // 方法1: 使用URLSearchParams (推荐，现代浏览器支持)
   function getUrlParams(url = window.location.href) {
@@ -44,3 +45,4 @@
 <Base64Image v-if="type == 'base64'" />
 <ImageCompress v-if="type == 'compress'" />
 <ImageFormatConvert v-if="type == 'convert'" />
+<ImageToSvgConvert v-if="type == 'svg'" />
