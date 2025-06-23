@@ -61,6 +61,24 @@ const state = reactive({
           url: "./views/game?type=pinyin",
           isExternalLink: true,
           tags: ["#AI", "自主规划任务"],
+        }, 
+        {
+          id: 3,
+          name: "打字侠-键盘键位练习",
+          cover: "https://imgur.aehyok.uk/v2/I5vwhPI.png",
+          description: "键位练习、拼音练习、打字练习",
+          url: "https://www.hellotyping.com/get-started",
+          isExternalLink: true,
+          tags: [],
+        },
+        {
+          id: 4,
+          name: "打字侠-键盘键位练习",
+          cover: "https://imgur.aehyok.uk/v2/I5vwhPI.png",
+          description: "键位练习、拼音练习、打字练习",
+          url: "https://www.hellotyping.com/get-started",
+          isExternalLink: true,
+          tags: [],
         }
       ]
     },
