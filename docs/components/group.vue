@@ -307,7 +307,7 @@ const openClick = (item: any) => {
 
 .post-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
   margin-bottom: 40px;
 }
@@ -329,7 +329,7 @@ const openClick = (item: any) => {
 
 .post-image {
   width: 100%;
-  height: 160px;
+  height: 140px;
   overflow: hidden;
 }
 
