@@ -191,30 +191,6 @@ const state = reactive({
           cover: "https://imgur.aehyok.uk/v2/PuGVUpG.png",
           description: "少儿、小学、初中、高中、大学、研究生、博士生的学习资源",
           url: "https://github.com/mswnlz/edu-knowlege",
-          isExternalLink: true,
-          tags: ["学而思","名师","直播录课"],
-        },
-        {
-          id: 2,
-          name: "PDF教材",
-          cover: "https://imgur.aehyok.uk/v2/J39UE3b.png",
-          description: "小学、初中、高中、大学PDF教材",
-          url: "https://github.com/TapXWorld/ChinaTextbook",
-          isExternalLink: true,
-          tags: ["语文", "数学", "英语", "物理", "化学", "生物", "地理", "历史"],
-        }
-      ]
-    },
-    {
-      id: 3,
-      name: "拼音歌词",
-      children: [
-        {
-          id: 1,
-          name: "各类学习资源汇总下载",
-          cover: "https://imgur.aehyok.uk/v2/PuGVUpG.png",
-          description: "少儿、小学、初中、高中、大学、研究生、博士生的学习资源",
-          url: "https://github.com/mswnlz/edu-knowlege",
           isExternalLink: false,
           tags: ["学而思","名师","直播录课"],
         },
@@ -237,6 +213,11 @@ const state = reactive({
           tags: ["文学", "历史", "心理", "物理", "化学", "生物", "地理", "历史"],
         }
       ]
+    },
+    {
+      id: 3,
+      name: "拼音歌词",
+      
     },
     {
       id: 5,
@@ -272,7 +253,7 @@ const state = reactive({
         {
           id: 4,
           name: "图片格式转换",
-          cover: "https://imgur.aehyok.uk/v2/AE9kROr.png",
+          cover: "https://imgur.aehyok.uk/v2/KryQYKw.png",
           description: "",
           url: "./views/tool?type=convert",
           isExternalLink: false,
@@ -281,7 +262,7 @@ const state = reactive({
         {
           id: 5,
           name: "图片转换为svg",
-          cover: "https://imgur.aehyok.uk/v2/AE9kROr.png",
+          cover: "https://imgur.aehyok.uk/v2/jwcP877.png",
           description: "",
           url: "./views/tool?type=svg",
           isExternalLink: false,
@@ -290,7 +271,7 @@ const state = reactive({
         {
           id: 5,
           name: "文字生成图片",
-          cover: "https://imgur.aehyok.uk/v2/AE9kROr.png",
+          cover: "https://imgur.aehyok.uk/v2/7UNhgk0.png",
           description: "",
           url: "./views/tool?type=text-to-image",
           isExternalLink: false,
