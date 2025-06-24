@@ -59,7 +59,7 @@ const state = reactive({
           cover: "https://imgur.aehyok.uk/v2/dGPlHBa.jpeg",
           description: "拼音识别小游戏",
           url: "./views/game?type=pinyin",
-          isExternalLink: true,
+          isExternalLink: false,
           tags: ["#AI", "自主规划任务"],
         }, 
         {
@@ -73,11 +73,11 @@ const state = reactive({
         },
         {
           id: 4,
-          name: "打字侠-键盘键位练习",
-          cover: "https://imgur.aehyok.uk/v2/I5vwhPI.png",
-          description: "键位练习、拼音练习、打字练习",
-          url: "https://www.hellotyping.com/get-started",
-          isExternalLink: true,
+          name: "跳一跳小游戏",
+          cover: "https://imgur.aehyok.uk/v2/Uo67vfL.png",
+          description: "模仿微信小程序跳一跳小游戏",
+          url: "./views/game?type=threejs",
+          isExternalLink: false,
           tags: [],
         }
       ]
@@ -191,7 +191,7 @@ const state = reactive({
           cover: "https://imgur.aehyok.uk/v2/PuGVUpG.png",
           description: "少儿、小学、初中、高中、大学、研究生、博士生的学习资源",
           url: "https://github.com/mswnlz/edu-knowlege",
-          isExternalLink: false,
+          isExternalLink: true,
           tags: ["学而思","名师","直播录课"],
         },
         {
