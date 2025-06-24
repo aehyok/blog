@@ -277,6 +277,15 @@ const state = reactive({
           url: "./views/tool?type=svg",
           isExternalLink: false,
           tags: [],
+        },
+        {
+          id: 5,
+          name: "文字生成图片",
+          cover: "https://imgur.aehyok.uk/v2/AE9kROr.png",
+          description: "",
+          url: "./views/tool?type=text-to-image",
+          isExternalLink: false,
+          tags: [],
         }
       ]
     },

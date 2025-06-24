@@ -46,7 +46,7 @@
       <div class="control-group">
         <label for="pathSimplify">路径简化:</label>
         <input 
-          id="pathSimplify"
+          id="pathSimplify"`  
           v-model.number="pathSimplify" 
           type="range" 
           min="0" 
