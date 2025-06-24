@@ -226,6 +226,15 @@ const state = reactive({
           url: "https://github.com/TapXWorld/ChinaTextbook",
           isExternalLink: true,
           tags: ["语文", "数学", "英语", "物理", "化学", "生物", "地理", "历史"],
+        },
+        {
+          id: 3,
+          name: "各种电子书下载",
+          cover: "https://imgur.aehyok.uk/v2/bkqiV8i.png",
+          description: "小学、初中、高中、大学PDF教材",
+          url: "https://github.com/jbiaojerry/ebook-treasure-chest",
+          isExternalLink: true,
+          tags: ["文学", "历史", "心理", "物理", "化学", "生物", "地理", "历史"],
         }
       ]
     },

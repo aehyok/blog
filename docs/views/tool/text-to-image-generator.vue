@@ -44,9 +44,22 @@
           <div class="control-card">
             <div class="card-header">
               <h3>📝 文字内容</h3>
+              <div class="text-controls">
+                <button class="btn-add-text" @click="addTextLayer">
+                  ➕ 添加文字
+                </button>
+                <select v-model="currentTextIndex" class="text-selector">
+                  <option v-for="(text, index) in textLayers" :key="index" :value="index">
+                    文字层 {{ index + 1 }}: {{ text.content.slice(0, 10) }}{{ text.content.length > 10 ? '...' : '' }}
+                  </option>
+                </select>
+                <button v-if="textLayers.length > 1" class="btn-delete-text" @click="deleteTextLayer">
+                  🗑️
+                </button>
+              </div>
             </div>
             <textarea 
-              v-model="textContent" 
+              v-model="currentText.content" 
               placeholder="在这里输入你想要生成的文字内容..."
               class="text-input"
               @input="generateImage"
@@ -94,7 +107,7 @@
                 <label>字体大小</label>
                 <input 
                   type="number" 
-                  v-model="fontSize" 
+                  v-model="currentText.fontSize" 
                   min="12" 
                   max="200"
                   @input="generateImage"
@@ -103,7 +116,7 @@
               </div>
               <div class="input-group">
                 <label>字体类型</label>
-                <select v-model="fontFamily" @change="generateImage" class="select-input">
+                <select v-model="currentText.fontFamily" @change="generateImage" class="select-input">
                   <option value="Microsoft YaHei">微软雅黑</option>
                   <option value="SimSun">宋体</option>
                   <option value="SimHei">黑体</option>
@@ -126,11 +139,11 @@
                 <div class="color-wrapper">
                   <input 
                     type="color" 
-                    v-model="textColor" 
+                    v-model="currentText.color" 
                     class="color-input"
                     @change="generateImage"
                   >
-                  <span class="color-value">{{ textColor }}</span>
+                  <span class="color-value">{{ currentText.color }}</span>
                 </div>
               </div>
               <div class="color-group">
@@ -158,7 +171,7 @@
                 <label>X 坐标</label>
                 <input 
                   type="number" 
-                  v-model="textX" 
+                  v-model="currentText.x" 
                   min="0"
                   @input="generateImage"
                   class="number-input"
@@ -168,7 +181,7 @@
                 <label>Y 坐标</label>
                 <input 
                   type="number" 
-                  v-model="textY" 
+                  v-model="currentText.y" 
                   min="0"
                   @input="generateImage"
                   class="number-input"
@@ -215,18 +228,31 @@
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick, watch } from 'vue'
+import { ref, onMounted, nextTick, watch, computed } from 'vue'
 
 // 响应式数据
-const textContent = ref('测试文字')
 const canvasWidth = ref(400)
 const canvasHeight = ref(300)
-const fontSize = ref(40)
-const fontFamily = ref('Microsoft YaHei')
-const textColor = ref('#000000')
 const bgColor = ref('#ffffff')
-const textX = ref(50)  // 改为更安全的初始位置
-const textY = ref(50)  // 改为更安全的初始位置
+
+// 文字层数组
+const textLayers = ref([
+  {
+    id: 1,
+    content: '测试文字',
+    fontSize: 40,
+    fontFamily: 'Microsoft YaHei',
+    color: '#000000',
+    x: 50,
+    y: 50
+  }
+])
+
+const currentTextIndex = ref(0)
+const selectedTextId = ref(null)
+
+// 当前选中的文字对象
+const currentText = computed(() => textLayers.value[currentTextIndex.value])
 
 // DOM引用
 const canvas = ref(null)
@@ -245,28 +271,47 @@ let ctx = null
 // 初始化
 onMounted(() => {
   ctx = canvas.value.getContext('2d')
-  // 确保初始位置在画布范围内
-  textX.value = Math.min(50, canvasWidth.value - 100)
-  textY.value = Math.min(50, canvasHeight.value - fontSize.value)
   generateImage()
 })
 
-// 监听画布尺寸变化，调整文字位置
+// 监听画布尺寸变化
 watch([canvasWidth, canvasHeight], () => {
-  // 确保文字位置在新画布范围内
-  textX.value = Math.min(textX.value, canvasWidth.value - 100)
-  textY.value = Math.min(textY.value, canvasHeight.value - fontSize.value)
   generateImage()
 })
 
 // 更新画布尺寸
 const updateCanvasSize = () => {
   nextTick(() => {
-    // 确保文字位置在新画布范围内
-    textX.value = Math.min(textX.value, canvasWidth.value - 100)
-    textY.value = Math.min(textY.value, canvasHeight.value - fontSize.value)
     generateImage()
   })
+}
+
+// 添加新文字层
+const addTextLayer = () => {
+  const newId = Math.max(...textLayers.value.map(t => t.id)) + 1
+  const newText = {
+    id: newId,
+    content: '新文字',
+    fontSize: 40,
+    fontFamily: 'Microsoft YaHei',
+    color: '#000000',
+    x: 50 + (textLayers.value.length * 20),
+    y: 50 + (textLayers.value.length * 20)
+  }
+  textLayers.value.push(newText)
+  currentTextIndex.value = textLayers.value.length - 1
+  generateImage()
+}
+
+// 删除文字层
+const deleteTextLayer = () => {
+  if (textLayers.value.length > 1) {
+    textLayers.value.splice(currentTextIndex.value, 1)
+    if (currentTextIndex.value >= textLayers.value.length) {
+      currentTextIndex.value = textLayers.value.length - 1
+    }
+    generateImage()
+  }
 }
 
 // 处理图片上传
@@ -299,25 +344,33 @@ const getCanvasCoordinates = (e) => {
 }
 
 // 获取文字的实际尺寸
-const getTextDimensions = () => {
-  if (!ctx || !textContent.value.trim()) return { width: 0, height: 0 }
+const getTextDimensions = (textLayer) => {
+  if (!ctx || !textLayer.content.trim()) return { width: 0, height: 0 }
   
-  ctx.font = `${fontSize.value}px ${fontFamily.value}`
-  const lines = textContent.value.split('\n').filter(line => line.trim())
+  ctx.font = `${textLayer.fontSize}px ${textLayer.fontFamily}`
+  const lines = textLayer.content.split('\n').filter(line => line.trim())
   
   if (lines.length === 0) return { width: 0, height: 0 }
   
   const maxWidth = Math.max(...lines.map(line => ctx.measureText(line).width))
-  const totalHeight = lines.length * fontSize.value * 1.2
+  const totalHeight = lines.length * textLayer.fontSize * 1.2
   
   return { width: maxWidth, height: totalHeight }
 }
 
-// 检查点击是否在文字区域内
-const isClickInTextArea = (x, y) => {
-  const { width, height } = getTextDimensions()
-  return x >= textX.value && x <= textX.value + width && 
-         y >= textY.value && y <= textY.value + height
+// 检查点击是否在某个文字区域内
+const getClickedTextLayer = (x, y) => {
+  // 从后往前检查，确保最上层的文字优先响应
+  for (let i = textLayers.value.length - 1; i >= 0; i--) {
+    const textLayer = textLayers.value[i]
+    const { width, height } = getTextDimensions(textLayer)
+    
+    if (x >= textLayer.x && x <= textLayer.x + width && 
+        y >= textLayer.y && y <= textLayer.y + height) {
+      return { layer: textLayer, index: i }
+    }
+  }
+  return null
 }
 
 // 鼠标事件处理
@@ -326,12 +379,15 @@ const handleMouseDown = (e) => {
   hasMouseMoved.value = false
   
   const { x, y } = getCanvasCoordinates(e)
+  const clickedText = getClickedTextLayer(x, y)
   
-  // 检查是否点击在文字区域
-  if (isClickInTextArea(x, y)) {
+  if (clickedText) {
+    // 选中并开始拖拽
+    currentTextIndex.value = clickedText.index
+    selectedTextId.value = clickedText.layer.id
     isDragging.value = true
-    dragOffsetX.value = x - textX.value
-    dragOffsetY.value = y - textY.value
+    dragOffsetX.value = x - clickedText.layer.x
+    dragOffsetY.value = y - clickedText.layer.y
     canvas.value.style.cursor = 'grabbing'
     e.preventDefault()
   }
@@ -342,22 +398,23 @@ const handleMouseMove = (e) => {
     hasMouseMoved.value = true
     const { x, y } = getCanvasCoordinates(e)
     
-    const { width, height } = getTextDimensions()
+    const { width, height } = getTextDimensions(currentText.value)
     const maxX = canvasWidth.value - width
     const maxY = canvasHeight.value - height
     
     const newX = Math.max(0, Math.min(maxX, x - dragOffsetX.value))
     const newY = Math.max(0, Math.min(maxY, y - dragOffsetY.value))
     
-    textX.value = Math.round(newX)
-    textY.value = Math.round(newY)
+    currentText.value.x = Math.round(newX)
+    currentText.value.y = Math.round(newY)
     generateImage()
     e.preventDefault()
   } else {
     // 鼠标悬停时改变光标样式
     const { x, y } = getCanvasCoordinates(e)
+    const clickedText = getClickedTextLayer(x, y)
     
-    if (isClickInTextArea(x, y)) {
+    if (clickedText) {
       canvas.value.style.cursor = 'grab'
     } else {
       canvas.value.style.cursor = 'crosshair'
@@ -368,32 +425,29 @@ const handleMouseMove = (e) => {
 const handleMouseUp = (e) => {
   if (isDragging.value) {
     isDragging.value = false
+    selectedTextId.value = null
     canvas.value.style.cursor = 'crosshair'
     e.preventDefault()
   }
 }
 
 const handleCanvasClick = (e) => {
-  // 只有在没有拖拽、鼠标按下时间短时才处理点击
   const clickDuration = Date.now() - mouseDownTime.value
   if (!hasMouseMoved.value && clickDuration < 300 && !isDragging.value) {
     const { x, y } = getCanvasCoordinates(e)
+    const clickedText = getClickedTextLayer(x, y)
     
-    // 只有当点击不在文字区域时才移动文字位置
-    if (!isClickInTextArea(x, y)) {
-      const { width, height } = getTextDimensions()
-      
-      // 确保新位置不会让文字超出画布
+    if (!clickedText) {
+      // 点击空白区域，移动当前选中的文字
+      const { width, height } = getTextDimensions(currentText.value)
       const maxX = canvasWidth.value - width
       const maxY = canvasHeight.value - height
       
       const newX = Math.max(0, Math.min(x, maxX))
       const newY = Math.max(0, Math.min(y, maxY))
       
-      textX.value = Math.round(newX)
-      textY.value = Math.round(newY)
-      
-      console.log('移动文字到:', newX, newY) // 调试用
+      currentText.value.x = Math.round(newX)
+      currentText.value.y = Math.round(newY)
       generateImage()
     }
   }
@@ -401,15 +455,13 @@ const handleCanvasClick = (e) => {
 
 // 文字居中函数
 const centerText = () => {
-  const { width, height } = getTextDimensions()
+  const { width, height } = getTextDimensions(currentText.value)
   
-  // 计算居中位置
   const centerX = (canvasWidth.value - width) / 2
   const centerY = (canvasHeight.value - height) / 2
   
-  // 确保位置不超出边界
-  textX.value = Math.max(0, Math.round(centerX))
-  textY.value = Math.max(0, Math.round(centerY))
+  currentText.value.x = Math.max(0, Math.round(centerX))
+  currentText.value.y = Math.max(0, Math.round(centerY))
   
   generateImage()
 }
@@ -418,11 +470,9 @@ const centerText = () => {
 const generateImage = () => {
   if (!ctx || !canvas.value) return
   
-  // 确保画布尺寸正确
   canvas.value.width = canvasWidth.value
   canvas.value.height = canvasHeight.value
   
-  // 清空画布
   ctx.clearRect(0, 0, canvasWidth.value, canvasHeight.value)
 
   // 绘制背景
@@ -433,28 +483,33 @@ const generateImage = () => {
     ctx.fillRect(0, 0, canvasWidth.value, canvasHeight.value)
   }
 
-  // 如果没有文字内容，直接返回
-  if (!textContent.value.trim()) return
+  // 绘制所有文字层
+  textLayers.value.forEach((textLayer, index) => {
+    if (!textLayer.content.trim()) return
 
-  // 设置文字样式
-  ctx.font = `${fontSize.value}px ${fontFamily.value}`
-  ctx.fillStyle = textColor.value
-  ctx.textBaseline = 'top'
+    ctx.font = `${textLayer.fontSize}px ${textLayer.fontFamily}`
+    ctx.fillStyle = textLayer.color
+    ctx.textBaseline = 'top'
 
-  // 确保文字位置在画布范围内
-  const safeX = Math.max(0, Math.min(textX.value, canvasWidth.value - 50))
-  const safeY = Math.max(0, Math.min(textY.value, canvasHeight.value - fontSize.value))
-
-  // 绘制多行文字
-  const lines = textContent.value.split('\n')
-  lines.forEach((line, index) => {
-    if (line.trim()) {  // 只绘制非空行
-      const y = safeY + (index * fontSize.value * 1.2)
-      // 确保文字不超出画布底部
-      if (y + fontSize.value <= canvasHeight.value) {
-        ctx.fillText(line, safeX, y)
-      }
+    // 如果是选中的文字，添加边框
+    if (selectedTextId.value === textLayer.id) {
+      const { width, height } = getTextDimensions(textLayer)
+      ctx.strokeStyle = '#667eea'
+      ctx.lineWidth = 2
+      ctx.setLineDash([5, 5])
+      ctx.strokeRect(textLayer.x - 2, textLayer.y - 2, width + 4, height + 4)
+      ctx.setLineDash([])
     }
+
+    const lines = textLayer.content.split('\n')
+    lines.forEach((line, lineIndex) => {
+      if (line.trim()) {
+        const y = textLayer.y + (lineIndex * textLayer.fontSize * 1.2)
+        if (y + textLayer.fontSize <= canvasHeight.value) {
+          ctx.fillText(line, textLayer.x, y)
+        }
+      }
+    })
   })
 }
 
