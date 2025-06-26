@@ -1,3 +1,6 @@
+---
+layout: home
+---
 <script lang="ts" setup>
   import Aes from "./aes-decrypt-tool.vue"
   import Base64Image from "./base64-image.vue"
@@ -5,6 +8,7 @@
   import ImageFormatConvert from "./image-format-convert.vue"
   import ImageToSvgConvert from "./image-to-svg-convert.vue"
   import TextToImageGenerator from "./text-to-image-generator.vue"
+  import QrCode from "./qrcode.vue"
   import { onMounted, ref } from 'vue'
   // 方法1: 使用URLSearchParams (推荐，现代浏览器支持)
   function getUrlParams(url = window.location.href) {
@@ -48,3 +52,4 @@
 <ImageFormatConvert v-if="type == 'convert'" />
 <ImageToSvgConvert v-if="type == 'svg'" />
 <TextToImageGenerator v-if="type == 'text-to-image'" />
+<QrCode v-if="type == 'qrcode'" />

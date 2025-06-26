@@ -276,6 +276,15 @@ const state = reactive({
           url: "./views/tool?type=text-to-image",
           isExternalLink: false,
           tags: [],
+        },
+        {
+          id: 6,
+          name: "生成二维码",
+          cover: "https://imgur.aehyok.uk/v2/qn46gvr.png",
+          description: "",
+          url: "./views/tool?type=qrcode",
+          isExternalLink: false,
+          tags: [],
         }
       ]
     },
