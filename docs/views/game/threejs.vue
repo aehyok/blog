@@ -8,6 +8,8 @@
 </template>
 
 <script lang="ts" setup>
+
+// 参考文章 https://juejin.cn/post/7269640045044613160
 import * as THREE from 'three';
 import { onMounted, onUnmounted, ref } from 'vue';
 
@@ -49,6 +51,9 @@ function initThreeJS() {
   
   // 添加光源
   addLights();
+
+  //添加坐标辅助器
+  addAxesHelper();
   
   // 添加到DOM
   if (gameContainer.value) {
@@ -68,6 +73,12 @@ function createCube() {
   cube.rotation.x = 0.5;
   scene.add(cube);
 }
+
+const addAxesHelper = () => {
+  const axesHelper = new THREE.AxesHelper( 1000 );
+  axesHelper.position.set(0,0,0);
+  scene.add( axesHelper );
+};
 
 // 添加光源
 function addLights() {
