@@ -1,3 +1,6 @@
+---
+layout: home
+---
 <script lang="ts" setup>
   import Shuerte from "./shuerte.vue"
   import Pinyin from "./pinyin.vue"
