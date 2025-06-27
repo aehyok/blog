@@ -4,7 +4,7 @@ layout: home
 <script lang="ts" setup>
   import Shuerte from "./shuerte.vue"
   import Pinyin from "./pinyin.vue"
-//   import Threejs from "./threejs.vue"
+  import Threejs from "./threejs.vue"
   import { onMounted, ref } from 'vue'
   // 方法1: 使用URLSearchParams (推荐，现代浏览器支持)
   function getUrlParams(url = window.location.href) {
@@ -46,3 +46,4 @@ layout: home
 
 <Shuerte v-if="type == 'shuerte'" />
 <Pinyin v-if="type == 'pinyin'" />
+<Threejs v-if="type == 'threejs'" />
