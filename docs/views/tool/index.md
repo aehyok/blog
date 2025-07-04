@@ -8,6 +8,7 @@ layout: home
   import ImageFormatConvert from "./image-format-convert.vue"
   import ImageToSvgConvert from "./image-to-svg-convert.vue"
   import TextToImageGenerator from "./text-to-image-generator.vue"
+  import Temperature from "./temperature.vue"
   import QrCode from "./qrcode.vue"
   import { onMounted, ref } from 'vue'
   // 方法1: 使用URLSearchParams (推荐，现代浏览器支持)
@@ -53,3 +54,4 @@ layout: home
 <ImageToSvgConvert v-if="type == 'svg'" />
 <TextToImageGenerator v-if="type == 'text-to-image'" />
 <QrCode v-if="type == 'qrcode'" />
+<Temperature v-if="type == 'temperature'" />

@@ -35,11 +35,11 @@ function initThreeJS() {
   
   // 创建场景
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x222222); // 设置背景色
+  scene.background = new THREE.Color(0xcccccc); // 设置背景色
   
   // 创建相机 - 调整视野角度和位置
-  camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-  camera.position.set(0, 0, 5); // 距离更近一些
+  camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+  camera.position.set(100, 100, 100); // 距离更近一些
   
   // 创建渲染器
   renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -63,15 +63,27 @@ function initThreeJS() {
 
 // 创建立方体
 function createCube() {
-  const geometry = new THREE.BoxGeometry(1, 1, 1); // 使用标准尺寸
-  const material = new THREE.MeshPhongMaterial({ 
-    color: 0x00ff00,
-    shininess: 100
-  });
-  cube = new THREE.Mesh(geometry, material);
-  cube.rotation.y = 0.5;
-  cube.rotation.x = 0.5;
-  scene.add(cube);
+  // const geometry = new THREE.BoxGeometry(1, 1, 1); // 使用标准尺寸
+  // const material = new THREE.MeshPhongMaterial({ 
+  //   color: 0xf6f6f6,
+  //   shininess: 100
+  // });
+  // cube = new THREE.Mesh(geometry, material);
+  // cube.rotation.y = 0.5;
+  // cube.rotation.x = 0.5;
+  // scene.add(cube);
+
+
+  const geometry1 = new THREE.BoxGeometry( 30, 20, 30 );
+  const material1 = new THREE.MeshPhongMaterial( {color: 0xffffff} );
+  const cube1 = new THREE.Mesh( geometry1, material1 ); 
+  scene.add( cube1 );
+
+  const geometry2 = new THREE.BoxGeometry( 30, 20, 30 );
+  const material2 = new THREE.MeshPhongMaterial( {color: 0xffffff} );
+  const cube2 = new THREE.Mesh( geometry2, material2 ); 
+  cube2.position.z = -50;
+  scene.add( cube2 ); 
 }
 
 const addAxesHelper = () => {
@@ -93,7 +105,7 @@ function addLights() {
   
   // 点光源 - 增加立体感（可选）
   const pointLight = new THREE.PointLight(0xffffff, 0.5);
-  pointLight.position.set(-5, 5, 5);
+  pointLight.position.set(0, 500, 500);
   scene.add(pointLight);
 }
 
