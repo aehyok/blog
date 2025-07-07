@@ -20,6 +20,8 @@ let camera: THREE.PerspectiveCamera;
 let renderer: THREE.WebGLRenderer;
 let cube: THREE.Mesh;
 let animationId: number;
+let player;
+let focusPos = { x: 0, y: 0, z: 0 };
 
 // 获取窗口尺寸
 const getWindowSize = () => ({
@@ -33,19 +35,21 @@ function initThreeJS() {
   
   // 创建场景
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xcccccc); // 设置背景色
   
   // 创建相机 - 调整视野角度和位置
   camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
   camera.position.set(100, 100, 100);
-  camera.lookAt(0, 0, 0); // 确保相机朝向场景中心
+  camera.lookAt(scene.position); // 确保相机朝向场景中心
   
   // 创建渲染器
   renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setSize(width, height);
-  // renderer.setClearColor(0x333333, 1); // 设置渲染器背景色
-  // renderer.setPixelRatio(window.devicePixelRatio);
-  
+  renderer.setClearColor(0x333333, 1); // 设置渲染器背景色
+  renderer.setPixelRatio(window.devicePixelRatio);
+
+  // 添加光源
+  addLights();
+
   // 创建立方体
   createCube(0, 0);
   createCube(0, -100);
@@ -54,16 +58,25 @@ function initThreeJS() {
   createCube(-100, 0);
   createCube(-200, 0);
   createCube(-300, 0);
-  
-  // 添加光源
-  addLights();
+
 
   //添加坐标辅助器
   addAxesHelper();
   
+  player = createPlayer();
   // 添加到DOM
   if (gameContainer.value) {
     gameContainer.value.appendChild(renderer.domElement);
+
+    document.body.addEventListener('click', () => {
+      player.position.z -= 100;
+
+      camera.position.z -= 100;
+
+      focusPos.z -= 100;
+      camera.lookAt(focusPos.x, focusPos.y, focusPos.z);
+
+    });
   }
 }
 
@@ -76,20 +89,17 @@ function createCube(x, z) {
   scene.add( cube );
 }
 
+function createPlayer() {
+  const geometry = new THREE.BoxGeometry( 5, 15, 5 );
+  const material = new THREE.MeshPhongMaterial( {color: 0x000000} );
+  const player = new THREE.Mesh( geometry, material); 
+  player.position.x = 0;
+  player.position.y = 17.5;
+  player.position.z = 0;
+  scene.add( player )
+  return player;
+}
 
-// 创建立方体
-// function createCube() {
-//   const geometry = new THREE.BoxGeometry( 30, 20, 30 );
-//   const material = new THREE.MeshPhongMaterial( {color: 0x00ff00 , shininess: 100, specular: 0x111111} ); // 改为绿色便于观察
-//   cube = new THREE.Mesh( geometry, material ); 
-//   scene.add( cube );
-
-//   const geometry2 = new THREE.BoxGeometry( 30, 20, 30 );
-//   const material2 = new THREE.MeshPhongMaterial( {color: 0xff0000  ,shininess: 100, specular: 0x111111} ); // 改为红色便于区分
-//   const cube2 = new THREE.Mesh( geometry2, material2 ); 
-//   cube2.position.z = -50;
-//   scene.add( cube2 );    
-// }
 
 const addAxesHelper = () => {
   const axesHelper = new THREE.AxesHelper( 1000 );
@@ -99,14 +109,10 @@ const addAxesHelper = () => {
 
 // 添加光源
 function addLights() {
-  const directionalLight = new THREE.DirectionalLight( 0xcccccc, 1.0 );
+  const directionalLight = new THREE.DirectionalLight( 0xffffff , 1.0 );
   directionalLight.position.set(40, 100, 60);
 
   scene.add( directionalLight );
-
-  // // 环境光 - 降低强度让明暗对比更强
-  const ambientLight = new THREE.AmbientLight( 0x404040, 0.2 );
-  scene.add( ambientLight );
 }
 
 // 渲染循环
@@ -165,7 +171,7 @@ onUnmounted(() => {
 .game-container {
   position: relative;
   overflow: hidden;
-  background: #000;
+  /* background: #000; */
 }
 
 .info {
