@@ -20,8 +20,18 @@ let camera: THREE.PerspectiveCamera;
 let renderer: THREE.WebGLRenderer;
 let cube: THREE.Mesh;
 let animationId: number;
+// 移动的小人
 let player;
+
+// camera 聚焦位置
 let focusPos = { x: 0, y: 0, z: 0 };
+
+const targetCameraPos = { x: 100, y: 100, z: 100 };
+
+// 每次移动的起始位置
+const cameraFocus = { x: 0, y: 0, z: 0 };
+// 每次移动后的终点位置
+const targetCameraFocus = { x: 0, y: 0, z: 0 };
 
 // 获取窗口尺寸
 const getWindowSize = () => ({
@@ -71,13 +81,32 @@ function initThreeJS() {
     document.body.addEventListener('click', () => {
       player.position.z -= 100;
 
-      camera.position.z -= 100;
+      targetCameraPos.z = camera.position.z - 100
 
-      focusPos.z -= 100;
-      camera.lookAt(focusPos.x, focusPos.y, focusPos.z);
+      targetCameraFocus.z -= 100
 
     });
   }
+}
+
+function moveCamera() {
+
+const { x, z } = camera.position;
+if(x > targetCameraPos.x) {
+    camera.position.x -= 3;
+}
+if(z > targetCameraPos.z) {
+    camera.position.z -= 3;
+}
+
+if(cameraFocus.x > targetCameraFocus.x) {
+    cameraFocus.x -= 3;
+}
+if(cameraFocus.z > targetCameraFocus.z) {
+    cameraFocus.z -= 3;
+}
+
+camera.lookAt(cameraFocus.x, cameraFocus.y, cameraFocus.z);  
 }
 
 function createCube(x, z) {
@@ -116,23 +145,17 @@ function addLights() {
 }
 
 // 渲染循环
-function animate() {
-  animationId = requestAnimationFrame(animate);
-  
-  // 旋转立方体以观察光照效果
-  if (cube) {
-    // cube.rotation.x += 0.01;
-    // cube.rotation.y += 0.01;
-  }
-  
+function render() {
+  moveCamera();
   // 渲染场景
   renderer.render(scene, camera);
+  requestAnimationFrame(render);
 }
 
 // 处理窗口大小变化
 function onWindowResize() {
   const { width, height } = getWindowSize();
-  
+
   camera.aspect = width / height;
   camera.updateProjectionMatrix();
   
@@ -144,7 +167,7 @@ onMounted(() => {
   console.log(THREE, "--THREE加载成功--");
   
   initThreeJS();
-  animate();
+  render();
   
   // 监听窗口大小变化
   window.addEventListener('resize', onWindowResize);
@@ -152,16 +175,15 @@ onMounted(() => {
 
 // 组件卸载时清理
 onUnmounted(() => {
-  // 停止动画循环
+  //停止动画循环
   if (animationId) {
-    cancelAnimationFrame(animationId);
+    cancelAnimationFrame();
   }
   
   // 清理Three.js对象
   if (renderer) {
     renderer.dispose();
   }
-  
   // 移除事件监听器
   window.removeEventListener('resize', onWindowResize);
 });
