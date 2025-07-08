@@ -35,7 +35,7 @@ let speedY = 0;
 
 let stopped = false;
 const state = reactive({
-  score: -100
+  score: -1000
 })
 
 // 设置窗口宽高移动端待适配
@@ -201,7 +201,7 @@ function movePlayer() {
         if(stopped === false){
 
             if(playerInCube()) {
-                state.score+= 999;
+                state.score+= 1000;
                 // document.getElementById('score').innerHTML = score;
 
                 const distance = Math.floor(50 + Math.random() * 100);
