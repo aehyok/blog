@@ -201,7 +201,7 @@ function movePlayer() {
         if(stopped === false){
 
             if(playerInCube()) {
-                state.score+= 100;
+                state.score+= 999;
                 // document.getElementById('score').innerHTML = score;
 
                 const distance = Math.floor(50 + Math.random() * 100);
@@ -217,9 +217,9 @@ function movePlayer() {
                 createCube(currentCubePos.x, currentCubePos.z);
             } else {
               alert("失败了，当前分数为:" + state.score);
-              // setTimeout(() => {
-              //   window.location.reload();
-              // }, 500);
+              setTimeout(() => {
+                window.location.reload();
+              }, 500);
                 // document.getElementById('fail').style.display = 'block';
                 // document.getElementById('score2').innerHTML = score;
             }
