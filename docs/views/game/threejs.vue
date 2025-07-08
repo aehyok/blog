@@ -35,7 +35,7 @@ let speedY = 0;
 
 let stopped = false;
 const state = reactive({
-  score: 0
+  score: -100
 })
 
 // 设置窗口宽高移动端待适配
