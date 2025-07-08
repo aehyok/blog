@@ -3,13 +3,14 @@
     <div class="info">
       <h2>Three.js Vue3 入门例子</h2>
       <p>一个旋转的绿色立方体</p>
+      <div id="score">当前分数: {{state.score}}</div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
 
 import * as THREE from 'three';
-import { onMounted, onUnmounted, ref } from 'vue';
+import { onMounted, onUnmounted, ref, reactive } from 'vue';
 
 // 响应式引用
 const gameContainer = ref<HTMLElement | null>(null);
@@ -36,10 +37,25 @@ const targetCameraFocus = { x: 0, y: 0, z: 0 };
 
 const playerPos = { x: 0, y: 17.5, z: 0};
 const targetPlayerPos = { x: 0, y: 17.5, z: 0};
-let speed = 0;
 
-const currentCubePos = {x: 0, y: 0, z: -100};
+const currentCubePos = {x: 0, y: 0, z: 0};
 let direction = 'right';
+
+let pressed = false;
+let speed = 0;
+let speedY = 0;
+
+let stopped = false;
+const state = reactive({
+  score: -1
+})
+
+function speedUp() {
+  if(pressed) {
+      speed += 0.1;
+      speedY += 0.1;
+  }
+}
 
 // 获取窗口尺寸
 const getWindowSize = () => ({
@@ -68,14 +84,9 @@ function initThreeJS() {
   // 添加光源
   addLights();
 
-  // 创建立方体
+  // 创建立方体(预留两个)
   createCube(0, 0);
-  createCube(0, -100);
-  // createCube(0, -200);
-  // createCube(0, -300);
-  // createCube(-100, 0);
-  // createCube(-200, 0);
-  // createCube(-300, 0);
+  // createCube(0, -100);
 
 
   //添加坐标辅助器
@@ -86,68 +97,145 @@ function initThreeJS() {
   if (gameContainer.value) {
     gameContainer.value.appendChild(renderer.domElement);
 
+    document.body.addEventListener('mousedown', () => {
+      speed = 0;
+      speedY = 0;
+      pressed = true;  // 确定按钮已经被按压
+    });
+    document.body.addEventListener('mouseup', () => {
+      pressed = false; // 确定按钮按压结束
+    })
+
     document.body.addEventListener('click', () => {
-      // 向右则是z轴减100
-      if(direction === 'right') {
-        targetCameraPos.z = camera.position.z - 100;
-        targetCameraFocus.z -= 100;
-        targetPlayerPos.z -= 100;
-      }
-      else { // 向左x轴减100
-        targetCameraPos.x = camera.position.x - 100
-        targetCameraFocus.x -= 100
-        targetPlayerPos.x -=100;
-      }
+      // // 向右则是z轴减100
+      // if(direction === 'right') {
+      //   targetCameraPos.z = camera.position.z - 100;
+      //   targetCameraFocus.z -= 100;
+      //   targetPlayerPos.z -= 100;
+      // }
+      // else { // 向左x轴减100
+      //   targetCameraPos.x = camera.position.x - 100
+      //   targetCameraFocus.x -= 100
+      //   targetPlayerPos.x -=100;
+      // }
 
-      speed = 5;
+      // speed = 5;
 
-      // 操作完毕，预设出下一次跳动的方向
-      const num = Math.random();
-      if(num > 0.5) {
-          currentCubePos.z -= 100;
-          direction = 'right';
-      } else {
-          currentCubePos.x -= 100;
-          direction = 'left';
-      }
-      createCube(currentCubePos.x, currentCubePos.z);
+      // // 操作完毕，预设出下一次跳动的方向
+      // const num = Math.random();
+      // if(num > 0.5) {
+      //     currentCubePos.z -= 100;
+      //     direction = 'right';
+      // } else {
+      //     currentCubePos.x -= 100;
+      //     direction = 'left';
+      // }
+      // createCube(currentCubePos.x, currentCubePos.z);
     });
   }
 }
 
-function moveCamera() {
-  const { x, z } = camera.position;
-  if(x > targetCameraPos.x) {
-      camera.position.x -= 3;
-  }
-  if(z > targetCameraPos.z) {
-      camera.position.z -= 3;
-  }
-
-  if(cameraFocus.x > targetCameraFocus.x) {
-      cameraFocus.x -= 3;
-  }
-  if(cameraFocus.z > targetCameraFocus.z) {
-      cameraFocus.z -= 3;
-  }
-
-  camera.lookAt(cameraFocus.x, cameraFocus.y, cameraFocus.z);  
+function playerInCube() {
+    if(direction === 'right') {
+        if( player.position.z < currentCubePos.z + 15 && player.position.z > currentCubePos.z - 15) {
+            return true;
+        }
+    } else if(direction === 'left') {
+        if( player.position.x < currentCubePos.x + 15 && player.position.x > currentCubePos.x - 15) {
+            return true;
+        }
+    }
+    return false;
 }
 
 function movePlayer() {
-  if(player.position.x > targetPlayerPos.x) {
-      player.position.x -= 3;
-  }
-  if(player.position.z > targetPlayerPos.z) {
-      player.position.z -= 3;
-  }
-  player.position.y += speed;
-  speed -= 0.3;
-
+  player.position.y += speedY;
+  
   if(player.position.y < 17.5) {
-      player.position.y = 17.5;
+    player.position.y = 17.5;
+
+    if(!stopped){
+      if(playerInCube()) {
+        state.score ++;
+        console.log("score++分数:", state.score);
+        return;
+      }
+      else {
+        console.log("失败了，当前分数为:" +state.score)
+      }
+
+      const distance = Math.floor(50 + Math.random() * 100);
+
+      const num = Math.random();
+      if(num > 0.5) {
+          currentCubePos.z -= distance;
+          direction = 'right';
+      } else {
+          currentCubePos.x -= distance;
+          direction = 'left';
+      }
+      createCube(currentCubePos.x, currentCubePos.z);
+    }
+    stopped = true;
+
+  } else {
+    stopped = false;
+    if(direction === 'right') {
+        player.position.z -= speed;
+    } else {
+        player.position.x -= speed;
+    }
+  }
+  speedY -= 0.3;
+}
+
+function moveCamera() {
+  if(player.position.y > 17.5) {
+    if(direction === 'right') {
+        camera.position.z -= speed;
+        cameraFocus.z -= speed;
+    } else {
+        camera.position.x -= speed;
+        cameraFocus.x -= speed;
+    }
+    
+    camera.lookAt(cameraFocus.x, cameraFocus.y, cameraFocus.z);
   }
 }
+
+// function moveCamera() {
+//   const { x, z } = camera.position;
+//   if(x > targetCameraPos.x) {
+//       camera.position.x -= 3;
+//   }
+//   if(z > targetCameraPos.z) {
+//       camera.position.z -= 3;
+//   }
+
+//   if(cameraFocus.x > targetCameraFocus.x) {
+//       cameraFocus.x -= 3;
+//   }
+//   if(cameraFocus.z > targetCameraFocus.z) {
+//       cameraFocus.z -= 3;
+//   }
+
+//   camera.lookAt(cameraFocus.x, cameraFocus.y, cameraFocus.z);  
+// }
+
+// function movePlayer() {
+//   if(player.position.x > targetPlayerPos.x) {
+//       player.position.x -= 3;
+//   }
+//   if(player.position.z > targetPlayerPos.z) {
+//       player.position.z -= 3;
+//   }
+//   player.position.y += speed;
+//   speed -= 0.3;
+
+//   if(player.position.y < 17.5) {
+//       player.position.y = 17.5;
+//   }
+// }
 
 function createCube(x, z) {
   const geometry = new THREE.BoxGeometry( 30, 20, 30 );
@@ -169,7 +257,6 @@ function createPlayer() {
   return player;
 }
 
-
 const addAxesHelper = () => {
   const axesHelper = new THREE.AxesHelper( 1000 );
   axesHelper.position.set(0,0,0);
@@ -186,8 +273,12 @@ function addLights() {
 
 // 渲染循环
 function render() {
-  moveCamera();
-  movePlayer();
+  // 如果按压结束就开始移动
+  if(!pressed){
+    moveCamera();
+    movePlayer();
+  }
+  speedUp();
 
   // 渲染场景
   renderer.render(scene, camera);

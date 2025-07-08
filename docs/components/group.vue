@@ -79,6 +79,15 @@ const state = reactive({
           url: "./views/game?type=threejs",
           isExternalLink: false,
           tags: [],
+        },
+        {
+          id: 5,
+          name: "全球24个时区划分图",
+          cover: "https://imgur.aehyok.uk/v2/OPidfpA.png",
+          description: "全球24个时区划分图",
+          url: "./views/game?type=timezone",
+          isExternalLink: false,
+          tags: [],
         }
       ]
     },
