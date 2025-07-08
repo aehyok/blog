@@ -33,6 +33,11 @@ const cameraFocus = { x: 0, y: 0, z: 0 };
 // 每次移动后的终点位置
 const targetCameraFocus = { x: 0, y: 0, z: 0 };
 
+
+const playerPos = { x: 0, y: 17.5, z: 0};
+const targetPlayerPos = { x: 0, y: 17.5, z: 0};
+let speed = 0;
+
 // 获取窗口尺寸
 const getWindowSize = () => ({
   width: 1200,
@@ -79,34 +84,49 @@ function initThreeJS() {
     gameContainer.value.appendChild(renderer.domElement);
 
     document.body.addEventListener('click', () => {
-      player.position.z -= 100;
-
       targetCameraPos.z = camera.position.z - 100
 
       targetCameraFocus.z -= 100
+
+      targetPlayerPos.z -= 100;
+      speed = 5;
 
     });
   }
 }
 
 function moveCamera() {
+  const { x, z } = camera.position;
+  if(x > targetCameraPos.x) {
+      camera.position.x -= 3;
+  }
+  if(z > targetCameraPos.z) {
+      camera.position.z -= 3;
+  }
 
-const { x, z } = camera.position;
-if(x > targetCameraPos.x) {
-    camera.position.x -= 3;
-}
-if(z > targetCameraPos.z) {
-    camera.position.z -= 3;
+  if(cameraFocus.x > targetCameraFocus.x) {
+      cameraFocus.x -= 3;
+  }
+  if(cameraFocus.z > targetCameraFocus.z) {
+      cameraFocus.z -= 3;
+  }
+
+  camera.lookAt(cameraFocus.x, cameraFocus.y, cameraFocus.z);  
 }
 
-if(cameraFocus.x > targetCameraFocus.x) {
-    cameraFocus.x -= 3;
-}
-if(cameraFocus.z > targetCameraFocus.z) {
-    cameraFocus.z -= 3;
-}
+function movePlayer() {
+  if(player.position.x > targetPlayerPos.x) {
+      player.position.x -= 3;
+  }
+  if(player.position.z > targetPlayerPos.z) {
+      player.position.z -= 3;
+  }
+  player.position.y += speed;
+  speed -= 0.3;
 
-camera.lookAt(cameraFocus.x, cameraFocus.y, cameraFocus.z);  
+  if(player.position.y < 17.5) {
+      player.position.y = 17.5;
+  }
 }
 
 function createCube(x, z) {
@@ -147,6 +167,8 @@ function addLights() {
 // 渲染循环
 function render() {
   moveCamera();
+  movePlayer();
+
   // 渲染场景
   renderer.render(scene, camera);
   requestAnimationFrame(render);
