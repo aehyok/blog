@@ -38,6 +38,9 @@ const playerPos = { x: 0, y: 17.5, z: 0};
 const targetPlayerPos = { x: 0, y: 17.5, z: 0};
 let speed = 0;
 
+const currentCubePos = {x: 0, y: 0, z: -100};
+let direction = 'right';
+
 // 获取窗口尺寸
 const getWindowSize = () => ({
   width: 1200,
@@ -68,11 +71,11 @@ function initThreeJS() {
   // 创建立方体
   createCube(0, 0);
   createCube(0, -100);
-  createCube(0, -200);
-  createCube(0, -300);
-  createCube(-100, 0);
-  createCube(-200, 0);
-  createCube(-300, 0);
+  // createCube(0, -200);
+  // createCube(0, -300);
+  // createCube(-100, 0);
+  // createCube(-200, 0);
+  // createCube(-300, 0);
 
 
   //添加坐标辅助器
@@ -84,13 +87,30 @@ function initThreeJS() {
     gameContainer.value.appendChild(renderer.domElement);
 
     document.body.addEventListener('click', () => {
-      targetCameraPos.z = camera.position.z - 100
+      // 向右则是z轴减100
+      if(direction === 'right') {
+        targetCameraPos.z = camera.position.z - 100;
+        targetCameraFocus.z -= 100;
+        targetPlayerPos.z -= 100;
+      }
+      else { // 向左x轴减100
+        targetCameraPos.x = camera.position.x - 100
+        targetCameraFocus.x -= 100
+        targetPlayerPos.x -=100;
+      }
 
-      targetCameraFocus.z -= 100
-
-      targetPlayerPos.z -= 100;
       speed = 5;
 
+      // 操作完毕，预设出下一次跳动的方向
+      const num = Math.random();
+      if(num > 0.5) {
+          currentCubePos.z -= 100;
+          direction = 'right';
+      } else {
+          currentCubePos.x -= 100;
+          direction = 'left';
+      }
+      createCube(currentCubePos.x, currentCubePos.z);
     });
   }
 }
@@ -198,7 +218,7 @@ onMounted(() => {
 // 组件卸载时清理
 onUnmounted(() => {
   //停止动画循环
-  if (animationId) {
+  if (animationId){
     cancelAnimationFrame();
   }
   
