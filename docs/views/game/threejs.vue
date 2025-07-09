@@ -10,6 +10,7 @@
 
 import * as THREE from 'three';
 import { onMounted, onUnmounted, ref, reactive } from 'vue';
+import Swal from 'sweetalert2'
 
 let animationId: number;
 
@@ -87,46 +88,6 @@ function initThreeJS() {
     })
   }
 }
-// function movePlayer() {
-//   player.position.y += speedY;
-
-//   if(player.position.y < 17.5) {
-//     player.position.y = 17.5;
-
-//     if(!stopped){
-//       if(playerInCube()) {
-//         state.score ++;
-//         console.log("score++分数:", state.score);
-//         return;
-//       }
-//       else {
-//         console.log("失败了，当前分数为:" +state.score)
-//       }
-
-//       const distance = Math.floor(50 + Math.random() * 100);
-
-//       const num = Math.random();
-//       if(num > 0.5) {
-//           currentCubePos.z -= distance;
-//           direction = 'right';
-//       } else {
-//           currentCubePos.x -= distance;
-//           direction = 'left';
-//       }
-//       createCube(currentCubePos.x, currentCubePos.z);
-//     }
-//     stopped = true;
-
-//   } else {
-//     stopped = false;
-//     if(direction === 'right') {
-//         player.position.z -= speed;
-//     } else {
-//         player.position.x -= speed;
-//     }
-//   }
-//   speedY -= 0.3;
-// }
 
 
 // 创建立方体
@@ -142,7 +103,7 @@ function createCube(x, z) {
 // 创建小人玩家头像
 function createPlayer() {
   const geometry = new THREE.BoxGeometry( 5, 15, 5 );
-  const material = new THREE.MeshPhongMaterial( {color:0x3c364e } );
+  const material = new THREE.MeshPhongMaterial( {color:0xbaf044 } );
   const player = new THREE.Mesh( geometry, material); 
   player.position.x = 0;
   player.position.y = 17.5;
@@ -160,7 +121,7 @@ const addAxesHelper = () => {
 
 // 添加光源
 function addLights() {
-  const directionalLight = new THREE.DirectionalLight( 0xffffff );
+  const directionalLight = new THREE.DirectionalLight( 0xf0f0f0 );
   directionalLight.position.set(40, 100, 60);
   scene.add( directionalLight );
 }
@@ -204,7 +165,7 @@ function movePlayer() {
                 state.score+= 1000;
                 // document.getElementById('score').innerHTML = score;
 
-                const distance = Math.floor(50 + Math.random() * 100);
+                const distance = Math.floor(30 + Math.random() * 50);
 
                 const num = Math.random();
                 if(num > 0.5) {
@@ -216,12 +177,28 @@ function movePlayer() {
                 }
                 createCube(currentCubePos.x, currentCubePos.z);
             } else {
-              alert("失败了，当前分数为:" + state.score);
-              setTimeout(() => {
+              Swal.fire({
+                title: "皮皮你就这样结束了吗？",
+                text: "最终分数：" + state.score + "分",
+                icon: "success",
+                showClass: {
+                  popup: `
+                    animate__animated
+                    animate__fadeInUp
+                    animate__faster
+                  `
+                },
+                hideClass: {
+                  popup: `
+                    animate__animated
+                    animate__fadeOutDown
+                    animate__faster
+                  `
+                },
+                confirmButtonText: "重新开始",
+              }).then((result) => {
                 window.location.reload();
-              }, 500);
-                // document.getElementById('fail').style.display = 'block';
-                // document.getElementById('score2').innerHTML = score;
+              });
             }
 
         }
@@ -319,7 +296,7 @@ onUnmounted(() => {
   color: white;
   font-family: Arial, sans-serif;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.7);
+  background: black;
   padding: 15px;
   border-radius: 8px;
 }
