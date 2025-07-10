@@ -177,8 +177,9 @@ function movePlayer() {
                 }
                 createCube(currentCubePos.x, currentCubePos.z);
             } else {
+              console.log('游戏结束');
               Swal.fire({
-                title: "皮皮你就这样结束了吗？",
+                title: "皮皮你就水平了吗？",
                 text: "最终分数：" + state.score + "分",
                 icon: "success",
                 showClass: {
@@ -200,7 +201,6 @@ function movePlayer() {
                 window.location.reload();
               });
             }
-
         }
 
         stopped = true;
@@ -259,6 +259,12 @@ function onWindowResize() {
 
 // 组件挂载时初始化
 onMounted(() => {
+  Swal.fire({
+    icon: "success",
+    title: "游戏即将开始",
+    showConfirmButton: false,
+    timer: 1500
+  });
   initThreeJS();
   render();
   // 监听窗口大小变化
