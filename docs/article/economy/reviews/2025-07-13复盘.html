@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A股历史上超过3500点的重要节点</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+            border-radius: 2px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transform: perspective(1000px) rotateY(0deg);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stat-card:hover {
+            transform: perspective(1000px) rotateY(5deg) translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.4s; }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .card:nth-child(1)::before {
+            background: linear-gradient(90deg, #ff6b6b, #ee5a52);
+        }
+        
+        .card:nth-child(2)::before {
+            background: linear-gradient(90deg, #4ecdc4, #44a08d);
+        }
+        
+        .card:nth-child(3)::before {
+            background: linear-gradient(90deg, #45b7d1, #2980b9);
+        }
+        
+        .card:nth-child(4)::before {
+            background: linear-gradient(90deg, #96ceb4, #71b286);
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: white;
+            margin-right: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card:nth-child(1) .card-icon {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+        }
+        
+        .card:nth-child(2) .card-icon {
+            background: linear-gradient(135deg, #4ecdc4, #44a08d);
+        }
+        
+        .card:nth-child(3) .card-icon {
+            background: linear-gradient(135deg, #45b7d1, #2980b9);
+        }
+        
+        .card:nth-child(4) .card-icon {
+            background: linear-gradient(135deg, #96ceb4, #71b286);
+        }
+        
+        .card-title {
+            flex: 1;
+        }
+        
+        .year {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        
+        .details {
+            margin-bottom: 20px;
+        }
+        
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f2f6;
+        }
+        
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+        
+        .detail-label {
+            font-size: 0.95em;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        
+        .detail-value {
+            font-weight: 600;
+            color: #2c3e50;
+            text-align: right;
+        }
+        
+        .highlight {
+            color: #e74c3c;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .description {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            color: #5a6c7d;
+            line-height: 1.6;
+            font-size: 0.95em;
+            border-left: 4px solid #4ecdc4;
+        }
+        
+        .card:nth-child(1) .description {
+            border-left-color: #ff6b6b;
+        }
+        
+        .card:nth-child(2) .description {
+            border-left-color: #4ecdc4;
+        }
+        
+        .card:nth-child(3) .description {
+            border-left-color: #45b7d1;
+        }
+        
+        .card:nth-child(4) .description {
+            border-left-color: #96ceb4;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .cards-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            .year {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>A股历史上超过3500点的重要节点</h1>
+            <p>回顾中国股市的重要历史时刻</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">4</div>
+                <div class="stat-label">重要节点</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6124</div>
+                <div class="stat-label">历史最高点</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">18年</div>
+                <div class="stat-label">跨越时间</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3500</div>
+                <div class="stat-label">关键点位</div>
+            </div>
+        </div>
+        
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">📈</div>
+                    <div class="card-title">
+                        <div class="year">2007年</div>
+                        <div class="title">历史最高点牛市</div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="detail-item">
+                        <div class="detail-label">首次突破3500点</div>
+                        <div class="detail-value">2007年4月6日</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">达到最高点</div>
+                        <div class="detail-value">2007年10月16日</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">最高点位</div>
+                        <div class="detail-value highlight">6124.04点</div>
+                    </div>
+                </div>
+                <div class="description">
+                    这是A股历史上的绝对高点，至今未被打破。经济高增长、资金流动性过剩、股权分置改革三股合力催生了2007年的牛市行情。
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-title">
+                        <div class="year">2015年</div>
+                        <div class="title">杠杆牛市</div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="detail-item">
+                        <div class="detail-label">首次突破3500点</div>
+                        <div class="detail-value">2015年4月前后</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">达到最高点</div>
+                        <div class="detail-value">2015年6月12日</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">最高点位</div>
+                        <div class="detail-value highlight">5178.19点</div>
+                    </div>
+                </div>
+                <div class="description">
+                    这是2007年后的第二次重要牛市，但随后快速回落。国务院新国九条为股市奠定基础，央行降息和定向降准措施推动了行情。
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🏢</div>
+                    <div class="card-title">
+                        <div class="year">2021年</div>
+                        <div class="title">结构性牛市</div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="detail-item">
+                        <div class="detail-label">首次突破3500点</div>
+                        <div class="detail-value">2021年1月底至2月初</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">达到最高点</div>
+                        <div class="detail-value">2021年2月18日</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">最高点位</div>
+                        <div class="detail-value highlight">3731.69点</div>
+                    </div>
+                </div>
+                <div class="description">
+                    这是一轮结构性牛市，主要体现在白马股和消费股上。市场出现了"白马股"、"喝酒吃药"和"各种茅"的牛市特征。
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🚀</div>
+                    <div class="card-title">
+                        <div class="year">2025年</div>
+                        <div class="title">当前行情</div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="detail-item">
+                        <div class="detail-label">首次突破3500点</div>
+                        <div class="detail-value">2025年7月10日</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">近期高点</div>
+                        <div class="detail-value">2025年7月11日</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">高点位置</div>
+                        <div class="detail-value highlight">3555.22点</div>
+                    </div>
+                </div>
+                <div class="description">
+                    正在挑战更高点位，A股连续第三周带量上攻，日均成交额接近1.5万亿元。7月11日创出3555.22点的阶段新高，市场情绪积极。
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>3500点在A股历史上具有重要的技术和心理意义，每次突破都伴随着市场的重大变化。</p>
+            <p>数据来源：公开市场资料整理 | 更新时间：2025年7月</p>
+        </div>
+    </div>
+</body>
+</html>
