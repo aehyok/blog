@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <!-- 开源项目 Group -->
+    <!-- 项目 Group -->
      <template v-for="group in state.groupList">
       <h2 class="group-title">{{group.name}}</h2>
       <div class="post-grid">
