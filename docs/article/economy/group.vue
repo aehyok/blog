@@ -2,7 +2,7 @@
   <div class="blog-interface">
     <div class="container">
       <div class="left-panel">
-        <h2>最近文章</h2>
+        <h2>Web3币圈</h2>
         
         <div 
           v-for="blog in blogList" 
