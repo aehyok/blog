@@ -54,19 +54,20 @@ const emit = defineEmits(['blog-click', 'radio-click'])
 // 博客数据
 const blogList = ref([
   {
+    id: 2,
+    title: '区块链技术入门指南',
+    excerpt: '图片预览、glb预览、BBCode解析、MarkMap解析、文章搜索...',
+    date: '2025-07-15',
+    tags: ['区块链', '币圈'],
+    code: "blockchain"
+  },  
+  {
     id: 1,
     title: '稳定币生态系统完整解析',
     excerpt: '自从美国通过《稳定币法案》以来，中国香港这边也在积极推动稳定币的立法工作...',
-    date: '2025-07-14',
+    date: '2025-07-13',
     tags: ['稳定币'],
-    url: "stablecoin"
-  },
-  {
-    id: 2,
-    title: 'VitePress 专属增强库来袭',
-    excerpt: '图片预览、glb预览、BBCode解析、MarkMap解析、文章搜索...',
-    date: '2025-06-16',
-    tags: ['奇淫技巧', 'VitePress']
+    code: "stablecoin"
   },
   {
     id: 3,
@@ -197,7 +198,7 @@ const radioList = ref([
 const handleBlogClick = (blog) => {
   var item = { url: "article/economy/list"}
   const url = base !== "/" ? base + item.url : item.url
-  router.go(url)
+  router.go(url + "?type=" + blog.code)
 }
 
 // 处理电台点击
