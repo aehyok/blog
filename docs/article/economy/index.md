@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: false
 ---
 <script lang="ts" setup>
   import TimeLine from "./trade-war-time-line.vue"

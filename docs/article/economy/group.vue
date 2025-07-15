@@ -44,7 +44,10 @@
 
 <script setup>
 import { ref, defineEmits } from 'vue'
-
+import { useRouter, useData } from 'vitepress'
+const router = useRouter()
+const { site } = useData()
+const base = site.value.base
 // 定义事件
 const emit = defineEmits(['blog-click', 'radio-click'])
 
@@ -52,10 +55,11 @@ const emit = defineEmits(['blog-click', 'radio-click'])
 const blogList = ref([
   {
     id: 1,
-    title: '普通小说网站提取bookId',
-    excerpt: '提取普通小说中的bookId，使用正则表达式，方便做一些环境的...',
-    date: '2025-07-08',
-    tags: ['爬虫']
+    title: '稳定币生态系统完整解析',
+    excerpt: '自从美国通过《稳定币法案》以来，中国香港这边也在积极推动稳定币的立法工作...',
+    date: '2025-07-14',
+    tags: ['稳定币'],
+    url: "stablecoin"
   },
   {
     id: 2,
@@ -191,7 +195,9 @@ const radioList = ref([
 
 // 处理博客点击
 const handleBlogClick = (blog) => {
-  emit('blog-click', blog)
+  var item = { url: "article/economy/list"}
+  const url = base !== "/" ? base + item.url : item.url
+  router.go(url)
 }
 
 // 处理电台点击

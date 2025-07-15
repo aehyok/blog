@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@iframe-resizer/vue':
+        specifier: ^5.4.7
+        version: 5.4.7(vue@3.5.17)
       axios:
         specifier: ^1.10.0
         version: 1.10.0
@@ -283,6 +286,14 @@ packages:
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
+  '@iframe-resizer/core@5.4.7':
+    resolution: {integrity: sha512-fDHq6r1FYX9f3BduPqtJC/1ZqtEec6PFxEysqCI0UxM9D28iHll9UryiP6vXJuUBuF06aRh2b9bTXlYgZLqR+w==}
+
+  '@iframe-resizer/vue@5.4.7':
+    resolution: {integrity: sha512-LhRx9EpMm17Haq9ZPEfF9+gZMyevCdd1GL5BoVCky70UAlEpxqMXMupX7EOTqYFldbYyKXZEpPmzAeRKyewb4g==}
+    peerDependencies:
+      vue: ^2.6.0 || ^3.0.0
+
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
@@ -549,6 +560,9 @@ packages:
 
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
+
+  auto-console-group@1.2.9:
+    resolution: {integrity: sha512-YGJqZByv1SFIq8viTpKFmI0eNHIoa9hllKP3487VbIN4zjRcsKKoouu2TiQ189oscvwCSKTndfAe6wf6izbSMA==}
 
   axios@1.10.0:
     resolution: {integrity: sha512-/1xYAC4MP/HEG+3duIhFr4ZQXR4sQXOIe+o6sdqzeykGLx6Upp/1p8MHqhINOvGeP7xyNHe7tsiJByc4SSVUxw==}
@@ -1112,6 +1126,16 @@ snapshots:
 
   '@iconify/types@2.0.0': {}
 
+  '@iframe-resizer/core@5.4.7':
+    dependencies:
+      auto-console-group: 1.2.9
+
+  '@iframe-resizer/vue@5.4.7(vue@3.5.17)':
+    dependencies:
+      '@iframe-resizer/core': 5.4.7
+      auto-console-group: 1.2.9
+      vue: 3.5.17
+
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
   '@rollup/rollup-android-arm-eabi@4.44.0':
@@ -1361,6 +1385,8 @@ snapshots:
       '@algolia/requester-node-http': 5.29.0
 
   asynckit@0.4.0: {}
+
+  auto-console-group@1.2.9: {}
 
   axios@1.10.0:
     dependencies:
