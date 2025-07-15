@@ -239,7 +239,7 @@ const state = reactive({
           description: "",
           // url: "./views/tool?type=temperature",
           url: "http://wx.nmc.cn/f/page/eb18ad1b8ee748948f62084d9e40cb58/weatherMonitor/temperatureLiveOrder",
-          isExternalLink: false,
+          isExternalLink: true,
           tags: [],
         },
         {
