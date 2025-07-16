@@ -1,10 +1,26 @@
 [
   {
-    "key":"stablecoin",
-    "value": "2025-07-13稳定币.html"
+    "group": "crypto",
+    "list": 
+    [
+      {
+        "key":"stablecoin",
+        "value": "2025-07-13稳定币.html"
+      },
+      {
+        "key": "blockchain",
+        "value":"2025-07-15区块链技术全面指南.html"
+      }
+    ]
   },
   {
-    "key": "blockchain",
-    "value":"2025-07-15区块链技术全面指南.html"
+    "group": "policy",
+    "list": 
+    [
+      {
+        "key":"reverse-repo",
+        "value": "2025-07-14央行买断式逆回购.html"
+      }
+    ]
   }
 ]

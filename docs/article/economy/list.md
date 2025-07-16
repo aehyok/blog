@@ -20,11 +20,18 @@ layout: home
   const height = window.innerHeight - 200;
 
   const type = ref("")
+  const group = ref("")
   const url = ref("")
 
   onMounted(() => {
     type.value = getUrlParam("type") || "";
-    url.value = window.location.origin + base + "html/economy/" + lists.find(item => item.key === type.value)?.value || "404.html";
+    group.value = getUrlParam("group") || "";
+    const groupList = lists.find(item => item.group === group.value);
+    const list = groupList.list;
+    const item = list.find(item => item.key === type.value);
+    console.log(item, "item===item")
+    const path = `${window.location.origin}${base}html/economy/${group.value}/${item.value}`;
+    url.value = path || "404.html";
   })
 </script>
 <iframe

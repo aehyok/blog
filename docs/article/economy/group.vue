@@ -22,20 +22,22 @@
       </div>
 
       <div class="right-panel">
-        <h2>我的电台</h2>
+        <h2>政策解读</h2>
         
         <div 
           v-for="radio in radioList" 
           :key="radio.id"
-          class="radio-item"
-          @click="handleRadioClick(radio)"
+          class="blog-item"
+          @click="handleBlogClick(radio)"
         >
-          <div :class="['radio-cover', radio.coverClass]"></div>
-          <div class="radio-info">
-            <div class="radio-title">{{ radio.title }}</div>
-            <div class="radio-date">{{ radio.date }}</div>
+          <div class="blog-title">{{ radio.title }}</div>
+          <div class="blog-excerpt">{{ radio.excerpt }}</div>
+          <div class="blog-meta">
+            <span class="blog-date">{{ radio.date }}</span>
+            <div class="blog-tags">
+              <span class="tag">{{ radio.duration }}</span>
+            </div>
           </div>
-          <div class="radio-duration">{{ radio.duration }}</div>
         </div>
       </div>
     </div>
@@ -59,7 +61,8 @@ const blogList = ref([
     excerpt: '图片预览、glb预览、BBCode解析、MarkMap解析、文章搜索...',
     date: '2025-07-15',
     tags: ['区块链', '币圈'],
-    code: "blockchain"
+    code: "blockchain",
+    group: "crypto",
   },  
   {
     id: 1,
@@ -67,77 +70,8 @@ const blogList = ref([
     excerpt: '自从美国通过《稳定币法案》以来，中国香港这边也在积极推动稳定币的立法工作...',
     date: '2025-07-13',
     tags: ['稳定币'],
-    code: "stablecoin"
-  },
-  {
-    id: 3,
-    title: 'VitePress实现MarkMap的兼容',
-    excerpt: '很多时候我们在写博客的时候，需要编写思维导图，这个时候就可以...',
-    date: '2025-05-23',
-    tags: ['VitePress', '爬虫']
-  },
-  {
-    id: 4,
-    title: '如何利用夹逼实现快速查找',
-    excerpt: '你可以把"夹逼"理解为不断缩小查找区间，直到找到目标值或区间...',
-    date: '2025-05-19',
-    tags: ['手撕面试题']
-  },
-  {
-    id: 5,
-    title: '这个黄色网站，让你更懂自己的身体',
-    excerpt: '一些众所周知的原因，我们没有办法很好的了解自己的身体，但是...',
-    date: '2025-04-29',
-    tags: ['生活技巧']
-  },
-  {
-    id: 6,
-    title: '深入了解SM',
-    excerpt: '一文带你了解SM的历史后果，前世今生，以后再也不害怕遇到S...',
-    date: '2025-04-10',
-    tags: ['奇淫技巧']
-  },
-  {
-    id: 1,
-    title: '普通小说网站提取bookId',
-    excerpt: '提取普通小说中的bookId，使用正则表达式，方便做一些环境的...',
-    date: '2025-07-08',
-    tags: ['爬虫']
-  },
-  {
-    id: 2,
-    title: 'VitePress 专属增强库来袭',
-    excerpt: '图片预览、glb预览、BBCode解析、MarkMap解析、文章搜索...',
-    date: '2025-06-16',
-    tags: ['奇淫技巧', 'VitePress']
-  },
-  {
-    id: 3,
-    title: 'VitePress实现MarkMap的兼容',
-    excerpt: '很多时候我们在写博客的时候，需要编写思维导图，这个时候就可以...',
-    date: '2025-05-23',
-    tags: ['VitePress', '爬虫']
-  },
-  {
-    id: 4,
-    title: '如何利用夹逼实现快速查找',
-    excerpt: '你可以把"夹逼"理解为不断缩小查找区间，直到找到目标值或区间...',
-    date: '2025-05-19',
-    tags: ['手撕面试题']
-  },
-  {
-    id: 5,
-    title: '这个黄色网站，让你更懂自己的身体',
-    excerpt: '一些众所周知的原因，我们没有办法很好的了解自己的身体，但是...',
-    date: '2025-04-29',
-    tags: ['生活技巧']
-  },
-  {
-    id: 6,
-    title: '深入了解SM',
-    excerpt: '一文带你了解SM的历史后果，前世今生，以后再也不害怕遇到S...',
-    date: '2025-04-10',
-    tags: ['奇淫技巧']
+    code: "stablecoin",
+    group: "crypto",
   }
 ])
 
@@ -145,50 +79,53 @@ const blogList = ref([
 const radioList = ref([
   {
     id: 1,
-    title: '写给妈妈的话',
-    date: '2024-09-20 23:00:04',
+    title: '中国人民银行开展14000亿元买断式逆回购操作',
+    excerpt: '7月15日，为保持银行体系流动性充裕，中国人民银行将以固定数量、利率招标、多重价位中标方式开展14000亿元买断式逆回购操作。',
+    date: '2025-07-14',
     duration: '07:08',
-    coverClass: 'cover-1'
+    code: "reverse-repo",
+    group: "policy"
   },
   {
     id: 2,
     title: '数羊',
-    date: '2024-06-16 00:04:57',
-    duration: '08:03',
-    coverClass: 'cover-2'
+    excerpt: '在夜深人静的时候，让我们一起数羊，进入甜美的梦乡...',
+    date: '2024-06-16',
+    duration: '08:03'
   },
   {
     id: 3,
     title: '新年快乐（拜个晚年）',
-    date: '2022-02-18 00:14:07',
+    excerpt: '迟来的新年祝福，但心意永远不会迟到，愿新的一年里...',
+    date: '2022-02-18',
     duration: '07:27',
-    coverClass: 'cover-3'
   },
   {
     id: 4,
     title: '吃苦的人',
-    date: '2022-01-17 01:08:09',
+    excerpt: '生活中总有那么一些人，默默承受着生活的重担，他们是...',
+    date: '2022-01-17',
     duration: '07:38',
-    coverClass: 'cover-4'
   },
   {
     id: 5,
     title: '记得坚持',
-    date: '2021-12-05 22:49:00',
+    excerpt: '无论遇到什么困难，都要记得坚持下去，因为坚持就是胜利...',
+    date: '2021-12-05',
     duration: '09:25',
-    coverClass: 'cover-5'
   },
   {
     id: 6,
     title: '失败与成功',
-    date: '2021-10-22 22:11:15',
+    excerpt: '失败和成功都是人生路上的风景，重要的是我们如何看待...',
+    date: '2021-10-22',
     duration: '07:34',
-    coverClass: 'cover-6'
   },
   {
     id: 7,
     title: '关于结婚',
-    date: '2021-09-15 23:45:20',
+    excerpt: '谈谈对婚姻的理解和感悟，分享一些关于爱情和生活的思考...',
+    date: '2021-09-15',
     duration: '08:49',
     coverClass: 'cover-7'
   }
@@ -198,7 +135,8 @@ const radioList = ref([
 const handleBlogClick = (blog) => {
   var item = { url: "article/economy/list"}
   const url = base !== "/" ? base + item.url : item.url
-  router.go(url + "?type=" + blog.code)
+  const path= `${url}?type=${blog.code}&group=${blog.group}`;
+  router.go(path)
 }
 
 // 处理电台点击
@@ -295,10 +233,8 @@ h2 {
 }
 
 .radio-item {
-  display: flex;
-  align-items: center;
-  padding: 12px 0;
   border-bottom: 1px solid #eee;
+  padding: 15px 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
