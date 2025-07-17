@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生活中的单位换算详解</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            padding: 40px 0;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .nav {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .nav-item {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .nav-item:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .section {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .unit-group {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .unit-group h3 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .unit-item {
+            margin-bottom: 12px;
+            padding: 12px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .unit-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .unit-name {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.1rem;
+        }
+
+        .unit-desc {
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .unit-example {
+            color: #e74c3c;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        .conversion-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .conversion-table th,
+        .conversion-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .conversion-table th {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            font-weight: bold;
+        }
+
+        .conversion-table tr:hover {
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .highlight {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        .calculator {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .calculator input {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            margin: 5px;
+            font-size: 16px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .calculator button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .calculator button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .conversion-table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>生活中的单位换算详解</h1>
+            <p>全面了解各种单位的换算关系和实际应用</p>
+        </div>
+
+        <div class="nav">
+            <button class="nav-item" onclick="scrollToSection('mass')">质量单位</button>
+            <button class="nav-item" onclick="scrollToSection('length')">长度单位</button>
+            <button class="nav-item" onclick="scrollToSection('time')">时间单位</button>
+            <button class="nav-item" onclick="scrollToSection('speed')">速度单位</button>
+            <button class="nav-item" onclick="scrollToSection('electric')">电学单位</button>
+            <button class="nav-item" onclick="scrollToSection('pressure')">压强单位</button>
+            <button class="nav-item" onclick="scrollToSection('force')">力学单位</button>
+            <button class="nav-item" onclick="scrollToSection('temperature')">温度单位</button>
+            <button class="nav-item" onclick="scrollToSection('area')">面积单位</button>
+            <button class="nav-item" onclick="scrollToSection('volume')">体积单位</button>
+            <button class="nav-item" onclick="scrollToSection('frequency')">频率单位</button>
+            <button class="nav-item" onclick="scrollToSection('battery')">锂电池单位</button>
+            <button class="nav-item" onclick="scrollToSection('nautical')">海里速度</button>
+            <button class="nav-item" onclick="scrollToSection('sound')">声音速度</button>
+            <button class="nav-item" onclick="scrollToSection('missile')">导弹速度</button>
+        </div>
+
+        <div class="section" id="mass">
+            <h2>质量单位</h2>
+            <div class="unit-group">
+                <h3>基本质量单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">千克 (kg)</div>
+                    <div class="unit-desc">国际标准单位，基本质量单位</div>
+                    <div class="unit-example">实例：成年人体重约60-70kg</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">克 (g)</div>
+                    <div class="unit-desc">1kg = 1000g</div>
+                    <div class="unit-example">实例：一个苹果约150g</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">斤</div>
+                    <div class="unit-desc">中国传统单位，1斤 = 500g</div>
+                    <div class="unit-example">实例：买菜常用"2斤西红柿"</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">吨 (t)</div>
+                    <div class="unit-desc">大质量单位，1t = 1000kg</div>
+                    <div class="unit-example">实例：一辆小汽车约1.5吨</div>
+                </div>
+            </div>
+            <div class="calculator">
+                <h3>质量单位换算器</h3>
+                <input type="number" id="massInput" placeholder="输入数值">
+                <select id="massFrom">
+                    <option value="kg">千克</option>
+                    <option value="g">克</option>
+                    <option value="jin">斤</option>
+                    <option value="t">吨</option>
+                </select>
+                <button onclick="convertMass()">转换</button>
+                <div id="massResult"></div>
+            </div>
+        </div>
+
+        <div class="section" id="length">
+            <h2>长度单位</h2>
+            <div class="unit-group">
+                <h3>基本长度单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">米 (m)</div>
+                    <div class="unit-desc">国际标准长度单位</div>
+                    <div class="unit-example">实例：成年人身高约1.7m</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">厘米 (cm)</div>
+                    <div class="unit-desc">1m = 100cm</div>
+                    <div class="unit-example">实例：手机长度约15cm</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">毫米 (mm)</div>
+                    <div class="unit-desc">1cm = 10mm</div>
+                    <div class="unit-example">实例：硬币厚度约2mm</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">千米 (km)</div>
+                    <div class="unit-desc">1km = 1000m</div>
+                    <div class="unit-example">实例：学校到家可能2km</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">英寸 (inch)</div>
+                    <div class="unit-desc">1英寸 = 2.54cm</div>
+                    <div class="unit-example">实例：手机屏幕5.5英寸</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="time">
+            <h2>时间单位</h2>
+            <div class="unit-group">
+                <h3>基本时间单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">秒 (s)</div>
+                    <div class="unit-desc">国际标准时间单位</div>
+                    <div class="unit-example">实例：眨眼约0.3秒</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">分钟 (min)</div>
+                    <div class="unit-desc">1min = 60s</div>
+                    <div class="unit-example">实例：煮鸡蛋需要8分钟</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">小时 (h)</div>
+                    <div class="unit-desc">1h = 60min</div>
+                    <div class="unit-example">实例：看电影约2小时</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">天</div>
+                    <div class="unit-desc">1天 = 24h</div>
+                    <div class="unit-example">实例：上班时间8小时/天</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="speed">
+            <h2>速度单位</h2>
+            <div class="unit-group">
+                <h3>基本速度单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">米/秒 (m/s)</div>
+                    <div class="unit-desc">国际标准速度单位</div>
+                    <div class="unit-example">实例：人走路速度约1.5m/s</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">千米/小时 (km/h)</div>
+                    <div class="unit-desc">日常常用速度单位</div>
+                    <div class="unit-example">实例：自行车速度约15km/h</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">换算关系</div>
+                    <div class="unit-desc">1m/s = 3.6km/h</div>
+                    <div class="unit-example">实例：高铁速度300km/h ≈ 83.3m/s</div>
+                </div>
+            </div>
+            <table class="conversion-table">
+                <thead>
+                    <tr>
+                        <th>交通工具</th>
+                        <th>速度 (km/h)</th>
+                        <th>速度 (m/s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>步行</td>
+                        <td>5.4</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>自行车</td>
+                        <td>15</td>
+                        <td>4.2</td>
+                    </tr>
+                    <tr>
+                        <td>汽车市区</td>
+                        <td>60</td>
+                        <td>16.7</td>
+                    </tr>
+                    <tr>
+                        <td>高速公路</td>
+                        <td>120</td>
+                        <td>33.3</td>
+                    </tr>
+                    <tr>
+                        <td>高铁</td>
+                        <td>300</td>
+                        <td>83.3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" id="electric">
+            <h2>电学单位</h2>
+            <div class="unit-group">
+                <h3>基本电学单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">安培 (A)</div>
+                    <div class="unit-desc">电流单位</div>
+                    <div class="unit-example">实例：手机充电电流约2A</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">伏特 (V)</div>
+                    <div class="unit-desc">电压单位</div>
+                    <div class="unit-example">实例：家用电压220V，手机电池3.7V</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">欧姆 (Ω)</div>
+                    <div class="unit-desc">电阻单位</div>
+                    <div class="unit-example">实例：电热丝阻值约50Ω</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">瓦特 (W)</div>
+                    <div class="unit-desc">功率单位</div>
+                    <div class="unit-example">实例：LED灯泡10W，电饭煲800W</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">千瓦时 (kWh)</div>
+                    <div class="unit-desc">电量单位，俗称"度"</div>
+                    <div class="unit-example">实例：家庭月用电量约200度</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="pressure">
+            <h2>压强单位</h2>
+            <div class="unit-group">
+                <h3>基本压强单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">帕斯卡 (Pa)</div>
+                    <div class="unit-desc">国际标准压强单位，1Pa = 1N/m²</div>
+                    <div class="unit-example">实例：大气压约101325Pa</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">千帕 (kPa)</div>
+                    <div class="unit-desc">常用压强单位，1kPa = 1000Pa</div>
+                    <div class="unit-example">实例：轮胎气压约250kPa</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">大气压 (atm)</div>
+                    <div class="unit-desc">标准大气压，1atm = 101.3kPa</div>
+                    <div class="unit-example">实例：高压锅内压强约1.5atm</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="force">
+            <h2>力学单位</h2>
+            <div class="unit-group">
+                <h3>基本力学单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">牛顿 (N)</div>
+                    <div class="unit-desc">力的单位</div>
+                    <div class="unit-example">实例：拿起一个苹果需要约1.5N的力</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">浮力</div>
+                    <div class="unit-desc">也用牛顿(N)表示</div>
+                    <div class="unit-example">实例：木块在水中受到的浮力</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">重力</div>
+                    <div class="unit-desc">G = mg，g ≈ 10N/kg</div>
+                    <div class="unit-example">实例：60kg的人重力约600N</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="temperature">
+            <h2>温度单位</h2>
+            <div class="unit-group">
+                <h3>基本温度单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">摄氏度 (℃)</div>
+                    <div class="unit-desc">常用温度单位</div>
+                    <div class="unit-example">实例：体温37℃，开水100℃</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">华氏度 (℉)</div>
+                    <div class="unit-desc">美式温度单位</div>
+                    <div class="unit-example">实例：体温98.6℉</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">开尔文 (K)</div>
+                    <div class="unit-desc">科学温度单位</div>
+                    <div class="unit-example">实例：绝对零度0K = -273.15℃</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="area">
+            <h2>面积单位</h2>
+            <div class="unit-group">
+                <h3>基本面积单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">平方米 (m²)</div>
+                    <div class="unit-desc">基本面积单位</div>
+                    <div class="unit-example">实例：客厅面积约30m²</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">平方厘米 (cm²)</div>
+                    <div class="unit-desc">1m² = 10000cm²</div>
+                    <div class="unit-example">实例：手机屏幕面积约80cm²</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">公顷 (ha)</div>
+                    <div class="unit-desc">大面积单位，1ha = 10000m²</div>
+                    <div class="unit-example">实例：足球场约0.7ha</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">亩</div>
+                    <div class="unit-desc">中国传统面积单位，1亩 ≈ 667m²</div>
+                    <div class="unit-example">实例：农田面积计算</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="volume">
+            <h2>体积单位</h2>
+            <div class="unit-group">
+                <h3>基本体积单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">立方米 (m³)</div>
+                    <div class="unit-desc">基本体积单位</div>
+                    <div class="unit-example">实例：房间体积约80m³</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">升 (L)</div>
+                    <div class="unit-desc">液体常用单位，1L = 1000cm³</div>
+                    <div class="unit-example">实例：矿泉水瓶500mL</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">毫升 (mL)</div>
+                    <div class="unit-desc">小体积单位，1L = 1000mL</div>
+                    <div class="unit-example">实例：一勺水约15mL</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="frequency">
+            <h2>频率单位</h2>
+            <div class="unit-group">
+                <h3>基本频率单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">赫兹 (Hz)</div>
+                    <div class="unit-desc">频率单位，1Hz = 1次/秒</div>
+                    <div class="unit-example">实例：电网频率50Hz</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">千赫 (kHz)</div>
+                    <div class="unit-desc">1kHz = 1000Hz</div>
+                    <div class="unit-example">实例：AM收音机530-1600kHz</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">兆赫 (MHz)</div>
+                    <div class="unit-desc">1MHz = 1000kHz</div>
+                    <div class="unit-example">实例：FM收音机88-108MHz</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="battery">
+            <h2>新能源车锂电池单位</h2>
+            <div class="unit-group">
+                <h3>电池容量单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">千瓦时 (kWh)</div>
+                    <div class="unit-desc">电池总容量</div>
+                    <div class="unit-example">实例：比亚迪秦Plus 13.9kWh，特斯拉Model 3 60kWh</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">安时 (Ah)</div>
+                    <div class="unit-desc">电流容量</div>
+                    <div class="unit-example">实例：家用电动车通常200-300Ah</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">系统电压</div>
+                    <div class="unit-desc">通常300-400V</div>
+                    <div class="unit-example">实例：换算公式：容量(kWh) = 电压(V) × 安时(Ah) ÷ 1000</div>
+                </div>
+            </div>
+            <table class="conversion-table">
+                <thead>
+                    <tr>
+                        <th>车型</th>
+                        <th>电池容量 (kWh)</th>
+                        <th>续航里程 (km)</th>
+                        <th>能耗 (kWh/100km)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>比亚迪秦Plus</td>
+                        <td>13.9</td>
+                        <td>120</td>
+                        <td>11.6</td>
+                    </tr>
+                    <tr>
+                        <td>特斯拉Model 3</td>
+                        <td>60</td>
+                        <td>445</td>
+                        <td>13.5</td>
+                    </tr>
+                    <tr>
+                        <td>蔚来ES8</td>
+                        <td>100</td>
+                        <td>500</td>
+                        <td>20.0</td>
+                    </tr>
+                    <tr>
+                        <td>理想ONE</td>
+                        <td>40.5</td>
+                        <td>180</td>
+                        <td>22.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" id="nautical">
+            <h2>海里船舶速度单位</h2>
+            <div class="unit-group">
+                <h3>海上专用单位</h3>
+                <div class="unit-item">
+                    <div class="unit-name">节 (knot/kn)</div>
+                    <div class="unit-desc">海上专用速度单位，1节 = 1海里/小时</div>
+                    <div class="unit-example">实例：1节 ≈ 1.852km/h ≈ 0.514m/s</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">海里 (nautical mile)</div>
+                    <div class="unit-desc">海上距离单位，1海里 = 1852米</div>
+                    <div class="unit-example">实例：海上和航空导航标准距离单位</div>
+                </div>
+            </div>
+            <table class="conversion-table">
+                <thead>
+                    <tr>
+                        <th>船舶类型</th>
+                        <th>速度 (节)</th>
+                        <th>速度 (km/h)</th>
+                        <th>用途</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>货轮</td>
+                        <td>12-25</td>
+                        <td>22-46</td>
+                        <td>货物运输</td>
+                    </tr>
+                    <tr>
+                        <td>客轮</td>
+                        <td>20-30</td>
+                        <td>37-56</td>
+                        <td>旅客运输</td>
+                    </tr>
+                    <tr>
+                        <td>游艇</td>
+                        <td>25-40</td>
+                        <td>46-74</td>
+                        <td>休闲娱乐</td>
+                    </tr>
+                    <tr>
+                        <td>军舰</td>
+                        <td>30-35</td>
+                        <td>56-65</td>
+                        <td>军事用途</td>
+                    </tr>
+                    <tr>
+                        <td>快艇</td>
+                        <td>40-60</td>
+                        <td>74-111</td>
+                        <td>高速运输</td>
+                    </tr>
+                    <tr>
+                        <td>气垫船</td>
+                        <td>35-50</td>
+                        <td>65-93</td>
+                        <td>特殊环境</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" id="sound">
+            <h2>声音速度</h2>
+            <div class="unit-group">
+                <h3>不同介质中的声速</h3>
+                <div class="unit-item">
+                    <div class="unit-name">空气中声速</div>
+                    <div class="unit-desc">20℃时约343m/s ≈ 1235km/h</div>
+                    <div class="unit-example">实例：受温度、湿度、气压影响</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">水中声速</div>
+                    <div class="unit-desc">约1500m/s</div>
+                    <div class="unit-example">实例：声纳技术应用</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">钢铁中声速</div>
+                    <div class="unit-desc">约5000m/s</div>
+                    <div class="unit-example">实例：超声波检测</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">马赫数</div>
+                    <div class="unit-desc">飞行速度与声速的比值</div>
+                    <div class="unit-example">实例：1马赫 = 343m/s（标准大气条件）</div>
+                </div>
+            </div>
+            <table class="conversion-table">
+                <thead>
+                    <tr>
+                        <th>速度分类</th>
+                        <th>马赫数</th>
+                        <th>速度 (m/s)</th>
+                        <th>特点</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>亚音速</td>
+                        <td>&lt;1</td>
+                        <td>&lt;343</td>
+                        <td>民航客机</td>
+                    </tr>
+                    <tr>
+                        <td>音速</td>
+                        <td>1</td>
+                        <td>343</td>
+                        <td>音爆临界点</td>
+                    </tr>
+                    <tr>
+                        <td>超音速</td>
+                        <td>1-5</td>
+                        <td>343-1715</td>
+                        <td>战斗机</td>
+                    </tr>
+                    <tr>
+                        <td>高超音速</td>
+                        <td>&gt;5</td>
+                        <td>&gt;1715</td>
+                        <td>导弹、航天器</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" id="missile">
+            <h2>导弹速度分类</h2>
+            <div class="unit-group">
+                <h3>按速度分类</h3>
+                <div class="unit-item">
+                    <div class="unit-name">亚音速导弹</div>
+                    <div class="unit-desc">&lt;1马赫（&lt;343m/s）</div>
+                    <div class="unit-example">实例：巡航导弹0.8-0.9马赫，反舰导弹0.9马赫</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">超音速导弹</div>
+                    <div class="unit-desc">1-5马赫（343-1715m/s）</div>
+                    <div class="unit-example">实例：空空导弹2-4马赫，防空导弹3-5马赫</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">高超音速导弹</div>
+                    <div class="unit-desc">&gt;5马赫（&gt;1715m/s）</div>
+                    <div class="unit-example">实例：弹道导弹10-25马赫，洲际导弹可达20马赫以上</div>
+                </div>
+            </div>
+            <table class="conversion-table">
+                <thead>
+                    <tr>
+                        <th>导弹类型</th>
+                        <th>速度 (马赫)</th>
+                        <th>速度 (m/s)</th>
+                        <th>特点</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>战斧巡航导弹</td>
+                        <td>0.75</td>
+                        <td>257</td>
+                        <td>亚音速，隐蔽性好</td>
+                    </tr>
+                    <tr>
+                        <td>空空导弹</td>
+                        <td>2-4</td>
+                        <td>686-1372</td>
+                        <td>超音速，机动性强</td>
+                    </tr>
+                    <tr>
+                        <td>爱国者导弹</td>
+                        <td>5</td>
+                        <td>1715</td>
+                        <td>防空导弹</td>
+                    </tr>
+                    <tr>
+                        <td>弹道导弹</td>
+                        <td>10</td>
+                        <td>3430</td>
+                        <td>中程导弹</td>
+                    </tr>
+                    <tr>
+                        <td>洲际导弹</td>
+                        <td>20+</td>
+                        <td>6860+</td>
+                        <td>重返大气层速度</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>综合速度对比</h2>
+            <table class="conversion-table">
+                <thead>
+                    <tr>
+                        <th>对象</th>
+                        <th>速度 (m/s)</th>
+                        <th>速度 (km/h)</th>
+                        <th>相对比较</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>人步行</td>
+                        <td>1.5</td>
+                        <td>5.4</td>
+                        <td>日常生活</td>
+                    </tr>
+                    <tr>
+                        <td>自行车</td>
+                        <td>4.2</td>
+                        <td>15</td>
+                        <td>绿色出行</td>
+                    </tr>
+                    <tr>
+                        <td>汽车高速</td>
+                        <td>33.3</td>
+                        <td>120</td>
+                        <td>陆地交通</td>
+                    </tr>
+                    <tr>
+                        <td>高铁</td>
+                        <td>97.2</td>
+                        <td>350</td>
+                        <td>高速铁路</td>
+                    </tr>
+                    <tr>
+                        <td>客机</td>
+                        <td>250</td>
+                        <td>900</td>
+                        <td>民航运输</td>
+                    </tr>
+                    <tr>
+                        <td>声音</td>
+                        <td>343</td>
+                        <td>1235</td>
+                        <td>音速标准</td>
+                    </tr>
+                    <tr>
+                        <td>货轮</td>
+                        <td>10.3</td>
+                        <td>37 (20节)</td>
+                        <td>海上运输</td>
+                    </tr>
+                    <tr>
+                        <td>超音速导弹</td>
+                        <td>1029</td>
+                        <td>3704 (3马赫)</td>
+                        <td>军事装备</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>实用换算公式</h2>
+            <div class="unit-group">
+                <h3>常用换算公式</h3>
+                <div class="unit-item">
+                    <div class="unit-name">速度换算</div>
+                    <div class="unit-desc">km/h 转 m/s：除以3.6</div>
+                    <div class="unit-example">实例：72km/h ÷ 3.6 = 20m/s</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">质量换算</div>
+                    <div class="unit-desc">斤 转 kg：除以2</div>
+                    <div class="unit-example">实例：10斤 ÷ 2 = 5kg</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">海里换算</div>
+                    <div class="unit-desc">节 转 km/h：乘以1.852</div>
+                    <div class="unit-example">实例：20节 × 1.852 = 37.04km/h</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">电池容量</div>
+                    <div class="unit-desc">kWh = V × Ah ÷ 1000</div>
+                    <div class="unit-example">实例：400V × 200Ah ÷ 1000 = 80kWh</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>生活应用实例</h2>
+            <div class="unit-group">
+                <h3>日常生活换算</h3>
+                <div class="unit-item">
+                    <div class="unit-name">买菜购物</div>
+                    <div class="unit-desc">1斤肉 = 500g，2斤苹果 = 1kg</div>
+                    <div class="unit-example">实例：买2斤排骨实际是1000g</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">交通出行</div>
+                    <div class="unit-desc">限速60km/h ≈ 17m/s</div>
+                    <div class="unit-example">实例：市区限速换算</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">用电计算</div>
+                    <div class="unit-desc">100W灯泡开10小时 = 1kWh = 1度电</div>
+                    <div class="unit-example">实例：电费计算基础</div>
+                </div>
+                <div class="unit-item">
+                    <div class="unit-name">物理现象</div>
+                    <div class="unit-desc">高压锅压强约1.5个大气压</div>
+                    <div class="unit-example">实例：烹饪中的压强应用</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function convertMass() {
+            const input = document.getElementById('massInput');
+            const fromUnit = document.getElementById('massFrom');
+            const result = document.getElementById('massResult');
+            
+            const value = parseFloat(input.value);
+            if (isNaN(value)) {
+                result.innerHTML = '<p style="color: red;">请输入有效数值</p>';
+                return;
+            }
+            
+            let kg = 0;
+            switch(fromUnit.value) {
+                case 'kg':
+                    kg = value;
+                    break;
+                case 'g':
+                    kg = value / 1000;
+                    break;
+                case 'jin':
+                    kg = value * 0.5;
+                    break;
+                case 't':
+                    kg = value * 1000;
+                    break;
+            }
+            
+            result.innerHTML = `
+                <div style="margin-top: 15px; padding: 15px; background: white; border-radius: 10px;">
+                    <h4>换算结果：</h4>
+                    <p><strong>千克(kg):</strong> ${kg.toFixed(3)}</p>
+                    <p><strong>克(g):</strong> ${(kg * 1000).toFixed(1)}</p>
+                    <p><strong>斤:</strong> ${(kg * 2).toFixed(2)}</p>
+                    <p><strong>吨(t):</strong> ${(kg / 1000).toFixed(6)}</p>
+                </div>
+            `;
+        }
+
+        // 添加平滑滚动效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+            
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
