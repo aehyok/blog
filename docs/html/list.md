@@ -8,16 +8,14 @@ layout: home
   import { useRoute, useRouter } from 'vitepress'
   import { useData } from 'vitepress'
   import lists from "./list.json"
-  import { getUrlParam } from "./../../utils/index.js"
+  import { getUrlParam } from "./../utils/index.js"
 
   const { site } = useData()
   const base = site.value.base
-
+  console.log(base, "base--")
   const route = useRoute();
-  console.log(route, "route===route")
-  console.log(window.location, "window.location.href")
   const width =window.innerWidth;
-  const height = window.innerHeight - 200;
+  const height = window.innerHeight - 80;
 
   const type = ref("")
   const group = ref("")
@@ -29,8 +27,7 @@ layout: home
     const groupList = lists.find(item => item.group === group.value);
     const list = groupList.list;
     const item = list.find(item => item.key === type.value);
-    console.log(item, "item===item")
-    const path = `${window.location.origin}${base}html/economy/${group.value}/${item.value}`;
+    const path = `${window.location.origin}${base}html/${group.value}/${item.value}`;
     url.value = path || "404.html";
   })
 </script>

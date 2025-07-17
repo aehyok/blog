@@ -88,6 +88,15 @@ const state = reactive({
           url: "./views/game?type=timezone",
           isExternalLink: false,
           tags: [],
+        },
+        {
+          id: 6,
+          name: "各种常识的单位换算逻辑",
+          cover: "https://imgur.aehyok.uk/v2/GwYIpSp.png",
+          description: "体积、重量、速度、面积、温度、时间、长度等单位换算",
+          url: "./html/list?type=unit-basics&group=home",
+          isExternalLink: false,
+          tags: [],
         }
       ]
     },

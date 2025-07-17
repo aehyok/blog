@@ -133,15 +133,10 @@ const radioList = ref([
 
 // 处理博客点击
 const handleBlogClick = (blog) => {
-  var item = { url: "article/economy/list"}
+  var item = { url: "html/list"}
   const url = base !== "/" ? base + item.url : item.url
   const path= `${url}?type=${blog.code}&group=${blog.group}`;
   router.go(path)
-}
-
-// 处理电台点击
-const handleRadioClick = (radio) => {
-  emit('radio-click', radio)
 }
 </script>
 
