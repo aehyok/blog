@@ -77,7 +77,16 @@ const blogList = ref([
 
 // 电台数据
 const radioList = ref([
-  {
+ {
+    id: 2,
+    title: '港币与美元是固定汇率吗？',
+    excerpt: '在夜深人静的时候，让我们一起数羊，进入甜美的梦乡...',
+    date: '2025-07-18',
+    duration: '08:03',
+    code: "hkd-exchange-rate",
+    group: "policy"
+  },  
+{
     id: 1,
     title: '中国人民银行开展14000亿元买断式逆回购操作',
     excerpt: '7月15日，为保持银行体系流动性充裕，中国人民银行将以固定数量、利率招标、多重价位中标方式开展14000亿元买断式逆回购操作。',
@@ -85,13 +94,6 @@ const radioList = ref([
     duration: '07:08',
     code: "reverse-repo",
     group: "policy"
-  },
-  {
-    id: 2,
-    title: '数羊',
-    excerpt: '在夜深人静的时候，让我们一起数羊，进入甜美的梦乡...',
-    date: '2024-06-16',
-    duration: '08:03'
   },
   {
     id: 3,

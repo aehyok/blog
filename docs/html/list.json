@@ -18,6 +18,10 @@
     "list": 
     [
       {
+        "key": "hkd-exchange-rate",
+        "value": "2025-07-18港币汇率.html"
+      },
+      {
         "key":"reverse-repo",
         "value": "2025-07-14央行买断式逆回购.html"
       }
