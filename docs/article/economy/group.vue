@@ -63,7 +63,7 @@ const blogList = ref([
     tags: ['区块链', '币圈'],
     code: "blockchain",
     group: "crypto",
-  },  
+  },
   {
     id: 1,
     title: '稳定币生态系统完整解析',
@@ -77,68 +77,48 @@ const blogList = ref([
 
 // 电台数据
 const radioList = ref([
+  {
+    id: 3,
+    title: '本世纪最重磅的大事！李强总理宣布雅鲁藏布江下游水电站开工！',
+    excerpt: '7月19日李强出席雅鲁藏布江下游水电工程开工仪式 并宣布工程开工',
+    date: '2025-07-20',
+    duration: '超级投资',
+    code: "hkd-exchange-rate",
+    group: "policy",
+    url: "https://mp.weixin.qq.com/s/GuNbQgRizJuHbs--oqb_tQ"
+  },
  {
     id: 2,
     title: '港币与美元是固定汇率吗？',
     excerpt: '在夜深人静的时候，让我们一起数羊，进入甜美的梦乡...',
     date: '2025-07-18',
-    duration: '08:03',
+    duration: '香港汇率',
     code: "hkd-exchange-rate",
     group: "policy"
-  },  
+  },
 {
     id: 1,
     title: '中国人民银行开展14000亿元买断式逆回购操作',
     excerpt: '7月15日，为保持银行体系流动性充裕，中国人民银行将以固定数量、利率招标、多重价位中标方式开展14000亿元买断式逆回购操作。',
     date: '2025-07-14',
-    duration: '07:08',
+    duration: '买断式逆回购',
     code: "reverse-repo",
     group: "policy"
-  },
-  {
-    id: 3,
-    title: '新年快乐（拜个晚年）',
-    excerpt: '迟来的新年祝福，但心意永远不会迟到，愿新的一年里...',
-    date: '2022-02-18',
-    duration: '07:27',
-  },
-  {
-    id: 4,
-    title: '吃苦的人',
-    excerpt: '生活中总有那么一些人，默默承受着生活的重担，他们是...',
-    date: '2022-01-17',
-    duration: '07:38',
-  },
-  {
-    id: 5,
-    title: '记得坚持',
-    excerpt: '无论遇到什么困难，都要记得坚持下去，因为坚持就是胜利...',
-    date: '2021-12-05',
-    duration: '09:25',
-  },
-  {
-    id: 6,
-    title: '失败与成功',
-    excerpt: '失败和成功都是人生路上的风景，重要的是我们如何看待...',
-    date: '2021-10-22',
-    duration: '07:34',
-  },
-  {
-    id: 7,
-    title: '关于结婚',
-    excerpt: '谈谈对婚姻的理解和感悟，分享一些关于爱情和生活的思考...',
-    date: '2021-09-15',
-    duration: '08:49',
-    coverClass: 'cover-7'
   }
 ])
 
 // 处理博客点击
 const handleBlogClick = (blog) => {
-  var item = { url: "html/list"}
-  const url = base !== "/" ? base + item.url : item.url
-  const path= `${url}?type=${blog.code}&group=${blog.group}`;
-  router.go(path)
+  if(blog.url) {
+    var item = { url: "html/list"}
+    const url = base !== "/" ? base + item.url : item.url
+    const path= `${url}?type=${blog.code}&group=${blog.group}`;
+    router.go(path)
+  }
+  else {
+    window.open(blog.url, "_blank");
+  }
+
 }
 </script>
 
