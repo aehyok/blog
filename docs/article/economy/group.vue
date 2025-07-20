@@ -118,7 +118,6 @@ const handleBlogClick = (blog) => {
   else {
     window.open(blog.url, "_blank");
   }
-
 }
 </script>
 
