@@ -109,7 +109,7 @@ const radioList = ref([
 
 // 处理博客点击
 const handleBlogClick = (blog) => {
-  if(blog.url) {
+  if(!blog.url) {
     var item = { url: "html/list"}
     const url = base !== "/" ? base + item.url : item.url
     const path= `${url}?type=${blog.code}&group=${blog.group}`;
