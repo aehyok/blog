@@ -9,10 +9,12 @@ layout: home
   import ImageToSvgConvert from "./image-to-svg-convert.vue"
   import TextToImageGenerator from "./text-to-image-generator.vue"
   import Temperature from "./temperature.vue"
+  import BinanceAlpha from "./binance-alpha.vue"
   import QrCode from "./qrcode.vue"
   import TimeStampConvert from "./timestamp-convert.vue"
   import { onMounted, ref } from 'vue'
   import { getUrlParam } from "./../../utils/index.js"
+
 
   const type = ref("")
   
@@ -30,3 +32,4 @@ layout: home
 <TextToImageGenerator v-if="type == 'text-to-image'" />
 <QrCode v-if="type == 'qrcode'" />
 <Temperature v-if="type == 'temperature'" />
+<BinanceAlpha v-if="type == 'binance-alpha'" />
