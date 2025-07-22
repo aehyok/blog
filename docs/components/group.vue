@@ -313,6 +313,15 @@ const state = reactive({
           url: "./views/tool?type=qrcode",
           isExternalLink: false,
           tags: [],
+        },
+        {
+          id: 7,
+          name: "时间和时间戳互相转换",
+          cover: "https://imgur.aehyok.uk/v2/clKmnz3.png",
+          description: "",
+          url: "./views/tool?type=timestamp-convert",
+          isExternalLink: false,
+          tags: [],
         }
       ]
     },

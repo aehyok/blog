@@ -10,6 +10,7 @@ layout: home
   import TextToImageGenerator from "./text-to-image-generator.vue"
   import Temperature from "./temperature.vue"
   import QrCode from "./qrcode.vue"
+  import TimeStampConvert from "./timestamp-convert.vue"
   import { onMounted, ref } from 'vue'
   import { getUrlParam } from "./../../utils/index.js"
 
@@ -24,6 +25,7 @@ layout: home
 <Base64Image v-if="type == 'base64'" />
 <ImageCompress v-if="type == 'compress'" />
 <ImageFormatConvert v-if="type == 'convert'" />
+<TimeStampConvert v-if="type == 'timestamp-convert'" />
 <ImageToSvgConvert v-if="type == 'svg'" />
 <TextToImageGenerator v-if="type == 'text-to-image'" />
 <QrCode v-if="type == 'qrcode'" />
