@@ -15,6 +15,7 @@
     "@iframe-resizer/vue": "^5.4.7",
     "axios": "^1.10.0",
     "crypto-js": "^4.2.0",
+    "date-fns": "^4.1.0",
     "sweetalert2": "^11.22.2",
     "three": "^0.177.0"
   }
