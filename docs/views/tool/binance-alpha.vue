@@ -232,7 +232,10 @@ export default {
     const walletCount = ref(1)
     const state = reactive({
       list: [],
-      afterList: []
+      list_tokentx: [],
+      list_txlist: [],
+      list_txlistinternal: [],
+
     })
 
     // 统计数据
@@ -310,6 +313,21 @@ export default {
       emit('batch-query')
     }
 
+    const baseUrl = 'https://api.etherscan.io/v2/api'
+    /**
+     * 拼接url
+     * @param parameters 
+     */
+    const buildUrl = (parameters) => {
+      // 将parameters对象转换为URL查询字符串
+      const queryString = Object.entries(parameters)
+        .map(([key, value]) => `${key}=${value}`)
+        .join('&')
+      
+      const url = `${baseUrl}?${queryString}`
+      return url;
+    }
+
     const USDT_ADDRESS = '0x55d398326f99059fF775485246999027B3197955'
     const USDC_ADDRESS = '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d'
 
@@ -336,9 +354,7 @@ export default {
 
       console.log('Binance Alpha component mounted')
       try {
-        const baseUrl = 'https://api.etherscan.io/v2/api'
-        
-        const parameters = {
+        const tokentx_parameters = {
           chainid: 56,
           module: 'account',
           action: 'tokentx',
@@ -351,36 +367,105 @@ export default {
           apikey: 'JGKUPIJS5BK9PFKHPQB7Y2SRFJYD7QX52K'
         }
 
-        // 将parameters对象转换为URL查询字符串
-        const queryString = Object.entries(parameters)
-          .map(([key, value]) => `${key}=${value}`)
-          .join('&')
+        const tokentxApi = buildUrl(tokentx_parameters);
+
+        const txlist_parameters = {
+          chainid: 56,
+          module: 'account',
+          action: 'txlist',
+          address: tradeAddress,
+          startblock: 0,
+          endblock: 99999999,
+          page: 1,
+          offset: 100,
+          sort: 'desc',
+          apikey: 'JGKUPIJS5BK9PFKHPQB7Y2SRFJYD7QX52K'
+        } 
+
+        const txlistApi = buildUrl(txlist_parameters);
+
+        const txlistinternal_parameters  = {
+          chainid: 56,
+          module: 'account',
+          action: 'txlist',
+          address: tradeAddress,
+          startblock: 0,
+          endblock: 99999999,
+          page: 1,
+          offset: 100,
+          sort: 'desc',
+          apikey: 'JGKUPIJS5BK9PFKHPQB7Y2SRFJYD7QX52K'
+        } 
+
+        const txlistinternalApi = buildUrl(txlistinternal_parameters);
+
+        // 帮我写一个Promise.all的代码，来并行请求这三个API
+        const [tokentxResponse, txlistResponse, txlistinternalResponse] = await Promise.all([
+          axios.get(tokentxApi),
+          axios.get(txlistApi),
+          axios.get(txlistinternalApi)
+        ]);
         
-        const url = `${baseUrl}?${queryString}`
-        console.log('完整URL:', url)
-        
-        const response = await axios.get(url);
-        console.log('交易数据:', response.data, response.status == '1');
-        if(response.data.status == '1') {
-          state.list = response.data.result;
-          state.list.forEach(element => {
-            console.log(element.timeStamp, "element-timeStamp");
-            if(element.timeStamp) {
-              const timeStamp = parseInt(element.timeStamp) * 1000;
-              const time = new Date(timeStamp);
-              element.time = format(time, 'yyyy-MM-dd HH:mm:ss');
-              console.log(time, "time",element.time);
+        console.log('交易数据:', tokentxResponse.data);
+        console.log('交易列表:', txlistResponse.data);
+        console.log('内部交易列表:', txlistinternalResponse.data);
+
+        const convertData = (data) => {
+          const resultList = [];
+          if(data.status = "1") {
+            const list = data.result;
+            console.log('原始数据列表:', list);
+            if(!list) {
+              return [];
             }
+            list.forEach(element => {
+              if(element.timeStamp) {
+                const timeStamp = parseInt(element.timeStamp) * 1000;
+                const time = new Date(timeStamp);
+                element.time = format(time, 'yyyy-MM-dd HH:mm:ss');
+                console.log(time, "time",element.time);
+              }
 
-            if(ADDRESSES.includes(element.contractAddress) && element.timeStamp > startTimestamp.value && element.timeStamp < endTimestamp.value) {
-              state.afterList.push(element);
-            }
-          });
-
-          console.log(state.afterList, "state-afterList");
-
-          console.log(state.list, "state-list");
+              // element.blockNumber == "55130149" &&
+              // if(ADDRESSES.includes(element.contractAddress) && element.timeStamp > startTimestamp.value && element.timeStamp < endTimestamp.value) {
+              if( element.timeStamp > startTimestamp.value && element.timeStamp < endTimestamp.value) {
+                resultList.push(element);
+              }
+            });
+          }
+          return resultList;
         }
+
+        state.list_tokentx = convertData(tokentxResponse.data || []);
+        state.list_txlist = convertData(txlistResponse.data || []);
+        state.list_txlistinternal = convertData(txlistinternalResponse.data || []);
+       
+        console.log('转换后的交易数据:', state.list_tokentx);
+        console.log('转换后的交易列表:', state.list_txlist);
+        console.log('转换后的内部交易列表:', state.list_txlistinternal);
+
+
+        // console.log('交易数据:', response.data, response.status == '1');
+        // if(response.data.status == '1') {
+        //   state.list = response.data.result;
+        //   state.list.forEach(element => {
+        //     console.log(element.timeStamp, "element-timeStamp");
+        //     if(element.timeStamp) {
+        //       const timeStamp = parseInt(element.timeStamp) * 1000;
+        //       const time = new Date(timeStamp);
+        //       element.time = format(time, 'yyyy-MM-dd HH:mm:ss');
+        //       console.log(time, "time",element.time);
+        //     }
+
+        //     if(ADDRESSES.includes(element.contractAddress) && element.timeStamp > startTimestamp.value && element.timeStamp < endTimestamp.value) {
+        //       state.TokenTXList.push(element);
+        //     }
+        //   });
+
+        //   console.log(state.TokenTXList, "state-afterList");
+
+        //   console.log(state.list, "state-list");
+        // }
       } catch (error) {
         console.error('请求失败:', error.response?.data || error.message);
         throw error;
