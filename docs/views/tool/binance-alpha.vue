@@ -196,6 +196,50 @@
         </div>
       </div>
     </div>
+
+    <!-- 交易详情弹窗 -->
+    <div class="modal-overlay" v-if="showDetailModal" @click="closeDetailModal">
+      <div class="modal-content" @click.stop>
+        <div class="modal-header">
+          <h3>交易详情</h3>
+          <button class="close-btn" @click="closeDetailModal">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="transaction-list">
+            <table class="detail-table">
+              <thead>
+                <tr>
+                  <th>日期</th>
+                  <th>类型</th>
+                  <th>发送方</th>
+                  <th>接收方</th>
+                  <th>交易哈希</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr 
+                  v-for="(transaction, index) in detailTransactions" 
+                  :key="index"
+                >
+                  <td>{{ transaction.time }}</td>
+                  <td>
+                    <span :class="['type-tag', transaction.type === '买入' ? 'buy' : 'sell']">
+                      {{ transaction.type }}
+                    </span>
+                  </td>
+                  <td class="address">{{ transaction.fromName + " " + limitToFiveDecimals(transaction.fromValue) || '-' }}</td>
+                  <td class="address">{{ transaction.toName + " " + limitToFiveDecimals(transaction.toValue) || '-' }}</td>
+                  <td class="address">{{ transaction.hash || '-' }}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div v-if="detailTransactions.length === 0" class="no-data">
+              暂无交易数据
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -230,6 +274,8 @@ export default {
     const profitFilter = ref('below')
     const profitThreshold = ref('')
     const walletCount = ref(1)
+    const showDetailModal = ref(false)
+    const detailTransactions = ref([])
     const state = reactive({
       list: [],
       tempList: [],
@@ -238,6 +284,11 @@ export default {
       list_txlistinternal: [],
 
     })
+
+    function limitToFiveDecimals(num) {
+      let decimalPlaces = num.toString().split('.')[1]?.length || 0;
+      return decimalPlaces > 5 ? parseFloat(num.toFixed(5)) : num;
+    }
 
     // 统计数据
     const stats = reactive({
@@ -357,6 +408,10 @@ export default {
 
     const ADDRESSES = ["0x55d398326f99059fF775485246999027B3197955", "0xe6df05ce8c8301223373cf5b969afcb1498c5528"]
 
+    const dictionary = {
+      "0x55d398326f99059ff775485246999027b3197955": "USDT",
+      "0xe6df05ce8c8301223373cf5b969afcb1498c5528": "KOGE"
+    }
     const ALPHA = 
     {
       chainId: '56',
@@ -469,6 +524,7 @@ export default {
             temp.blockHash = item.blockNumber;
             temp.type ="买入";
             temp.from = item.contractAddress;
+            temp.fromName = dictionary[item.contractAddress];
             temp.fromValue = item.value / 1e18;
             temp.gasTotal1 = parseFloat(item.gasUsed) * parseFloat(item.gasPrice) / 1e18;
 
@@ -490,6 +546,7 @@ export default {
             temp.blockNumber = item.blockNumber;
             temp.blockHash = item.blockNumber;
             temp.type = "买入";
+            temp.toName = dictionary[item.contractAddress];
             temp.to = item.contractAddress;
             temp.toValue = item.value / 1e18;
             temp.gasTotal2 = parseFloat(item.gasUsed) * parseFloat(item.gasPrice) / 1e18;
@@ -507,10 +564,12 @@ export default {
           //卖出第一步
           if(item.contractAddress == "0xe6df05ce8c8301223373cf5b969afcb1498c5528" && item.from == MY_WALLET_ADDRESS.toLowerCase()) {
             let temp = {};
+            temp.time = item.time;
             temp.blockNumber = item.blockNumber;
             temp.blockHash = item.blockHash;
             temp.type ="卖出";
             temp.from = item.contractAddress;
+            temp.fromName = dictionary[item.contractAddress];
             temp.fromValue = item.value / 1e18;
             temp.gasTotal1 = parseFloat(item.gasUsed) * parseFloat(item.gasPrice) / 1e18;
 
@@ -528,10 +587,12 @@ export default {
           //卖出第二部判断
           if(item.contractAddress == "0x55d398326f99059ff775485246999027b3197955" && item.to == MY_WALLET_ADDRESS.toLowerCase()) {
             let temp = {};
+            temp.time = item.time;
             temp.blockNumber = item.blockNumber;
             temp.blockHash = item.blockHash;
             temp.type = "卖出";
             temp.to = item.contractAddress;
+            temp.toName = dictionary[item.contractAddress];
             temp.toValue = item.value / 1e18;
             temp.gasTotal2 = parseFloat(item.gasUsed) * parseFloat(item.gasPrice) / 1e18;
 
@@ -591,7 +652,26 @@ export default {
     }
 
     const viewDetails = (item) => {
+      // 根据钱包地址过滤交易详情
+      // const transactions = state.list_tokentx.filter(transaction => {
+      //   // 这里可以根据实际需求过滤数据
+      //   return true // 暂时显示所有数据
+      // }).map(transaction => ({
+      //   time: transaction.time,
+      //   type: transaction.type,
+      //   from: transaction.from,
+      //   to: transaction.to,
+      //   hash: transaction.blockHash || transaction.hash
+      // }))
+      
+      detailTransactions.value = state.tempList
+      showDetailModal.value = true
       emit('view-details', item)
+    }
+
+    const closeDetailModal = () => {
+      showDetailModal.value = false
+      detailTransactions.value = []
     }
 
     // 更新数据的方法（供外部调用）
@@ -652,7 +732,11 @@ export default {
       updateTableData,
       handleTradeQuery,
       startTimestamp,
-      endTimestamp
+      endTimestamp,
+      showDetailModal,
+      detailTransactions,
+      closeDetailModal,
+      limitToFiveDecimals
     }
   }
 }
@@ -999,5 +1083,142 @@ export default {
 
 .card-actions {
   text-align: right;
+}
+
+/* 弹窗样式 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 80vh;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.close-btn:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.modal-body {
+  padding: 20px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.transaction-list {
+  width: 100%;
+}
+
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.detail-table th,
+.detail-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-table th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #666;
+  font-size: 12px;
+}
+
+.detail-table tr:hover {
+  background: #f5f5f5;
+}
+
+.type-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.type-tag.buy {
+  background: #f6ffed;
+  color: #52c41a;
+  border: 1px solid #b7eb8f;
+}
+
+.type-tag.sell {
+  background: #fff2e8;
+  color: #fa8c16;
+  border: 1px solid #ffbb96;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    margin: 10px;
+  }
+  
+  .detail-table {
+    font-size: 12px;
+  }
+  
+  .detail-table th,
+  .detail-table td {
+    padding: 8px 12px;
+  }
 }
 </style>
