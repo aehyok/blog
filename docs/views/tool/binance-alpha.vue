@@ -232,6 +232,7 @@ export default {
     const walletCount = ref(1)
     const state = reactive({
       list: [],
+      tempList: [],
       list_tokentx: [],
       list_txlist: [],
       list_txlistinternal: [],
@@ -328,6 +329,29 @@ export default {
       return url;
     }
 
+    // 中间合约链
+    const MIDDLE_ADDRESS = '0xb300000b72DEAEb607a12d5f54773D1C19c7028d'
+
+    const MY_WALLET_ADDRESS = "0xf05E440e444C1629F73caF142f7aad09ED9453ca"
+    // 买入操作
+    // 1、合约地址0x55d398326f99059fF775485246999027B3197955
+    // 2、From我的钱包地址 MY_WALLET_ADDRESS
+    // 3、To (中间合约链) MIDDLE_ADDRESS
+
+    // 成功之后，再由（中间合约链）自动买入KOGE
+    // 4、合约地址0xe6df05ce8c8301223373cf5b969afcb1498c5528
+    // 5、From (中间合约链)MIDDLE_ADDRESS
+    // 6、To我的钱包地址 MY_WALLET_ADDRESS
+
+    // 卖出操作
+    // 1、合约地址0xe6df05ce8c8301223373cf5b969afcb1498c5528
+    // 2、From我的钱包地址 MY_WALLET_ADDRESS
+    // 3、To (中间合约链) MIDDLE_ADDRESS
+
+    // 4、合约地址0x55d398326f99059fF775485246999027B3197955
+    // 5、From (中间合约链)MIDDLE_ADDRESS
+    // 6、To我的钱包地址 MY_WALLET_ADDRESS
+
     const USDT_ADDRESS = '0x55d398326f99059fF775485246999027B3197955'
     const USDC_ADDRESS = '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d'
 
@@ -342,7 +366,6 @@ export default {
       decimals: 18,
     }
 
-    const tradeAddress = "0xf05E440e444C1629F73caF142f7aad09ED9453ca"
     // 查询交易
     const handleTradeQuery = async() => {
       // 将选择的日期转换为时间戳
@@ -358,7 +381,7 @@ export default {
           chainid: 56,
           module: 'account',
           action: 'tokentx',
-          address: tradeAddress,
+          address: MY_WALLET_ADDRESS,
           startblock: 0,
           endblock: 99999999,
           page: 1,
@@ -373,29 +396,29 @@ export default {
           chainid: 56,
           module: 'account',
           action: 'txlist',
-          address: tradeAddress,
+          address: MY_WALLET_ADDRESS,
           startblock: 0,
           endblock: 99999999,
           page: 1,
           offset: 100,
           sort: 'desc',
           apikey: 'JGKUPIJS5BK9PFKHPQB7Y2SRFJYD7QX52K'
-        } 
+        }
 
         const txlistApi = buildUrl(txlist_parameters);
 
         const txlistinternal_parameters  = {
           chainid: 56,
           module: 'account',
-          action: 'txlist',
-          address: tradeAddress,
+          action: 'txlistinternal',
+          address: MY_WALLET_ADDRESS,
           startblock: 0,
           endblock: 99999999,
           page: 1,
           offset: 100,
           sort: 'desc',
           apikey: 'JGKUPIJS5BK9PFKHPQB7Y2SRFJYD7QX52K'
-        } 
+        }
 
         const txlistinternalApi = buildUrl(txlistinternal_parameters);
 
@@ -423,12 +446,11 @@ export default {
                 const timeStamp = parseInt(element.timeStamp) * 1000;
                 const time = new Date(timeStamp);
                 element.time = format(time, 'yyyy-MM-dd HH:mm:ss');
-                console.log(time, "time",element.time);
               }
 
-              // element.blockNumber == "55130149" &&
+              // element.blockNumber == "55138108" &&
               // if(ADDRESSES.includes(element.contractAddress) && element.timeStamp > startTimestamp.value && element.timeStamp < endTimestamp.value) {
-              if( element.timeStamp > startTimestamp.value && element.timeStamp < endTimestamp.value) {
+              if(element.timeStamp > startTimestamp.value && element.timeStamp < endTimestamp.value) {
                 resultList.push(element);
               }
             });
@@ -437,35 +459,102 @@ export default {
         }
 
         state.list_tokentx = convertData(tokentxResponse.data || []);
+        console.log(state.list_tokentx, "====state.list_tokentx====")
+        state.list_tokentx.forEach(item => {
+          //买入第一步
+          if(item.contractAddress == "0x55d398326f99059ff775485246999027b3197955" && item.from == MY_WALLET_ADDRESS.toLowerCase()) {
+            let temp = {};
+            temp.time = item.time;
+            temp.blockNumber = item.blockNumber;
+            temp.blockHash = item.blockNumber;
+            temp.type ="买入";
+            temp.from = item.contractAddress;
+            temp.fromValue = item.value / 1e18;
+            temp.gasTotal1 = parseFloat(item.gasUsed) * parseFloat(item.gasPrice) / 1e18;
+
+            let findItem = state.list.find(f =>f.blockNumber == item.blockNumber);
+            if(!findItem) {
+              state.list.push(temp);
+            }
+            else {
+              findItem = { ...findItem, ...temp };
+              state.tempList.push(findItem);
+              console.log("----------------11111", temp, findItem);
+            }
+          }
+          
+          //买入第二部判断
+          if(item.contractAddress == "0xe6df05ce8c8301223373cf5b969afcb1498c5528" && item.to == MY_WALLET_ADDRESS.toLowerCase()) {
+            let temp = {};
+            temp.time = item.time;
+            temp.blockNumber = item.blockNumber;
+            temp.blockHash = item.blockNumber;
+            temp.type = "买入";
+            temp.to = item.contractAddress;
+            temp.toValue = item.value / 1e18;
+            temp.gasTotal2 = parseFloat(item.gasUsed) * parseFloat(item.gasPrice) / 1e18;
+
+            let findItem = state.list.find(f =>f.blockNumber == item.blockNumber);
+            if(!findItem) {
+              state.list.push(temp);
+            }
+            else {
+              findItem = { ...findItem, ...temp };
+              console.log("----------------22222", temp, findItem);
+            }
+          }
+
+          //卖出第一步
+          if(item.contractAddress == "0xe6df05ce8c8301223373cf5b969afcb1498c5528" && item.from == MY_WALLET_ADDRESS.toLowerCase()) {
+            let temp = {};
+            temp.blockNumber = item.blockNumber;
+            temp.blockHash = item.blockHash;
+            temp.type ="卖出";
+            temp.from = item.contractAddress;
+            temp.fromValue = item.value / 1e18;
+            temp.gasTotal1 = parseFloat(item.gasUsed) * parseFloat(item.gasPrice) / 1e18;
+
+            let findItem = state.list.find(f =>f.blockNumber == item.blockNumber);
+            if(!findItem) {
+              state.list.push(temp);
+            }
+            else {
+              findItem = { ...findItem, ...temp };
+              state.tempList.push(findItem);
+              console.log("----------------11111", temp, findItem);
+            }
+          }
+          
+          //卖出第二部判断
+          if(item.contractAddress == "0x55d398326f99059ff775485246999027b3197955" && item.to == MY_WALLET_ADDRESS.toLowerCase()) {
+            let temp = {};
+            temp.blockNumber = item.blockNumber;
+            temp.blockHash = item.blockHash;
+            temp.type = "卖出";
+            temp.to = item.contractAddress;
+            temp.toValue = item.value / 1e18;
+            temp.gasTotal2 = parseFloat(item.gasUsed) * parseFloat(item.gasPrice) / 1e18;
+
+            let findItem = state.list.find(f =>f.blockNumber == item.blockNumber);
+            if(!findItem) {
+              state.list.push(temp);
+            }
+            else {
+              findItem = { ...findItem, ...temp };
+              console.log("----------------22222", temp, findItem);
+            }
+          }
+        });
+
+        console.log(state.list, "====state.list====")
+        console.log(state.tempList, "========state.tempList========")
+
         state.list_txlist = convertData(txlistResponse.data || []);
         state.list_txlistinternal = convertData(txlistinternalResponse.data || []);
        
         console.log('转换后的交易数据:', state.list_tokentx);
         console.log('转换后的交易列表:', state.list_txlist);
         console.log('转换后的内部交易列表:', state.list_txlistinternal);
-
-
-        // console.log('交易数据:', response.data, response.status == '1');
-        // if(response.data.status == '1') {
-        //   state.list = response.data.result;
-        //   state.list.forEach(element => {
-        //     console.log(element.timeStamp, "element-timeStamp");
-        //     if(element.timeStamp) {
-        //       const timeStamp = parseInt(element.timeStamp) * 1000;
-        //       const time = new Date(timeStamp);
-        //       element.time = format(time, 'yyyy-MM-dd HH:mm:ss');
-        //       console.log(time, "time",element.time);
-        //     }
-
-        //     if(ADDRESSES.includes(element.contractAddress) && element.timeStamp > startTimestamp.value && element.timeStamp < endTimestamp.value) {
-        //       state.TokenTXList.push(element);
-        //     }
-        //   });
-
-        //   console.log(state.TokenTXList, "state-afterList");
-
-        //   console.log(state.list, "state-list");
-        // }
       } catch (error) {
         console.error('请求失败:', error.response?.data || error.message);
         throw error;
