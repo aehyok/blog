@@ -322,6 +322,15 @@ const state = reactive({
           url: "./views/tool?type=timestamp-convert",
           isExternalLink: false,
           tags: [],
+        },
+        {
+          id: 8,
+          name: "给图片添加手写签名",
+          cover: "https://imgur.aehyok.uk/v2/UuLhPGL.png",
+          description: "",
+          url: "./views/tool?type=image-signature",
+          isExternalLink: false,
+          tags: [],
         }
       ]
     },

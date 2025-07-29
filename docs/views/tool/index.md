@@ -12,6 +12,7 @@ layout: home
   import BinanceAlpha from "./binance-alpha.vue"
   import QrCode from "./qrcode.vue"
   import TimeStampConvert from "./timestamp-convert.vue"
+  import ImageSignatureTool from "./image-signature-tool.vue"
   import { onMounted, ref } from 'vue'
   import { getUrlParam } from "./../../utils/index.js"
 
@@ -33,3 +34,4 @@ layout: home
 <QrCode v-if="type == 'qrcode'" />
 <Temperature v-if="type == 'temperature'" />
 <BinanceAlpha v-if="type == 'binance-alpha'" />
+<ImageSignatureTool v-if="type == 'image-signature'" />
