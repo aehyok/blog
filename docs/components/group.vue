@@ -61,7 +61,7 @@ const state = reactive({
           url: "./views/game?type=pinyin",
           isExternalLink: false,
           tags: ["#AI", "自主规划任务"],
-        }, 
+        },
         {
           id: 3,
           name: "打字侠-键盘键位练习",

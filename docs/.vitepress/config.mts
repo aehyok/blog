@@ -32,7 +32,8 @@ export default defineConfig({
       { text: "投资理财", link: "/article/economy" },
       // { text: "中美贸易战", link: "/article/economy" },
       { text: "关于我", link: "/me/" },
-      { text: "币安", link: "https://new.alphabot.cm" }
+      { text: "币安", link: "https://new.alphabot.cm" },
+      { text: "alpha", link: "https://pangdaxing.xyz/news"}
       // { text: "友情链接", link: "/friendly/info", activeMatch: "/friendly/" },
     ],
 
