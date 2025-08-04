@@ -1,9 +1,0 @@
-import{_ as n,c as s,o as e,ag as i}from"./chunks/framework.mJdS8VI0.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"article/code/2022-11-21-nginx.md","filePath":"article/code/2022-11-21-nginx.md","lastUpdated":1754214358000}'),t={name:"article/code/2022-11-21-nginx.md"};function l(p,a,c,o,d,r){return e(),s("div",null,a[0]||(a[0]=[i(`<h2 id="查看nginx-安装目录" tabindex="-1">查看nginx 安装目录 <a class="header-anchor" href="#查看nginx-安装目录" aria-label="Permalink to &quot;查看nginx 安装目录&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>find / -name nginx.conf</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>// etc/nginx</span></span>
-<span class="line"><span>// 或者</span></span>
-<span class="line"><span>// usr/local/nginx</span></span></code></pre></div><h2 id="设置nginx-浏览器缓存配置" tabindex="-1">设置Nginx 浏览器缓存配置 <a class="header-anchor" href="#设置nginx-浏览器缓存配置" aria-label="Permalink to &quot;设置Nginx 浏览器缓存配置&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>    location /MP{</span></span>
-<span class="line"><span>        alias /usr/local/sunlight/dvs/dvs-ui/mp/;</span></span>
-<span class="line"><span>        index index.html;</span></span>
-<span class="line"><span>        add_header Cache-Control no-cache;</span></span>
-<span class="line"><span>    }</span></span></code></pre></div><ul><li>no-cache 每次都到服务器校验新鲜度</li><li>no-store 永远去服务器获取资源</li></ul>`,5)]))}const u=n(t,[["render",l]]);export{g as __pageData,u as default};
