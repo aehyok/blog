@@ -26,7 +26,7 @@ dotnet-ef migrations add XXXX -c DvsContext --framework net6.0
 
 // 通过-v可以查看执行过程以及发生错误的具体error信息
 dotnet-ef migrations add XXXX -c DvsContext --framework net6.0 -v
-
+ 
 dotnet-ef migrations add InitTask -c DvsContext --framework net8.0 -v
 
 dotnet-ef database update  -c SecondContext
