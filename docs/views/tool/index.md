@@ -11,6 +11,7 @@ layout: home
   import Temperature from "./temperature.vue"
   import BinanceAlpha from "./binance-alpha.vue"
   import QrCode from "./qrcode.vue"
+  import JsonConverter from "./json-converter.vue"
   import TimeStampConvert from "./timestamp-convert.vue"
   import ImageSignatureTool from "./image-signature-tool.vue"
   import { onMounted, ref } from 'vue'
@@ -35,3 +36,4 @@ layout: home
 <Temperature v-if="type == 'temperature'" />
 <BinanceAlpha v-if="type == 'binance-alpha'" />
 <ImageSignatureTool v-if="type == 'image-signature'" />
+<JsonConverter v-if="type == 'json-convert'" />

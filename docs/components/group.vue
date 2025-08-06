@@ -334,7 +334,25 @@ const state = reactive({
           url: "./views/tool?type=image-signature",
           isExternalLink: false,
           tags: [],
-        }
+        },
+        {
+          id: 10,
+          name: "比较好的动画效果",
+          cover: "https://imgur.aehyok.uk/v2/5Rzd09Q.png",
+          description: "",
+          url: "https://zumerlab.github.io/snapdom/#basic",
+          isExternalLink: false,
+          tags: [],
+        },
+        {
+          id: 11,
+          name: "json对象转换为json字符串",
+          cover: "https://imgur.aehyok.uk/v2/UuLhPGL.png",
+          description: "",
+          url: "./views/tool?type=json-convert",
+          isExternalLink: false,
+          tags: [],
+        },
       ]
     },
   ]
