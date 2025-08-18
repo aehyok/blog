@@ -56,6 +56,24 @@ const emit = defineEmits(['blog-click', 'radio-click'])
 // 博客数据
 const blogList = ref([
   {
+      id: 4,
+      title: 'ETH的历史',
+      excerpt: '学习下ETH的历史，然后解释下什么是pos？',
+      date: '2025-08-18',
+      tags: ['区块链', '币圈'],
+      code: "eth-history",
+      group: "crypto",
+  },
+  {
+    id: 3,
+    title: 'BTC的历史',
+    excerpt: '学习下BTC的历史，然后解释下1聪是什么意思，等于多少个BTC？',
+    date: '2025-08-18',
+    tags: ['区块链', '币圈'],
+    code: "btc-history",
+    group: "crypto",
+  },
+  {
     id: 2,
     title: '区块链技术入门指南',
     excerpt: '图片预览、glb预览、BBCode解析、MarkMap解析、文章搜索...',

@@ -4,6 +4,14 @@
     "list": 
     [
       {
+        "key":"eth-history",
+        "value": "2025-08-18-eth的历史.html"
+      },
+      {
+        "key":"btc-history",
+        "value": "2025-08-18-btc的历史.html"
+      },
+      {
         "key":"stablecoin",
         "value": "2025-07-13稳定币.html"
       },
