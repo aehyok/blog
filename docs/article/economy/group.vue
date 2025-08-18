@@ -1,5 +1,23 @@
 <template>
   <div class="blog-interface">
+    <!-- 顶部重点链接区域 -->
+    <div class="top-links">
+      <div class="container">
+        <div class="link-item left-link">
+          <a href="https://pangdaxing.xyz/news" target="_blank" class="highlight-link">
+            🎁 Alpha空投通知
+            <span class="link-description">最新空投机会，不容错过</span>
+          </a>
+        </div>
+        <div class="link-item right-link">
+          <a href="https://alpha123.uk/zh/index.html" class="highlight-link">
+            📊 市场分析
+            <span class="link-description">实时行情与深度解读</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="left-panel">
         <h2>Web3币圈</h2>
@@ -149,6 +167,55 @@ const handleBlogClick = (blog) => {
   padding: 20px;
 }
 
+.top-links {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: -20px -20px 20px -20px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.top-links .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.link-item {
+  flex: 1;
+}
+
+.highlight-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.highlight-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.link-description {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
 .container {
   display: flex;
   max-width: 1200px;
@@ -282,12 +349,22 @@ h2 {
 .cover-7 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
 
 @media (max-width: 768px) {
+  .top-links .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
   .container {
     flex-direction: column;
   }
   
   .blog-interface {
     padding: 10px;
+  }
+
+  .top-links {
+    margin: -10px -10px 10px -10px;
+    padding: 15px 10px;
   }
 }
 </style>
