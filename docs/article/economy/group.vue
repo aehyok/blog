@@ -74,6 +74,15 @@ const emit = defineEmits(['blog-click', 'radio-click'])
 // 博客数据
 const blogList = ref([
   {
+      id: 5,
+      title: '稳定币的历史和分类',
+      excerpt: '学习下稳定币的历史，然后说明下稳定币的分类？',
+      date: '2025-08-19',
+      tags: ['区块链', '币圈'],
+      code: "stablecoin-history",
+      group: "crypto",
+  },
+  {
       id: 4,
       title: 'ETH的历史',
       excerpt: '学习下ETH的历史，然后解释下什么是pos？',
