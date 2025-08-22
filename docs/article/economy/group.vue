@@ -122,6 +122,15 @@ const blogList = ref([
 
 // 电台数据
 const radioList = ref([
+ {
+    id: 4,
+    title: '存量和产量SF比值详解',
+    excerpt: '深入理解资源稀缺性的关键指标',
+    date: '2025-08-23',
+    duration: '超级投资',
+    code: "stock-flow",
+    group: "policy",
+  },
   {
     id: 3,
     title: '本世纪最重磅的大事！李强总理宣布雅鲁藏布江下游水电站开工！',
@@ -132,7 +141,7 @@ const radioList = ref([
     group: "policy",
     url: "https://mp.weixin.qq.com/s/GuNbQgRizJuHbs--oqb_tQ"
   },
- {
+  {
     id: 2,
     title: '港币与美元是固定汇率吗？',
     excerpt: '在夜深人静的时候，让我们一起数羊，进入甜美的梦乡...',
@@ -141,7 +150,7 @@ const radioList = ref([
     code: "hkd-exchange-rate",
     group: "policy"
   },
-{
+ {
     id: 1,
     title: '中国人民银行开展14000亿元买断式逆回购操作',
     excerpt: '7月15日，为保持银行体系流动性充裕，中国人民银行将以固定数量、利率招标、多重价位中标方式开展14000亿元买断式逆回购操作。',

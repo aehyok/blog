@@ -30,6 +30,10 @@
     "list": 
     [
       {
+         "key": "stock-flow",
+         "value": "2025-08-23-存量和产量SF比值解析.html"
+      },
+      {
         "key": "hkd-exchange-rate",
         "value": "2025-07-18港币汇率.html"
       },
@@ -45,7 +49,7 @@
     [
       {
         "key":"unit-basics",
-        "value": "2025-07-17生活中的单位换算详解.html"
+        "value": "2025-07-17-生活中的单位换算详解.html"
       },
       {
         "key":"yadea-smart",

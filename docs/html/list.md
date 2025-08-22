@@ -28,6 +28,8 @@ layout: home
     const list = groupList.list;
     const item = list.find(item => item.key === type.value);
     const path = `${window.location.origin}${base}html/${group.value}/${item.value}`;
+
+    console.log(path, "path--")
     url.value = path || "404.html";
   })
 </script>
