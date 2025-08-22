@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雅迪远程锁车工作原理</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #00a650 0%, #008a3c 100%);
+            border-radius: 12px;
+            color: white;
+            box-shadow: 0 6px 15px rgba(0, 166, 80, 0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 900px) {
+            .content-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        .card h2 {
+            color: #00a650;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8f5e9;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card h2 i {
+            margin-right: 10px;
+        }
+        
+        .component {
+            margin-bottom: 25px;
+        }
+        
+        .component h3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #007a33;
+        }
+        
+        .component h3 i {
+            margin-right: 10px;
+            background: #e8f5e9;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        .process-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px 0;
+        }
+        
+        .flow-step {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        .flow-icon {
+            width: 60px;
+            height: 60px;
+            background: #00a650;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin-right: 20px;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .flow-content {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        .flow-arrow {
+            font-size: 24px;
+            color: #00a650;
+            margin: 10px 0;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+        
+        .animation-container {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .animation-box {
+            height: 300px;
+            position: relative;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .animation-element {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .signal {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #ff5722;
+            opacity: 0;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        button {
+            background: #00a650;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        
+        button:hover {
+            background: #008a3c;
+        }
+        
+        button i {
+            margin-right: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .highlight {
+            color: #00a650;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>雅迪远程锁车工作原理</h1>
+        <p class="subtitle">深入了解雅迪电动车如何通过智能物联技术实现远程锁车/解锁功能，提升车辆安全性与用户体验</p>
+    </header>
+
+    <div class="content-container">
+        <div class="card">
+            <h2><i class="fas fa-microchip"></i> 硬件组件</h2>
+            
+            <div class="component">
+                <h3><i class="fas fa-wifi"></i> 智能中控/通信模块 (T-Box)</h3>
+                <p>这是实现远程功能的核心硬件，包含：</p>
+                <ul>
+                    <li><span class="highlight">移动网络芯片</span> (4G/NB-IoT) - 连接互联网</li>
+                    <li><span class="highlight">GPS/北斗定位模块</span> - 获取车辆实时位置</li>
+                    <li><span class="highlight">主控MCU</span> - 处理指令和数据</li>
+                </ul>
+            </div>
+            
+            <div class="component">
+                <h3><i class="fas fa-cog"></i> 车辆控制器 (ECU)</h3>
+                <p>电动车的"大脑"，控制电机的运转、速度、刹车等。接收智能中控的指令后执行锁车/解锁操作。</p>
+            </div>
+            
+            <div class="component">
+                <h3><i class="fas fa-mobile-alt"></i> 用户手机与APP</h3>
+                <p>雅迪智行APP提供用户界面，生成加密指令并通过互联网发送到云端服务器。</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2><i class="fas fa-cloud"></i> 软件与通信</h2>
+            
+            <div class="component">
+                <h3><i class="fas fa-server"></i> 云端服务器</h3>
+                <p>雅迪的数据中心，充当"中转站"和"大脑"：</p>
+                <ul>
+                    <li>接收来自用户APP的指令</li>
+                    <li>验证用户身份和权限</li>
+                    <li>将指令转发给目标车辆</li>
+                    <li>存储车辆位置和状态数据</li>
+                </ul>
+            </div>
+            
+            <div class="component">
+                <h3><i class="fas fa-shield-alt"></i> 安全机制</h3>
+                <p>全程加密传输，防止指令被截获破解：</p>
+                <ul>
+                    <li>指令传输使用加密协议</li>
+                    <li>每次操作需要身份验证</li>
+                    <li>防止车辆被恶意控制</li>
+                </ul>
+            </div>
+            
+            <div class="component">
+                <h3><i class="fas fa-map-marker-alt"></i> 电子围栏技术</h3>
+                <p>当车辆超出预设范围时，系统会发送警报通知用户，用户可以立即远程锁车。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="animation-container">
+        <h2><i class="fas fa-play-circle"></i> 工作原理动画演示</h2>
+        <p>点击"开始演示"按钮，查看远程锁车指令的传递过程</p>
+        
+        <div class="animation-box" id="animation-box">
+            <div class="animation-element" style="top: 110px; left: 50px; background: #2196f3;">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="animation-element" style="top: 110px; right: 50px; background: #00a650;">
+                <i class="fas fa-bicycle"></i>
+            </div>
+            <div class="animation-element" style="top: 30px; left: 50%; transform: translateX(-50%); background: #ff9800;">
+                <i class="fas fa-cloud"></i>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="demo-btn"><i class="fas fa-play"></i> 开始演示</button>
+            <button id="reset-btn"><i class="fas fa-redo"></i> 重置</button>
+        </div>
+    </div>
+
+    <div class="process-flow">
+        <h2><i class="fas fa-project-diagram"></i> 远程锁车工作流程</h2>
+        
+        <div class="flow-step">
+            <div class="flow-icon">1</div>
+            <div class="flow-content">
+                <h3>用户发起指令</h3>
+                <p>用户在雅迪智行APP上点击"锁车"按钮</p>
+            </div>
+        </div>
+        
+        <div class="flow-arrow">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+        
+        <div class="flow-step">
+            <div class="flow-icon">2</div>
+            <div class="flow-content">
+                <h3>APP上传指令</h3>
+                <p>手机将"锁车"指令+账号信息+车辆识别码通过互联网发送到雅迪云服务器</p>
+            </div>
+        </div>
+        
+        <div class="flow-arrow">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+        
+        <div class="flow-step">
+            <div class="flow-icon">3</div>
+            <div class="flow-content">
+                <h3>云端处理与转发</h3>
+                <p>云端服务器验证账号权限，通过移动网络向目标车辆的智能中控发送"锁车"指令</p>
+            </div>
+        </div>
+        
+        <div class="flow-arrow">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+        
+        <div class="flow-step">
+            <div class="flow-icon">4</div>
+            <div class="flow-content">
+                <h3>车辆执行</h3>
+                <p>智能中控接收指令，向车辆控制器发送"锁死电机"命令</p>
+            </div>
+        </div>
+        
+        <div class="flow-arrow">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+        
+        <div class="flow-step">
+            <div class="flow-icon">5</div>
+            <div class="flow-content">
+                <h3>动作确认与反馈</h3>
+                <p>控制器锁死电机后，反馈信号按原路径返回，APP显示"锁车成功"</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 雅迪电动车远程锁车技术解析 | 本页面仅用于技术展示目的</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const demoBtn = document.getElementById('demo-btn');
+            const resetBtn = document.getElementById('reset-btn');
+            const animationBox = document.getElementById('animation-box');
+            
+            demoBtn.addEventListener('click', startDemo);
+            resetBtn.addEventListener('click', resetDemo);
+            
+            function startDemo() {
+                resetDemo();
+                
+                // 创建信号元素
+                const signal = document.createElement('div');
+                signal.className = 'signal';
+                signal.style.left = '130px';
+                signal.style.top = '140px';
+                animationBox.appendChild(signal);
+                
+                // 动画：手机到云端
+                let keyframes = [
+                    { left: '130px', top: '140px', opacity: 1 },
+                    { left: '50%', top: '60px', left: 'calc(50% - 10px)', opacity: 0.7 }
+                ];
+                
+                let animation = signal.animate(keyframes, {
+                    duration: 2000,
+                    fill: 'forwards'
+                });
+                
+                animation.onfinish = function() {
+                    // 移除第一个信号
+                    signal.remove();
+                    
+                    // 创建第二个信号（云端到车辆）
+                    const signal2 = document.createElement('div');
+                    signal2.className = 'signal';
+                    signal2.style.left = 'calc(50% - 10px)';
+                    signal2.style.top = '60px';
+                    animationBox.appendChild(signal2);
+                    
+                    // 动画：云端到车辆
+                    let keyframes2 = [
+                        { left: 'calc(50% - 10px)', top: '60px', opacity: 0.7 },
+                        { left: 'calc(100% - 130px)', top: '140px', opacity: 1 }
+                    ];
+                    
+                    let animation2 = signal2.animate(keyframes2, {
+                        duration: 2000,
+                        fill: 'forwards'
+                    });
+                    
+                    animation2.onfinish = function() {
+                        // 车辆图标变化表示已锁车
+                        const vehicle = document.querySelector('.animation-element:nth-child(2)');
+                        vehicle.innerHTML = '<i class="fas fa-lock"></i>';
+                        vehicle.style.background = '#ff5722';
+                        
+                        // 创建第三个信号（车辆返回确认）
+                        const signal3 = document.createElement('div');
+                        signal3.className = 'signal';
+                        signal3.style.left = 'calc(100% - 130px)';
+                        signal3.style.top = '140px';
+                        signal3.style.background = '#4caf50';
+                        animationBox.appendChild(signal3);
+                        
+                        // 动画：返回到云端
+                        let keyframes3 = [
+                            { left: 'calc(100% - 130px)', top: '140px', opacity: 1 },
+                            { left: 'calc(50% - 10px)', top: '60px', opacity: 0.7 }
+                        ];
+                        
+                        let animation3 = signal3.animate(keyframes3, {
+                            duration: 1500,
+                            fill: 'forwards'
+                        });
+                        
+                        animation3.onfinish = function() {
+                            // 创建第四个信号（云端返回手机）
+                            const signal4 = document.createElement('div');
+                            signal4.className = 'signal';
+                            signal4.style.left = 'calc(50% - 10px)';
+                            signal4.style.top = '60px';
+                            signal4.style.background = '#4caf50';
+                            animationBox.appendChild(signal4);
+                            
+                            // 动画：云端到手机
+                            let keyframes4 = [
+                                { left: 'calc(50% - 10px)', top: '60px', opacity: 0.7 },
+                                { left: '130px', top: '140px', opacity: 1 }
+                            ];
+                            
+                            let animation4 = signal4.animate(keyframes4, {
+                                duration: 1500,
+                                fill: 'forwards'
+                            });
+                            
+                            animation4.onfinish = function() {
+                                // 手机图标变化表示收到确认
+                                const phone = document.querySelector('.animation-element:nth-child(1)');
+                                phone.innerHTML = '<i class="fas fa-check"></i>';
+                                phone.style.background = '#4caf50';
+                            };
+                        };
+                    };
+                };
+            }
+            
+            function resetDemo() {
+                // 清除所有信号元素
+                const signals = document.querySelectorAll('.signal');
+                signals.forEach(signal => signal.remove());
+                
+                // 重置图标
+                const elements = document.querySelectorAll('.animation-element');
+                elements[0].innerHTML = '<i class="fas fa-mobile-alt"></i>';
+                elements[0].style.background = '#2196f3';
+                
+                elements[1].innerHTML = '<i class="fas fa-bicycle"></i>';
+                elements[1].style.background = '#00a650';
+                
+                elements[2].innerHTML = '<i class="fas fa-cloud"></i>';
+                elements[2].style.background = '#ff9800';
+            }
+        });
+    </script>
+</body>
+</html>

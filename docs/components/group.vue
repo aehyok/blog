@@ -97,6 +97,24 @@ const state = reactive({
           url: "./html/list?type=unit-basics&group=home",
           isExternalLink: false,
           tags: [],
+        },
+        {
+          id: 7,
+          name: "雅迪智行的远程开关锁功能",
+          cover: "https://imgur.aehyok.uk/v2/g7t2ylH.png",
+          description: "跟新能源",
+          url: "./html/list?type=yadea-smart&group=home",
+          isExternalLink: false,
+          tags: [],
+        },
+        {
+          id: 8,
+          name: "新能源电车的远程开关锁功能",
+          cover: "https://imgur.aehyok.uk/v2/mA5UEC5.png",
+          description: "跟新能源",
+          url: "./html/list?type=ev-car&group=home",
+          isExternalLink: false,
+          tags: [],
         }
       ]
     },
