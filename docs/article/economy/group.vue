@@ -10,7 +10,7 @@
           </a>
         </div>
         <div class="link-item right-link">
-          <a href="https://alpha123.uk/zh/index.html" class="highlight-link">
+          <a href="https://alpha123.uk/zh/index.html" target="_blank" class="highlight-link">
             📊 市场分析
             <span class="link-description">实时行情与深度解读</span>
           </a>
