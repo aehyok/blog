@@ -4,6 +4,10 @@
     "list": 
     [
       {
+        "key":"futures-history",
+        "value": "2025-08-23-期货的历史和发展.html"
+      },
+      {
         "key":"stablecoin-history",
         "value": "2025-08-19稳定币的历史.html"
       },

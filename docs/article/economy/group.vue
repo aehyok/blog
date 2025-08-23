@@ -74,6 +74,15 @@ const emit = defineEmits(['blog-click', 'radio-click'])
 // 博客数据
 const blogList = ref([
   {
+      id: 6,
+      title: '期货的历史和发展',
+      excerpt: '期货的历史以及发展？',
+      date: '2025-08-19',
+      tags: ['区块链', '币圈'],
+      code: "futures-history",
+      group: "crypto",
+  },
+  {
       id: 5,
       title: '稳定币的历史和分类',
       excerpt: '学习下稳定币的历史，然后说明下稳定币的分类？',
@@ -192,7 +201,7 @@ const handleBlogClick = (blog) => {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.top-links .container {
+.top-links .container { 
   display: flex;
   justify-content: space-between;
   align-items: center;
