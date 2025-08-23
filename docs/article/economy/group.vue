@@ -131,14 +131,24 @@ const blogList = ref([
 
 // 电台数据
 const radioList = ref([
- {
+{
+    id: 4,
+    title: '美联储主席鲍威尔暗示9月降息概率陡增，美股暴涨，美元和美债应声大跌',
+    excerpt: '8月22日晚美联储主席鲍威尔暗示通胀上行风险已经减弱，而就业的下行风险正在上升',
+    date: '2025-08-23',
+    duration: '超级投资',
+    code: "stock-flow",
+    group: "policy",
+    url: "https://mp.weixin.qq.com/s/lAfOFDCAr4oIpEyOvf_OQg"
+  },
+{
     id: 4,
     title: '存量和产量SF比值详解',
     excerpt: '深入理解资源稀缺性的关键指标',
     date: '2025-08-23',
     duration: '超级投资',
     code: "stock-flow",
-    group: "policy",
+    group: "policy"
   },
   {
     id: 3,
