@@ -4,6 +4,10 @@
     "list": 
     [
       {
+        "key":"futures-contract",
+        "value": "2025-08-24-期货期权和永续合约非永续合约.html"
+      },
+      {
         "key":"futures-history",
         "value": "2025-08-23-期货的历史和发展.html"
       },

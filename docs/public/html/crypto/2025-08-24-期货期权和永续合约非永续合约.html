@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金融衍生品完整指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            color: #5a67d8;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 1.5rem;
+        }
+
+        .futures-icon { background: linear-gradient(45deg, #ff6b6b, #ff8e53); }
+        .options-icon { background: linear-gradient(45deg, #4ecdc4, #44a08d); }
+        .perpetual-icon { background: linear-gradient(45deg, #a8edea, #fed6e3); color: #333; }
+        .traditional-icon { background: linear-gradient(45deg, #ffecd2, #fcb69f); color: #333; }
+
+        .features {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #5a67d8;
+            font-weight: bold;
+        }
+
+        .risk-warning {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-weight: 600;
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .comparison-table {
+            grid-column: 1 / -1;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 2px;
+        }
+
+        .high-risk {
+            background: #fed7d7;
+            color: #c53030;
+        }
+
+        .medium-risk {
+            background: #fefcbf;
+            color: #d69e2e;
+        }
+
+        .low-risk {
+            background: #c6f6d5;
+            color: #2f855a;
+        }
+
+        .funding-rate-demo {
+            grid-column: 1 / -1;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .demo-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .demo-box {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .positive-rate {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            color: white;
+        }
+
+        .negative-rate {
+            background: linear-gradient(45deg, #4ecdc4, #44a08d);
+            color: white;
+        }
+
+        .rate-value {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .demo-container {
+                flex-direction: column;
+            }
+            
+            table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💹 金融衍生品完整指南</h1>
+            <p>深入理解期货、期权、永续合约与非永续合约</p>
+        </div>
+
+        <div class="content-grid">
+            <!-- 期货 -->
+            <div class="card">
+                <h2>
+                    <span class="icon futures-icon">📈</span>
+                    期货合约
+                </h2>
+                <p><strong>定义：</strong>标准化的合约，约定在未来特定时间以特定价格买卖某种资产</p>
+                
+                <ul class="features">
+                    <li>买卖双方都有义务履约</li>
+                    <li>需要保证金交易，具有杠杆效应</li>
+                    <li>每日结算，盈亏实时反映</li>
+                    <li>有固定的到期日</li>
+                    <li>可以做多（买入）或做空（卖出）</li>
+                    <li>价格随到期日临近向现货价格收敛</li>
+                </ul>
+
+                <div class="tag medium-risk">中等风险</div>
+                <div class="tag">双向义务</div>
+                <div class="tag">有到期日</div>
+            </div>
+
+            <!-- 期权 -->
+            <div class="card">
+                <h2>
+                    <span class="icon options-icon">🎯</span>
+                    期权合约
+                </h2>
+                <p><strong>定义：</strong>给予持有者在特定时间内以特定价格买卖资产的权利（而非义务）</p>
+                
+                <ul class="features">
+                    <li>看涨期权（Call）：有权以约定价格买入</li>
+                    <li>看跌期权（Put）：有权以约定价格卖出</li>
+                    <li>买方支付权利金，最大损失就是权利金</li>
+                    <li>卖方收取权利金，但承担较大风险</li>
+                    <li>具有时间价值衰减特性</li>
+                    <li>可以构建复杂的投资策略</li>
+                </ul>
+
+                <div class="tag low-risk">买方低风险</div>
+                <div class="tag high-risk">卖方高风险</div>
+                <div class="tag">权利非义务</div>
+            </div>
+
+            <!-- 永续合约 -->
+            <div class="card">
+                <h2>
+                    <span class="icon perpetual-icon">♾️</span>
+                    永续合约
+                </h2>
+                <p><strong>定义：</strong>没有到期日的期货合约，通过资金费率机制维持价格锚定</p>
+                
+                <ul class="features">
+                    <li>无到期日，可以无限期持有</li>
+                    <li>通过资金费率维持与现货价格锚定</li>
+                    <li>资金费率每8小时结算一次</li>
+                    <li>多头和空头之间定期支付资金费用</li>
+                    <li>提供高杠杆交易（1-125倍）</li>
+                    <li>流动性集中，交易活跃</li>
+                </ul>
+
+                <div class="risk-warning">
+                    ⚠️ 高杠杆交易存在爆仓风险！
+                </div>
+
+                <div class="tag high-risk">高风险</div>
+                <div class="tag">无到期日</div>
+                <div class="tag">高杠杆</div>
+            </div>
+
+            <!-- 非永续合约 -->
+            <div class="card">
+                <h2>
+                    <span class="icon traditional-icon">📅</span>
+                    非永续合约
+                </h2>
+                <p><strong>定义：</strong>传统的有固定到期日的期货合约</p>
+                
+                <ul class="features">
+                    <li>有明确的交割日期</li>
+                    <li>到期时必须进行实物交割或现金结算</li>
+                    <li>价格随着到期日临近向现货价格收敛</li>
+                    <li>不需要资金费率机制</li>
+                    <li>包括月度、季度等不同期限合约</li>
+                    <li>成本相对固定和可预测</li>
+                </ul>
+
+                <div class="tag medium-risk">中等风险</div>
+                <div class="tag">固定到期</div>
+                <div class="tag">传统模式</div>
+            </div>
+
+            <!-- 资金费率机制演示 -->
+            <div class="funding-rate-demo">
+                <h2>💰 永续合约资金费率机制</h2>
+                <p>资金费率是永续合约特有的机制，用于维持合约价格与现货价格的锚定</p>
+                
+                <div class="demo-container">
+                    <div class="demo-box positive-rate">
+                        <h3>资金费率为正</h3>
+                        <div class="rate-value">+0.01%</div>
+                        <p>永续价格 > 现货价格</p>
+                        <p><strong>多头过多</strong></p>
+                        <p>多头 → 空头 支付费用</p>
+                    </div>
+                    
+                    <div class="demo-box negative-rate">
+                        <h3>资金费率为负</h3>
+                        <div class="rate-value">-0.01%</div>
+                        <p>永续价格 < 现货价格</p>
+                        <p><strong>空头过多</strong></p>
+                        <p>空头 → 多头 支付费用</p>
+                    </div>
+                </div>
+                
+                <p><strong>关键点：</strong>资金费率收益独立于价格涨跌收益，每8小时结算一次</p>
+            </div>
+
+            <!-- 对比表格 -->
+            <div class="comparison-table">
+                <h2>📊 详细对比分析</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>特征</th>
+                            <th>期货</th>
+                            <th>期权</th>
+                            <th>永续合约</th>
+                            <th>非永续合约</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>到期时间</strong></td>
+                            <td>固定到期日</td>
+                            <td>固定到期日</td>
+                            <td>无到期日</td>
+                            <td>固定到期日</td>
+                        </tr>
+                        <tr>
+                            <td><strong>履约义务</strong></td>
+                            <td>双向义务</td>
+                            <td>买方有权利，卖方有义务</td>
+                            <td>双向义务</td>
+                            <td>双向义务</td>
+                        </tr>
+                        <tr>
+                            <td><strong>初始成本</strong></td>
+                            <td>保证金</td>
+                            <td>权利金</td>
+                            <td>保证金</td>
+                            <td>保证金</td>
+                        </tr>
+                        <tr>
+                            <td><strong>持仓成本</strong></td>
+                            <td>保证金占用</td>
+                            <td>时间价值衰减</td>
+                            <td>资金费率</td>
+                            <td>保证金占用</td>
+                        </tr>
+                        <tr>
+                            <td><strong>杠杆水平</strong></td>
+                            <td>中等(5-20倍)</td>
+                            <td>天然杠杆</td>
+                            <td>高(1-125倍)</td>
+                            <td>中等(5-20倍)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>爆仓风险</strong></td>
+                            <td>存在</td>
+                            <td>买方无，卖方有</td>
+                            <td><span class="high-risk">高风险</span></td>
+                            <td>存在</td>
+                        </tr>
+                        <tr>
+                            <td><strong>适用场景</strong></td>
+                            <td>套期保值、投机</td>
+                            <td>风险管理、复杂策略</td>
+                            <td>长期持仓、高频交易</td>
+                            <td>有时间预期的投资</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div style="text-align: center; color: white; margin-top: 40px; opacity: 0.8;">
+            <p>⚠️ 投资有风险，入市需谨慎。请根据自身风险承受能力选择合适的金融工具。</p>
+        </div>
+    </div>
+
+    <script>
+        // 添加交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-15px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // 为风险警告添加点击效果
+            const riskWarning = document.querySelector('.risk-warning');
+            if (riskWarning) {
+                riskWarning.addEventListener('click', function() {
+                    alert('永续合约高杠杆交易风险提示：\n\n1. 市场波动可能导致快速爆仓\n2. 资金费率会增加持仓成本\n3. 杠杆越高，风险越大\n4. 请合理控制仓位大小\n5. 设置止损保护资金安全');
+                });
+            }
+
+            // 添加表格行的点击效果
+            const tableRows = document.querySelectorAll('tbody tr');
+            tableRows.forEach(row => {
+                row.addEventListener('click', function() {
+                    this.style.backgroundColor = 'rgba(102, 126, 234, 0.2)';
+                    setTimeout(() => {
+                        this.style.backgroundColor = '';
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

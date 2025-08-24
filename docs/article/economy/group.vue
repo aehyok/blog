@@ -74,6 +74,15 @@ const emit = defineEmits(['blog-click', 'radio-click'])
 // 博客数据
 const blogList = ref([
   {
+      id: 7,
+      title: '期货、期权和永续合约和非永续合约',
+      excerpt: '期货的历史以及发展？',
+      date: '2025-08-19',
+      tags: ['区块链', '币圈'],
+      code: "futures-contract",
+      group: "crypto",
+  },
+  {
       id: 6,
       title: '期货的历史和发展',
       excerpt: '期货的历史以及发展？',
