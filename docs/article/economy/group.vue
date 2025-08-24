@@ -73,11 +73,21 @@ const emit = defineEmits(['blog-click', 'radio-click'])
 
 // 博客数据
 const blogList = ref([
-  {
+{
+      id: 8,
+      title: 'Hummingbot 是一款高频量化机器人',
+      excerpt: '它提供了一些常见的高频策略，如高频做市、跨市场套利和资金费率套利等',
+      date: '2025-08-24',
+      tags: ['区块链', '币圈'],
+      code: "hummingbot",
+      group: "crypto",
+      url: "https://www.poloxue.com/posts/2025-02-22-cross-exchange-arbitrage-using-humming/"
+  },
+{
       id: 7,
       title: '期货、期权和永续合约和非永续合约',
       excerpt: '期货的历史以及发展？',
-      date: '2025-08-19',
+      date: '2025-08-24',
       tags: ['区块链', '币圈'],
       code: "futures-contract",
       group: "crypto",
@@ -86,7 +96,7 @@ const blogList = ref([
       id: 6,
       title: '期货的历史和发展',
       excerpt: '期货的历史以及发展？',
-      date: '2025-08-19',
+      date: '2025-08-23',
       tags: ['区块链', '币圈'],
       code: "futures-history",
       group: "crypto",
