@@ -16,7 +16,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </div>。
 
     <div class="container">
       <div class="left-panel">
