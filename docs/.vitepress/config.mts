@@ -30,7 +30,7 @@ export default defineConfig({
       { text: "我的笔记", link: "/article/daily/" },
       { text: "武器库", link: "/article/code/" },
       { text: "投资理财", link: "/article/economy" },
-      // { text: "中美贸易战", link: "/article/economy" },
+      { text: "支付宝打卡", link: "/alipay/" },
       { text: "关于我", link: "/me/" },
       { text: "币安", link: "https://new.alphabot.cm" }
       
