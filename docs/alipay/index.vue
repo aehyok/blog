@@ -131,7 +131,13 @@ const records = ref([
     period: '7',
     status: '1',
     isreward: "1"
-  }
+  },
+  {
+    date: '2025.9.5',
+    week: "星期五",
+    period: '8',
+    status: '1'
+  },
 ])
 
 const newRecord = reactive({
