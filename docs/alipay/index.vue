@@ -41,8 +41,8 @@
                   <th>参与期数</th>
                   <th>年.月.日</th>
                   <th>星期几</th>
-                  <th>兑换状态</th>
-                  <th>转账记录</th>
+                  <th>打卡状态</th>
+                  <th>奖励状态</th>
                 </tr>
               </thead>
               <tbody>
@@ -52,22 +52,22 @@
                   :class="{ 'exchange-ready': record.status === 'eligible' }"
                   :style="{ animation: `slideInUp 0.5s ease-out ${index * 0.1}s both` }"
                 >
-                  <td>{{ record.period }}</td>
-                  <td>{{ record.date }}</td>
-                  <td>{{ record.week }}</td>
-                  <td>
+                  <td data-label="参与期数">{{ record.period }}</td>
+                  <td data-label="年.月.日">{{ record.date }}</td>
+                  <td data-label="星期几">{{ record.week }}</td>
+                  <td data-label="打卡状态">
                     <span
                       :class="{
                         'exchange-badge': record.status === 'eligible',
                         'status pending': record.status === 'pending'
                       }"
                     >
-                      {{ record.status === 'eligible' ? '⏳可兑换' : '✅ 已打卡' }}
+                      {{ record.status === '1' ? '✅ 已打卡' : '❌未打卡' }}
                     </span>
                   </td>
-                  <td>
+                  <td data-label="奖励状态">
                     <span
-                      v-if="record.status === 'eligible'"
+                      v-if="record.isreward === '1'"
                       class="transfer-record"
                     >
                       🔥 已转账奖励
@@ -93,43 +93,44 @@ const records = ref([
     date: '2025.8.29',
     week: "星期五",
     period: '1',
-    status: 'pending'
+    status: '1'
   },
   {
     date: '2025.8.30',
     week: "星期六",
     period: '2',
-    status: 'pending'
+    status: '1'
   },
   {
     date: '2025.8.31',
     week: "星期日",
     period: '3',
-    status: 'pending'
+    status: '1'
   },
   {
     date: '2025.9.1',
     week: "星期一",
     period: '4',
-    status: 'pending'
+    status: '1'
   },
   {
     date: '2025.9.2',
     week: "星期二",
     period: '5',
-    status: 'pending'
+    status: '1'
   },
   {
     date: '2025.9.3',
     week: "星期三",
     period: '6',
-    status: 'pending'
+    status: '1'
   },
   {
     date: '2025.9.4',
     week: "星期四",
     period: '7',
-    status: 'eligible'
+    status: '1',
+    isreward: "1"
   }
 ])
 
@@ -266,6 +267,8 @@ onMounted(() => {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 table {
@@ -436,6 +439,169 @@ tbody tr:hover {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* 中屏：稍微压缩 padding 与字号 */
+@media (max-width: 960px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  .header p {
+    font-size: 1rem;
+  }
+  .content {
+    padding: 20px;
+  }
+  th, td {
+    padding: 12px 10px;
+  }
+}
+
+/* 小屏：卡片式重排表格 */
+@media (max-width: 600px) {
+  .container {
+    border-radius: 16px;
+  }
+
+  .activity-info {
+    padding: 18px;
+  }
+
+  .info-grid {
+    gap: 14px;
+  }
+
+  .info-card {
+    padding: 14px 16px;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+  }
+
+  .current-date {
+    font-size: 1rem;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+
+  .participants-table table,
+  .participants-table thead,
+  .participants-table tbody,
+  .participants-table th,
+  .participants-table td,
+  .participants-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .participants-table thead {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .participants-table tbody tr {
+    background: #ffffff;
+    margin: 0 0 14px 0;
+    border: 1px solid #eceff3;
+    border-radius: 14px;
+    padding: 10px 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    animation: none !important;
+  }
+
+  .participants-table tbody tr.exchange-ready {
+    border-left: 5px solid #28a745;
+  }
+
+  .participants-table td {
+    border: none;
+    position: relative;
+    padding: 10px 10px 10px 110px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .participants-table td + td {
+    border-top: 1px dashed #f0f2f5;
+  }
+
+  .participants-table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+    color: #555;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    width: 86px;
+    line-height: 1.2;
+    white-space: pre-wrap;
+  }
+
+  .exchange-badge,
+  .transfer-record,
+  .status {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    border-radius: 14px;
+  }
+
+  .exchange-badge {
+    animation: none;
+  }
+
+  .transfer-record {
+    animation: none;
+  }
+
+  .points-exchange-container {
+    padding: 12px;
+  }
+
+  .header {
+    padding: 24px 18px;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 极小屏再压缩 */
+@media (max-width: 400px) {
+  .participants-table td {
+    padding-left: 100px;
+  }
+  .participants-table td:before {
+    width: 78px;
+    font-size: 0.7rem;
+  }
+  .header h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* 优化触控状态 */
+@media (hover: none) {
+  tbody tr:hover {
+    background: #ffffff;
+    transform: none;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
   }
 }
 </style>
