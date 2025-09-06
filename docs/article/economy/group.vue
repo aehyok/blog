@@ -151,6 +151,16 @@ const blogList = ref([
 // 电台数据
 const radioList = ref([
 {
+    id: 5,
+    title: '9月5日晚间，美国公布非农就业数据大幅低于预期，新增就业仅2.2万人',
+    excerpt: '失业率升至4.3%，市场对美联储9月降息预期飙升至99.3%，引发全球资产价格剧烈波动',
+    date: '2025-09-06',
+    duration: '超级投资',
+    code: "stock-flow",
+    group: "policy",
+    url: "https://mp.weixin.qq.com/s/lAfOFDCAr4oIpEyOvf_OQg"
+  },
+{
     id: 4,
     title: '美联储主席鲍威尔暗示9月降息概率陡增，美股暴涨，美元和美债应声大跌',
     excerpt: '8月22日晚美联储主席鲍威尔暗示通胀上行风险已经减弱，而就业的下行风险正在上升',

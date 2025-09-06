@@ -18,7 +18,7 @@
           </div>
           <div class="info-card">
             <h3>⏰ 兑换日期</h3>
-            <p>每月 29 日开始兑换</p>
+            <p>每满七天自动发放</p>
           </div>
           <div class="info-card">
             <h3>📍 当前状态</h3>
