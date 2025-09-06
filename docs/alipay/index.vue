@@ -38,7 +38,8 @@
             <table>
               <thead>
                 <tr>
-                  <th>参与期数</th>
+                  <th>参与天数</th>
+                  <th>连续天数</th>
                   <th>年.月.日</th>
                   <th>星期几</th>
                   <th>打卡状态</th>
@@ -52,6 +53,7 @@
                   :class="{ 'exchange-ready': record.status === 'eligible' }"
                   :style="{ animation: `slideInUp 0.5s ease-out ${index * 0.1}s both` }"
                 >
+                  <td data-label="参与期数">{{ index + 1 }}</td>
                   <td data-label="参与期数">{{ record.period }}</td>
                   <td data-label="年.月.日">{{ record.date }}</td>
                   <td data-label="星期几">{{ record.week }}</td>
@@ -70,7 +72,7 @@
                       v-if="record.isreward === '1'"
                       class="transfer-record"
                     >
-                      🔥 已转账奖励
+                      🔥 已转账
                     </span>
                     <span v-else>-</span>
                   </td>
@@ -138,6 +140,12 @@ const records = ref([
     period: '8',
     status: '1'
   },
+  {
+    date: '2025.9.6',
+    week: "星期六",
+    period: '9',
+    status: '1'
+  },
 ])
 
 const newRecord = reactive({
@@ -193,7 +201,7 @@ onMounted(() => {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px; /* 放宽PC端容器宽度，原为1200 */
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -273,7 +281,6 @@ onMounted(() => {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -608,6 +615,19 @@ tbody tr:hover {
     background: #ffffff;
     transform: none;
     box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  }
+}
+
+/* 仅桌面端：表格更宽且不换行 */
+@media (min-width: 961px) {
+  .participants-table table {
+    /* 6列至少1200px，避免列过窄；如需更宽可调到1300/1400 */
+    min-width: 1200px;
+    table-layout: auto;
+  }
+  .participants-table th,
+  .participants-table td {
+    white-space: nowrap; /* 禁止换行，避免表头折行 */
   }
 }
 </style>
