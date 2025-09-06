@@ -91,61 +91,67 @@ import { ref, reactive, computed, onMounted } from 'vue'
 
 // 响应式数据
 const records = ref([
-  {
-    date: '2025.8.29',
-    week: "星期五",
-    period: '1',
-    status: '1'
-  },
-  {
-    date: '2025.8.30',
-    week: "星期六",
-    period: '2',
-    status: '1'
-  },
-  {
-    date: '2025.8.31',
-    week: "星期日",
-    period: '3',
-    status: '1'
-  },
-  {
-    date: '2025.9.1',
-    week: "星期一",
-    period: '4',
-    status: '1'
-  },
-  {
-    date: '2025.9.2',
-    week: "星期二",
-    period: '5',
-    status: '1'
-  },
-  {
-    date: '2025.9.3',
-    week: "星期三",
-    period: '6',
-    status: '1'
-  },
-  {
-    date: '2025.9.4',
-    week: "星期四",
-    period: '7',
-    status: '1',
-    isreward: "1"
-  },
-  {
-    date: '2025.9.5',
-    week: "星期五",
-    period: '8',
-    status: '1'
-  },
-  {
-    date: '2025.9.6',
-    week: "星期六",
-    period: '9',
-    status: '1'
-  },
+{
+  date: '2025.9.6',
+  week: "星期六",
+  period: '9',
+  status: '1'
+},
+{
+  date: '2025.9.5',
+  week: "星期五",
+  period: '8',
+  status: '1'
+},
+{
+  date: '2025.9.4',
+  week: "星期四",
+  period: '7',
+  status: '1',
+  isreward: "1"
+},
+{
+  date: '2025.9.3',
+  week: "星期三",
+  period: '6',
+  status: '1'
+},
+{
+  date: '2025.9.2',
+  week: "星期二",
+  period: '5',
+  status: '1'
+},
+{
+  date: '2025.9.1',
+  week: "星期一",
+  period: '4',
+  status: '1'
+},
+{
+  date: '2025.8.31',
+  week: "星期日",
+  period: '3',
+  status: '1'
+},
+{
+  date: '2025.8.30',
+  week: "星期六",
+  period: '2',
+  status: '1'
+},
+{
+  date: '2025.8.29',
+  week: "星期五",
+  period: '1',
+  status: '1'
+},
+
+
+
+
+
+
 ])
 
 const newRecord = reactive({
