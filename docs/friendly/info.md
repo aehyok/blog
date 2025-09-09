@@ -38,7 +38,7 @@ const members = [
   <VPTeamPageSection>
     <template #title>Hello World</template>
     <template #lead>
-      我们在此处向一些开发者致敬，感谢他们优秀文章内容的产出。
+      这里集合了我最亲爱的朋友们的网站，欢迎大家也来看看他们的私人网站。
     </template>
     <template #members>
       <VPTeamMembers size="small" :members="members" />
