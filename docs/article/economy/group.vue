@@ -158,7 +158,7 @@ const radioList = ref([
     duration: '超级投资',
     code: "stock-flow",
     group: "policy",
-    url: "https://mp.weixin.qq.com/s/lAfOFDCAr4oIpEyOvf_OQg"
+    url: "https://mp.weixin.qq.com/s/5K_f1ci0_csYHny8BdO0wg?scene=1"
   },
 {
     id: 4,
