@@ -3,7 +3,7 @@
     <div class="container">
       <div class="header">
         <h1>🎯 积分兑换活动管理</h1>
-        <p>跟踪参与者积分累积与兑换状态</p>
+        <p>看我家小孩能坚持多久，2025年8月29日开始，马上上一年级。</p>
       </div>
       
       <div class="activity-info">

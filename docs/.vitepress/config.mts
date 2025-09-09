@@ -32,7 +32,7 @@ export default defineConfig({
       { text: "投资理财", link: "/article/economy" },
       { text: "支付宝打卡", link: "/alipay/" },
       { text: "关于我", link: "/me/" },
-      { text: "币安", link: "https://new.alphabot.cm" },
+      // { text: "币安", link: "https://new.alphabot.cm" },
       { text: "友情链接", link: "/friendly/info", activeMatch: "/friendly/" },
     ],
 
