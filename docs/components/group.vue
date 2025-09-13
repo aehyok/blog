@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <!-- 项目 Group -->
-     <template v-for="group in state.groupList">
-      <h2 class="group-title">{{group.name}}</h2>
+    <template v-for="group in state.groupList">
+      <h2 class="group-title">{{ group.name }}</h2>
       <div class="post-grid">
         <!-- Post 7 -->
         <template v-for="item in group.children">
@@ -14,32 +14,31 @@
               <h3 class="post-title">{{ item.name }}</h3>
               <p class="post-excerpt">
                 {{ item.description }}
-          </p>
+              </p>
               <div class="post-tags">
                 <template v-for="tag in item.tags">
                   <span class="post-tag">{{ tag }}</span>
                 </template>
-                
               </div>
             </div>
           </div>
         </template>
       </div>
-  </template>
+    </template>
   </div>
 </template>
 <script setup lang="ts">
 import { reactive } from "vue";
-import { useRoute, useRouter } from 'vitepress'
-import { useData } from 'vitepress'
+import { useRoute, useRouter } from "vitepress";
+import { useData } from "vitepress";
 
-const { site } = useData()
-const base = site.value.base
+const { site } = useData();
+const base = site.value.base;
 console.log("base", base);
-const router = useRouter()
+const router = useRouter();
 
 const state = reactive({
-  groupList:[
+  groupList: [
     {
       id: 2,
       name: "益智小游戏",
@@ -115,8 +114,17 @@ const state = reactive({
           url: "./html/list?type=ev-car&group=home",
           isExternalLink: false,
           tags: [],
-        }
-      ]
+        },
+        {
+          id: 9,
+          name: "电池容量以及用电量消耗",
+          cover: "https://imgur.aehyok.uk/v2/dkYHDaE.jpeg",
+          description: "锂电池、半固态电池、全固态电池的容量以及用电量消耗",
+          url: "./html/list?type=battery-capacity&group=home",
+          isExternalLink: false,
+          tags: [],
+        },
+      ],
     },
     {
       id: 1,
@@ -156,7 +164,7 @@ const state = reactive({
           description: "后起直追OpenAI的最佳选手",
           url: "https://aistudio.google.com/app",
           isExternalLink: true,
-          tags: ["#AI", "#长文", "#深度搜索", "文生图", "文生视频","免费API"],
+          tags: ["#AI", "#长文", "#深度搜索", "文生图", "文生视频", "免费API"],
         },
         {
           id: 5,
@@ -165,7 +173,7 @@ const state = reactive({
           description: "马一龙全球首富的AI工具",
           url: "https://grok.com",
           isExternalLink: true,
-          tags: ["#AI", "#长文", "#深度搜索", "文生图", "实时搜索","免费API"],
+          tags: ["#AI", "#长文", "#深度搜索", "文生图", "实时搜索", "免费API"],
         },
         {
           id: 6,
@@ -184,7 +192,7 @@ const state = reactive({
           url: "https://manus.im/",
           isExternalLink: true,
           tags: ["#AI", "自主规划任务"],
-        }
+        },
       ],
     },
     {
@@ -198,7 +206,7 @@ const state = reactive({
           description: "少儿、小学、初中、高中、大学、研究生、博士生的学习资源",
           url: "https://www.remove.bg/zh/upload",
           isExternalLink: true,
-          tags: ["学而思","名师","直播录课"],
+          tags: ["学而思", "名师", "直播录课"],
         },
         {
           id: 2,
@@ -207,9 +215,18 @@ const state = reactive({
           description: "小学、初中、高中、大学PDF教材",
           url: "https://github.com/TapXWorld/ChinaTextbook",
           isExternalLink: true,
-          tags: ["语文", "数学", "英语", "物理", "化学", "生物", "地理", "历史"],
-        }
-      ]
+          tags: [
+            "语文",
+            "数学",
+            "英语",
+            "物理",
+            "化学",
+            "生物",
+            "地理",
+            "历史",
+          ],
+        },
+      ],
     },
     {
       id: 3,
@@ -222,7 +239,7 @@ const state = reactive({
           description: "少儿、小学、初中、高中、大学、研究生、博士生的学习资源",
           url: "https://github.com/mswnlz/edu-knowlege",
           isExternalLink: true,
-          tags: ["学而思","名师","直播录课"],
+          tags: ["学而思", "名师", "直播录课"],
         },
         {
           id: 2,
@@ -231,7 +248,16 @@ const state = reactive({
           description: "小学、初中、高中、大学PDF教材",
           url: "https://github.com/TapXWorld/ChinaTextbook",
           isExternalLink: true,
-          tags: ["语文", "数学", "英语", "物理", "化学", "生物", "地理", "历史"],
+          tags: [
+            "语文",
+            "数学",
+            "英语",
+            "物理",
+            "化学",
+            "生物",
+            "地理",
+            "历史",
+          ],
         },
         {
           id: 3,
@@ -240,7 +266,16 @@ const state = reactive({
           description: "小学、初中、高中、大学PDF教材",
           url: "https://github.com/jbiaojerry/ebook-treasure-chest",
           isExternalLink: true,
-          tags: ["文学", "历史", "心理", "物理", "化学", "生物", "地理", "历史"],
+          tags: [
+            "文学",
+            "历史",
+            "心理",
+            "物理",
+            "化学",
+            "生物",
+            "地理",
+            "历史",
+          ],
         },
         {
           id: 4,
@@ -249,7 +284,16 @@ const state = reactive({
           description: "小学、初中、高中、大学PDF教材",
           url: "https://github.com/jbiaojerry/ebook-treasure-chest",
           isExternalLink: true,
-          tags: ["文学", "历史", "心理", "物理", "化学", "生物", "地理", "历史"],
+          tags: [
+            "文学",
+            "历史",
+            "心理",
+            "物理",
+            "化学",
+            "生物",
+            "地理",
+            "历史",
+          ],
         },
         {
           id: 5,
@@ -258,27 +302,45 @@ const state = reactive({
           description: "小学、初中、高中、大学PDF教材",
           url: "https://iseeue.com/",
           isExternalLink: true,
-          tags: ["文学", "历史", "心理", "物理", "化学", "生物", "地理", "历史"],
-        }
-      ]
+          tags: [
+            "文学",
+            "历史",
+            "心理",
+            "物理",
+            "化学",
+            "生物",
+            "地理",
+            "历史",
+          ],
+        },
+      ],
     },
     {
       id: 3,
       name: "拼音歌词",
-      
     },
     {
       id: 5,
       name: "自己使用小工具",
       children: [
         {
+          id: 8,
+          name: "全国高温查看",
+          cover: "https://imgur.aehyok.uk/v2/QYjzqur.png",
+          description: "",
+
+          url: "http://wx.nmc.cn/f/page/eb18ad1b8ee748948f62084d9e40cb58/weatherMonitor/temperatureLiveOrder",
+          isExternalLink: true,
+          tags: [],
+        },
+        {
           id: 7,
           name: "全国高温查看",
           cover: "https://imgur.aehyok.uk/v2/QYjzqur.png",
           description: "",
-          // url: "./views/tool?type=temperature",
-          url: "http://wx.nmc.cn/f/page/eb18ad1b8ee748948f62084d9e40cb58/weatherMonitor/temperatureLiveOrder",
-          isExternalLink: true,
+          url: "./views/tool?type=temperature",
+          // url: "http://wx.nmc.cn/f/page/eb18ad1b8ee748948f62084d9e40cb58/weatherMonitor/temperatureLiveOrder",
+          isExternalLink: false,
           tags: [],
         },
         {
@@ -380,20 +442,19 @@ const state = reactive({
           isExternalLink: false,
           tags: [],
         },
-      ]
+      ],
     },
-  ]
+  ],
 });
 
 const openClick = (item: any) => {
   if (item.url && item.isExternalLink) {
     window.open(item.url, "_blank");
   } else {
-    const url = base !== "/" ? base + item.url : item.url
-    router.go(url)
+    const url = base !== "/" ? base + item.url : item.url;
+    router.go(url);
   }
 };
-
 </script>
 <style lang="css" scoped>
 .container {
@@ -422,7 +483,7 @@ const openClick = (item: any) => {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #eaeaea;
-  Cursor: pointer;
+  cursor: pointer;
 }
 
 .post-card:hover {
@@ -470,8 +531,8 @@ const openClick = (item: any) => {
   margin-bottom: 10px;
   color: #111;
   line-height: 1.4;
-   h3 {
-    margin: 0
+  h3 {
+    margin: 0;
   }
 }
 

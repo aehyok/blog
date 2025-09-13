@@ -66,6 +66,10 @@
       {
         "key":"ev-car",
         "value": "2025-08-22-电车远程操作.html"
+      },
+      {
+        "key": "battery-capacity",
+        "value": "2025-09-13-电池容量耗电关系.html"
       }
     ]
   }
