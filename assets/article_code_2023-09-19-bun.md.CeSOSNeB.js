@@ -1,5 +1,0 @@
-import{_ as n,c as s,o as e,ag as t}from"./chunks/framework.ELrfyV9R.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"article/code/2023-09-19-bun.md","filePath":"article/code/2023-09-19-bun.md","lastUpdated":1757747601000}'),p={name:"article/code/2023-09-19-bun.md"};function i(l,a,c,o,r,d){return e(),s("div",null,a[0]||(a[0]=[t(`<h2 id="linux-下安装bun" tabindex="-1">linux 下安装bun <a class="header-anchor" href="#linux-下安装bun" aria-label="Permalink to &quot;linux 下安装bun&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>// 先安装nodejs和npm</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>// 然后通过npm安装bun</span></span>
-<span class="line"><span>npm i -g bun</span></span>
-<span class="line"><span>\`\`\`npm</span></span></code></pre></div>`,2)]))}const b=n(p,[["render",i]]);export{_ as __pageData,b as default};
