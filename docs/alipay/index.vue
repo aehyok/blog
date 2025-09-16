@@ -211,13 +211,7 @@ const records = ref([
   period: '1',
   status: '1',
   index: 1,
-},
-
-
-
-
-
-
+}
 ])
 
 const newRecord = reactive({
