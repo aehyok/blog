@@ -27,26 +27,27 @@
     </div>
 
     <div class="info-bar">
-      <span>{{ currentTime }}</span>
-      <span>共{{ totalStations }}站</span>
+      <span>{{ state.weatherData.formatTime }}</span>
+      <span>共{{ state.weatherData.count }}站</span>
     </div>
 
     <div class="weather-list">
       <div
-        v-for="(item, index) in filteredWeatherData"
+        v-if = "state.weatherData?.stations?.length > 0"
+        v-for="(item, index) in state.weatherData.stations.slice(0, 120)"
         :key="index"
         class="weather-item"
         :class="{ 'fade-in': isVisible }"
       >
-        <div class="city-info">
+        <div class="city-info" >
           <div class="city-rank">{{ index + 1 }}</div>
           <div>
-            <span class="city-name">{{ item.cityName }}</span>
-            <span class="city-province">({{ item.province }})</span>
+            <span class="city-name">{{ item[0] }}</span>
+            <span class="city-province">({{ item[1] }})</span>
           </div>
         </div>
         <div class="temperature" :class="getTemperatureClass(item.temperature)">
-          {{ item.temperature }}°C
+          {{ item[5] }}°C
         </div>
       </div>
     </div>
@@ -54,7 +55,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, reactive } from 'vue'
 import axios from 'axios'
 // Props
 const props = defineProps({
@@ -92,6 +93,10 @@ const props = defineProps({
     type: Number,
     default: 2419
   }
+})
+
+const state = reactive({
+  weatherData: {}
 })
 
 // Emits
@@ -134,8 +139,10 @@ const getTemperatureClass = (temp) => {
 // 生命周期
 onMounted(() => {
   isVisible.value = true
-  const result = fetchMaxTemperature().then(data => {
-    console.log('最高温度数据:', data)
+  const result = fetchTemperature().then(response => {
+    console.log('最高温度数据:', response.data)
+    state.weatherData = response.data;
+    state.count = response.data.stations.length;
   }).catch(error => {
     console.error('获取最高温度数据失败:', error)
   })
@@ -152,10 +159,22 @@ const handleCitySelect = (cityData) => {
   emit('city-select', cityData)
 }
 
-// 帮我使用axios请求http://www.nmc.cn/rest/wxapi/getMaxTemperature?ymd=20250703&_=1751623490887写一个接口
-const fetchMaxTemperature = async () => {
+const getCurrentTimeWithHour = () => {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hour = String(now.getHours()-1).padStart(2, '0'); // 24小时制，两位数
+    
+    return year + month + day + hour;
+}
+
+// 获取上一个小时的大致温度
+const fetchTemperature = async () => {
   try {
-    const response = await axios.get(`http://www.nmc.cn/rest/wxapi/getMaxTemperature?ymd=20250703&_=${Date.now()}`)
+    const url = `http://www.nmc.cn/rest/wxapi/getTemperature?ymdh=${getCurrentTimeWithHour()}&type=ET1&_=${Date.now()}`
+    const enUrl = encodeURIComponent(url);
+    const response = await axios.get(`https://api.aehyok.uk/api/proxy?target=${enUrl}`)
     return response.data
   } catch (error) {
     console.error('获取最高温度失败:', error)
