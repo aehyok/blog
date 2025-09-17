@@ -28,13 +28,13 @@
 
     <div class="info-bar">
       <span>{{ state.weatherData.formatTime }}</span>
-      <span>共{{ state.weatherData.count }}站</span>
+      <span>共{{ state.count }}站</span>
     </div>
 
     <div class="weather-list">
       <div
         v-if = "state.weatherData?.stations?.length > 0"
-        v-for="(item, index) in state.weatherData.stations.slice(0, 120)"
+        v-for="(item, index) in filteredWeatherData.slice(0, 120)"
         :key="index"
         class="weather-item"
         :class="{ 'fade-in': isVisible }"
@@ -42,8 +42,8 @@
         <div class="city-info" >
           <div class="city-rank">{{ index + 1 }}</div>
           <div>
-            <span class="city-name">{{ item[0] }}</span>
-            <span class="city-province">({{ item[1] }})</span>
+            <span class="city-name">{{ item[1] }}</span>
+            <span class="city-province">({{ item[0] }})</span>
           </div>
         </div>
         <div class="temperature" :class="getTemperatureClass(item.temperature)">
@@ -118,13 +118,13 @@ const tabs = [
 // 计算属性
 const filteredWeatherData = computed(() => {
   if (!searchTerm.value) {
-    return props.weatherData
+    return state.weatherData.stations || []
   }
   
   const term = searchTerm.value.toLowerCase()
-  return props.weatherData.filter(item => 
-    item.cityName.toLowerCase().includes(term) || 
-    item.province.toLowerCase().includes(term)
+  return state.weatherData.stations.filter(item => 
+    item[0].toLowerCase().includes(term) || 
+    item[1].toLowerCase().includes(term)
   )
 })
 
@@ -269,6 +269,7 @@ const fetchTemperature = async () => {
 .weather-list {
   max-height: 500px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .weather-item {
