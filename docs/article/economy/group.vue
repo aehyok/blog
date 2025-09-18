@@ -151,6 +151,16 @@ const blogList = ref([
 // 电台数据
 const radioList = ref([
 {
+    id: 6,
+    title: '2025年9月18日凌晨两点美联储降息25个基点',
+    excerpt: '符合市场预期但没有超预期',
+    date: '2025-9-18',
+    duration: '超级投资',
+    code: "fed-minutes",
+    group: "policy",
+    url: "https://mp.weixin.qq.com/s/1yxw4S1rWA-dMTMA48wv3g"
+},
+{
     id: 5,
     title: '9月5日晚间，美国公布非农就业数据大幅低于预期，新增就业仅2.2万人',
     excerpt: '失业率升至4.3%，市场对美联储9月降息预期飙升至99.3%，引发全球资产价格剧烈波动',
