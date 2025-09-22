@@ -323,12 +323,12 @@ const state = reactive({
       id: 5,
       name: "自己使用小工具",
       children: [
+
         {
           id: 8,
           name: "全国高温查看",
           cover: "https://imgur.aehyok.uk/v2/QYjzqur.png",
           description: "",
-
           url: "http://wx.nmc.cn/f/page/eb18ad1b8ee748948f62084d9e40cb58/weatherMonitor/temperatureLiveOrder",
           isExternalLink: true,
           tags: [],
@@ -342,6 +342,25 @@ const state = reactive({
           // url: "http://wx.nmc.cn/f/page/eb18ad1b8ee748948f62084d9e40cb58/weatherMonitor/temperatureLiveOrder",
           isExternalLink: false,
           tags: [],
+        },
+        {
+          id: 8,
+          name: "台风路径发布系系统",
+          cover: "https://imgur.aehyok.uk/v2/YAW5bzk.jpeg",
+          description: "",
+          url: "https://typhoon.slt.zj.gov.cn/#/",
+          isExternalLink: true,
+          tags: [],
+        },
+        {
+          id: 8,
+          name: "中国地震台网",
+          cover: "https://imgur.aehyok.uk/v2/W5IqGcZ.png",
+          description: "",
+          url: "https://news.ceic.ac.cn/index.html",
+          isExternalLink: true,
+          tags: [],
+          
         },
         {
           id: 1,
