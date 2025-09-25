@@ -360,7 +360,6 @@ const state = reactive({
           url: "https://news.ceic.ac.cn/index.html",
           isExternalLink: true,
           tags: [],
-          
         },
         {
           id: 1,

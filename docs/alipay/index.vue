@@ -74,7 +74,7 @@
                     >
                       🔥 已转账
                     </span>
-                    <span v-else>-</span>
+                    <span v-else>{{ record.isreward ? record.isreward : '-' }}</span>
                   </td>
                 </tr>
               </tbody>
@@ -91,6 +91,29 @@ import { ref, reactive, computed, onMounted } from 'vue'
 
 // 响应式数据
 const records = ref([
+{
+  date: '2025.9.24',
+  week: "星期三",
+  period: '5',
+  status: '1',
+  index: 26,
+},
+{
+  date: '2025.9.23',
+  week: "星期二",
+  period: '4',
+  status: '1',
+  index: 25,
+  isreward: "补9月22日"
+},
+{
+  date: '2025.9.22',
+  week: "星期一",
+  period: '3',
+  status: '1',
+  index: 24,
+  isreward: "漏打卡"
+},
 {
   date: '2025.9.21',
   week: "星期日",
