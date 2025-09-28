@@ -92,6 +92,34 @@ import { ref, reactive, computed, onMounted } from 'vue'
 // 响应式数据
 const records = ref([
 {
+  date: '2025.9.28',
+  week: "星期日",
+  period: '2',
+  status: '1',
+  index: 30,
+},
+{
+  date: '2025.9.27',
+  week: "星期六",
+  period: '1',
+  status: '1',
+  index: 29,
+},
+{
+  date: '2025.9.26',
+  week: "星期五",
+  period: '7',
+  status: '1',
+  index: 28,
+},
+{
+  date: '2025.9.25',
+  week: "星期四",
+  period: '6',
+  status: '1',
+  index: 27,
+},
+{
   date: '2025.9.24',
   week: "星期三",
   period: '5',
