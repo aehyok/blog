@@ -125,6 +125,7 @@ const records = ref([
   period: '24',
   status: '1',
   index: 38,
+  isreward: "10月8日补"
 },
 {
   date: '2025.10.5',
