@@ -53,8 +53,8 @@
                   :class="{ 'exchange-ready': record.status === 'eligible' }"
                   :style="{ animation: `slideInUp 0.5s ease-out ${index * 0.1}s both` }"
                 >
-                  <td data-label="参与期数">{{ record.index }}</td>
-                  <td data-label="参与期数">{{ record.period }}</td>
+                  <td data-label="参与天数">{{ record.index }}</td>
+                  <td data-label="连续天数">{{ record.period }}</td>
                   <td data-label="年.月.日">{{ record.date }}</td>
                   <td data-label="星期几">{{ record.week }}</td>
                   <td data-label="打卡状态">
@@ -92,6 +92,84 @@ import { ref, reactive, computed, onMounted } from 'vue'
 // 响应式数据
 const records = ref([
 {
+  date: '2025.10.10',
+  week: "星期五",
+  period: '28',
+  status: '1',
+  index: 42,
+},
+{
+  date: '2025.10.9',
+  week: "星期四",
+  period: '27',
+  status: '1',
+  index: 41,
+},
+{
+  date: '2025.10.8',
+  week: "星期三",
+  period: '26',
+  status: '1',
+  index: 40,
+},
+{
+  date: '2025.10.7',
+  week: "星期二",
+  period: '25',
+  status: '1',
+  index: 39,
+},
+{
+  date: '2025.10.6',
+  week: "星期一",
+  period: '24',
+  status: '1',
+  index: 38,
+},
+{
+  date: '2025.10.5',
+  week: "星期日",
+  period: '23',
+  status: '1',
+  index: 37,
+},
+{
+  date: '2025.10.4',
+  week: "星期六",
+  period: '22',
+  status: '1',
+  index: 36,
+},
+{
+  date: '2025.10.3',
+  week: "星期五",
+  period: '21',
+  status: '1',
+  index: 35,
+  isreward: "1"
+},
+{
+  date: '2025.10.2',
+  week: "星期四",
+  period: '20',
+  status: '1',
+  index: 34,
+},
+{
+  date: '2025.10.1',
+  week: "星期三",
+  period: '19',
+  status: '1',
+  index: 33,
+},
+{
+  date: '2025.9.30',
+  week: "星期二",
+  period: '18',
+  status: '1',
+  index: 32,
+},
+{
   date: '2025.9.29',
   week: "星期一",
   period: '17',
@@ -118,6 +196,7 @@ const records = ref([
   period: '14',
   status: '1',
   index: 28,
+  isreward: "1"
 },
 {
   date: '2025.9.25',
