@@ -96,14 +96,14 @@ const records = ref([
   week: "星期日",
   period: '23',
   status: '1',
-  index: 44,
+  index: 44
 },
 {
   date: '2025.10.11',
   week: "星期六",
   period: '29',
   status: '1',
-  index: 43,
+  index: 43
 },
 {
   date: '2025.10.10',

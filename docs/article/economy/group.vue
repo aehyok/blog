@@ -152,10 +152,20 @@ const blogList = ref([
 const radioList = ref([
 {
     id: 6,
+    title: '2025年10月11日凌晨特朗普扬言要给中国加征100%的关税',
+    excerpt: '持续给中国半导体制裁施压，而且力度空前，中方直接',
+    date: '2025-10-11',
+    duration: '中美贸易战',
+    code: "fed-minutes",
+    group: "policy",
+    url: "https://mp.weixin.qq.com/s/_45Ryd6oSJ0Lj5fI04MhcA"
+},
+{
+    id: 6,
     title: '2025年9月18日凌晨两点美联储降息25个基点',
     excerpt: '符合市场预期但没有超预期',
     date: '2025-9-18',
-    duration: '超级投资',
+    duration: '美国政策',
     code: "fed-minutes",
     group: "policy",
     url: "https://mp.weixin.qq.com/s/1yxw4S1rWA-dMTMA48wv3g"
@@ -165,7 +175,7 @@ const radioList = ref([
     title: '9月5日晚间，美国公布非农就业数据大幅低于预期，新增就业仅2.2万人',
     excerpt: '失业率升至4.3%，市场对美联储9月降息预期飙升至99.3%，引发全球资产价格剧烈波动',
     date: '2025-09-06',
-    duration: '超级投资',
+    duration: '美国数据',
     code: "stock-flow",
     group: "policy",
     url: "https://mp.weixin.qq.com/s/5K_f1ci0_csYHny8BdO0wg?scene=1"
