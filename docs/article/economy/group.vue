@@ -74,6 +74,15 @@ const emit = defineEmits(['blog-click', 'radio-click'])
 // 博客数据
 const blogList = ref([
   {
+      id: 9,
+      title: '玩偶姐姐第一次也是最后一次的真诚对话，一个关于谎言，真相和成长的故事。',
+      excerpt: '它提供了一些常见的高频策略，如高频做市、跨市场套利和资金费率套利等',
+      date: '2025-10-16',
+      tags: ['区块链', '币圈'],
+      code: "btc-wojj",
+      group: "crypto",
+  },
+  {
       id: 8,
       title: 'Hummingbot 是一款高频量化机器人',
       excerpt: '它提供了一些常见的高频策略，如高频做市、跨市场套利和资金费率套利等',
