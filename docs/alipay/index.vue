@@ -125,8 +125,7 @@ const records = ref([
   period: '35',
   status: '1',
   index: 49,
-  isreward: 1
-  
+  isreward: "1"  
 },
 {
   date: '2025.10.16',
