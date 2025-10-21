@@ -110,7 +110,8 @@ const records = ref([
   week: "星期日",
   period: '37',
   status: '1',
-  index: 51
+  index: 51,
+  isreward: "扫到妈妈哪里了"
 },
 {
   date: '2025.10.18',
