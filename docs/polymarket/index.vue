@@ -33,6 +33,7 @@
           <option :value="200">200</option>
           <option :value="500">500</option>
           <option :value="1000">1000</option>
+          <option :value="1500">1500</option>
         </select>
       </div>
 
@@ -63,6 +64,13 @@
         >
           {{ loading ? '查询中...' : '查询' }}
         </button>
+        <!-- <button 
+          class="btn-search" 
+          @click="fetchCallData" 
+          :disabled="loading"
+        >
+          {{ enableCall ? '结束' : '开始' }}循环查询
+        </button> -->
         <button class="btn-reset" @click="resetSearch">重置</button>
       </div>
     </div>
@@ -109,6 +117,7 @@
           <thead>
             <tr>
               <!-- <th>ProxyWallet</th> -->
+              <th>序号</th>
               <th>时间</th>
               <th>标题</th>
               <th>结果</th>
@@ -122,6 +131,7 @@
           <tbody>
             <tr v-for="(item, index) in filteredData" :key="`${item.transactionHash}-${index}`">
               <!-- <td>{{ formatAddress(item.proxyWallet) }}</td> -->
+              <td>{{ index + 1 }}</td>
               <td>{{ formatTimestamp(item.timestamp) }}</td>
               <td>{{ item.title }}</td>
               <td>
@@ -162,6 +172,7 @@ const searchParams = ref({
 const rawData = ref([]);
 const loading = ref(false);
 const error = ref(null);
+const enableCall = ref(false);
 
 const responseTimeMs = ref(null);
 
@@ -196,7 +207,7 @@ const fetchData = async () => {
   }
 
   
-  const allowedLimits = [5, 10, 25, 50, 100, 200, 500, 1000];
+  const allowedLimits = [5, 10, 25, 50, 100, 200, 500, 1000, 1500];
   const limit = Number(searchParams.value.limit);
   if (!Number.isInteger(limit) || limit <= 0 || !allowedLimits.includes(limit)) {
     error.value = `limit 值不合法，请选择：${allowedLimits.join(', ')}`;
@@ -262,6 +273,9 @@ const fetchData = async () => {
   }
 };
 
+const fetchCallData = async () => {
+  setInterval(fetchData, 1000);
+}
 // ✅ 新增：提取模拟数据到单独函数
 const getMockData = () => {
   return [
