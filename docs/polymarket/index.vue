@@ -25,11 +25,14 @@
       <div class="form-group">
         <label>返回条数 (limit):</label>
         <select v-model.number="searchParams.limit">
+          <option :value="5">5</option>
           <option :value="10">10</option>
           <option :value="25">25</option>
           <option :value="50">50</option>
           <option :value="100">100</option>
           <option :value="200">200</option>
+          <option :value="500">500</option>
+          <option :value="1000">1000</option>
         </select>
       </div>
 
@@ -41,7 +44,17 @@
           <option value="ASC">升序 (ASC)</option>
         </select>
       </div>
-
+      <div class="form-group">
+        <label>交易类型 (type):</label>
+        <select v-model="searchParams.type">
+          <option value="TRADE">TRADE (交易)</option>
+          <option value="SPLIT">SPLIT (拆分)</option>
+          <option value="TRADE">MERGE (合并)</option>
+          <option value="REDEEM">REDEEM (赎回/兑换)</option>
+          <option value="REWARD">REWARD (奖励)</option>
+          <option value="CONVERSION">CONVERSION (转换)</option>
+        </select>
+      </div>
       <div class="button-group">
         <button 
           class="btn-search" 
@@ -124,7 +137,8 @@ const searchParams = ref({
   proxyWallet: '0x0d32e5fc366d846bbca8a82c6d60a6dd718b6336',
   title: '',
   limit: 100,                // 新增：默认返回条数
-  sortDirection: 'DESC'      // 新增：默认排序方向
+  sortDirection: 'DESC',     // 新增：默认排序方向
+  type: "TRADE"
 });
 
 const rawData = ref([]);
@@ -155,7 +169,7 @@ const fetchData = async () => {
     return;
   }
 
-  if (!isValidAddress(searchParams.value.proxyWallet)) {
+  if (!isValidAddress(searchParams.value.proxyWallet.trim())) {
     error.value = 'ProxyWallet 地址格式不正确\n应为 0x 开头的 42 位十六进制字符';
     return;
   }
@@ -182,10 +196,11 @@ const fetchData = async () => {
     // 使用用户选择的 limit 和 sortDirection
     const result = await axios.get('https://data-api.polymarket.com/activity', {
       params: {
-        user: searchParams.value.proxyWallet,
+        user: searchParams.value.proxyWallet.trim(),
         limit: limit,
         sortBy: 'TIMESTAMP',
-        sortDirection: sortDir
+        sortDirection: sortDir,
+        type: searchParams.value.type
       },
       timeout: 10000 // ✅ 新增：10秒超时
     });
