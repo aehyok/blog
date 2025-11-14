@@ -1,0 +1,852 @@
+[
+  {
+    "id": "728",
+    "label": "Tesla",
+    "slug": "tesla",
+    "forceShow": false,
+    "publishedAt": "2023-12-13 17:45:54.013+00",
+    "createdAt": "2023-12-13T17:45:54.043Z",
+    "updatedAt": "2025-10-22T05:48:23.795378Z",
+    "isCarousel": false
+  },
+  {
+    "id": "146",
+    "label": "YouTube",
+    "slug": "youtube",
+    "forceShow": false,
+    "publishedAt": "2023-11-02 21:24:53.403+00",
+    "createdAt": "2023-11-02T21:24:53.409Z",
+    "updatedAt": "2025-09-29T06:56:59.016402Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102764",
+    "label": "Chinese Super League",
+    "slug": "chinese-super-league",
+    "forceShow": false,
+    "createdAt": "2025-10-22T18:38:50.160837Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102765",
+    "label": "Australian A-League",
+    "slug": "australian-a-league",
+    "forceShow": false,
+    "createdAt": "2025-10-22T18:39:18.718673Z",
+    "isCarousel": false
+  },
+  {
+    "id": "1384",
+    "label": "Prices",
+    "slug": "prices",
+    "forceShow": true,
+    "publishedAt": "2024-02-21 01:13:54.002+00",
+    "createdAt": "2024-02-21T01:13:54.016Z",
+    "updatedAt": "2025-05-14T14:07:55.552512Z",
+    "isCarousel": false
+  },
+  {
+    "id": "1383",
+    "label": "Poland",
+    "slug": "poland",
+    "forceShow": false,
+    "publishedAt": "2024-02-21 00:28:43.733+00",
+    "createdAt": "2024-02-21T00:28:43.761Z",
+    "updatedAt": "2025-05-16T23:28:17.464616Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102766",
+    "label": "Ireland Election",
+    "slug": "ireland-election",
+    "forceShow": false,
+    "createdAt": "2025-10-23T16:02:45.135826Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102763",
+    "label": "Europa Conference League",
+    "slug": "europa-conference-league",
+    "forceShow": false,
+    "createdAt": "2025-10-22T15:20:34.716363Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102006",
+    "label": "Special Elections",
+    "slug": "special-elections",
+    "forceShow": false,
+    "createdAt": "2025-03-31T21:03:52.151153Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102012",
+    "label": "Liberation Day Tariffs",
+    "slug": "liberation-day-tariffs",
+    "forceShow": false,
+    "createdAt": "2025-04-01T22:50:50.306801Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102022",
+    "label": "xtrd-1",
+    "slug": "xtrd-1",
+    "forceShow": false,
+    "createdAt": "2025-04-06T16:53:32.512905Z",
+    "updatedAt": "2025-04-06T16:53:49.165077Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102028",
+    "label": "Treasuries",
+    "slug": "treasuries",
+    "forceShow": false,
+    "createdAt": "2025-04-09T07:15:37.973552Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102068",
+    "label": "New Pope",
+    "slug": "next-pope",
+    "forceShow": false,
+    "createdAt": "2025-04-21T09:39:54.004474Z",
+    "updatedAt": "2025-04-21T09:45:16.784676Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102083",
+    "label": "India-Pakistan",
+    "slug": "india-pakistan",
+    "forceShow": false,
+    "createdAt": "2025-04-24T14:46:30.26389Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102089",
+    "label": "TBPN",
+    "slug": "TBPN",
+    "forceShow": false,
+    "createdAt": "2025-04-27T17:06:50.469777Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102109",
+    "label": "GTA VI",
+    "slug": "gta-vi",
+    "forceShow": false,
+    "createdAt": "2025-05-06T18:59:54.453812Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102111",
+    "label": "conclave",
+    "slug": "conclave",
+    "forceShow": false,
+    "createdAt": "2025-05-06T20:58:03.482938Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102145",
+    "label": "NOLA Prison Break",
+    "slug": "nola-prison-break",
+    "forceShow": false,
+    "createdAt": "2025-05-20T16:00:19.883469Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102159",
+    "label": "TestNew",
+    "slug": "testnew",
+    "forceShow": false,
+    "createdAt": "2025-05-22T16:20:54.648695Z",
+    "updatedAt": "2025-05-22T16:31:07.286723Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102165",
+    "label": "CryptoNewHide",
+    "slug": "crypto-new-hide",
+    "forceShow": true,
+    "createdAt": "2025-05-23T15:17:29.657792Z",
+    "updatedAt": "2025-05-23T17:53:01.548228Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102168",
+    "label": "Streaming",
+    "slug": "streaming",
+    "forceShow": false,
+    "createdAt": "2025-05-23T17:59:42.328118Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102177",
+    "label": "Suriname",
+    "slug": "suriname",
+    "forceShow": false,
+    "createdAt": "2025-05-27T15:52:04.613337Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102041",
+    "label": "Meta vs FTC",
+    "slug": "meta-vs-ftc",
+    "forceShow": false,
+    "createdAt": "2025-04-14T17:07:54.690516Z",
+    "isCarousel": false
+  },
+  {
+    "id": "520",
+    "label": "Australia",
+    "slug": "australia",
+    "forceShow": false,
+    "publishedAt": "2023-11-16 17:32:55.84+00",
+    "createdAt": "2023-11-16T17:32:55.862Z",
+    "updatedAt": "2025-04-29T19:35:40.886278Z",
+    "isCarousel": false
+  },
+  {
+    "id": "738",
+    "label": "Yemen",
+    "slug": "yemen",
+    "forceShow": false,
+    "publishedAt": "2023-12-14 19:37:04.448+00",
+    "createdAt": "2023-12-14T19:37:04.467Z",
+    "updatedAt": "2025-05-06T18:58:30.536594Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102127",
+    "label": "Up or Down",
+    "slug": "up-or-down",
+    "forceShow": true,
+    "createdAt": "2025-05-09T20:56:58.880785Z",
+    "updatedAt": "2025-05-10T08:19:03.523989Z",
+    "isCarousel": false
+  },
+  {
+    "id": "1369",
+    "label": "Eurovision",
+    "slug": "eurovision",
+    "forceShow": false,
+    "publishedAt": "2024-02-21 00:11:20.962+00",
+    "createdAt": "2024-02-21T00:11:20.969Z",
+    "updatedAt": "2025-05-11T23:25:48.802798Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102147",
+    "label": "Big Beautiful Bill",
+    "slug": "big-beautiful-bill",
+    "forceShow": false,
+    "createdAt": "2025-05-20T17:21:32.961666Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102134",
+    "label": "Hit Price",
+    "slug": "hit-price",
+    "forceShow": true,
+    "createdAt": "2025-05-13T13:37:14.286156Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102167",
+    "label": "CryptoNew",
+    "slug": "CryptoNew",
+    "forceShow": false,
+    "createdAt": "2025-05-23T17:54:04.969184Z",
+    "updatedAt": "2025-05-23T17:57:39.205194Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102169",
+    "label": "Hide From New",
+    "slug": "hide-from-new",
+    "forceShow": false,
+    "createdAt": "2025-05-23T18:47:07.430147Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102137",
+    "label": "Featured",
+    "slug": "featured",
+    "forceShow": true,
+    "createdAt": "2025-05-16T09:58:40.682219Z",
+    "updatedAt": "2025-05-27T14:55:00.48426Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102178",
+    "label": "Champions League Final",
+    "slug": "champions-league-final",
+    "forceShow": false,
+    "createdAt": "2025-05-27T16:34:00.123272Z",
+    "isCarousel": false
+  },
+  {
+    "id": "100324",
+    "label": "NOW",
+    "slug": "Live",
+    "forceShow": false,
+    "createdAt": "2024-07-27T05:03:23.468235Z",
+    "updatedAt": "2025-05-28T13:12:36.05872Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102199",
+    "label": "Greta Thunberg",
+    "slug": "greta-thunberg",
+    "forceShow": false,
+    "createdAt": "2025-06-04T19:51:49.527383Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102204",
+    "label": "Other",
+    "slug": "other",
+    "forceShow": true,
+    "createdAt": "2025-06-05T13:24:56.585285Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102207",
+    "label": "Trump vs Elon",
+    "slug": "trump-vs-elon",
+    "forceShow": false,
+    "createdAt": "2025-06-05T17:03:56.809337Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102175",
+    "label": "1H",
+    "slug": "1H",
+    "forceShow": true,
+    "createdAt": "2025-05-27T15:23:31.696219Z",
+    "updatedAt": "2025-06-09T19:29:13.140216Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102249",
+    "label": "NJ Mayoral Election",
+    "slug": "nj-mayor",
+    "forceShow": false,
+    "createdAt": "2025-06-09T22:41:15.362397Z",
+    "updatedAt": "2025-06-09T23:06:27.255461Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102250",
+    "label": "NJ Governor",
+    "slug": "nj-governor",
+    "forceShow": false,
+    "createdAt": "2025-06-09T23:07:09.353065Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102138",
+    "label": "June 27",
+    "slug": "may30",
+    "forceShow": true,
+    "createdAt": "2025-05-16T12:13:40.955518Z",
+    "updatedAt": "2025-06-20T21:51:46.144037Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102304",
+    "label": "Khamenei",
+    "slug": "khamenei",
+    "forceShow": false,
+    "createdAt": "2025-06-23T18:41:15.452041Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102305",
+    "label": "US-Iran",
+    "slug": "us-iran",
+    "forceShow": false,
+    "createdAt": "2025-06-23T18:46:05.469712Z",
+    "isCarousel": false
+  },
+  {
+    "id": "464",
+    "label": "Military Actions",
+    "slug": "military-action",
+    "forceShow": false,
+    "publishedAt": "2023-11-06 21:24:31.83+00",
+    "createdAt": "2023-11-06T21:24:31.845Z",
+    "updatedAt": "2025-06-23T18:53:03.782801Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102132",
+    "label": "July 1",
+    "slug": "weekly-tuesday",
+    "forceShow": true,
+    "createdAt": "2025-05-13T11:49:58.49026Z",
+    "updatedAt": "2025-06-24T21:23:52.75871Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102321",
+    "label": "Bitcoin Prices",
+    "slug": "bitcoin-prices",
+    "forceShow": true,
+    "createdAt": "2025-06-25T20:53:53.26671Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102322",
+    "label": "Ethereum Prices",
+    "slug": "ethereum-prices",
+    "forceShow": true,
+    "createdAt": "2025-06-25T20:54:05.269498Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102323",
+    "label": "Solana Prices",
+    "slug": "solana-prices",
+    "forceShow": true,
+    "createdAt": "2025-06-25T20:54:16.341266Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102324",
+    "label": "XRP Prices",
+    "slug": "xrp-prices",
+    "forceShow": false,
+    "createdAt": "2025-06-25T20:54:38.555005Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102337",
+    "label": "Austrian GP",
+    "slug": "austrian-gp",
+    "forceShow": false,
+    "createdAt": "2025-06-27T16:10:45.431174Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102338",
+    "label": "British GP",
+    "slug": "british-gp",
+    "forceShow": false,
+    "createdAt": "2025-06-27T16:11:22.096129Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102357",
+    "label": "July 4",
+    "slug": "july-4",
+    "forceShow": false,
+    "createdAt": "2025-07-03T14:45:01.816357Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102361",
+    "label": "America Party",
+    "slug": "america-party",
+    "forceShow": false,
+    "createdAt": "2025-07-06T22:24:43.035106Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102368",
+    "label": "Pre-Market",
+    "slug": "pre-market",
+    "forceShow": true,
+    "createdAt": "2025-07-09T17:12:39.369652Z",
+    "updatedAt": "2025-07-09T17:15:36.548555Z",
+    "isCarousel": false
+  },
+  {
+    "id": "540",
+    "label": "Grok",
+    "slug": "grok",
+    "forceShow": false,
+    "publishedAt": "2023-11-18 00:05:59.677+00",
+    "createdAt": "2023-11-18T00:05:59.693Z",
+    "updatedAt": "2025-07-09T17:55:07.052796Z",
+    "isCarousel": false
+  },
+  {
+    "id": "159",
+    "label": "Fed",
+    "slug": "fed",
+    "forceShow": false,
+    "publishedAt": "2023-11-02 21:27:18.98+00",
+    "createdAt": "2023-11-02T21:27:18.986Z",
+    "updatedAt": "2025-07-15T20:06:08.797075Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102429",
+    "label": "Ghislaine Maxwell",
+    "slug": "ghislaine-maxwell",
+    "forceShow": false,
+    "createdAt": "2025-07-23T16:55:44.322072Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102437",
+    "label": "Thailand-Cambodia",
+    "slug": "thailand-cambodia",
+    "forceShow": false,
+    "createdAt": "2025-07-24T18:25:42.294415Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102769",
+    "label": "NBA Gambling Scandal",
+    "slug": "nba-gambling-scandal",
+    "forceShow": false,
+    "createdAt": "2025-10-23T17:15:49.523648Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102451",
+    "label": "Earnings Calls",
+    "slug": "earnings-calls",
+    "forceShow": false,
+    "createdAt": "2025-07-30T09:19:16.461575Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102458",
+    "label": "Earn 4%",
+    "slug": "earn-4",
+    "forceShow": false,
+    "createdAt": "2025-08-01T13:31:11.928744Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102133",
+    "label": "Today 🚀",
+    "slug": "today",
+    "forceShow": true,
+    "createdAt": "2025-05-13T11:57:56.529848Z",
+    "updatedAt": "2025-08-04T15:40:33.730593Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102281",
+    "label": "Daily",
+    "slug": "daily",
+    "forceShow": false,
+    "createdAt": "2025-06-17T20:32:17.531984Z",
+    "updatedAt": "2025-08-04T17:00:51.510618Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102463",
+    "label": "Texas Redistricting",
+    "slug": "texas-redistricting",
+    "forceShow": false,
+    "createdAt": "2025-08-05T03:00:31.25213Z",
+    "updatedAt": "2025-08-05T03:00:53.199961Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102464",
+    "label": "GPT-5",
+    "slug": "gpt-5",
+    "forceShow": false,
+    "createdAt": "2025-08-06T06:36:21.62604Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102468",
+    "label": "Poker game",
+    "slug": "poker-game",
+    "forceShow": false,
+    "createdAt": "2025-08-06T16:05:10.261973Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102474",
+    "label": "NFL Preseason 2025",
+    "slug": "nfl-preseason-2025",
+    "forceShow": false,
+    "createdAt": "2025-08-07T18:13:57.64943Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102475",
+    "label": "Russia Capture",
+    "slug": "russia-capture",
+    "forceShow": false,
+    "createdAt": "2025-08-07T21:17:05.925606Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102477",
+    "label": "Trump-Putin",
+    "slug": "trump-putin",
+    "forceShow": false,
+    "createdAt": "2025-08-08T18:39:10.061786Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102484",
+    "label": "Washington DC",
+    "slug": "washington-dc",
+    "forceShow": false,
+    "createdAt": "2025-08-11T22:55:03.690008Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102486",
+    "label": "Ukraine Map",
+    "slug": "ukraine-map",
+    "forceShow": false,
+    "createdAt": "2025-08-12T21:44:08.906337Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102505",
+    "label": "Security Guarantee",
+    "slug": "security-guarantee",
+    "forceShow": false,
+    "createdAt": "2025-08-18T23:08:34.205919Z",
+    "isCarousel": false
+  },
+  {
+    "id": "1373",
+    "label": "Norway",
+    "slug": "norway",
+    "forceShow": false,
+    "publishedAt": "2024-02-21 00:16:31.027+00",
+    "createdAt": "2024-02-21T00:16:31.28Z",
+    "updatedAt": "2025-08-22T16:37:44.537829Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102516",
+    "label": "Multi Strikes",
+    "slug": "multi-strikes",
+    "forceShow": false,
+    "createdAt": "2025-08-25T15:12:27.701606Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102517",
+    "label": "Neg Risk",
+    "slug": "neg-risk",
+    "forceShow": false,
+    "createdAt": "2025-08-25T17:44:22.437947Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102520",
+    "label": "Czech Election",
+    "slug": "czech-election",
+    "forceShow": false,
+    "createdAt": "2025-08-25T18:27:04.274629Z",
+    "isCarousel": false
+  },
+  {
+    "id": "1378",
+    "label": "France",
+    "slug": "france",
+    "forceShow": false,
+    "publishedAt": "2024-02-21 00:21:54.303+00",
+    "createdAt": "2024-02-21T00:21:54.404Z",
+    "updatedAt": "2025-08-26T17:31:40.829132Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102527",
+    "label": "Euro Basket",
+    "slug": "euro-basket",
+    "forceShow": false,
+    "createdAt": "2025-08-27T03:39:35.530897Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102531",
+    "label": "4H",
+    "slug": "4h",
+    "forceShow": false,
+    "createdAt": "2025-08-28T11:58:16.418302Z",
+    "isCarousel": false
+  },
+  {
+    "id": "101312",
+    "label": "Ripple",
+    "slug": "ripple",
+    "forceShow": false,
+    "createdAt": "2024-11-22T17:19:02.983736Z",
+    "updatedAt": "2025-08-28T15:51:30.069395Z",
+    "isCarousel": false
+  },
+  {
+    "id": "145",
+    "label": "MrBeast",
+    "slug": "mrbeast",
+    "forceShow": false,
+    "publishedAt": "2023-11-02 21:24:52.524+00",
+    "createdAt": "2023-11-02T21:24:52.559Z",
+    "updatedAt": "2025-08-29T15:59:27.024132Z",
+    "isCarousel": false
+  },
+  {
+    "id": "1097",
+    "label": "Apple",
+    "slug": "apple",
+    "forceShow": false,
+    "publishedAt": "2024-02-06 19:41:32.179+00",
+    "createdAt": "2024-02-06T19:41:32.185Z",
+    "updatedAt": "2025-08-29T19:41:59.881117Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102539",
+    "label": "Fifa Friendly",
+    "slug": "fifa-friendly",
+    "forceShow": false,
+    "createdAt": "2025-09-02T20:03:13.553595Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102540",
+    "label": "CAF",
+    "slug": "caf",
+    "forceShow": false,
+    "createdAt": "2025-09-03T01:47:00.412451Z",
+    "isCarousel": false
+  },
+  {
+    "id": "525",
+    "label": "Netherlands",
+    "slug": "netherlands",
+    "forceShow": false,
+    "publishedAt": "2023-11-16 23:13:33.526+00",
+    "createdAt": "2023-11-16T23:13:33.561Z",
+    "updatedAt": "2025-09-03T02:14:35.470524Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102543",
+    "label": "AFC WC",
+    "slug": "afc-wc",
+    "forceShow": false,
+    "createdAt": "2025-09-03T02:55:17.207253Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102544",
+    "label": "UEF Qualifiers",
+    "slug": "uef-qualifiers",
+    "forceShow": false,
+    "createdAt": "2025-09-03T03:01:58.804143Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102545",
+    "label": "Oceania WC Qualifiers",
+    "slug": "oceania-wc-qualifiers",
+    "forceShow": false,
+    "createdAt": "2025-09-03T03:11:57.893494Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102466",
+    "label": "YouTutbe",
+    "slug": "yoututbe",
+    "forceShow": false,
+    "createdAt": "2025-08-06T15:01:01.15478Z",
+    "updatedAt": "2025-09-29T06:56:35.566797Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102548",
+    "label": "Jobs Report",
+    "slug": "jobs-report",
+    "forceShow": false,
+    "createdAt": "2025-09-04T16:26:08.450225Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102549",
+    "label": "Cowboys vs Eagles",
+    "slug": "cowboys-vs-eagles",
+    "forceShow": false,
+    "createdAt": "2025-09-04T16:28:02.986793Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102770",
+    "label": "Japan J2 League",
+    "slug": "japan-j2-league",
+    "forceShow": false,
+    "createdAt": "2025-10-23T20:06:31.618443Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102771",
+    "label": "K-league",
+    "slug": "k-league",
+    "forceShow": false,
+    "createdAt": "2025-10-23T20:07:44.579634Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102788",
+    "label": "Mayoral Elections",
+    "slug": "mayoral-elections",
+    "forceShow": false,
+    "createdAt": "2025-10-30T21:09:39.366658Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102789",
+    "label": "Virginia Elections",
+    "slug": "virginia-elections",
+    "forceShow": false,
+    "createdAt": "2025-10-30T21:11:39.831644Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102810",
+    "label": "International T20",
+    "slug": "international-t20",
+    "forceShow": false,
+    "createdAt": "2025-11-05T20:27:59.60369Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102818",
+    "label": "Bangladesh Premier League",
+    "slug": "bangladesh-premier-league",
+    "forceShow": false,
+    "createdAt": "2025-11-05T21:03:42.365976Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102575",
+    "label": "NFL Week 1",
+    "slug": "nfl-week-1",
+    "forceShow": false,
+    "createdAt": "2025-09-07T16:42:26.81801Z",
+    "isCarousel": false
+  },
+  {
+    "id": "1013",
+    "label": "Earnings",
+    "slug": "earnings",
+    "forceShow": false,
+    "publishedAt": "2024-02-06 19:27:48.024+00",
+    "createdAt": "2024-02-06T19:27:48.029Z",
+    "updatedAt": "2025-09-15T01:55:15.0242Z",
+    "isCarousel": false
+  },
+  {
+    "id": "102598",
+    "label": "World Championship Athletics",
+    "slug": "world-championship-athletics",
+    "forceShow": false,
+    "createdAt": "2025-09-15T06:42:58.408335Z",
+    "isCarousel": false
+  }
+]

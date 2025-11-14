@@ -1,0 +1,493 @@
+<template>
+  <div class="polymarket-container">
+    <h1> 数据查询</h1>
+    
+    <div class="search-form">
+      <div class="form-group">
+        <label>ProxyWallet:</label>
+        <input 
+          v-model="searchParams.proxyWallet" 
+          type="text" 
+          placeholder="输入 proxyWallet 地址"
+        />
+      </div>
+      
+      <div class="form-group">
+        <label>Title:</label>
+        <input 
+          v-model="searchParams.title" 
+          type="text" 
+          placeholder="输入标题关键词"
+        />
+      </div>
+      
+      <div class="button-group">
+        <button 
+          class="btn-search" 
+          @click="fetchData" 
+          :disabled="loading"
+        >
+          {{ loading ? '查询中...' : '查询' }}
+        </button>
+        <button class="btn-reset" @click="resetSearch">重置</button>
+      </div>
+    </div>
+
+    <div v-if="error" class="error">{{ error }}</div>
+
+    <div v-if="loading" class="loading">正在加载数据...</div>
+
+    <template v-else-if="filteredData.length > 0">
+      <div class="result-info">
+        共找到 {{ filteredData.length }} 条记录
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <!-- <th>ProxyWallet</th> -->
+              <th>时间</th>
+              <th>标题</th>
+              <th>结果</th>
+              <th>类型</th>
+              <th>方向</th>
+              <th>价格</th>
+              <th>数量</th>
+              <th>价格 × 数量</th>
+              <th>USDC 数量</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(item, index) in filteredData" :key="`${item.transactionHash}-${index}`">
+              <!-- <td>{{ formatAddress(item.proxyWallet) }}</td> -->
+              <td>{{ formatTimestamp(item.timestamp) }}</td>
+              <td>{{ item.title }}</td>
+              <td>
+                <span 
+                  class="outcome-badge"
+                  :class="item.outcome === 'Up' ? 'outcome-up' : 'outcome-down'"
+                >
+                  {{ item.outcome }}
+                </span>
+              </td>
+              <td>{{ item.type }}</td>
+              <td :class="item.side === 'BUY' ? 'side-buy' : 'side-sell'">
+                {{ item.side }}
+              </td>
+              <td>{{ formatNumber(item.price) }}</td>
+              <td>{{ formatNumber(item.size) }}</td>
+              <td class="price-calc">{{ calculateTotal(item.price, item.size) }}</td>
+              <td>{{ formatNumber(item.usdcSize) }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </template>
+
+    <div v-else-if="!loading && rawData.length > 0" class="no-data">
+      没有符合筛选条件的数据
+    </div>
+
+    <div v-else-if="!loading" class="no-data">
+      暂无数据
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref, computed, onMounted } from 'vue';
+import axios from 'axios'; // ✅ 修复：正确的导入方式
+
+const searchParams = ref({
+  proxyWallet: '0x0d32e5fc366d846bbca8a82c6d60a6dd718b6336',
+  title: ''
+});
+
+const rawData = ref([]);
+const loading = ref(false);
+const error = ref(null);
+
+const filteredData = computed(() => {
+  let data = rawData.value;
+  
+  if (searchParams.value.title) {
+    const titleLower = searchParams.value.title.toLowerCase();
+    data = data.filter(item => 
+      item.title && item.title.toLowerCase().includes(titleLower)
+    );
+  }
+  
+  return data;
+});
+
+// ✅ 新增：验证以太坊地址格式
+const isValidAddress = (address) => {
+  return /^0x[a-fA-F0-9]{40}$/.test(address);
+};
+
+const fetchData = async () => {
+  if (!searchParams.value.proxyWallet) {
+    error.value = '请输入 ProxyWallet 地址';
+    return;
+  }
+
+  // ✅ 新增：地址格式验证
+  if (!isValidAddress(searchParams.value.proxyWallet)) {
+    error.value = 'ProxyWallet 地址格式不正确\n应为 0x 开头的 42 位十六进制字符';
+    return;
+  }
+
+  loading.value = true;
+  error.value = null;
+
+  try {
+    // ✅ 修复：正确的 API 调用方式
+    const result = await axios.get('https://data-api.polymarket.com/activity', {
+      params: {
+        user: searchParams.value.proxyWallet,
+        limit: 100,
+        sortBy: 'TIMESTAMP',
+        sortDirection: 'DESC'
+      },
+      timeout: 10000 // ✅ 新增：10秒超时
+    });
+
+    console.log(result, "-------result--------");
+    
+    // ✅ 修复：使用真实的 API 数据
+    if (result.data && Array.isArray(result.data)) {
+      rawData.value = result.data;
+    } else {
+      rawData.value = [];
+      error.value = 'API 返回数据格式不正确';
+    }
+    
+    // 如果 API 还没准备好，可以暂时用模拟数据测试
+    // rawData.value = getMockData();
+    
+  } catch (err) {
+    console.error('API 请求失败:', err);
+    
+    // ✅ 改进：更详细的错误处理
+    if (err.code === 'ECONNABORTED') {
+      error.value = '请求超时，请检查网络连接';
+    } else if (err.response) {
+      error.value = `API 错误 (${err.response.status}): ${err.response.statusText}`;
+    } else if (err.request) {
+      error.value = '无法连接到服务器，请检查网络';
+    } else {
+      error.value = `获取数据失败: ${err.message}`;
+    }
+    
+    rawData.value = [];
+    
+    // ✅ 开发时使用模拟数据
+    console.log('使用模拟数据进行测试...');
+    rawData.value = getMockData();
+  } finally {
+    loading.value = false;
+  }
+};
+
+// ✅ 新增：提取模拟数据到单独函数
+const getMockData = () => {
+  return [
+    {
+      "proxyWallet": "0x0d32e5fc366d846bbca8a82c6d60a6dd718b6336",
+      "timestamp": 1731470100,
+      "conditionId": "0xf910ea36342df52deb045d3437f6011d0e7d46b9df3326422c7eaa3ccb634d52",
+      "type": "TRADE",
+      "size": 98.039214,
+      "usdcSize": 48.039215,
+      "transactionHash": "0x938a6fa014859e67f6337979dbed9a17e2f18e0ba1ad2e6757718a8dd0faeccd",
+      "price": 0.49000000142800004,
+      "asset": "51125716007472132041446136984495310770285780708294404174348029552936651205436",
+      "side": "BUY",
+      "outcomeIndex": 1,
+      "title": "Bitcoin Up or Down - November 13, 4:15AM-4:30AM ET",
+      "slug": "btc-updown-15m-1763025300",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+      "eventSlug": "btc-updown-15m-1763025300",
+      "outcome": "Down",
+      "name": "0x0D32e5fC366d846BbcA8a82C6D60a6DD718b6336-1761759997574",
+      "pseudonym": "Bite-Sized-Turban"
+    },
+    {
+      "proxyWallet": "0x0d32e5fc366d846bbca8a82c6d60a6dd718b6336",
+      "timestamp": 1731469800,
+      "conditionId": "0xa820ea36342df52deb045d3437f6011d0e7d46b9df3326422c7eaa3ccb634d88",
+      "type": "TRADE",
+      "size": 150.5,
+      "usdcSize": 90.3,
+      "transactionHash": "0x738b6fa014859e67f6337979dbed9a17e2f18e0ba1ad2e6757718a8dd0faed12",
+      "price": 0.6,
+      "asset": "61125716007472132041446136984495310770285780708294404174348029552936651205437",
+      "side": "SELL",
+      "outcomeIndex": 0,
+      "title": "Ethereum Price Prediction - November 13",
+      "slug": "eth-price-1731469800",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/ETH+fullsize.png",
+      "eventSlug": "eth-price-1731469800",
+      "outcome": "Up",
+      "name": "0x0D32e5fC366d846BbcA8a82C6D60a6DD718b6336-1731469800",
+      "pseudonym": "Crypto-Trader-Pro"
+    },
+    {
+      "proxyWallet": "0x0d32e5fc366d846bbca8a82c6d60a6dd718b6336",
+      "timestamp": 1731469200,
+      "conditionId": "0xb920ea36342df52deb045d3437f6011d0e7d46b9df3326422c7eaa3ccb634d99",
+      "type": "TRADE",
+      "size": 75.25,
+      "usdcSize": 37.625,
+      "transactionHash": "0x838c7fa014859e67f6337979dbed9a17e2f18e0ba1ad2e6757718a8dd0faee23",
+      "price": 0.5,
+      "asset": "71125716007472132041446136984495310770285780708294404174348029552936651205438",
+      "side": "BUY",
+      "outcomeIndex": 1,
+      "title": "Bitcoin Up or Down - November 13, 3:45AM-4:00AM ET",
+      "slug": "btc-updown-15m-1731469200",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+      "eventSlug": "btc-updown-15m-1731469200",
+      "outcome": "Down",
+      "name": "0x0D32e5fC366d846BbcA8a82C6D60a6DD718b6336-1731469200",
+      "pseudonym": "Market-Master"
+    }
+  ];
+};
+
+const resetSearch = () => {
+  searchParams.value = {
+    proxyWallet: '0x0d32e5fc366d846bbca8a82c6d60a6dd718b6336',
+    title: ''
+  };
+  rawData.value = [];
+  error.value = null;
+};
+
+const formatNumber = (value) => {
+  if (value == null) return '0.00';
+  return Number(value).toFixed(2);
+};
+
+const calculateTotal = (price, size) => {
+  if (price == null || size == null) return '0.00';
+  return (Number(price) * Number(size)).toFixed(2);
+};
+
+const formatAddress = (address) => {
+  if (!address) return '';
+  return `${address.slice(0, 6)}...${address.slice(-4)}`;
+};
+
+const formatTimestamp = (timestamp) => {
+  if (!timestamp) return '';
+  const date = new Date(timestamp * 1000);
+  return date.toLocaleString('zh-CN', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  });
+};
+
+onMounted(() => {
+  fetchData();
+});
+</script>
+
+<style scoped>
+
+.trade-war-timeline {
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.polymarket-container {
+  min-height: 100vh;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-search {
+  background: #4CAF50;
+  color: white;
+}
+
+.btn-search:hover {
+  background: #45a049;
+}
+
+.btn-search:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-reset {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.btn-reset:hover {
+  background: #e0e0e0;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+.error {
+  padding: 16px;
+  background: #ffebee;
+  color: #c62828;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+.result-info {
+  margin-bottom: 16px;
+  color: #666;
+  font-size: 14px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead {
+  background: #f5f5f5;
+}
+
+th {
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  white-space: nowrap;
+}
+
+td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.side-buy {
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.side-sell {
+  color: #f44336;
+  font-weight: 600;
+}
+
+.price-calc {
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+}
+
+.outcome-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.outcome-up {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.outcome-down {
+  background: #ffebee;
+  color: #c62828;
+}
+</style>

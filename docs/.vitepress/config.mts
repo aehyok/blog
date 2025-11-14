@@ -31,6 +31,7 @@ export default defineConfig({
       { text: "武器库", link: "/article/code/" },
       { text: "投资理财", link: "/article/economy" },
       { text: "支付宝打卡", link: "/alipay/" },
+      { text: "polymarket", link: "/polymarket/" },
       { text: "关于我", link: "/me/" },
       // { text: "币安", link: "https://new.alphabot.cm" },
       { text: "友情链接", link: "/friendly/info", activeMatch: "/friendly/" },
