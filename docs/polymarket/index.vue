@@ -74,6 +74,9 @@
     <template v-else-if="filteredData.length > 0">
       <div class="result-info">
         共找到 {{ filteredData.length }} 条记录
+        <span v-if="responseTimeMs !== null" class="response-time">
+          (查询耗时: {{ responseTimeMs }}ms)
+        </span>
       </div>
 
       <div class="table-container">
@@ -144,6 +147,8 @@ const searchParams = ref({
 const rawData = ref([]);
 const loading = ref(false);
 const error = ref(null);
+// 1. 新增：存储响应时间
+const responseTimeMs = ref(null);
 
 const filteredData = computed(() => {
   let data = rawData.value;
@@ -175,7 +180,7 @@ const fetchData = async () => {
   }
 
   // 新增：limit 校验
-  const allowedLimits = [10, 25, 50, 100, 200];
+  const allowedLimits = [5, 10, 25, 50, 100, 200, 500, 1000];
   const limit = Number(searchParams.value.limit);
   if (!Number.isInteger(limit) || limit <= 0 || !allowedLimits.includes(limit)) {
     error.value = `limit 值不合法，请选择：${allowedLimits.join(', ')}`;
@@ -191,6 +196,10 @@ const fetchData = async () => {
 
   loading.value = true;
   error.value = null;
+  responseTimeMs.value = null; // 查询开始时重置时间
+
+  // 2. 记录开始时间
+  const startTime = performance.now();
 
   try {
     // 使用用户选择的 limit 和 sortDirection
@@ -232,6 +241,8 @@ const fetchData = async () => {
     rawData.value = getMockData();
   } finally {
     loading.value = false;
+    // 3. 记录结束时间并计算耗时
+    responseTimeMs.value = Math.round(performance.now() - startTime);
   }
 };
 
@@ -310,6 +321,7 @@ const resetSearch = () => {
   };
   rawData.value = [];
   error.value = null;
+  responseTimeMs.value = null; // 重置时清空时间
 };
 
 const formatNumber = (value) => {
@@ -473,6 +485,10 @@ button {
   margin-bottom: 16px;
   color: #666;
   font-size: 14px;
+    /* 样式更新：让时间和总数保持在一行 */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .table-container {
@@ -544,5 +560,15 @@ tbody tr:hover {
 .outcome-down {
   background: #ffebee;
   color: #c62828;
+}
+
+/* 新增：响应时间样式 */
+.response-time {
+    font-weight: 600;
+    color: #1976d2; /* 突出显示时间 */
+    font-size: 13px;
+    background-color: #e3f2fd;
+    padding: 4px 8px;
+    border-radius: 4px;
 }
 </style>
