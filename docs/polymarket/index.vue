@@ -71,7 +71,32 @@
 
     <div v-if="loading" class="loading">正在加载数据...</div>
 
-    <template v-else-if="filteredData.length > 0">
+    <!-- 修改：把分组汇总放到主列表上方，且只显示三列（标题 / 类型 / 总计） -->
+    <div v-if="groupedSummaries.length > 0" class="group-summary-container">
+      <h2 class="group-summary-title">按标题分组 — 类型与总计 (USDC)</h2>
+      <div class="group-table">
+        <table>
+          <thead>
+            <tr>
+              <th>标题</th>
+              <th>类型</th>
+              <th>份额</th>
+              <th>总计 (USDC)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="group in groupedSummaries" :key="group.title + '::' + group.type">
+              <td class="group-title">{{ group.title }}</td>
+              <td :class="group.type === 'Up' ? 'group-up' : 'group-down'">{{ group.type }}</td>
+              <td class="group-total">{{ formatNumber(group.size) }}</td>
+              <td class="group-total">{{ formatNumber(group.total) }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <template v-if="filteredData.length > 0">
       <div class="result-info">
         共找到 {{ filteredData.length }} 条记录
         <span v-if="responseTimeMs !== null" class="response-time">
@@ -91,7 +116,6 @@
               <th>方向</th>
               <th>价格</th>
               <th>数量</th>
-              <th>价格 × 数量</th>
               <th>USDC 数量</th>
             </tr>
           </thead>
@@ -114,43 +138,35 @@
               </td>
               <td>{{ formatNumber(item.price) }}</td>
               <td>{{ formatNumber(item.size) }}</td>
-              <td class="price-calc">{{ calculateTotal(item.price, item.size) }}</td>
               <td>{{ formatNumber(item.usdcSize) }}</td>
             </tr>
           </tbody>
         </table>
       </div>
     </template>
-
-    <div v-else-if="!loading && rawData.length > 0" class="no-data">
-      没有符合筛选条件的数据
-    </div>
-
-    <div v-else-if="!loading" class="no-data">
-      暂无数据
-    </div>
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue';
-import axios from 'axios'; // ✅ 修复：正确的导入方式
+import axios from 'axios';
 
 const searchParams = ref({
   proxyWallet: '0x0d32e5fc366d846bbca8a82c6d60a6dd718b6336',
   title: '',
-  limit: 100,                // 新增：默认返回条数
-  sortDirection: 'DESC',     // 新增：默认排序方向
+  limit: 100,                
+  sortDirection: 'DESC',
   type: "TRADE"
 });
 
 const rawData = ref([]);
 const loading = ref(false);
 const error = ref(null);
-// 1. 新增：存储响应时间
+
 const responseTimeMs = ref(null);
 
 const filteredData = computed(() => {
+  console.log("Computing filteredData...");
   let data = rawData.value;
   
   if (searchParams.value.title) {
@@ -159,11 +175,11 @@ const filteredData = computed(() => {
       item.title && item.title.toLowerCase().includes(titleLower)
     );
   }
-  
+  console.log(data, "----filteredData");
   return data;
 });
 
-// ✅ 新增：验证以太坊地址格式
+
 const isValidAddress = (address) => {
   return /^0x[a-fA-F0-9]{40}$/.test(address);
 };
@@ -179,7 +195,7 @@ const fetchData = async () => {
     return;
   }
 
-  // 新增：limit 校验
+  
   const allowedLimits = [5, 10, 25, 50, 100, 200, 500, 1000];
   const limit = Number(searchParams.value.limit);
   if (!Number.isInteger(limit) || limit <= 0 || !allowedLimits.includes(limit)) {
@@ -187,7 +203,7 @@ const fetchData = async () => {
     return;
   }
 
-  // 新增：sortDirection 校验
+  
   const sortDir = String(searchParams.value.sortDirection).toUpperCase();
   if (sortDir !== 'ASC' && sortDir !== 'DESC') {
     error.value = 'sortDirection 必须为 ASC 或 DESC';
@@ -351,6 +367,29 @@ const formatTimestamp = (timestamp) => {
     second: '2-digit'
   });
 };
+
+// 替换：按 title + outcome (Up/Down) 分组，返回数组：{ title, type, total }
+// 改为基于 filteredData，这样在模板显示 groupedSummaries 时会触发 filteredData 的 computed 执行
+const groupedSummaries = computed(() => {
+  const map = new Map(); // key = `${title}||${type}`
+  console.log(filteredData.value, "----groupedSummaries filteredData");
+  (filteredData.value || []).forEach(item => {
+    const title = item.title || '未命名';
+    const outcome = String(item.outcome || '').trim();
+    if (outcome !== 'Up' && outcome !== 'Down') return; // 只统计 Up/Down
+    const usdc = Number(item.usdcSize) || 0;
+    const size = Number(item.size) || 0;
+    const key = `${title}||${outcome}`;
+    const prev = map.get(key);
+    if (prev) {
+      prev.total += usdc;
+      prev.size += size;
+    } else {
+      map.set(key, { title, type: outcome, total: usdc, size: size });
+    }
+  });
+  return Array.from(map.values()).map(e => ({ ...e, total: Number(e.total), size: Number(e.size) }));
+});
 
 onMounted(() => {
   fetchData();
@@ -570,5 +609,64 @@ tbody tr:hover {
     background-color: #e3f2fd;
     padding: 4px 8px;
     border-radius: 4px;
+}
+
+/* 新增：分组汇总样式 */
+.group-summary-container {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.group-summary-title {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.group-table {
+  overflow-x: auto;
+}
+
+.group-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.group-table th {
+  text-align: left;
+  padding: 8px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.group-table td {
+  padding: 8px;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.group-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.group-up {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.group-down {
+  color: #c62828;
+  font-weight: 600;
+}
+
+.group-total {
+  color: #1976d2;
+  font-weight: 700;
 }
 </style>
