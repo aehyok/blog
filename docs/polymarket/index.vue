@@ -6,12 +6,15 @@
       <div class="form-group">
         <label>代理列表:</label>
         <select v-model="searchParams.proxy" @change="handleSelectionChange">
-          <option value="0x161eb16874e34f545991e774b4e1ac5b65f86ef0">peter77777-NBA-89.9%-141436</option>
-          <option value="0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834">AgricultureSecretary-ALL-91.7%-340893</option>
-          <option value="0x522402d9f9b721b5155a6136df3c112200810de8">TheFBIAgent-ALL-80.6%-101190</option>
-          <option value="0x21deaea5f00c23bfbdf1cc29a700c11e0ccaa8ff">PTGE31Cn1-Price-57.9%-11828</option>
-          <option value="0xeffcc79a8572940cee2238b44eac89f2c48fda88">FirstOrder-Price-56.7%-342477</option>
-          <option value="0x5248313731287b61d714ab9df655442d6ed28aa2">0x5248313731287b61d714ab9df655442d6ed28aa2-Price-44.3%-$102925</option>
+          <option value="0x161eb16874e34f545991e774b4e1ac5b65f86ef0">peter77777-(NBA)-89.9%-$141,436</option>
+          <option value="0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834">AgricultureSecretary-(ALL)-91.7%-$340,893</option>
+          <option value="0x522402d9f9b721b5155a6136df3c112200810de8">TheFBIAgent-(ALL)-80.6%-$101,190</option>
+          <option value="0x21deaea5f00c23bfbdf1cc29a700c11e0ccaa8ff">PTGE31Cn1-(Price)-57.9%-$11,828</option>
+          <option value="0xeffcc79a8572940cee2238b44eac89f2c48fda88">FirstOrder-(Price)-56.7%-$342,477</option>
+          <option value="0x75e765216a57942d738d880ffcda854d9f869080">25usdc-(ALL)-48.7%-$70,610</option>
+          <option value="0x75e765216a57942d738d880ffcda854d9f869080">ArmageddonRewardsBilly-(ALL)-62.2%-$401,722</option>
+          <option value="0x75e765216a57942d738d880ffcda854d9f869080">Hans323-(weather)-61.9%-$83,687</option>
+          <option value="0x5248313731287b61d714ab9df655442d6ed28aa2">0x5248313731287b61d714ab9df655442d6ed28aa2-(Price)-44.3%-$102,925</option>
         </select>
       </div>
 
