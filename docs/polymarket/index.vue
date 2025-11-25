@@ -14,6 +14,7 @@
           <option value="0x75e765216a57942d738d880ffcda854d9f869080">25usdc-(ALL)-48.7%-$70,610</option>
           <option value="0x75e765216a57942d738d880ffcda854d9f869080">ArmageddonRewardsBilly-(ALL)-62.2%-$401,722</option>
           <option value="0x75e765216a57942d738d880ffcda854d9f869080">Hans323-(weather)-61.9%-$83,687</option>
+          <option value="0xf7850ebb60c10d5375fff6e596d55b69fdec05ed">AreWeNotEntertained-(weather)-98.0%-$977,469</option>
           <option value="0x5248313731287b61d714ab9df655442d6ed28aa2">0x5248313731287b61d714ab9df655442d6ed28aa2-(Price)-44.3%-$102,925</option>
         </select>
       </div>
