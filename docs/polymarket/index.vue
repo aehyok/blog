@@ -6,6 +6,7 @@
       <div class="form-group">
         <label>代理列表:</label>
         <select v-model="searchParams.proxy" @change="handleSelectionChange">
+          <option value="0x6031b6eed1c97e853c6e0f03ad3ce3529351f96d">gabagool22-(Price)-89.9%-$141,436</option>
           <option value="0x161eb16874e34f545991e774b4e1ac5b65f86ef0">peter77777-(NBA)-89.9%-$141,436</option>
           <option value="0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834">AgricultureSecretary-(ALL)-91.7%-$340,893</option>
           <option value="0x522402d9f9b721b5155a6136df3c112200810de8">TheFBIAgent-(ALL)-80.6%-$101,190</option>
