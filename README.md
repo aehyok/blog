@@ -1,5 +1,5 @@
 ## 一个程序员关于ChatGPT学习的过程记录
-- 2025-02-18日 充值OpenAI API 成功 https://yeka.ai/i/QIMING16 
+- 2025-02-18日 充值OpenAI API 成功 https://yeka.ai/i/QIMING16 （已弃用）
 - 我的现用专梯（2023-04-04开始，用到2025-10-22，以及至今）一致比较稳定，有专业团队进行维护 
   - 不用魔法就可访问 https://my.x-air.app:666/#/register?aff=32853 
   - 其余推荐专梯 https://github.com/microsoft/graphrag/issues/361
@@ -29,6 +29,26 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 12月29日
+- https://tailwindsql.com/
+- https://skillsmp.com/
+- 国产API替换方案  https://www.bigmodel.cn/glm-coding
+- claude code 使用详解 https://x.com/oran_ge/status/2005419365450252425
+## 12月27日
+- 只支持mac可以重构为支持window https://github.com/nguyenphutrong/quotio
+- google antigravity 
+  - https://www.cnblogs.com/javastack/p/19396292
+  - https://mp.weixin.qq.com/s/e4zmI2vpogBlE0WOJ8wm-w
+  - https://hrefgo.com/blog/google-antigravity-guide#%E5%B9%B6%E8%A1%8C%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E6%BC%94%E7%A4%BA
+- https://github.com/ltaoo/wx_channels_download
+- https://github.com/lbjlaq/Antigravity-Manager
+## 12月26日
+- 最近经常使用的AI产品
+  - https://notebooklm.google.com/
+  - https://gemini.google.com/app
+  - https://aistudio.google.com/
+  - https://claude.ai/chats
+  - https://antigravity.google/ 编码工具
 ## 5月21日
 - 精美个人博客
   - https://gitee.com/onlyonexl/vitepress-theme-teek-one-public
