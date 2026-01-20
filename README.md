@@ -18,8 +18,11 @@
   - https://openai.weibo.at
   - https://api.openai.com
 - 查看openai状态
-
   - https://status.openai.com/
+- 阅读书籍
+  - 雅书
+  - https://yabook.org/
+  - https://z-lib.id/
 ## 文字转语音
 - https://modelscope.cn/models?page=1&tasks=text-to-speech&type=audio
 ## 可好好玩玩的项目
@@ -29,6 +32,9 @@
 ## 个人博客
 - https://baoyu.io/
 - https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5
+## 1月12日
+- 移除gemini nano banana pro 右下角水印
+  - https://banana.ovo.re/
 ## 12月29日
 - https://tailwindsql.com/
 - https://skillsmp.com/
@@ -171,8 +177,6 @@
 ## 6月18日
 - pdf转换为markdown
   - https://pdf2md.morethan.io/
-- 雅书
-  - https://yabook.org/
 - icons 图标
   - https://lucide.dev/icons
 ## 6月14日

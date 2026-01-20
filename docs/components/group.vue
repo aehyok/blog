@@ -1,40 +1,60 @@
 <template>
   <div class="container">
-    <!-- 项目 Group -->
-    <template v-for="group in state.groupList">
-      <h2 class="group-title">{{ group.name }}</h2>
-      <div class="post-grid">
-        <!-- Post 7 -->
-        <template v-for="item in group.children">
-          <div class="post-card" @click="openClick(item)">
-            <div class="post-image">
-              <img :src="item.cover" alt="开源项目1" />
-            </div>
-            <div class="post-content">
-              <h3 class="post-title">{{ item.name }}</h3>
-              <p class="post-excerpt">
-                {{ item.description }}
-              </p>
-              <div class="post-tags">
-                <template v-for="tag in item.tags">
-                  <span class="post-tag">{{ tag }}</span>
-                </template>
+    <!-- 装饰背景层 -->
+    <div class="bg-layer layer-1"></div>
+    <div class="bg-layer layer-2"></div>
+    <div class="flash-layer"></div>
+
+    <template v-for="group in state.groupList" :key="group.id">
+      <div class="group-section">
+        <h2 class="group-title">
+          <span class="title-text">{{ group.name }}</span>
+          <span class="title-decoration"></span>
+        </h2>
+        
+        <div class="post-grid">
+          <template v-for="item in group.children" :key="item.id">
+            <div class="post-card" @click="openClick(item)">
+              <div class="card-inner">
+                <div class="post-image-wrapper">
+                  <img :src="item.cover" :alt="item.name" loading="lazy" />
+                  <div class="image-overlay"></div>
+                </div>
+                
+                <div class="post-content">
+                  <div class="content-header">
+                    <h3 class="post-title">{{ item.name }}</h3>
+                    <div class="external-icon" v-if="item.isExternalLink">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </div>
+                  </div>
+                  
+                  <p class="post-excerpt" :title="item.description">
+                    {{ item.description }}
+                  </p>
+                  
+                  <div class="post-tags">
+                    <template v-for="tag in item.tags" :key="tag">
+                      <span class="post-tag">{{ tag }}</span>
+                    </template>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </template>
+          </template>
+        </div>
       </div>
     </template>
   </div>
 </template>
+
 <script setup lang="ts">
 import { reactive } from "vue";
-import { useRoute, useRouter } from "vitepress";
+import { useRouter } from "vitepress";
 import { useData } from "vitepress";
 
 const { site } = useData();
 const base = site.value.base;
-console.log("base", base);
 const router = useRouter();
 
 const state = reactive({
@@ -474,132 +494,279 @@ const openClick = (item: any) => {
   }
 };
 </script>
+
 <style lang="css" scoped>
+/* 容器核心 */
 .container {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 80vh;
+}
+
+/* 装饰背景层 */
+.bg-layer {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.layer-1 {
+  top: -10%;
+  left: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, var(--vp-c-brand-1) 0%, rgba(255, 255, 255, 0) 70%);
+  animation: drift 15s infinite alternate ease-in-out, pulse 8s infinite alternate ease-in-out;
+}
+
+.layer-2 {
+  bottom: -10%;
+  right: -10%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, var(--vp-c-brand-2) 0%, rgba(255, 255, 255, 0) 70%);
+  animation: drift 20s infinite alternate-reverse ease-in-out, pulse 10s infinite alternate ease-in-out;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(10%, 15%) rotate(10deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+
+/* 酷炫闪烁光效层 */
+.flash-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 使用品牌色渐变，在深色和浅色模式下都可见 */
+  background: linear-gradient(125deg, transparent 35%, var(--vp-c-brand-1) 50%, transparent 65%);
+  background-size: 200% 200%;
+  animation: shimmer 6s infinite linear; /* 稍微加快速度 */
+  pointer-events: none;
+  z-index: 1; /* 提高层级，使其浮于背景之上但位于内容之下(如果内容z-index更高) - wait, if z-index is 1 it might cover content? */
+  opacity: 0.1;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* 分组标题 */
+.group-section {
+  margin-bottom: 60px;
 }
 
 .group-title {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 30px 0 20px;
-  padding-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 30px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+  letter-spacing: 0.5px;
 }
 
+.title-decoration {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  border-radius: 2px;
+  margin-top: 8px;
+  transition: width 0.3s ease;
+}
+
+.group-section:hover .title-decoration {
+  width: 100%;
+}
+
+/* 网格布局 */
 .post-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  margin-bottom: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
 }
 
+/* 增强卡片设计 */
 .post-card {
-  background-color: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #eaeaea;
+  position: relative;
+  height: 100%;
+  border-radius: 16px;
   cursor: pointer;
+  perspective: 1000px;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
+.card-inner {
+  height: 100%;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 悬停效果：卡片上浮 + 阴影 + 边框高亮 */
 .post-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
 }
 
-.post-image {
-  width: 100%;
-  height: 140px;
+.post-card:hover .card-inner {
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.15);
+  border-color: var(--vp-c-brand-1);
+}
+
+/* 图片区域 */
+.post-image-wrapper {
+  position: relative;
+  height: 160px;
   overflow: hidden;
 }
 
-.post-image img {
+.post-image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.post-card:hover .post-image img {
-  transform: scale(1.05);
+.post-card:hover .post-image-wrapper img {
+  transform: scale(1.08);
 }
 
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.post-card:hover .image-overlay {
+  opacity: 1;
+}
+
+/* 内容区域 */
 .post-content {
-  padding: 8px;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, var(--vp-c-bg-soft) 0%, var(--vp-c-bg) 100%);
 }
 
-.post-category {
-  display: inline-block;
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 8px;
-}
-
-.post-date {
-  float: right;
-  font-size: 14px;
-  color: #888;
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
 }
 
 .post-title {
+  margin: 0;
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 10px;
-  color: #111;
+  color: var(--vp-c-text-1);
   line-height: 1.4;
-  h3 {
-    margin: 0;
-  }
+  transition: color 0.3s ease;
+}
+
+.post-card:hover .post-title {
+  color: var(--vp-c-brand-1);
+}
+
+.external-icon {
+  color: var(--vp-c-text-3);
+  transform: translateX(5px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.post-card:hover .external-icon {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .post-excerpt {
   font-size: 14px;
-  color: #666;
+  color: var(--vp-c-text-2);
   line-height: 1.6;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  flex-grow: 1;
 }
 
+/* 标签样式 */
 .post-tags {
-  margin-top: 12px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-top: auto;
 }
 
 .post-tag {
   display: inline-block;
   padding: 4px 10px;
-  background-color: #f0f0f0;
-  color: #666;
-  border-radius: 20px;
   font-size: 12px;
+  font-weight: 500;
+  color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-bg-alt);
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 40px;
+.post-card:hover .post-tag {
+  background-color: var(--vp-c-brand-soft);
+  transform: scale(1.05);
 }
 
-.header h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.header p {
-  font-size: 16px;
-  color: #666;
-}
-
+/* 响应式适配 */
 @media (max-width: 768px) {
   .post-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  
+  .group-title {
+    font-size: 24px;
   }
 }
 
@@ -607,9 +774,9 @@ const openClick = (item: any) => {
   .post-grid {
     grid-template-columns: 1fr;
   }
-}
-
-.vp-doc h3 {
-  margin: 10px 0;
+  
+  .post-image-wrapper {
+    height: 180px;
+  }
 }
 </style>
