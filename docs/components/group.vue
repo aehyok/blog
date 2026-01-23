@@ -60,6 +60,30 @@ const router = useRouter();
 const state = reactive({
   groupList: [
     {
+      id: 0,
+      name: "AI辅助工具",
+      children: [
+        {
+          id: 1,
+          name: "notebooklm 视频移除水印",
+          cover: "https://imgur.aehyok.uk/v2/0vk7QT9.png",
+          description: "notebooklm 视频移除水印",
+          url: "https://www.notebooklmwatermark.com/",
+          isExternalLink: true,
+          tags: [],
+        },
+        {
+          id: 2,
+          name: "Gemini 图片移除水印",
+          cover: "https://imgur.aehyok.uk/v2/sJDfe4o.jpeg",
+          description: "Gemini 图片移除水印",
+          url: "https://banana.ovo.re/",
+          isExternalLink: true,
+          tags: [],
+        },
+      ],
+    },
+    {
       id: 2,
       name: "益智小游戏",
       children: [
