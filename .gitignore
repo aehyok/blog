@@ -18,6 +18,12 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
-
+.codex
 # ad
 cache
+.agents/
+.claude/
+.obsidian/
+.agent
+.claude
+.opencode

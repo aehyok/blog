@@ -5,7 +5,7 @@ import reviews from "./reviews.json"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "珩行天下的个人网站",
+  title: "AI少年的个人网站",
   description: "那个曾经的少年回来了",
   base: "/blog",
   ignoreDeadLinks: true,
