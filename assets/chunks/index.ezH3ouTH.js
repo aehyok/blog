@@ -1,0 +1,1 @@
+function o(n,t){let r=t;if(!r&&typeof window<"u"&&(r=window.location.href),!r)return null;try{const e=new URL(r);return new URLSearchParams(e.search).get(n)}catch(e){return console.error("URL解析错误:",e),null}}export{o as g};
