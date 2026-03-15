@@ -4,7 +4,15 @@ C:\Users\Administrator\.claude
 
 
 
-- 如果当前会话太长了，你可以直接使用命令 /export xxxx.md进行导出。
+下面就从Claude Code 安装后好以后开始吧。
+
+## ?的作用
+
+## 默认几种agent的切换
+
+Alt+M
+
+
 
 claude --dangerously-skip-permissions
 
@@ -65,8 +73,8 @@ Alt + V 或者Ctrl +V
 # 如果文件不存在，先创建
 touch ~/.bash_profile
 
-# 用 nano 编辑（Git Bash 自带 nano）
-nano ~/.bash_profile
+# 用 vim 编辑
+vim ~/.bash_profile
 ```
 
 进入文件
@@ -84,6 +92,10 @@ alias
 
 
 
+
+让 Codex CLI 跳过人工批准（approvals）和沙箱限制（sandbox），以更自动化、权限更高的方式执行操作。GitHub 上相关讨论和 issue 里把它描述为“fully automated command”，并明确提示这是高风险模式。
+
+alias cx='codex --dangerously-bypass-approvals-and-sandbox'
 
 
 
