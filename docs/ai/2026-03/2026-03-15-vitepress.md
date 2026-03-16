@@ -41,6 +41,10 @@
 “ git@github.com:aehyok/vitepress-obsidian.git  这是我新创建的仓库，创建类型为public，请将当前仓库代码上传github”
 
 
+![[Pasted image 20260317071023.png]]
+
+
+
 
 gh这玩意我没用过
 “gh是什么”
