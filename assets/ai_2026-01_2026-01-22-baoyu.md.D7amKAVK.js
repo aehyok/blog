@@ -1,0 +1,8 @@
+import{_ as s,c as n,o as e,ag as i}from"./chunks/framework.ELrfyV9R.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ai/2026-01/2026-01-22-baoyu.md","filePath":"ai/2026-01/2026-01-22-baoyu.md","lastUpdated":1773701065000}'),t={name:"ai/2026-01/2026-01-22-baoyu.md"};function p(o,a,l,r,c,d){return e(),n("div",null,a[0]||(a[0]=[i(`<h2 id="登录后生成的gemini-web的配置在c-users-administrator-appdata-roaming-baoyu-skills-gemini-web" tabindex="-1">登录后生成的Gemini Web的配置在C:\\Users\\Administrator\\AppData\\Roaming\\baoyu-skills\\gemini-web <a class="header-anchor" href="#登录后生成的gemini-web的配置在c-users-administrator-appdata-roaming-baoyu-skills-gemini-web" aria-label="Permalink to &quot;登录后生成的Gemini Web的配置在C:\\Users\\Administrator\\AppData\\Roaming\\baoyu-skills\\gemini-web&quot;">​</a></h2><h2 id="vscode中设置默认的命令行工具" tabindex="-1">vscode中设置默认的命令行工具 <a class="header-anchor" href="#vscode中设置默认的命令行工具" aria-label="Permalink to &quot;vscode中设置默认的命令行工具&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>// 快捷键</span></span>
+<span class="line"><span>Ctrl + Shift + P</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 输入 Select Default Profile</span></span>
+<span class="line"><span>选择命令行列表</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 输入 Configure Display Language</span></span>
+<span class="line"><span>选择中文</span></span></code></pre></div>`,3)]))}const b=s(t,[["render",p]]);export{u as __pageData,b as default};
