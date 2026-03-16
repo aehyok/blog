@@ -2,6 +2,8 @@
 AI 时代我将Mac下的终端换成Ghostty了，就一个字：方便。
 工具暂时只支持 Mac和Linux，下面是我快速配置使用的步骤。
 
+当然了你直接使用Claude Code 或者Codex等工具让它直接装我觉得也没什么问题的。
+
 
 1、终端下安装ghostty
 ```
@@ -19,4 +21,4 @@ brew install --cask ghostty
 brew install --cask font-maple-mono-nf-cn
 ```
 
-6、继续在ghostty终端中按快捷键 command + Shift + ,
+6、继续在ghostty终端中按快捷键 command + Shift + , 重新加载配置 就可以使用了
