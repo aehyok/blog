@@ -12,6 +12,8 @@
 三分钟大白话：什么是SubAgent https://x.com/aehyok/status/2032255002769834173
 
 
+如果有对SubAgent不太了解的可以点击上面的链接进行查看，跟这篇文章有比较大的关系。
+
 
 # 讲给初中生听：什么是 Agent Team？
 

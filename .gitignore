@@ -21,6 +21,7 @@ selenium-debug.log
 .codex
 # ad
 cache
+.baoyu-skills/
 .agents/
 .claude/
 .obsidian/
